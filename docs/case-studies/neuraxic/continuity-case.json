@@ -1,0 +1,52 @@
+{
+  "title": "A different story. A stable starting point.",
+  "project": "Neuraxic",
+  "evidence_label": "Five existing isolated SQLite tests passed with network connections disabled.",
+  "checked_date": "2026-09-19",
+  "passed_tests": 5,
+  "failed_tests": 0,
+  "skipped_tests": 0,
+  "not_a_production_trace": true,
+  "new_fictional_content": true,
+  "illustrations_are_test_explanations_not_recorded_synthetic_input_results": true,
+  "illustrative_content": {
+    "place": "Bellweather Reach",
+    "before_fork": "The beacon is lit.",
+    "later_parent_claim": "The causeway is closed.",
+    "separate_conflict_example": "The beacon is unlit."
+  },
+  "assertions": [
+    {
+      "case": "Record-time query",
+      "result": "A query at an earlier record point excludes a later claim."
+    },
+    {
+      "case": "Parent baseline",
+      "result": "The branch retains the earlier parent claim and excludes the post-fork parent claim; the later parent view includes that later claim.",
+      "scope": "Parent continuity claims; not a freeze of all shared-codex content."
+    },
+    {
+      "case": "Conflicting proposal",
+      "result": "A different value for the same subject and predicate in the same continuity reports the existing canon claim; the new claim remains a proposal."
+    },
+    {
+      "case": "Promotion within a session",
+      "result": "An explicit promotion records the actor and makes the selected claim canon. Retrying with the same key returns the same receipt."
+    },
+    {
+      "case": "Promotion across committed sessions",
+      "result": "After the first promotion is committed, a same-key retry in a new session returns the original receipt."
+    }
+  ],
+  "tradeoff": "Pinning the parent preserves a branch starting point but does not automatically incorporate later parent corrections. No merge or rebase workflow is demonstrated.",
+  "claim_limits": [
+    "Visibility includes proposals and does not establish canon status.",
+    "Related tests are illustrated with newly authored fiction, not one captured product workflow.",
+    "The branch assertion proves parent-claim pinning; shared-library tracking and banking are separate.",
+    "SQLite tests do not establish PostgreSQL contention or production persistence behavior.",
+    "No live services, models, application UI, authentication, deployment or narrative quality were tested.",
+    "A canon receipt records an operator decision; it does not independently validate story truth or coherence.",
+    "The project is personally directed and AI-assisted; this evidence does not establish sole personal implementation authorship.",
+    "Private application source, storyworld material and full verification receipts are not included."
+  ]
+}

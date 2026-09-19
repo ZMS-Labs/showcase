@@ -1,0 +1,79 @@
+{
+  "title": "A fictional role should not rewrite the operator.",
+  "project": "Enaction",
+  "checked_date": "2026-09-19",
+  "passed_tests": 12,
+  "failed_tests": 0,
+  "skipped_tests": 0,
+  "evidence_label": "Twelve existing offline Python tests passed using isolated SQLite state.",
+  "execution_scope": {
+    "storage": "In-memory SQLite and isolated temporary SQLite databases",
+    "http": "In-process FastAPI TestClient",
+    "identity": "Fixed-identity test double for API checks",
+    "implementation": "Real staging, memory derivation and review functions",
+    "models_used": false,
+    "live_service_integration_exercised": false,
+    "browser_exercised": false,
+    "postgresql_exercised": false
+  },
+  "not_a_production_trace": true,
+  "new_fictional_content": true,
+  "illustrations_are_test_explanations_not_recorded_synthetic_input_results": true,
+  "illustrative_content": {
+    "roles": [
+      "Operator",
+      "Guide",
+      "Archivist"
+    ],
+    "selected_role": "Guide",
+    "line": "I will bring the blue folder.",
+    "copied_private_story_material": false
+  },
+  "assertions": [
+    {
+      "case": "Selected character receives derived events",
+      "result": "The two-character test selects each character in turn. All events from that turn belong to the selected collection, not the other character or operator collection."
+    },
+    {
+      "case": "Role is part of request identity",
+      "result": "The selected role is persisted. The same key and role returns the original staged row; the same key with a different role conflicts."
+    },
+    {
+      "case": "Invalid assumed roles",
+      "result": "The operator binding and a binding outside the scene are refused."
+    },
+    {
+      "case": "Selected role has no collection",
+      "result": "Derivation creates no events rather than using a different participant or operator collection.",
+      "scope": "Missing collection; not arbitrary storage-failure recovery."
+    },
+    {
+      "case": "Separate manual-scene operator snapshot check",
+      "result": "After a manual scene, API close and review decisions accepting story while rejecting mind and world, operator profile and memory-event-set hashes remain equal. No operator events or participant-state rows are added; character events exist in the character collection.",
+      "scope": "API decisions do not demonstrate a scene-close UI or applying canon in another product."
+    },
+    {
+      "case": "Equality oracle controls",
+      "result": "Changing the operator profile name changes its hash; adding an operator memory event changes the event-set hash."
+    }
+  ],
+  "ui_source_inspection": {
+    "behavior": "Role controls lock while a stage request is in flight or a turn is pending; the UI explains the lock. Provisional content is visually separate from accepted history.",
+    "evidence": "Existing implementation and component-test assertions inspected.",
+    "included_in_twelve_python_tests": false,
+    "new_browser_demonstration": false
+  },
+  "tradeoffs": [
+    "Changing role requires finishing or abandoning the pending attempt rather than toggling the identity of that attempt.",
+    "A missing selected collection produces no derived memory; this protects attribution without repairing the missing destination."
+  ],
+  "claim_limits": [
+    "Related checks are explained with newly authored fiction, not one captured product workflow.",
+    "Pending memory is not approved memory, psychological truth or a measure of recall quality.",
+    "The inspected UI has no scene-close review screen.",
+    "SQLite and fixed-identity tests do not establish PostgreSQL contention or production authentication.",
+    "No models, live service integration, deployment, browser interaction or long-horizon relationship quality were tested in this selection.",
+    "The project is personally directed and AI-assisted; the evidence does not establish sole personal implementation authorship.",
+    "Private application source, internal links, personal profiles, memory exports and private story material are excluded."
+  ]
+}

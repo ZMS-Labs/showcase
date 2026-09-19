@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="A recorded SaveBench experiment: reject an invalid measuring instrument, validate repaired controls, and retain a failing factory result against frozen production targets.">
+  <title>SaveBench: test the instrument first — ZMS Labs</title>
+  <link rel="stylesheet" href="../../site.css">
+  <script src="../../site.js" defer></script>
+  <script src="../../walkthroughs.js" defer></script>
+  <style>
+    .savebench-hero h1{max-width:19ch}.measurement-figure{margin:0;min-width:0}.measurement-figure figcaption{font-size:.81rem;line-height:1.6;color:var(--muted);margin-top:15px}
+    .measurement-card{padding:23px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}.measurement-card+.measurement-card{margin-top:14px}.measurement-card h4{margin:0 0 16px;font-size:1.08rem;font-weight:550;line-height:1.35}.measurement-card p{font-size:.88rem;margin:0 0 15px}.measurement-card p:last-child{margin-bottom:0}
+    .measurement-card dl{display:grid;grid-template-columns:1fr auto;gap:11px 16px;margin:0;font-size:.9rem}.measurement-card dt{color:var(--muted)}.measurement-card dd{margin:0;text-align:right;font-weight:550}.measurement-card ul{padding-left:18px;margin:0;line-height:1.7;font-size:.91rem}
+    .measurement-result{background:var(--ink);color:white}.measurement-result p{color:#cfdbda}.measurement-result strong{display:block;font-size:1.55rem;letter-spacing:-.025em;font-weight:550;margin:5px 0 13px}.measurement-result--fail{background:#f7e8dc;border-color:#c3a38b;color:var(--ink)}.measurement-result--fail p{color:#514c48}
+    .measurement-arrow{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 0;color:var(--muted);font-size:.79rem}.measurement-arrow span[aria-hidden]{font-size:1.3rem}
+    .measurement-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.89rem;line-height:1.45}.measurement-table caption{text-align:left;font-size:.85rem;color:var(--muted);margin-bottom:15px;line-height:1.55}.measurement-table th,.measurement-table td{text-align:left;padding:13px 9px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}.measurement-table thead th{font-size:.82rem;font-weight:550;background:#edf2ef}.measurement-table tbody th{font-weight:550}.measurement-table th:first-child{width:24%}.measurement-table span{display:block;font-size:.75rem;font-weight:400;margin-top:6px}.measurement-table td strong{font-weight:550;font-variant-numeric:tabular-nums}.measurement-table .target-met{background:#f1f5ef}.measurement-table .target-missed{background:#faece1}.measurement-table .target-missed span{color:#704422}
+    .measurement-summary{margin:26px 0 0;padding-top:21px;border-top:1px solid var(--line);color:var(--muted);font-size:.94rem}.measurement-summary strong{color:var(--ink)}.measurement-note{font-size:.84rem;color:var(--muted);line-height:1.65}.measurement-history{display:grid;gap:16px;margin:0}.measurement-history dt{font-weight:550;font-size:1.06rem}.measurement-history dd{margin:7px 0 0;color:var(--muted);font-size:.93rem;line-height:1.65}
+    @media(max-width:720px){.measurement-card{padding:19px}.measurement-card dl{font-size:.83rem;gap:10px 12px}.measurement-table{font-size:.82rem}.measurement-table th,.measurement-table td{padding:11px 5px}.measurement-table thead th{font-size:.76rem}.measurement-table span{font-size:.69rem}.measurement-table th:first-child{width:24%}.measurement-result strong{font-size:1.4rem}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../../index.html" aria-label="ZMS Labs home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>ZMS Labs</a>
+    <nav aria-label="Main navigation"><a href="../../index.html#work">Work</a><a href="../../more-work.html">More work</a><a href="../../about.html">About</a><a href="https://github.com/ZMS-Labs">GitHub</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <div class="crumbs"><a href="../../more-work.html">More work</a> / SaveBench</div>
+    <section class="case-hero savebench-hero">
+      <p class="quiet-label">SaveBench · Game-grounded factory evaluation</p>
+      <h1>Test the measuring instrument before judging the contestant.</h1>
+      <p class="lead">SaveBench evaluates AI-authored factories in Satisfactory using the actual game. In this experiment, a known-working control reported zero delivery. That was a reason to stop judging the factory and investigate the instrument.</p>
+      <div class="case-meta"><span><strong>Work shown</strong> Benchmark integrity and a retained negative result</span><span><strong>Evidence</strong> Recorded game measurements, 9 September 2026</span></div>
+    </section>
+    <nav class="case-jump" aria-label="On this page"><a href="#walkthrough">Follow the experiment</a><a href="#decisions">What stayed fixed</a><a href="#contribution">Contribution</a><a href="#evidence">Evidence and limits</a></nav>
+
+    <section id="walkthrough" class="walkthrough" data-walkthrough aria-labelledby="walkthrough-title">
+      <h2 id="walkthrough-title">From an invalid instrument to a valid failing result.</h2>
+      <p class="walk-intro">These authored diagrams and tables explain two retained historical trials. They display recorded results; they do not run the game or simulate a new contestant.</p>
+      <div class="walk-controls" data-walk-controls hidden><p data-walk-status role="status" aria-live="polite" aria-atomic="true">Step 1 of 5</p><button type="button" data-walk-previous>Previous</button><button type="button" data-walk-next>Next</button></div>
+
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">The known-flow control reports zero.</h3><p>The control fixture should deliver both products. Instead, it records zero copper ingots and zero concrete in each of two 61-second game windows.</p><p>The trial stops as <code>INCONCLUSIVE</code> before obtaining a contestant game observation. Its contestant measurements remain absent, rather than becoming a zero-production score.</p></div>
+        <figure class="measurement-figure" aria-label="Zero delivery in a positive control prevents a contestant verdict">
+          <div class="measurement-card"><h4>Known-flow control</h4><dl><dt>Copper ingots</dt><dd>0 items/min</dd><dt>Concrete</dt><dd>0 items/min</dd><dt>Observed windows</dt><dd>2 × 61 game s</dd></dl></div>
+          <div class="measurement-arrow"><span aria-hidden="true">↓</span>The instrument has not earned trust</div>
+          <div class="measurement-card measurement-result"><strong>INCONCLUSIVE</strong><p>No contestant game observation.<br>No factory verdict.</p></div>
+          <figcaption>A failed control says the measurement path is not qualified. It does not say the contestant failed.</figcaption>
+        </figure>
+      </article>
+
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Repair the instrument, then test both directions.</h3><p>The investigation found an inventory-filter defect in the save-building adapter. Its encoding was corrected against game-written containers.</p><p>In the new trial, the known-flow control delivers both materials. Removing the connection yields zero for both. Positive delivery and an expected zero now provide complementary checks.</p></div>
+        <figure class="measurement-figure" aria-label="Repaired positive and disconnected controls deliver the expected results">
+          <table class="measurement-table"><caption>Both products share these recorded rates. Each control window lasts 61 game seconds; values are items per minute.</caption><thead><tr><th scope="col">Window</th><th scope="col">Known flow</th><th scope="col">Disconnected</th></tr></thead><tbody><tr><th scope="row">1</th><td class="target-met"><strong>61.9672</strong><span>Delivery observed</span></td><td><strong>0.0000</strong><span>Expected zero</span></td></tr><tr><th scope="row">2</th><td class="target-met"><strong>60.0000</strong><span>Delivery observed</span></td><td><strong>0.0000</strong><span>Expected zero</span></td></tr></tbody></table>
+          <figcaption>The delivery-target scorer labels the disconnected fixture <code>FAIL</code>. For this negative control, zero delivery is the intended behavior.</figcaption>
+        </figure>
+      </article>
+
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Keep the design and targets. Disclose the rebuild.</h3><p>The design, task and generation manifest are byte-identical across the two trials. The design revision and challenge identity also match.</p><p>The compiled save bytes are different. The adapter and agent-tool implementation changed, the instrument identity changed, and the candidate was rebuilt. This is a repaired evaluation of the same design—not a comparison using identical binaries or an unchanged instrument.</p></div>
+        <figure class="measurement-figure" aria-label="An unchanged design and task are rebuilt using the repaired instrument">
+          <div class="measurement-card"><h4>Preserved</h4><ul><li>Factory design and generation manifest</li><li>Task and frozen per-window targets</li><li>The earlier inconclusive record</li></ul></div>
+          <div class="measurement-arrow"><span aria-hidden="true">↓</span>Rebuild under the repaired instrument</div>
+          <div class="measurement-card"><h4>Changed</h4><ul><li>Save-building adapter and agent tooling</li><li>Recorded instrument identity</li><li>Compiled candidate save bytes</li></ul></div>
+          <figcaption>The intent record changes only in its creation timestamp. The instrument and candidate differences remain explicit.</figcaption>
+        </figure>
+      </article>
+
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Judge every window against both targets.</h3><p>The factory delivers copper ingots and concrete. But the rule requires at least <strong>20 copper ingots/min</strong> and <strong>15 concrete/min</strong> in every measured window.</p><p>Copper misses in the first window. Both products meet their targets in the second. Concrete misses in the third. Later copper production does not cancel an earlier miss.</p></div>
+        <figure class="measurement-figure" aria-label="Three measured contestant windows with product-specific targets and misses">
+          <table class="measurement-table"><caption>Recorded contestant delivery, items per minute. Targets are minima for each window.</caption><thead><tr><th scope="col">Window</th><th scope="col">Copper ingots<span>Target: 20/min</span></th><th scope="col">Concrete<span>Target: 15/min</span></th></tr></thead><tbody><tr><th scope="row">1<span>121 game s</span><span>Miss</span></th><td class="target-missed"><strong>15.8678</strong><span>Below target</span></td><td class="target-met"><strong>15.3719</strong><span>Target met</span></td></tr>
+<tr><th scope="row">2<span>122 game s</span><span>Both met</span></th><td class="target-met"><strong>60.0000</strong><span>Target met</span></td><td class="target-met"><strong>15.2459</strong><span>Target met</span></td></tr>
+<tr><th scope="row">3<span>121 game s</span><span>Miss</span></th><td class="target-met"><strong>60.9917</strong><span>Target met</span></td><td class="target-missed"><strong>14.8760</strong><span>Below target</span></td></tr></tbody></table>
+          <figcaption>Displayed rates are rounded to four decimal places. The retained result data keeps the recorded precision. Control and contestant windows have different durations.</figcaption>
+        </figure>
+      </article>
+
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Retain the miss instead of moving the target.</h3><p>The repaired trial is scored <code>FAIL</code> against the frozen per-window targets. The earlier <code>INCONCLUSIVE</code> attempt remains a separate record.</p><p>The failing result is useful precisely because it is specific: the factory produced both materials, but it did not satisfy every required delivery window. It is not a general statement about the model or the factory’s entire operating life.</p></div>
+        <figure class="measurement-figure" aria-label="The original inconclusive trial and the later failing result remain distinct">
+          <div class="measurement-card measurement-result"><strong>INCONCLUSIVE</strong><p>First trial: instrument control failed.<br>The contestant was not judged.</p></div>
+          <div class="measurement-arrow"><span aria-hidden="true">↓</span>Separate trial after the repair</div>
+          <div class="measurement-card measurement-result measurement-result--fail"><strong>FAIL</strong><p>Second trial: controls worked.<br>The design missed two required windows.</p></div>
+          <figcaption>These are different evidentiary outcomes. Neither is rewritten as a success.</figcaption>
+        </figure>
+      </article>
+      <p class="measurement-summary"><strong>The evidence supports the decision that was actually made.</strong> No invented aggregate score, relaxed threshold or current model-performance claim is added to this historical experiment.</p>
+      <div class="walk-links"><a href="measurement-case.json">Inspect the measurement summary</a><a href="#evidence">Read the scope and limits</a></div>
+    </section>
+
+    <section id="decisions" class="case-block"><h2>Make a valid failure possible.</h2><div class="body-copy">
+      <article class="decision-note"><h3>Qualify the measuring instrument first.</h3><dl><dt>Choice</dt><dd>Run known-flow and disconnected controls before interpreting contestant delivery.</dd><dt>Reason</dt><dd>A detector that cannot see expected production cannot distinguish a poor design from its own failure.</dd><dt>Evidence</dt><dd>The first trial retains missing contestant measurements and an inconclusive outcome.</dd></dl></article>
+      <article class="decision-note"><h3>Preserve what the contestant was asked to do.</h3><dl><dt>Choice</dt><dd>Carry the identical design and task into a new evaluation after repairing the instrument.</dd><dt>Reason</dt><dd>Changing the target or quietly editing the factory would answer a different question.</dd><dt>Boundary</dt><dd>The repaired adapter rebuilds the save. Those bytes and the instrument identity change and are recorded as such.</dd></dl></article>
+      <article class="decision-note"><h3>Score the declared rule, not an attractive average.</h3><dl><dt>Choice</dt><dd>Require both output minima in every window.</dd><dt>Reason</dt><dd>A burst of later production cannot conceal a delivery shortfall in another required interval.</dd><dt>Evidence</dt><dd>The recorded verdict remains a failure despite production of both materials and a passing middle window.</dd></dl></article>
+    </div></section>
+
+    <section id="contribution" class="case-block"><h2>Purpose and contribution.</h2><div class="body-copy"><dl class="contribution"><div><dt>Personal direction</dt><dd>Defined the benchmark around interesting factory-design choices, competing goals and outcomes demonstrated by the actual game. Later planning explicitly refocused the project on factory design rather than merely discovering automation.</dd></div><div><dt>Work shown here</dt><dd>An existing experiment’s instrument repair, controls and retained result. Development used AI assistance; this case does not establish sole personal authorship of the adapter, evaluator or tests.</dd></div></dl></div></section>
+
+    <section id="evidence" class="case-block"><h2>A historical result with a precise boundary.</h2><div class="body-copy">
+      <p>The case was checked against retained trial reports and game-observation verdicts from <strong>9 September 2026</strong>. The measurement summary preserves the exact numeric rates, targets and per-window outcomes.</p>
+      <dl class="measurement-history"><div><dt>Checked during preparation</dt><dd>Control outcomes and rates; the absent first-trial contestant observation; byte-identical design, task and manifest; changed candidate and instrument identities; and a recomputation of each window’s target result.</dd></div><div><dt>Not rerun for this page</dt><dd>No new game session, model contest, cluster action or paid trial. This page does not claim a fresh validation of today’s implementation.</dd></div></dl>
+      <div class="evidence-callout"><h3>What this experiment does not establish</h3><p>It is not a model ranking, a completed autonomous progression campaign or a claim that every supported factory design works. It does not measure long-run performance outside the recorded windows.</p><p>The introductory diagram and result tables are authored explanations of retained evidence. No game screenshot, map tile, save file, application source or private operational detail is published here.</p></div>
+      <div class="link-row"><a class="button-link" href="measurement-case.json">Read the public result data</a><a href="../../evidence.html">Evidence and attribution across the showcase</a></div>
+    </div></section>
+    <div class="next-project"><div><p>Continue exploring</p><a href="../fleet-orchestrator/index.html">Fleet Orchestrator</a></div><a class="small" href="../../more-work.html">More work</a></div>
+  </main>
+  <footer class="site-footer wrap"><p>Independent, personally directed projects developed with AI assistance. Each case study identifies the work shown and the evidence behind its claims.</p><a href="../../evidence.html">Evidence &amp; attribution</a></footer>
+</body>
+</html>

@@ -89,16 +89,37 @@ with sync_playwright() as p:
     if page.locator('#walkthrough').count():
      page.locator('#walkthrough').scroll_into_view_if_needed()
      page.screenshot(path=str(args.screenshots/f'{width}-{name}-walkthrough.png'))
+   # Additional coverage for every gallery, alongside the named product assertions below.
+   for gallery in page.locator('.design-view').all():
+    for option in gallery.locator('[data-view-src]').all():
+     option.focus();page.keyboard.press('Enter')
+     picture=gallery.locator('.design-screen');picture.evaluate('(e)=>e.decode()')
+     expected=option.get_attribute('data-view-src')
+     assert picture.get_attribute('src')==expected
+     assert picture.get_attribute('alt')==option.get_attribute('data-view-alt')
+     assert gallery.locator('.view-caption').inner_text()==option.get_attribute('data-view-caption')
+     assert option.get_attribute('aria-pressed')=='true'
+     assert gallery.locator('[aria-pressed=true]').count()==1
+     assert gallery.locator('[data-full-resolution]').get_attribute('href').endswith(expected.removeprefix('../../'))
+    opener=gallery.locator('[data-enlarge]');opener.click()
+    assert page.locator('dialog').is_visible()
+    assert page.locator('[data-dialog-original]').get_attribute('href').endswith(gallery.locator('.design-screen').get_attribute('src').removeprefix('../../'))
+    page.locator('dialog img').evaluate('(e)=>e.decode()')
+    page.keyboard.press('Escape');assert not page.locator('dialog').is_visible()
+    assert opener.evaluate('(e)=>e===document.activeElement')
+    opener.click();page.get_by_role('button',name='Close',exact=True).click()
+    assert not page.locator('dialog').is_visible()
+    assert opener.evaluate('(e)=>e===document.activeElement')
    if path.parent.name=='epistemic-skills':
     page.get_by_role('button',name='Verify a change',exact=True).click();assert page.locator('#method-name').inner_text()=='Did It Land'
     b=page.get_by_role('button',name='Examine a decision',exact=True);b.focus();page.keyboard.press('Enter');assert page.locator('#method-name').inner_text()=='Perspective / Gauntlet';assert b.get_attribute('aria-pressed')=='true'
    elif path.parent.name=='steno':
-    page.get_by_role('button',name='Document workstation',exact=True).click();assert page.locator('.design-screen').get_attribute('src').endswith('workstation.png')
-    assert page.locator('.design-view [data-full-resolution]').get_attribute('href').endswith('workstation.png')
+    page.get_by_role('button',name='Document workstation',exact=True).click();assert page.locator('.design-screen').first.get_attribute('src').endswith('workstation.png')
+    assert page.locator('.design-view [data-full-resolution]').first.get_attribute('href').endswith('workstation.png')
     b=page.get_by_role('button',name='Expand design view',exact=True);b.click();assert page.locator('dialog').is_visible();assert page.locator('[data-dialog-original]').get_attribute('href').endswith('workstation.png');page.keyboard.press('Escape');assert not page.locator('dialog').is_visible();assert b.evaluate('(e)=>e===document.activeElement')
    elif path.parent.name=='krewcible':
-    page.get_by_role('button',name='Initial state',exact=True).click();assert page.locator('.design-screen').get_attribute('src').endswith('comparison.png');assert page.locator('.design-view [data-full-resolution]').get_attribute('href').endswith('comparison.png');assert 'four applied traits' in page.locator('.view-caption').inner_text()
-    page.get_by_role('button',name='After changes',exact=True).click();assert page.locator('.design-screen').get_attribute('src').endswith('workspace.png');assert page.locator('.design-view [data-full-resolution]').get_attribute('href').endswith('workspace.png');assert 'arcane bearing removed' in page.locator('.view-caption').inner_text()
+    page.get_by_role('button',name='Initial state',exact=True).click();assert page.locator('.design-screen').first.get_attribute('src').endswith('comparison.png');assert page.locator('.design-view [data-full-resolution]').first.get_attribute('href').endswith('comparison.png');assert 'four applied traits' in page.locator('.view-caption').first.inner_text()
+    page.get_by_role('button',name='After changes',exact=True).click();assert page.locator('.design-screen').first.get_attribute('src').endswith('workspace.png');assert page.locator('.design-view [data-full-resolution]').first.get_attribute('href').endswith('workspace.png');assert 'arcane bearing removed' in page.locator('.view-caption').first.inner_text()
     page.get_by_role('button',name='Expand design view',exact=True).click();assert page.locator('dialog').is_visible();page.get_by_role('button',name='Close',exact=True).click();assert not page.locator('dialog').is_visible()
    elif path.parent.name=='gridiron':
     page.get_by_role('button',name='Still unmeasured',exact=True).click();assert page.locator('#measurements').inner_text().count('Unknown')==2
@@ -107,7 +128,7 @@ with sync_playwright() as p:
     page.get_by_role('button',name='Proposed edits',exact=True).click();assert page.locator('#finding-count').inner_text()=='0'
     page.get_by_role('button',name='Initial draft',exact=True).click();assert page.locator('#finding-count').inner_text()=='2'
   context.close()
- # Without JavaScript, all five guided sequences remain readable.
+ # Without JavaScript, all guided sequences remain readable.
  nojs=browser.new_context(java_script_enabled=False,offline=not bool(args.base_url))
  for path in root.glob('case-studies/*/index.html'):
   page=nojs.new_page();page.goto(destination(path))
@@ -149,4 +170,4 @@ assert not errors,errors
 assert not remote,remote
 receipt={'scope':'Static portfolio presentation and controls; not product acceptance','pages':checks,'local_links':'passed','javascript_errors':errors,'external_requests':remote,'interactions':'method selection, measurement boundaries, galleries, full-resolution target synchronization, dialog close/focus, recorded linter replay passed','limitations':'No full assistive-technology certification; authentic product rendering receipts are separate.'}
 
-print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'existing controls, five keyboard walkthroughs, no-JS fallback, transcripts and two HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))
+print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'existing controls, all keyboard walkthroughs, no-JS fallback, transcripts and two HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))

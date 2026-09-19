@@ -112,6 +112,90 @@
       "audio_streams": 0,
       "kind": "Authentic page-only interaction recording",
       "claim_boundary": "Recorded interaction with existing checkpoint components and deterministic composition in an isolated synthetic study; no generation, backend or persistence"
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
+      "sha256": "c0abb4942827ef3eb27777dd0150bfaf3a207fabf4764fa258fb950942702817",
+      "bytes": 777108,
+      "dimensions": [
+        1500,
+        1082
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
+      "claim_boundary": "The existing Stratus home component with synthetic agents and work, in a labeled capture frame. The live indicator and counts are fixture state; no live connection or full application is shown. The proposals panel is an existing placeholder."
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-roles.png",
+      "sha256": "a2cd264bb517ebc7425618afb445bef9332e43c0a16384731788eecb129bab54",
+      "bytes": 321033,
+      "dimensions": [
+        1600,
+        791
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
+      "claim_boundary": "Twelve role bindings from the actual glyph renderer. Name and idle state stay fixed; the role selects silhouette and motif and also influences deterministic identity details. Reviewer and security reviewer share a shield silhouette with different motifs."
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-states.png",
+      "sha256": "aab9a311896d85eb6041a64890f1db5b87755096a52a9e4ffa7654d1f75c998f",
+      "bytes": 323340,
+      "dimensions": [
+        1600,
+        791
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
+      "claim_boundary": "One synthetic implementer across twelve canonical state inputs. The interior glyph is identical while the state ring changes. Enlarged specimens do not establish small-size perceptual legibility or motion quality."
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-details.png",
+      "sha256": "27ecbba4905227af9854c9bb6af74fd6dbda32a6f8c84894c2f2ad28dc430c88",
+      "bytes": 255958,
+      "dimensions": [
+        1600,
+        687
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
+      "claim_boundary": "Source-rendered lineage and size examples: a shared palette, clone rotation and full-tier tallies. The two-dot badge is the explicit unknown-runtime fallback. These are documentation specimens, not a live roster."
+    },
+    {
+      "path": "assets/steno/hallmark-fineness-ladder.png",
+      "sha256": "5e928f8582d99fd78ab37036a458aff4bebcb011f0bfddb6eb6bc683285645db",
+      "bytes": 340438,
+      "dimensions": [
+        1680,
+        900
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
+      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran."
+    },
+    {
+      "path": "assets/steno/hallmark-assay-vocabulary.png",
+      "sha256": "0f48529b14c7dec50fb08ed570b833f89b928d8c1b3da73d689c0cd9294dd17e",
+      "bytes": 198432,
+      "dimensions": [
+        1680,
+        923
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
+      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks."
+    },
+    {
+      "path": "assets/steno/hallmark-chip-and-detail.png",
+      "sha256": "d67d58cd84da6805dd8d956e568c6a702c817b3b0e3f636a97aae31090f10173",
+      "bytes": 227412,
+      "dimensions": [
+        1680,
+        1076
+      ],
+      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
+      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
+      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance."
     }
   ]
 }

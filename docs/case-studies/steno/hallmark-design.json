@@ -1,0 +1,27 @@
+{
+  "schema": "showcase-design-notes@1",
+  "project": "Steno",
+  "component": "Hallmark",
+  "examined": "2026-09-19",
+  "source_revision": "30c5803a64595b756c251d089e14da3843189064",
+  "provenance": "Original design brief from a dedicated Claude Design session, followed by the implemented current component and styles. Rendered with new synthetic props in an authored documentation layout.",
+  "meanings": {
+    "tablet": "Modeled substantive grade, expressed through material, faceting and rank.",
+    "medallions": [
+      "Engine",
+      "Cross-check",
+      "Exception",
+      "Authority"
+    ],
+    "uncovered": "Separate ungraded state.",
+    "pending": "No verification claim; supporting proof is absent in the expanded specimen."
+  },
+  "current_design": "Grade and assay marks are orthogonal. The older grade cap is not present in the current interface.",
+  "limits": [
+    "No real agreement, clause, matter, person or operational data.",
+    "No engine invocation, document assessment or legal certificate.",
+    "Cross-check shares extracted facts with the primary check; independence is not implied.",
+    "Design state labels are original vocabulary, not legal conclusions.",
+    "Current component artwork is separate from the archived workstation prototype and the drafting-check receipt."
+  ]
+}

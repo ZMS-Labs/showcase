@@ -1,0 +1,21 @@
+{
+  "schema": "showcase-design-notes@1",
+  "project": "Fleet Orchestrator",
+  "examined": "2026-09-19",
+  "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
+  "scope": "Source inspection; component render provenance is recorded separately. No runtime or deployed workflow was exercised for this architectural explanation.",
+  "intent": "Persistent agent identity and accountable coordination across temporary runtime sessions.",
+  "responsibilities": {
+    "cockpit": "Operator commands and queries through a gateway, plus state and event views.",
+    "control_plane": "Agent/task identity, coordination, authorization policy and durable records.",
+    "surface_bridge": "Authorized runtime execution requests, session mechanics, workspace setup and supported progress/results.",
+    "runtime": "Runtime-specific tools, processes or API calls operating on project work."
+  },
+  "limits": [
+    "Adapter implementation is not current availability or equivalent capability.",
+    "Orchestrator continuity and summarized context do not promise perfect internal-state migration.",
+    "A reachable endpoint does not prove useful execution.",
+    "Small-size color-independent glyph discriminability has not been fully verified.",
+    "The review-gate test receipt is separate evidence with its own pinned source."
+  ]
+}
