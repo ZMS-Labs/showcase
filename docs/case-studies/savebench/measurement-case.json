@@ -1,0 +1,113 @@
+{
+  "schema": "savebench-measurement-case@1",
+  "title": "Test the measuring instrument before judging the contestant.",
+  "recorded_date": "2026-09-09",
+  "evidence_kind": "Retained historical game-observation and trial-result records; no new game run for this case study.",
+  "display_rounding_decimal_places": 4,
+  "initial_attempt": {
+    "instrument_controls_valid": false,
+    "positive_control_windows": [
+      {
+        "window": 1,
+        "game_seconds": 61,
+        "copper_ingots_per_minute": 0.0,
+        "concrete_per_minute": 0.0,
+        "meets_delivery_targets": false
+      },
+      {
+        "window": 2,
+        "game_seconds": 61,
+        "copper_ingots_per_minute": 0.0,
+        "concrete_per_minute": 0.0,
+        "meets_delivery_targets": false
+      }
+    ],
+    "contestant_outcome": "INCONCLUSIVE",
+    "contestant_observation_present": false,
+    "contestant_measurements": null
+  },
+  "re_evaluation": {
+    "instrument_controls_valid": true,
+    "positive_control_windows": [
+      {
+        "window": 1,
+        "game_seconds": 61,
+        "copper_ingots_per_minute": 61.967213114754095,
+        "concrete_per_minute": 61.967213114754095,
+        "meets_delivery_targets": true
+      },
+      {
+        "window": 2,
+        "game_seconds": 61,
+        "copper_ingots_per_minute": 60.0,
+        "concrete_per_minute": 60.0,
+        "meets_delivery_targets": true
+      }
+    ],
+    "disconnected_control_windows": [
+      {
+        "window": 1,
+        "game_seconds": 61,
+        "copper_ingots_per_minute": 0.0,
+        "concrete_per_minute": 0.0,
+        "meets_delivery_targets": false
+      },
+      {
+        "window": 2,
+        "game_seconds": 61,
+        "copper_ingots_per_minute": 0.0,
+        "concrete_per_minute": 0.0,
+        "meets_delivery_targets": false
+      }
+    ],
+    "targets_per_minute": {
+      "copper_ingots": 20,
+      "concrete": 15
+    },
+    "target_rule": "Each measured window must meet both frozen delivery targets.",
+    "contestant_windows": [
+      {
+        "window": 1,
+        "game_seconds": 121,
+        "copper_ingots_per_minute": 15.867768595041323,
+        "concrete_per_minute": 15.37190082644628,
+        "meets_delivery_targets": false
+      },
+      {
+        "window": 2,
+        "game_seconds": 122,
+        "copper_ingots_per_minute": 60.0,
+        "concrete_per_minute": 15.245901639344263,
+        "meets_delivery_targets": true
+      },
+      {
+        "window": 3,
+        "game_seconds": 121,
+        "copper_ingots_per_minute": 60.99173553719008,
+        "concrete_per_minute": 14.87603305785124,
+        "meets_delivery_targets": false
+      }
+    ],
+    "contestant_outcome": "FAIL"
+  },
+  "relationship": {
+    "design_bytes_identical": true,
+    "task_bytes_identical": true,
+    "generator_manifest_bytes_identical": true,
+    "challenge_and_design_revision_match": true,
+    "compiled_candidate_bytes_identical": false,
+    "instrument_bytes_identical": false,
+    "intent_difference": "Creation timestamp only.",
+    "instrument_difference": "The save-building adapter and agent-tool implementation changed; the recorded evaluator identity changed.",
+    "interpretation": "Same design and targets, rebuilt under a repaired instrument. This is not an identical-binary or identical-protocol performance comparison."
+  },
+  "important_limits": [
+    "A failed positive control prevented a contestant verdict; its missing measurements are null, not zero.",
+    "Disconnected control delivery of zero is the expected result, even though the delivery-target scorer labels that control FAIL.",
+    "The failed contestant produced both outputs. Failure means it missed the minimum in at least one required window, not that the factory never worked.",
+    "Recorded rates and outcomes are historical; current campaign, model and deployed-service readiness were not assessed or rerun.",
+    "This case is not a model ranking, a broad factory-design success claim or an earned-progression result.",
+    "The diagrams and tables are authored explanations. No game saves, screenshots, map tiles, game asset tables, application source or private operational details are included.",
+    "Control windows lasted 61 game seconds; contestant windows lasted 121, 122 and 121 game seconds. They are different checks, not matched performance runs."
+  ]
+}

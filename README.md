@@ -11,31 +11,39 @@ Independent projects exploring how software can make complex information, decisi
 
 [**Explore the full showcase →**](https://zms-labs.github.io/showcase/) · [About this work](https://zms-labs.github.io/showcase/about.html) · [Supporting work](https://zms-labs.github.io/showcase/more-work.html) · [Evidence and attribution](https://zms-labs.github.io/showcase/evidence.html) · [Maintain this site](docs/MAINTAINING.md)
 
-## Five projects, five concrete questions
+## Selected projects and concrete questions
 
 | Project | Question and inspectable work |
 |---|---|
-| [**Steno**](https://zms-labs.github.io/showcase/case-studies/steno/) | **How could a contract workstation connect a clause to the questions it raises?**<br>An authentic archived interface prototype with fictional matter data, plus a separate recording of two drafting checks |
+| [**Steno**](https://zms-labs.github.io/showcase/case-studies/steno/) | **How could a contract workstation connect a clause to the questions it raises?**<br>An archived workspace prototype, the current Hallmark emblem system, and separate recorded drafting checks |
 | [**Epistemic Skills**](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/) | **How can agents investigate, compare alternatives, and verify their work more systematically?**<br>Public methods, worked examples, design rationale, and evaluation limits |
 | [**Gridiron**](https://zms-labs.github.io/showcase/case-studies/gridiron/) | **How can commentary stay accountable to a recorded event?**<br>A synthetic replay, its evidence boundaries, and a downloadable research-source snapshot |
 | [**Krewcible**](https://zms-labs.github.io/showcase/case-studies/krewcible/) | **How can a creative tool keep choices visible and editable?**<br>Existing checkpoint-editor components before and after exercised controls with synthetic state |
-| [**Fleet Orchestrator**](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/) | **When should a review workflow be allowed to proceed?**<br>Three isolated control-plane tests, an inspectable review-gate walkthrough, and explicit completion limits |
+| [**Fleet Orchestrator**](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/) | **How can agent identity and accountable work outlast a runtime session?**<br>Authentic cockpit and glyph design, a Surface Bridge explanation, and a tested review gate |
+| [**SaveBench**](https://zms-labs.github.io/showcase/case-studies/savebench/) | **Can a failed measuring instrument justify a contestant verdict?**<br>A dated control-repair case, frozen targets, observed windows and explicit limits |
+| [**Neuraxic**](https://zms-labs.github.io/showcase/case-studies/neuraxic/) | **How can an author explore alternate continuity while keeping canon explicit?**<br>Focused branch-visibility evidence and an independently authored fictional explanation |
+| [**Enaction**](https://zms-labs.github.io/showcase/case-studies/enaction/) | **Who is speaking, and whose memory should change?**<br>Explicit fictional-role selection and twelve focused tests of memory attribution and operator boundaries |
+| [**ZMS Canvas**](https://zms-labs.github.io/showcase/case-studies/zms-canvas/) | **What happens to edits when a save fails or another revision arrives first?**<br>Six focused recovery and storage tests in a public PenEcho fork, with upstream attribution |
 
 ## Product design you can examine
 
 [![Steno's archived matter-map prototype, rendered with fictional content. Design evidence, not current product operation.](docs/assets/steno/matter-map.png)](https://zms-labs.github.io/showcase/case-studies/steno/)
 
-**Steno · Connecting document context and review questions.** The case study preserves the prototype's visual language and offers a full-resolution gallery and a captioned prototype recording. Its recorded component checks are presented separately from the interface design.
+**Steno · Connecting document context and review questions.** The case study preserves the prototype's visual language and offers a full-resolution gallery and a captioned prototype recording. The [Hallmark gallery](https://zms-labs.github.io/showcase/case-studies/steno/#hallmarks) also examines the implemented emblem language: modeled grade, facet geometry and distinct evidence marks. Recorded drafting checks remain separate from the design specimens.
 
 [![Krewcible's checkpoint editor after exercised controls changed the modification stack and deterministic text. Synthetic component study.](docs/assets/krewcible/workspace.png)](https://zms-labs.github.io/showcase/case-studies/krewcible/)
 
 **Krewcible · Shape the idea. See what changed.** Watch the captioned component recording and inspect the initial and changed states, the controls exercised, and the limits of the study. These captures do not demonstrate a generation service or persistent storage.
 
+[![Original Fleet Orchestrator role glyphs rendered with a synthetic identity.](docs/assets/fleet-orchestrator/fleet-orchestrator-roles.png)](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/)
+
+**Fleet Orchestrator · Recognizable agents. Accountable work.** Inspect the glyph vocabulary, the Stratus home rendered with synthetic work, and the Surface Bridge's place between coordination and runtime execution. The review-gate walkthrough supplies a focused behavioral example alongside the design.
+
 ## Substance behind the presentation
 
 - **Purpose and tradeoffs:** each case study explains the problem, design choices, implemented slice, and remaining questions.
 - **Evidence near the claim:** prototype images, component interactions, recorded results, and conceptual illustrations are identified as different kinds of artifacts.
-- **Inspectable work:** [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) has public source; Gridiron includes a reviewed source snapshot. Steno, Krewcible and Fleet share selected case-study material while their application source remains private.
+- **Inspectable work:** [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) has public source; Gridiron includes a reviewed source snapshot. Steno, Krewcible, Fleet Orchestrator, SaveBench, Neuraxic and Enaction share selected case-study material while their application source remains private.
 - **Clear authorship:** these are personally directed projects developed with AI assistance. [Attribution and provenance](https://zms-labs.github.io/showcase/evidence.html) explain the assistance and the work shown.
 
 These are independent projects with different stages of maturity. The showcase does not establish employer deployment, production readiness, or measured improvement in agent performance.

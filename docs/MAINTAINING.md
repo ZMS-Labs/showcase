@@ -8,7 +8,7 @@ The repository contains the ZMS Labs portfolio and its editable static website. 
 |---|---|
 | `README.md` | GitHub introduction and selected work |
 | `docs/index.html`, `site.css`, `site.js`, `walkthroughs.js` | Website, shared presentation, and interactive controls |
-| `docs/case-studies/` | Five project studies, including Steno's separate recorded-check example |
+| `docs/case-studies/` | Project case studies, including Steno's separate recorded-check example |
 | `docs/about.html`, `more-work.html`, `evidence.html` | Authorship, supporting work, evidence boundaries and attribution |
 | `docs/assets/manifest.json` | Asset types, hashes, provenance, and supported claims |
 | `docs/downloads/` | Reviewed Gridiron research-source snapshot |
@@ -20,7 +20,7 @@ The repository contains the ZMS Labs portfolio and its editable static website. 
 
 ## Edit and verify
 
-Edit the HTML directly; there is no hidden build step. Keep claims, headings, captions, alternative text, and diagrams consistent. Review current project evidence before changing counts or status. Preserve each product's visual language and provide full-resolution access to dense captures.
+Edit the HTML directly; there is no hidden build step. Keep claims, headings, captions, alternative text, and diagrams consistent. Review current project evidence before changing counts or status. Preserve dated historical results as historical: SaveBench’s retained evaluation and the original publication incident are not fresh runtime checks. Canvas test links pin the public revision examined. Preserve each product's visual language and provide full-resolution access to dense captures.
 
 For a local preview:
 
@@ -38,7 +38,7 @@ git diff --check
 
 The browser check discovers every HTML page and exercises desktop and two narrow widths. It checks images, local links, horizontal overflow, existing controls, keyboard walkthroughs, focus, no-JavaScript access and transcripts. It briefly serves the static files on loopback to check both videos, seeking, playback and descriptive tracks, then stops the server. Because that temporary Python server lacks byte-range support, its media check fully buffers the local recording before seeking; the deployed check exercises the host's actual seek behavior with metadata preload. Use `--base-url https://zms-labs.github.io/showcase/` to repeat the checks against the published copy. Optional `--screenshots <directory>` saves inspection images outside `docs/`. These checks cover the presentation; they do not certify the featured products or full accessibility conformance.
 
-The genuine Steno and Krewcible recordings have native controls, no autoplay, descriptive text tracks, selectable transcripts and synthetic content. Preserve their distinction from live product operation. Record new media provenance and inspect both pixels and metadata before replacing them.
+The genuine Steno and Krewcible recordings have native controls, no autoplay, descriptive text tracks, selectable transcripts and synthetic content. Preserve their distinction from live product operation. Record new media provenance and inspect both pixels and metadata before replacing them. The Fleet Orchestrator and Steno Hallmark galleries use current component artwork with synthetic inputs; keep them distinct from archived prototypes, live connections, execution tests and real assessments. The verifier covers every gallery in addition to the original named product assertions.
 
 Run `python scripts/replay_manifest_case.py` in a full clone to reproduce the historical Epistemic Skills publication case. This uses public Git objects and requires no network or model. Its 28-file counts describe that historical publication.
 

@@ -10,8 +10,28 @@
     },
     {
       "path": "about.html",
-      "bytes": 5034,
-      "sha256": "37f3b87c618af0ef934cb1caaa7f1cb7b81c682c1c281974062ac281c55c71a0"
+      "bytes": 5293,
+      "sha256": "4b21d405149d3691abc92b98ce33e851a18717c93657a16bd104ad1c7e65394b"
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
+      "bytes": 777108,
+      "sha256": "c0abb4942827ef3eb27777dd0150bfaf3a207fabf4764fa258fb950942702817"
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-details.png",
+      "bytes": 255958,
+      "sha256": "27ecbba4905227af9854c9bb6af74fd6dbda32a6f8c84894c2f2ad28dc430c88"
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-roles.png",
+      "bytes": 321033,
+      "sha256": "a2cd264bb517ebc7425618afb445bef9332e43c0a16384731788eecb129bab54"
+    },
+    {
+      "path": "assets/fleet-orchestrator/fleet-orchestrator-states.png",
+      "bytes": 323340,
+      "sha256": "aab9a311896d85eb6041a64890f1db5b87755096a52a9e4ffa7654d1f75c998f"
     },
     {
       "path": "assets/fonts/Archivo.ttf",
@@ -55,8 +75,23 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 4894,
-      "sha256": "7c2f4cb4f229991a2c4eb8a9b97c59a19180bc37885b3675c8a240f80265f659"
+      "bytes": 9679,
+      "sha256": "6628d09d8fc7d2dda79957210b93c2d55303d22dcec093b1692614c1e43f885c"
+    },
+    {
+      "path": "assets/steno/hallmark-assay-vocabulary.png",
+      "bytes": 198432,
+      "sha256": "0f48529b14c7dec50fb08ed570b833f89b928d8c1b3da73d689c0cd9294dd17e"
+    },
+    {
+      "path": "assets/steno/hallmark-chip-and-detail.png",
+      "bytes": 227412,
+      "sha256": "d67d58cd84da6805dd8d956e568c6a702c817b3b0e3f636a97aae31090f10173"
+    },
+    {
+      "path": "assets/steno/hallmark-fineness-ladder.png",
+      "bytes": 340438,
+      "sha256": "5e928f8582d99fd78ab37036a458aff4bebcb011f0bfddb6eb6bc683285645db"
     },
     {
       "path": "assets/steno/matter-map.png",
@@ -79,6 +114,16 @@
       "sha256": "0cfe26065e406795fa2fa0de1188c2c45698df9840f9b35cc391a5d6b2e56ff1"
     },
     {
+      "path": "case-studies/enaction/index.html",
+      "bytes": 16207,
+      "sha256": "cb226d34f0d61f93765187eccad076e9874a54a764aee1e3f7bb704fecba1482"
+    },
+    {
+      "path": "case-studies/enaction/role-boundary-case.json",
+      "bytes": 4079,
+      "sha256": "184a9eb9109d13611e187eff45cb4e8356f2a2050274667e00fe604efa8c2d7f"
+    },
+    {
       "path": "case-studies/epistemic-skills/index.html",
       "bytes": 12256,
       "sha256": "3f5724963356eef5425b281b736c4031952de3fea6a713be8b9e3a50a2a9be39"
@@ -89,9 +134,14 @@
       "sha256": "7cf6c97d83c6cd7f87afd1419b594014214dd8bfbae9497e442b0ada68a5093e"
     },
     {
+      "path": "case-studies/fleet-orchestrator/design-notes.json",
+      "bytes": 1328,
+      "sha256": "e84672b9b2cdc095e217b56cb2dba570e9ea0a18bea08ab0074a7c9fe80ed0a4"
+    },
+    {
       "path": "case-studies/fleet-orchestrator/index.html",
-      "bytes": 15074,
-      "sha256": "de3cc43dd822ac5d2a9f585334447144ebec7e3f9737847b83acf7e61b0a351a"
+      "bytes": 24850,
+      "sha256": "d38c8d79d1c07dcbc975428a7621b9176c3823da1b2499ecf82cd8b68a9b7ca4"
     },
     {
       "path": "case-studies/fleet-orchestrator/review-gate.json",
@@ -119,9 +169,34 @@
       "sha256": "ad60fd547d78d28550cb5bf704de4fbf8db1b25f645320d322b66f9840312f8a"
     },
     {
+      "path": "case-studies/neuraxic/continuity-case.json",
+      "bytes": 2729,
+      "sha256": "847dd9a13eadacee3b6bcc9e261ec921107e49d2f5c97b7d7fb85c5d0f840a60"
+    },
+    {
+      "path": "case-studies/neuraxic/index.html",
+      "bytes": 14957,
+      "sha256": "91ce80f8676353574b7637077333bfbb7207b81023e11aee0d183ddaeb6dfd95"
+    },
+    {
+      "path": "case-studies/savebench/index.html",
+      "bytes": 17792,
+      "sha256": "4b70504e9e1f3820c85ed732d945d432d67db4524f0bb159b9dae893ec440bf9"
+    },
+    {
+      "path": "case-studies/savebench/measurement-case.json",
+      "bytes": 4333,
+      "sha256": "23d360c7323548c02c81b301142756b379e3dffd2d2e1d715495cbe7bdddd67a"
+    },
+    {
+      "path": "case-studies/steno/hallmark-design.json",
+      "bytes": 1313,
+      "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
+    },
+    {
       "path": "case-studies/steno/index.html",
-      "bytes": 14734,
-      "sha256": "4b0b63b6adc67dc4cad1249eea0a8b3c8cad4b66a84815b1c20e4fb4e8a440b2"
+      "bytes": 20001,
+      "sha256": "76c2da3d9a8caf164cfd31ccd6b614a62c1d7097940c8e2d875d25b206396a86"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
@@ -154,19 +229,29 @@
       "sha256": "bbe1389e5d04d34908aa56ef98d328e4ed745cca5a21dec978189269709b5609"
     },
     {
+      "path": "case-studies/zms-canvas/continuity-case.json",
+      "bytes": 1325,
+      "sha256": "31beca7031883018f46264f05ad9b0d9d6693a6466890560e1f7cc0aa335cf10"
+    },
+    {
+      "path": "case-studies/zms-canvas/index.html",
+      "bytes": 11471,
+      "sha256": "5965c5e75b624da37c79d5e481b0509a0128cfafaa43518e5324180493fd0e3b"
+    },
+    {
       "path": "downloads/gridiron-research-source.zip",
       "bytes": 492351,
       "sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658"
     },
     {
       "path": "evidence.html",
-      "bytes": 6769,
-      "sha256": "5849fa7b38c7df16d8a80d0acc4029669aef594574fa789b0479bb7770a2bb57"
+      "bytes": 9279,
+      "sha256": "02a808b4bb118a1f7d87a93316ff02b355e7c998ce05acaa689950d36e6f7686"
     },
     {
       "path": "index.html",
-      "bytes": 8890,
-      "sha256": "7c69968c0ed045bb1bad04932663736417275c938b20c7b74274c953e72b6c33"
+      "bytes": 10942,
+      "sha256": "8e1d0ce3e7ff912950663f8bbbd8bace0d7285cd1178d3115d8a3c6669998ac6"
     },
     {
       "path": "LICENSE",
@@ -175,18 +260,18 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 4384,
-      "sha256": "1b3731e3992fb84278672e368b4ba28ef81fb3a9fdeb2d37b9aa7e726ed7c555"
+      "bytes": 6465,
+      "sha256": "8f5dc25c05ee276f00793dc9d49095c301a3071145de1cd376bee6ca3d9ff7e1"
     },
     {
       "path": "README.md",
-      "bytes": 2188,
-      "sha256": "3576f5a1b5b138663b018cb4e588bbf2123b8856dd97fbf079edae9df131b996"
+      "bytes": 2684,
+      "sha256": "5a9add8ac443cf397e80f754155c8fc1eb6bb72274cccc24c5bb7b9bd0e766c3"
     },
     {
       "path": "site.css",
-      "bytes": 21719,
-      "sha256": "efe1c22a0810f4d18718f70dc9658ac3b0e90329abd2c3dbc3063d6c2cdeb4e5"
+      "bytes": 25212,
+      "sha256": "120df5d864a80bc6c77b9c27e471f9dc582e3db91c8e444c672e516232549389"
     },
     {
       "path": "site.js",
