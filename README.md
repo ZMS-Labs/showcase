@@ -11,6 +11,20 @@ ZMS Labs explores how software and AI can help people investigate problems, make
 
 [**Explore the featured project**](#featured-project--epistemic-skills) · [**See the engineering approach**](#how-the-work-is-approached) · [**Browse public repositories**](https://github.com/orgs/ZMS-Labs/repositories?type=public)
 
+<details>
+<summary>Repository status</summary>
+
+<!-- ZMS-ESTATE:BEGIN -->
+
+> **Obligation:** `none` · **Stage:** `building` · **Load-bearing:** `unknown — not yet observed`
+> **Purpose:** `configuration`
+> **Canonical for:** organization-project-showcase
+> Estate authority: the ZMS fleet governance registry (private), `governance/estate.yaml`.
+
+<!-- ZMS-ESTATE:END -->
+
+</details>
+
 ## Featured project — Epistemic Skills
 
 ### Better questions. Evidence that changes the next step.
