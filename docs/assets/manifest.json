@@ -86,6 +86,32 @@
       "source": "OpenAI built-in image generation; newly authored prompt; reviewed for semantic clarity",
       "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result",
       "visual_meaning": "Investigation, examination and verification are available methods, not a required sequence"
+    },
+    {
+      "path": "assets/steno/steno-prototype-walkthrough.webm",
+      "sha256": "291ab110878f0d9e23d604ad10bc7e51a5e4a5efcb87475beb47ea2a541a8404",
+      "bytes": 2957288,
+      "dimensions": [
+        1760,
+        1100
+      ],
+      "duration_seconds": 37.12,
+      "audio_streams": 0,
+      "kind": "Authentic page-only interaction recording",
+      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict"
+    },
+    {
+      "path": "assets/krewcible/krewcible-walkthrough.webm",
+      "sha256": "85071f09d2109aebdc4da779354d1ac320d4f5fc5e11d06fdb0c8df74711a9b7",
+      "bytes": 2265343,
+      "dimensions": [
+        1600,
+        1140
+      ],
+      "duration_seconds": 36.44,
+      "audio_streams": 0,
+      "kind": "Authentic page-only interaction recording",
+      "claim_boundary": "Recorded interaction with existing checkpoint components and deterministic composition in an isolated synthetic study; no generation, backend or persistence"
     }
   ]
 }

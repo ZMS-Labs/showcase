@@ -1,0 +1,72 @@
+{
+  "title": "A handoff is not a completion claim",
+  "subtitle": "A tested review gate keeps work blocked until its modeled findings are cleared, and blocks again when verification fails.",
+  "evidence_label": "Three isolated control-plane tests passed; synthetic fixtures, real HTTP handlers, in-memory state.",
+  "passed_tests": 3,
+  "failed_tests": 0,
+  "skipped_tests": 0,
+  "not_a_production_trace": true,
+  "workflow_assertions": [
+    {
+      "stage": "Review request",
+      "result": "One dispatched reviewer slot and mailbox reference are created."
+    },
+    {
+      "stage": "Repeated mailbox read",
+      "result": "The repeated read adds no duplicate message-received event."
+    },
+    {
+      "stage": "Open high-severity finding",
+      "blocked": true,
+      "allowed": false,
+      "finding_blockers": 1
+    },
+    {
+      "stage": "Route finding for a fix",
+      "blocked": true,
+      "finding_status": "open",
+      "keeps_in_review": true
+    },
+    {
+      "stage": "Mark finding fixed",
+      "blocked": false,
+      "allowed": true,
+      "finding_blockers": 0
+    },
+    {
+      "stage": "Ready for operator",
+      "allowed": true,
+      "verification_status": "ready_for_operator"
+    },
+    {
+      "stage": "Mark final verification failed",
+      "blocked": true,
+      "verification_status": "failed"
+    }
+  ],
+  "supporting_assertions": [
+    {
+      "case": "Bare review approval with no rationale, references or finding",
+      "result": "HTTP 400"
+    },
+    {
+      "case": "Update another task finding through the wrong task URL",
+      "result": "HTTP 404; finding remains open"
+    },
+    {
+      "case": "Update through the finding own task URL",
+      "result": "2xx positive control succeeds"
+    }
+  ],
+  "claim_limits": [
+    "allowed=true means no modeled blocking finding or blocked/failed verification status; it is not task completion or proof of correctness.",
+    "The illustrated stages summarize assertions across existing isolated tests, not a captured single production session.",
+    "No production database, real agent session, provider behavior, external task write or deployment was exercised.",
+    "Resource-to-task binding is covered; the empty-membership scope fixture does not prove production authentication.",
+    "An evidence reference, rationale or finding satisfies the anti-rubber-stamp shape check; truth and quality of that evidence remain unproved.",
+    "Only open high/critical findings are blocking under the finding rule; candidate findings have a separate optional gate not exercised here.",
+    "Routing records a finding-routing event; it does not execute a fix or establish that an agent performed one.",
+    "The supporting task-scope check includes a successful in-scope update; it is not only a rejection test.",
+    "The published summary contains selected safe assertions. Application source and the full private verification receipt are not published here."
+  ]
+}

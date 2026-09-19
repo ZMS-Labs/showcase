@@ -1,0 +1,28 @@
+{
+  "recorded_on": "2026-09-19",
+  "kind": "Recorded publication task, reconstructed from public Git objects and the live deployment receipt",
+  "method_used": "Did It Land",
+  "task": "Check whether the published showcase matches its intended files",
+  "before": {
+    "commit": "5668cd4ef540c42874119e790a6393e8e1c3ac12",
+    "payload_files": 28,
+    "manifest_differences": 14
+  },
+  "cause": "The working copy included CRLF text. Existing Git attributes normalized committed text to LF; the original manifest described the working bytes.",
+  "correction": {
+    "commit": "f90c7ee21d7f5c53f93e4ca1009f99c6e0d39f3b",
+    "payload_files": 28,
+    "manifest_differences": 0
+  },
+  "consumer_observation": {
+    "deployed_commit": "0e6e78300931c5bc3eaba9eaafdc944a410f54df",
+    "http_payloads_matching_committed_hashes": 28,
+    "date": "2026-09-19"
+  },
+  "reproduce": "python scripts/replay_manifest_case.py",
+  "limits": [
+    "This is one observed task, not a controlled comparison or a claim that the skill caused a performance improvement.",
+    "The interactive page explains saved observations; it does not execute an agent.",
+    "The historical counts describe the original publication, not the expanding current site."
+  ]
+}

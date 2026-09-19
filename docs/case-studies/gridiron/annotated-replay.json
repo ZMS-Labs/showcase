@@ -1,0 +1,28 @@
+{
+  "kind": "Annotated fixture oracle paired with a recorded matching replay; not frame-by-frame live telemetry",
+  "source_archive_sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658",
+  "recorded_on": "2026-09-19",
+  "events": [
+    {
+      "event_id": "p1",
+      "expect": "CONFIRMED",
+      "description": "Run for positive yards"
+    },
+    {
+      "event_id": "p2",
+      "expect": "VOIDED",
+      "description": "Flagged play; no-play and no score change"
+    },
+    {
+      "event_id": "p3",
+      "expect": "CONFIRMED",
+      "description": "Confirmed touchdown"
+    }
+  ],
+  "observed_terminal_statuses_match_oracle": true,
+  "observed_utterances": [
+    "Touchdown!"
+  ],
+  "canonical_ledger_sha256": "3229305cb6a0f7ac6e7d6e9f7b27ca04b791cb9e2ca65a2e44c6eb0162c0d4bb",
+  "limits": "One synthetic fixture. Sequence is fixture order, not latency measurement. No live gameplay, perception accuracy, speech or model behavior is demonstrated."
+}

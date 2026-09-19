@@ -2,18 +2,44 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import json
+import argparse
+from contextlib import contextmanager
+from functools import partial
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+from threading import Thread
 from playwright.sync_api import sync_playwright
 root=Path(__file__).resolve().parents[1]/'docs'
+parser=argparse.ArgumentParser(description='Verify the static portfolio and its presentation controls.')
+parser.add_argument('--base-url', help='Optionally verify an already deployed copy, including its media.')
+parser.add_argument('--screenshots', type=Path, help='Optional inspection images outside the published docs directory.')
+args=parser.parse_args()
+if args.screenshots:
+ assert not args.screenshots.resolve().is_relative_to(root.resolve()), 'Screenshots must stay outside the site payload'
+ args.screenshots.mkdir(parents=True,exist_ok=True)
+def destination(path):
+ return args.base_url.rstrip('/')+'/'+path.relative_to(root).as_posix() if args.base_url else path.as_uri()
+@contextmanager
+def media_server():
+ if args.base_url:
+  yield args.base_url.rstrip('/')+'/'
+  return
+ class QuietHandler(SimpleHTTPRequestHandler):
+  def log_message(self,*args): pass
+ server=ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(root)))
+ thread=Thread(target=server.serve_forever,daemon=True);thread.start()
+ try:yield f'http://127.0.0.1:{server.server_port}/'
+ finally:server.shutdown();server.server_close();thread.join()
+
 
 class Links(HTMLParser):
  def __init__(self):super().__init__();self.refs=[];self.ids=set()
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if 'id' in a:self.ids.add(a['id'])
-  for key in ['href','src']:
+  for key in ['href','src','poster']:
    if a.get(key):self.refs.append((tag,key,a[key]))
 errors=[];remote=[];checks=[];missing=[]
-pages=[root/'index.html',*sorted(root.glob('case-studies/*/index.html')),root/'evidence.html',root/'case-studies/steno/recorded-checks/index.html']
+pages=sorted(root.rglob('*.html'))
 for path in pages:
  parsed=Links();parsed.feed(path.read_text(encoding='utf-8-sig'))
  for tag,attr,url in parsed.refs:
@@ -28,10 +54,10 @@ assert not missing,missing
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True)
  for width,height in [(1440,1050),(390,844),(320,700)]:
-  context=browser.new_context(viewport={'width':width,'height':height},device_scale_factor=1,offline=True,reduced_motion='reduce')
-  page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('https://','http://')) else None)
+  context=browser.new_context(viewport={'width':width,'height':height},device_scale_factor=1,offline=not bool(args.base_url),reduced_motion='reduce')
+  page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('https://','http://')) and not (args.base_url and r.url.startswith(args.base_url.rstrip('/')+'/')) else None)
   for path in pages:
-   page.goto(path.as_uri(),wait_until='load');page.evaluate('document.fonts.ready')
+   page.goto(destination(path),wait_until='load');page.evaluate('document.fonts.ready')
    assert page.locator('h1').count()==1,str(path)
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth+1'),(path.name,width,'overflow')
    for img in page.locator('img[src]').all():
@@ -39,6 +65,30 @@ with sync_playwright() as p:
     assert img.evaluate('(e)=>e.complete&&e.naturalWidth>0'),(path,img.get_attribute('src'))
    page.evaluate('window.scrollTo(0,0)')
    checks.append({'page':path.relative_to(root).as_posix(),'viewport':[width,height],'images':'loaded','horizontal_overflow':False})
+   for walk in page.locator('[data-walkthrough]').all():
+    steps=walk.locator('[data-walk-step]');n=steps.count()
+    previous=walk.locator('[data-walk-previous]');next_button=walk.locator('[data-walk-next]')
+    assert previous.is_disabled() and steps.nth(0).is_visible()
+    for index in range(1,n):
+     next_button.focus();page.keyboard.press('Enter')
+     assert steps.nth(index).is_visible()
+     assert walk.locator('[data-walk-step]:visible').count()==1
+     assert walk.locator('[data-walk-status]').inner_text()==f'Step {index+1} of {n}'
+     assert steps.nth(index).locator('h3').evaluate('(e)=>e===document.activeElement')
+    assert next_button.is_disabled()
+    for index in range(n-2,-1,-1):
+     previous.click();assert steps.nth(index).is_visible()
+    assert previous.is_disabled()
+   for transcript in page.locator('details.transcript').all():
+    transcript.locator('summary').click();assert transcript.locator('li').first.is_visible()
+    transcript.locator('summary').click()
+   if args.screenshots and width in [1440,390]:
+    page.evaluate('window.scrollTo(0,0)')
+    name=path.relative_to(root).as_posix().replace('/','-')
+    page.screenshot(path=str(args.screenshots/f'{width}-{name}.png'))
+    if page.locator('#walkthrough').count():
+     page.locator('#walkthrough').scroll_into_view_if_needed()
+     page.screenshot(path=str(args.screenshots/f'{width}-{name}-walkthrough.png'))
    if path.parent.name=='epistemic-skills':
     page.get_by_role('button',name='Verify a change',exact=True).click();assert page.locator('#method-name').inner_text()=='Did It Land'
     b=page.get_by_role('button',name='Examine a decision',exact=True);b.focus();page.keyboard.press('Enter');assert page.locator('#method-name').inner_text()=='Perspective / Gauntlet';assert b.get_attribute('aria-pressed')=='true'
@@ -57,9 +107,46 @@ with sync_playwright() as p:
     page.get_by_role('button',name='Proposed edits',exact=True).click();assert page.locator('#finding-count').inner_text()=='0'
     page.get_by_role('button',name='Initial draft',exact=True).click();assert page.locator('#finding-count').inner_text()=='2'
   context.close()
+ # Without JavaScript, all five guided sequences remain readable.
+ nojs=browser.new_context(java_script_enabled=False,offline=not bool(args.base_url))
+ for path in root.glob('case-studies/*/index.html'):
+  page=nojs.new_page();page.goto(destination(path))
+  assert page.locator('[data-walk-step]').count()>0
+  for step in page.locator('[data-walk-step]').all():assert step.is_visible()
+  assert not page.locator('[data-walk-controls]').is_visible()
+  page.close()
+ nojs.close()
+ # Text tracks require HTTP; serve the static files temporarily for a same-origin media check.
+ with media_server() as media_base:
+  media=browser.new_context();page=media.new_page()
+  page.on('pageerror',lambda e:errors.append(str(e)))
+  page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('http://','https://')) and not r.url.startswith(media_base) else None)
+  for slug,expected_duration,expected_width,cues in [('steno',37.12,1760,6),('krewcible',36.44,1600,11)]:
+   page.goto(media_base+f'case-studies/{slug}/index.html',wait_until='load')
+   page.locator('video').scroll_into_view_if_needed()
+   page.wait_for_function('document.querySelector("video").readyState >= 1')
+   page.wait_for_function('document.querySelector("track").track.cues?.length > 0')
+   data=page.locator('video').evaluate('(v)=>({duration:v.duration,width:v.videoWidth,cues:v.textTracks[0].cues.length,autoplay:v.autoplay,controls:v.controls})')
+   assert abs(data['duration']-expected_duration)<.1 and data['width']==expected_width,(slug,data)
+   assert data['cues']==cues and data['controls'] and not data['autoplay'],(slug,data)
+   if not args.base_url:
+    # Python's temporary server does not implement byte ranges. Buffer locally before seeking;
+    # the deployed check retains metadata preload and exercises the actual host's seek behavior.
+    page.locator('video').evaluate('(v)=>{v.preload="auto";v.load();}')
+    page.wait_for_function('(()=>{let v=document.querySelector("video");return v.buffered.length&&v.buffered.end(v.buffered.length-1)>=v.duration-.1})()')
+   page.locator('video').evaluate('(v)=>{v.currentTime=v.duration-2;}')
+   page.wait_for_function('document.querySelector("video").currentTime > 30 && !document.querySelector("video").seeking')
+   page.locator('video').evaluate('(v)=>v.play()')
+   page.wait_for_function('!document.querySelector("video").paused && document.querySelector("video").readyState >= 2')
+   page.wait_for_function('(()=>{let v=document.querySelector("video");return v.currentTime>v.duration-1.5})()')
+   page.locator('video').evaluate('(v)=>new Promise(resolve=>v.requestVideoFrameCallback(resolve))')
+   if args.screenshots:
+    page.locator('video').scroll_into_view_if_needed();page.screenshot(path=str(args.screenshots/f'{slug}-video-end.png'))
+   page.locator('video').evaluate('(v)=>v.pause()')
+  media.close()
  browser.close()
 assert not errors,errors
 assert not remote,remote
 receipt={'scope':'Static portfolio presentation and controls; not product acceptance','pages':checks,'local_links':'passed','javascript_errors':errors,'external_requests':remote,'interactions':'method selection, measurement boundaries, galleries, full-resolution target synchronization, dialog close/focus, recorded linter replay passed','limitations':'No full assistive-technology certification; authentic product rendering receipts are separate.'}
 
-print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))
+print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'existing controls, five keyboard walkthroughs, no-JS fallback, transcripts and two HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))
