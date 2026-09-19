@@ -1,0 +1,22 @@
+{
+  "prepared": "2026-09-19",
+  "source_revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+  "source_branch": "map-first-experiment",
+  "source_not_on_default_main": true,
+  "artifact": "Original Stratus challenge/comparison prototype with synthetic preview",
+  "appearance": "Original UI and fixture, inside a labeled capture frame; game terrain and item/building artwork omitted, external fonts replaced by existing local fallbacks. Original terrain credit and warning remain visible.",
+  "observed": [
+    "Four original interface states rendered",
+    "Genuine 33.08-second navigation recording; initialization trimmed, no internal cuts or speed changes",
+    "Challenge inspection, built-in preview, fixture-event advancement, factory camera, older revision and comparison",
+    "Zero page JavaScript errors; backend requests intercepted, no external requests forwarded"
+  ],
+  "source_preserved": "Four product source files, the existing fixture and sixteen design-system files matched their source hashes.",
+  "claim_boundary": "All model names, geometry, actions, rates and apparent game-measured results in this interface study are synthetic. Rectangles and routes do not establish valid game placement, connections or production.",
+  "not_established": [
+    "A game run, backend campaign or model contest",
+    "Arbitrary model selection or in-game arrival",
+    "Whole-platform readiness, causal repair, general factory optimality or autonomous progression"
+  ],
+  "separate_evidence": "measurement-case.json describes a historical September 9 game-observation case, not this interface fixture."
+}

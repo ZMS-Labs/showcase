@@ -142,7 +142,7 @@ with sync_playwright() as p:
   media=browser.new_context();page=media.new_page()
   page.on('pageerror',lambda e:errors.append(str(e)))
   page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('http://','https://')) and not r.url.startswith(media_base) else None)
-  for slug,expected_duration,expected_width,cues in [('steno',37.12,1760,6),('krewcible',36.44,1600,11)]:
+  for slug,expected_duration,expected_width,cues in [('steno',37.12,1760,6),('krewcible',36.44,1600,11),('neuraxic',34.48,1440,7),('savebench',33.08,1600,9)]:
    page.goto(media_base+f'case-studies/{slug}/index.html',wait_until='load')
    page.locator('video').scroll_into_view_if_needed()
    page.wait_for_function('document.querySelector("video").readyState >= 1')
@@ -170,4 +170,4 @@ assert not errors,errors
 assert not remote,remote
 receipt={'scope':'Static portfolio presentation and controls; not product acceptance','pages':checks,'local_links':'passed','javascript_errors':errors,'external_requests':remote,'interactions':'method selection, measurement boundaries, galleries, full-resolution target synchronization, dialog close/focus, recorded linter replay passed','limitations':'No full assistive-technology certification; authentic product rendering receipts are separate.'}
 
-print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'existing controls, all keyboard walkthroughs, no-JS fallback, transcripts and two HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))
+print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'existing controls, all keyboard walkthroughs, no-JS fallback, transcripts and four HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))
