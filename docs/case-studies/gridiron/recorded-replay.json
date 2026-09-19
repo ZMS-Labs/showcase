@@ -1,0 +1,36 @@
+{
+  "recorded_on": "2026-09-19",
+  "scope": "Two local CLI runs of one synthetic fixture. No live game or model.",
+  "fixture": "drive-scoring-void",
+  "events": {
+    "observed": 3,
+    "expected": 3,
+    "duplicate_event_rate": 0,
+    "status_match": true,
+    "count_match": true,
+    "oracle_present": true,
+    "label": "VERIFIED"
+  },
+  "perception": {
+    "field_accuracy": null,
+    "unknown_state_rate": null,
+    "label": "NOT_MEASURED",
+    "reason": "Replay consumes synthetic observations; OCR accuracy is not measured."
+  },
+  "commentary": {
+    "unsupported_name_count": null,
+    "unsupported_number_count": null,
+    "utterances": [
+      "Touchdown!"
+    ],
+    "utterance_count": 1,
+    "label": "NOT_MEASURED",
+    "reason": "No independent commentary accuracy evaluator was run."
+  },
+  "labels": {
+    "synthetic_replay": "VERIFIED",
+    "madden_live": "UNVERIFIED",
+    "franchise_madden27": "UNVERIFIED"
+  },
+  "canonical_ledger_sha256": "3229305cb6a0f7ac6e7d6e9f7b27ca04b791cb9e2ca65a2e44c6eb0162c0d4bb"
+}

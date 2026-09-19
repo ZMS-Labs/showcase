@@ -1,0 +1,147 @@
+{
+  "schema": "static-portfolio-export-v1",
+  "status": "Approved public showcase source",
+  "scope": "Static site payload; excludes the two manifests and source-only MAINTAINING.md and epistemic-skills.md",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/fonts/Archivo.ttf",
+      "bytes": 658596,
+      "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "bytes": 4387,
+      "sha256": "1778201b7bd33e8c08a2eda32a4ad2f69bc38ced9731b01cc3fc47f268c8ef3c"
+    },
+    {
+      "path": "assets/illustrations/epistemic-investigate-compare-verify.png",
+      "bytes": 2112766,
+      "sha256": "5483d20a3df808b24fd47eac9d87bf9b647cdbd6f250495dc36325d080de9e01"
+    },
+    {
+      "path": "assets/illustrations/gridiron-event-to-commentary.png",
+      "bytes": 2069203,
+      "sha256": "3b3809975733620f670bd82f802efee4e5af7d0f8fac80ec29e8b726e24cf435"
+    },
+    {
+      "path": "assets/krewcible/comparison.png",
+      "bytes": 270661,
+      "sha256": "ad850c2bdb70e436aef0a5615b2a0e937bf8047926faba0501461347b30e7e0b"
+    },
+    {
+      "path": "assets/krewcible/workspace.png",
+      "bytes": 295800,
+      "sha256": "271b368e84c15dc1319565e50026a1054adb31eec1afd95307d6e06cc04ff0bc"
+    },
+    {
+      "path": "assets/manifest.json",
+      "bytes": 3867,
+      "sha256": "29b37284dc1367595c1c5e0e6e2f86f698552cc56177fac954149b229c99967d"
+    },
+    {
+      "path": "assets/steno/matter-map.png",
+      "bytes": 658350,
+      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465"
+    },
+    {
+      "path": "assets/steno/workstation.png",
+      "bytes": 626355,
+      "sha256": "0cfe26065e406795fa2fa0de1188c2c45698df9840f9b35cc391a5d6b2e56ff1"
+    },
+    {
+      "path": "case-studies/epistemic-skills/index.html",
+      "bytes": 7536,
+      "sha256": "0543b153a1e019a4cc23a4949db8d78c84a23431688310636a7a128463d3af35"
+    },
+    {
+      "path": "case-studies/gridiron/index.html",
+      "bytes": 7442,
+      "sha256": "59a66a45030b557ffa6d23ff292d9ad3a63c1d336339f6b2e1db1ee24acffc0c"
+    },
+    {
+      "path": "case-studies/gridiron/recorded-replay.json",
+      "bytes": 1068,
+      "sha256": "0b118ad566343392b864f03217709ff0300a075913095d60a16cc5e6aa8af75f"
+    },
+    {
+      "path": "case-studies/krewcible/index.html",
+      "bytes": 6874,
+      "sha256": "3a21e237b983820a8286f2d81f9d3bacdb9b3d975f777890d81076f27b98434a"
+    },
+    {
+      "path": "case-studies/steno/index.html",
+      "bytes": 8379,
+      "sha256": "2c13aa07756d899e9faf53d02dd6d8b5b322c7e4fbdf2eb8776415d6753855e4"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/case-data.js",
+      "bytes": 3972,
+      "sha256": "ddea7444b736072aade1659c3c256ae418e8b6a00428ba514eb7c595f826ae31"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/case-study.js",
+      "bytes": 3480,
+      "sha256": "f71b459d4ce32b1fe39b2d42e9ca1e1a8089f0204394e05a3eec3f6c9958f6ab"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
+      "bytes": 6350,
+      "sha256": "fd547b56824b5b9787bc0ea4020bebd55ff1aee016fe1cb9c4fbf93abd1149c2"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/evidence/verification.json",
+      "bytes": 1838,
+      "sha256": "faa81dfd57fdf64197f974db17e09d19e007c57b53e3430cd0e946016de0e8a2"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/index.html",
+      "bytes": 10033,
+      "sha256": "21795369ad7a4117fc77e23851788fc724bc310264f7926e09da1858266e01e4"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/styles.css",
+      "bytes": 13900,
+      "sha256": "410174e9d2ca45068e5091656f74330f42233364aaca9f51e2b8e55c36c34615"
+    },
+    {
+      "path": "downloads/gridiron-research-source.zip",
+      "bytes": 492351,
+      "sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658"
+    },
+    {
+      "path": "evidence.html",
+      "bytes": 5697,
+      "sha256": "a59a8daccf3a536777a3a16dde028eb6d34315bc29e429cf4254668108fb2146"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7461,
+      "sha256": "adfe4dacd51675c3259a247cfb404c9f60fb47afd4b9fe070306915fbcc5e39a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1874,
+      "sha256": "f0f56a68081ba2e60bf31d6827577db65477f8273af954b94c13e39f35345c6e"
+    },
+    {
+      "path": "site.css",
+      "bytes": 16481,
+      "sha256": "4b95fa413ff9e6d94c138ca495cad45c7c3752be24fa93d5966afad805ee858a"
+    },
+    {
+      "path": "site.js",
+      "bytes": 4048,
+      "sha256": "02277f83d8119285b94f36aa6e3f430fd7246cc7db14a199137efaf950b8f689"
+    }
+  ]
+}
