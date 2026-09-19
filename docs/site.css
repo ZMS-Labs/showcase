@@ -78,3 +78,7 @@
 .specimen-section .switcher{flex-wrap:wrap;max-width:100%}.specimen-section .switcher button{white-space:normal}.specimen-section>.case-block{border-bottom:0;padding-bottom:0}
 
 .case-index>article:last-child:nth-child(odd){grid-column:1 / -1}
+
+/* Authentic previews lead the two expanded product studies. Preserve complete frames. */
+.case-index .entry-preview{display:block;width:100%;margin:0 0 22px;border-radius:7px;overflow:hidden;background:#101a18}.case-index .entry-preview img{display:block;width:100%;height:220px;object-fit:contain}.product-study .specimen-frame{background:#101a18}.product-study .design-screen{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:720px){.case-index .entry-preview img{height:auto;aspect-ratio:1.65;object-fit:contain}}

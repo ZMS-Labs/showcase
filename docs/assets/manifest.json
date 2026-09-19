@@ -196,6 +196,130 @@
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
       "source_revision": "30c5803a64595b756c251d089e14da3843189064",
       "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance."
+    },
+    {
+      "path": "assets/neuraxic/library.png",
+      "sha256": "82a7285ff9c779ea25403b98b28ad3f3e625bb408f8b47e8fc733e8d66a7bc3b",
+      "bytes": 130673,
+      "kind": "Authentic current interface rendered with synthetic API fixtures",
+      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
+      "claim_boundary": "The existing reduced-motion Library view presents worlds as tomes. Covers are the application’s procedural SVG placeholders, not model-generated depictions. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
+      "dimensions": [
+        1180,
+        472
+      ]
+    },
+    {
+      "path": "assets/neuraxic/prose.png",
+      "sha256": "6e55e72e670932cf6abfde214149866756dc9171f450a0c6277f80c1faafdaea",
+      "bytes": 72608,
+      "kind": "Authentic current interface rendered with synthetic API fixtures",
+      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
+      "claim_boundary": "The same focus exposes prose and a margin of rule, name and quantity suggestions produced by existing deterministic extraction code. No offer was accepted. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
+      "dimensions": [
+        1180,
+        968
+      ]
+    },
+    {
+      "path": "assets/neuraxic/neighborhood.png",
+      "sha256": "1e98fcf7b83d679e5a4bcfe1f08ff6c6d91961d518c21b1bee0a8dec9838764d",
+      "bytes": 33511,
+      "kind": "Authentic current interface rendered with synthetic API fixtures",
+      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
+      "claim_boundary": "The Neighborhood facet arranges the supplied relationships deterministically around Brine Lantern. This is a fixture-fed UI view, not a detector result. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
+      "dimensions": [
+        1180,
+        731
+      ]
+    },
+    {
+      "path": "assets/neuraxic/claims.png",
+      "sha256": "974ec7bb5ce55fc1ca9c75e3ae4af649c2d12606675c164fdbff94a082fb8897",
+      "bytes": 36657,
+      "kind": "Authentic current interface rendered with synthetic API fixtures",
+      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
+      "claim_boundary": "Gold seals mark fixture claims labelled canon; the proposed exception retains its open seal and Seal control. No promotion or persistence was performed. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
+      "dimensions": [
+        1180,
+        581
+      ]
+    },
+    {
+      "path": "assets/neuraxic/neuraxic-navigation.webm",
+      "sha256": "4d8a732737d7b77fc8139ba1758be240e8d14d5dcdf0bc426d50b24d5b752d48",
+      "bytes": 1727042,
+      "kind": "Authentic page-only navigation recording",
+      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
+      "claim_boundary": "A genuine navigation recording through the current Neuraxic React shell, using new synthetic API fixtures. Library, tome, claims, prose, neighborhood and history views; no save, promotion, detector or model call. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
+      "dimensions": [
+        1440,
+        1000
+      ],
+      "duration_seconds": 34.48,
+      "audio_streams": 0
+    },
+    {
+      "path": "assets/savebench/savebench-challenge.png",
+      "sha256": "4e65983018b93328e57dedd24f5bcd147dfceed490b2c38e85585479b4e907ef",
+      "bytes": 105023,
+      "kind": "Original interface prototype with synthetic fixture and explicitly omitted game artwork",
+      "source_revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+      "claim_boundary": "A declared challenge becomes shared criteria before the fixture starts. Two model slots and four criteria demonstrate the intended setup; this is not arbitrary model selection or a live contest.",
+      "dimensions": [
+        1600,
+        438
+      ]
+    },
+    {
+      "path": "assets/savebench/savebench-comparison.png",
+      "sha256": "ca70f9a709081fbd8e20c1833e3aaf80757327f899c2f69ad26d49f5561a1b0a",
+      "bytes": 318792,
+      "kind": "Original interface prototype with synthetic fixture and explicitly omitted game artwork",
+      "source_revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+      "claim_boundary": "A2 and B1 meet the sample thresholds through different arrangements. The comparison separates measurement, design observation, model notes and unverified questions; it does not declare a universal winner.",
+      "dimensions": [
+        1600,
+        1100
+      ]
+    },
+    {
+      "path": "assets/savebench/savebench-design-workflow.mp4",
+      "sha256": "17c1f8295099cb5b0915e23c8137be72df1f3f7ca6213cf80747bf038d07ea2f",
+      "bytes": 3128331,
+      "kind": "Authentic page-only prototype navigation recording",
+      "source_revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+      "claim_boundary": "Actual prototype navigation, using synthetic fixture events. Initialization trimmed; no game, model or backend trial ran.",
+      "dimensions": [
+        1600,
+        1100
+      ],
+      "duration_seconds": 33.08,
+      "audio_streams": 0
+    },
+    {
+      "path": "assets/savebench/savebench-revision.png",
+      "sha256": "fd4b8fe9b9eca13e8917d3b741647f5bcae22ebb87d2700d4ad44679ee13ea75",
+      "bytes": 322778,
+      "kind": "Original interface prototype with synthetic fixture and explicitly omitted game artwork",
+      "source_revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+      "claim_boundary": "Selecting older A1 restores its diagram and retained result. A2’s later fixture success does not overwrite the earlier shortfall. These displayed measurements are synthetic.",
+      "dimensions": [
+        1600,
+        1100
+      ]
+    },
+    {
+      "path": "assets/savebench/savebench-workspace.png",
+      "sha256": "600dfacfa70562bdf58a299c63856e190c19c068db93ac77ae5428abb3435817",
+      "bytes": 350343,
+      "kind": "Original interface prototype with synthetic fixture and explicitly omitted game artwork",
+      "source_revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+      "claim_boundary": "The selected A1 factory stays beside its public plan, revision activity and synthetic criterion result. Game artwork is omitted; all layouts, rates and status labels are fixture content.",
+      "dimensions": [
+        1600,
+        1100
+      ]
     }
   ]
 }

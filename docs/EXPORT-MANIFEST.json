@@ -75,8 +75,68 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 9679,
-      "sha256": "6628d09d8fc7d2dda79957210b93c2d55303d22dcec093b1692614c1e43f885c"
+      "bytes": 16365,
+      "sha256": "6a6be8ce84591640e0f10215f57306b3c659ce1310e97c2deaabfccbf767915b"
+    },
+    {
+      "path": "assets/neuraxic/claims.png",
+      "bytes": 36657,
+      "sha256": "974ec7bb5ce55fc1ca9c75e3ae4af649c2d12606675c164fdbff94a082fb8897"
+    },
+    {
+      "path": "assets/neuraxic/library.png",
+      "bytes": 130673,
+      "sha256": "82a7285ff9c779ea25403b98b28ad3f3e625bb408f8b47e8fc733e8d66a7bc3b"
+    },
+    {
+      "path": "assets/neuraxic/neighborhood.png",
+      "bytes": 33511,
+      "sha256": "1e98fcf7b83d679e5a4bcfe1f08ff6c6d91961d518c21b1bee0a8dec9838764d"
+    },
+    {
+      "path": "assets/neuraxic/neuraxic-navigation.en.vtt",
+      "bytes": 732,
+      "sha256": "ad372e6d6158931e43fc92c0676b71c774180f9dfffbc4eaa8b5282ca0008631"
+    },
+    {
+      "path": "assets/neuraxic/neuraxic-navigation.webm",
+      "bytes": 1727042,
+      "sha256": "4d8a732737d7b77fc8139ba1758be240e8d14d5dcdf0bc426d50b24d5b752d48"
+    },
+    {
+      "path": "assets/neuraxic/prose.png",
+      "bytes": 72608,
+      "sha256": "6e55e72e670932cf6abfde214149866756dc9171f450a0c6277f80c1faafdaea"
+    },
+    {
+      "path": "assets/savebench/savebench-challenge.png",
+      "bytes": 105023,
+      "sha256": "4e65983018b93328e57dedd24f5bcd147dfceed490b2c38e85585479b4e907ef"
+    },
+    {
+      "path": "assets/savebench/savebench-comparison.png",
+      "bytes": 318792,
+      "sha256": "ca70f9a709081fbd8e20c1833e3aaf80757327f899c2f69ad26d49f5561a1b0a"
+    },
+    {
+      "path": "assets/savebench/savebench-design-workflow.mp4",
+      "bytes": 3128331,
+      "sha256": "17c1f8295099cb5b0915e23c8137be72df1f3f7ca6213cf80747bf038d07ea2f"
+    },
+    {
+      "path": "assets/savebench/savebench-design-workflow.vtt",
+      "bytes": 1468,
+      "sha256": "f7e8d3f482771132f0315459e5558074d82299a656e9152ef7269a587e4f49c5"
+    },
+    {
+      "path": "assets/savebench/savebench-revision.png",
+      "bytes": 322778,
+      "sha256": "fd4b8fe9b9eca13e8917d3b741647f5bcae22ebb87d2700d4ad44679ee13ea75"
+    },
+    {
+      "path": "assets/savebench/savebench-workspace.png",
+      "bytes": 350343,
+      "sha256": "600dfacfa70562bdf58a299c63856e190c19c068db93ac77ae5428abb3435817"
     },
     {
       "path": "assets/steno/hallmark-assay-vocabulary.png",
@@ -175,8 +235,13 @@
     },
     {
       "path": "case-studies/neuraxic/index.html",
-      "bytes": 14957,
-      "sha256": "91ce80f8676353574b7637077333bfbb7207b81023e11aee0d183ddaeb6dfd95"
+      "bytes": 26781,
+      "sha256": "8584e671ceb54f30bd5a3778139b5f923eccd1799e2ede2410244f5cd293a9bd"
+    },
+    {
+      "path": "case-studies/neuraxic/interface-study.json",
+      "bytes": 1319,
+      "sha256": "d9caa8ed1451d2d6ccc2370c457fa217b643267bcc435561f12d791b0f00ce54"
     },
     {
       "path": "case-studies/poiesis/artifact-custody-case.json",
@@ -190,8 +255,13 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 17792,
-      "sha256": "4b70504e9e1f3820c85ed732d945d432d67db4524f0bb159b9dae893ec440bf9"
+      "bytes": 29651,
+      "sha256": "8e913448e0d028e77491d0d52c027dbc66112af4c6e775dafb0eb60f9b81f8d6"
+    },
+    {
+      "path": "case-studies/savebench/interface-study.json",
+      "bytes": 1614,
+      "sha256": "85c1e3c5fadccde4e009963be6bfe1c13d163fcafd751edf9be7ea9e72914991"
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
@@ -255,13 +325,13 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 9833,
-      "sha256": "cae741efb9808b841545ba16441a9ee69065531281ca1cc010d20d2cef30452a"
+      "bytes": 10480,
+      "sha256": "3b5c2be2b0b62a9c1a4d942499350a100985e78ea0380cc20adaab5a92e12e57"
     },
     {
       "path": "index.html",
-      "bytes": 11402,
-      "sha256": "66063c718d822dda8bc0058ee6d2610df26ab61dab4ae30c4aa15849da870d61"
+      "bytes": 11970,
+      "sha256": "4feba794e9fbab32a78ab6a7d02d852b88fab988c096189e3becdfb85a73d641"
     },
     {
       "path": "LICENSE",
@@ -270,8 +340,8 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 7035,
-      "sha256": "e1cef736489198facab8cbbe556702fba1203bae9a47067c0b8a2e393f94456a"
+      "bytes": 7016,
+      "sha256": "c8a65b7bd2d876027593d51b8fc7b235512fa164de07388502b827e725252f1e"
     },
     {
       "path": "README.md",
@@ -280,8 +350,8 @@
     },
     {
       "path": "site.css",
-      "bytes": 25279,
-      "sha256": "0e245557ee0a966cf97923822e328f964f657319a5ad2e47c6a4e8e16e1defd7"
+      "bytes": 25822,
+      "sha256": "cb3d642681ac249863e5ea03889a0081ffefd9977da23d2d15c4ff3f24b6bb7a"
     },
     {
       "path": "site.js",
