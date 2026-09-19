@@ -27,3 +27,13 @@ The Gridiron illustration relates a field, an event record, and commentary. The 
 The Steno clause illustration ends with questions for human review, not a clearance or automatic legal decision. Krewcible's heading describes visible choices and changes, not persistent history or generated media. The [evidence page](docs/evidence.html) and [asset manifest](docs/assets/manifest.json) preserve public-safe provenance and scope.
 
 Desktop and narrow layouts were inspected, with full-resolution galleries for product images. Controls support keyboard activation, visible focus, and dialog focus return. The fixed light palette is deliberate; the GitHub masthead remains legible against either surrounding theme. Automated rendering checks supplement visual inspection and do not certify taste, semantic truth, or full accessibility compliance.
+
+## Guided depth and authentic motion
+
+Each featured case adds a contribution account, one concrete decision story and a short sequence of inspectable observations. Guided steps progressively reveal existing page text; with JavaScript disabled every step remains readable. The additional navigation distinguishes featured cases, supporting work and authorship.
+
+Steno and Krewcible have silent, page-only recordings of actual prototype/component interactions using fictional content. Native playback, descriptive tracks, transcripts and full-resolution stills preserve access to dense interfaces. No generated frames substitute for product operation. Steno's authored prototype questions remain distinct from its separate component checks. Krewcible's composition panel is study instrumentation for the existing deterministic function.
+
+Fleet's editable HTML diagram and walkthrough describe assertions from three isolated tests. The return to blocked status is explicit. All states use words as well as color; eligibility has no success tick or completion label. The home diagram is explanatory evidence navigation, not a screenshot of a running console.
+
+The Epistemic Skills case uses a historical publication incident with a Git-object reproduction script. Counts are explicitly historical. The Gridiron annotation follows the fixture oracle without inventing timing or event-level speech. These choices add substance while keeping the original product captures and illustration direction intact.

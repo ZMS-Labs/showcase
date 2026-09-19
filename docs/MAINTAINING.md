@@ -7,9 +7,9 @@ The repository contains the ZMS Labs portfolio and its editable static website. 
 | Source | Purpose |
 |---|---|
 | `README.md` | GitHub introduction and selected work |
-| `docs/index.html`, `site.css`, `site.js` | Website, shared presentation, and interactive controls |
-| `docs/case-studies/` | Four project studies, including Steno's separate recorded-check example |
-| `docs/evidence.html` | Evidence boundaries and attribution |
+| `docs/index.html`, `site.css`, `site.js`, `walkthroughs.js` | Website, shared presentation, and interactive controls |
+| `docs/case-studies/` | Five project studies, including Steno's separate recorded-check example |
+| `docs/about.html`, `more-work.html`, `evidence.html` | Authorship, supporting work, evidence boundaries and attribution |
 | `docs/assets/manifest.json` | Asset types, hashes, provenance, and supported claims |
 | `docs/downloads/` | Reviewed Gridiron research-source snapshot |
 | `docs/epistemic-skills.md` | Additional source-linked method case study |
@@ -36,7 +36,11 @@ python scripts/site_manifest.py --check
 git diff --check
 ```
 
-The browser check uses local files, requires no server, and exercises seven pages at desktop and two narrow widths. It checks images, local links, horizontal overflow, method selection, evidence tabs, galleries, dialogs, focus return, and the recorded check example. These checks cover the presentation; they do not certify the featured products or full accessibility conformance.
+The browser check discovers every HTML page and exercises desktop and two narrow widths. It checks images, local links, horizontal overflow, existing controls, keyboard walkthroughs, focus, no-JavaScript access and transcripts. It briefly serves the static files on loopback to check both videos, seeking, playback and descriptive tracks, then stops the server. Because that temporary Python server lacks byte-range support, its media check fully buffers the local recording before seeking; the deployed check exercises the host's actual seek behavior with metadata preload. Use `--base-url https://zms-labs.github.io/showcase/` to repeat the checks against the published copy. Optional `--screenshots <directory>` saves inspection images outside `docs/`. These checks cover the presentation; they do not certify the featured products or full accessibility conformance.
+
+The genuine Steno and Krewcible recordings have native controls, no autoplay, descriptive text tracks, selectable transcripts and synthetic content. Preserve their distinction from live product operation. Record new media provenance and inspect both pixels and metadata before replacing them.
+
+Run `python scripts/replay_manifest_case.py` in a full clone to reproduce the historical Epistemic Skills publication case. This uses public Git objects and requires no network or model. Its 28-file counts describe that historical publication.
 
 After changing site files, run `python scripts/site_manifest.py --write`, inspect the manifest diff, then run `--check`. Update the asset manifest only after reviewing the underlying changed asset. Hashes establish identity, not correctness. The manifests exclude themselves and the source-only `MAINTAINING.md` and `epistemic-skills.md` guides; their declared scope is explicit.
 
