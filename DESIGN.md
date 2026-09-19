@@ -51,3 +51,9 @@ Use original implemented artwork to explain the design investment. Fleet Orchest
 Steno's Hallmark gallery preserves the implemented assayer-stamp vocabulary, material/facet grades, four evidence jewels and custom glyphs, plus row/detail scale. Grade and supporting marks are separate in current source; an older proposed cap was removed. The specimen labels make clear that no assessment ran. Preserve the original grade words as design vocabulary without treating them as legal assurances. These current component captures remain separate from the archived workspace prototype and recorded drafting checks.
 
 Both galleries offer synchronized descriptions, alternative text, originals and keyboard-operable enlarged views. Public asset metadata records exact identity and scope; source copies, private provenance and rendering scaffolds remain outside the published payload.
+
+### Poiesis: identity and lifetime
+
+Use selectable diagrams for this service case, with no invented product UI or generated model output. The dark two-column receipt panel separates byte identity from retention; its “Hello” example is reconstructed from an existing passing assertion. The retention panel identifies an explicit purge after expiry, not an observed production scheduler. A smaller custody diagram separates encrypted queue content from the generation record's key. These are explanations of distinct test fixtures, not one purported production trace.
+
+The Vanta image-engine lineage is credited. Eight focused checks support narrow claims; hashes do not prove truth or rights, and in-memory key handling does not prove physical erasure or complete policy alignment. Preserve those boundaries when refreshing the case. The fifth additional-work card spans the row at desktop widths and remains in the normal reading order on phones.

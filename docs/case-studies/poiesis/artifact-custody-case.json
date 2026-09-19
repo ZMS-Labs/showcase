@@ -1,0 +1,53 @@
+{
+  "schema": "showcase-test-summary@1",
+  "project": "Poiesis",
+  "checked_date": "2026-09-19",
+  "source_revision": "de39639e2200b6f6600d04e16494b642a2191c14",
+  "evidence_kind": "Selected existing tests; synthetic fixtures, in-memory stores, controlled clock and stubbed transports.",
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "external_connection_attempts": 0,
+  "python": "3.11.0",
+  "tests": [
+    "tests/test_executor.py::test_a_generation_runs_through_the_real_lifted_engine",
+    "tests/test_executor.py::test_artifacts_are_fetchable_and_carry_an_expiry",
+    "tests/test_executor.py::test_run_text_with_a_sink_streams_and_settles_completed",
+    "tests/test_api.py::test_artifacts_expire_at_24h_whether_or_not_collected",
+    "tests/test_api.py::test_expiry_is_not_extended_by_never_fetching",
+    "tests/test_durable.py::test_the_plaintext_prompt_never_reaches_the_queue_at_all",
+    "tests/test_durable.py::test_shredding_the_key_makes_the_ciphertext_permanently_unreadable",
+    "tests/test_durable.py::test_a_sealed_prompt_cannot_be_moved_to_another_generation"
+  ],
+  "text_example": {
+    "bytes_utf8": "Hello",
+    "byte_length": 5,
+    "trailing_newline": false,
+    "sha256": "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969",
+    "provenance": "Reconstructed from the exact expected bytes in the passing text-executor assertion; not a new model response."
+  },
+  "artifact_retention": {
+    "configured_ttl_hours": 24,
+    "fetched_fixture_rejected_at_seconds": 86401,
+    "expired_fetch_status": 409,
+    "explicit_purge_removed": 1,
+    "never_fetched_fixture_purged_at_hours": 25,
+    "scheduler_exercised": false
+  },
+  "prompt_custody": {
+    "queue_plaintext_absent_in_test_representation": true,
+    "recorded_key_cleared_after_settlement": true,
+    "unseal_with_missing_key_rejected": true,
+    "unseal_with_wrong_generation_id_rejected": true,
+    "physical_erasure_proved": false
+  },
+  "attribution": "Image engine extracted from Vanta at source revision 1e8c379, with configuration/cancellation seams adapted; service integration developed with AI assistance.",
+  "limits": [
+    "Separate tests, not one production-job trace.",
+    "No model, GPU or live generation service invoked.",
+    "No durable-store integration, backup erasure or autonomous purge timing verified.",
+    "A hash identifies bytes, not truth, originality, rights or signed external provenance.",
+    "This is implementation evidence, not resolution of broader retention-policy alignment.",
+    "Private application source and operational data are not distributed."
+  ]
+}
