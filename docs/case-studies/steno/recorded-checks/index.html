@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="A synthetic Steno case study: trace notice, indemnity, and liability clauses through recorded local drafting checks, with human judgment retained.">
+<title>Steno — A contract, examined in context</title>
+<link rel="stylesheet" href="styles.css">
+<script src="case-data.js" defer></script>
+<script src="case-study.js" defer></script>
+</head>
+<body>
+<p style="margin:12px 5%;font-size:14px"><a href="../index.html">Back to the Steno case study</a></p>
+<a class="skip" href="#main">Skip to the case study</a>
+<header class="site-header">
+<a class="brand" href="#main" aria-label="Steno case study home"><svg aria-hidden="true" viewBox="0 0 30 32"><path d="M4 3h20v26H4zM9 10h10M9 16h7M9 22h10"/></svg><span>Steno</span><span class="brand-note">a ZMS Labs project</span></a>
+<nav aria-label="Page"><a href="#scenario">Scenario</a><a href="#review">Review</a><a href="#evidence">Evidence</a></nav>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="headline">
+<div class="hero-copy"><span class="status"><span aria-hidden="true"></span>Personal research project</span>
+<h1 id="headline">A contract makes promises.<br>How do they fit together?</h1>
+<p class="intro">A vendor incident brings notice, indemnity, and liability clauses into the same conversation. This fictional review follows their connections—and makes the limits of an automated check visible.</p>
+<a class="primary-link" href="#review">Examine the fictional agreement <span aria-hidden="true">↗</span></a>
+<p class="preview-note">Editorial visualization of recorded component checks · synthetic clauses</p>
+</div>
+<div class="hero-map" aria-label="Diagram connecting a vendor incident to notice, indemnity, liability, and open questions for human review">
+<div class="map-top"><span class="map-indicator" aria-hidden="true"></span><span>The question starts with an event</span></div>
+<div class="incident"><span class="incident-label">Fictional incident</span><strong>A service provider reports a data breach.</strong><span>Which words control the next step?</span></div>
+<div class="map-connections" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="map-clauses"><div><b>§ 6–7</b><span>Notice</span><small>Who, when, how?</small></div><div><b>§ 8</b><span>Indemnity</span><small>Which claims?</small></div><div><b>§ 9</b><span>Liability</span><small>Which limits?</small></div></div>
+<div class="map-bottom"><span class="decision-mark" aria-hidden="true">?</span><div><strong>Questions for human review</strong><span>Clause connections inform judgment; they do not clear the agreement.</span></div></div>
+</div>
+</section>
+<section class="scenario section-wrap" id="scenario" aria-labelledby="scenario-title">
+<div class="section-heading"><span class="section-number" aria-hidden="true">01</span><div><h2 id="scenario-title">Start with a situation.</h2><p>A focused question is more useful than a general request to “review the contract.”</p></div></div>
+<div class="scenario-grid"><div class="scenario-story"><h3>The fictional assignment</h3><p>A customer relies on a vendor for a service. After a reported incident, a reviewer needs to understand the agreement’s notice mechanics and how its indemnity and liability language is drafted.</p><p>The excerpts below were written for this case study. They are not adapted from a real agreement or a private negotiation.</p></div><div class="review-questions"><h3>Questions to carry into the review</h3><ol><li>Does incident notice point to the correct delivery mechanism?</li><li>Does the indemnity wording leave a consequential ambiguity?</li><li>How is the liability limit expressed?</li><li>What starts the notice clock, and which claims are covered?</li></ol></div></div>
+</section>
+<section class="review-section" id="review" aria-labelledby="review-title">
+<div class="review-heading"><div class="section-heading"><span class="section-number" aria-hidden="true">02</span><div><h2 id="review-title">Follow the wording to the finding.</h2><p>Compare two fictional drafts using results recorded from Steno’s existing local checks.</p></div></div><div class="recorded-label"><span aria-hidden="true"></span>Recorded checks, replayed here</div></div>
+<div class="case-selector" role="group" aria-label="Choose the recorded draft"><button type="button" id="draft-before" aria-pressed="true" data-case="before">Initial draft</button><button type="button" id="draft-after" aria-pressed="false" data-case="after">Proposed edits</button></div>
+<div class="change-explanation" id="change-explanation"></div>
+<div class="workbench">
+<div class="document-panel"><div class="panel-heading"><div><h3>Agreement excerpts</h3><p>Newly authored synthetic material</p></div><span class="document-tag" id="document-tag">Draft A</span></div><div id="clauses" class="clauses"></div></div>
+<aside class="findings-panel" aria-labelledby="findings-title"><div class="panel-heading"><div><h3 id="findings-title">Recorded findings</h3><p>What the selected checks returned</p></div><span class="finding-count" id="finding-count"></span></div><div id="findings" class="findings" aria-live="polite" aria-atomic="true"></div><div class="always-review"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 3 7v6c0 4 9 8 9 8s9-4 9-8V7l-9-4Z"/><path d="m8 12 3 3 5-6"/></svg><div><strong>Human review remains required.</strong><p>Still unresolved: what starts the 24-hour clock, which claims are covered, and whether the limits reflect the intended allocation of risk. An empty result from these checks does not clear the agreement.</p></div></div></aside>
+</div>
+<div class="review-footnote"><strong>What this interaction does:</strong> switches between captured results for two fixed examples with manually supplied structure. It does not call Steno, send contract text to an AI service, or determine liability.</div>
+<noscript><p class="noscript">This comparison uses a small local script. Read the same fictional clauses and recorded outputs in <a href="evidence/recorded-checks.json">the evidence file</a>.</p></noscript>
+</section>
+<section class="section-wrap rationale" aria-labelledby="rationale-title"><div class="section-heading"><span class="section-number" aria-hidden="true">03</span><div><h2 id="rationale-title">Make the reasoning inspectable.</h2><p>The engineering choices matter because the consequences belong to the reviewer.</p></div></div>
+<div class="rationale-grid"><article><span class="rationale-symbol" aria-hidden="true">§</span><h3>Keep the words in view</h3><p>Attach a finding to its clause and cross-reference. A reviewer can inspect the actual wording rather than accept a detached summary.</p></article><article><span class="rationale-symbol" aria-hidden="true">↔</span><h3>Expose the connection</h3><p>A delivery mechanism elsewhere in the agreement can change how a notice obligation is drafted. The connection is part of the evidence.</p></article><article><span class="rationale-symbol" aria-hidden="true">⋯</span><h3>Preserve the unanswered part</h3><p>Deterministic rules can detect selected patterns. Interpretation, factual investigation, commercial choice, and release authority remain with a person. Here, even the revised incident clause leaves the notice clock’s starting event unspecified.</p></article></div>
+</section>
+<section class="evidence-section section-wrap" id="evidence" aria-labelledby="evidence-title"><div class="section-heading"><span class="section-number" aria-hidden="true">04</span><div><h2 id="evidence-title">Know what the evidence supports.</h2><p>A small demonstrated behavior, with its boundary stated plainly.</p></div></div>
+<div class="evidence-layout"><div class="evidence-table"><div class="evidence-row"><span>Existing product code</span><p>Two existing drafting checks consumed manually structured synthetic clauses. The revised notice was recognized through its wording; document ingestion and graph generation were not exercised.</p></div><div class="evidence-row"><span>This interface</span><p>An editorial visualization made for this case study. It is not a screenshot or deployment of the private Steno application.</p></div><div class="evidence-row"><span>The result</span><p id="evidence-result">Recorded outputs and a verification receipt accompany this preview.</p></div><div class="evidence-row"><span>Not established</span><p>Legal correctness, full contract coverage, production acceptance, employer use, or a completed product release.</p></div></div><aside class="evidence-note"><h3>Inspect the record</h3><p>Read the fictional input and captured output directly. Product source remains private; the record is a bounded observation, not a public reproduction of the entire workstation.</p><a href="evidence/recorded-checks.json">Synthetic inputs and recorded findings</a><a href="evidence/verification.json">Verification summary</a><a href="../index.html">Scope and preparation notes</a></aside></div>
+</section>
+<section class="project-note section-wrap"><h2>About Steno</h2><p>Steno is a personal, experimental contract-and-law workstation. Its aim is to connect document language, explicit checks, and supporting evidence in a form a lawyer can inspect. Development and operator acceptance remain unfinished. It is not represented as employer-deployed or commercially proven.</p><p>This case study was prepared with AI-assisted implementation and review. It presents a selected behavior and the design reasoning around it; it does not claim that every part of the broader product has been verified.</p></section>
+</main>
+<footer><span>Steno <span class="footer-sep">/</span> ZMS Labs</span><span>Fictional example. Human judgment retained.</span><a href="https://github.com/ZMS-Labs">Explore ZMS Labs</a></footer>
+</body>
+</html>

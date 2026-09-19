@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "recorded_local_component_checks_passed",
+  "recorded_at_utc": "2026-09-19T16:37:18.269910+00:00",
+  "source_revision": "aad014b54dfcb065995f3acf80db797d33b4651d",
+  "source_distribution": "Private Steno source. Source code is not included in this case-study package.",
+  "checks": [
+    "notice mechanics linkage",
+    "liability/indemnity drafting pattern"
+  ],
+  "baseline_findings": 2,
+  "revised_findings": 0,
+  "existing_focused_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "input_sha256": "39c47a4c5cc0470a6822ee87c21543586e89a6f9e9294a5308cb4edb4ea6595c",
+  "raw_output_sha256": "a1270a86854ef1731246cb4d52bc5f471287fe5b5547ccb4a600ed1ee43ab26a",
+  "public_evidence_sha256": "fd547b56824b5b9787bc0ea4020bebd55ff1aee016fe1cb9c4fbf93abd1149c2",
+  "inputs": "Newly authored, manually structured synthetic clauses. Both examples supply an empty edge list.",
+  "important_behavior": "The revised notice is recognized through its textual reference to the Notices article. This is not evidence that a document parser extracted or resolved a graph.",
+  "limitations": [
+    "Two component checks only; not the full application or release pipeline.",
+    "No DOCX ingestion, database, private legal corpus, model call, formal engine, live incident, or real agreement was used.",
+    "No findings from these selected checks do not establish legal sufficiency, coverage, enforceability, actual liability, or release approval.",
+    "The contract values and edits are illustrative, not recommended positions.",
+    "The interface is an editorial visualization, not the actual Steno UI.",
+    "A small isolated focused-test run emitted an existing configuration warning because optional plugin loading was disabled. The selected tests were synchronous and passed."
+  ]
+}

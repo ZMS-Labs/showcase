@@ -1,0 +1,91 @@
+{
+  "prepared": "2026-09-19",
+  "distribution_status": "Approved public showcase assets",
+  "description": "Exact presentation assets; preparation source and render scaffolding are excluded.",
+  "assets": [
+    {
+      "path": "assets/steno/matter-map.png",
+      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465",
+      "bytes": 658350,
+      "dimensions": [
+        1760,
+        1100
+      ],
+      "kind": "Archived interface prototype rendered with newly authored fictional content",
+      "claim_boundary": "Design evidence; not current product operation or engine output"
+    },
+    {
+      "path": "assets/steno/workstation.png",
+      "sha256": "0cfe26065e406795fa2fa0de1188c2c45698df9840f9b35cc391a5d6b2e56ff1",
+      "bytes": 626355,
+      "dimensions": [
+        1760,
+        1100
+      ],
+      "kind": "Archived interface prototype rendered with newly authored fictional content",
+      "claim_boundary": "Design evidence; not current product operation or engine output"
+    },
+    {
+      "path": "assets/krewcible/workspace.png",
+      "sha256": "271b368e84c15dc1319565e50026a1054adb31eec1afd95307d6e06cc04ff0bc",
+      "bytes": 295800,
+      "dimensions": [
+        2400,
+        1685
+      ],
+      "kind": "Existing checkpoint-editor components rendered and exercised with synthetic state",
+      "claim_boundary": "Component interaction evidence; not full application, generation service or persistence validation"
+    },
+    {
+      "path": "assets/krewcible/comparison.png",
+      "sha256": "ad850c2bdb70e436aef0a5615b2a0e937bf8047926faba0501461347b30e7e0b",
+      "bytes": 270661,
+      "dimensions": [
+        2400,
+        1680
+      ],
+      "kind": "Existing checkpoint-editor components rendered and exercised with synthetic state",
+      "claim_boundary": "Component interaction evidence; not full application, generation service or persistence validation"
+    },
+    {
+      "path": "assets/fonts/Archivo.ttf",
+      "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+      "bytes": 658596,
+      "kind": "Existing Showcase Archivo variable font, unmodified",
+      "notice": "assets/fonts/OFL.txt"
+    },
+    {
+      "path": "downloads/gridiron-research-source.zip",
+      "sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658",
+      "bytes": 492351,
+      "kind": "Reviewed Gridiron research-source snapshot; exact archive copy",
+      "claim_boundary": "Synthetic replay; no live-game validation; see included source documentation and notices"
+    },
+    {
+      "path": "assets/illustrations/gridiron-event-to-commentary.png",
+      "sha256": "3b3809975733620f670bd82f802efee4e5af7d0f8fac80ec29e8b726e24cf435",
+      "bytes": 2069203,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "kind": "AI-generated conceptual editorial illustration",
+      "source": "OpenAI built-in image generation; newly authored prompt; reviewed for semantic clarity",
+      "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result",
+      "visual_meaning": "Football observations pass through an event record before commentary"
+    },
+    {
+      "path": "assets/illustrations/epistemic-investigate-compare-verify.png",
+      "sha256": "5483d20a3df808b24fd47eac9d87bf9b647cdbd6f250495dc36325d080de9e01",
+      "bytes": 2112766,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "kind": "AI-generated conceptual editorial illustration",
+      "source": "OpenAI built-in image generation; newly authored prompt; reviewed for semantic clarity",
+      "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result",
+      "visual_meaning": "Investigation, examination and verification are available methods, not a required sequence"
+    }
+  ]
+}
