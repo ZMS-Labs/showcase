@@ -55,58 +55,58 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 7536,
-      "sha256": "0543b153a1e019a4cc23a4949db8d78c84a23431688310636a7a128463d3af35"
+      "bytes": 7533,
+      "sha256": "0378da524b504a11993ed82d0901b7b23159eee710c473d897492549e373f407"
     },
     {
       "path": "case-studies/gridiron/index.html",
-      "bytes": 7442,
-      "sha256": "59a66a45030b557ffa6d23ff292d9ad3a63c1d336339f6b2e1db1ee24acffc0c"
+      "bytes": 7441,
+      "sha256": "d6390e30e10d095e4f801ac0efcd0a828a79f64957fe6e212611064e2b47853a"
     },
     {
       "path": "case-studies/gridiron/recorded-replay.json",
-      "bytes": 1068,
-      "sha256": "0b118ad566343392b864f03217709ff0300a075913095d60a16cc5e6aa8af75f"
+      "bytes": 1032,
+      "sha256": "b7204fe5188ac5ad26d05879aade558719360041fd4520581a80463b405fe031"
     },
     {
       "path": "case-studies/krewcible/index.html",
-      "bytes": 6874,
-      "sha256": "3a21e237b983820a8286f2d81f9d3bacdb9b3d975f777890d81076f27b98434a"
+      "bytes": 6872,
+      "sha256": "5bc501f56d84bb2d0b59bd02a590a6027df1b199378d0c1e9da689542f2cbaf3"
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 8379,
-      "sha256": "2c13aa07756d899e9faf53d02dd6d8b5b322c7e4fbdf2eb8776415d6753855e4"
+      "bytes": 8376,
+      "sha256": "54798eb7f2487dfa31ae6b20bc2d3de2bbcacc85ee4ad28679710081e28cf760"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
-      "bytes": 3972,
-      "sha256": "ddea7444b736072aade1659c3c256ae418e8b6a00428ba514eb7c595f826ae31"
+      "bytes": 3878,
+      "sha256": "7f731a0c65c519280a1ef588c81cba5b100210740a6f06d2f55ad0f58a4cd411"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-study.js",
-      "bytes": 3480,
-      "sha256": "f71b459d4ce32b1fe39b2d42e9ca1e1a8089f0204394e05a3eec3f6c9958f6ab"
+      "bytes": 3479,
+      "sha256": "2d80bfa774b5f9b9d0b9f570f9f7541c169e05205f7d55a5bb323f838ac52b24"
     },
     {
       "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
-      "bytes": 6350,
-      "sha256": "fd547b56824b5b9787bc0ea4020bebd55ff1aee016fe1cb9c4fbf93abd1149c2"
+      "bytes": 6207,
+      "sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e"
     },
     {
       "path": "case-studies/steno/recorded-checks/evidence/verification.json",
-      "bytes": 1838,
-      "sha256": "faa81dfd57fdf64197f974db17e09d19e007c57b53e3430cd0e946016de0e8a2"
+      "bytes": 1808,
+      "sha256": "c0f05cebfc493f9010c1db7ae8868397c029e8989ea119c0e2f543e8a96b8369"
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 10033,
-      "sha256": "21795369ad7a4117fc77e23851788fc724bc310264f7926e09da1858266e01e4"
+      "bytes": 9972,
+      "sha256": "0a9d287f3fb1837b57a3f44477ebf845ffd22829dea20b2b54484f2d99089b53"
     },
     {
       "path": "case-studies/steno/recorded-checks/styles.css",
-      "bytes": 13900,
-      "sha256": "410174e9d2ca45068e5091656f74330f42233364aaca9f51e2b8e55c36c34615"
+      "bytes": 13883,
+      "sha256": "bbe1389e5d04d34908aa56ef98d328e4ed745cca5a21dec978189269709b5609"
     },
     {
       "path": "downloads/gridiron-research-source.zip",
@@ -120,8 +120,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7461,
-      "sha256": "adfe4dacd51675c3259a247cfb404c9f60fb47afd4b9fe070306915fbcc5e39a"
+      "bytes": 7456,
+      "sha256": "6e1cbad5c69e80e9ddb9d4165667142ce579db2c5f361c0815fe8e6c1dd5a59b"
     },
     {
       "path": "LICENSE",
@@ -135,13 +135,13 @@
     },
     {
       "path": "site.css",
-      "bytes": 16481,
-      "sha256": "4b95fa413ff9e6d94c138ca495cad45c7c3752be24fa93d5966afad805ee858a"
+      "bytes": 16469,
+      "sha256": "9c01afe43d3886e37ce07c9acdd864b7bf5234e93b3a98a0b51b1566a8a0c9df"
     },
     {
       "path": "site.js",
-      "bytes": 4048,
-      "sha256": "02277f83d8119285b94f36aa6e3f430fd7246cc7db14a199137efaf950b8f689"
+      "bytes": 4007,
+      "sha256": "1d8a72ecaae7fb8729972640d33fc45d8b3cf824ad4d8f8995fcc623e4ea36bc"
     }
   ]
 }
