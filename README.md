@@ -13,12 +13,12 @@ Independent projects exploring how software can make complex information, decisi
 
 ## Four projects, four concrete questions
 
-| Project | The question | What you can inspect |
-|---|---|---|
-| [**Steno**](https://zms-labs.github.io/showcase/case-studies/steno/) | How could a contract workstation connect a clause to the questions it raises? | An authentic archived interface prototype with fictional matter data, plus a separate recording of two drafting checks |
-| [**Epistemic Skills**](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/) | How can agents investigate, compare alternatives, and verify their work more systematically? | Public methods, worked examples, design rationale, and evaluation limits |
-| [**Gridiron**](https://zms-labs.github.io/showcase/case-studies/gridiron/) | How can commentary stay accountable to a recorded event? | A synthetic replay, its evidence boundaries, and a downloadable research-source snapshot |
-| [**Krewcible**](https://zms-labs.github.io/showcase/case-studies/krewcible/) | How can a creative tool keep choices visible and editable? | Existing checkpoint-editor components before and after exercised controls with synthetic state |
+| Project | Question and inspectable work |
+|---|---|
+| [**Steno**](https://zms-labs.github.io/showcase/case-studies/steno/) | **How could a contract workstation connect a clause to the questions it raises?**<br>An authentic archived interface prototype with fictional matter data, plus a separate recording of two drafting checks |
+| [**Epistemic Skills**](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/) | **How can agents investigate, compare alternatives, and verify their work more systematically?**<br>Public methods, worked examples, design rationale, and evaluation limits |
+| [**Gridiron**](https://zms-labs.github.io/showcase/case-studies/gridiron/) | **How can commentary stay accountable to a recorded event?**<br>A synthetic replay, its evidence boundaries, and a downloadable research-source snapshot |
+| [**Krewcible**](https://zms-labs.github.io/showcase/case-studies/krewcible/) | **How can a creative tool keep choices visible and editable?**<br>Existing checkpoint-editor components before and after exercised controls with synthetic state |
 
 ## Product design you can examine
 
