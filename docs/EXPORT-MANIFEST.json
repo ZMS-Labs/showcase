@@ -10,8 +10,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 5293,
-      "sha256": "4b21d405149d3691abc92b98ce33e851a18717c93657a16bd104ad1c7e65394b"
+      "bytes": 5704,
+      "sha256": "c9f3d45673e3a582c157c8a510a7f87de7dc8f1362d6bb3d64b668f6fb8b805b"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -179,6 +179,16 @@
       "sha256": "91ce80f8676353574b7637077333bfbb7207b81023e11aee0d183ddaeb6dfd95"
     },
     {
+      "path": "case-studies/poiesis/artifact-custody-case.json",
+      "bytes": 2600,
+      "sha256": "f0a9d80953a7c0f853ffcc58ccea5bb6bbed975a6f2ce0e47e22fa13a0f5c417"
+    },
+    {
+      "path": "case-studies/poiesis/index.html",
+      "bytes": 14281,
+      "sha256": "ca4f4b4f96c46878eb262594551f83d641cc61f30a2954c34ca015acee8773ed"
+    },
+    {
       "path": "case-studies/savebench/index.html",
       "bytes": 17792,
       "sha256": "4b70504e9e1f3820c85ed732d945d432d67db4524f0bb159b9dae893ec440bf9"
@@ -245,13 +255,13 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 9279,
-      "sha256": "02a808b4bb118a1f7d87a93316ff02b355e7c998ce05acaa689950d36e6f7686"
+      "bytes": 9833,
+      "sha256": "cae741efb9808b841545ba16441a9ee69065531281ca1cc010d20d2cef30452a"
     },
     {
       "path": "index.html",
-      "bytes": 10942,
-      "sha256": "8e1d0ce3e7ff912950663f8bbbd8bace0d7285cd1178d3115d8a3c6669998ac6"
+      "bytes": 11402,
+      "sha256": "66063c718d822dda8bc0058ee6d2610df26ab61dab4ae30c4aa15849da870d61"
     },
     {
       "path": "LICENSE",
@@ -260,18 +270,18 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 6465,
-      "sha256": "8f5dc25c05ee276f00793dc9d49095c301a3071145de1cd376bee6ca3d9ff7e1"
+      "bytes": 7035,
+      "sha256": "e1cef736489198facab8cbbe556702fba1203bae9a47067c0b8a2e393f94456a"
     },
     {
       "path": "README.md",
-      "bytes": 2684,
-      "sha256": "5a9add8ac443cf397e80f754155c8fc1eb6bb72274cccc24c5bb7b9bd0e766c3"
+      "bytes": 2873,
+      "sha256": "956eb2963e9a3570d5088bb62bf10f44b493a0b864156d44976dd49419e72535"
     },
     {
       "path": "site.css",
-      "bytes": 25212,
-      "sha256": "120df5d864a80bc6c77b9c27e471f9dc582e3db91c8e444c672e516232549389"
+      "bytes": 25279,
+      "sha256": "0e245557ee0a966cf97923822e328f964f657319a5ad2e47c6a4e8e16e1defd7"
     },
     {
       "path": "site.js",

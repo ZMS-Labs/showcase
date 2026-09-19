@@ -20,7 +20,7 @@ The repository contains the ZMS Labs portfolio and its editable static website. 
 
 ## Edit and verify
 
-Edit the HTML directly; there is no hidden build step. Keep claims, headings, captions, alternative text, and diagrams consistent. Review current project evidence before changing counts or status. Preserve dated historical results as historical: SaveBench’s retained evaluation and the original publication incident are not fresh runtime checks. Canvas test links pin the public revision examined. Preserve each product's visual language and provide full-resolution access to dense captures.
+Edit the HTML directly; there is no hidden build step. Keep claims, headings, captions, alternative text, and diagrams consistent. Review current project evidence before changing counts or status. Preserve dated historical results as historical: SaveBench’s retained evaluation and the original publication incident are not fresh runtime checks. Canvas test links pin the public revision examined. Poiesis distinguishes separate artifact and prompt-custody fixtures: do not turn explicit purging into a production scheduler claim or recorded key removal into a backup-erasure guarantee. Preserve each product's visual language and provide full-resolution access to dense captures.
 
 For a local preview:
 

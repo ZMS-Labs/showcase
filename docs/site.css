@@ -76,3 +76,5 @@
 @media(max-width:720px){.bridge-map{padding:18px}.bridge-study,.specimen-section{padding:36px 0}.bridge-return{align-items:flex-start}.bridge-return>span{display:none}.bridge-stop{padding:18px}.bridge-stop h3{font-size:1.15rem}}
 
 .specimen-section .switcher{flex-wrap:wrap;max-width:100%}.specimen-section .switcher button{white-space:normal}.specimen-section>.case-block{border-bottom:0;padding-bottom:0}
+
+.case-index>article:last-child:nth-child(odd){grid-column:1 / -1}

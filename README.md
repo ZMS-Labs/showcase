@@ -24,6 +24,7 @@ Independent projects exploring how software can make complex information, decisi
 | [**Neuraxic**](https://zms-labs.github.io/showcase/case-studies/neuraxic/) | **How can an author explore alternate continuity while keeping canon explicit?**<br>Focused branch-visibility evidence and an independently authored fictional explanation |
 | [**Enaction**](https://zms-labs.github.io/showcase/case-studies/enaction/) | **Who is speaking, and whose memory should change?**<br>Explicit fictional-role selection and twelve focused tests of memory attribution and operator boundaries |
 | [**ZMS Canvas**](https://zms-labs.github.io/showcase/case-studies/zms-canvas/) | **What happens to edits when a save fails or another revision arrives first?**<br>Six focused recovery and storage tests in a public PenEcho fork, with upstream attribution |
+| [**Poiesis**](https://zms-labs.github.io/showcase/case-studies/poiesis/) | **Which bytes came back, and when should custody end?**<br>Eight focused tests of artifact identity, expired access, explicit purging and prompt-key handling |
 
 ## Product design you can examine
 
@@ -43,7 +44,7 @@ Independent projects exploring how software can make complex information, decisi
 
 - **Purpose and tradeoffs:** each case study explains the problem, design choices, implemented slice, and remaining questions.
 - **Evidence near the claim:** prototype images, component interactions, recorded results, and conceptual illustrations are identified as different kinds of artifacts.
-- **Inspectable work:** [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) has public source; Gridiron includes a reviewed source snapshot. Steno, Krewcible, Fleet Orchestrator, SaveBench, Neuraxic and Enaction share selected case-study material while their application source remains private.
+- **Inspectable work:** [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) has public source; Gridiron includes a reviewed source snapshot. Steno, Krewcible, Fleet Orchestrator, SaveBench, Neuraxic, Enaction and Poiesis share selected case-study material while their application source remains private.
 - **Clear authorship:** these are personally directed projects developed with AI assistance. [Attribution and provenance](https://zms-labs.github.io/showcase/evidence.html) explain the assistance and the work shown.
 
 These are independent projects with different stages of maturity. The showcase does not establish employer deployment, production readiness, or measured improvement in agent performance.
