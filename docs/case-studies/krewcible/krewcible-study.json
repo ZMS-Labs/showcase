@@ -1,0 +1,17 @@
+{
+  "prepared": "2026-09-19",
+  "artifact": "Existing checkpoint-editor components exercised with synthetic state",
+  "duration_seconds": 36.44,
+  "states": {
+    "initial": {
+      "modifications": 8,
+      "applied_traits": 4
+    },
+    "after_changes": {
+      "modifications": 7,
+      "removed": "arcane bearing"
+    }
+  },
+  "scope": "Isolated component study; no generation service, backend or persistence",
+  "known_slip": "The composition text contains an article error (a arcane bearing) from the existing deterministic compose function; preserved as authentic behavior."
+}

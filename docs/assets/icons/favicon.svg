@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<title>ZMS Labs</title>
+<!-- Header brand glyph as a compact mark: 2x2 rounded squares, one accent square. -->
+<rect width="28" height="28" rx="6" fill="#152c35"/>
+<rect x="36" width="28" height="28" rx="6" fill="#152c35"/>
+<rect y="36" width="28" height="28" rx="6" fill="#152c35"/>
+<rect x="36" y="36" width="28" height="28" rx="6" fill="#ffac70"/>
+</svg>

@@ -2,6 +2,7 @@
   "title": "A handoff is not a completion claim",
   "subtitle": "A tested review gate keeps work blocked until its modeled findings are cleared, and blocks again when verification fails.",
   "evidence_label": "Three isolated control-plane tests passed; synthetic fixtures, real HTTP handlers, in-memory state.",
+  "checked_date": "2026-09-19",
   "passed_tests": 3,
   "failed_tests": 0,
   "skipped_tests": 0,

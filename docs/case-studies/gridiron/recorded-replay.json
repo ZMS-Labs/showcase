@@ -32,5 +32,18 @@
     "madden_live": "UNVERIFIED",
     "franchise_madden27": "UNVERIFIED"
   },
+  "application_checks": {
+    "python_tests": 38,
+    "bridge_tests": 2,
+    "web_tests": 3,
+    "browser_tests": 1,
+    "environment": "isolated Windows environment",
+    "regression_cases": [
+      "rejects unsupported accuracy claims",
+      "rejects partial event oracles",
+      "rejects absent oracles",
+      "rejects mismatched event counts"
+    ]
+  },
   "canonical_ledger_sha256": "3229305cb6a0f7ac6e7d6e9f7b27ca04b791cb9e2ca65a2e44c6eb0162c0d4bb"
 }

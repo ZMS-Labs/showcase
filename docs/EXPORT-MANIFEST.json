@@ -10,8 +10,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 4612,
-      "sha256": "cef98f2c90129ba60d76d7261582e5813c806f3dd8f3cd300bed367f4b82d841"
+      "bytes": 4682,
+      "sha256": "5c6bfd72bcc7b4e58b70c8403d5c32a6dad767f9f951a197491ec5b9efa23e33"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -44,6 +44,11 @@
       "sha256": "1778201b7bd33e8c08a2eda32a4ad2f69bc38ced9731b01cc3fc47f268c8ef3c"
     },
     {
+      "path": "assets/icons/favicon.svg",
+      "bytes": 419,
+      "sha256": "42969b897d43422da04541900e13427308840f5c3f61d5342d23259a3de3b4a6"
+    },
+    {
       "path": "assets/illustrations/epistemic-investigate-compare-verify.png",
       "bytes": 2112766,
       "sha256": "5483d20a3df808b24fd47eac9d87bf9b647cdbd6f250495dc36325d080de9e01"
@@ -66,7 +71,7 @@
     {
       "path": "assets/krewcible/walkthrough.en.vtt",
       "bytes": 895,
-      "sha256": "545508e8d3fe7a94091c969c9dfb020e84b0bf99596e9dfab0785d7af1ae0197"
+      "sha256": "dd5b62693245898c8229fa9a16614a4c86c5d0e7fe7618c84daa59a10d2f899f"
     },
     {
       "path": "assets/krewcible/workspace.png",
@@ -75,8 +80,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 16365,
-      "sha256": "6a6be8ce84591640e0f10215f57306b3c659ce1310e97c2deaabfccbf767915b"
+      "bytes": 16717,
+      "sha256": "b8e8842ad593f35b108c6dfaab5ec787d21913b03e7cfeba7e1c8f6cbb9299b0"
     },
     {
       "path": "assets/neuraxic/claims.png",
@@ -119,14 +124,14 @@
       "sha256": "ca70f9a709081fbd8e20c1833e3aaf80757327f899c2f69ad26d49f5561a1b0a"
     },
     {
+      "path": "assets/savebench/savebench-design-workflow.en.vtt",
+      "bytes": 1468,
+      "sha256": "f7e8d3f482771132f0315459e5558074d82299a656e9152ef7269a587e4f49c5"
+    },
+    {
       "path": "assets/savebench/savebench-design-workflow.mp4",
       "bytes": 3128331,
       "sha256": "17c1f8295099cb5b0915e23c8137be72df1f3f7ca6213cf80747bf038d07ea2f"
-    },
-    {
-      "path": "assets/savebench/savebench-design-workflow.vtt",
-      "bytes": 1468,
-      "sha256": "f7e8d3f482771132f0315459e5558074d82299a656e9152ef7269a587e4f49c5"
     },
     {
       "path": "assets/savebench/savebench-revision.png",
@@ -175,8 +180,8 @@
     },
     {
       "path": "case-studies/enaction/index.html",
-      "bytes": 16207,
-      "sha256": "cb226d34f0d61f93765187eccad076e9874a54a764aee1e3f7bb704fecba1482"
+      "bytes": 16195,
+      "sha256": "cea08115a20b3dd831286dce8af61504c5f151232f275fff93b8f7ad482ff649"
     },
     {
       "path": "case-studies/enaction/role-boundary-case.json",
@@ -185,8 +190,8 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 12256,
-      "sha256": "3f5724963356eef5425b281b736c4031952de3fea6a713be8b9e3a50a2a9be39"
+      "bytes": 12170,
+      "sha256": "7d6176be07dc284bffd82ce34e8183b88c054281493e283cfdab51b7aef415ec"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -200,13 +205,13 @@
     },
     {
       "path": "case-studies/fleet-orchestrator/index.html",
-      "bytes": 24850,
-      "sha256": "d38c8d79d1c07dcbc975428a7621b9176c3823da1b2499ecf82cd8b68a9b7ca4"
+      "bytes": 25614,
+      "sha256": "621f02aba9aa038caa89710e4b6747d6840b56281aa744209cb444db94b76162"
     },
     {
       "path": "case-studies/fleet-orchestrator/review-gate.json",
-      "bytes": 2954,
-      "sha256": "ece62500067eaf6db780127b637f84a1e749404a2602d5a6fb6bba8339971191"
+      "bytes": 2986,
+      "sha256": "45529ce182e658c0ae3eaf396e8029a8db3b94f215dc7b2174ca48d75c37b404"
     },
     {
       "path": "case-studies/gridiron/annotated-replay.json",
@@ -215,18 +220,23 @@
     },
     {
       "path": "case-studies/gridiron/index.html",
-      "bytes": 11793,
-      "sha256": "3e6c5a9fc99dc2c6c9b879a3833845b0809c9385bf592f635675ac3e6706e8cb"
+      "bytes": 11977,
+      "sha256": "0368185bd3f1fbcfcfc4261a781cdb77a390fdd934c681ea2c38b1ad2f41a141"
     },
     {
       "path": "case-studies/gridiron/recorded-replay.json",
-      "bytes": 1032,
-      "sha256": "b7204fe5188ac5ad26d05879aade558719360041fd4520581a80463b405fe031"
+      "bytes": 1393,
+      "sha256": "6f47045689be3251eae890c9a4c613bbd4cb69bb4ab4180e1bb808a75c45fa03"
     },
     {
       "path": "case-studies/krewcible/index.html",
-      "bytes": 12985,
-      "sha256": "ad60fd547d78d28550cb5bf704de4fbf8db1b25f645320d322b66f9840312f8a"
+      "bytes": 13657,
+      "sha256": "edc162c41461ba23d16e4f423fd5eee54a222be2b4c561f03aef9255fbcc297f"
+    },
+    {
+      "path": "case-studies/krewcible/krewcible-study.json",
+      "bytes": 584,
+      "sha256": "da8fcee8ce3b44cfa07e28f5f12155ccbe2db3b8423f51ffe025f046bf7dd0a1"
     },
     {
       "path": "case-studies/neuraxic/continuity-case.json",
@@ -235,8 +245,8 @@
     },
     {
       "path": "case-studies/neuraxic/index.html",
-      "bytes": 26781,
-      "sha256": "8584e671ceb54f30bd5a3778139b5f923eccd1799e2ede2410244f5cd293a9bd"
+      "bytes": 27397,
+      "sha256": "9b468e41a0fa61e4d825a20ea9d7351cd48022f8b753d78d53bd40ff2d7d8ed9"
     },
     {
       "path": "case-studies/neuraxic/interface-study.json",
@@ -245,18 +255,18 @@
     },
     {
       "path": "case-studies/poiesis/artifact-custody-case.json",
-      "bytes": 2600,
-      "sha256": "f0a9d80953a7c0f853ffcc58ccea5bb6bbed975a6f2ce0e47e22fa13a0f5c417"
+      "bytes": 2681,
+      "sha256": "92e177772c43f6290ca299dcb37021d51a0f72726708c0509ad8f18d5684e493"
     },
     {
       "path": "case-studies/poiesis/index.html",
-      "bytes": 14281,
-      "sha256": "ca4f4b4f96c46878eb262594551f83d641cc61f30a2954c34ca015acee8773ed"
+      "bytes": 14486,
+      "sha256": "79f0a61eff713ae90ccf694aa6d55b4b8d8f93bc2325dd87de0bc52210065fcd"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 29651,
-      "sha256": "8e913448e0d028e77491d0d52c027dbc66112af4c6e775dafb0eb60f9b81f8d6"
+      "bytes": 30854,
+      "sha256": "136d017bab04c0742b8da7662a026398b522f3feb71bbf07f8b28ef8b852da4e"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -275,18 +285,18 @@
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 20001,
-      "sha256": "76c2da3d9a8caf164cfd31ccd6b614a62c1d7097940c8e2d875d25b206396a86"
+      "bytes": 21011,
+      "sha256": "13a38634c9b3e9afe5c85287ccefed12b4c55a2d7a5c501a216d42033577256f"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
-      "bytes": 3878,
-      "sha256": "7f731a0c65c519280a1ef588c81cba5b100210740a6f06d2f55ad0f58a4cd411"
+      "bytes": 4108,
+      "sha256": "b129436bdbfd2065a3cc834bb120a7988beaa47312a2c271aa660787d71583af"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-study.js",
-      "bytes": 3479,
-      "sha256": "2d80bfa774b5f9b9d0b9f570f9f7541c169e05205f7d55a5bb323f838ac52b24"
+      "bytes": 3519,
+      "sha256": "2a5edde7a726c0b4ef2786e4a0ea0f95eec552d64d6c14d6ca48c02f182e9b14"
     },
     {
       "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
@@ -300,13 +310,13 @@
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 9972,
-      "sha256": "0a9d287f3fb1837b57a3f44477ebf845ffd22829dea20b2b54484f2d99089b53"
+      "bytes": 10156,
+      "sha256": "cb0b9593a9a655c7b0038e24127e0e50e516dc157c70eb64bd9077b1fceb289a"
     },
     {
       "path": "case-studies/steno/recorded-checks/styles.css",
-      "bytes": 13883,
-      "sha256": "bbe1389e5d04d34908aa56ef98d328e4ed745cca5a21dec978189269709b5609"
+      "bytes": 13987,
+      "sha256": "7470835e136f32b0ee9907d15a70321e5851b459dceaaf2f23cb9ac2e96e4ecd"
     },
     {
       "path": "case-studies/zms-canvas/continuity-case.json",
@@ -315,8 +325,8 @@
     },
     {
       "path": "case-studies/zms-canvas/index.html",
-      "bytes": 11471,
-      "sha256": "5965c5e75b624da37c79d5e481b0509a0128cfafaa43518e5324180493fd0e3b"
+      "bytes": 11646,
+      "sha256": "eced0a62135dda8dd0a701b77cf8e70cb12c9e4bde07e2fe88969bc76fd25df6"
     },
     {
       "path": "downloads/gridiron-research-source.zip",
@@ -325,13 +335,13 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 10480,
-      "sha256": "3b5c2be2b0b62a9c1a4d942499350a100985e78ea0380cc20adaab5a92e12e57"
+      "bytes": 10183,
+      "sha256": "544623403705f575f66d447fff3a9d50acdffa0b5fb57639594c6ac54cc2034d"
     },
     {
       "path": "index.html",
-      "bytes": 11970,
-      "sha256": "4feba794e9fbab32a78ab6a7d02d852b88fab988c096189e3becdfb85a73d641"
+      "bytes": 11658,
+      "sha256": "ecbc25fa12cc1a28262a18a503dd121577587d6342e3a1e972e8c76e13d9277b"
     },
     {
       "path": "LICENSE",
@@ -340,8 +350,8 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 7016,
-      "sha256": "c8a65b7bd2d876027593d51b8fc7b235512fa164de07388502b827e725252f1e"
+      "bytes": 7086,
+      "sha256": "7384970ee4ae47e8a4f7ce96e5efae262dab863b70719a2f2037312f9d96848c"
     },
     {
       "path": "README.md",
@@ -351,7 +361,7 @@
     {
       "path": "site.css",
       "bytes": 25822,
-      "sha256": "cb3d642681ac249863e5ea03889a0081ffefd9977da23d2d15c4ff3f24b6bb7a"
+      "sha256": "9c605afa8fe69b6ba9301f5bb2fa72d1fb7288cb3ee039aa77b2aeca4d41d598"
     },
     {
       "path": "site.js",

@@ -7,6 +7,7 @@
   <meta name="description" content="An Enaction case study: explicit fictional roles, staged turns and memory attribution, supported by twelve existing offline tests.">
   <title>Enaction: a fictional role should not rewrite the operator — ZMS Labs</title>
   <link rel="stylesheet" href="../../site.css">
+  <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg">
   <script src="../../site.js" defer></script>
   <script src="../../walkthroughs.js" defer></script>
   <style>
@@ -37,7 +38,7 @@
 
     <section id="walkthrough" class="walkthrough" data-walkthrough aria-labelledby="walkthrough-title">
       <h2 id="walkthrough-title">Whose experience is this?</h2>
-      <p class="walk-intro">Imagine an operator rehearsing a harmless scene with two fictional participants, Guide and Archivist. These new details explain related source assertions. The editable diagrams are not application screenshots, and these controls do not run the engine or replay the fictional inputs.</p>
+      <p class="walk-intro">Imagine an operator rehearsing a harmless scene with two fictional participants, Guide and Archivist. The Guide and Archivist scene is newly written for this page to illustrate what the tests check; it is not a recorded session, and these controls do not run the engine. The editable diagrams are not application screenshots, and they do not replay the fictional inputs.</p>
       <div class="walk-controls" data-walk-controls hidden>
         <p data-walk-status role="status" aria-live="polite" aria-atomic="true">Step 1 of 5</p>
         <button type="button" data-walk-previous>Previous</button>
@@ -55,7 +56,7 @@
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Keep the staged role stable.</h3><p>Staging records the chosen role with the input. Reusing the same action key with a different role is a conflicting request; it cannot silently replace the original.</p><p>The existing workspace also locks role controls while staging is in flight or a turn is pending, and explains why. This UI behavior is supported by source and its component tests; it was not part of the twelve-test Python run.</p></div>
+        <div><h3 tabindex="-1">Keep the staged role stable.</h3><p>Staging records the chosen role with the input. Reusing the same action key (the request’s unique retry identifier) with a different role is a conflicting request; it cannot silently replace the original.</p><p>The existing workspace also locks role controls while staging is in flight or a turn is pending, and explains why.</p></div>
         <figure class="role-diagram" aria-label="A staged turn retains Guide; a same-key request naming Archivist is rejected as a conflict">
           <div class="role-node role-node--chosen"><h4>Staged turn</h4><dl><dt>Assumed role</dt><dd>Guide</dd><dt>Input</dt><dd>Bring the blue folder</dd><dt>History</dt><dd>Not yet accepted</dd></dl></div>
           <div class="role-edge"><span aria-hidden="true">↓</span>Same action key, different role</div>
@@ -93,7 +94,7 @@
           <figcaption>No invented hash values are displayed. This summarizes the equality assertions, not a new run of the Guide/Archivist example.</figcaption>
         </figure>
       </article>
-      <p class="role-note"><strong>Selection, accepted history and reviewed effects are separate decisions.</strong> These steps explain related checks rather than one recorded end-to-end scene. The final API check does not demonstrate a scene-close review screen or a change to another product’s canon.</p>
+      <p class="role-note"><strong>Selection, accepted history and reviewed effects are separate decisions.</strong> The final API check does not demonstrate a change to another product’s canon.</p>
       <div class="walk-links"><a href="role-boundary-case.json">Inspect the assertion summary</a><a href="#evidence">What the checks establish</a></div>
     </section>
 

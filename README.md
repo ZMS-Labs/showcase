@@ -57,4 +57,4 @@ The site is plain HTML, CSS, and JavaScript in [`docs/`](docs/README.md). Open `
 
 [Maintenance and verification](docs/MAINTAINING.md) · [Design decisions](DESIGN.md) · [Asset provenance](docs/assets/manifest.json) · [Documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain)
 
-See [LICENSE](LICENSE) and [asset notices](assets/README.md). The Gridiron download retains its own declarations and third-party notices. Publishing this portfolio does not publish or deploy the private applications.
+Showcase site - Copyright (C) 2026 ZMS Labs / Zach Stern. This site is distributed under GPL-3.0-only; see [LICENSE](LICENSE) and [asset notices](assets/README.md). The Gridiron download retains its own declarations and third-party notices. Publishing this portfolio does not publish or deploy the private applications.
