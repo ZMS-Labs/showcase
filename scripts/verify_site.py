@@ -160,8 +160,12 @@ with sync_playwright() as p:
   recordings={}
   for asset in json.loads((root/'assets/manifest.json').read_text(encoding='utf-8'))['assets']:
    if 'duration_seconds' in asset:
-    recordings[PurePosixPath(asset['path']).parts[-2]]=(asset['duration_seconds'],asset['dimensions'][0])
+    slug=PurePosixPath(asset['path']).parts[-2]
+    assert slug not in recordings,('duplicate recording slug',slug)
+    recordings[slug]=(asset['duration_seconds'],asset['dimensions'][0])
   cue_pins={'steno':6,'krewcible':11,'neuraxic':7,'savebench':9}
+  assert set(recordings)==set(cue_pins),{'missing_recordings':sorted(set(cue_pins)-set(recordings)),'unexpected_recordings':sorted(set(recordings)-set(cue_pins))}
+  media_checks=0
   for slug,(expected_duration,expected_width) in recordings.items():
    cues=cue_pins[slug]
    page.goto(media_base+f'case-studies/{slug}/index.html',wait_until='load')
@@ -193,10 +197,11 @@ with sync_playwright() as p:
    if args.screenshots:
     page.locator('video').scroll_into_view_if_needed();page.screenshot(path=str(args.screenshots/f'{slug}-video-end.png'))
    page.locator('video').evaluate('(v)=>v.pause()')
+   media_checks+=1
   media.close()
  browser.close()
 assert not errors,errors
 assert not remote,remote
 receipt={'scope':'Static portfolio presentation and controls; not product acceptance','pages':checks,'local_links':'passed','javascript_errors':errors,'external_requests':remote,'interactions':'method selection, measurement boundaries, galleries, full-resolution target synchronization, dialog close/focus, recorded linter replay passed','limitations':'No full assistive-technology certification; authentic product rendering receipts are separate.'}
 
-print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','interactions':'existing controls, all keyboard walkthroughs, no-JS fallback, transcripts and four HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))
+print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','video_playback_checks':media_checks,'interactions':f'existing controls, all keyboard walkthroughs, no-JS fallback, transcripts and {media_checks} HTTP video/text-track playback checks passed','javascript_errors':len(errors),'external_requests':len(remote)},indent=2))

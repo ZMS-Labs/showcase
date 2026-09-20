@@ -4,12 +4,19 @@
   "duration_seconds": 36.44,
   "states": {
     "initial": {
-      "modifications": 8,
+      "modifications": 4,
       "applied_traits": 4
     },
     "after_changes": {
-      "modifications": 7,
-      "removed": "arcane bearing"
+      "modifications": 8,
+      "removed": "arcane bearing",
+      "composition": {
+        "trait_choices": 4,
+        "presence_setting": 1,
+        "accent_colour": 1,
+        "written_refinements": 2
+      },
+      "negative_refinement": "no heavy armor; included in the eight active modifications"
     }
   },
   "scope": "Isolated component study; no generation service, backend or persistence",

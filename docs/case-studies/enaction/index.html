@@ -31,7 +31,7 @@
     <section class="case-hero">
       <p class="quiet-label">Enaction · Roles, interaction and memory</p>
       <h1>A fictional role should not rewrite the operator.</h1>
-      <p class="lead">An operator may speak as a fictional character without making that character’s words part of their own record. Enaction makes the chosen role explicit, carries it through a staged turn, and uses it when deciding whose memory may receive the interaction.</p>
+      <p class="lead">I wanted fictional participants to develop through interaction without their experiences being assigned to the person playing them. Enaction makes the chosen role explicit and carries it through a turn to the memory it may update. This case examines that boundary.</p>
       <div class="case-meta"><span><strong>Work shown</strong> Role selection and memory attribution</span><span><strong>Evidence</strong> Twelve existing offline Python tests</span></div>
     </section>
     <nav class="case-jump" aria-label="On this page"><a href="#walkthrough">Follow a role</a><a href="#decisions">Design tradeoffs</a><a href="#contribution">Contribution</a><a href="#evidence">Evidence and limits</a></nav>
@@ -56,7 +56,7 @@
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Keep the staged role stable.</h3><p>Staging records the chosen role with the input. Reusing the same action key (the request’s unique retry identifier) with a different role is a conflicting request; it cannot silently replace the original.</p><p>The existing workspace also locks role controls while staging is in flight or a turn is pending, and explains why.</p></div>
+        <div><h3 tabindex="-1">Keep the staged role stable.</h3><p>Preparing a turn records the chosen role with the input. Reusing the same action key (the request’s unique retry identifier) with a different role is a conflicting request; it cannot silently replace the original.</p><p>The existing workspace also locks role controls while staging is in flight or a turn is pending, and explains why.</p></div>
         <figure class="role-diagram" aria-label="A staged turn retains Guide; a same-key request naming Archivist is rejected as a conflict">
           <div class="role-node role-node--chosen"><h4>Staged turn</h4><dl><dt>Assumed role</dt><dd>Guide</dd><dt>Input</dt><dd>Bring the blue folder</dd><dt>History</dt><dd>Not yet accepted</dd></dl></div>
           <div class="role-edge"><span aria-hidden="true">↓</span>Same action key, different role</div>
@@ -66,7 +66,7 @@
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Attribute memory to the chosen character.</h3><p>After an explicitly committed manual turn, derivation follows the staged role. In the two-character test, events belong only to the selected character’s collection. The test repeats with each character selected.</p><p>Derived memory starts pending. Putting an event in the right collection does not itself approve the event or establish that a character’s belief is true.</p></div>
+        <div><h3 tabindex="-1">Attribute memory to the chosen character.</h3><p>After a manual turn is explicitly accepted, the code that derives memory follows the recorded role. In the two-character test, events belong only to the selected character’s collection. The test repeats with each character selected.</p><p>New memory starts pending review. Assigning an event to the right collection does not approve it or make the character’s belief true.</p></div>
         <figure class="role-diagram" aria-label="A committed Guide turn yields pending memory in Guide's collection, not in Archivist's or the operator's">
           <div class="role-node role-node--chosen"><h4>Committed manual turn</h4><p>Role recorded at staging: Guide</p></div>
           <div class="role-edge"><span aria-hidden="true">↓</span>Derive pending memory</div>
@@ -108,7 +108,7 @@
 
     <section id="contribution" class="case-block">
       <h2>Direction and work shown.</h2>
-      <div class="body-copy"><dl class="contribution"><div><dt>Project direction</dt><dd>A personally directed, AI-assisted project exploring interaction in which roles, remembered experience and proposed consequences remain inspectable. The goal is to let fictional participants develop without silently rewriting the operator or treating a participant’s beliefs as world truth.</dd></div><div><dt>Evidence here</dt><dd>Existing implementation and tests support this narrower role-attribution boundary. The case study does not establish sole personal authorship of code or tests, professional deployment, or a completed interaction product.</dd></div></dl><p>Within the creative suite, <a href="../neuraxic/index.html">Neuraxic</a> concerns author-owned canon and branch visibility. Enaction concerns who is speaking and what an interaction may change. Poiesis concerns generation requests and artifact delivery; no live integration with it is demonstrated here.</p></div>
+      <div class="body-copy"><dl class="contribution"><div><dt>Project direction</dt><dd>I direct Enaction with AI assistance. I want roles, memories and proposed consequences to stay inspectable, so a character’s experience does not silently rewrite the operator or become world truth.</dd></div><div><dt>Evidence here</dt><dd>Existing implementation and tests support this narrower role-attribution boundary. The case study does not establish sole personal authorship of code or tests, professional deployment, or a completed interaction product.</dd></div></dl><p>Within the creative suite, <a href="../neuraxic/index.html">Neuraxic</a> concerns author-owned canon and branch visibility. Enaction concerns who is speaking and what an interaction may change. Poiesis concerns generation requests and artifact delivery; no live integration with it is demonstrated here.</p></div>
     </section>
 
     <section id="evidence" class="case-block">
