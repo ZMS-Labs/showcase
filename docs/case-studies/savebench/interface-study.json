@@ -18,5 +18,11 @@
     "Arbitrary model selection or in-game arrival",
     "Whole-platform readiness, causal repair, general factory optimality or autonomous progression"
   ],
-  "separate_evidence": "measurement-case.json describes a historical September 9 game-observation case, not this interface fixture."
+  "separate_evidence": "measurement-case.json describes a historical September 9 game-observation case, not this interface fixture.",
+  "retained_renderer_reference": {
+    "label": "renderer pin ba8b915",
+    "repository": "https://github.com/valentinps/satisfactorymap",
+    "revision": "ba8b9151cb961f80634d2d8560c75ff7cc4279d8",
+    "scope": "Original prototype label retained with the terrain credit; game artwork is omitted. This capture does not establish completed renderer integration."
+  }
 }

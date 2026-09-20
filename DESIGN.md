@@ -1,6 +1,6 @@
 # ZMS Labs showcase design
 
-The showcase extends the clear typography and geometric artwork used by Epistemic Skills into an organization-level introduction. It should help a visitor understand the focus, find a concrete project, and inspect the evidence behind the presentation.
+The showcase extends the clear typography and geometric artwork used by Epistemic Skills into an organization-level introduction. It introduces Zach Stern and the reasons behind his projects, then lets a visitor explore the interfaces, choices and evidence. Each case opens with his purpose and direction; AI assistance, upstream contributions and the limits of the work remain explicit.
 
 ## Visual system
 

@@ -1,6 +1,6 @@
 # ZMS Labs: selected work
 
-A static portfolio connecting project purpose, authentic design, implementation, and evidence.
+Zach Stern’s project showcase: what I’m building, why I chose these problems, and what the examples demonstrate.
 
 [Visit the showcase](https://zms-labs.github.io/showcase/) or open [index.html](index.html) locally. No build, model account, external font service, or application backend is required.
 
@@ -11,8 +11,8 @@ A static portfolio connecting project purpose, authentic design, implementation,
 - [Gridiron](case-studies/gridiron/index.html): recorded synthetic replay and a research-source download.
 - [Krewcible](case-studies/krewcible/index.html): authentic checkpoint-editor components with exercised synthetic controls.
 - [Fleet Orchestrator](case-studies/fleet-orchestrator/index.html): authentic cockpit and glyph design, Surface Bridge responsibilities and a tested review gate.
-- [SaveBench](case-studies/savebench/index.html): a historical evaluation that separates invalid measurements from a valid negative result.
-- [Neuraxic](case-studies/neuraxic/index.html): branch visibility and author-controlled story continuity.
+- [SaveBench](case-studies/savebench/index.html): original factory-design and comparison prototype, plus a separate historical game-measurement experiment.
+- [Neuraxic](case-studies/neuraxic/index.html): original authoring workspace for prose and relationships, plus separate story-continuity checks.
 - [Enaction](case-studies/enaction/index.html): explicit fictional roles and operator-memory boundaries.
 - [ZMS Canvas](case-studies/zms-canvas/index.html): recovery and conflict handling in a public fork.
 - [Poiesis](case-studies/poiesis/index.html): returned-artifact identity, fixed retention and prompt custody, with an eight-test evidence summary.

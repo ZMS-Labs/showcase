@@ -5,13 +5,13 @@
 
 # ZMS Labs · Selected work
 
-**Tools for work that takes judgment.**
+**What I’m building, and why.**
 
-Independent projects exploring how software can make complex information, decisions, and creative work easier to understand. This portfolio connects product design with implementation choices and evidence you can inspect.
+I’m Zach Stern. These are projects I’m building around contracts, writing, games and the practical problems I run into with AI tools. I direct the work and use those tools extensively for research, design, code and testing. The case studies show the ideas, the interfaces and what works so far.
 
 [**Explore the full showcase →**](https://zms-labs.github.io/showcase/) · [About this work](https://zms-labs.github.io/showcase/about.html) · [Supporting work](https://zms-labs.github.io/showcase/more-work.html) · [Evidence and attribution](https://zms-labs.github.io/showcase/evidence.html) · [Maintain this site](docs/MAINTAINING.md)
 
-## Selected projects and concrete questions
+## The questions behind the projects
 
 | Project | Question and inspectable work |
 |---|---|
@@ -19,12 +19,12 @@ Independent projects exploring how software can make complex information, decisi
 | [**Epistemic Skills**](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/) | **How can agents investigate, compare alternatives, and verify their work more systematically?**<br>Public methods, worked examples, design rationale, and evaluation limits |
 | [**Gridiron**](https://zms-labs.github.io/showcase/case-studies/gridiron/) | **How can commentary stay accountable to a recorded event?**<br>A synthetic replay, its evidence boundaries, and a downloadable research-source snapshot |
 | [**Krewcible**](https://zms-labs.github.io/showcase/case-studies/krewcible/) | **How can a creative tool keep choices visible and editable?**<br>Existing checkpoint-editor components before and after exercised controls with synthetic state |
-| [**Fleet Orchestrator**](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/) | **How can agent identity and accountable work outlast a runtime session?**<br>Authentic cockpit and glyph design, a Surface Bridge explanation, and a tested review gate |
+| [**Fleet Orchestrator**](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/) | **How can an agent’s identity and work stay connected as execution sessions change?**<br>Authentic cockpit and glyph design, a Surface Bridge explanation, and a tested review gate |
 | [**SaveBench**](https://zms-labs.github.io/showcase/case-studies/savebench/) | **How can AI-designed factories be compared through actual game behavior?**<br>Original challenge/comparison UX, a synthetic navigation recording, and a separate historical measurement case |
 | [**Neuraxic**](https://zms-labs.github.io/showcase/case-studies/neuraxic/) | **How can ideas, prose and world relationships develop together?**<br>Original authoring interface, fictional navigation study and focused continuity evidence |
 | [**Enaction**](https://zms-labs.github.io/showcase/case-studies/enaction/) | **Who is speaking, and whose memory should change?**<br>Explicit fictional-role selection and twelve focused tests of memory attribution and operator boundaries |
 | [**ZMS Canvas**](https://zms-labs.github.io/showcase/case-studies/zms-canvas/) | **What happens to edits when a save fails or another revision arrives first?**<br>Six focused recovery and storage tests in a public PenEcho fork, with upstream attribution |
-| [**Poiesis**](https://zms-labs.github.io/showcase/case-studies/poiesis/) | **Which bytes came back, and when should custody end?**<br>Eight focused tests of artifact identity, expired access, explicit purging and prompt-key handling |
+| [**Poiesis**](https://zms-labs.github.io/showcase/case-studies/poiesis/) | **Which result came back, and how long should it remain available?**<br>Eight focused tests of artifact identity, expired access, explicit purging and prompt-key handling |
 
 ## Product design you can examine
 
@@ -40,12 +40,12 @@ Independent projects exploring how software can make complex information, decisi
 
 **Fleet Orchestrator · Recognizable agents. Accountable work.** Inspect the glyph vocabulary, the Stratus home rendered with synthetic work, and the Surface Bridge's place between coordination and runtime execution. The review-gate walkthrough supplies a focused behavioral example alongside the design.
 
-## Substance behind the presentation
+## How to read the work
 
 - **Purpose and tradeoffs:** each case study explains the problem, design choices, implemented slice, and remaining questions.
 - **Evidence near the claim:** prototype images, component interactions, recorded results, and conceptual illustrations are identified as different kinds of artifacts.
 - **Inspectable work:** [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) has public source; Gridiron includes a reviewed source snapshot. Steno, Krewcible, Fleet Orchestrator, SaveBench, Neuraxic, Enaction and Poiesis share selected case-study material while their application source remains private.
-- **Clear authorship:** these are personally directed projects developed with AI assistance. [Attribution and provenance](https://zms-labs.github.io/showcase/evidence.html) explain the assistance and the work shown.
+- **My role:** I set the direction and develop these projects with AI assistance. [Attribution and provenance](https://zms-labs.github.io/showcase/evidence.html) explain the assistance and the work shown.
 
 These are independent projects with different stages of maturity. The showcase does not establish employer deployment, production readiness, or measured improvement in agent performance.
 
