@@ -1,0 +1,36 @@
+{
+  "schema": "steno-design-research@1",
+  "title": "How Steno was researched and built",
+  "prepared": "2026-09-20",
+  "source_basis": "Private Steno design documentation and recorded engine proofs; summarized here without private source, paths or operational detail. Page claims must stay within this record.",
+  "research_method": {
+    "literature_staging": "Zotero library holdings",
+    "evidence_sweeps": "Structured subagent query sweeps over the staged literature; one recorded sweep ran 46 queries with mandatory counterevidence families",
+    "reception_checks": "Scite search_literature DOI calls tallying supporting/contrasting/mentioning citations and editorial notices; consensus-style synthesis across sweeps",
+    "honesty_limits": "Citation quota exhaustion mid-matrix was recorded; unchecked rows were stamped reception-unverified rather than assumed"
+  },
+  "deterministic_core": {
+    "design_thesis": "Parse agreements into code-like structure (sections, cross-references, norms) and run deterministic checks against an operator position library, with objective gates before release; not LLM-as-judge.",
+    "llm_allowed_roles": ["document type classification", "party/date/governing-law extraction", "section summarization for UI", "clause-category suggestion", "paraphrase-tolerant matching via local embeddings", "plain-English rendering of deterministic findings"],
+    "llm_forbidden_roles": ["deciding position application", "selecting or inserting redlines", "choosing document mutation targets", "approving privileged material for write-through", "gating finalization or export"]
+  },
+  "formal_engines": [
+    { "engine": "eFLINT", "role": "per-document deontic evaluation (rights, duties, violations)", "attests": "deontic structure of curated fragments" },
+    { "engine": "Catala 1.1.0", "role": "typecheck of curated models", "attests": "structural soundness only; not per-clause computation from arbitrary prose", "correction": "An earlier write-up overstated Catala as verifying the clause; a design review corrected the scope and re-based the cross-check onto the per-document engines." },
+    { "engine": "clingo 5.8.0", "role": "answer-set programming defeasibility checks", "attests": "whether exceptions or priorities override an obligation for curated fragments" }
+  ],
+  "hallmark_wiring": "Engine results, cross-check corroboration between per-document engines, and the exception gauntlet feed the Hallmark evidence marks shown on this case page.",
+  "recorded_proofs": "Go-live proofs (2026-05-29) verified the engines on the live cluster for the limitation-of-liability clause family; coverage beyond curated fragments is future work.",
+  "epistemic_skills_used": [
+    { "skill": "Gauntlet", "contribution": "adversarial design review; caught and corrected the Catala overstatement; re-based the cross-check" },
+    { "skill": "Manifest", "contribution": "mission custody across sessions with recorded checkpoints and operator acceptance gating" },
+    { "skill": "Evidence-locked UAT", "contribution": "preregistered expected and disconfirming observations for operator-facing acceptance, including a first-time-lawyer UAT" },
+    { "skill": "Did It Land", "contribution": "verification-at-the-consumer discipline behind the recorded-check pattern and this case study's evidence records" }
+  ],
+  "claim_limits": [
+    "Design documentation and recorded engine proofs, not a claim that every engine runs on every clause today.",
+    "Per-clause computation from arbitrary prose is future work.",
+    "The public evidence remains the two recorded drafting checks and the Hallmark design specimens.",
+    "No legal advice, no coverage claim beyond the recorded clause family, no employer deployment."
+  ]
+}

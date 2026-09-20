@@ -319,14 +319,19 @@
       "sha256": "23d360c7323548c02c81b301142756b379e3dffd2d2e1d715495cbe7bdddd67a"
     },
     {
+      "path": "case-studies/steno/design-research.json",
+      "bytes": 3754,
+      "sha256": "deb1299808f6e1840f0a232440e21859c5e0e495c63b70b731dc23c69b92e370"
+    },
+    {
       "path": "case-studies/steno/hallmark-design.json",
       "bytes": 1313,
       "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 21646,
-      "sha256": "18c4fa4dca2ffde089076701037ec54aebe579a24084045c1c3743252796ae23"
+      "bytes": 25454,
+      "sha256": "eec153f957f359101d5bde7dc8c31a5b4ccc0f9a41cf8b9048981b4743cb895d"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
