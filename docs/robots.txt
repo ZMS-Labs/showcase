@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zms-labs.github.io/showcase/sitemap.xml
