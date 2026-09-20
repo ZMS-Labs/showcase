@@ -320,6 +320,18 @@
         1600,
         1100
       ]
+    },
+    {
+      "path": "assets/icons/favicon.svg",
+      "sha256": "42969b897d43422da04541900e13427308840f5c3f61d5342d23259a3de3b4a6",
+      "bytes": 419,
+      "kind": "Original identity asset",
+      "source": "Derived from the site brand glyph",
+      "claim_boundary": "Identity mark only",
+      "dimensions": [
+        64,
+        64
+      ]
     }
   ]
 }

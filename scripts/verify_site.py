@@ -1,4 +1,4 @@
-from pathlib import Path
+from pathlib import Path,PurePosixPath
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import json
@@ -102,6 +102,7 @@ with sync_playwright() as p:
      assert gallery.locator('[aria-pressed=true]').count()==1
      assert gallery.locator('[data-full-resolution]').get_attribute('href').endswith(expected.removeprefix('../../'))
     opener=gallery.locator('[data-enlarge]');opener.click()
+    page.evaluate('()=>{const d=document.querySelector("dialog");if(!d.__counting){d.__counting=true;d.addEventListener("close",()=>d.__seenClose=(d.__seenClose||0)+1)}d.__seenClose=0}')
     assert page.locator('dialog').is_visible()
     assert page.locator('[data-dialog-original]').get_attribute('href').endswith(gallery.locator('.design-screen').get_attribute('src').removeprefix('../../'))
     page.locator('dialog img').evaluate('(e)=>e.decode()')
@@ -110,6 +111,9 @@ with sync_playwright() as p:
     opener.click();page.get_by_role('button',name='Close',exact=True).click()
     assert not page.locator('dialog').is_visible()
     assert opener.evaluate('(e)=>e===document.activeElement')
+    # The close event (and the focus return it triggers) fires shortly after close();
+    # drain it here so it cannot steal focus from the next gallery's keyboard activation.
+    page.wait_for_function('()=>document.querySelector("dialog").__seenClose>=2',polling=100)
    if path.parent.name=='epistemic-skills':
     page.get_by_role('button',name='Verify a change',exact=True).click();assert page.locator('#method-name').inner_text()=='Did It Land'
     b=page.get_by_role('button',name='Examine a decision',exact=True);b.focus();page.keyboard.press('Enter');assert page.locator('#method-name').inner_text()=='Perspective / Gauntlet';assert b.get_attribute('aria-pressed')=='true'
@@ -136,13 +140,30 @@ with sync_playwright() as p:
   for step in page.locator('[data-walk-step]').all():assert step.is_visible()
   assert not page.locator('[data-walk-controls]').is_visible()
   page.close()
+ # The nested recorded-check page is the most JavaScript-dependent; rglob reaches it
+ # where the glob above does not. Without scripts its message and evidence links must survive.
+ for path in root.rglob('case-studies/*/recorded-checks/index.html'):
+  page=nojs.new_page();page.goto(destination(path))
+  assert page.locator('noscript p').is_visible(),str(path)
+  assert page.locator('a[href="evidence/recorded-checks.json"]').count()>=1,str(path)
+  assert page.locator('a[href="evidence/verification.json"]').count()>=1,str(path)
+  page.close()
  nojs.close()
  # Text tracks require HTTP; serve the static files temporarily for a same-origin media check.
  with media_server() as media_base:
   media=browser.new_context();page=media.new_page()
   page.on('pageerror',lambda e:errors.append(str(e)))
   page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('http://','https://')) and not r.url.startswith(media_base) else None)
-  for slug,expected_duration,expected_width,cues in [('steno',37.12,1760,6),('krewcible',36.44,1600,11),('neuraxic',34.48,1440,7),('savebench',33.08,1600,9)]:
+  # Media identity (slug, duration, width) derives from the published asset manifest;
+  # the manifest owns that metadata. Cue counts stay literal below on purpose:
+  # they are deliberate content gates, not identity, and change only with reviewed text tracks.
+  recordings={}
+  for asset in json.loads((root/'assets/manifest.json').read_text(encoding='utf-8'))['assets']:
+   if 'duration_seconds' in asset:
+    recordings[PurePosixPath(asset['path']).parts[-2]]=(asset['duration_seconds'],asset['dimensions'][0])
+  cue_pins={'steno':6,'krewcible':11,'neuraxic':7,'savebench':9}
+  for slug,(expected_duration,expected_width) in recordings.items():
+   cues=cue_pins[slug]
    page.goto(media_base+f'case-studies/{slug}/index.html',wait_until='load')
    page.locator('video').scroll_into_view_if_needed()
    page.wait_for_function('document.querySelector("video").readyState >= 1')
@@ -154,12 +175,20 @@ with sync_playwright() as p:
     # Python's temporary server does not implement byte ranges. Buffer locally before seeking;
     # the deployed check retains metadata preload and exercises the actual host's seek behavior.
     page.locator('video').evaluate('(v)=>{v.preload="auto";v.load();}')
-    page.wait_for_function('(()=>{let v=document.querySelector("video");return v.buffered.length&&v.buffered.end(v.buffered.length-1)>=v.duration-.1})()')
-   page.locator('video').evaluate('(v)=>{v.currentTime=v.duration-2;}')
-   page.wait_for_function('document.querySelector("video").currentTime > 30 && !document.querySelector("video").seeking')
+    try:page.wait_for_function('(()=>{let v=document.querySelector("video");return v.buffered.length&&v.buffered.end(v.buffered.length-1)>=v.duration-.1})()',polling=100,timeout=5000)
+    except Exception:
+     # Chromium can stop prefetching a paused element before the whole file is buffered;
+     # playing resumes the datasource. The buffer condition itself still must hold.
+     page.locator('video').evaluate('(v)=>{v.muted=true;v.play()}')
+     page.wait_for_function('(()=>{let v=document.querySelector("video");return v.buffered.length&&v.buffered.end(v.buffered.length-1)>=v.duration-.1})()',polling=100)
+   # Seek while playing: a paused headless pipeline can stay suspended and drop seeks.
+   # Interval polling: rAF-polled waits starve on an idle headless page and miss true
+   # conditions. The assertions below are unchanged.
    page.locator('video').evaluate('(v)=>v.play()')
-   page.wait_for_function('!document.querySelector("video").paused && document.querySelector("video").readyState >= 2')
-   page.wait_for_function('(()=>{let v=document.querySelector("video");return v.currentTime>v.duration-1.5})()')
+   page.locator('video').evaluate('(v)=>{v.currentTime=v.duration-2;}')
+   page.wait_for_function('document.querySelector("video").currentTime > 30 && !document.querySelector("video").seeking',polling=100,timeout=45000)
+   page.wait_for_function('!document.querySelector("video").paused && document.querySelector("video").readyState >= 2',polling=100)
+   page.wait_for_function('(()=>{let v=document.querySelector("video");return v.currentTime>v.duration-1.5})()',polling=100)
    page.locator('video').evaluate('(v)=>new Promise(resolve=>v.requestVideoFrameCallback(resolve))')
    if args.screenshots:
     page.locator('video').scroll_into_view_if_needed();page.screenshot(path=str(args.screenshots/f'{slug}-video-end.png'))

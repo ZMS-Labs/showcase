@@ -6,9 +6,10 @@ The showcase extends the clear typography and geometric artwork used by Epistemi
 
 - Deep ink `#152c35` provides a stable masthead in either GitHub theme.
 - Warm white `#f5f3ed` carries the title; orange `#ffac70` identifies the accent geometry.
+- The masthead's orange square and the site header's 2×2 brand-symbol grid share one accent token — the square accents the wordmark while the rotated grid serves as the compact mark — and the favicon derives from that header glyph.
 - Muted blue `#b7c8cc` carries secondary text with readable contrast.
 - Archivo is the display face. Native GitHub typography handles README prose and navigation; the website bundles Archivo locally.
-- The geometric composition represents connections between reasoning, tools, and workflows. It is conceptual artwork, not a system topology or a depiction of private infrastructure.
+- The geometric composition represents connections between reasoning, tools, and development. It is conceptual artwork, not a system topology or a depiction of private infrastructure.
 
 The masthead is an introduction, followed immediately by a readable text description and working links. The featured artifacts carry the evidence. Tables compare practical problems, principles, and evidence; they are not decorative cards.
 

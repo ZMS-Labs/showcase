@@ -90,5 +90,9 @@ window.STENO_CASE_STUDY = {
       "findings": []
     }
   ],
+  "emptyFindings": {
+    "heading": "No findings from these selected checks.",
+    "body": "The revised example no longer triggers the selected drafting rules. That is a limited observation—not clearance of the agreement."
+  },
   "evidenceSummary": "Two recorded findings in the initial draft; none from the same two checks after the illustrative edits. Three existing focused component tests also passed."
 };

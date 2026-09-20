@@ -33,9 +33,10 @@
     document.getElementById('finding-count').textContent = String(selected.findings.length);
     document.getElementById('finding-count').setAttribute('aria-label',`${selected.findings.length} recorded findings`);
     if (!selected.findings.length) {
+      const emptyCopy = data.emptyFindings || {};
       const empty=make('div','empty-findings');
       const symbol=make('div','empty-symbol','✓');symbol.setAttribute('aria-hidden','true');
-      empty.append(symbol,make('h4','','No findings from these selected checks.'),make('p','','The revised example no longer triggers the selected drafting rules. That is a limited observation—not clearance of the agreement.'));
+      empty.append(symbol,make('h4','',emptyCopy.heading),make('p','',emptyCopy.body));
       findings.append(empty);
     }
     for (const finding of selected.findings) {
@@ -56,5 +57,6 @@
   }
   for(const button of selectors) button.addEventListener('click',()=>render(button.dataset.case));
   if (data.evidenceSummary) document.getElementById('evidence-result').textContent=data.evidenceSummary;
-  render('before');
+  const initial = selectors.find(button => button.getAttribute('aria-pressed') === 'true') || selectors[0];
+  if (initial) render(initial.dataset.case);
 })();

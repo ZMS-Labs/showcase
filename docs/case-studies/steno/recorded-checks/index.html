@@ -7,12 +7,13 @@
 <meta name="description" content="A synthetic Steno case study: trace notice, indemnity, and liability clauses through recorded local drafting checks, with human judgment retained.">
 <title>Steno — A contract, examined in context</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="../../../assets/icons/favicon.svg">
 <script src="case-data.js" defer></script>
 <script src="case-study.js" defer></script>
 </head>
 <body>
-<p style="margin:12px 5%;font-size:14px"><a href="../index.html">Back to the Steno case study</a></p>
 <a class="skip" href="#main">Skip to the case study</a>
+<p style="margin:12px 5%;font-size:14px"><a href="../index.html">Back to the Steno case study</a></p>
 <header class="site-header">
 <a class="brand" href="#main" aria-label="Steno case study home"><svg aria-hidden="true" viewBox="0 0 30 32"><path d="M4 3h20v26H4zM9 10h10M9 16h7M9 22h10"/></svg><span>Steno</span><span class="brand-note">a ZMS Labs project</span></a>
 <nav aria-label="Page"><a href="#scenario">Scenario</a><a href="#review">Review</a><a href="#evidence">Evidence</a></nav>
@@ -46,7 +47,7 @@
 <aside class="findings-panel" aria-labelledby="findings-title"><div class="panel-heading"><div><h3 id="findings-title">Recorded findings</h3><p>What the selected checks returned</p></div><span class="finding-count" id="finding-count"></span></div><div id="findings" class="findings" aria-live="polite" aria-atomic="true"></div><div class="always-review"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 3 7v6c0 4 9 8 9 8s9-4 9-8V7l-9-4Z"/><path d="m8 12 3 3 5-6"/></svg><div><strong>Human review remains required.</strong><p>Still unresolved: what starts the 24-hour clock, which claims are covered, and whether the limits reflect the intended allocation of risk. An empty result from these checks does not clear the agreement.</p></div></div></aside>
 </div>
 <div class="review-footnote"><strong>What this interaction does:</strong> switches between captured results for two fixed examples with manually supplied structure. It does not call Steno, send contract text to an AI service, or determine liability.</div>
-<noscript><p class="noscript">This comparison uses a small local script. Read the same fictional clauses and recorded outputs in <a href="evidence/recorded-checks.json">the evidence file</a>.</p></noscript>
+<noscript><style>.case-selector{display:none}</style><p class="noscript">JavaScript is off, so the draft switcher is hidden. This comparison normally uses a small local script. Read the same fictional clauses and recorded outputs in <a href="evidence/recorded-checks.json">the evidence file</a>.</p></noscript>
 </section>
 <section class="section-wrap rationale" aria-labelledby="rationale-title"><div class="section-heading"><span class="section-number" aria-hidden="true">03</span><div><h2 id="rationale-title">Make the reasoning inspectable.</h2><p>The engineering choices matter because the consequences belong to the reviewer.</p></div></div>
 <div class="rationale-grid"><article><span class="rationale-symbol" aria-hidden="true">§</span><h3>Keep the words in view</h3><p>Attach a finding to its clause and cross-reference. A reviewer can inspect the actual wording rather than accept a detached summary.</p></article><article><span class="rationale-symbol" aria-hidden="true">↔</span><h3>Expose the connection</h3><p>A delivery mechanism elsewhere in the agreement can change how a notice obligation is drafted. The connection is part of the evidence.</p></article><article><span class="rationale-symbol" aria-hidden="true">⋯</span><h3>Preserve the unanswered part</h3><p>Deterministic rules can detect selected patterns. Interpretation, factual investigation, commercial choice, and release authority remain with a person. Here, even the revised incident clause leaves the notice clock’s starting event unspecified.</p></article></div>
