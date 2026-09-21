@@ -22,6 +22,8 @@ The repository contains the ZMS Labs portfolio and its editable static website. 
 
 Edit the HTML directly; there is no hidden build step. Keep claims, headings, captions, alternative text, and diagrams consistent. Review current project evidence before changing counts or status. Preserve dated historical results as historical: SaveBench’s retained evaluation and the original publication incident are not fresh runtime checks. Canvas test links pin the public revision examined. Poiesis distinguishes separate artifact and prompt-custody fixtures: do not turn explicit purging into a production scheduler claim or recorded key removal into a backup-erasure guarantee. Preserve each product's visual language and provide full-resolution access to dense captures.
 
+September 2026: first external review round of the site; consolidated evidence boundaries, the status table, and first-time-visitor orientation (Evidence in the main nav, linear continue chain, tiered crumbs).
+
 Open Graph and Twitter card metadata and the sitemap are maintained per page. Every page carries the shared meta block in its `<head>` (type, site name, title, description, URL, image, and `summary_large_image` card); a new page must add that block, an og image under `docs/assets/og/` at 1200x630 (or reuse `og-default.png`), and a matching entry in `docs/sitemap.xml`. The `og:image` URL is absolute, like the other discovery URLs, so it keeps working from any host or preview path; update `lastmod` when a page ships.
 
 For a local preview:
