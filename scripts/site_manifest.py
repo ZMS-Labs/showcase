@@ -1,11 +1,13 @@
-"""Reproduce the static site's file inventory. Hash identity is not content approval."""
+"""Reproduce the static site's file inventory. Hash identity is not content approval. Forbidden-name guard below blocks designated private-project names from the payload."""
 from pathlib import Path
 import argparse
 import hashlib
 import json
+import re
 
 ROOT = Path(__file__).resolve().parents[1] / "docs"
 EXCLUDED = {"EXPORT-MANIFEST.json", "SHA256SUMS.txt", "MAINTAINING.md", "epistemic-skills.md"}
+FORBIDDEN = ("vanta",)
 parser = argparse.ArgumentParser(description=__doc__)
 mode = parser.add_mutually_exclusive_group(required=True)
 mode.add_argument("--write", action="store_true")
@@ -16,6 +18,11 @@ for path in sorted(ROOT.rglob("*")):
     if path.is_file() and path.relative_to(ROOT).as_posix() not in EXCLUDED:
         files.append({"path": path.relative_to(ROOT).as_posix(), "bytes": path.stat().st_size,
                       "sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
+for f in files:
+    body = (ROOT / f["path"]).read_text(encoding="utf-8", errors="replace").lower()
+    hit = next((w for w in FORBIDDEN if re.search(rf"\b{re.escape(w)}\b", body)), None)
+    if hit:
+        raise SystemExit(f"Forbidden name '{hit}' in payload file: {f['path']}")
 manifest = {"schema": "static-portfolio-export-v1", "status": "Approved public showcase source",
             "scope": "Static site payload; excludes the two manifests and source-only MAINTAINING.md and epistemic-skills.md",
             "files": files}
