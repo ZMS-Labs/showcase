@@ -57,7 +57,7 @@ Both galleries offer synchronized descriptions, alternative text, originals and 
 
 Use selectable diagrams for this service case, with no invented product UI or generated model output. The dark two-column receipt panel separates byte identity from retention; its “Hello” example is reconstructed from an existing passing assertion. The retention panel identifies an explicit purge after expiry, not an observed production scheduler. A smaller custody diagram separates encrypted queue content from the generation record's key. These are explanations of distinct test fixtures, not one purported production trace.
 
-The Vanta image-engine lineage is credited. Eight focused checks support narrow claims; hashes do not prove truth or rights, and in-memory key handling does not prove physical erasure or complete policy alignment. Preserve those boundaries when refreshing the case. The fifth additional-work card spans the row at desktop widths and remains in the normal reading order on phones.
+Eight focused checks support narrow claims; hashes do not prove truth or rights, and in-memory key handling does not prove physical erasure or complete policy alignment. Preserve those boundaries when refreshing the case. The fifth additional-work card spans the row at desktop widths and remains in the normal reading order on phones.
 
 
 ### SaveBench and Neuraxic: product ideas made visible

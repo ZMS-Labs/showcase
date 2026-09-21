@@ -295,8 +295,8 @@
     },
     {
       "path": "case-studies/poiesis/artifact-custody-case.json",
-      "bytes": 2681,
-      "sha256": "92e177772c43f6290ca299dcb37021d51a0f72726708c0509ad8f18d5684e493"
+      "bytes": 2631,
+      "sha256": "1d2351d7f347c090162ee3e856c51eff437bdd7684a1b1f23ac5d147b502d73b"
     },
     {
       "path": "case-studies/poiesis/index.html",
