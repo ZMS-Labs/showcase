@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="description" content="An Enaction case study: explicit fictional roles, staged turns and memory attribution, supported by twelve existing offline tests.">
-  <title>Enaction: a fictional role should not rewrite the operator — ZMS Labs</title>
+  <title>Enaction: a fictional role should not rewrite the operator · ZMS Labs</title>
   <link rel="stylesheet" href="../../site.css">
-  <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg"><meta property="og:type" content="website"><meta property="og:site_name" content="ZMS Labs"><meta property="og:title" content="Enaction: a fictional role should not rewrite the operator — ZMS Labs"><meta property="og:description" content="An Enaction case study: explicit fictional roles, staged turns and memory attribution, supported by twelve existing offline tests."><meta property="og:url" content="https://zms-labs.github.io/showcase/case-studies/enaction/"><meta property="og:image" content="https://zms-labs.github.io/showcase/assets/og/og-default.png"><meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg"><meta property="og:type" content="website"><meta property="og:site_name" content="ZMS Labs"><meta property="og:title" content="Enaction: a fictional role should not rewrite the operator · ZMS Labs"><meta property="og:description" content="An Enaction case study: explicit fictional roles, staged turns and memory attribution, supported by twelve existing offline tests."><meta property="og:url" content="https://zms-labs.github.io/showcase/case-studies/enaction/"><meta property="og:image" content="https://zms-labs.github.io/showcase/assets/og/og-default.png"><meta name="twitter:card" content="summary_large_image">
   <script src="../../site.js" defer></script>
   <script src="../../walkthroughs.js" defer></script>
   <style>
@@ -38,7 +38,7 @@
 
     <section id="walkthrough" class="walkthrough" data-walkthrough aria-labelledby="walkthrough-title">
       <h2 id="walkthrough-title">Whose experience is this?</h2>
-      <p class="walk-intro">Imagine an operator rehearsing a harmless scene with two fictional participants, Guide and Archivist. The Guide and Archivist scene is newly written for this page to illustrate what the tests check; it is not a recorded session, and these controls do not run the engine. The editable diagrams are not application screenshots, and they do not replay the fictional inputs.</p>
+      <p class="walk-intro">Imagine an operator rehearsing a harmless scene with two fictional participants, Guide and Archivist. The scene is newly written for this page to illustrate what the tests check; it is not a recorded session, and these controls do not run the engine. The editable diagrams are not application screenshots, and they do not replay the fictional inputs.</p>
       <div class="walk-controls" data-walk-controls hidden>
         <p data-walk-status role="status" aria-live="polite" aria-atomic="true">Step 1 of 5</p>
         <button type="button" data-walk-previous>Previous</button>
@@ -46,12 +46,12 @@
       </div>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Choose who is speaking.</h3><p>The operator selects Guide and writes, “I will bring the blue folder.” The choice identifies a participant in this scene. It does not replace the operator’s own profile.</p><p>The implementation validates the selection: the real-operator binding and a participant outside the scene are refused as assumed roles.</p></div>
+        <div><h3 tabindex="-1">Choose who is speaking.</h3><p>The operator selects Guide and writes, “I will bring the blue folder.” The choice identifies a participant in this scene and leaves the operator’s own profile alone.</p><p>The implementation validates the selection: the real-operator binding and a participant outside the scene are refused as assumed roles.</p></div>
         <figure class="role-diagram" aria-label="The operator chooses Guide; Guide and Archivist retain separate memory collections">
           <div class="role-node"><h4>Operator</h4><p>Chooses a fictional role while retaining their own profile and memory collection.</p></div>
           <div class="role-edge"><span aria-hidden="true">↓</span>Explicit role selection</div>
           <div class="role-compare"><div class="role-node role-node--chosen"><h4>Guide</h4><p>Selected for this turn</p></div><div class="role-node"><h4>Archivist</h4><p>Another participant in the scene</p></div></div>
-          <figcaption>The arrow means a selection, not a transfer of identity or memory.</figcaption>
+          <figcaption>The arrow shows a selection; no identity or memory moves with it.</figcaption>
         </figure>
       </article>
 
@@ -66,7 +66,7 @@
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Attribute memory to the chosen character.</h3><p>After a manual turn is explicitly accepted, the code that derives memory follows the recorded role. In the two-character test, events belong only to the selected character’s collection. The test repeats with each character selected.</p><p>New memory starts pending review. Assigning an event to the right collection does not approve it or make the character’s belief true.</p></div>
+        <div><h3 tabindex="-1">Attribute memory to the chosen character.</h3><p>After a manual turn is explicitly accepted, the code that derives memory follows the recorded role. In the two-character test, events belong only to the selected character’s collection. The test repeats with each character selected.</p><p>New memory starts pending review, and assigning an event to the right collection neither approves it nor makes the character’s belief true.</p></div>
         <figure class="role-diagram" aria-label="A committed Guide turn yields pending memory in Guide's collection, not in Archivist's or the operator's">
           <div class="role-node role-node--chosen"><h4>Committed manual turn</h4><p>Role recorded at staging: Guide</p></div>
           <div class="role-edge"><span aria-hidden="true">↓</span>Derive pending memory</div>
@@ -76,7 +76,7 @@
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">A missing target is not permission to guess.</h3><p>A separate negative case selects a character with no memory collection. Derivation writes nowhere, even though another collection could receive the content.</p><p>For Guide, that means the blue-folder line is not reassigned to Archivist or the operator just to produce a result.</p></div>
+        <div><h3 tabindex="-1">Refuse to guess when the target is missing.</h3><p>A separate negative case selects a character with no memory collection. Derivation writes nowhere, even though another collection could receive the content.</p><p>For Guide, that means the blue-folder line is not reassigned to Archivist or the operator just to produce a result.</p></div>
         <figure class="role-diagram" aria-label="A selected character without a memory collection causes no memory derivation and no operator fallback">
           <div class="role-node"><h4>Selected role: Guide</h4><dl><dt>Memory collection</dt><dd>Absent</dd></dl></div>
           <div class="role-edge"><span aria-hidden="true">↓</span>Resolve the selected destination</div>
@@ -114,7 +114,7 @@
     <section id="evidence" class="case-block">
       <h2>Twelve checks of a specific boundary.</h2>
       <div class="body-copy">
-        <p class="role-result">Twelve existing Python tests passed on 19 September 2026. Zero failures. Zero skips.</p>
+        <p class="role-result">Twelve existing Python tests passed on 19 September 2026 with zero failures and zero skips.</p>
         <p>The selection ran real staging, derivation and review code against in-memory or isolated temporary SQLite databases. HTTP assertions used an in-process FastAPI test client and a fixed-identity test double. No model or live-service integration was exercised.</p>
         <ul><li><strong>Attribution:</strong> selecting either character directs events to that character’s collection.</li><li><strong>Request identity:</strong> the role is persisted; an identical retry returns the original staged row, while a changed role conflicts.</li><li><strong>Invalid targets:</strong> the operator binding and a role outside the scene are refused; a chosen role without a collection derives nowhere.</li><li><strong>Operator protection:</strong> profile and memory-event-set hashes stay equal in the tested manual scene. Positive controls show the hash checks detect changes to the profile or event set.</li></ul>
         <div class="evidence-callout"><h3>What remains unproved</h3><p>These tests do not establish production authentication, PostgreSQL concurrency, deployment readiness, model quality, long-term relationship fidelity or a complete browser workflow. The role-control lock is shown here as an inspected implementation behavior with existing component tests, not as a browser interaction verified by this Python run.</p><p>The scene-close and selective-review check uses APIs; the inspected UI has no scene-close review screen. Private application source, personal profiles, memory exports and story material are excluded. The public diagrams use wholly new illustrative content, not captured application output.</p></div>
