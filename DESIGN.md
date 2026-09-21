@@ -29,9 +29,13 @@ The Steno clause illustration ends with questions for human review, not a cleara
 
 Desktop and narrow layouts were inspected, with full-resolution galleries for product images. Controls support keyboard activation, visible focus, and dialog focus return. The fixed light palette is deliberate; the GitHub masthead remains legible against either surrounding theme. Automated rendering checks supplement visual inspection and do not certify taste, semantic truth, or full accessibility compliance.
 
+### Page conventions
+
+og:description is identical to the meta description on every page. Descriptions lead with substance, never a `Project:` name prefix; the title carries the name. Every `<title>` and og:title ends ` · ZMS Labs` and the two match exactly. The contribution section uses the heading "What went into this work." everywhere except ZMS Canvas's "What the fork contributes." The evidence status table's row order equals the index order (featured five, then SaveBench, Neuraxic, ZMS Canvas, Enaction, Poiesis) and its Checked column reads "what · date" with counts spelled out.
+
 ## Guided depth and authentic motion
 
-Each featured case adds a contribution account, one concrete decision story and a short sequence of inspectable observations. Guided steps progressively reveal existing page text; with JavaScript disabled every step remains readable. The additional navigation distinguishes featured cases, supporting work and authorship.
+Each featured case adds a contribution account, one concrete decision story and a short sequence of inspectable observations. Guided steps progressively reveal existing page text; with JavaScript disabled every step remains readable. Every page, including Steno's recorded-checks sub-page, carries the same five-link header nav in fixed order: Work (index.html#work), More work (more-work.html), Evidence (evidence.html), About (about.html), GitHub (external, last). The footer nav is About and Evidence &amp; attribution. Crumbs are tiered: "Showcase / …" on top-level pages, "Selected work / <name>" linking index.html#work on featured cases, and "More work / <name>" linking more-work.html on supporting cases. The continue chain is linear: Steno → Epistemic Skills → Gridiron → Krewcible → Fleet Orchestrator → SaveBench → Neuraxic → ZMS Canvas → Enaction → Poiesis, closing with About this work and Evidence &amp; attribution; the eyebrow reads "Continue exploring" within tiers and "More work" at the Fleet Orchestrator to SaveBench tier transition.
 
 Steno and Krewcible have silent, page-only recordings of actual prototype/component interactions using fictional content. Native playback, descriptive tracks, transcripts and full-resolution stills preserve access to dense interfaces. No generated frames substitute for product operation. Steno's authored prototype questions remain distinct from its separate component checks. Krewcible's composition panel is study instrumentation for the existing deterministic function.
 
@@ -41,7 +45,7 @@ The Epistemic Skills case uses a historical publication incident with a Git-obje
 
 ## Additional work examples
 
-SaveBench, Neuraxic, ZMS Canvas and Enaction extend the collection with evaluation controls, author-controlled continuity, recovery from failed saves and explicit role attribution. A compact secondary reading path preserves the original five visual features. Each additional case uses editable HTML explanations tied to concrete records or tests; it does not invent a product screenshot.
+SaveBench, Neuraxic, ZMS Canvas and Enaction extend the collection with evaluation controls, author-controlled continuity, recovery from failed saves and explicit role attribution. A compact secondary reading path preserves the original five visual features. Each additional case uses editable HTML explanations tied to concrete records or tests; it does not invent a product screenshot. The more-work page holds five case-study collection entries in the index order, the Canvas source-and-attribution fork note adjacent to the ZMS Canvas entry, then a "Public forks and practices" section line before the documentation and fork-maintenance entries.
 
 SaveBench preserves every measured window and makes the repaired-instrument boundary explicit. Missing contestant measurements are not plotted as zero. Neuraxic separates visible proposals from canon rather than coloring every visible claim as accepted truth. Canvas presents acknowledgment, failure and conflict as alternative branches, not a required sequence. Enaction distinguishes the acting character from the operator and does not imply generated dialogue or an accepted consequence from a staged turn. Existing product images and recordings remain unchanged.
 

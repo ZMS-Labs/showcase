@@ -13,8 +13,8 @@ Zach Stern’s project showcase: what I’m building, why I chose these problems
 - [Fleet Orchestrator](case-studies/fleet-orchestrator/index.html): authentic cockpit and glyph design, Surface Bridge responsibilities and a tested review gate.
 - [SaveBench](case-studies/savebench/index.html): original factory-design and comparison prototype, plus a separate historical game-measurement experiment.
 - [Neuraxic](case-studies/neuraxic/index.html): original authoring workspace for prose and relationships, plus separate story-continuity checks.
-- [Enaction](case-studies/enaction/index.html): explicit fictional roles and operator-memory boundaries.
 - [ZMS Canvas](case-studies/zms-canvas/index.html): recovery and conflict handling in a public fork.
+- [Enaction](case-studies/enaction/index.html): explicit fictional roles and operator-memory boundaries.
 - [Poiesis](case-studies/poiesis/index.html): returned-artifact identity, fixed retention and prompt custody, with an eight-test evidence summary.
 - [About this work](about.html): direction, assistance and reading paths.
 - [Supporting work](more-work.html): public adaptations, documentation and upstream provenance.
