@@ -43,7 +43,7 @@
     "unseal_with_wrong_generation_id_rejected": true,
     "physical_erasure_proved": false
   },
-  "attribution": "Image engine extracted from Vanta at source revision 1e8c379, with configuration/cancellation seams adapted; service integration developed with AI assistance.",
+  "attribution": "Service integration developed with AI assistance; any upstream engine credit is retained in private records.",
   "limits": [
     "Separate tests, not one production-job trace.",
     "No model, GPU or live generation service invoked.",

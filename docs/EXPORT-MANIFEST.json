@@ -295,13 +295,13 @@
     },
     {
       "path": "case-studies/poiesis/artifact-custody-case.json",
-      "bytes": 2681,
-      "sha256": "92e177772c43f6290ca299dcb37021d51a0f72726708c0509ad8f18d5684e493"
+      "bytes": 2631,
+      "sha256": "1d2351d7f347c090162ee3e856c51eff437bdd7684a1b1f23ac5d147b502d73b"
     },
     {
       "path": "case-studies/poiesis/index.html",
-      "bytes": 15057,
-      "sha256": "3ab6a6b94736e5ba8ed32c0ded869d6b6479e8a53851f9057fed8c72a6262a1c"
+      "bytes": 14755,
+      "sha256": "a128736804215e81122fce09b7b4263db252a4333a33d0233fa396c7251d244f"
     },
     {
       "path": "case-studies/savebench/index.html",
@@ -380,8 +380,8 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 14204,
-      "sha256": "f569cbcbefc1626052e87f521607ec4530332934e39844143a6552109bc03acf"
+      "bytes": 14132,
+      "sha256": "ea90be319a2af65bf68b26a1ac96368a7fc2cde1b097270e5a8a317cdfa40919"
     },
     {
       "path": "index.html",
@@ -395,8 +395,8 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 7678,
-      "sha256": "3d8b2840c9a1a78f0454d567b4f24488bfd07e741d7390a5e0d0ff17ec061cdd"
+      "bytes": 7626,
+      "sha256": "a100a9e204fb54ddda14084f92fd881edd2534f2adf451badc3a5ca0a55df25c"
     },
     {
       "path": "README.md",
