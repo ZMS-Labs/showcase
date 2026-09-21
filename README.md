@@ -20,8 +20,8 @@ I'm Zach Stern. These are projects I'm building around contracts, writing, games
 | [Fleet Orchestrator](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/) | How can an agent's identity and work stay connected as execution sessions change?<br>Authentic cockpit and glyph design, a Surface Bridge explanation, and a tested review gate |
 | [SaveBench](https://zms-labs.github.io/showcase/case-studies/savebench/) | How can AI-designed factories be compared through actual game behavior?<br>Original challenge/comparison UX, a synthetic navigation recording, and a separate historical measurement case |
 | [Neuraxic](https://zms-labs.github.io/showcase/case-studies/neuraxic/) | How can ideas, prose and world relationships develop together?<br>Original authoring interface, fictional navigation study and focused continuity evidence |
-| [Enaction](https://zms-labs.github.io/showcase/case-studies/enaction/) | Who is speaking, and whose memory should change?<br>Explicit fictional-role selection and twelve focused tests of memory attribution and operator boundaries |
 | [ZMS Canvas](https://zms-labs.github.io/showcase/case-studies/zms-canvas/) | What happens to edits when a save fails or another revision arrives first?<br>Six focused recovery and storage tests in a public PenEcho fork, with upstream attribution |
+| [Enaction](https://zms-labs.github.io/showcase/case-studies/enaction/) | Who is speaking, and whose memory should change?<br>Explicit fictional-role selection and twelve focused tests of memory attribution and operator boundaries |
 | [Poiesis](https://zms-labs.github.io/showcase/case-studies/poiesis/) | Which result came back, and how long should it remain available?<br>Eight focused tests of artifact identity, expired access, explicit purging and prompt-key handling |
 
 ## Product design you can examine
