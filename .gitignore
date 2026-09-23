@@ -1,3 +1,7 @@
 /outputs/
 __pycache__/
 *.pyc
+# Maintainer-only files, such as the name list scripts/site_manifest.py reads. Never commit these.
+.local/
+# Local editor-hook cache; it holds machine paths.
+.impeccable/
