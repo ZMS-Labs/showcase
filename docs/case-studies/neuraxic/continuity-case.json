@@ -46,7 +46,8 @@
     "SQLite tests do not establish PostgreSQL contention or production persistence behavior.",
     "No live services, models, application UI, authentication, deployment or narrative quality were tested.",
     "A canon receipt records an operator decision; it does not independently validate story truth or coherence.",
-    "The project is personally directed and AI-assisted; this evidence does not establish sole personal implementation authorship.",
+    "AI tools write the code. I decide what each project is for and check what comes back.",
     "Private application source, storyworld material and full verification receipts are not included."
-  ]
+  ],
+  "claim_limits_note": "Amended 2026-09-23. The authorship item now uses the site's standard wording about who writes the code. No tests were rerun, and nothing else in this record changed."
 }

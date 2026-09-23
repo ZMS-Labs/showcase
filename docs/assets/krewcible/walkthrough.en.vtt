@@ -1,46 +1,45 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:04.240
-Begin with four traits for a synthetic character.
+00:00:00.000 --> 00:00:04.240 line:0
+Begin with four traits for a made-up character.
 
 2
-00:00:04.240 --> 00:00:07.243
+00:00:04.240 --> 00:00:07.243 line:0
 Change short hair to long hair.
 
 3
-00:00:07.243 --> 00:00:12.577
-Add goggles; the stack and description update.
+00:00:07.243 --> 00:00:12.577 line:0
+Add goggles; the list and the description update.
 
 4
-00:00:12.577 --> 00:00:16.840
-Add “carries a field notebook” as a written refinement.
+00:00:12.577 --> 00:00:16.840 line:0
+Add “carries a field notebook” as a typed entry.
 
 5
-00:00:16.840 --> 00:00:19.561
+00:00:16.840 --> 00:00:19.561 line:0
 Add “no heavy armor”; it becomes an exclusion.
 
 6
-00:00:19.561 --> 00:00:22.528
-Choose Accent and paste the teal color value.
+00:00:19.561 --> 00:00:22.528 line:0
+Choose Accent and enter the teal color value.
 
 7
-00:00:22.528 --> 00:00:24.774
-Apply the accent to the stack and description.
+00:00:22.528 --> 00:00:24.774 line:0
+Apply the accent to the list and the description.
 
 8
-00:00:24.774 --> 00:00:27.865
+00:00:24.774 --> 00:00:27.865 line:0
 Increase presence with the slider.
 
 9
-00:00:27.865 --> 00:00:29.963
+00:00:27.865 --> 00:00:29.963 line:0
 Remove arcane bearing; its phrase disappears.
 
 10
-00:00:29.963 --> 00:00:33.800
-Eight refinements remain, including the heavy-armor exclusion.
+00:00:29.963 --> 00:00:33.800 line:0
+Eight choices remain, including the heavy-armor exclusion.
 
 11
-00:00:33.800 --> 00:00:36.440
-Text is composed locally. No generation or saving is shown.
-
+00:00:33.800 --> 00:00:36.440 line:0
+The description is put together on the page. No generation or saving is shown.
