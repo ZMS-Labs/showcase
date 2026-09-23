@@ -1,58 +1,85 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/zms-labs-mobile.svg">
-  <img src="assets/zms-labs.svg" alt="ZMS Labs. Thoughtful tools. Work you can inspect." width="1280">
+  <img src="assets/zms-labs.svg" alt="ZMS Labs. What I've been building with AI, and how it's actually going." width="1280">
 </picture>
 
-# ZMS Labs · Selected work
+# Selected work by Zach Stern
 
-I'm Zach Stern. These are projects I'm building around contracts, writing, games and the practical problems I run into with AI tools. I direct the work and use those tools extensively for research, design, code and testing. Each case study shows the idea behind the interface and what works so far.
+I'm Zach Stern. I work with contracts. These are projects I'm building around contracts, writing, games and the practical problems I run into with AI tools. Steno starts from a question like this one: if a vendor reports a data incident, who needs to be told, and how do the liability terms change the answer?
 
-[Explore the full showcase](https://zms-labs.github.io/showcase/) · [About this work](https://zms-labs.github.io/showcase/about.html) · [Supporting work](https://zms-labs.github.io/showcase/more-work.html) · [Evidence and attribution](https://zms-labs.github.io/showcase/evidence.html) · [Maintain this site](docs/MAINTAINING.md)
+AI tools write the code. I decide what each project is for and check what comes back. I want this site to show what I've been up to with AI and how it's actually going, without overstating any of it.
+
+[Explore the full showcase](https://zms-labs.github.io/showcase/) · [About](https://zms-labs.github.io/showcase/about.html) · [How I work with AI tools](https://zms-labs.github.io/showcase/about.html#how-i-work) · [More work](https://zms-labs.github.io/showcase/more-work.html) · [Evidence and attribution](https://zms-labs.github.io/showcase/evidence.html)
+
+## A look at the featured projects
+
+### Steno: a contract workstation
+
+[![Steno's archived matter-map prototype, shown with made-up content.](docs/assets/steno/matter-map.png)](https://zms-labs.github.io/showcase/case-studies/steno/)
+
+Steno is a contract workstation that keeps the document, its connections and the questions under review together. The case study shows the archived prototype in full resolution and in a short captioned recording. It also shows the Hallmark, the emblem Steno uses to show a grade and what backs it, drawn with made-up inputs, so no contract was assessed. Two drafting checks, recorded on made-up clauses, have their own page.
+
+[Watch the prototype recording](https://zms-labs.github.io/showcase/case-studies/steno/#recording) · [See the Hallmark designs](https://zms-labs.github.io/showcase/case-studies/steno/#hallmarks) · [Read the drafting checks](https://zms-labs.github.io/showcase/case-studies/steno/recorded-checks/)
+
+### SaveBench: factories in Satisfactory
+
+[![The SaveBench comparison prototype in its preview mode, with made-up models, factory and results.](docs/assets/savebench/savebench-workspace.png)](https://zms-labs.github.io/showcase/case-studies/savebench/)
+
+SaveBench gives AI models a factory to design in the video game Satisfactory, and the running game measures what the factory delivers. The case study shows the comparison prototype on made-up data, then a real experiment from 9 September 2026. An AI agent designed a copper and concrete factory for it. On the first trial the measuring tool failed its own check, so nothing was judged. After a repair, the same design missed its targets in two of its three two-minute measuring windows, and that FAIL is kept as recorded. Later records show that on 13 September, factories designed by AI models passed a harder challenge in the game with faster belts allowed. A newer test, where the factory has to keep producing while nobody touches it, has no pass yet. Dates are UTC, as in the run records.
+
+[Watch the prototype recording](https://zms-labs.github.io/showcase/case-studies/savebench/#recording) · [See the trials](https://zms-labs.github.io/showcase/case-studies/savebench/#walkthrough)
+
+### Epistemic Skills: checking an AI agent's work
+
+Epistemic Skills is a set of seventeen written methods that an AI agent (an AI tool that carries out a multi-step task on its own) can load when a task calls for one: to investigate a failure, compare options or check whether a change worked. The source is public, in eleven releases since July 2026. The comparisons so far haven't shown whether the methods make agents better.
+
+[Read the case study](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/) · [Browse the source](https://github.com/ZMS-Labs/epistemic-skills)
+
+### Fleet Orchestrator: keeping track of AI agents
+
+[![Fleet Orchestrator's role glyphs, drawn by its own glyph renderer with a made-up identity.](docs/assets/fleet-orchestrator/fleet-orchestrator-roles.png)](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/)
+
+I wanted to keep track of several AI coding agents without losing their work between sessions. Fleet Orchestrator is the workspace I'm designing for that: each agent gets a recognizable glyph, and its conversation, tasks and reviews stay together. The case study shows the glyph designs and the main screen with made-up agents. It also explains the Surface Bridge, the part that takes a decision about what an agent should do next, turns it into commands for whichever AI tool is running that agent, and reports back how it went. Three of the project's own tests passed on its review gate, the check that holds an agent's work back while a serious problem found in review is still open.
+
+[See the glyph designs](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/#glyphs)
+
+Neuraxic and Krewcible have short recordings too: [Neuraxic](https://zms-labs.github.io/showcase/case-studies/neuraxic/#recording) · [Krewcible](https://zms-labs.github.io/showcase/case-studies/krewcible/#recording)
 
 ## The questions behind the projects
 
-| Project | Question and inspectable work |
-|---|---|
-| [Steno](https://zms-labs.github.io/showcase/case-studies/steno/) | How could a contract workstation connect a clause to the questions it raises?<br>An archived workspace prototype, the current Hallmark emblem system, and separate recorded drafting checks |
-| [Epistemic Skills](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/) | How can agents investigate, compare alternatives, and verify their work more systematically?<br>Public methods, worked examples, design rationale, and evaluation limits |
-| [Gridiron](https://zms-labs.github.io/showcase/case-studies/gridiron/) | How can commentary stay accountable to a recorded event?<br>A synthetic replay, its evidence boundaries, and a downloadable research-source snapshot |
-| [Krewcible](https://zms-labs.github.io/showcase/case-studies/krewcible/) | How can a creative tool keep choices visible and editable?<br>Existing checkpoint-editor components before and after exercised controls with synthetic state |
-| [Fleet Orchestrator](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/) | How can an agent's identity and work stay connected as execution sessions change?<br>Authentic cockpit and glyph design, a Surface Bridge explanation, and a tested review gate |
-| [SaveBench](https://zms-labs.github.io/showcase/case-studies/savebench/) | How can AI-designed factories be compared through actual game behavior?<br>Original challenge/comparison UX, a synthetic navigation recording, and a separate historical measurement case |
-| [Neuraxic](https://zms-labs.github.io/showcase/case-studies/neuraxic/) | How can ideas, prose and world relationships develop together?<br>Original authoring interface, fictional navigation study and focused continuity evidence |
-| [ZMS Canvas](https://zms-labs.github.io/showcase/case-studies/zms-canvas/) | What happens to edits when a save fails or another revision arrives first?<br>Six focused recovery and storage tests in a public PenEcho fork, with upstream attribution |
-| [Enaction](https://zms-labs.github.io/showcase/case-studies/enaction/) | Who is speaking, and whose memory should change?<br>Explicit fictional-role selection and twelve focused tests of memory attribution and operator boundaries |
-| [Poiesis](https://zms-labs.github.io/showcase/case-studies/poiesis/) | Which result came back, and how long should it remain available?<br>Eight focused tests of artifact identity, expired access, explicit purging and prompt-key handling |
+Each project started with a question. The line under each one says how the work is shown and what works so far, and the label links to the key on the Evidence page.
 
-## Product design you can examine
+### Featured
 
-[![Steno's archived matter-map prototype, rendered with fictional content. Design evidence, not current product operation.](docs/assets/steno/matter-map.png)](https://zms-labs.github.io/showcase/case-studies/steno/)
+- [Steno](https://zms-labs.github.io/showcase/case-studies/steno/): How could a contract workstation connect a clause to the questions it raises?<br>[Prototype](https://zms-labs.github.io/showcase/evidence.html#status) · the archived prototype design, the current Hallmark emblem, and two drafting checks recorded on made-up clauses
+- [SaveBench](https://zms-labs.github.io/showcase/case-studies/savebench/): How would AI models approach building a factory in Satisfactory, and would it actually work in the game?<br>[Recorded experiment](https://zms-labs.github.io/showcase/evidence.html#status) · the original interface on made-up data, a factory an AI agent designed that the game scored as a FAIL, and later designs that passed in the game
+- [Epistemic Skills](https://zms-labs.github.io/showcase/case-studies/epistemic-skills/): How do I get AI agents to investigate a problem properly and check whether their change worked?<br>[Public source](https://zms-labs.github.io/showcase/evidence.html#status) · public releases, and one recorded use on this site (19 September 2026) with a check anyone can rerun
+- [Fleet Orchestrator](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/): How do I keep track of several AI coding agents without losing their work between sessions?<br>[Component study](https://zms-labs.github.io/showcase/evidence.html#status) · the glyphs and main screen from the project's own code, and three review-gate tests passed
 
-Steno connects document context and review questions. The case study preserves the prototype's visual language, with a full-resolution gallery and a captioned prototype recording. The [Hallmark gallery](https://zms-labs.github.io/showcase/case-studies/steno/#hallmarks) also examines the implemented emblem language: modeled grade, facet geometry and distinct evidence marks. Recorded drafting checks remain separate from the design specimens.
+### Supporting
 
-[![Krewcible's checkpoint editor after exercised controls changed the modification stack and deterministic text. Synthetic component study.](docs/assets/krewcible/workspace.png)](https://zms-labs.github.io/showcase/case-studies/krewcible/)
-
-Krewcible lets you shape the idea and see what changed. Watch the captioned component recording and inspect the initial and changed states, the controls exercised, and the limits of the study. These captures do not demonstrate a generation service or persistent storage.
-
-[![Original Fleet Orchestrator role glyphs rendered with a synthetic identity.](docs/assets/fleet-orchestrator/fleet-orchestrator-roles.png)](https://zms-labs.github.io/showcase/case-studies/fleet-orchestrator/)
-
-Fleet Orchestrator makes agents recognizable and their work accountable. Inspect the glyph vocabulary, the Stratus home rendered with synthetic work, and the Surface Bridge's place between coordination and runtime execution. The review-gate walkthrough supplies a concrete behavioral example alongside the design.
+- [Neuraxic](https://zms-labs.github.io/showcase/case-studies/neuraxic/): Can a story's prose, people, places and rules develop together, and can I try another version without losing what I've already decided?<br>[Interface study](https://zms-labs.github.io/showcase/evidence.html#status) · the app's own screens with a made-up story world, and five tests passed on what each version of the story can see and how a new detail gets accepted
+- [Krewcible](https://zms-labs.github.io/showcase/case-studies/krewcible/): Can I shape a character through choices I can see, change and take back one at a time?<br>[Component study](https://zms-labs.github.io/showcase/evidence.html#status) · the editor's own controls, recorded with made-up choices; no test was run and no image was generated
+- [Gridiron](https://zms-labs.github.io/showcase/case-studies/gridiron/): Can commentary for a football video game follow what happened on the field?<br>[Public source](https://zms-labs.github.io/showcase/evidence.html#status) · a research snapshot you can download, two recorded runs of one made-up drive, and 44 tests passed; not yet tested against the real game
+- [Enaction](https://zms-labs.github.io/showcase/case-studies/enaction/): When someone plays a fictional role, whose memory should change, the character's or theirs?<br>[Component study](https://zms-labs.github.io/showcase/evidence.html#status) · twelve tests passed that keep the memories a scene creates with the character and off the player's own record
+- [Poiesis](https://zms-labs.github.io/showcase/case-studies/poiesis/): When several apps share one generation service, how do I know what came back, and how long should it be kept?<br>[Component study](https://zms-labs.github.io/showcase/evidence.html#status) · eight tests passed: a returned file is exactly the one that was made, files expire after 24 hours whether or not anyone collects them, and a stored prompt becomes unreadable once a job finishes
 
 ## How to read the work
 
-- Purpose and tradeoffs: each case study explains the problem, design choices, implemented slice, and remaining questions.
-- Evidence near the claim: prototype images, component interactions, recorded results, and conceptual illustrations are identified as different kinds of artifacts.
-- Inspectable work: [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) has public source; Gridiron includes a reviewed source snapshot. Steno, Krewcible, Fleet Orchestrator, SaveBench, Neuraxic, Enaction and Poiesis share selected case-study material while their application source remains private.
-- My role: I set the direction and develop these projects with AI assistance. [Attribution and provenance](https://zms-labs.github.io/showcase/evidence.html) explain the assistance and the work shown.
+Each case study starts with what I wanted, explains the design choices, and says what's built, what ran and what's still open. Prototype images, working pieces, recorded results and concept illustrations are each labeled as what they are, and the [Evidence page](https://zms-labs.github.io/showcase/evidence.html) has a dated record for every project.
 
-These are independent projects with different stages of maturity. The showcase does not establish employer deployment, production readiness, or measured improvement in agent performance.
+You can check some of the work yourself. [Epistemic Skills](https://github.com/ZMS-Labs/epistemic-skills) is a public repository, and the Gridiron case study has a source download you can run. The other seven projects keep their source private, so their case studies show screens, recordings and test results instead.
 
-A real Epistemic Skills task is reproducible from this repository: run `python scripts/replay_manifest_case.py` in a full clone to inspect the original publication's manifest mismatch and correction. It uses public Git objects, Python and Git; no model account is required.
+These are personal projects. Questions and conversations are welcome through [my GitHub profile](https://github.com/SternOne).
+
+### Check one result yourself
+
+When this site was first published, a check found that 14 of the site's 28 files did not match its manifest, the list of the site's files with a fingerprint (a SHA-256 hash) of each. The task record names the method as Did It Land, one of the Epistemic Skills methods. The working copy had Windows line endings, and Git stored the files with Unix ones. The corrected commit has no mismatches, and all 28 files on the live site then matched it. To see both results from public Git history, run `python scripts/replay_manifest_case.py` in a full clone; it needs only Python and Git.
 
 ## Running and maintaining the site
 
 The site is plain HTML, CSS, and JavaScript in [`docs/`](docs/README.md). Open `docs/index.html` locally or run `python -m http.server 8000 --directory docs`. It needs no build service, model account, external font request, or application backend.
 
-[Maintenance and verification](docs/MAINTAINING.md) · [Design decisions](DESIGN.md) · [Asset provenance](docs/assets/manifest.json) · [Documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain)
+[Maintaining this site](MAINTAINING.md) · [Design decisions](DESIGN.md) · [Asset manifest](docs/assets/manifest.json) · [Documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain)
 
-Showcase site, Copyright (C) 2026 ZMS Labs / Zach Stern. This site is distributed under GPL-3.0-only; see [LICENSE](LICENSE) and [asset notices](assets/README.md). The Gridiron download retains its own declarations and third-party notices. Publishing this portfolio does not publish or deploy the private applications.
+Showcase site, Copyright (C) 2026 ZMS Labs / Zach Stern. This site is distributed under GPL-3.0-or-later; see [LICENSE](LICENSE) and [asset notices](assets/README.md). The Gridiron download keeps its own declarations and third-party notices.
