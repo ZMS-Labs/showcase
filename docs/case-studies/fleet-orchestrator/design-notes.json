@@ -16,6 +16,6 @@
     "Orchestrator continuity and summarized context do not promise perfect internal-state migration.",
     "A reachable endpoint does not prove useful execution.",
     "Small-size color-independent glyph discriminability has not been fully verified.",
-    "The review-gate test receipt is separate evidence with its own pinned source."
+    "The review-gate tests are separate evidence; review-gate.json records the revision they ran against."
   ]
 }

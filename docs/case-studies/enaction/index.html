@@ -4,19 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="Explicit fictional roles, staged turns and memory attribution, supported by twelve existing offline tests.">
-  <title>Enaction: a fictional role should not rewrite the operator · ZMS Labs</title>
+  <meta name="description" content="How Enaction keeps what happens to a character separate from the person playing it, checked by twelve offline tests.">
+  <title>Enaction: a character you play should not rewrite you · ZMS Labs</title>
   <link rel="stylesheet" href="../../site.css">
-  <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg"><meta property="og:type" content="website"><meta property="og:site_name" content="ZMS Labs"><meta property="og:title" content="Enaction: a fictional role should not rewrite the operator · ZMS Labs"><meta property="og:description" content="Explicit fictional roles, staged turns and memory attribution, supported by twelve existing offline tests."><meta property="og:url" content="https://zms-labs.github.io/showcase/case-studies/enaction/"><meta property="og:image" content="https://zms-labs.github.io/showcase/assets/og/og-default.png"><meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.svg"><meta property="og:type" content="website"><meta property="og:site_name" content="ZMS Labs"><meta property="og:title" content="Enaction: a character you play should not rewrite you · ZMS Labs"><meta property="og:description" content="How Enaction keeps what happens to a character separate from the person playing it, checked by twelve offline tests."><meta property="og:url" content="https://zms-labs.github.io/showcase/case-studies/enaction/"><meta property="og:image" content="https://zms-labs.github.io/showcase/assets/og/og-default.png"><meta name="twitter:card" content="summary_large_image">
   <script src="../../site.js" defer></script>
   <script src="../../walkthroughs.js" defer></script>
   <style>
+    .plain-terms{margin:26px 0 0;max-width:69ch}.plain-terms h2{font-size:.9rem;font-weight:550;letter-spacing:0;line-height:1.4;color:var(--muted);margin:0 0 8px}.plain-terms p{margin:0;font-size:1.02rem}
     .role-diagram{margin:0;min-width:0}.role-node{padding:21px;border:1px solid var(--line);border-radius:10px;background:var(--paper);min-width:0}
     .role-node h4{font-size:1.03rem;line-height:1.35;margin:0 0 14px;font-weight:600}.role-node p{font-size:.88rem;line-height:1.55;margin:0;color:var(--muted)}
     .role-node dl{display:grid;grid-template-columns:1fr auto;gap:12px;margin:0;font-size:.88rem;line-height:1.45}.role-node dt{color:var(--muted)}.role-node dd{margin:0;font-weight:550;text-align:right;overflow-wrap:anywhere}
     .role-node--chosen{background:#edf3f7;border-color:#afc1cf}.role-node--protected{background:#edf3ed;border-color:#a7bcb3}.role-node--stopped{border:2px dashed #8b6256;background:#f8f1ed}
-    .role-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.role-edge{display:flex;align-items:center;justify-content:center;gap:12px;padding:13px 0;color:var(--muted);font-size:.79rem;line-height:1.5;text-align:center}.role-edge span[aria-hidden]{font-size:1.5rem}
-    .role-diagram figcaption{font-size:.81rem;line-height:1.55;color:var(--muted);margin-top:16px}.role-note{border-top:1px solid var(--line);padding-top:22px;margin:28px 0 0;color:var(--muted);font-size:.93rem}.role-note strong{color:var(--ink)}.role-result{font-size:1.25rem;line-height:1.5;color:var(--ink)}
+    .role-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.role-stack{display:grid;gap:10px}.role-stack .role-node{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding:14px 18px}.role-stack .role-node h4{margin:0}
+    .role-tag{margin:0 0 10px;font-size:.78rem;font-weight:600;line-height:1.4;color:var(--muted)}
+    .role-edge{display:flex;align-items:center;justify-content:center;gap:12px;padding:13px 0;color:var(--muted);font-size:.79rem;line-height:1.5;text-align:center}.role-edge span[aria-hidden]{font-size:1.5rem}
+    .role-diagram figcaption{font-size:.81rem;line-height:1.55;color:var(--muted);margin-top:16px}.role-note{border-top:1px solid var(--line);padding-top:22px;margin:28px 0 0;color:var(--muted);font-size:.93rem}
+    .case-block .body-copy>p.role-result{font-size:clamp(1.12rem,2vw,1.25rem);line-height:1.5;color:var(--ink)}
     @media(max-width:720px){.role-compare{grid-template-columns:1fr}.role-node{padding:18px}.role-node dl{grid-template-columns:1fr}.role-node dd{text-align:left}.role-edge{padding:12px 6px}}
   </style>
 </head>
@@ -27,102 +31,102 @@
     <nav aria-label="Main navigation"><a href="../../index.html#work">Work</a><a href="../../more-work.html">More work</a><a href="../../evidence.html">Evidence</a><a href="../../about.html">About</a><a href="https://github.com/ZMS-Labs">GitHub</a></nav>
   </header>
   <main id="main" class="wrap">
-    <div class="crumbs"><a href="../../more-work.html">More work</a> / Enaction</div>
+    <div class="crumbs"><a href="../../more-work.html">Supporting</a> / Enaction</div>
     <section class="case-hero">
-      <p class="quiet-label">Enaction · Roles, interaction and memory</p>
-      <h1>A fictional role should not rewrite the operator.</h1>
-      <p class="lead">I wanted fictional participants to develop through interaction without their experiences being assigned to the person playing them. Enaction makes the chosen role explicit and carries it through a turn to the memory it may update.</p>
-      <div class="case-meta"><span><strong>Work shown</strong> Role selection and memory attribution</span><span><strong>Evidence</strong> Twelve existing offline Python tests</span></div>
+      <p class="quiet-label">Enaction · Characters and memory</p>
+      <h1>A character you play should not rewrite you.</h1>
+      <p class="lead">I wanted characters to grow through what happens in a scene, with their memories kept apart from the person playing them. In Enaction you pick which character is speaking, and that choice decides whose memory the turn can change. It didn’t at first: in August 2026 an AI review found that the pick only changed a label on screen, and with two characters in a scene, one character’s line could quietly become the other’s memory.</p>
+      <section class="plain-terms" aria-labelledby="plain-terms-title"><h2 id="plain-terms-title">In plain terms.</h2><p>When a turn is accepted, Enaction files the memory it produces under the character who spoke, and writes nothing if that character has nowhere to keep it. Twelve tests check this with no AI model running, including one that takes a fingerprint (a code computed from the exact data) of your profile and memories before a scene and finds both unchanged afterward.</p></section>
+      <div class="case-meta"><span><strong>Shown as</strong> <a href="../../evidence.html#status"><b>Component study</b></a>&nbsp;· the app’s own code for choosing who speaks and filing memory</span><span><strong>Checked</strong> Twelve tests passed&nbsp;· 19 September 2026</span><span><strong>Source</strong> Private</span></div>
     </section>
-    <nav class="case-jump" aria-label="On this page"><a href="#walkthrough">Follow a role</a><a href="#decisions">Design tradeoffs</a><a href="#contribution">Contribution</a><a href="#evidence">Evidence and limits</a></nav>
+    <nav class="case-jump" aria-label="On this page"><a href="#walkthrough">Follow a scene</a><a href="#decisions">Design tradeoffs</a><a href="#contribution">What went into this work</a><a href="#evidence">Evidence and limits</a></nav>
 
     <section id="walkthrough" class="walkthrough" data-walkthrough aria-labelledby="walkthrough-title">
       <h2 id="walkthrough-title">Whose experience is this?</h2>
-      <p class="walk-intro">Imagine an operator rehearsing a harmless scene with two fictional participants, Guide and Archivist. The scene is newly written for this page to illustrate what the tests check; it is not a recorded session, and these controls do not run the engine. The editable diagrams are not application screenshots, and they do not replay the fictional inputs.</p>
+      <p class="walk-intro">Imagine you are running a short scene with two characters, Guide and Archivist. Each character keeps its memories in its own collection, apart from yours. The scene was made up for this page to explain what the tests check, and the diagrams were drawn for it as well, so clicking through them does not run Enaction.</p>
       <div class="walk-controls" data-walk-controls hidden>
         <p data-walk-status role="status" aria-live="polite" aria-atomic="true">Step 1 of 5</p>
         <button type="button" data-walk-previous>Previous</button>
-        <button type="button" data-walk-next>Next</button>
+        <button type="button" data-walk-next>Next step</button>
       </div>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Choose who is speaking.</h3><p>The operator selects Guide and writes, “I will bring the blue folder.” The choice identifies a participant in this scene and leaves the operator’s own profile alone.</p><p>The implementation validates the selection: the real-operator binding and a participant outside the scene are refused as assumed roles.</p></div>
-        <figure class="role-diagram" aria-label="The operator chooses Guide; Guide and Archivist retain separate memory collections">
-          <div class="role-node"><h4>Operator</h4><p>Chooses a fictional role while retaining their own profile and memory collection.</p></div>
-          <div class="role-edge"><span aria-hidden="true">↓</span>Explicit role selection</div>
-          <div class="role-compare"><div class="role-node role-node--chosen"><h4>Guide</h4><p>Selected for this turn</p></div><div class="role-node"><h4>Archivist</h4><p>Another participant in the scene</p></div></div>
+        <div><h3 tabindex="-1">Choose who is speaking.</h3><p>You pick Guide and type, “I will bring the blue folder.” That choice says who is talking in this scene, and your own profile stays as it was.</p><p>Enaction checks the pick before using it. It refuses your own identity as a character, and it refuses a character who is not in the scene.</p></div>
+        <figure class="role-diagram" aria-label="You choose Guide for this turn; Archivist is another character in the scene, and you keep your own profile and memory collection">
+          <div class="role-node"><h4>You</h4><p>Pick a character for this turn and keep your own profile and memory collection.</p></div>
+          <div class="role-edge"><span aria-hidden="true">↓</span>Explicit choice of character</div>
+          <div class="role-compare"><div class="role-node role-node--chosen"><h4>Guide</h4><p>Chosen for this turn</p></div><div class="role-node"><h4>Archivist</h4><p>Another character in the scene</p></div></div>
           <figcaption>The arrow shows a selection; no identity or memory moves with it.</figcaption>
         </figure>
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Keep the staged role stable.</h3><p>Preparing a turn records the chosen role with the input. Reusing the same action key (the request’s unique retry identifier) with a different role is a conflicting request; it cannot silently replace the original.</p><p>The existing workspace also locks role controls while staging is in flight or a turn is pending, and explains why.</p></div>
-        <figure class="role-diagram" aria-label="A staged turn retains Guide; a same-key request naming Archivist is rejected as a conflict">
-          <div class="role-node role-node--chosen"><h4>Staged turn</h4><dl><dt>Assumed role</dt><dd>Guide</dd><dt>Input</dt><dd>Bring the blue folder</dd><dt>History</dt><dd>Not yet accepted</dd></dl></div>
-          <div class="role-edge"><span aria-hidden="true">↓</span>Same action key, different role</div>
-          <div class="role-node role-node--stopped"><h4>Conflict</h4><p>Changing the request to Archivist does not rewrite the staged selection.</p></div>
-          <figcaption>The diagram explains role persistence and retry identity. It does not show an actual application request.</figcaption>
+        <div><h3 tabindex="-1">Keep the character fixed once the turn is prepared.</h3><p>When a turn is prepared, Enaction saves the chosen character along with the line. Each request carries an ID so Enaction can recognize a retry. If a retry with the same ID names Archivist instead, Enaction treats it as a conflict and keeps Guide.</p><p>While a turn is being prepared or is waiting to be accepted, the workspace also locks the role controls and says why.</p></div>
+        <figure class="role-diagram" aria-label="A prepared turn keeps Guide; a retry with the same ID that names Archivist is refused as a conflict">
+          <div class="role-node role-node--chosen"><h4>Prepared turn</h4><dl><dt>Character</dt><dd>Guide</dd><dt>Line</dt><dd>I will bring the blue folder.</dd><dt>History</dt><dd>Not yet accepted</dd></dl></div>
+          <div class="role-edge"><span aria-hidden="true">↓</span>Same request ID, different character</div>
+          <div class="role-node role-node--stopped"><h4>Conflict</h4><p>Naming Archivist in the retry does not change the prepared turn.</p></div>
+          <figcaption>A retry cannot swap the character on a turn that is already prepared.</figcaption>
         </figure>
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Attribute memory to the chosen character.</h3><p>After a manual turn is explicitly accepted, the code that derives memory follows the recorded role. In the two-character test, events belong only to the selected character’s collection. The test repeats with each character selected.</p><p>New memory starts pending review, and assigning an event to the right collection neither approves it nor makes the character’s belief true.</p></div>
-        <figure class="role-diagram" aria-label="A committed Guide turn yields pending memory in Guide's collection, not in Archivist's or the operator's">
-          <div class="role-node role-node--chosen"><h4>Committed manual turn</h4><p>Role recorded at staging: Guide</p></div>
-          <div class="role-edge"><span aria-hidden="true">↓</span>Derive pending memory</div>
-          <div class="role-node role-node--chosen"><h4>Guide’s collection</h4><dl><dt>Receives these events</dt><dd>Yes</dd><dt>Archivist’s collection</dt><dd>No</dd><dt>Operator’s collection</dt><dd>No</dd></dl></div>
-          <figcaption>This is collection attribution in an isolated test. It does not measure psychological fidelity, recall quality or relationship continuity.</figcaption>
+        <div><h3 tabindex="-1">Give the memory to the character who spoke.</h3><p>After you accept a manual turn, where the character’s reply is entered by hand and no AI model runs, Enaction files the memories it produces under the character saved with that turn. The test uses two characters and runs once with each one chosen. Every memory from the turn lands with the character who was speaking, and none land anywhere else.</p><p>New memories still wait for review. Putting one in the right place does not approve it, and it does not make the character’s belief true.</p></div>
+        <figure class="role-diagram" aria-label="An accepted Guide turn puts its new memories, still waiting for review, in Guide’s collection and adds nothing to Archivist’s collection or yours">
+          <div class="role-node role-node--chosen"><h4>Accepted manual turn</h4><p>Character saved with the turn: Guide</p></div>
+          <div class="role-edge"><span aria-hidden="true">↓</span>File the new memories, waiting for review</div>
+          <div class="role-stack"><div class="role-node role-node--chosen"><h4>Guide’s collection</h4><p>Gets the new memories</p></div><div class="role-node"><h4>Archivist’s collection</h4><p>Nothing added</p></div><div class="role-node"><h4>Your collection</h4><p>Nothing added</p></div></div>
         </figure>
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Refuse to guess when the target is missing.</h3><p>A separate negative case selects a character with no memory collection. Derivation writes nowhere, even though another collection could receive the content.</p><p>For Guide, that means the blue-folder line is not reassigned to Archivist or the operator just to produce a result.</p></div>
-        <figure class="role-diagram" aria-label="A selected character without a memory collection causes no memory derivation and no operator fallback">
-          <div class="role-node"><h4>Selected role: Guide</h4><dl><dt>Memory collection</dt><dd>Absent</dd></dl></div>
-          <div class="role-edge"><span aria-hidden="true">↓</span>Resolve the selected destination</div>
-          <div class="role-node role-node--stopped"><h4>No memory events created</h4><p>There is no fallback to another character’s collection or the operator’s collection.</p></div>
-          <figcaption>This checks a missing collection. It does not claim recovery from every database or storage failure.</figcaption>
+        <div><h3 tabindex="-1">Refuse to guess when the chosen character has no memory collection.</h3><p>Another test picks a character that has no memory collection. Enaction writes no memory at all, even though another character’s collection was there to receive it.</p><p>For Guide, that means the blue-folder line is not handed to Archivist or to you just to produce a result.</p></div>
+        <figure class="role-diagram" aria-label="In a separate test, the chosen character Guide has no memory collection, so no memories are written and nothing falls back to Archivist’s collection or yours">
+          <p class="role-tag">Separate test</p>
+          <div class="role-node"><h4>Guide without a collection</h4><dl><dt>Memory collection</dt><dd>Absent</dd></dl></div>
+          <div class="role-edge"><span aria-hidden="true">↓</span>Look for Guide’s collection</div>
+          <div class="role-node role-node--stopped"><h4>No memories written</h4><p>There is no fallback to another character’s collection or to yours.</p></div>
         </figure>
       </article>
 
       <article class="walk-step" data-walk-step>
-        <div><h3 tabindex="-1">Check the operator’s record after the scene.</h3><p>Another test snapshots the operator’s profile identity and memory event set before a manual scene. It closes the scene through the API, accepts a story proposal, and rejects mind and world proposals.</p><p>After processing, both operator hashes match their starting values. No operator memory events or participant-state rows were added. Character memory events exist in the character’s collection.</p></div>
-        <figure class="role-diagram" aria-label="Before and after operator profile and memory-event hashes are equal in the tested manual scene">
-          <div class="role-node"><h4>Before the scene</h4><p>Hash the operator’s profile identity and memory collection with its event set.</p></div>
-          <div class="role-edge"><span aria-hidden="true">↓</span>Manual scene and selected API review decisions</div>
-          <div class="role-node role-node--protected"><h4>After processing</h4><dl><dt>Profile hash</dt><dd>Unchanged</dd><dt>Memory-event-set hash</dt><dd>Unchanged</dd><dt>Operator state rows</dt><dd>None added</dd></dl></div>
-          <figcaption>No invented hash values are displayed. This summarizes the equality assertions, not a new run of the Guide/Archivist example.</figcaption>
+        <div><h3 tabindex="-1">Check your own record after a scene.</h3><p>One more test takes fingerprints of your profile and your memories before a manual scene. It closes the scene with requests sent straight to the app, accepts one proposed change and rejects the other two. Afterward, both fingerprints match their starting values. Nothing new was added to your memories or your state records, and the character’s collection did get its memories.</p><p>A companion test shows the check can fail: adding one memory to your collection changes its fingerprint.</p></div>
+        <figure class="role-diagram" aria-label="In a separate test, the fingerprints of your profile and your memories are the same before and after a manual scene, and nothing is added to your state records">
+          <p class="role-tag">Separate test</p>
+          <div class="role-node"><h4>Before the scene</h4><p>Take fingerprints of your profile and your memory collection.</p></div>
+          <div class="role-edge"><span aria-hidden="true">↓</span>Manual scene, closed and reviewed by requests sent straight to the app</div>
+          <div class="role-node role-node--protected"><h4>After the scene</h4><dl><dt>Profile fingerprint</dt><dd>Unchanged</dd><dt>Memory fingerprint</dt><dd>Unchanged</dd><dt>Your state records</dt><dd>None added</dd></dl></div>
+          <figcaption>No invented fingerprint values are shown.</figcaption>
         </figure>
       </article>
-      <p class="role-note"><strong>Selection, accepted history and reviewed effects are separate decisions.</strong> The final API check does not demonstrate a change to another product’s canon.</p>
-      <div class="walk-links"><a href="role-boundary-case.json">Inspect the assertion summary</a><a href="#evidence">What the checks establish</a></div>
+      <p class="role-note">Choosing who speaks, accepting a turn and reviewing what a scene proposes to change are separate decisions.</p>
+      <div class="walk-links"><a href="role-boundary-case.json">See the test results (JSON)</a><a href="#evidence">What the tests show</a></div>
     </section>
 
     <section id="decisions" class="case-block">
-      <h2>Explicit boundaries add useful friction.</h2>
+      <h2>Explicit rules add useful friction.</h2>
       <div class="body-copy">
-        <article class="decision-note"><h3>Bind the role when the turn is staged.</h3><dl><dt>Choice</dt><dd>Carry role selection into the stored turn and its retry identity, with a visible pending-state lock in the workspace.</dd><dt>Benefit</dt><dd>The displayed role cannot casually diverge from the role the pending turn will use.</dd><dt>Tradeoff</dt><dd>Changing roles is a new decision, not a cosmetic toggle midway through a pending turn. The operator has to finish or abandon that attempt first.</dd></dl></article>
-        <article class="decision-note"><h3>Leave a gap rather than assign an experience to the wrong person.</h3><dl><dt>Choice</dt><dd>A selected character without a memory collection receives no derived events; another participant is not used as a substitute.</dd><dt>Benefit</dt><dd>The system preserves the attribution boundary even when that means producing less state.</dd><dt>Tradeoff</dt><dd>The absence needs attention. This rule does not repair missing collections or prove that every useful memory has been retained.</dd></dl></article>
+        <article class="decision-note"><h3>Save the character with the turn.</h3><dl><dt>Choice</dt><dd>The chosen character is saved with the turn and its request ID. The workspace locks the role controls while a turn is being prepared or is waiting, and says why (seen in the source and its component tests).</dd><dt>Benefit</dt><dd>The character shown on screen can’t drift away from the character the waiting turn will use.</dd><dt>Tradeoff</dt><dd>To switch characters, you finish or abandon the waiting turn first.</dd></dl></article>
+        <article class="decision-note"><h3>Leave a gap rather than assign an experience to the wrong person.</h3><dl><dt>Choice</dt><dd>If the chosen character has no memory collection, nothing is written, and no one else’s collection stands in.</dd><dt>Benefit</dt><dd>Memories stay with the character they belong to, even when that means recording nothing.</dd><dt>Tradeoff</dt><dd>Someone has to notice the missing collection. Enaction does not repair it.</dd></dl></article>
       </div>
     </section>
 
     <section id="contribution" class="case-block">
       <h2>What went into this work.</h2>
-      <div class="body-copy"><dl class="contribution"><div><dt>Project direction</dt><dd>I direct Enaction with AI assistance. I want roles, memories and proposed consequences to stay inspectable, so a character’s experience does not silently rewrite the operator or become world truth.</dd></div><div><dt>Evidence here</dt><dd>Existing implementation and tests support this narrower role-attribution boundary. The case study does not establish sole personal authorship of code or tests, professional deployment, or a completed interaction product.</dd></div></dl><p>Within the creative suite, <a href="../neuraxic/index.html">Neuraxic</a> concerns author-owned canon and branch visibility. Enaction concerns who is speaking and what an interaction may change. <a href="../poiesis/index.html">Poiesis</a> concerns generation requests and artifact delivery; no live integration with it is demonstrated here.</p></div>
+      <div class="body-copy"><dl class="contribution"><div><dt>Direction</dt><dd>I want to be able to see which character spoke, what it remembers and what a scene proposes to change, so a character’s experience can’t quietly rewrite the person playing it or become settled fact in the story.</dd></div><div><dt>What I did</dt><dd>I decide what each project is for and check what comes back.</dd></div><div><dt>What the AI did</dt><dd>AI tools write the code, including the twelve tests on this page. An AI review in August 2026 found the problem described at the top of this page, and nine of the tests came with its fix.</dd></div></dl><p><a href="../../about.html#how-i-work">How I work with AI tools</a></p></div>
     </section>
 
     <section id="evidence" class="case-block">
-      <h2>Twelve checks of a specific boundary.</h2>
+      <h2>What the twelve tests checked.</h2>
       <div class="body-copy">
-        <p class="role-result">Twelve existing Python tests passed on 19 September 2026 with zero failures and zero skips.</p>
-        <p>The selection ran real staging, derivation and review code against in-memory or isolated temporary SQLite databases. HTTP assertions used an in-process FastAPI test client and a fixed-identity test double. No model or live-service integration was exercised.</p>
-        <ul><li><strong>Attribution:</strong> selecting either character directs events to that character’s collection.</li><li><strong>Request identity:</strong> the role is persisted; an identical retry returns the original staged row, while a changed role conflicts.</li><li><strong>Invalid targets:</strong> the operator binding and a role outside the scene are refused; a chosen role without a collection derives nowhere.</li><li><strong>Operator protection:</strong> profile and memory-event-set hashes stay equal in the tested manual scene. Positive controls show the hash checks detect changes to the profile or event set.</li></ul>
-        <div class="evidence-callout"><h3>What remains unproved</h3><p>These tests do not establish production authentication, PostgreSQL concurrency, deployment readiness, model quality, long-term relationship fidelity or a complete browser workflow. The role-control lock is shown here as an inspected implementation behavior with existing component tests, not as a browser interaction verified by this Python run.</p><p>The scene-close and selective-review check uses APIs; the inspected UI has no scene-close review screen. Private application source, personal profiles, memory exports and story material are excluded. The public diagrams use wholly new illustrative content, not captured application output.</p></div>
-        <div class="link-row"><a class="button-link" href="role-boundary-case.json">Read the public result data</a><a href="../../evidence.html">Evidence and attribution across the showcase</a></div>
+        <p class="role-result">Twelve tests passed on 19 September 2026 with no failures and no skips. Nine of them came with the fix for the problem the AI review found.</p>
+        <ul><li>With either character chosen, every memory from the accepted turn goes to that character’s collection, and none goes to the other character’s collection or yours.</li><li>The chosen character is saved with the prepared turn. Sending the same request again returns the original turn, and the same request ID with a different character is refused as a conflict.</li><li>Enaction refuses your own identity, or a character outside the scene, as the speaker, and writes nothing for a chosen character that has no memory collection.</li><li>With no character chosen, memories still go to a character, by Enaction’s default order of preference, and never to you.</li><li>Your profile and memory fingerprints match before and after the tested scene. Two controls show the check can fail: adding a memory to your collection changes that fingerprint, and a different profile name gives a different profile fingerprint.</li></ul>
+        <div class="evidence-callout"><h3>What is real here</h3><p>On 19 September 2026, the tests ran Enaction’s own code for preparing a turn, filing memory and reviewing proposed changes, on throwaway databases. Web requests went to the app inside the test process, under the app’s own single-user identity, and no live service was involved.</p><p>The role lock is not one of the twelve tests, and this run did not click through it in a browser. The scene-closing test sent its requests straight to the app; when the interface was checked, it had no screen for reviewing a closed scene.</p><p>These tests do not cover deployment, sign-in, a production database handling many requests at once, how well a character recalls its memories, relationships between characters over a long story, or the full workflow in a browser. The source, personal profiles, memory exports and story material stay private.</p></div>
+        <div class="link-row"><a class="button-link" href="role-boundary-case.json">See the test results (JSON)</a><a href="../../evidence.html">What each project shows</a></div>
       </div>
     </section>
     <div class="next-project"><div><p>Continue exploring</p><a href="../poiesis/index.html">Poiesis</a></div><a class="small" href="../../more-work.html">More work</a></div>
   </main>
-  <footer class="site-footer wrap"><p>Independent, personally directed projects developed with AI assistance. Each case study identifies the work shown and the evidence behind its claims.</p><nav aria-label="Footer navigation"><a href="../../about.html">About</a><a href="../../evidence.html">Evidence &amp; attribution</a></nav></footer>
+  <footer class="site-footer wrap"><p>Personal projects by Zach Stern.</p><nav aria-label="Footer navigation"><a href="../../about.html#how-i-work">How I work with AI tools</a><a href="../../evidence.html">What each project shows</a></nav></footer>
 </body>
 </html>

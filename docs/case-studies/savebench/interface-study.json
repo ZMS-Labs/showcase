@@ -18,11 +18,18 @@
     "Arbitrary model selection or in-game arrival",
     "Whole-platform readiness, causal repair, general factory optimality or autonomous progression"
   ],
-  "separate_evidence": "measurement-case.json describes a historical September 9 game-observation case, not this interface fixture.",
+  "separate_evidence": "measurement-case.json describes game measurements from 9 September 2026 onward, not this interface fixture.",
+  "later_use": "Earlier builds of this interface, from before the captured revision, were used on 12 and 13 September 2026 to start real comparisons between two AI models; their results are summarized in measurement-case.json. Independent acceptance testing of the interface was not completed.",
   "retained_renderer_reference": {
     "label": "renderer pin ba8b915",
     "repository": "https://github.com/valentinps/satisfactorymap",
     "revision": "ba8b9151cb961f80634d2d8560c75ff7cc4279d8",
     "scope": "Original prototype label retained with the terrain credit; game artwork is omitted. This capture does not establish completed renderer integration."
-  }
+  },
+  "amended": [
+    {
+      "date": "2026-09-23",
+      "change": "Added later_use and updated separate_evidence. The capture and every observation above are unchanged."
+    }
+  ]
 }

@@ -32,6 +32,7 @@
     "configured_ttl_hours": 24,
     "fetched_fixture_rejected_at_seconds": 86401,
     "expired_fetch_status": 409,
+    "expired_fetch_status_note": "Added 2026-09-23. At the same source revision, the service's code returns this same 409 refusal for a file that was never produced, on purpose. This comes from reading the source, not from the eight tests.",
     "explicit_purge_removed": 1,
     "never_fetched_fixture_purged_at_hours": 25,
     "scheduler_exercised": false
@@ -43,7 +44,8 @@
     "unseal_with_wrong_generation_id_rejected": true,
     "physical_erasure_proved": false
   },
-  "attribution": "Service integration developed with AI assistance; any upstream engine credit is retained in private records.",
+  "attribution": "AI tools write the code. I decide what each project is for and check what comes back.",
+  "attribution_note": "Amended 2026-09-23. The attribution now uses the site's standard wording about who writes the code. No tests were rerun, and the test results in this record did not change.",
   "limits": [
     "Separate tests, not one production-job trace.",
     "No model, GPU or live generation service invoked.",

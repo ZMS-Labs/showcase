@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Rebuild the public showcase mastheads. Requires fonttools only."""
-# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-License-Identifier: GPL-3.0-or-later
 # Drawing helper adapted from ZMS-Labs/epistemic-skills.
 from __future__ import annotations
 
@@ -14,6 +14,9 @@ from fontTools.varLib.instancer import instantiateVariableFont
 
 ROOT = Path(__file__).resolve().parent
 INK, PAPER, ORANGE, MUTED, LINE = '#152c35', '#f5f3ed', '#ffac70', '#b7c8cc', '#68848f'
+# The masthead line, set on two lines. The default share card uses the same words.
+TAGLINE_LINES = ('What I’ve been building with AI,', 'and how it’s actually going.')
+TAGLINE = ' '.join(TAGLINE_LINES)
 
 
 @lru_cache(maxsize=12)
@@ -58,13 +61,13 @@ class Drawing:
 
 
 def mastheads():
-    d = Drawing(1280, 500, 'ZMS Labs — thoughtful tools, work you can inspect',
-                'Independent work in AI-assisted software, reasoning methods, and tools for complex work. Abstract lines connect reasoning, tools, and development; this is conceptual artwork.')
+    d = Drawing(1280, 500, f'ZMS Labs. {TAGLINE}',
+                'Personal projects by Zach Stern. Abstract lines connect reasoning, tools and development; this is conceptual artwork.')
     d.text('ZMS', 62, 174, 162, weight=760, width=93)
     end = d.text('LABS', 65, 286, 108, weight=650, width=93)
     d.rect(65 + end + 21, 265, 20, 20, ORANGE)
-    d.text('Thoughtful tools.', 66, 358, 37, weight=580)
-    d.text('Work you can inspect.', 66, 403, 29, MUTED)
+    d.text(TAGLINE_LINES[0], 66, 358, 36, weight=560)
+    d.text(TAGLINE_LINES[1], 66, 403, 36, weight=560)
     # Three areas connect conceptually, without implying a mandatory sequence.
     d.path('M808 125 H896 Q936 125 936 165 V233', LINE, 2)
     d.path('M808 337 H896 Q936 337 936 297 V241', LINE, 2)
@@ -81,13 +84,13 @@ def mastheads():
     d.path('M66 438 H1214', LINE, 1)
     d.text('Independent exploration / Public work', 66, 466, 18, MUTED)
     d.save('zms-labs.svg')
-    m = Drawing(640, 540, 'ZMS Labs — thoughtful tools, work you can inspect',
-                'Independent work in AI-assisted software, reasoning methods, and tools for complex work. A compact version of the conceptual masthead; the diagram reduces to connecting dots.')
+    m = Drawing(640, 540, f'ZMS Labs. {TAGLINE}',
+                'Personal projects by Zach Stern. A compact version of the conceptual masthead; the diagram reduces to connecting dots.')
     m.text('ZMS', 42, 147, 139, weight=760, width=93)
     end = m.text('LABS', 44, 252, 100, weight=650, width=93)
     m.rect(44+end+18, 233, 18, 18, ORANGE)
-    m.text('Thoughtful tools.', 44, 323, 37, weight=580)
-    m.text('Work you can inspect.', 44, 368, 29, MUTED)
+    m.text(TAGLINE_LINES[0], 44, 323, 34, weight=560)
+    m.text(TAGLINE_LINES[1], 44, 366, 34, weight=560)
     m.path('M50 435 H209 M50 466 H209 Q238 466 238 437 H555', LINE, 2)
     m.path('M50 435 H555', ORANGE, 2)
     m.circle(50, 435, 7, INK, ORANGE, 2)

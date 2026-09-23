@@ -1,7 +1,7 @@
 {
   "schema": "static-portfolio-export-v1",
   "status": "Approved public showcase source",
-  "scope": "Static site payload; excludes the two manifests and source-only MAINTAINING.md and epistemic-skills.md",
+  "scope": "Static site payload; excludes the two manifests and the maintainer guides MAINTAINING.md and epistemic-skills.md, which GitHub Pages also serves as plain text",
   "files": [
     {
       "path": ".nojekyll",
@@ -10,8 +10,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 6777,
-      "sha256": "0406eecf88cad94eb8057a958af72c3fbe64dbb290e23a7ded50fbbc863adbd4"
+      "bytes": 8747,
+      "sha256": "e6b5de112b47c2051a46a88d33e8ce0db22764125f1b3bc426b1ebfd976a25d1"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -34,6 +34,11 @@
       "sha256": "aab9a311896d85eb6041a64890f1db5b87755096a52a9e4ffa7654d1f75c998f"
     },
     {
+      "path": "assets/fonts/Archivo-latin.woff",
+      "bytes": 46000,
+      "sha256": "14cbce497c7c4b750a7c742565744e5af1e1d071946a26bd42a526fd37efa641"
+    },
+    {
       "path": "assets/fonts/Archivo.ttf",
       "bytes": 658596,
       "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053"
@@ -54,9 +59,19 @@
       "sha256": "5483d20a3df808b24fd47eac9d87bf9b647cdbd6f250495dc36325d080de9e01"
     },
     {
+      "path": "assets/illustrations/epistemic-investigate-compare-verify.webp",
+      "bytes": 89536,
+      "sha256": "9ef83f866b7bb081be5395b279c3588d7b7d2066dc127c7e6e8bcd452c77532d"
+    },
+    {
       "path": "assets/illustrations/gridiron-event-to-commentary.png",
       "bytes": 2069203,
       "sha256": "3b3809975733620f670bd82f802efee4e5af7d0f8fac80ec29e8b726e24cf435"
+    },
+    {
+      "path": "assets/illustrations/gridiron-event-to-commentary.webp",
+      "bytes": 100690,
+      "sha256": "3331834c0f02ae7e11248d8ac71fe0ebd2ac42ad044421a3c62d8351121c9015"
     },
     {
       "path": "assets/krewcible/comparison.png",
@@ -70,8 +85,8 @@
     },
     {
       "path": "assets/krewcible/walkthrough.en.vtt",
-      "bytes": 910,
-      "sha256": "25b8da6c6ce854d02ffb75fc80c32a5eedc8ae6e605cc4da511c5dc03c6151b1"
+      "bytes": 998,
+      "sha256": "7dad126fefa2369ed041ad8cf156da04d8883ce8e7c9a411873d749d715cda95"
     },
     {
       "path": "assets/krewcible/workspace.png",
@@ -80,8 +95,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 16717,
-      "sha256": "b8e8842ad593f35b108c6dfaab5ec787d21913b03e7cfeba7e1c8f6cbb9299b0"
+      "bytes": 23342,
+      "sha256": "038720a87c464a23fb7306d3e2f5c3fdecb1abb6e6b804d30b116b875a9f42be"
     },
     {
       "path": "assets/neuraxic/claims.png",
@@ -100,8 +115,8 @@
     },
     {
       "path": "assets/neuraxic/neuraxic-navigation.en.vtt",
-      "bytes": 732,
-      "sha256": "ad372e6d6158931e43fc92c0676b71c774180f9dfffbc4eaa8b5282ca0008631"
+      "bytes": 727,
+      "sha256": "a17079781036b524739c7783ae3663197eb74d9102d92dd7b1e637003505bcff"
     },
     {
       "path": "assets/neuraxic/neuraxic-navigation.webm",
@@ -115,43 +130,43 @@
     },
     {
       "path": "assets/og/og-default.png",
-      "bytes": 28072,
-      "sha256": "4979c0a2131e0bd509125d8a135d49f8817671f5cd312b2b863307d991c93f6e"
+      "bytes": 30559,
+      "sha256": "dabcc73e5df8c9c64fccdd4acc78471aa08bd96587c0752ded87bd469cd4bc56"
     },
     {
       "path": "assets/og/og-epistemic-skills.png",
-      "bytes": 142716,
-      "sha256": "5c7fb86f5ba04a38418dbcdca55743807d975139ea1546511ce1014fe590da28"
+      "bytes": 308342,
+      "sha256": "6e7f7e78ae5bb5526e1db8264274d345eff1f327846cf7d4395655c198f9d1e3"
     },
     {
       "path": "assets/og/og-fleet-orchestrator.png",
-      "bytes": 72231,
-      "sha256": "9bf87b3115d6064cb935c26237bad1390e3662301027fab917f89b7e51b2362b"
+      "bytes": 177694,
+      "sha256": "c81fffad62dbde89c98995b7aa49afd77c06789643178de209db30cda204b184"
     },
     {
       "path": "assets/og/og-gridiron.png",
-      "bytes": 148318,
-      "sha256": "aa6f373bb2a908f229e4e790b4b58e9d6d60e27cf7d5f452c5a65b6eaac587b9"
+      "bytes": 332194,
+      "sha256": "32b0fc3ffb266b0cc8c8afd4bc593ce810b68cb5a8ab41da3b2574afe1747c4a"
     },
     {
       "path": "assets/og/og-krewcible.png",
-      "bytes": 34482,
-      "sha256": "e2777c209effc384382d889ee2a1622aee7356c8e8a055c08977ab5a9be761c4"
+      "bytes": 89330,
+      "sha256": "0c46f8b9fd71148c2426576b61d6924a3a6ca2b8ac08710b44a786c2e9ed22d5"
     },
     {
       "path": "assets/og/og-neuraxic.png",
-      "bytes": 41917,
-      "sha256": "f43f4d46e3c54aad53dde05446c96c7e3d4a9a0f9f1b5142adc0f1b7e1fb7249"
+      "bytes": 102959,
+      "sha256": "d2d91e5c4eaf2565e5700dffe4b6ccffb8db3b452c1a23d3e31e073be12adc0c"
     },
     {
       "path": "assets/og/og-savebench.png",
-      "bytes": 64789,
-      "sha256": "aec0bdf8cf339937eb76bd31385a18294d041bc8e47c1578da3f8b75aa4763a2"
+      "bytes": 174251,
+      "sha256": "1a83d900330f5d7f7cc845e26a77c884af8d9663aa08490f49e67ba6006257f6"
     },
     {
       "path": "assets/og/og-steno.png",
-      "bytes": 53213,
-      "sha256": "d9e042fa29712f271e65c64410efe0d844fefd36e11b941e8a403c5e0f47ced9"
+      "bytes": 142518,
+      "sha256": "0fd552b7a08289bf77abb49d067aad8a3da643675c35517469bcbefc9c4dd9ac"
     },
     {
       "path": "assets/savebench/savebench-challenge.png",
@@ -165,8 +180,8 @@
     },
     {
       "path": "assets/savebench/savebench-design-workflow.en.vtt",
-      "bytes": 1468,
-      "sha256": "f7e8d3f482771132f0315459e5558074d82299a656e9152ef7269a587e4f49c5"
+      "bytes": 1302,
+      "sha256": "f8b576b7fbc8ed0122dffb7cf10d7794020062fc70f0ccf0da045966e35dde27"
     },
     {
       "path": "assets/savebench/savebench-design-workflow.mp4",
@@ -210,8 +225,8 @@
     },
     {
       "path": "assets/steno/walkthrough.en.vtt",
-      "bytes": 615,
-      "sha256": "c97a027c6b26ab15ef2668ef0fed5ec799669cc7f9be0463a797595885ad4208"
+      "bytes": 616,
+      "sha256": "08c0faecf900a3108d2046a3934e9fbe266d60e4f38f546c5fed7fcc8de9a54d"
     },
     {
       "path": "assets/steno/workstation.png",
@@ -220,18 +235,18 @@
     },
     {
       "path": "case-studies/enaction/index.html",
-      "bytes": 16719,
-      "sha256": "ade815cdbddd1334ab2c9bca998941566a974b9024cbdadddf1b951a2aa2f29d"
+      "bytes": 18122,
+      "sha256": "74fce5206de0e86bf5542ed346228d254f5052cc7d2c58aaa93418e94b5c883d"
     },
     {
       "path": "case-studies/enaction/role-boundary-case.json",
-      "bytes": 4079,
-      "sha256": "184a9eb9109d13611e187eff45cb4e8356f2a2050274667e00fe604efa8c2d7f"
+      "bytes": 5148,
+      "sha256": "3e848a3518af32ade93b9ebe91b3f7172147bb74a0c2756bc94cf1850f885100"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 24684,
-      "sha256": "2e5631316dd357665f20c140a6a90861ecd9c8839c5796b706152d258bd92d7e"
+      "bytes": 22281,
+      "sha256": "0b365e91a62f942ee75b025b22304ed10a33152f25dc3cf90acd1663c43c96be"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -240,18 +255,18 @@
     },
     {
       "path": "case-studies/fleet-orchestrator/design-notes.json",
-      "bytes": 1328,
-      "sha256": "e84672b9b2cdc095e217b56cb2dba570e9ea0a18bea08ab0074a7c9fe80ed0a4"
+      "bytes": 1351,
+      "sha256": "5b6448467fec6a06e5cab4417c0aadd45e14b98473bcea3bbc3618a1cc673ba0"
     },
     {
       "path": "case-studies/fleet-orchestrator/index.html",
-      "bytes": 26111,
-      "sha256": "52a1aa70142c6d0a5fe4d63fedb65046b21c36ac7fad422c545097644acb983b"
+      "bytes": 28415,
+      "sha256": "d32fc1211b48f68931e809003bd79e6a9c105f7a2249e4921e69cf21a19618fc"
     },
     {
       "path": "case-studies/fleet-orchestrator/review-gate.json",
-      "bytes": 2986,
-      "sha256": "45529ce182e658c0ae3eaf396e8029a8db3b94f215dc7b2174ca48d75c37b404"
+      "bytes": 3935,
+      "sha256": "be377b03d6fa989030c96164a6f72650a9ccf118551410de54f33ca3eeff2a92"
     },
     {
       "path": "case-studies/gridiron/annotated-replay.json",
@@ -260,8 +275,8 @@
     },
     {
       "path": "case-studies/gridiron/index.html",
-      "bytes": 12820,
-      "sha256": "fa9d80d3f5206a17a478bd70ada8eba62808d9c8371b661a69f627711fd34f0d"
+      "bytes": 15366,
+      "sha256": "c5c8bf86ba935bd5f3d6ba00540e4d2879e1a9b4de5e7f1d1a428a71521ffae8"
     },
     {
       "path": "case-studies/gridiron/recorded-replay.json",
@@ -270,8 +285,8 @@
     },
     {
       "path": "case-studies/krewcible/index.html",
-      "bytes": 14365,
-      "sha256": "ed0392c2a32e9a289821085c76cc6927408a3b4fb3f751455441323cdef79a07"
+      "bytes": 15412,
+      "sha256": "ebddf7d15e11b051ec471d6182d589facc60547e3dccd4d46165b8f3bde83ea1"
     },
     {
       "path": "case-studies/krewcible/krewcible-study.json",
@@ -280,13 +295,13 @@
     },
     {
       "path": "case-studies/neuraxic/continuity-case.json",
-      "bytes": 2729,
-      "sha256": "847dd9a13eadacee3b6bcc9e261ec921107e49d2f5c97b7d7fb85c5d0f840a60"
+      "bytes": 2881,
+      "sha256": "bde6eb4ea467a73686a1c2deccc9a8c4eb4e8b02b1f78c287f09c030b4f8c96e"
     },
     {
       "path": "case-studies/neuraxic/index.html",
-      "bytes": 24518,
-      "sha256": "90d18d93c0b0dc6024f3e33784b75439324f927a6ad75b450fd67712ef980c14"
+      "bytes": 25911,
+      "sha256": "9513955aad10566359222da4717808b6612807189e68593234af6730e6f84a0c"
     },
     {
       "path": "case-studies/neuraxic/interface-study.json",
@@ -295,33 +310,33 @@
     },
     {
       "path": "case-studies/poiesis/artifact-custody-case.json",
-      "bytes": 2631,
-      "sha256": "1d2351d7f347c090162ee3e856c51eff437bdd7684a1b1f23ac5d147b502d73b"
+      "bytes": 3048,
+      "sha256": "dc3e8e3d974f40530404afc6673c62428eebe9a9f06b99b234a77222bb998d5c"
     },
     {
       "path": "case-studies/poiesis/index.html",
-      "bytes": 14840,
-      "sha256": "5a8122e4351ad3e5c74c2f7072cbc7654b63f3ca4442e5e9c39d934e0f3a64d3"
+      "bytes": 15260,
+      "sha256": "2c6bf68157c250b61748d45cfcdfb234643b17e78a43d0b59685e8f28f8363b1"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 28329,
-      "sha256": "2c9e6f27d875d80ecc0478edb517947f648612a6483b91b9cba6f2c342bf6568"
+      "bytes": 33120,
+      "sha256": "c74933923214ea143a0487e23d4647ac9b50d2a85e0304322a87351b219354cc"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
-      "bytes": 1981,
-      "sha256": "808a776401cfe09c9f6420fab37b16811c50257864b13dd9125b168f6e6e762d"
+      "bytes": 2457,
+      "sha256": "ff82d0ba94b4ef85552d8a3fc5c45b6932382100f7f2c72ba7221c036e09117f"
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
-      "bytes": 4333,
-      "sha256": "23d360c7323548c02c81b301142756b379e3dffd2d2e1d715495cbe7bdddd67a"
+      "bytes": 13902,
+      "sha256": "85400c77a8a437ccc29c73130e757086589b6c5ade9839ac23706db4e970b60e"
     },
     {
       "path": "case-studies/steno/design-research.json",
-      "bytes": 3754,
-      "sha256": "deb1299808f6e1840f0a232440e21859c5e0e495c63b70b731dc23c69b92e370"
+      "bytes": 3827,
+      "sha256": "787c3249df9d429500159a88b808c3a7e725ebd00a6434d27dc472eb6095db04"
     },
     {
       "path": "case-studies/steno/hallmark-design.json",
@@ -330,18 +345,18 @@
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 25512,
-      "sha256": "54c3ed5bedc5c44ab8a529db7bc4c61fa072b8d927597aee74c419416d54274c"
+      "bytes": 22008,
+      "sha256": "8a812de5b85b617cc2bd04df9ab00a700903f5a1f322494bf6fbaaede0646fb2"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
-      "bytes": 4108,
-      "sha256": "b129436bdbfd2065a3cc834bb120a7988beaa47312a2c271aa660787d71583af"
+      "bytes": 4020,
+      "sha256": "df53ec987f3e71cce22add718fb5b4c0b5ac661534718493949494d13f9eebf5"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-study.js",
-      "bytes": 3519,
-      "sha256": "2a5edde7a726c0b4ef2786e4a0ea0f95eec552d64d6c14d6ca48c02f182e9b14"
+      "bytes": 3295,
+      "sha256": "0862935655e2babe80fe570cfe814f36aae927924e797b4d81d8d265944cdb07"
     },
     {
       "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
@@ -350,28 +365,18 @@
     },
     {
       "path": "case-studies/steno/recorded-checks/evidence/verification.json",
-      "bytes": 1808,
-      "sha256": "c0f05cebfc493f9010c1db7ae8868397c029e8989ea119c0e2f543e8a96b8369"
+      "bytes": 2454,
+      "sha256": "2f72e5881266820f202941f8cb847966cf33950e26d8ae276a78f3969e708ab3"
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 11265,
-      "sha256": "27bfa3543854e811dbad19bd3e55a248451ba495baffcc102f2744ea5ed19e34"
+      "bytes": 12940,
+      "sha256": "adbc4c326e16bb73deb642773c16ceccb208fa2ba95e2cc9605b294d8c3fcf2c"
     },
     {
       "path": "case-studies/steno/recorded-checks/styles.css",
-      "bytes": 13987,
-      "sha256": "7470835e136f32b0ee9907d15a70321e5851b459dceaaf2f23cb9ac2e96e4ecd"
-    },
-    {
-      "path": "case-studies/zms-canvas/continuity-case.json",
-      "bytes": 1325,
-      "sha256": "31beca7031883018f46264f05ad9b0d9d6693a6466890560e1f7cc0aa335cf10"
-    },
-    {
-      "path": "case-studies/zms-canvas/index.html",
-      "bytes": 12414,
-      "sha256": "93ad3a7f109942c45f48084b16af0f762769bd90c9b2f26e5be7c9e0281f703e"
+      "bytes": 11938,
+      "sha256": "7204887f85fe08d951c4a27779172c6b471f18524c97ab577e5eb1e01eab53d2"
     },
     {
       "path": "downloads/gridiron-research-source.zip",
@@ -380,13 +385,13 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 14834,
-      "sha256": "131e0979f821a788070ad57ae80cd60810c0893d5def8b52f8bff3d4cef332d7"
+      "bytes": 20122,
+      "sha256": "91d5ad165d8adaa2d12c3fdd67b189fbe8d148c31b0b50687505b9f0acc9a926"
     },
     {
       "path": "index.html",
-      "bytes": 12558,
-      "sha256": "faccc5d27ddda4d454f973ea85e36011bdea8b183ce924d1144770845ed1dbe1"
+      "bytes": 14331,
+      "sha256": "4356887ed975a8370504ccc5eb6306af1208f44fa44443463a18f7f08ad88d58"
     },
     {
       "path": "LICENSE",
@@ -395,13 +400,13 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 8022,
-      "sha256": "5fe0554a08334e3eaa89fb02752fcc291e8d00c96ee14af992c92d7f5792636c"
+      "bytes": 9799,
+      "sha256": "d27d9109d3ef553f48a0da7f5cdb4b368518de9d31a91c1142fc3260c1ca8949"
     },
     {
       "path": "README.md",
-      "bytes": 2950,
-      "sha256": "5c61db68ce39daa81f1e326831a30606933d896cc3d3d572e6e64c1c65174924"
+      "bytes": 3871,
+      "sha256": "0ebed88265414b0bde462188b44e2f73038585696bcbeac318c6047e5091f95f"
     },
     {
       "path": "robots.txt",
@@ -410,23 +415,23 @@
     },
     {
       "path": "site.css",
-      "bytes": 25887,
-      "sha256": "cd9d585dfe6330f94612633184e2c7edf1d05a2c4fea8840f3f5e8dfd86b8bdd"
+      "bytes": 34487,
+      "sha256": "43c0e9272bedcea16728f949ee0aa4910538c865627f8c0ef0ba9a0ccd9e7cac"
     },
     {
       "path": "site.js",
-      "bytes": 4007,
-      "sha256": "1d8a72ecaae7fb8729972640d33fc45d8b3cf824ad4d8f8995fcc623e4ea36bc"
+      "bytes": 4783,
+      "sha256": "866b883431675e6e91f4ba8002ddbd23ffc122f8ae244a4d53a0cf230bcf8ecf"
     },
     {
       "path": "sitemap.xml",
-      "bytes": 1770,
-      "sha256": "54a4e2b9d99cf5a076fb4846c2305e6b669892a2b5e6f7852fa7e8d1e46d6253"
+      "bytes": 1656,
+      "sha256": "6c8841aa610c8200c7a4fa315b7eca53f7f8921aadbbe0e521d6fc73dc1d9f9c"
     },
     {
       "path": "walkthroughs.js",
-      "bytes": 1073,
-      "sha256": "aa3dfea2aeece6d17afafd945572799ec453b5283dc706995dfbdf82fb467c4c"
+      "bytes": 4152,
+      "sha256": "fcfb7a442720ffac74303eaba9c40a40160b484829c1bde49e28a1036c887800"
     }
   ]
 }
