@@ -35,8 +35,7 @@
     if (!selected.findings.length) {
       const emptyCopy = data.emptyFindings || {};
       const empty=make('div','empty-findings');
-      const symbol=make('div','empty-symbol','✓');symbol.setAttribute('aria-hidden','true');
-      empty.append(symbol,make('h4','',emptyCopy.heading),make('p','',emptyCopy.body));
+      empty.append(make('h4','',emptyCopy.heading),make('p','',emptyCopy.body));
       findings.append(empty);
     }
     for (const finding of selected.findings) {
@@ -51,12 +50,11 @@
     document.body.dataset.selectedCase=id;
   }
   if (!data || !Array.isArray(data.cases) || !data.cases.length) {
-    findings.append(make('p','','Recorded evidence could not be loaded. Open the accompanying evidence file to inspect the result.'));
+    findings.append(make('p','','Recorded evidence could not be loaded. Open the evidence file to see the result.'));
     for(const button of selectors) button.disabled=true;
     return;
   }
   for(const button of selectors) button.addEventListener('click',()=>render(button.dataset.case));
-  if (data.evidenceSummary) document.getElementById('evidence-result').textContent=data.evidenceSummary;
   const initial = selectors.find(button => button.getAttribute('aria-pressed') === 'true') || selectors[0];
   if (initial) render(initial.dataset.case);
 })();

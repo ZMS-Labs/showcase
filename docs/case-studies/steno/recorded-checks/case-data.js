@@ -2,8 +2,8 @@ window.STENO_CASE_STUDY = {
   "cases": [
     {
       "id": "before",
-      "label": "Draft A",
-      "explanation": "Two selected checks flag a missing notice-mechanics reference and an unclear cap/indemnity relationship.",
+      "label": "Initial draft",
+      "explanation": "The two checks flag a notice clause that doesn't point to how notice is delivered, and a liability limit that doesn't say how it relates to the indemnity.",
       "clauses": [
         {
           "id": "demo-notices",
@@ -35,8 +35,8 @@ window.STENO_CASE_STUDY = {
           "id": "notice_obligation_without_mechanics_link",
           "level": "medium",
           "levelLabel": "Check severity: medium",
-          "title": "Incident notice lacks a mechanics link",
-          "explanation": "Section 7 imposes notice without an explicit link to the delivery mechanics in Section 6. The check flags that drafting gap; it does not decide whether the general Notices article would legally apply.",
+          "title": "Incident notice doesn't point to the Notices section",
+          "explanation": "Section 7 requires notice but doesn't say it must follow the delivery rules in Section 6. The check flags the missing link. Whether the general Notices section applies anyway is for the reviewer to decide.",
           "clauseIds": [
             "demo-incident",
             "demo-notices"
@@ -47,8 +47,8 @@ window.STENO_CASE_STUDY = {
           "id": "indemnity_in_lol_without_carveout",
           "level": "low",
           "levelLabel": "Check severity: low",
-          "title": "Indemnity appears in the general cap clause",
-          "explanation": "Section 9 mentions indemnification without a recognized carveout. The reviewer needs to settle how its general limit relates to the separate indemnity limit in Section 8.",
+          "title": "The general liability limit mentions indemnity",
+          "explanation": "Section 9 mentions indemnification without saying whether indemnity sits under that limit or outside it (a carveout). The reviewer needs to settle how the general limit relates to the separate indemnity limit in Section 8.",
           "clauseIds": [
             "demo-liability",
             "demo-indemnity"
@@ -59,8 +59,8 @@ window.STENO_CASE_STUDY = {
     },
     {
       "id": "after",
-      "label": "Draft B",
-      "explanation": "The illustrative edit adds a notice-mechanics reference and an explicit indemnity carveout. Those two patterns no longer trigger findings; legal review remains open.",
+      "label": "Proposed edits",
+      "explanation": "The edits point the incident notice to the Notices section and carve indemnity out of the general limit.",
       "clauses": [
         {
           "id": "demo-notices",
@@ -91,8 +91,7 @@ window.STENO_CASE_STUDY = {
     }
   ],
   "emptyFindings": {
-    "heading": "No findings from these selected checks.",
-    "body": "The revised example no longer triggers the selected drafting rules. That is a limited observation—not clearance of the agreement."
-  },
-  "evidenceSummary": "Two recorded findings in the initial draft; none from the same two checks after the illustrative edits. Three existing focused component tests also passed."
+    "heading": "No findings from the two checks.",
+    "body": "After the edits, neither check flags anything. The two drafting patterns they look for are gone; whether the agreement works is still the reviewer's call."
+  }
 };
