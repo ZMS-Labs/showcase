@@ -55,6 +55,13 @@
       "notice": "assets/fonts/OFL.txt"
     },
     {
+      "path": "assets/fonts/Archivo-latin.woff",
+      "sha256": "14cbce497c7c4b750a7c742565744e5af1e1d071946a26bd42a526fd37efa641",
+      "bytes": 46000,
+      "kind": "Latin subset of the Archivo.ttf entry above, with the width axis fixed, in WOFF format; loaded first, with Archivo.ttf as the fallback",
+      "notice": "assets/fonts/OFL.txt"
+    },
+    {
       "path": "downloads/gridiron-research-source.zip",
       "sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658",
       "bytes": 492351,
@@ -75,6 +82,18 @@
       "visual_meaning": "Football observations pass through an event record before commentary"
     },
     {
+      "path": "assets/illustrations/gridiron-event-to-commentary.webp",
+      "sha256": "3331834c0f02ae7e11248d8ac71fe0ebd2ac42ad044421a3c62d8351121c9015",
+      "bytes": 100690,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "kind": "WebP display copy re-encoded from the gridiron-event-to-commentary.png entry above; the PNG keeps the original Content Credentials",
+      "source": "Re-encoded from the listed PNG; same pixels within WebP compression",
+      "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result"
+    },
+    {
       "path": "assets/illustrations/epistemic-investigate-compare-verify.png",
       "sha256": "5483d20a3df808b24fd47eac9d87bf9b647cdbd6f250495dc36325d080de9e01",
       "bytes": 2112766,
@@ -86,6 +105,18 @@
       "source": "OpenAI built-in image generation; newly authored prompt; reviewed for semantic clarity",
       "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result",
       "visual_meaning": "Investigation, examination and verification are available methods, not a required sequence"
+    },
+    {
+      "path": "assets/illustrations/epistemic-investigate-compare-verify.webp",
+      "sha256": "9ef83f866b7bb081be5395b279c3588d7b7d2066dc127c7e6e8bcd452c77532d",
+      "bytes": 89536,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "kind": "WebP display copy re-encoded from the epistemic-investigate-compare-verify.png entry above; the PNG keeps the original Content Credentials",
+      "source": "Re-encoded from the listed PNG; same pixels within WebP compression",
+      "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result"
     },
     {
       "path": "assets/steno/steno-prototype-walkthrough.webm",
@@ -332,6 +363,102 @@
         64,
         64
       ]
+    },
+    {
+      "path": "assets/og/og-default.png",
+      "sha256": "dabcc73e5df8c9c64fccdd4acc78471aa08bd96587c0752ded87bd469cd4bc56",
+      "bytes": 30559,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: the ZMS Labs wordmark and its orange square on ink, with the masthead line “What I’ve been building with AI, and how it’s actually going.”",
+      "source": "Original identity asset, drawn for the showcase",
+      "claim_boundary": "Identity only; shows no project or result"
+    },
+    {
+      "path": "assets/og/og-steno.png",
+      "sha256": "0fd552b7a08289bf77abb49d067aad8a3da643675c35517469bcbefc9c4dd9ac",
+      "bytes": 142518,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/steno/matter-map.png entry above, over an ink band holding the project name, the label “Archived prototype, made-up content” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-savebench.png",
+      "sha256": "1a83d900330f5d7f7cc845e26a77c884af8d9663aa08490f49e67ba6006257f6",
+      "bytes": 174251,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/savebench/savebench-workspace.png entry above, over an ink band holding the project name, the label “Sample data” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-epistemic-skills.png",
+      "sha256": "6e7f7e78ae5bb5526e1db8264274d345eff1f327846cf7d4395655c198f9d1e3",
+      "bytes": 308342,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/illustrations/epistemic-investigate-compare-verify.png entry above, over an ink band holding the project name, the label “AI-generated artwork” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-fleet-orchestrator.png",
+      "sha256": "c81fffad62dbde89c98995b7aa49afd77c06789643178de209db30cda204b184",
+      "bytes": 177694,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/fleet-orchestrator/fleet-orchestrator-roles.png entry above, over an ink band holding the project name, the label “Made-up agent identity” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-neuraxic.png",
+      "sha256": "d2d91e5c4eaf2565e5700dffe4b6ccffb8db3b452c1a23d3e31e073be12adc0c",
+      "bytes": 102959,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/neuraxic/library.png entry above, over an ink band holding the project name, the label “Fictional content” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-krewcible.png",
+      "sha256": "0c46f8b9fd71148c2426576b61d6924a3a6ca2b8ac08710b44a786c2e9ed22d5",
+      "bytes": 89330,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/krewcible/workspace.png entry above, over an ink band holding the project name, the label “Made-up choices” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-gridiron.png",
+      "sha256": "32b0fc3ffb266b0cc8c8afd4bc593ce810b68cb5a8ab41da3b2574afe1747c4a",
+      "bytes": 332194,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: a crop of the assets/illustrations/gridiron-event-to-commentary.png entry above, over an ink band holding the project name, the label “AI-generated artwork” and the ZMS Labs wordmark",
+      "source": "Composed for the showcase from the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     }
   ]
 }
