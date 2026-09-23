@@ -24,13 +24,14 @@
   "epistemic_skills_used": [
     { "skill": "Gauntlet", "contribution": "adversarial design review; caught and corrected the Catala overstatement; re-based the cross-check" },
     { "skill": "Manifest", "contribution": "mission custody across sessions with recorded checkpoints and operator acceptance gating" },
-    { "skill": "Evidence-locked UAT", "contribution": "preregistered expected and disconfirming observations for operator-facing acceptance, including a first-time-lawyer UAT" },
+    { "skill": "Evidence-locked UAT", "contribution": "preregistered expected and disconfirming observations for operator-facing acceptance" },
     { "skill": "Did It Land", "contribution": "verification-at-the-consumer discipline behind the recorded-check pattern and this case study's evidence records" }
   ],
   "claim_limits": [
     "Design documentation and recorded engine proofs, not a claim that every engine runs on every clause today.",
     "Per-clause computation from arbitrary prose is future work.",
     "The public evidence remains the two recorded drafting checks and the Hallmark design specimens.",
-    "No legal advice, no coverage claim beyond the recorded clause family, no employer deployment."
-  ]
+    "No legal advice and no coverage claim beyond the recorded clause family."
+  ],
+  "amended": "2026-09-23: one phrase removed from epistemic_skills_used and one from claim_limits. Nothing was added or rerun."
 }
