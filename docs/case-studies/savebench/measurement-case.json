@@ -1,5 +1,5 @@
 {
-  "schema": "savebench-measurement-case@1",
+  "schema": "savebench-measurement-case@2",
   "title": "Test the measuring instrument before judging the contestant.",
   "recorded_date": "2026-09-09",
   "evidence_kind": "Retained historical game-observation and trial-result records; no new game run for this case study.",
@@ -105,9 +105,149 @@
     "A failed positive control prevented a contestant verdict; its missing measurements are null, not zero.",
     "Disconnected control delivery of zero is the expected result, even though the delivery-target scorer labels that control FAIL.",
     "The failed contestant produced both outputs. Failure means it missed the minimum in at least one required window, not that the factory never worked.",
-    "Recorded rates and outcomes are historical; current campaign, model and deployed-service readiness were not assessed or rerun.",
+    "Recorded rates and outcomes for this case are from 9 September 2026 and were not rerun. Later outcomes are summarized in later_summary, each with its own date and limits.",
     "This case is not a model ranking, a broad factory-design success claim or an earned-progression result.",
     "The diagrams and tables are authored explanations. No game saves, screenshots, map tiles, game asset tables, application source or private operational details are included.",
     "Control windows lasted 61 game seconds; contestant windows lasted 121, 122 and 121 game seconds. They are different checks, not matched performance runs."
-  ]
+  ],
+  "amended": [
+    {
+      "date": "2026-09-23",
+      "change": "Schema 2. Added date_basis, designer, measurement_conditions, depot_checkpoints, instrument_repair, miss_analysis, later_finding_warmup, earlier_passes_note, credits, later_summary, model_labels and sources, read from SaveBench's private records and the public upstream projects. Revised the fourth important limit to point to later_summary. No existing figure changed, and no game was rerun."
+    }
+  ],
+  "date_basis": "All dates are UTC, as in the run records.",
+  "designer": {
+    "kind": "AI agent",
+    "model": null,
+    "model_note": "Not named. The only record of the agent's model is private session data, and no public source confirms it.",
+    "context": "Started with a fresh context and was given only the challenge and the tools every contestant gets. The record shows its design used only those tools.",
+    "choices": "Selected copper and limestone deposits on the map and built routes to the central depot.",
+    "authored": {
+      "buildings": 34,
+      "belts": 15,
+      "power_lines": 7,
+      "copper_smelters": 2,
+      "concrete_constructors": 1
+    },
+    "design_changed_after_submission": false,
+    "run_class": "Early engineering test run.",
+    "instructions": "Written for this run by the AI agent coordinating the work, not a frozen briefing. The result stands alone and is not compared with any other run."
+  },
+  "measurement_conditions": {
+    "request": "Across the map, build a factory producing 20 copper ingots per minute and 15 concrete per minute.",
+    "belt_tier": "Mk1, the slowest conveyor belt",
+    "warmup_game_seconds": 180,
+    "declared_window_game_seconds": 120,
+    "windows": 3,
+    "note": "Recorded contestant windows ran 121, 122 and 121 game seconds; each rate is divided by the recorded game time."
+  },
+  "depot_checkpoints": {
+    "elapsed_game_seconds": [181, 302, 424, 545],
+    "copper_ingots_in_depot": [0, 32, 154, 277],
+    "concrete_in_depot": [17, 48, 79, 109],
+    "note": "Depot totals at each window boundary of the repaired trial. Each window rate is the change divided by the window length: copper window 1 is 32 ingots in 121 game seconds, and concrete window 3 is 30 in 121."
+  },
+  "instrument_repair": {
+    "fault": "In the first trial the save-building adapter filled in a storage filter that the game leaves empty in its own saves. The control's materials reached the belts, but the depot counted none.",
+    "fix": "The adapter now writes the filter the way the game does. After the fix the known-flow control delivered both materials and the disconnected control delivered nothing.",
+    "source": "SaveBench trial record for 9 September 2026 (private)."
+  },
+  "miss_analysis": {
+    "copper_window_1": "No copper had reached the depot when measuring began (0 ingots at 181 game seconds). The trial record says the shortfall, followed by 60 a minute, is consistent with copper still traveling the long route when measuring began. That cause is not proven.",
+    "concrete_window_3": "The design used one concrete constructor. At normal speed the concrete recipe makes 15 a minute, the target itself, and this challenge offered no way to run a machine faster, so there was no margin. Window 3 delivered 30 concrete in 121 game seconds, where the target required 30.25."
+  },
+  "later_finding_warmup": {
+    "date": "2026-09-10",
+    "finding": "The default 180-second warmup left three reference designs, built to pass their own library challenges, short in their first window: 9.23 of 30, 59.6 of 60 and 0.00 of 60 items a minute.",
+    "change": "Challenges in SaveBench's curated library now declare their own warmup; other challenges can still use the 180-second default. After the change, the first of those reference designs passed every window.",
+    "effect_on_this_case": "Not rescored. The FAIL stands as recorded, and the warmup explanation for its first copper window remains unproven."
+  },
+  "earlier_passes_note": "Factories designed by AI models passed smaller challenges on 8 and 9 September 2026, some of them before this case's FAIL was recorded. They are separate individual results and are not compared here.",
+  "credits": [
+    {
+      "what": "The save-building adapter is a narrow wrapper over a pinned copy of Satisfactory Agent Tools by petehunt, which is a fork of GreyHak's sat_sav_parse. Both projects are licensed GPL-3.0.",
+      "urls": [
+        "https://github.com/petehunt/satisfactory-agent-tools",
+        "https://github.com/GreyHak/sat_sav_parse"
+      ]
+    }
+  ],
+  "later_summary": [
+    {
+      "date": "2026-09-12",
+      "what": "A harder challenge: 120 copper ingots and 60 concrete a minute in each of three windows after a 180-second warmup, with Mk1 belts only.",
+      "outcome": "FAIL for every measured design by an AI model.",
+      "limits": "The FAILs were kept as recorded, and a version allowing a faster belt tier became a separate challenge."
+    },
+    {
+      "dates": "2026-09-12 to 2026-09-13",
+      "what": "The same targets and warmup as a separate challenge that allowed a faster belt tier (Mk3).",
+      "outcome": "On 13 September, PASS in every window for designs by Claude Opus 4.7 (as configured; the same contestant setup reported that model when it ran later sessions) and GPT-5.5 (as configured). Claude's first pass on this challenge came from its own revision after a measured FAIL. Both contestants also had FAILs in these comparisons.",
+      "limits": "The software changed between comparisons and the contestants ran different numbers of trials, so this is not a ranking. Independent acceptance testing of the interface was not completed."
+    },
+    {
+      "dates": "2026-09-13 to 2026-09-19",
+      "what": "A campaign in a persistent world, each session continuing from the one before, with declared starting stock and judged by milestones bought in the game.",
+      "outcome": "Claude Opus 4.7 (as its runtime reported) bought eight milestones.",
+      "limits": "The interface changed between sessions, so these are not scores on a fixed instrument. While those milestones were bought, the interface let the contestant move items into and out of machines without spending game time."
+    },
+    {
+      "date": "2026-09-18",
+      "what": "Zach Stern decided that SaveBench measures factory design, tested by a production quota the factory must keep meeting through a hands-off period.",
+      "public_reference": {
+        "title": "Factorio Learning Environment",
+        "authors": "Jack Hopkins, Mart Bakler, Akbir Khan",
+        "url": "https://arxiv.org/abs/2503.09617",
+        "version_read": "arXiv v1, 6 March 2025, read 2026-09-23",
+        "relevant_text": "After every agent step, the throughput of the created structure is evaluated throughout a 60 second holdout period in-game"
+      }
+    },
+    {
+      "dates": "2026-09-22 to 2026-09-23",
+      "what": "The quota test: 30 wire a minute into a declared depot, counted only after the factory has been left untouched for a set period.",
+      "contestant": "Cursor's Auto setting. The records do not show which model it used.",
+      "outcome": "No session passed. The outcomes on record, for the first and fourth sessions, were INCONCLUSIVE because the factory had not been left untouched long enough.",
+      "limits": "The contestant's instructions in those sessions did not state the hands-off rule, and the required 600 game seconds was an unintended default. The next session, set up on 2026-09-23, states the rule and asks for 60 seconds; it had no recorded result as of 03:52 UTC that day."
+    }
+  ],
+  "model_labels": {
+    "Claude Opus 4.7": "As configured in the 13 September comparisons, whose records carry the configured label only. As its runtime reported in the campaign: session records from 16 September on give the model as claude-opus-4-7 for the same contestant setup.",
+    "GPT-5.5": "As configured: GPT-5.5 was the contestant's configured default model. No runtime report of the model was recorded.",
+    "Cursor Auto": "Cursor chooses the model, and the records do not show which one it used.",
+    "9 September designer": "Not named; see designer.model_note."
+  },
+  "sources": {
+    "note": "Commits in SaveBench's private repository. The 9 September measurement conditions come from that run's frozen task file, which is also private.",
+    "records": [
+      {
+        "revision": "1413da7cd61b58a969a5a789c5a4ea9db390c8d5",
+        "covers": "9 September trial record: designer, depot checkpoints, instrument repair, miss notes."
+      },
+      {
+        "revision": "d67e02f8ae83532a20051737f72254aee9e86607",
+        "covers": "10 September warmup finding."
+      },
+      {
+        "revision": "0b71c383bc529836c70cd7543911483031d0cb46",
+        "covers": "Earlier passes on smaller challenges, 8 September."
+      },
+      {
+        "revision": "c5ef3c187744d558a55f6fdbe4ec0df1c06c9704",
+        "covers": "Earlier passes on a smaller challenge, 9 September."
+      },
+      {
+        "revision": "58cfbde8be41600d27a7198e0f491a48645e3e14",
+        "covers": "12 and 13 September comparisons and the milestone campaign."
+      },
+      {
+        "revision": "121ed4d0e706cf192973be6f581d87f154045d60",
+        "covers": "18 September decision on what SaveBench measures, and the quota plan."
+      },
+      {
+        "revision": "d858ad34baf7ccbd73ab78ecb08eb5197fdc337e",
+        "covers": "19 to 23 September: the quota sessions and the next session's terms."
+      }
+    ]
+  }
 }
