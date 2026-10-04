@@ -379,6 +379,11 @@
       "sha256": "7204887f85fe08d951c4a27779172c6b471f18524c97ab577e5eb1e01eab53d2"
     },
     {
+      "path": "CNAME",
+      "bytes": 13,
+      "sha256": "6ed8a82e67203dcc0b275f7dff6e6eb33f49c6578abedba4d3f7c9c91402755a"
+    },
+    {
       "path": "downloads/gridiron-research-source.zip",
       "bytes": 492351,
       "sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658"

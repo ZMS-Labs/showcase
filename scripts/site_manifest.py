@@ -67,6 +67,10 @@ mode.add_argument("--write", action="store_true", help="rewrite both manifests (
 mode.add_argument("--check", action="store_true", help="confirm both manifests match the files in docs/")
 args = parser.parse_args()
 
+domain_file = ROOT / "CNAME"
+if not domain_file.is_file() or domain_file.read_text(encoding="utf-8").strip() != "sternone.net":
+    raise SystemExit("Custom domain: docs/CNAME must contain sternone.net. Preserve this file in every publication.")
+
 names = load_names()
 list_path = NAME_LIST.relative_to(REPO).as_posix()
 if args.write and not names:

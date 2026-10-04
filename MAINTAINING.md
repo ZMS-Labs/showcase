@@ -2,7 +2,7 @@
 
 These are the working rules for changing the showcase. They apply to whoever makes the change, including an AI tool. AI tools write the code. I decide what each project is for and check what comes back. If you came to see the work itself, start at the [showcase](https://zms-labs.github.io/showcase/) or the [README](README.md).
 
-GitHub Pages publishes `main:/docs` at <https://zms-labs.github.io/showcase/>. The site shows selected project artifacts; it does not run the applications themselves. This guide, `README.md` and `DESIGN.md` sit outside `docs/`, so Pages does not serve them.
+GitHub Pages publishes `main:/docs` at <https://sternone.net/>; `www.sternone.net` redirects to that address. Preserve `docs/CNAME` containing `sternone.net` in every publication, including replacements from an export. The manifest check rejects a missing or changed CNAME. Change the custom domain only with the maintainer's explicit approval. The site shows selected project artifacts; it does not run the applications themselves. This guide, `README.md` and `DESIGN.md` sit outside `docs/`, so Pages does not serve them.
 
 ## Source map
 
