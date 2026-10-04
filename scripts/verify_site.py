@@ -111,8 +111,8 @@ tags=hits(re.compile(r'\[\s*zach\s*[:\]]|\[\s*from\s+(?:r[e\xe9]sum[e\xe9]|corpu
 # They are named by code point (figure dash to horizontal bar, then the two- and three-em dashes).
 dashes=hits(re.compile('['+''.join(map(chr,(0x2012,0x2013,0x2014,0x2015,0x2e3a,0x2e3b)))+']'))
 # Wording ruled out for these pages: giving AI tools only a share of the coding (AI tools write the code),
-# and anything about employment, since these are personal projects. License texts are quoted as issued, so they are skipped.
-wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|almost\s+all)\s+of\s+(?:the\s+|my\s+)?(?:code|coding|programming|building)\b|\b(?:employers?|linkedin|careers?|my\s+(?:day\s+)?job)\b|r\xe9sum|resum\xe9',re.I),skip=('LICENSE','OFL.txt'))
+# and employment claims. The approved LinkedIn contact route is allowed. License texts are quoted as issued, so they are skipped.
+wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|almost\s+all)\s+of\s+(?:the\s+|my\s+)?(?:code|coding|programming|building)\b|\b(?:employers?|careers?|my\s+(?:day\s+)?job)\b|r\xe9sum|resum\xe9',re.I),skip=('LICENSE','OFL.txt'))
 
 # The project list is decided: four featured projects, then five supporting ones, in this order.
 # A case study that is not listed here, or a link to one, is a problem to fix before publishing.
@@ -226,6 +226,10 @@ with sync_playwright() as p:
   page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('https://','http://')) and not (args.base_url and r.url.startswith(args.base_url.rstrip('/')+'/')) else None)
   for path in pages:
    page.goto(destination(path),wait_until='load');page.evaluate('document.fonts.ready')
+   for depth in page.locator('details.case-depth').all():
+    assert depth.get_attribute('open') is None, 'Enhanced case evidence starts closed'
+    depth.locator(':scope > summary').focus();page.keyboard.press('Enter')
+    assert depth.get_attribute('open') is not None, 'Keyboard opens the full case evidence'
    assert page.locator('h1').count()==1,str(path)
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth+1'),(path.name,width,'overflow')
    for img in page.locator('img[src]').all():

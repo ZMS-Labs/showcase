@@ -79,7 +79,10 @@
     next.addEventListener('click', () => show(Math.min(steps.length - 1, current + 1), true));
     window.addEventListener('hashchange', () => {
       const index = steps.findIndex(step => `#${step.id}` === location.hash);
-      if (index >= 0 && !phone.matches) show(index, true);
+      if (index >= 0) {
+        current = index;
+        if (!phone.matches) show(index, true);
+      }
     });
     layouts.push(layout);
     layout();
