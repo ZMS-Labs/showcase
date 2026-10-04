@@ -25,25 +25,13 @@
     .case-hero{padding-bottom:14px}.case-jump+.walkthrough{margin-top:12px}
     @media(max-width:720px){.measurement-card{padding:19px}.measurement-card dl{font-size:.83rem;gap:10px 12px}.measurement-table{font-size:.82rem}.measurement-table th,.measurement-table td{padding:11px 5px}.measurement-table thead th{font-size:.76rem}.measurement-table span{font-size:.69rem}.measurement-table th:first-child{width:24%}.measurement-result strong{font-size:1.4rem}}
   </style>
-</head>
+<link rel="stylesheet" href="../../integration.css"><script src="../../review-interactions.js" defer></script></head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header wrap">
-    <a class="brand" href="../../index.html" aria-label="ZMS Labs home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>ZMS Labs</a>
-    <nav aria-label="Main navigation"><a href="../../index.html#work">Work</a><a href="../../more-work.html">More work</a><a href="../../evidence.html">Evidence</a><a href="../../about.html">About</a><a href="https://github.com/ZMS-Labs">GitHub</a></nav>
-  </header>
+  <header class="site-header wrap"><a class="brand" href="../../index.html" aria-label="Zach Stern home"><span class="brand-name">Zach Stern</span><span class="brand-note">Personal projects / ZMS Labs</span></a><nav aria-label="Main navigation"><a href="../../index.html#work">Selected work</a><a href="../../more-work.html">More work</a><a href="../../evidence.html">Evidence</a><a href="../../about.html">About</a><a class="contact-link" href="https://www.linkedin.com/in/zachary-s-21125214/">Get in touch</a></nav></header>
   <main id="main" class="wrap">
     <div class="crumbs"><a href="../../index.html#work">Featured</a> / SaveBench</div>
-    <section class="case-hero savebench-hero">
-      <div class="savebench-intro">
-        <p class="quiet-label">SaveBench · Factories in Satisfactory</p>
-        <h1>Design a factory.<br>Measure what it&nbsp;does.</h1>
-        <p class="lead">I wanted to see how AI models would approach building a factory in Satisfactory: what they would design, what they would change, and whether it would actually work in the game. I shaped SaveBench around those questions, with factory layouts and revisions as part of the experiment. The experiment shown here ended up testing the measuring tool before it could judge a factory.</p>
-      </div>
-      <section class="plain-terms" aria-labelledby="plain-terms-title"><h2 id="plain-terms-title">In plain terms.</h2><p>A factory design can look fine on a map and still fall short in the video game Satisfactory, so the game itself is the judge. This page shows a prototype for comparing designs, running on made-up data, and a real experiment: on 9 September 2026 an AI agent designed a copper and concrete factory. The first trial never judged it, because a test factory with a known answer read zero. After a repair, the design missed its targets in two of its three two-minute measuring windows. Factories designed by AI models have passed other challenges, before and since.</p></section>
-      <div class="case-meta"><span><strong>Shown as</strong> <a href="../../evidence.html#status"><b>Recorded experiment</b></a>&nbsp;· a factory an AI agent designed missed its targets in two of three measuring windows, and the miss is kept; other designs have passed</span><span><strong>Checked</strong> Run records from 9 to 23 September 2026 (UTC); nothing rerun</span><span><strong>Source</strong> Private</span><span><strong>Recording</strong> <a href="#recording">33 seconds, prototype only</a></span></div>
-    </section>
-    <nav class="case-jump" aria-label="On this page"><a href="#walkthrough">A real experiment</a><a href="#since">What happened next</a><a href="#interface">The prototype</a><a href="#recording">Watch the comparison</a><a href="#contribution">What went into this work</a><a href="#evidence">Evidence and limits</a></nav>
+    <div class="case-overview"><section class="case-opening"><p class="meta">SaveBench / <a href="../../evidence.html#status"><b>Recorded experiment</b></a></p><h1>I changed the test to measure the factory.</h1><p class="case-lead">Milestones could reward hand-fed machines. I required sustained production while nobody touched the factory.</p><div class="result"><b>Recorded outcome, September 23, 2026: no pass in the newer quota test.</b></div><a class="action" href="#walkthrough">Inspect the detailed trial evidence</a><dl class="case-facts"><div><dt>My contribution</dt><dd>I changed the test and reviewed AI work. AI tools wrote the code.</dd></div><div><dt>Date and evidence limit</dt><dd>September 18 decision; September 23, 2026 evidence. No new run.</dd></div></dl></section><figure class="quota-diagram" aria-label="Explanation of the change in SaveBench's success condition"><div class="diagram-title">What counts as success?</div><div class="comparison"><div><span class="stage">Earlier milestone campaign</span><h3>Model → machines<br>→ milestone</h3><p>A model can keep moving items by hand.</p></div><div><span class="stage">September 18 decision</span><h3>Factory → depot<br>→ sustained quota</h3><p>Count output while nobody touches the factory.</p></div></div><figcaption>Authored explanation of the success criteria. This diagram does not show a trial result.</figcaption></figure></div><details class="case-depth" open><summary>Read the complete trial evidence, prototype and credits</summary><nav class="case-jump" aria-label="On this page"><a href="#walkthrough">A real experiment</a><a href="#since">What happened next</a><a href="#interface">The prototype</a><a href="#recording">Watch the comparison</a><a href="#contribution">What went into this work</a><a href="#evidence">Evidence and limits</a></nav>
 
     <section id="walkthrough" class="walkthrough" data-walkthrough aria-labelledby="walkthrough-title">
       <h2 id="walkthrough-title">A real experiment: test the instrument first.</h2>
@@ -132,7 +120,7 @@
       </div>
     </div></section>
 
-    <div class="next-project"><div><p>Continue exploring</p><a href="../epistemic-skills/index.html">Epistemic Skills</a></div><a class="small" href="../../index.html#work">All featured work</a></div>
+    </details><div class="next-project"><div><p>Continue exploring</p><a href="../epistemic-skills/index.html">Epistemic Skills</a></div><a class="small" href="../../index.html#work">All featured work</a></div>
   </main>
   <footer class="site-footer wrap"><p>Personal projects by Zach Stern.</p><nav aria-label="Footer navigation"><a href="../../about.html#how-i-work">How I work with AI tools</a><a href="../../evidence.html">What each project shows</a></nav></footer>
 <dialog class="image-dialog" aria-label="Expanded SaveBench prototype"><div class="dialog-bar"><span>Prototype · made-up sample data · game artwork removed</span><div class="view-actions"><a data-dialog-original target="_blank" rel="noopener">Open full-resolution image</a><button type="button" data-close>Close</button></div></div><img alt=""><p class="dialog-caption"></p></dialog></body>
