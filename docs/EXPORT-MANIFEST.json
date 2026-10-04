@@ -10,8 +10,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 8855,
-      "sha256": "b307c3c46f744f89712134b2aa1b5dad28955991fd97e81d3e301a2c2a89b104"
+      "bytes": 8825,
+      "sha256": "267bee68165d36a89c0ac02232ea503b928f8857d2d52ed1d3120e282e4a371e"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -235,8 +235,8 @@
     },
     {
       "path": "case-studies/enaction/index.html",
-      "bytes": 18232,
-      "sha256": "c708c00580328cdde1f00ad62035d5a7b0ba8a7a8d1d935c84dcd1d6fbdc3913"
+      "bytes": 18202,
+      "sha256": "b41319e77f0ddbef272f71f1762e339e4a86596c15d504dff304bf99d5d39383"
     },
     {
       "path": "case-studies/enaction/role-boundary-case.json",
@@ -245,8 +245,8 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 22404,
-      "sha256": "9d45a7d90b4610d926f82c9ab50f72f660af4e2171ac8fec1fd80fbd5decc920"
+      "bytes": 22374,
+      "sha256": "bba8caa5845dc38bc00b3461ca94b2355a4aa47baf2b3838356edfcc75a090c9"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -260,8 +260,8 @@
     },
     {
       "path": "case-studies/fleet-orchestrator/index.html",
-      "bytes": 28525,
-      "sha256": "47ced786862aa435edd5a7cd000875bdf28ce7cde405ac7653d9b6d2e6259d50"
+      "bytes": 28495,
+      "sha256": "e04652d830a127251f98e8a7ad46b5e6f3261eea2c6526e9a884d5e3316e2cf4"
     },
     {
       "path": "case-studies/fleet-orchestrator/review-gate.json",
@@ -275,8 +275,8 @@
     },
     {
       "path": "case-studies/gridiron/index.html",
-      "bytes": 15489,
-      "sha256": "a0be8b324c54248f4acdc0e5e84e6ad8c9cd7f86d4335b0178ff447904de5612"
+      "bytes": 15459,
+      "sha256": "51a6aaeb7a33341579a26004fb586d7d6c994fa0fcd1a22785e7a1ea133a5c40"
     },
     {
       "path": "case-studies/gridiron/recorded-replay.json",
@@ -285,8 +285,8 @@
     },
     {
       "path": "case-studies/krewcible/index.html",
-      "bytes": 15535,
-      "sha256": "56383834a654ace9a7777c18619b33ca5981e179c314abac83b4010d7c0cc1ea"
+      "bytes": 15505,
+      "sha256": "d87cd4fbbe5f2b1904076075e235534f9eb87daa239be7f4dc89d3e046e13e35"
     },
     {
       "path": "case-studies/krewcible/krewcible-study.json",
@@ -300,8 +300,8 @@
     },
     {
       "path": "case-studies/neuraxic/index.html",
-      "bytes": 26021,
-      "sha256": "f810f058d492b57729263c03dab3dd4aa1a09bd01c98bfeca224f169a598aa5c"
+      "bytes": 25991,
+      "sha256": "de722e08bb134d198ff2eaf08e0b2b27575d575d8425560b0fcde592f844dc35"
     },
     {
       "path": "case-studies/neuraxic/interface-study.json",
@@ -315,13 +315,13 @@
     },
     {
       "path": "case-studies/poiesis/index.html",
-      "bytes": 15370,
-      "sha256": "3ce4f675bb1d74173d22c4ca5bb51190f905e08ac9cd4473e5d39828f9fc2e14"
+      "bytes": 15340,
+      "sha256": "696e933b27688c87d4b4b1fab0cd32a38ed309dc3809b4aa77920047d537c23b"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 32951,
-      "sha256": "ef3b64f8b6d6ca37d9076b11bf0aa5e3590a0a95c7d949c592d5dffafd8e2ce6"
+      "bytes": 32921,
+      "sha256": "f671cfd64891f22230bdf68dfd45996b0c7ba5ec4c9ddf2d07bd9a671a02f57b"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -345,8 +345,8 @@
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 22131,
-      "sha256": "4b00af286ff0110c9f1a383a3d9786e085623778417d04c1b2fee1ca8d975d34"
+      "bytes": 22101,
+      "sha256": "7b48d9341f3aa970f3772b87560a1544b98d97f00e17653f8548c6a08d985d14"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
@@ -370,8 +370,8 @@
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 13066,
-      "sha256": "6b8d2e3db37d61ec2b24ea60c522e30cf4b7f3f00da180ebe8e263902a31d0e4"
+      "bytes": 13036,
+      "sha256": "ab30a71e631376207be6e7f8cb800a22c660c097b4ef94bd68c35af3981a126d"
     },
     {
       "path": "case-studies/steno/recorded-checks/styles.css",
@@ -390,13 +390,13 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 20219,
-      "sha256": "468f8509f13eaefc12f4944a1f73b502a9db05d9dedc22e41d2b1188cf59d9a5"
+      "bytes": 20189,
+      "sha256": "f4a8a9e279c3c0234929b19ca7104b9586a8b506b6dd6663f20d8146b023ddb9"
     },
     {
       "path": "index.html",
-      "bytes": 8224,
-      "sha256": "fe54db0a8f63efc595f80fb6a4961127ff477ca0ab74c9e47bb8b14e4f6ca479"
+      "bytes": 8194,
+      "sha256": "3f8019d47cfe4d674d618bbb41b354560e745b0552244df2eda170081fd543ca"
     },
     {
       "path": "integration.css",
@@ -410,13 +410,13 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 9896,
-      "sha256": "112a6d2ff73d07384c8226e145f205c845fdc40fb597f89f43a1ac6b35654693"
+      "bytes": 9866,
+      "sha256": "a5e85122e44e24b9681f09616f1048e865da15b3dfd7f8c1eb9704e7f2a1466f"
     },
     {
       "path": "README.md",
-      "bytes": 3871,
-      "sha256": "0ebed88265414b0bde462188b44e2f73038585696bcbeac318c6047e5091f95f"
+      "bytes": 3661,
+      "sha256": "f038e857bc9ffa4224bdcc95ae43f4b3b6b57c5cfecd692f96a2d2f792a13599"
     },
     {
       "path": "review-interactions.js",
@@ -425,8 +425,8 @@
     },
     {
       "path": "robots.txt",
-      "bytes": 81,
-      "sha256": "802fa2b1c883bc1489168b6b72864c0c707c183b9312d32868135b5a28e06c50"
+      "bytes": 66,
+      "sha256": "4afda60e749ba40b5c3a5574c3c0716db51a61669e127e3f1275c63dccaddad7"
     },
     {
       "path": "site.css",
@@ -440,8 +440,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 1656,
-      "sha256": "93b32f1a23b33d7ffd2abb7ed14beb62522b3b8a0b8a0d4281d288807a5893aa"
+      "bytes": 1446,
+      "sha256": "f8110a5a3846f2a378309a5b59588995d822613a5f45fe31cfc3453289561625"
     },
     {
       "path": "style-v2.css",
