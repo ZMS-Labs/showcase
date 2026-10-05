@@ -13,14 +13,6 @@ AI tools write the code. I decide what each project is for and check what comes 
 
 ## A look at the featured projects
 
-### Steno: a contract workstation
-
-[![Steno's archived matter-map prototype, shown with made-up content.](docs/assets/steno/matter-map.png)](https://sternone.net/case-studies/steno/)
-
-Steno is a contract workstation that keeps the document, its connections and the questions under review together. The case study shows the archived prototype in full resolution and in a short captioned recording. It also shows the Hallmark, the emblem Steno uses to show a grade and what backs it, drawn with made-up inputs, so no contract was assessed. Two drafting checks, recorded on made-up clauses, have their own page.
-
-[Watch the prototype recording](https://sternone.net/case-studies/steno/#recording) · [See the Hallmark designs](https://sternone.net/case-studies/steno/#hallmarks) · [Read the drafting checks](https://sternone.net/case-studies/steno/recorded-checks/)
-
 ### SaveBench: factories in Satisfactory
 
 [![The SaveBench comparison prototype in its preview mode, with made-up models, factory and results.](docs/assets/savebench/savebench-workspace.png)](https://sternone.net/case-studies/savebench/)
@@ -28,6 +20,14 @@ Steno is a contract workstation that keeps the document, its connections and the
 SaveBench gives AI models a factory to design in the video game Satisfactory, and the running game measures what the factory delivers. The case study shows the comparison prototype on made-up data, then a real experiment from 9 September 2026. An AI agent designed a copper and concrete factory for it. On the first trial the measuring tool failed its own check, so nothing was judged. After a repair, the same design missed its targets in two of its three two-minute measuring windows, and that FAIL is kept as recorded. Later records show that on 13 September, factories designed by AI models passed a harder challenge in the game with faster belts allowed. A newer test, where the factory has to keep producing while nobody touches it, has no pass yet. Dates are UTC, as in the run records.
 
 [Watch the prototype recording](https://sternone.net/case-studies/savebench/#recording) · [See the trials](https://sternone.net/case-studies/savebench/#walkthrough)
+
+### Steno: a contract workstation
+
+[![Steno's archived matter-map prototype, shown with made-up content.](docs/assets/steno/matter-map.png)](https://sternone.net/case-studies/steno/)
+
+Steno is a contract workstation that keeps the document, its connections and the questions under review together. The case study shows the archived prototype in full resolution and in a short captioned recording. It also shows the Hallmark, the emblem Steno uses to show a grade and what backs it, drawn with made-up inputs, so no contract was assessed. Two drafting checks, recorded on made-up clauses, have their own page.
+
+[Watch the prototype recording](https://sternone.net/case-studies/steno/#recording) · [See the Hallmark designs](https://sternone.net/case-studies/steno/#hallmarks) · [Read the drafting checks](https://sternone.net/case-studies/steno/recorded-checks/)
 
 ### Epistemic Skills: checking an AI agent's work
 
@@ -51,8 +51,8 @@ Each project started with a question. The line under each one says how the work 
 
 ### Featured
 
-- [Steno](https://sternone.net/case-studies/steno/): How could a contract workstation connect a clause to the questions it raises?<br>[Prototype](https://sternone.net/evidence.html#status) · the archived prototype design, the current Hallmark emblem, and two drafting checks recorded on made-up clauses
 - [SaveBench](https://sternone.net/case-studies/savebench/): How would AI models approach building a factory in Satisfactory, and would it actually work in the game?<br>[Recorded experiment](https://sternone.net/evidence.html#status) · the original interface on made-up data, a factory an AI agent designed that the game scored as a FAIL, and later designs that passed in the game
+- [Steno](https://sternone.net/case-studies/steno/): How could a contract workstation connect a clause to the questions it raises?<br>[Prototype](https://sternone.net/evidence.html#status) · the archived prototype design, the current Hallmark emblem, and two drafting checks recorded on made-up clauses
 - [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): How do I get AI agents to investigate a problem properly and check whether their change worked?<br>[Public source](https://sternone.net/evidence.html#status) · public releases, and one recorded use on this site (19 September 2026) with a check anyone can rerun
 - [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): How do I keep track of several AI coding agents without losing their work between sessions?<br>[Component study](https://sternone.net/evidence.html#status) · the glyphs and main screen from the project's own code, and three review-gate tests passed
 

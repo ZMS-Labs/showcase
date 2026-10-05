@@ -6,14 +6,14 @@ This folder is the source of my project showcase at <https://sternone.net/>. Eac
 
 ## Explore
 
-The four featured projects:
+The independent case studies:
 
-- [Steno](https://sternone.net/case-studies/steno/): a contract workstation that keeps the document, its connections and the questions under review together. The archived prototype, the Hallmark emblem (a grade and what backs it) and two recorded drafting checks.
 - [SaveBench](https://sternone.net/case-studies/savebench/): AI models design factories in the video game Satisfactory, and the running game measures what each factory delivers. The comparison interface, a factory an AI agent designed that the game scored as a FAIL, and later results.
+- [Steno](https://sternone.net/case-studies/steno/): a contract workstation that keeps the document, its connections and the questions under review together. The archived prototype, the Hallmark emblem (a grade and what backs it) and two recorded drafting checks.
 - [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): written methods that help AI agents (AI tools that carry out a multi-step task on their own) investigate a failure, compare options and check whether a change worked. Public source, in eleven releases since July 2026.
 - [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): a workspace for keeping track of several AI coding agents and their work between sessions. The agent glyphs, the main screen, the Surface Bridge (the part that turns a decision about an agent's next step into commands for the AI tool running it) and three tests of the review gate.
 
-The five supporting projects:
+Further independent work:
 
 - [Neuraxic](https://sternone.net/case-studies/neuraxic/): a writing workspace where a story's prose, people, places and rules develop together, with five tests of what each version of the story can see and how a new detail gets accepted.
 - [Krewcible](https://sternone.net/case-studies/krewcible/): shaping a character through choices you can see, change and take back, shown in the editor's own controls before anything is generated.

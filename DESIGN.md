@@ -1,5 +1,16 @@
 # ZMS Labs showcase design
 
+## Approved editorial revision / October 2026
+
+The website uses warm paper, deep ink and restrained orange, an upright Archivo personal masthead, existing public exhibit imagery and clearly labeled original reading aids. The home composition includes existing public AI-generated conceptual artwork; it is explicitly labeled and is not evidence of a test result. Public screenshot bytes and their original product identity remain unchanged. Crops and transcribed labels are presentation views of those artifacts, with full source access retained in the cases.
+
+Professional work comes before independent experiments. The independent home features are SaveBench, Steno and Epistemic Skills, followed by the six-project image gallery. Steno is a supporting portfolio case rather than the site's identity. Phone inspection presents complete overviews and purposeful public-source details with readable explanations. Reduced-motion and no-JavaScript alternatives remain available. Personal contribution, AI contribution, observed result, dated status and evidence limits are separate.
+
+The original GitHub masthead assets and notices remain unchanged. The September notes below describe the earlier website layout where they differ from this approved revision; they are retained as design history. Current publication checks follow the approved hierarchy, not the former four-feature linear-tour convention. Approved prose may use punctuation from the reviewed copy; curly quotes in copyable code remain forbidden.
+
+## September design record
+
+
 This file records how the showcase looks and the decisions behind it. The site uses the same typeface and colors as the rest of ZMS Labs, and its mastheads are in the visual family of Epistemic Skills. Each case study opens with what I wanted the project to do, then shows the interface and the evidence. When AI tools or other people's projects did part of the work, the page says so, and it says what the work does not show.
 
 ## Visual system
