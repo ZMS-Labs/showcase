@@ -5,7 +5,7 @@
 
 # Selected work by Zach Stern
 
-I'm Zach Stern. I work with contracts. These are projects I'm building around contracts, writing, games and the practical problems I run into with AI tools. Steno starts from a question like this one: if a vendor reports a data incident, who needs to be told, and how do the liability terms change the answer?
+I'm Zach Stern. I work with contracts. These are projects I'm building around contracts, writing, games and the practical problems I run into with AI tools. Steno starts from a question like this one: when an agreement requires notice, how must it be given, and how do the liability terms affect the answer?
 
 AI tools write the code. I decide what each project is for and check what comes back. I want this site to show what I've been up to with AI and how it's actually going, without overstating any of it.
 
