@@ -10,8 +10,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 8825,
-      "sha256": "267bee68165d36a89c0ac02232ea503b928f8857d2d52ed1d3120e282e4a371e"
+      "bytes": 8833,
+      "sha256": "8cc6e0184e31ff745cbd551664f70e7b221642b01b37cd831491b735d8f411fd"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -346,12 +346,12 @@
     {
       "path": "case-studies/steno/index.html",
       "bytes": 22101,
-      "sha256": "7b48d9341f3aa970f3772b87560a1544b98d97f00e17653f8548c6a08d985d14"
+      "sha256": "086b59e720db9977517990c46b8ef0693a1d718f51af01a0d5742740bbaa732f"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
-      "bytes": 4020,
-      "sha256": "df53ec987f3e71cce22add718fb5b4c0b5ac661534718493949494d13f9eebf5"
+      "bytes": 4022,
+      "sha256": "e12f871c7e60f40f5538733f4322848becdd86e2c15ea7ebb3499f0eaed9562a"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-study.js",
@@ -370,8 +370,8 @@
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 13036,
-      "sha256": "ab30a71e631376207be6e7f8cb800a22c660c097b4ef94bd68c35af3981a126d"
+      "bytes": 13311,
+      "sha256": "d315fe7b995f33dca1c4b488097ce16662065c70a645bf0da3b361d40b3968a1"
     },
     {
       "path": "case-studies/steno/recorded-checks/styles.css",
@@ -395,8 +395,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 8194,
-      "sha256": "3f8019d47cfe4d674d618bbb41b354560e745b0552244df2eda170081fd543ca"
+      "bytes": 8268,
+      "sha256": "7833bd951b193cb4a3baefee24b8c3e545e63c25ce2101ec80efad13244a7c28"
     },
     {
       "path": "integration.css",
@@ -441,7 +441,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 1446,
-      "sha256": "f8110a5a3846f2a378309a5b59588995d822613a5f45fe31cfc3453289561625"
+      "sha256": "7deae2e3f3ca97933983ffbf628d8a639d1af77dac254cfd9bad42785ca7415b"
     },
     {
       "path": "style-v2.css",

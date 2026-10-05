@@ -15,13 +15,13 @@ window.STENO_CASE_STUDY = {
           "id": "demo-incident",
           "reference": "§ 7",
           "title": "Security Incident",
-          "text": "Vendor shall provide written notice of a security incident within 24 hours."
+          "text": "Party A shall provide written notice of a security incident within 24 hours."
         },
         {
           "id": "demo-indemnity",
           "reference": "§ 8",
           "title": "Indemnity",
-          "text": "Vendor shall indemnify Customer against covered third-party claims, subject to a separate $300,000 limit."
+          "text": "Party A shall indemnify Party B against covered third-party claims, subject to a separate $300,000 limit."
         },
         {
           "id": "demo-liability",
@@ -72,13 +72,13 @@ window.STENO_CASE_STUDY = {
           "id": "demo-incident",
           "reference": "§ 7",
           "title": "Security Incident",
-          "text": "Vendor shall provide written notice of a security incident within 24 hours, in accordance with the Notices article."
+          "text": "Party A shall provide written notice of a security incident within 24 hours, in accordance with the Notices article."
         },
         {
           "id": "demo-indemnity",
           "reference": "§ 8",
           "title": "Indemnity",
-          "text": "Vendor shall indemnify Customer against covered third-party claims, subject to a separate $300,000 limit."
+          "text": "Party A shall indemnify Party B against covered third-party claims, subject to a separate $300,000 limit."
         },
         {
           "id": "demo-liability",
