@@ -115,7 +115,7 @@ dashes=hits(re.compile('['+''.join(map(chr,(0x2012,0x2013,0x2014,0x2015,0x2e3a,0
 # and employment claims. The approved LinkedIn contact route is allowed. License texts are quoted as issued, so they are skipped.
 wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|almost\s+all)\s+of\s+(?:the\s+|my\s+)?(?:code|coding|programming|building)\b|r\xe9sum|resum\xe9',re.I),skip=('LICENSE','OFL.txt'))
 
-# The project list is decided: four featured projects, then five supporting ones, in this order.
+# The project list is decided: three featured projects, then six supporting ones, in this order.
 # A case study that is not listed here, or a link to one, is a problem to fix before publishing.
 ORDER=('savebench','steno','epistemic-skills','fleet-orchestrator','neuraxic','krewcible','gridiron','enaction','poiesis')
 FEATURED=ORDER[:3]
@@ -165,7 +165,7 @@ contract+=[f'case-studies/{name}/index.html is missing' for name in ORDER if not
 for name,content in texts.items():
  contract+=[f'{name}:{line_of(content,m.start())} points at case study "{m.group(1)}", which is not one of the listed projects' for m in re.finditer(r'case-studies/([A-Za-z0-9_.-]+)/',content) if m.group(1) not in ORDER]
 home=Tree(root/'index.html')
-cards=unique(n for box in home.find(lambda e:has_class('independent')(e) or has_class('other-work')(e)) for n in map(project,home.targets(box)))
+cards=unique(n for box in home.find(lambda e:has_class('independent')(e) or has_class('other-work')(e) or has_class('home-project')(e) or has_class('gallery-card')(e)) for n in map(project,([home.target(box['attrs']['href'])] if box['tag']=='a' and box['attrs'].get('href') else [])+home.targets(box)))
 if cards!=list(ORDER):contract.append(out_of_order('index.html cards',cards,ORDER))
 board=Tree(root/'evidence.html')
 key=[text(dt) for dl in board.find(lambda e:e['tag']=='dl' and has_class('status-key')(e)) for dt in board.find(is_tag('dt'),dl)]
@@ -190,7 +190,20 @@ for index,name in enumerate(ORDER):
  if not path.is_file():continue
  doc=Tree(path);rel=path.relative_to(root).as_posix()
  first=doc.labels()[:1]
- if not first:contract.append(f'{rel}: no status label links to the Evidence key')
+ if not first:
+  # Native editorial chapters put source kind and dated scope in the exhibits;
+  # their status authority remains the corresponding row of the Evidence table.
+  stories=list(doc.find(has_class('scroll-story')))
+  if not stories:contract.append(f'{rel}: no status label links to the Evidence key')
+  else:
+   if len(stories)!=1 or stories[0]['attrs'].get('data-story')!=name:
+    contract.append(f'{rel}: the evidence story does not identify this project')
+   static=list(doc.find(has_class('story-static'),stories[0]))
+   frames=[n for n in static[0]['kids'] if isinstance(n,dict) and n['tag']=='article'] if len(static)==1 else []
+   if len(frames)!=4 or any(not list(doc.find(is_tag('h3'),frame)) or not list(doc.find(is_tag('p'),frame)) for frame in frames):
+    contract.append(f'{rel}: the complete four-chapter static reading version is missing')
+   if name not in shown or 'evidence.html' not in doc.targets():
+    contract.append(f'{rel}: the case is not connected to its Evidence-table status authority')
  elif name in shown and first[0]!=shown[name]:contract.append(f'{rel}: labeled "{first[0]}", but the Evidence table says "{shown[name]}"')
  # The approved editorial cases retain genuine source evidence and explicit AI attribution.
  page_text=text(doc.top)
@@ -221,7 +234,7 @@ with sync_playwright() as p:
   page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('request',lambda r:remote.append(r.url) if r.url.startswith(('https://','http://')) and not (args.base_url and r.url.startswith(args.base_url.rstrip('/')+'/')) else None)
   for path in pages:
    page.goto(destination(path),wait_until='load');page.evaluate('document.fonts.ready')
-   for depth in page.locator('details.case-depth').all():
+   for depth in page.locator('details.case-depth, details.evidence-depth').all():
     assert depth.get_attribute('open') is None, 'Enhanced case evidence starts closed'
     depth.locator(':scope > summary').focus();page.keyboard.press('Enter')
     assert depth.get_attribute('open') is not None, 'Keyboard opens the full case evidence'
@@ -348,7 +361,15 @@ with sync_playwright() as p:
  nojs=browser.new_context(java_script_enabled=False,offline=not bool(args.base_url))
  for path in root.glob('case-studies/*/index.html'):
   page=nojs.new_page();page.goto(destination(path))
-  assert page.locator('[data-walk-step]').count()>0 or page.locator('.reading-copy-body').is_visible()
+  for depth in page.locator('details.evidence-depth').all():
+   if depth.get_attribute('open') is None:
+    depth.locator(':scope > summary').focus();page.keyboard.press('Enter')
+   assert depth.get_attribute('open') is not None
+  static=page.locator('.story-static')
+  if static.count():
+   assert static.is_visible() and static.locator('article').count()==4
+   for chapter in static.locator('article').all():assert chapter.is_visible()
+  else:assert page.locator('[data-walk-step]').count()>0 or page.locator('.reading-copy-body').is_visible()
   for step in page.locator('[data-walk-step]').all():assert step.is_visible()
   if page.locator('[data-walk-controls]').count():assert not page.locator('[data-walk-controls]').is_visible()
   page.close()
