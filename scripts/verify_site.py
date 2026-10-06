@@ -71,6 +71,14 @@ for path in redirects:
  assert found and (path.parent/found.group(1)).resolve().is_file(),(str(path.relative_to(root)),'redirect target missing')
 pages=[path for path in pages if path not in redirects]
 moved={path.parent.name for path in redirects if path.parent.parent==root/'case-studies'}
+# Records published at a moved page's old address stay there, byte for byte the same as the moved copies.
+for name in moved:
+ old=root/'case-studies'/name
+ new=(old/re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',(old/'index.html').read_text(encoding='utf-8')).group(1)).resolve().parent
+ for kept in old.rglob('*'):
+  if kept.is_file() and kept.suffix!='.html':
+   twin=new/kept.relative_to(old)
+   assert twin.is_file() and twin.read_bytes()==kept.read_bytes(),(str(kept.relative_to(root)),'differs from',str(twin.relative_to(root)) if twin.is_file() else 'missing')
 # The Interleaf receipt records the evidence file's SHA-256 over the bytes the site serves. It has to
 # equal both the file itself and the site's checksum list, so the two records cannot drift apart.
 evidence=root/'case-studies/interleaf/recorded-checks/evidence'
@@ -232,7 +240,7 @@ if args.prepublish and any(problems.values()):
  raise SystemExit('Not ready to publish:\n'+json.dumps({k:v for k,v in problems.items() if v},indent=2))
 
 modes={'walkthroughs_stepped':0,'walkthroughs_stacked':0,'galleries_expanded':0,'galleries_link_only':0}
-regression={'narrow_feature_checks':0,'nojs_story_states':0,'motion_switch_checks':0,'story_scroll_checks':0,'redirect_checks':0}
+regression={'narrow_layout_checks':0,'nojs_story_states':0,'motion_switch_checks':0,'story_scroll_checks':0,'redirect_checks':0}
 # Scrolls so a story step sits mid-screen, then waits for scrolling (smooth or not) to stop, polling on an interval.
 SCROLL_TO_STEP='''async (i) => {
  const step=document.querySelectorAll('[data-story] .story-step')[i]; const r=step.getBoundingClientRect();
@@ -266,10 +274,10 @@ with sync_playwright() as p:
     assert img.evaluate('(e)=>e.complete&&e.naturalWidth>0'),(path,img.get_attribute('src'))
    page.evaluate('window.scrollTo(0,0)')
    if width<1000:
-    # Below the 1000px breakpoint every feature, odd or even, stacks into one column.
-    tracks=page.evaluate('[...document.querySelectorAll(".feature")].map(f=>getComputedStyle(f).gridTemplateColumns.split(" ").length)')
-    assert all(t==1 for t in tracks),(path.relative_to(root).as_posix(),width,'a feature keeps more than one column',tracks)
-    regression['narrow_feature_checks']+=len(tracks)
+    # Below the 1000px breakpoint every two-column layout (features, odd or even, and split sections) stacks into one column.
+    tracks=page.evaluate('[...document.querySelectorAll(".feature,.split")].map(f=>getComputedStyle(f).gridTemplateColumns.split(" ").length)')
+    assert all(t==1 for t in tracks),(path.relative_to(root).as_posix(),width,'a two-column layout keeps more than one column',tracks)
+    regression['narrow_layout_checks']+=len(tracks)
    checks.append({'page':path.relative_to(root).as_posix(),'viewport':[width,height],'images':'loaded','horizontal_overflow':False})
    # The approved editorial view replaces some former hero controls with artifact inspection.
    for lead in page.locator('.visual-lead').all():

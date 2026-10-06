@@ -318,6 +318,15 @@ main:focus{outline:none}
 .page-hero h1{max-width:16ch;font-size:clamp(40px,5.6vw,84px)}
 .page-hero .lead{margin-top:30px;max-width:36ch}
 .page-hero.split h1{font-size:clamp(40px,4.8vw,80px)}
+.page-hero.split.wide{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.page-hero.split.wide h1{font-size:clamp(40px,5.6vw,84px)}
+.page-hero.split>:is(.ledger,.hero-index){align-self:end;justify-self:end;width:min(100%,440px);margin-top:0;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--ink)}
+.page-hero.split>.ledger>div,.page-hero.split>.ledger>div+div{padding:16px 0;border-left:0;border-bottom:1px solid var(--rule)}
+.hero-index ul{list-style:none;margin:0;padding:0}
+.hero-index li{border-bottom:1px solid var(--rule)}
+.hero-index a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;text-decoration:none;font-weight:600}
+.hero-index a span{font-size:15px;font-weight:400;color:var(--muted)}
+.hero-index a:hover{text-decoration:underline;text-underline-offset:4px}
 .case-hero{padding-block:clamp(40px,6vw,88px) clamp(56px,7vw,104px);display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:center}
 .case-hero h1{font-size:clamp(38px,4.4vw,70px);max-width:17ch}
 .case-hero .lead{margin-top:26px;max-width:32ch;font-size:clamp(19px,1vw + 14px,25px)}
@@ -465,7 +474,13 @@ details.transcript li+li{margin-top:6px}
 
 /* Narrow screens */
 @media (max-width:1000px){
-  .split,.split.even,.case-hero,.feature,.feature:nth-of-type(even),.record,.story{grid-template-columns:minmax(0,1fr)}
+  .split,.split.even,.page-hero.split.wide,.case-hero,.feature,.feature:nth-of-type(even),.record,.story{grid-template-columns:minmax(0,1fr)}
+  .page-hero.split>:is(.ledger,.hero-index){justify-self:stretch;width:auto}
+  /* On phones the project's picture follows its title, so the work is on the first screen. Reading order is unchanged. */
+  .case-hero{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .case-hero>div:first-child{display:contents}
+  .case-hero>div:first-child>:not(.crumb,.kicker,h1){order:2}
+  .case-hero>:not(:first-child){order:1;margin-top:28px;align-self:stretch}
   .feature:nth-of-type(even) .feature-copy{order:0}
   .tools{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tools>div:nth-child(3){padding-left:0;border-left:0}

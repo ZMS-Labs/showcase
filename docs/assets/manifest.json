@@ -16,6 +16,17 @@
       "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
     },
     {
+      "path": "assets/steno/matter-map.png",
+      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465",
+      "bytes": 658350,
+      "dimensions": [
+        1760,
+        1100
+      ],
+      "kind": "Compatibility copy of the earlier render, under its working name Steno",
+      "claim_boundary": "Kept only because the ZMS Labs organization profile on GitHub embeds this exact URL. It is the original Steno render, byte for byte; no page on this site uses it. Remove it once the profile points at assets/interleaf/matter-map.png."
+    },
+    {
       "path": "assets/interleaf/workstation.png",
       "sha256": "37056f7fd8b4495f3f6ab5bb002bd4eb1c1c973ecef22eda439e719d19eca32a",
       "bytes": 625808,

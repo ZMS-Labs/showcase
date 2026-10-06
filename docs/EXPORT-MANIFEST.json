@@ -15,8 +15,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 8916,
-      "sha256": "cd35afe8b0805f784b84859b710ab3b091f9e54d0ffc1d4617e1e44c6df90827"
+      "bytes": 9228,
+      "sha256": "4aabcb0000297a67e78f135c72f27729f4c11c65d1f25ae0b6700e322033a17a"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -135,8 +135,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 26643,
-      "sha256": "4efac5ff4ab0dc4fa65db69a4e7fdaac66c98728e243b274dd416740079bdf71"
+      "bytes": 27213,
+      "sha256": "30646bf44e7745b1bbbdefad032e5622f41e13bce7d71ecff1d4ff0c3d766fdc"
     },
     {
       "path": "assets/neuraxic/claims.png",
@@ -247,6 +247,11 @@
       "path": "assets/savebench/savebench-workspace.png",
       "bytes": 350343,
       "sha256": "600dfacfa70562bdf58a299c63856e190c19c068db93ac77ae5428abb3435817"
+    },
+    {
+      "path": "assets/steno/matter-map.png",
+      "bytes": 658350,
+      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465"
     },
     {
       "path": "case-studies/enaction/index.html",
@@ -389,14 +394,34 @@
       "sha256": "85400c77a8a437ccc29c73130e757086589b6c5ade9839ac23706db4e970b60e"
     },
     {
+      "path": "case-studies/steno/design-research.json",
+      "bytes": 3827,
+      "sha256": "787c3249df9d429500159a88b808c3a7e725ebd00a6434d27dc472eb6095db04"
+    },
+    {
+      "path": "case-studies/steno/hallmark-design.json",
+      "bytes": 1313,
+      "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
+    },
+    {
       "path": "case-studies/steno/index.html",
-      "bytes": 765,
-      "sha256": "a6c24eb8a844613bdb23253400c2eb38c31e195e07586d20a75c939b7353cfa9"
+      "bytes": 1622,
+      "sha256": "36868e70b925d22ffc788fc5216c54ec4d7bdec0241c4943fe009ed833aea738"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
+      "bytes": 6207,
+      "sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e"
+    },
+    {
+      "path": "case-studies/steno/recorded-checks/evidence/verification.json",
+      "bytes": 2454,
+      "sha256": "2f72e5881266820f202941f8cb847966cf33950e26d8ae276a78f3969e708ab3"
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 870,
-      "sha256": "063a1064f5c2fc69b059dbdaeb7da6eed1efe44c5a71cd1a3b8538fd7becf8f8"
+      "bytes": 1690,
+      "sha256": "227bf0e96eaba520f20a3d44dbdfdc10aa2b8b042d8890b9c195b00012334393"
     },
     {
       "path": "CNAME",
@@ -405,8 +430,8 @@
     },
     {
       "path": "commercial-agreements.html",
-      "bytes": 10363,
-      "sha256": "497db37e3933d403b5b36e885e5aa47a3d4439e906542abc766de25af9c2627b"
+      "bytes": 10391,
+      "sha256": "cdbaeda5971f1d88be5be5ca44f0494c4234d5d5a2f5d848fad91a8e7a14246b"
     },
     {
       "path": "downloads/gridiron-research-source.zip",
@@ -420,8 +445,8 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 11098,
-      "sha256": "99f3a397dcd0af65d137a06b1f6110393b3d7cf5576ccd3606813ef4ad55a624"
+      "bytes": 11466,
+      "sha256": "937eb5a79dbe59967a61cb831cb5e2005fc3e352ae9e70213e3a45c561518621"
     },
     {
       "path": "index.html",
@@ -435,8 +460,8 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 8094,
-      "sha256": "a0b8d1641e3f8a4f020fc2dcaaf04603fa19e691115ba3b0d367b615ec840fc4"
+      "bytes": 8352,
+      "sha256": "0288e0f12d2858c5270e9824ffde91d9dcd568a79ecbd8dca370eb98f765d8f0"
     },
     {
       "path": "README.md",
@@ -450,8 +475,8 @@
     },
     {
       "path": "site.css",
-      "bytes": 36812,
-      "sha256": "22b9496b4affcabffd325edca5e787267696b6c375483715c891f2c9febf924c"
+      "bytes": 38118,
+      "sha256": "4d40d8e6b1b927e58f3ccaee76c9f3eaa2e3cbeea0f468308eed728b445d4c6b"
     },
     {
       "path": "site.js",
