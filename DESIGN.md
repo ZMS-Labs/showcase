@@ -16,13 +16,15 @@ Professional work comes first: Dovenmuehle (in-house, 2017 to 2026), then Tishle
 
 Archivo is the only typeface, served locally as a Latin WOFF subset that keeps both of its axes (weight 100 to 900, width 62 to 125), with the unmodified TTF as the fallback. Width does the work a second family would: the name and headings run at 80 to 88 percent width, figures at 70 percent with tabular numerals, small labels at 115 percent in capitals. Body text is 17 to 19 pixels at a 64-character measure.
 
+A small capital label sits above a heading only when it adds something the heading doesn't: the employer and dates, the ZMS Labs marker that separates independent work, a project's name and kind, a step's place in a story, or what a picture is. Labels that only name the section ("The record", "How it works") are left out.
+
 Product captures keep each product's own look and are never recolored. Every image, recording and share card carries a short label saying what it is (Prototype, Component study, AI-generated artwork and so on).
 
 ## Page anatomy
 
 - **Home:** name and one-sentence proposition; three facts (nearly 10 years in-house, 7 years at Tishler &amp; Wald, the $17,487,520.30 claim); the two roles side by side, Dovenmuehle first; the agreements story; the litigation case with its timeline; ZMS Labs on night with three featured projects (SaveBench, Steno, Epistemic Skills) and the other six as an index; how I work with AI; contact.
 - **Professional pages** (`commercial-agreements.html`, `ear.html`): problem, my part, result, then sources. One sentence says what the sources establish and what is my own account.
-- **Case pages:** a night hero (crumb, kicker, a plain h1, a lead that states the problem and what the project does, the status line, the strongest real exhibit), a story or walkthrough that a non-engineer can follow, product exhibits, "What went into this work", a short record (what ran and when, the source, what isn't shown yet), a closed "full record" disclosure holding the technical detail, limits, credits and JSON links, then the next project.
+- **Case pages:** a night hero (crumb, the project's label, a plain h1, a lead that states the problem and what the project does, the status line, the strongest real exhibit), a story or walkthrough that a non-engineer can follow, product exhibits, "What went into this work", a short record (what ran and when, the source, what isn't shown yet), a closed "full record" disclosure holding the technical detail, limits, credits and JSON links, then the next project.
 - **Sources and records** (`evidence.html`): the status key, the project table, and credits and licenses.
 - **404:** self-contained, because GitHub Pages serves it at any depth.
 

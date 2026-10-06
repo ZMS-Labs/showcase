@@ -106,7 +106,6 @@
           <p>That meant the measuring tool was broken, so the AI's factory was never judged. A missing measurement isn't scored as zero production.</p>
         </li>
         <li class="story-step" data-state="repair">
-          <span class="kicker">The repair</span>
           <h3>Find the fault, then prove the fix.</h3>
           <p>The part that writes a design into the game's save file filled in a storage filter the game leaves empty. Materials reached the belts, but the depot counted none. The fix writes the filter the way the game does.</p>
           <p>In the second trial the connected control delivered both products and a disconnected copy delivered nothing. Now the tool could see a delivery, and see when there wasn't one.</p>
@@ -117,9 +116,8 @@
           <p>Same design, byte for byte, and the same rule, fixed in advance: at least 20 copper ingots and 15 concrete a minute in every two-minute window, after a three-minute warmup.</p>
         </li>
         <li class="story-step" data-state="fail">
-          <span class="kicker">The result</span>
           <h3>Two of three windows missed. The FAIL stays.</h3>
-          <p>Copper missed the first window, when the first ingots were still traveling a long belt. Concrete missed the third by a hair: 30 delivered where 30.25 were needed, because one concrete machine runs at exactly the target rate. A good later window doesn't cancel an earlier miss.</p>
+          <p>Copper missed the first window. None had reached the depot when measuring began, most likely because the first ingots were still on a long belt, but the record doesn't prove that. Concrete missed the third by a hair: 30 delivered where 30.25 were needed, because one concrete machine runs at exactly the target rate. A good later window doesn't cancel an earlier miss.</p>
           <p>The FAIL is specific and useful, so it stays on the record. Nobody loosened the target or combined the two trials into a score.</p>
         </li>
       </ol>
@@ -130,7 +128,6 @@
 <section class="section band" id="since" aria-labelledby="since-title">
   <div class="wrap split">
     <div>
-      <span class="kicker">What happened next</span>
       <h2 id="since-title">When the rules rewarded the wrong thing, I changed the test.</h2>
       <p style="margin-top:24px">In a later campaign, an AI model earned the game's milestones by feeding machines by hand and never built a conveyor belt. At first I called that a flaw in the model. Then I decided SaveBench measures factory design, not whether an AI chooses to automate. So the test became a production quota the factory has to keep meeting while nobody touches it, an approach from the <a class="ext" href="https://arxiv.org/abs/2503.09617">Factorio Learning Environment</a> research benchmark.</p>
     </div>
@@ -147,7 +144,6 @@
 <section class="section" id="interface" aria-labelledby="interface-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">The prototype</span>
       <h2 id="interface-title">Watch how the factory gets designed.</h2>
       <p class="lead">The workspace puts the factory map beside the challenge's conditions, the revision you're looking at and an activity feed. Earlier builds of this interface ran the real comparisons on September 12 and 13.</p>
     </div>
@@ -206,7 +202,7 @@
 
 <section class="section" id="contribution" aria-labelledby="contribution-title">
   <div class="wrap">
-    <div class="section-head"><span class="kicker">Who did what</span><h2 id="contribution-title">What went into this work.</h2></div>
+    <div class="section-head"><h2 id="contribution-title">What went into this work.</h2></div>
     <div class="contribution">
       <div>
         <h3>What I did</h3>
@@ -225,7 +221,6 @@
   <div class="wrap">
     <div class="record">
       <div>
-        <span class="kicker">The record</span>
         <h2 id="record-title" style="font-size:clamp(30px,3vw,44px)">What ran, and what it shows.</h2>
       </div>
       <dl>

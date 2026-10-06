@@ -59,7 +59,6 @@
   <section class="section tight" id="artifact" aria-labelledby="artifact-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">The file and its expiry</span>
         <h2 id="artifact-title">A set lifetime, collected or not.</h2>
         <p class="lead">Fetching a file doesn't extend its deadline, and never fetching it doesn't keep it longer. The tests use sample files and a clock they control.</p>
       </div>
@@ -76,7 +75,6 @@
 <section class="section" aria-labelledby="walkthrough-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">How it works</span>
       <h2 id="walkthrough-title">Follow the five steps.</h2>
     </div>
     <div class="walkthrough" data-walkthrough id="walkthrough">
@@ -114,7 +112,6 @@
 <section class="section band" id="custody" aria-labelledby="custody-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">Stored prompts</span>
       <h2 id="custody-title">Recover the work without keeping the prompt forever.</h2>
     </div>
     <div class="prose">
@@ -122,12 +119,12 @@
       <p>So the locked prompt and its key live in different places. The lock is also tied to the job's ID: a test tries to open the prompt under another job's ID, and it fails.</p>
     </div>
     <div class="split even" style="margin-top:48px">
-      <div class="method-card reveal"><span class="kicker">Holds the locked prompt</span><h3>Work queue</h3><p>Holds the prompt, encrypted, along with the job's details. A test looks through everything in the queue and finds no readable copy of the prompt.</p></div>
-      <div class="method-card reveal"><span class="kicker">Holds the key</span><h3>Job record</h3><p>Holds the key, apart from the prompt. When the job finishes, the key is deleted. A test keeps a copy of the locked prompt, standing in for a backup, and shows it can no longer be opened.</p></div>
+      <div class="method-card reveal"><h3>Work queue</h3><p>Holds the prompt, encrypted, along with the job's details. A test looks through everything in the queue and finds no readable copy of the prompt.</p></div>
+      <div class="method-card reveal"><h3>Job record</h3><p>Holds the key, apart from the prompt. When the job finishes, the key is deleted. A test keeps a copy of the locked prompt, standing in for a backup, and shows it can no longer be opened.</p></div>
     </div>
     <p class="fine" style="margin-top:16px">Where the prompt and its key sit in the tests.</p>
     <div class="split" style="margin-top:72px">
-      <div><span class="kicker">Design tradeoff</span><h3>Decide how long each thing is kept.</h3></div>
+      <div><h3>Decide how long each thing is kept.</h3></div>
       <div class="prose">
         <p>The prompt and the returned files end in different ways. When a job finishes, the prompt's key is deleted, so the stored prompt becomes unreadable. Returned files expire 24 hours after they're made, and a cleanup call deletes them whether or not anyone collected them. Steps 3, 4 and 5 above show both.</p>
         <p><b>The cost:</b> a set lifetime can make useful content unavailable. Recovery and delivery have to fit inside that limit; retrying forever would defeat it.</p>
@@ -138,7 +135,7 @@
 
 <section class="section" id="contribution" aria-labelledby="contribution-title">
   <div class="wrap">
-    <div class="section-head"><span class="kicker">Who did what</span><h2 id="contribution-title">What went into this work.</h2></div>
+    <div class="section-head"><h2 id="contribution-title">What went into this work.</h2></div>
     <div class="contribution">
       <div>
         <h3>What I did</h3>
@@ -157,7 +154,6 @@
   <div class="wrap">
     <div class="record">
       <div>
-        <span class="kicker">The record</span>
         <h2 id="record-title" style="font-size:clamp(30px,3vw,44px)">What the eight tests show, and what they leave open.</h2>
       </div>
       <dl>
