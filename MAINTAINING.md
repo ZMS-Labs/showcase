@@ -12,15 +12,17 @@ GitHub Pages publishes `main:/docs` at <https://sternone.net/>; `www.sternone.ne
 | `MAINTAINING.md` | This guide |
 | `DESIGN.md` | Design decisions for the website and the GitHub pages |
 | `docs/README.md` | Short landing page for the `docs/` folder on GitHub |
-| `docs/index.html`, `site.css`, `site.js`, `walkthroughs.js` | Website, shared presentation and interactive controls |
+| `docs/index.html`, `site.css`, `site.js`, `walkthroughs.js`, `404.html` | Website, the one shared stylesheet, scroll stories and interactive controls, walkthroughs, and the self-contained not-found page |
 | `docs/case-studies/` | Project case studies, including Steno's separate recorded-checks page, and each case's evidence JSON |
-| `docs/about.html`, `more-work.html`, `evidence.html` | About me and how I work with AI tools, the supporting projects, and the status table with evidence and attribution |
+| `docs/commercial-agreements.html`, `ear.html` | Professional work at Dovenmuehle and Tishler & Wald |
+| `docs/about.html`, `more-work.html`, `evidence.html` | About me and how I work with AI tools, the work index, and the sources page with the status table, credits and licenses |
 | `docs/assets/manifest.json` | Asset types, hashes, sources and what each asset supports |
 | `docs/assets/og/`, `docs/sitemap.xml`, `docs/robots.txt` | Link-preview images and search metadata, maintained per page |
 | `docs/downloads/` | Gridiron research-source snapshot |
 | `scripts/verify_site.py` | Local link, responsive rendering, image and interaction checks |
 | `scripts/site_manifest.py` | Write or check the payload manifests; also checks for designated private names when the local list is present |
 | `scripts/replay_manifest_case.py` | Replay the site's first publication check from public Git objects |
+| `scripts/render_share_cards.py` | Render the link-preview cards in `docs/assets/og/` from HTML with the site stylesheet |
 | `assets/render_assets.py`, `assets/README.md` | GitHub masthead source, font notice and rebuild instructions |
 
 ## Edit and verify
@@ -29,9 +31,9 @@ Edit the HTML directly; there is no hidden build step. Keep claims, headings, ca
 
 Each case's evidence JSON and its limit fields are authoritative statements of what it does not show. Preserve those records and their dated scope. The editorial opening may summarize the problem, decision, observed result and limits in a different layout; retained status labels must still agree with the Evidence key. Professional personal-role accounts and court findings have separate attribution. [DESIGN.md](DESIGN.md) records the presentation decisions.
 
-The approved editorial home separates professional work from independent projects. Independent projects are listed as SaveBench, Steno, Epistemic Skills, Fleet Orchestrator, Neuraxic, Krewcible, Gridiron, Enaction and Poiesis. The first three receive full home-page features; the remaining six form the image gallery. Keep the home, work index, evidence table and repository project lists in that order. Continue links may point to another valid case; they are not a required linear tour. The publication check verifies this structure and preserves the evidence, attribution, privacy and domain gates.
+The home page puts professional work first (Dovenmuehle, then Tishler & Wald) and independent ZMS Labs work second. Independent projects are listed as SaveBench, Steno, Epistemic Skills, Fleet Orchestrator, Neuraxic, Krewcible, Gridiron, Enaction and Poiesis. The first three are `.home-project` features; the other six are `.gallery-card` rows. Keep the home page, the Work index, the Sources table and the README in that order. The publication check verifies this structure and preserves the evidence, attribution, privacy and domain gates. [DESIGN.md](DESIGN.md) records the page anatomy and the motion rules.
 
-Open Graph and Twitter card metadata and the sitemap are maintained per page. Every page carries the shared meta block in its `<head>` (type, site name, title, description, URL, image, and `summary_large_image` card); a new page must add that block, an og image under `docs/assets/og/` at 1200x630 (or reuse `og-default.png`), a matching entry in `docs/sitemap.xml`, and, for a new image, an asset-manifest entry that records its source. The `og:image` URL is absolute, like the other discovery URLs, so it keeps working from any host or preview path; update `lastmod` when a page ships. Crawlers read `robots.txt` only at the host root, so the copy at `/showcase/robots.txt` does not announce the sitemap; submit the sitemap by hand if search indexing matters.
+Open Graph and Twitter card metadata and the sitemap are maintained per page. Every page carries the shared meta block in its `<head>` (type, site name, title, description, URL, image with its size and alt text, and `summary_large_image` card), and its title and og:title match. Share cards live in `docs/assets/og/` at 1200 by 630 and are rendered by `python scripts/render_share_cards.py`; after rendering, update their asset-manifest entries. The `og:image` URL is absolute, like the other discovery URLs; update `lastmod` in the sitemap when a page ships. Crawlers read `robots.txt` only at the host root.
 
 For a local preview:
 

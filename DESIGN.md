@@ -1,133 +1,72 @@
-# ZMS Labs showcase design
+# Design record: sternone.net
 
-## Approved editorial revision / October 2026
+This file records how the site looks and reads, and why. Earlier design records (the September 2026 editorial site and the October product-scroll candidate) are in the Git history of this file.
 
-The website uses warm paper, deep ink and restrained orange, an upright Archivo personal masthead, existing public exhibit imagery and clearly labeled original reading aids. The home composition includes existing public AI-generated conceptual artwork; it is explicitly labeled and is not evidence of a test result. Public screenshot bytes and their original product identity remain unchanged. Crops and transcribed labels are presentation views of those artifacts, with full source access retained in the cases.
+## Who it's for and what it has to do
 
-Professional work comes before independent experiments. The independent home features are SaveBench, Steno and Epistemic Skills, followed by the six-project image gallery. Steno is a supporting portfolio case rather than the site's identity. Phone inspection presents complete overviews and purposeful public-source details with readable explanations. Reduced-motion and no-JavaScript alternatives remain available. Personal contribution, AI contribution, observed result, dated status and evidence limits are separate.
+The site introduces me to people who might hire me: in-house legal teams and the people they work with. The first screen has to establish a credible commercial lawyer with practical judgment who also improves how work gets done. Everything after that should give a reason to keep reading.
 
-The original GitHub masthead assets and notices remain unchanged. The September notes below describe the earlier website layout where they differ from this approved revision; they are retained as design history. Current publication checks follow the approved hierarchy, not the former four-feature linear-tour convention. Approved prose may use punctuation from the reviewed copy; curly quotes in copyable code remain forbidden.
+Professional work comes first: Dovenmuehle (in-house, 2017 to 2026), then Tishler &amp; Wald (2007 to 2016). Independent work comes second, under the ZMS Labs name, and is kept visibly separate from employer work.
 
-## September design record
+## Two settings, one system
 
+- **Paper** (`#f6f5f1`) with ink (`#121212`) carries the professional work. Secondary text is `#62615b` (5.6:1 on paper). The signal color `#b8461a` (4.9:1 on paper) marks focus, active states and misses.
+- **Night** (`#0e1b21`) with `#f1efe8` text carries ZMS Labs work. The ZMS orange `#ffac70` (9.5:1 on night) is its accent.
+- Moving from paper to night tells the reader they've moved from employer work to independent projects. No other color carries meaning on its own; every state also has a word.
 
-This file records how the showcase looks and the decisions behind it. The site uses the same typeface and colors as the rest of ZMS Labs, and its mastheads are in the visual family of Epistemic Skills. Each case study opens with what I wanted the project to do, then shows the interface and the evidence. When AI tools or other people's projects did part of the work, the page says so, and it says what the work does not show.
+Archivo is the only typeface, served locally as a Latin WOFF subset that keeps both of its axes (weight 100 to 900, width 62 to 125), with the unmodified TTF as the fallback. Width does the work a second family would: the name and headings run at 80 to 88 percent width, figures at 70 percent with tabular numerals, small labels at 115 percent in capitals. Body text is 17 to 19 pixels at a 64-character measure.
 
-## Visual system
+Product captures keep each product's own look and are never recolored. Every image, recording and share card carries a short label saying what it is (Prototype, Component study, AI-generated artwork and so on).
 
-- Deep ink `#152c35` provides a stable masthead in either GitHub theme.
-- Warm white `#f5f3ed` carries the title; orange `#ffac70` identifies the accent geometry.
-- The masthead's orange square and the site header's rotated 2×2 grid use the same accent color. The square marks the wordmark, the grid is the compact logo, and the favicon is drawn from that header grid.
-- Muted blue `#b7c8cc` carries secondary text with readable contrast.
-- Archivo is the display face. Native GitHub typography handles README prose and navigation. The website serves a Latin subset of Archivo as a WOFF file, made from the bundled, unmodified TTF with every weight and the license names kept; the TTF stays as the fallback.
-- The geometric composition represents connections between reasoning, tools, and development. It is conceptual artwork, not a system topology or a depiction of private infrastructure.
-- The line on the masthead artwork and the default share card is "What I've been building with AI, and how it's actually going."
+## Page anatomy
 
-The masthead introduces the site, and a plain text description and working links follow it straight away. On the README, product images come before the project list, because the images are the most direct evidence and a phone reader should reach them within two screens. The project list pairs each project with the question behind it and what the case study shows.
+- **Home:** name and one-sentence proposition; three facts (nearly 10 years in-house, 7 years at Tishler &amp; Wald, the $17,487,520.30 claim); the two roles side by side, Dovenmuehle first; the agreements story; the litigation case with its timeline; ZMS Labs on night with three featured projects (SaveBench, Steno, Epistemic Skills) and the other six as an index; how I work with AI; contact.
+- **Professional pages** (`commercial-agreements.html`, `ear.html`): problem, my part, result, then sources. One sentence says what the sources establish and what is my own account.
+- **Case pages:** a night hero (crumb, kicker, a plain h1, a lead that states the problem and what the project does, the status line, the strongest real exhibit), a story or walkthrough that a non-engineer can follow, product exhibits, "What went into this work", a short record (what ran and when, the source, what isn't shown yet), a closed "full record" disclosure holding the technical detail, limits, credits and JSON links, then the next project.
+- **Sources and records** (`evidence.html`): the status key, the project table, and credits and licenses.
+- **404:** self-contained, because GitHub Pages serves it at any depth.
 
-### Share cards
+## Motion
 
-Every share card is 1200 by 630 pixels. The default card shows the ZMS Labs wordmark and its orange square on ink, with the masthead line set on two lines. The home page, the other top-level pages and any case without its own card use it. A project card crops that case's own capture or illustration and ends in a solid ink band holding the project name, a short label saying what the picture is, and the ZMS Labs wordmark. The labels are "Archived prototype, made-up content" (Steno), "Sample data" (SaveBench), "AI-generated artwork" (Epistemic Skills and Gridiron), "Made-up agent identity" (Fleet Orchestrator), "Made-up choices" (Krewcible) and "Fictional content" (Neuraxic). A share card travels without its caption, so the label goes on the card itself.
+Motion is only used where the change itself is the point, and every story reads completely without it.
 
-## Responsive and accessible behavior
+- **Scroll stories** (`[data-story]`): the text steps scroll normally; the picture beside them stays in view and changes when a step reaches the middle of the screen, in either direction. Used for the clause questions on the home page, the 28-file check on Epistemic Skills, the measuring-tool trials on SaveBench and the notice and liability clauses on Steno. Inactive steps are dimmed by color, not opacity, so they keep AA contrast.
+- **Reveals and timelines** fade in once as they arrive. The SaveBench bars grow to their recorded values.
+- The visitor's reduced-motion setting turns all of it off, and the footer has a motion switch. Without scripts, every step shows and each picture shows its final state.
 
-Wide and narrow SVGs use purpose-built compositions selected by an HTML `picture` element. Outlined type avoids font-service dependencies. Each SVG has a title and description, and the README supplies alternative text. Essential information is repeated in native Markdown.
+## Words
 
-The README needs no scripts or external font service. The website uses small local scripts for walkthroughs, method selection, evidence tabs and product galleries; its content and direct full-resolution image links remain available without JavaScript. Neither surface uses analytics, remote font services, or generated contribution counters.
+Lead with the problem, then my contribution, then the result. Plain words; any technical term is explained the first time in a few words, or replaced. Short paragraphs, one idea each. Confident about what was built and observed. Each limit is stated once, attached to the fact it bounds, in the record section; no defensive lists of what something isn't. No em or en dashes, no "ensure", "robust", "leverage" or similar filler, no exclamation points outside quoted product output. US dates ("September 19, 2026").
 
-## The full website
+The credit is the same everywhere it appears: "AI tools write the code. I decide what each project is for and check what comes back." Each case page says what I did and what the AI tools did.
 
-The website uses an editorial layout: large purposeful headings, generous space, warm paper, deep ink, and restrained orange accents. It connects each project's concrete problem to decisions, records and limits. Steno and Krewcible keep their own interface typography and arrangement inside unaltered captures. Captures are never recolored or recomposed, and generated art is never a case's first exhibit.
+Privacy and claims: the litigation client and the competing creditor are not named, and court sources are cited by docket number. The $17,487,520.30 figure is described as a competing claim defeated, never as money recovered. In-house examples are illustrations; no company terms appear.
 
-The Gridiron illustration relates a field, an event record, and commentary. The Epistemic Skills illustration presents investigation, examination, and verification as available methods, not a required sequence. Both were created with OpenAI image generation, and every caption calls them "AI-generated conceptual artwork". Neither appears on the home page, where each featured project shows its own exhibit; on their case pages they come after the case's own panels. Pages show a WebP copy through a `<picture>` element and keep the original PNG as the fallback, because the PNG carries the image's Content Credentials record and re-encoding drops it. Generated drafts that added trend lines or success signals were rejected because nothing in the work supported them. Important explanations remain selectable HTML text.
+## Conventions the checks rely on
 
-The Steno clause illustration ends with questions for human review, not a clearance or automatic legal decision. Krewcible's heading describes the choices a person can see and change in the editor. The [Evidence page](https://sternone.net/evidence.html) and the [asset manifest](docs/assets/manifest.json) record where each public asset came from and what it supports.
+- Titles read "Page · Zach Stern"; og:title matches the title and og:description matches the meta description. Every page has an og:image at 1200 by 630 and `summary_large_image`.
+- Status lines: `<p class="status"><a href="evidence.html#status"><b>Label</b></a> · one plain clause</p>`, with the label matching the Evidence table.
+- Project order everywhere: SaveBench, Steno, Epistemic Skills, Fleet Orchestrator, Neuraxic, Krewcible, Gridiron, Enaction, Poiesis. On the home page the first three are `.home-project` features and the rest are `.gallery-card` rows.
+- Header navigation: Experience, Work, About, LinkedIn. Footer: Experience, Work, About, How I work with AI tools, Sources and records, LinkedIn. LinkedIn is the only contact route.
+- Walkthroughs keep the `[data-walkthrough]` contract that `walkthroughs.js` and the verifier use. Galleries keep the `.design-view` contract that `site.js` uses.
 
-Product images open in full-resolution galleries. On screens wider than 720 pixels, Expand opens a viewer that shows the image at its full size and pans. On phones Expand is hidden and the full-resolution link spans the width, so the phone's own zoom does the enlarging. Recordings keep the proportions of the video itself. The automated browser check renders every page at 1440, 390 and 320 pixels wide. Controls support keyboard activation, visible focus, and dialog focus return. The fixed light palette is deliberate; the GitHub masthead stays legible in either GitHub theme. Printed pages show every walkthrough step, leave out the controls, and print dark panels as ink on paper.
+## Share cards
 
-### Page conventions
+`scripts/render_share_cards.py` renders every card in `docs/assets/og/` from HTML, using the site stylesheet. The default card is the name, the proposition and three facts on paper. Project cards put the project name and one line on night beside the project's own capture or a drawn panel of its recorded result, with the label that says what the picture is.
 
-og:description is identical to the meta description on every page. Descriptions lead with substance, never a `Project:` name prefix; the title carries the name. Every `<title>` and og:title ends ` · ZMS Labs` and the two match exactly. The Evidence status table's Checked column reads "what · date" with counts spelled out.
+## Research basis
 
-A case page's h1 is short and plain: a statement, or the page's real question. Two-part slogans are kept to the one or two pages where they still read naturally (SaveBench), and the supporting cases use the same heading on the case page, the home card and the More work entry. Each project keeps one topic phrase after its name, the same on the home card, the case hero and More work (for example "Neuraxic · Writing story worlds"). A dot separator in a status line or a Shown as row is preceded by a non-breaking space, so the dot never starts a line. Dates never break across lines.
+The layout and copy rules above follow published findings, checked through Consensus on October 5, 2026:
 
-Where a case page has an "In plain terms" block, it uses the small treatment: a muted label and one or two short paragraphs. It sits in the hero, before the Shown as row, except where that would push the case's first exhibit further down the first screen; Steno, Epistemic Skills and Fleet Orchestrator keep it directly under their first exhibit for that reason.
+- People judge a page's visual appeal within about 50 milliseconds, and those first judgments hold up ([Lindgaard et al., 2006](https://doi.org/10.1080/01449290500330448); [Tractinsky et al., 2006](https://doi.org/10.1016/j.ijhcs.2006.06.009)). Pages with low visual complexity and a familiar layout are rated most appealing ([Tuch et al., 2012](https://doi.org/10.1016/j.ijhcs.2012.06.003)), and the same content in a better design is judged more credible ([Robins and Holmes, 2007](https://doi.org/10.1016/j.ipm.2007.02.003); [Fogg et al., 2003](https://doi.org/10.1145/997078.997097)). Hence a quiet, conventional first screen with real-world facts.
+- Plain language beats legalese, including with lawyers ([Martínez et al., 2023](https://doi.org/10.1073/pnas.2302672120)). Needlessly complex words lower judged intelligence ([Oppenheimer, 2006](https://doi.org/10.1002/acp.1178)). Avoiding jargon, filler and hedges makes business writers read as more confident and professional ([Campbell et al., 2021](https://doi.org/10.1177/23294884211025735)).
+- Frequent hedges make a speaker seem less competent and credible ([Erickson et al., 1978](https://doi.org/10.1016/0022-1031%2878%2990015-x); [Blankenship and Holtgraves, 2005](https://doi.org/10.1177/0261927x04273034)). Stating a specific uncertainty costs little trust ([van der Linden et al., 2020](https://doi.org/10.1073/pnas.1913678117)). Hence limits stated once, attached to the specific fact.
+- Honest self-promotion improves interview evaluations through perceived competence ([Stevens and Kristof, 1995](https://doi.org/10.1037/0021-9010.80.5.587); [Amaral et al., 2019](https://doi.org/10.1111/ijsa.12260)), while humblebragging backfires ([Sezer et al., 2018](https://doi.org/10.1037/pspi0000108)).
+- Precise figures read as more factual ([Schindler and Yalch, 2006](https://consensus.app/papers/details/832224bba1f55ccc87b6598a3d06f6c2/)); rounded ones are easier to remember ([Nguyen et al., 2022](https://doi.org/10.1145/3491102.3501852)). The site shows $17,487,520.30 and says "$17.49 million" in running text.
+- Typefaces that suit the document make the author seem more professional and trustworthy ([Shaikh, 2007](https://consensus.app/papers/details/3dbb19ec1eb65b40a91e85e592d42ae3/); [Shaikh et al., 2008](https://consensus.app/papers/details/69d1077333635abd8271a3d2ae06789f/)); restrained typographic variety reads as more authoritative ([Moys, 2013](https://consensus.app/papers/details/18f41b7eddb35909b9e8e73045131a66/)).
+- About 55 characters per line supports comprehension ([Dyson and Haselgrove, 2001](https://doi.org/10.1006/ijhc.2001.0458)); margins help comprehension ([Chaparro et al., 2004](https://consensus.app/papers/details/2733c443e5005806a83d4ead2cd50962/)); larger body text improves readability ([Rello et al., 2016](https://doi.org/10.1145/2858036.2858204)).
+- Animation helps mainly when the change itself is what must be understood ([Tversky et al., 2002](https://doi.org/10.1006/ijhc.2002.1017); [Ploetzner et al., 2020](https://consensus.app/papers/details/81d60102dd305e929e42d262ee2ea121/)). Reader-paced segments and signaling help learning ([Rey et al., 2019](https://doi.org/10.1007/s10648-018-9456-4); [Schneider et al., 2018](https://doi.org/10.1016/j.edurev.2017.11.001)), and scrollytelling raises engagement without hurting comprehension ([McKenna et al., 2017](https://doi.org/10.1111/cgf.13195)).
 
-The four featured case pages open with their strongest real exhibit right after the jump links, so it starts within the first screen at 1440 by 900 pixels: Steno's archived designs, SaveBench's measured experiment, the Epistemic Skills publication check and the Fleet Orchestrator cockpit. Their headlines stay on two lines at that width.
+## Other surfaces
 
-## Featured and supporting work
-
-Decided 22 September 2026. Four projects are featured, in this order: Steno, SaveBench, Epistemic Skills and Fleet Orchestrator. Each shows a different kind of proof: a designed product with recorded checks, an experiment in the game that kept its failing result, public source, and a component study with real visuals. Their rows on the home page alternate image left and right.
-
-Five supporting projects follow, in this order: Neuraxic, Krewcible, Gridiron, Enaction and Poiesis. Neuraxic leads because the home page promises writing and no featured project covers it. On the home page Neuraxic and Krewcible show their own captures in frames of one shape, so their text lines up side by side. Gridiron and Enaction are text cards, and Poiesis takes the whole last row.
-
-There is no fifth featured project. A fifth card would have to tell a new story about how I use AI and give a visitor something to check that the four don't already give, and none does yet. Poiesis is the standby. It moves up only after its page rewrite lands and one public, dated record goes beyond made-up test data.
-
-Every list of these projects uses the same order: the home page, the Evidence table, the continue chain, More work and the README. Moving a project between tiers means changing all of them together, along with its crumb.
-
-## Status, limits and credit
-
-These conventions came out of an internal review of the public pages that I ran with AI reviewers in late September 2026. They exist so a reader meets each project's status in one vocabulary, reads each limit once, and finds the same account of how the AI tools were used wherever they look.
-
-### Status line
-
-Every home card, More work entry and case hero carries one status line. It uses one of the five labels in the "Shown as" column of the Evidence page (Prototype, Interface study, Component study, Recorded experiment, Public source), and the label links to the key at `evidence.html#status`. The markup is `<p class="status"><a href="evidence.html#status"><b>Label</b></a> · one plain clause about what is real</p>`, with the relative path adjusted for page depth. The line sits after the card's sentence and before its link, so a reader goes from claim to status to action. The label is ink and semibold and the clause is muted; there are no colored pills, because a colored chip reads as a badge. Case heroes use fixed keys instead: Shown as, Checked, Source, and Recording where a recording exists. The Shown as key holds the status line itself, the linked label and its clause, so every case hero has the same row. A label changes in the Evidence table first, then everywhere it appears.
-
-### Boundary budget
-
-The boundary budget is how often a page may state a limit. Each case page has one "What is real here" block, using the `.evidence-callout` element, and it leads with what actually ran and when. The required limits appear exactly once per page: the AI's role, the made-up content, and, where relevant, that nothing shown is a real agreement or matter and that sample terms are not recommended terms. A limit may also sit next to the one claim it bounds, but never twice in the same words. Every image, recording and share card carries a short label saying what it is, because those travel alone. On the home page each featured image has its label directly under it. Legal notices appear once. Where a page needs to say whose projects these are, it uses one sentence: "These are personal projects." The limits block uses ink on a plain background; orange stays for the brand mark, the focus ring and one primary action per page, and green stays for results. The README states its limits in one paragraph. Each case's evidence JSON remains the authoritative list of what that case does not show.
-
-### Credit
-
-Wherever a page briefly states how the work splits between me and the AI tools, it uses these two sentences word for word: "AI tools write the code. I decide what each project is for and check what comes back." The full account is on About, under the heading "How I work with AI tools" (`about.html#how-i-work`). Each case page has one contribution section headed "What went into this work." It holds the direction, what I did, what the AI tools did, and a link with the text "How I work with AI tools" to that About section. "What I did" opens with "I decide what each project is for and check what comes back." and "What the AI did" opens with "AI tools write the code.", so both sentences appear word for word on every case page. The one contact route is the line "Questions and conversations are welcome through LinkedIn.", linked to https://www.linkedin.com/in/zachary-s-21125214/.
-
-### Footer
-
-Every page's footer reads "Personal projects by Zach Stern." followed by two links: "How I work with AI tools" (`about.html#how-i-work`) and "What each project shows" (`evidence.html`), with paths adjusted for page depth. The footer names me and points to the account of the AI's part, so no footer repeats a limit.
-
-## Walkthroughs, navigation and recordings
-
-Each featured case adds a contribution account, one concrete decision story and a short walkthrough of observations a reader can check. Walkthroughs follow one convention, decided 22 September 2026:
-
-- A numbered strip above the steps shows every step title, so a reader sees the whole path before starting.
-- On screens wider than 720 pixels, one step shows at a time. The strip, Previous and Next move between steps, and the strip marks the current one.
-- On phones, 720 pixels and narrower, every step is stacked in order with no Previous or Next buttons, and the strip links to each step. Nothing waits behind a button, and nobody has to scroll back up after each step.
-- Without JavaScript every step shows and there is no strip. In print every step prints, and the strip and controls are left out.
-
-`walkthroughs.js` builds the strip from each step's heading, so the step titles live only in the page. Step headings carry no number of their own, because the strip numbers them, and the buttons read "Previous" and "Next step" on every page.
-
-Every page, including Steno's recorded-checks sub-page, carries the same five-link header nav in fixed order: Work (index.html#work), More work (more-work.html), Evidence (evidence.html), About (about.html), GitHub (external, last). The footer follows the rule above. Crumbs are tiered: "Showcase / …" on top-level pages, "Featured / <name>" linking index.html#work on featured cases, and "Supporting / <name>" linking more-work.html on supporting cases. The continue chain follows the project order, Steno, SaveBench, Epistemic Skills, Fleet Orchestrator, Neuraxic, Krewcible, Gridiron, Enaction and Poiesis, and Poiesis continues to More work. Its eyebrow reads "Continue exploring", except on Fleet Orchestrator, where "Continue to supporting work" marks the step into the supporting tier. The small link beside it reads "All featured work" on featured cases and on Poiesis, and "More work" on the other supporting cases.
-
-Steno and Krewcible have silent, page-only recordings of the real prototype and component being operated with made-up content. Native playback, text tracks, transcripts and full-resolution stills keep dense interfaces readable. The recordings contain only captured frames. Steno's authored prototype questions stay distinct from its separate drafting checks. The composition panel in the Krewcible recording was added for the study. It displays the text that Krewcible's own function produces, which comes out the same way every time for the same choices.
-
-Fleet Orchestrator's editable HTML diagram and walkthrough describe assertions from three isolated tests. The return to blocked status is explicit. All states use words as well as color; eligibility has no success tick or completion label. The page's diagrams explain the work; none of them is a screenshot of a running console.
-
-The Epistemic Skills case uses a historical publication incident with a Git-object reproduction script, and its counts are marked as historical. On the home page it shows that check as an HTML panel. The Gridiron walkthrough follows the answer key for the sample drive without inventing timing or play-by-play speech.
-
-## Supporting cases
-
-Neuraxic, Krewcible, Gridiron, Enaction and Poiesis make up the supporting tier. They cover author-controlled continuity in a story, choices a person can see and change in a character editor, an event record behind game commentary, explicit role attribution, and returned-file identity. The supporting tier is a shorter reading path, so the four featured cases stay first. Enaction and Poiesis explain their work with editable HTML diagrams tied to concrete records or tests, with no invented product screenshots. Neuraxic and Krewcible lead with their original interfaces. The More work page holds the five supporting entries in the same order, then a section, "A fork and a practice", with the OpenClaw fork and the visual review guide.
-
-Neuraxic shows open proposals and what the author has accepted as two different things. Enaction keeps the acting character distinct from the person using it, and does not imply generated dialogue or an accepted consequence from a staged turn.
-
-### Fleet Orchestrator and Steno symbol systems
-
-The Fleet Orchestrator and Steno pages explain their design with artwork the projects actually use. Fleet Orchestrator shows its home screen with made-up work and three boards of its glyphs, grouped by role, by state and by lineage and scale. The page layout around them was made for the showcase; the glyph renderer and the home components are used unmodified. Keep the plain-language account of what the person running the agents needs to see beside them, along with the Surface Bridge diagram of which part is responsible for what, drawn from the source, and the review-gate test story, which supports a narrower claim. Use the full project name throughout.
-
-Steno's Hallmark gallery shows the emblem vocabulary as it is built: the assayer-style stamp, the material and facet grades, four evidence jewels, the custom glyphs, and the row and detail sizes. In the current source, the grade and the supporting marks are separate. The specimen labels make clear that no assessment ran. Preserve the original grade words as design vocabulary without treating them as legal assurances. These current component captures remain separate from the archived workspace prototype and recorded drafting checks.
-
-Both galleries offer synchronized descriptions, alternative text, originals and keyboard-operable enlarged views. The public asset manifest records each image's exact identity and scope; source copies, private provenance and rendering scaffolds stay outside the published payload.
-
-### Poiesis: identity and lifetime
-
-Use selectable diagrams for this service case, with no invented product UI or generated model output. The dark two-column receipt panel separates byte identity from how long a file is kept; its "Hello" example is rebuilt from a passing test. The retention panel shows an explicit purge after expiry. A smaller diagram separates the encrypted content in the job queue from the key held in the job's record. Each diagram explains a different test, and together they are not one production trace.
-
-Eight tests back narrow claims, and the case's evidence JSON lists what they do not show; keep those limits when refreshing the case. Its home card, last in the supporting row, spans the row on wider screens and stays in the normal reading order on phones.
-
-### SaveBench and Neuraxic: product ideas made visible
-
-These two expanded cases show original product UI, selectable view descriptions and actual navigation recordings. SaveBench leads with its game measurements, starting with the 9 September instrument check, and then explains a challenge, factory design on the map, kept revisions and comparison. The page says plainly that an AI model designed the factory in that experiment. Neuraxic explains an idea-first library, focus and facets before its narrower continuity evidence. SaveBench's featured card and Neuraxic's supporting card both show a preview of the real interface.
-
-SaveBench keeps the existing prototype's own palette, blueprint and controls. Made-up layouts, rates and verdicts are labeled, and game artwork is left out of the captures. It keeps every measured window and says plainly which instrument was repaired; missing contestant measurements are not plotted as zero. Neuraxic keeps its own interface components, its reduced-motion shelf, procedural placeholder covers and declared local font fallbacks. The Neuraxic study feeds the real components made-up API responses with new fictional content; the project's own extraction and relationship-layout code runs as it normally does. Its wider World, Story and Minds and adaptation ideas are described as intent.
-
-The stills and recordings shown are identified in the public asset manifest. Preparation scaffolding and source stay private. These two cases use captures of the real interfaces and no generated concept art, because a capture shows what exists and a generated screenshot could only show what it might look like. Do not replace them with generated product screenshots or treat either navigation recording as a backend acceptance run. Full-resolution access, native media controls, text tracks and selectable transcripts accompany the images.
+The GitHub masthead (`assets/zms-labs.svg`, `assets/zms-labs-mobile.svg`) is the ZMS Labs identity and stays as it was; see [asset notes](assets/README.md). The README leads with the same professional summary as the site.

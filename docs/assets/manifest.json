@@ -1,5 +1,5 @@
 {
-  "prepared": "2026-09-19",
+  "prepared": "2026-10-05",
   "distribution_status": "Approved public showcase assets",
   "description": "Exact presentation assets; preparation source and render scaffolding are excluded.",
   "assets": [
@@ -56,9 +56,9 @@
     },
     {
       "path": "assets/fonts/Archivo-latin.woff",
-      "sha256": "14cbce497c7c4b750a7c742565744e5af1e1d071946a26bd42a526fd37efa641",
-      "bytes": 46000,
-      "kind": "Latin subset of the Archivo.ttf entry above, with the width axis fixed, in WOFF format; loaded first, with Archivo.ttf as the fallback",
+      "sha256": "f007aac28e6bc0393cb5c87bf0b409bc1a9079ab82fcf19900ef8b29ddd917b6",
+      "bytes": 110864,
+      "kind": "Latin subset of the Archivo.ttf entry above, keeping both the weight and width axes, in WOFF format; loaded first, with Archivo.ttf as the fallback",
       "notice": "assets/fonts/OFL.txt"
     },
     {
@@ -354,10 +354,10 @@
     },
     {
       "path": "assets/icons/favicon.svg",
-      "sha256": "42969b897d43422da04541900e13427308840f5c3f61d5342d23259a3de3b4a6",
-      "bytes": 419,
+      "sha256": "18b8044c434bab1cf626f690d1a277ebfa4aecda16bd588c042bd3e9ce235bff",
+      "bytes": 402,
       "kind": "Original identity asset",
-      "source": "Derived from the site brand glyph",
+      "source": "Drawn for the site: a two-stroke Z on ink with the ZMS orange accent",
       "claim_boundary": "Identity mark only",
       "dimensions": [
         64,
@@ -366,99 +366,123 @@
     },
     {
       "path": "assets/og/og-default.png",
-      "sha256": "dabcc73e5df8c9c64fccdd4acc78471aa08bd96587c0752ded87bd469cd4bc56",
-      "bytes": 30559,
+      "sha256": "04a381bd78774de13cc24e15b12d650e49b04c4fb3a2b9064030697dafb17d89",
+      "bytes": 54662,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: the ZMS Labs wordmark and its orange square on ink, with the masthead line “What I’ve been building with AI, and how it’s actually going.”",
-      "source": "Original identity asset, drawn for the showcase",
-      "claim_boundary": "Identity only; shows no project or result"
+      "kind": "Link-preview share card: \"Zach Stern\" and \"Commercial lawyer\" on paper, with the home page's opening line and three facts (nearly 10 years in-house at Dovenmuehle, 7 years as an attorney at Tishler & Wald, sternone.net)",
+      "source": "Rendered for the site from HTML using the site stylesheet and Archivo",
+      "claim_boundary": "Identity card; the facts match the home page and About"
     },
     {
       "path": "assets/og/og-steno.png",
-      "sha256": "0fd552b7a08289bf77abb49d067aad8a3da643675c35517469bcbefc9c4dd9ac",
-      "bytes": 142518,
+      "sha256": "40e86a19556c10213ece7a7654b33eb27fd255f53ab9f6ff525d9296bfbcd425",
+      "bytes": 161825,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/steno/matter-map.png entry above, over an ink band holding the project name, the label “Archived prototype, made-up content” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Archived prototype, made-up content\", and a crop of the assets/steno/matter-map.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },
     {
       "path": "assets/og/og-savebench.png",
-      "sha256": "1a83d900330f5d7f7cc845e26a77c884af8d9663aa08490f49e67ba6006257f6",
-      "bytes": 174251,
+      "sha256": "68a294b789adbfe967e365e012003a8820afba9171fa590ca18ab0ab582e807e",
+      "bytes": 116456,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/savebench/savebench-workspace.png entry above, over an ink band holding the project name, the label “Sample data” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Sample data\", and a crop of the assets/savebench/savebench-workspace.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },
     {
       "path": "assets/og/og-epistemic-skills.png",
-      "sha256": "6e7f7e78ae5bb5526e1db8264274d345eff1f327846cf7d4395655c198f9d1e3",
-      "bytes": 308342,
+      "sha256": "f1ad166b5dbc1041a28f960859c2b363f8658f554b9b3a51bfe67deb658808e6",
+      "bytes": 49821,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/illustrations/epistemic-investigate-compare-verify.png entry above, over an ink band holding the project name, the label “AI-generated artwork” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
-      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Recorded check\", and a drawn panel of 28 squares with the recorded counts \"14 of 28 didn't match before the fix\" and \"28 of 28 matched after\" from case-studies/epistemic-skills/publication-case.json",
+      "source": "Rendered for the site from HTML using the site stylesheet",
+      "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
     },
     {
       "path": "assets/og/og-fleet-orchestrator.png",
-      "sha256": "c81fffad62dbde89c98995b7aa49afd77c06789643178de209db30cda204b184",
-      "bytes": 177694,
+      "sha256": "0fc3b7504aabbb8dfc683916e90e7cb3952e556781f34dfc0895c78e05330067",
+      "bytes": 215440,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/fleet-orchestrator/fleet-orchestrator-roles.png entry above, over an ink band holding the project name, the label “Made-up agent identity” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Made-up agent identity\", and a crop of the assets/fleet-orchestrator/fleet-orchestrator-cockpit.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },
     {
       "path": "assets/og/og-neuraxic.png",
-      "sha256": "d2d91e5c4eaf2565e5700dffe4b6ccffb8db3b452c1a23d3e31e073be12adc0c",
-      "bytes": 102959,
+      "sha256": "747b668738f7d4daeff1806b4baef5ccf1cffd33d870492323d62a135f3bc2b1",
+      "bytes": 64407,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/neuraxic/library.png entry above, over an ink band holding the project name, the label “Fictional content” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Fictional content\", and a crop of the assets/neuraxic/neighborhood.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },
     {
       "path": "assets/og/og-krewcible.png",
-      "sha256": "0c46f8b9fd71148c2426576b61d6924a3a6ca2b8ac08710b44a786c2e9ed22d5",
-      "bytes": 89330,
+      "sha256": "e5c62011e8c85fd691e99fae598ecf8caaf4f66ba1547c50470effa407b29351",
+      "bytes": 99450,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/krewcible/workspace.png entry above, over an ink band holding the project name, the label “Made-up choices” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Made-up choices\", and a crop of the assets/krewcible/workspace.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },
     {
       "path": "assets/og/og-gridiron.png",
-      "sha256": "32b0fc3ffb266b0cc8c8afd4bc593ce810b68cb5a8ab41da3b2574afe1747c4a",
-      "bytes": 332194,
+      "sha256": "24b235a7278b7d060146acfcff4b0948f67ffac2ca38a34b3b7eed68c36ef36b",
+      "bytes": 398928,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: a crop of the assets/illustrations/gridiron-event-to-commentary.png entry above, over an ink band holding the project name, the label “AI-generated artwork” and the ZMS Labs wordmark",
-      "source": "Composed for the showcase from the listed entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"AI-generated artwork\", and a crop of the assets/illustrations/gridiron-event-to-commentary.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
+      "path": "assets/og/og-enaction.png",
+      "sha256": "91295a37307f9c04bbd0cafc2156bcb7b589e8a5ad046d319ed7db3b7cac5701",
+      "bytes": 55301,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Twelve tests, made-up scene\", and a drawn panel showing the chosen character receiving a turn's memories and the other participants receiving none, as the tests in case-studies/enaction/role-boundary-case.json describe",
+      "source": "Rendered for the site from HTML using the site stylesheet",
+      "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
+    },
+    {
+      "path": "assets/og/og-poiesis.png",
+      "sha256": "8d77dd5f8a210878b1bdbbb7087b6db11dfae80e9fbac3b0c1be43faf37f826d",
+      "bytes": 56224,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Eight tests, stand-in generator\", and a drawn panel with the \"Hello\" fingerprint example and the create, 24-hour expiry and purge steps from case-studies/poiesis/artifact-custody-case.json",
+      "source": "Rendered for the site from HTML using the site stylesheet",
+      "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
     }
   ]
 }
