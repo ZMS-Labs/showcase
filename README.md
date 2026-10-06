@@ -16,7 +16,7 @@ ZMS Labs is the name I use for my independent projects. AI tools write the code.
 ## Professional work
 
 - [Commercial agreements at Dovenmuehle](https://sternone.net/commercial-agreements.html), 2017 to 2026: the negotiations, the practical advice, and the contract rider, negotiation reference, NDA process and assurance-report process I built.
-- [A claims process for more than 100 creditors](https://sternone.net/ear.html), Tishler &amp; Wald: a court claims process after an equipment lessee's bankruptcy, and a $17,487,520.30 competing claim defeated and affirmed on appeal.
+- [One court process for more than 100 competing claims](https://sternone.net/ear.html), Tishler &amp; Wald: a court claims process after an equipment lessee's bankruptcy, and a $17,487,520.30 competing claim defeated and affirmed on appeal.
 
 ## Independent projects
 
@@ -25,8 +25,8 @@ ZMS Labs is the name I use for my independent projects. AI tools write the code.
 - [SaveBench](https://sternone.net/case-studies/savebench/): can an AI design a factory that actually runs? AI models design factories in Satisfactory and the running game measures what they deliver. The test checks its own measuring tool first and keeps failed runs on the record.
 - [Steno](https://sternone.net/case-studies/steno/): a contract workstation that keeps the question next to the words. Two of its drafting checks flagged two gaps in a sample agreement and came back clean after the edits.
 - [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): seventeen public methods that teach AI agents to find the real cause and check their own work. [Source on GitHub](https://github.com/ZMS-Labs/epistemic-skills).
-- [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): a control room for a team of AI agents, so their work survives between sessions.
-- [Neuraxic](https://sternone.net/case-studies/neuraxic/): a writing studio where a story's facts stay consistent as the story grows.
+- [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): a control room for a team of AI agents, built so their work can outlast a session.
+- [Neuraxic](https://sternone.net/case-studies/neuraxic/): a writing studio where a new story fact waits for the author's OK before it becomes settled.
 - [Krewcible](https://sternone.net/case-studies/krewcible/): character design from choices you can see, change and take back.
 - [Gridiron](https://sternone.net/case-studies/gridiron/): football commentary that waits for the facts. Includes a source download you can run.
 - [Enaction](https://sternone.net/case-studies/enaction/): role-play where each character keeps its own memory, apart from yours.

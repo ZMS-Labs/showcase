@@ -126,7 +126,7 @@
     <section class="walkthrough" data-walkthrough id="walkthrough" aria-labelledby="walkthrough-title">
       <div class="section-head">
         <span class="kicker">The review gate</span>
-        <h2 id="walkthrough-title">Handing work back isn't the same as finishing it.</h2>
+        <h2 id="walkthrough-title">When work comes back, the gate decides whether it can move on.</h2>
       </div>
       <p class="walk-intro">When an agent hands work back, I want to know what it actually finished. In Fleet Orchestrator a reviewer can record a finding: a problem serious enough that the work shouldn't move on. The review gate answers one question, whether this work may proceed, and it refuses an approval that comes with no reason, reference or finding attached. These five steps retrace what the project's own tests check, starting from a sample finding that says a required input check is missing.</p>
       <div class="walk-controls" data-walk-controls hidden style="margin-bottom:40px">
@@ -186,7 +186,6 @@
           <p class="fine">&#8595; The changed record is checked</p>
           <p><span class="chip alert">Blocked again</span></p>
           <dl class="kv" style="margin-top:14px"><dt>Blocked</dt><dd><code>true</code></dd><dt>Verification</dt><dd><code>failed</code></dd></dl>
-          <p class="fine">The answer follows the latest record.</p>
         </figure>
       </article>
       <div class="walk-links"><a href="#evidence">What these tests show and leave open</a></div>
@@ -233,7 +232,7 @@
         <h2 id="record-title" style="font-size:clamp(30px,3vw,44px)">What ran, and what's still open.</h2>
       </div>
       <dl>
-        <dt>Recorded</dt><dd>Three of the project's own tests passed on September 19, 2026, with no failures or skips. They drove the real request handlers with sample records held in memory.</dd>
+        <dt>Recorded</dt><dd>Three of the project's own tests passed on September 19, 2026, with no failures or skips. They ran the project's real code against sample data.</dd>
         <dt>Source</dt><dd>Private. The icons and home screen come from the project's own components with made-up agents. A summary of the tests is public as JSON.</dd>
         <dt>Not shown yet</dt><dd>The product in use. Nothing here shows a real agent at work, a real database, data surviving a restart, a deployment, or how easily the state rings read at small sizes.</dd>
       </dl>

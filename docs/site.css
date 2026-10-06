@@ -23,6 +23,7 @@
 [hidden]{display:none!important}
 /* Controls that need scripts stay out of the way when scripts are off; the content they switch is linked instead. */
 html:not(.js) :is(.view-controls,[data-enlarge],.switch,.motion-toggle){display:none}
+html:not(.js) .story-step{min-height:0;padding-block:28px}
 html{scroll-behavior:smooth;scroll-padding-top:24px}
 body{margin:0;background:var(--paper);color:var(--ink);font-size:clamp(17px,.35vw + 16px,19px);line-height:1.6;font-kerning:normal;text-rendering:optimizeLegibility}
 h1,h2,h3,h4,p,figure,blockquote,dl,dd,ol,ul{margin:0}

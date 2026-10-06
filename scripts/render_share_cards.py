@@ -67,7 +67,7 @@ cards = {
         panel('<span class="kicker" style="margin:0">First publication · Sept 19, 2026</span>' + TILES +
               '<div class="tiles-caption" style="max-width:none;margin-top:6px"><span><b>14 of 28</b>didn&#39;t match before the fix</span><span><b>28 of 28</b>matched after</span></div>')),
     'og-fleet-orchestrator': project('Fleet Orchestrator', 'A control room for a team of AI agents.', 'Made-up agent identity', img('fleet-orchestrator/fleet-orchestrator-cockpit.png')),
-    'og-neuraxic': project('Neuraxic', 'A writing studio where a story&#39;s facts stay consistent.', 'Fictional content', img('neuraxic/neighborhood.png')),
+    'og-neuraxic': project('Neuraxic', 'A writing studio where new story facts wait for your OK.', 'Fictional content', img('neuraxic/neighborhood.png')),
     'og-krewcible': project('Krewcible', 'Character design from choices you can see and undo.', 'Made-up choices', img('krewcible/workspace.png')),
     'og-gridiron': project('Gridiron', 'Football commentary that waits for the facts.', 'AI-generated artwork', img('illustrations/gridiron-event-to-commentary.png')),
     'og-enaction': project('Enaction', 'Role-play where each character keeps its own memory.', 'Twelve tests, made-up scene',

@@ -7,7 +7,7 @@ This folder is the published source of my site at <https://sternone.net/>. I'm a
 ## Pages
 
 - [Home](https://sternone.net/): experience, the agreements and litigation work, and the independent projects.
-- [Commercial agreements at Dovenmuehle](https://sternone.net/commercial-agreements.html) and [a claims process for more than 100 creditors](https://sternone.net/ear.html) at Tishler & Wald.
+- [Commercial agreements at Dovenmuehle](https://sternone.net/commercial-agreements.html) and [one court process for more than 100 competing claims](https://sternone.net/ear.html) at Tishler & Wald.
 - [Work](https://sternone.net/more-work.html): every role and project with its status.
 - [About](https://sternone.net/about.html), including [how I work with AI tools](https://sternone.net/about.html#how-i-work).
 - [Sources and records](https://sternone.net/evidence.html): the status key and table, credits and licenses.

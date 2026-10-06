@@ -56,7 +56,7 @@
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">One real catch</span>
-        <h2 id="catch-title">The day this site went live, the method caught a problem nobody could see.</h2>
+        <h2 id="catch-title">The day this site went live, the method caught a mismatch the screen didn't show.</h2>
       </div>
       <div class="story" data-story>
         <div class="story-graphic">
@@ -78,7 +78,7 @@
           <li class="story-step" data-state="miss">
             <span class="kicker">The check</span>
             <h3>Half of them weren't.</h3>
-            <p>The site kept a list of its files with a fingerprint for each one. Compared against the copies actually saved for publication, 14 of the 28 files didn't match. Nothing looked different on screen, which is exactly why it needed checking.</p>
+            <p>The site kept a list of its files with a fingerprint for each one. Compared against the copies actually saved for publication, 14 of the 28 files didn't match. Nothing looked different on screen.</p>
           </li>
           <li class="story-step" data-state="cause">
             <span class="kicker">The cause</span>
@@ -87,7 +87,7 @@
           </li>
           <li class="story-step" data-state="fixed">
             <span class="kicker">The fix</span>
-            <h3>Fix the list, not the symptom.</h3>
+            <h3>Rebuild the list from what Git stores.</h3>
             <p>The corrected list was built from the files the repository actually stored. Differences went from 14 to zero.</p>
           </li>
           <li class="story-step" data-state="live">
@@ -113,7 +113,7 @@
     </div>
     <div class="tools">
       <div class="reveal"><h3>Find the real cause</h3><p>Compare the competing explanations and run the test that tells them apart before fixing anything.</p></div>
-      <div class="reveal"><h3>Check where it runs</h3><p>A passing check on the source isn't the same as seeing the change work. The methods don't let one stand in for the other.</p></div>
+      <div class="reveal"><h3>Check where it runs</h3><p>Follow a change to where it actually runs and look at the result there. A green test on the source doesn't settle it.</p></div>
       <div class="reveal"><h3>Keep it in proportion</h3><p>Fixing a typo doesn't need a review panel. The heavier methods are for questions where a wrong answer costs something.</p></div>
       <div class="reveal"><h3>Leave a record</h3><p>Big decisions and long tasks get written records that outlast the chat, so the next session can pick them up and check them.</p></div>
     </div>
@@ -128,7 +128,7 @@
     <div>
       <span class="kicker">The methods</span>
       <h2 id="methods-title">Pick the method the question needs.</h2>
-      <p style="margin-top:24px">Each method says when to use it, what it should hand back and when to stop. An agent that uses one says so, in a line, so its work never runs invisibly in the background.</p>
+      <p style="margin-top:24px">Each method says when to use it, what it should hand back and when to stop. Each method tells an agent that uses it to say so, in a line.</p>
       <div class="switch" style="margin-top:32px" aria-label="Choose a kind of question">
         <button type="button" aria-pressed="true" data-method="investigate">Investigate a failure</button>
         <button type="button" aria-pressed="false" data-method="verify">Verify a change</button>

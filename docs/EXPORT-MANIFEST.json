@@ -15,8 +15,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 9028,
-      "sha256": "75dc32c35c5f217630e6531d714f299c2a6f6765d52aeda44dbd043936ba8f15"
+      "bytes": 8987,
+      "sha256": "24475563745365e49cad313042bea2560961563c84b2184a1eabc10fd1f12efe"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -151,7 +151,7 @@
     {
       "path": "assets/og/og-fleet-orchestrator.png",
       "bytes": 215440,
-      "sha256": "0fc3b7504aabbb8dfc683916e90e7cb3952e556781f34dfc0895c78e05330067"
+      "sha256": "c804e6b79887f7105e7a683646704cc7ec5319b3b6172e5505cf3bc387b3a485"
     },
     {
       "path": "assets/og/og-gridiron.png",
@@ -165,8 +165,8 @@
     },
     {
       "path": "assets/og/og-neuraxic.png",
-      "bytes": 64407,
-      "sha256": "747b668738f7d4daeff1806b4baef5ccf1cffd33d870492323d62a135f3bc2b1"
+      "bytes": 65071,
+      "sha256": "adb82b8bd017acfd18ca1561c1e5572c2040976e89bdcd5aefc6d5ac04329463"
     },
     {
       "path": "assets/og/og-poiesis.png",
@@ -250,8 +250,8 @@
     },
     {
       "path": "case-studies/enaction/index.html",
-      "bytes": 19351,
-      "sha256": "4bebbff689394e97e1701dcaec34744c97187f7a6c0422f93ce835ef37abf67e"
+      "bytes": 19406,
+      "sha256": "dd87cb3a7d101b5654d43f216ea7a2624e57129d18602aed65a9d65f323089d4"
     },
     {
       "path": "case-studies/enaction/role-boundary-case.json",
@@ -260,8 +260,8 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 22424,
-      "sha256": "17385426f4b7ee84960c28d5f5dfa2db7e7effb0355341767387dbfa7a0becbb"
+      "bytes": 22361,
+      "sha256": "31bb8cd7193942dce7b371f47176eb44df5ec538b31b0a9c697b7470fcb07348"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -275,8 +275,8 @@
     },
     {
       "path": "case-studies/fleet-orchestrator/index.html",
-      "bytes": 27333,
-      "sha256": "45bce8cacae46f27372f6fcaf62ab8bbc6ec8e173bcef133107d3db1ec3bae6d"
+      "bytes": 27259,
+      "sha256": "ab5195b8813534fce6558f65ed97bdd8e0606cf8b1b2faf992f683bd4534948e"
     },
     {
       "path": "case-studies/fleet-orchestrator/review-gate.json",
@@ -290,8 +290,8 @@
     },
     {
       "path": "case-studies/gridiron/index.html",
-      "bytes": 20859,
-      "sha256": "ac43c47a562159b3609ad07fb7591c97e302de5468a1e6032e8fd1334953f652"
+      "bytes": 20892,
+      "sha256": "1076be15bab3bab430300dd22590bafdb8ecf7a090bc45a1568b2c4fb3b770d1"
     },
     {
       "path": "case-studies/gridiron/recorded-replay.json",
@@ -315,8 +315,8 @@
     },
     {
       "path": "case-studies/neuraxic/index.html",
-      "bytes": 26472,
-      "sha256": "ba58891dbb5e3e02efac9ddec79eac1230a6b2084ba39a4c028cd5d78caf6fe7"
+      "bytes": 26471,
+      "sha256": "bb0adace211e48dc111c561491e44276f9ea201bd3da144e2b2c9dabfd3b640d"
     },
     {
       "path": "case-studies/neuraxic/interface-study.json",
@@ -330,13 +330,13 @@
     },
     {
       "path": "case-studies/poiesis/index.html",
-      "bytes": 17280,
-      "sha256": "1380d74a8deb902fcc507e863198e86d9e8f250b30bf1d7feb9225a8f4bc0277"
+      "bytes": 17327,
+      "sha256": "d59e068fc297d47be5c5f1ec5fa8bd0a1d3d495e882df95583bb3d43b09458eb"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 26344,
-      "sha256": "88da696848f341d32aa4ff67bd0cbe40a6a5604eee869f34d938eee0a7cc3d58"
+      "bytes": 26337,
+      "sha256": "d8ba260007ac259b2c2c94b494abcca041dfc777b27ac8bf7cb3289b19a3cbbb"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -360,8 +360,8 @@
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 21373,
-      "sha256": "9549ae96fcfbe65a8b8f11b98231a3216b3b7ea251ac7c3aa7de98ff770c269a"
+      "bytes": 21387,
+      "sha256": "3db3b7958c5fea24a0b294736340d43c6c7f66d9f6dbc71171b23f80512022f3"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
@@ -395,8 +395,8 @@
     },
     {
       "path": "commercial-agreements.html",
-      "bytes": 10395,
-      "sha256": "4011aca8c1c2537315be7ee9dbc359caad7aee73a4b42081e13b49ae36b6a34b"
+      "bytes": 10517,
+      "sha256": "7c369bc85de4a81f5f68734250040039751b986802bb074319c6ce1694192617"
     },
     {
       "path": "downloads/gridiron-research-source.zip",
@@ -405,18 +405,18 @@
     },
     {
       "path": "ear.html",
-      "bytes": 11007,
-      "sha256": "ce7ba9b7db2521d353be96b163a1be73de32d7a33290fef4b074f5f33be1d792"
+      "bytes": 11191,
+      "sha256": "e00f7babc97168282710ba82d57af690fd40328486a4ee43af5647042c1a44c8"
     },
     {
       "path": "evidence.html",
-      "bytes": 10842,
-      "sha256": "0db6a94b976fe90a49d67387b4f5c4c864b01b039c403819a52587454af00c38"
+      "bytes": 11179,
+      "sha256": "613ef87d85238633af8fb5d68df22c26cc619889e10f1cef0810e057e6e22c52"
     },
     {
       "path": "index.html",
-      "bytes": 21285,
-      "sha256": "48a63e2a3ee1d51432e17fcb98dfb8cc4a0baaf674abc0fc1fc96e25a80fba35"
+      "bytes": 21301,
+      "sha256": "4c3c8c865f3ba1324bdd3eaa55583dd621394c96db9ff6be712dfb61605fa4db"
     },
     {
       "path": "LICENSE",
@@ -425,13 +425,13 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 8059,
-      "sha256": "a29958616037661b403ef7e0976d438109112630cb63b3fa2c302dd8f5e0e72f"
+      "bytes": 8121,
+      "sha256": "5467e56da98807b392e83b19af94c99b37faa068b30bf883d1f28cd6f989e402"
     },
     {
       "path": "README.md",
-      "bytes": 2242,
-      "sha256": "4015d64b7864ce2333e34a6ed653168a2da058ad2adcd68be7c6edf596a2fde9"
+      "bytes": 2250,
+      "sha256": "911b4e741cd858015ae78844791b2a27c35a32ba6aa2f84e905a2b07a5a03856"
     },
     {
       "path": "robots.txt",
@@ -440,8 +440,8 @@
     },
     {
       "path": "site.css",
-      "bytes": 36145,
-      "sha256": "5e768ed7a78aa1a913b8babf65389c91dcd83b4c8bb968af2908105f352fa899"
+      "bytes": 36204,
+      "sha256": "a5d6f0f1ae57aab394fd452728b30bcf28c259474d5d3a2092110f579ec80c38"
     },
     {
       "path": "site.js",
