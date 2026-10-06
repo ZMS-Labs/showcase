@@ -500,6 +500,50 @@
       "kind": "Link-preview share card: the project name and one-line description on night, the label \"Eight tests, stand-in generator\", and a drawn panel with the \"Hello\" fingerprint example and the create, 24-hour expiry and purge steps from case-studies/poiesis/artifact-custody-case.json",
       "source": "Rendered for the site from HTML using the site stylesheet",
       "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
+    },
+    {
+      "path": "assets/about/zach-stern-276.webp",
+      "sha256": "44ae84b7b68066b44e5bba7932a488dcd2903acc31b57dcf04112c52d15e6924",
+      "bytes": 23388,
+      "dimensions": [
+        276,
+        345
+      ],
+      "kind": "Personal photograph of Zach Stern (a selfie at Soldier Field, Chicago), supplied by him on October 6, 2026; cropped to 4:5 and resized only, with no retouching or tonal change and no embedded metadata",
+      "claim_boundary": "A personal photo for the About page; not evidence for any project or claim"
+    },
+    {
+      "path": "assets/about/zach-stern-552.webp",
+      "sha256": "9f3e7a10b0f58f8dfd5b7894e1895493035be986792bc5af60c15693aeacfdaa",
+      "bytes": 82598,
+      "dimensions": [
+        552,
+        690
+      ],
+      "kind": "Personal photograph of Zach Stern (a selfie at Soldier Field, Chicago), supplied by him on October 6, 2026; cropped to 4:5 and resized only, with no retouching or tonal change and no embedded metadata",
+      "claim_boundary": "A personal photo for the About page; not evidence for any project or claim"
+    },
+    {
+      "path": "assets/about/zach-stern-276.jpg",
+      "sha256": "def1164c27bf39675162e4a7297484763521483e9e2f41f4f43b61d543c92f88",
+      "bytes": 27868,
+      "dimensions": [
+        276,
+        345
+      ],
+      "kind": "Personal photograph of Zach Stern (a selfie at Soldier Field, Chicago), supplied by him on October 6, 2026; cropped to 4:5 and resized only, with no retouching or tonal change and no embedded metadata",
+      "claim_boundary": "A personal photo for the About page; not evidence for any project or claim"
+    },
+    {
+      "path": "assets/about/zach-stern-552.jpg",
+      "sha256": "832b4165fef7226a9280ed8969967abe95212dc53171ab52e52e1ffa55979d3a",
+      "bytes": 98105,
+      "dimensions": [
+        552,
+        690
+      ],
+      "kind": "Personal photograph of Zach Stern (a selfie at Soldier Field, Chicago), supplied by him on October 6, 2026; cropped to 4:5 and resized only, with no retouching or tonal change and no embedded metadata",
+      "claim_boundary": "A personal photo for the About page; not evidence for any project or claim"
     }
   ]
 }

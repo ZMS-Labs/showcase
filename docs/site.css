@@ -536,3 +536,31 @@ details.transcript li+li{margin-top:6px}
   .story-graphic{position:static}
   .js-story .story-step{opacity:1}
 }
+
+/* About: the portrait plate in the hero. A photograph hung on the paper like a print: true color,
+   square corners, a hairline edge, and a wall label beside it saying what it is. On wide screens the
+   print sits above the ledger; on narrow ones it follows the lead in reading order. No motion. */
+.about-hero{grid-template-areas:"copy plate" "copy facts";grid-template-rows:auto minmax(0,1fr);row-gap:clamp(36px,3.4vw,48px)}
+.about-hero>div:first-child{grid-area:copy}
+.about-hero>.ledger{grid-area:facts}
+.plate{grid-area:plate;justify-self:end;width:min(100%,440px);display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;align-items:end}
+.plate picture{grid-column:2;grid-row:1;display:block;border:1px solid var(--rule);background:var(--paper-2)}
+.plate img{width:276px}
+.plate figcaption{grid-column:1;grid-row:1;display:grid;justify-items:end;gap:8px;text-align:right;font-size:14.5px;line-height:1.4;color:var(--muted);max-width:none}
+@media (max-width:1000px){
+  .page-hero.about-hero{grid-template-columns:minmax(0,1fr);grid-template-areas:none;grid-template-rows:none;row-gap:0}
+  .about-hero>div:first-child,.about-hero>.ledger,.about-hero>.plate{grid-area:auto}
+  .about-hero>.plate{margin-top:36px;width:auto;justify-self:stretch;grid-template-columns:auto minmax(0,1fr)}
+  .page-hero.about-hero>.ledger{margin-top:40px}
+  .plate picture{grid-column:1}
+  .plate figcaption{grid-column:2;justify-items:start;text-align:left}
+}
+@media (max-width:720px){
+  .plate{column-gap:16px}
+  .plate img{width:216px}
+}
+@media (max-width:380px){
+  /* At the narrowest widths the wall label moves under the print instead of squeezing beside it. */
+  .plate{grid-template-columns:minmax(0,1fr);row-gap:12px}
+  .plate figcaption{grid-column:1;grid-row:2;grid-auto-flow:column;justify-content:start;align-items:center;gap:10px}
+}

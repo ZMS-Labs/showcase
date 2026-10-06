@@ -15,8 +15,28 @@
     },
     {
       "path": "about.html",
-      "bytes": 9228,
-      "sha256": "4aabcb0000297a67e78f135c72f27729f4c11c65d1f25ae0b6700e322033a17a"
+      "bytes": 9915,
+      "sha256": "0cf0547c0c9986e61d3764bffcabdca96691717a97d6634c9012f3fae949d044"
+    },
+    {
+      "path": "assets/about/zach-stern-276.jpg",
+      "bytes": 27868,
+      "sha256": "def1164c27bf39675162e4a7297484763521483e9e2f41f4f43b61d543c92f88"
+    },
+    {
+      "path": "assets/about/zach-stern-276.webp",
+      "bytes": 23388,
+      "sha256": "44ae84b7b68066b44e5bba7932a488dcd2903acc31b57dcf04112c52d15e6924"
+    },
+    {
+      "path": "assets/about/zach-stern-552.jpg",
+      "bytes": 98105,
+      "sha256": "832b4165fef7226a9280ed8969967abe95212dc53171ab52e52e1ffa55979d3a"
+    },
+    {
+      "path": "assets/about/zach-stern-552.webp",
+      "bytes": 82598,
+      "sha256": "9f3e7a10b0f58f8dfd5b7894e1895493035be986792bc5af60c15693aeacfdaa"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -135,8 +155,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 27199,
-      "sha256": "14f958dee908a8175b7d5abd5e4e7999c1dc11c6268afbe583fe134fc724d2d1"
+      "bytes": 29373,
+      "sha256": "dc9892c600ecede3e7568ab009a074c03b6ca5156a6d360109ed6093bee372c2"
     },
     {
       "path": "assets/neuraxic/claims.png",
@@ -475,8 +495,8 @@
     },
     {
       "path": "site.css",
-      "bytes": 38118,
-      "sha256": "4d40d8e6b1b927e58f3ccaee76c9f3eaa2e3cbeea0f468308eed728b445d4c6b"
+      "bytes": 39961,
+      "sha256": "ed85de0deede27377aefa223265e5a7eb7eccf63e4705aab2103c52e97bf3ccb"
     },
     {
       "path": "site.js",
