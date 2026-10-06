@@ -63,9 +63,25 @@ for path in pages:
    dest=Links();dest.feed(target.read_text(encoding='utf-8-sig'))
    if u.fragment not in dest.ids:missing.append({'page':str(path.relative_to(root)),'anchor':url})
 assert not missing,missing
-# The Steno receipt records the evidence file's SHA-256 over the bytes the site serves. It has to
+# A moved page leaves a redirect behind so old links keep working. Redirects are link-checked above,
+# must point at a page that exists, and are left out of the page checks below.
+redirects=[path for path in pages if 'http-equiv="refresh"' in path.read_text(encoding='utf-8')]
+for path in redirects:
+ found=re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',path.read_text(encoding='utf-8'))
+ assert found and (path.parent/found.group(1)).resolve().is_file(),(str(path.relative_to(root)),'redirect target missing')
+pages=[path for path in pages if path not in redirects]
+moved={path.parent.name for path in redirects if path.parent.parent==root/'case-studies'}
+# Records published at a moved page's old address stay there, byte for byte the same as the moved copies.
+for name in moved:
+ old=root/'case-studies'/name
+ new=(old/re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',(old/'index.html').read_text(encoding='utf-8')).group(1)).resolve().parent
+ for kept in old.rglob('*'):
+  if kept.is_file() and kept.suffix!='.html':
+   twin=new/kept.relative_to(old)
+   assert twin.is_file() and twin.read_bytes()==kept.read_bytes(),(str(kept.relative_to(root)),'differs from',str(twin.relative_to(root)) if twin.is_file() else 'missing')
+# The Interleaf receipt records the evidence file's SHA-256 over the bytes the site serves. It has to
 # equal both the file itself and the site's checksum list, so the two records cannot drift apart.
-evidence=root/'case-studies/steno/recorded-checks/evidence'
+evidence=root/'case-studies/interleaf/recorded-checks/evidence'
 checksums={name:digest for digest,name in (line.split('  ',1) for line in (root/'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines() if line)}
 receipt_digest=json.loads((evidence/'verification.json').read_text(encoding='utf-8')).get('served_bytes_sha256')
 served_digest=hashlib.sha256((evidence/'recorded-checks.json').read_bytes()).hexdigest()
@@ -117,7 +133,7 @@ wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|alm
 
 # The project list is decided: three featured projects, then six supporting ones, in this order.
 # A case study that is not listed here, or a link to one, is a problem to fix before publishing.
-ORDER=('savebench','steno','epistemic-skills','fleet-orchestrator','neuraxic','krewcible','gridiron','enaction','poiesis')
+ORDER=('interleaf','savebench','epistemic-skills','fleet-orchestrator','neuraxic','krewcible','gridiron','enaction','poiesis')
 FEATURED=ORDER[:3]
 VOID={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 HEADINGS=('h1','h2','h3','h4','h5','h6')
@@ -160,10 +176,10 @@ def unique(items):return list(dict.fromkeys(i for i in items if i))
 def out_of_order(where,found,expected):return f'{where}: the projects run {", ".join(found) or "(none)"}; expected {", ".join(expected)}'
 contract=[]
 folders={p.name for p in (root/'case-studies').iterdir() if p.is_dir()}
-contract+=[f'case-studies/{name}/ is in the site but is not one of the listed projects' for name in sorted(folders-set(ORDER))]
+contract+=[f'case-studies/{name}/ is in the site but is not one of the listed projects' for name in sorted(folders-set(ORDER)-moved)]
 contract+=[f'case-studies/{name}/index.html is missing' for name in ORDER if not (root/'case-studies'/name/'index.html').is_file()]
 for name,content in texts.items():
- contract+=[f'{name}:{line_of(content,m.start())} points at case study "{m.group(1)}", which is not one of the listed projects' for m in re.finditer(r'case-studies/([A-Za-z0-9_.-]+)/',content) if m.group(1) not in ORDER]
+ contract+=[f'{name}:{line_of(content,m.start())} points at case study "{m.group(1)}", which is not one of the listed projects' for m in re.finditer(r'case-studies/([A-Za-z0-9_.-]+)/',content) if m.group(1) not in ORDER and m.group(1) not in moved]
 home=Tree(root/'index.html')
 cards=unique(n for box in home.find(lambda e:has_class('independent')(e) or has_class('other-work')(e) or has_class('home-project')(e) or has_class('gallery-card')(e)) for n in map(project,([home.target(box['attrs']['href'])] if box['tag']=='a' and box['attrs'].get('href') else [])+home.targets(box)))
 if cards!=list(ORDER):contract.append(out_of_order('index.html cards',cards,ORDER))
@@ -224,6 +240,17 @@ if args.prepublish and any(problems.values()):
  raise SystemExit('Not ready to publish:\n'+json.dumps({k:v for k,v in problems.items() if v},indent=2))
 
 modes={'walkthroughs_stepped':0,'walkthroughs_stacked':0,'galleries_expanded':0,'galleries_link_only':0}
+regression={'narrow_layout_checks':0,'nojs_story_states':0,'motion_switch_checks':0,'story_scroll_checks':0,'redirect_checks':0}
+# Scrolls so a story step sits mid-screen, then waits for scrolling (smooth or not) to stop, polling on an interval.
+SCROLL_TO_STEP='''async (i) => {
+ const step=document.querySelectorAll('[data-story] .story-step')[i]; const r=step.getBoundingClientRect();
+ window.scrollTo(0,scrollY+r.top+r.height/2-innerHeight/2);
+ await new Promise(done=>{let last=-1,same=0;const t=setInterval(()=>{if(scrollY===last){if(++same>=3){clearInterval(t);done()}}else{same=0;last=scrollY}},50)});
+ await new Promise(done=>setTimeout(done,150));
+ return document.querySelector('[data-story] [data-graphic]').dataset.state }'''
+MOTION_STATE='''()=>({motion:document.documentElement.classList.contains('js-motion'),scroll:getComputedStyle(document.documentElement).scrollBehavior,
+ step:getComputedStyle(document.querySelector('.js-story .story-step h3')).transitionDuration,
+ pressed:document.querySelector('.motion-toggle').getAttribute('aria-pressed'),disabled:document.querySelector('.motion-toggle').disabled})'''
 if args.static_only:
  print(json.dumps({'static_checks':'passed','pages':len(pages),'local_links':'passed','receipt_hash':'passed','curly_quotes_in_code':0,'approved_punctuation_matches':len(dashes),**{k:len(v) for k,v in problems.items()},'ready_to_publish':not any(problems.values())},indent=2));raise SystemExit(0)
 from playwright.sync_api import sync_playwright
@@ -246,6 +273,11 @@ with sync_playwright() as p:
     img.evaluate('(e)=>e.decode()')
     assert img.evaluate('(e)=>e.complete&&e.naturalWidth>0'),(path,img.get_attribute('src'))
    page.evaluate('window.scrollTo(0,0)')
+   if width<1000:
+    # Below the 1000px breakpoint every two-column layout (features, odd or even, and split sections) stacks into one column.
+    tracks=page.evaluate('[...document.querySelectorAll(".feature,.split")].map(f=>getComputedStyle(f).gridTemplateColumns.split(" ").length)')
+    assert all(t==1 for t in tracks),(path.relative_to(root).as_posix(),width,'a two-column layout keeps more than one column',tracks)
+    regression['narrow_layout_checks']+=len(tracks)
    checks.append({'page':path.relative_to(root).as_posix(),'viewport':[width,height],'images':'loaded','horizontal_overflow':False})
    # The approved editorial view replaces some former hero controls with artifact inspection.
    for lead in page.locator('.visual-lead').all():
@@ -337,7 +369,7 @@ with sync_playwright() as p:
    if path.parent.name=='epistemic-skills' and page.locator('[data-method]').count():
     page.get_by_role('button',name='Verify a change',exact=True).click();assert page.locator('#method-name').inner_text()=='Did It Land'
     b=page.get_by_role('button',name='Examine a decision',exact=True);b.focus();page.keyboard.press('Enter');assert page.locator('#method-name').inner_text()=='Perspective / Gauntlet';assert b.get_attribute('aria-pressed')=='true'
-   elif path.parent.name=='steno' and page.locator('.design-view').count():
+   elif path.parent.name=='interleaf' and page.locator('.design-view').count():
     page.get_by_role('button',name='Document workstation',exact=True).click();assert page.locator('.design-screen').first.get_attribute('src').endswith('workstation.png')
     assert page.locator('.design-view [data-full-resolution]').first.get_attribute('href').endswith('workstation.png')
     b=page.get_by_role('button',name='Expand design view',exact=True)
@@ -360,6 +392,7 @@ with sync_playwright() as p:
  # Without JavaScript, all guided sequences remain readable.
  nojs=browser.new_context(java_script_enabled=False,offline=not bool(args.base_url))
  for path in root.glob('case-studies/*/index.html'):
+  if path in redirects:continue
   page=nojs.new_page();page.goto(destination(path))
   for depth in page.locator('details.evidence-depth').all():
    if depth.get_attribute('open') is None:
@@ -376,12 +409,63 @@ with sync_playwright() as p:
  # The nested recorded-check page is the most JavaScript-dependent; rglob reaches it
  # where the glob above does not. Without scripts its message and evidence links must survive.
  for path in root.rglob('case-studies/*/recorded-checks/index.html'):
+  if path in redirects:continue
   page=nojs.new_page();page.goto(destination(path))
   assert page.locator('noscript p').is_visible(),str(path)
   assert page.locator('a[href="evidence/recorded-checks.json"]').count()>=1,str(path)
   assert page.locator('a[href="evidence/verification.json"]').count()>=1,str(path)
   page.close()
+ # Without scripts a scroll story shows only its final picture, so a clause sketch's edits agree with its final count.
+ story_pages=[path for path in pages if 'data-story' in path.read_text(encoding='utf-8')]
+ for path in story_pages:
+  page=nojs.new_page();page.goto(destination(path))
+  graphic=page.locator('[data-story] [data-graphic]')
+  shown=[e.get_attribute('data-on') for e in graphic.locator('.panel-state').all() if e.is_visible()]
+  assert all('final' in s.split() for s in shown),(path.relative_to(root).as_posix(),'a non-final picture shows without scripts',shown)
+  assert all(e.is_visible() for e in graphic.locator('ins').all()),(path.relative_to(root).as_posix(),'an edit is hidden without scripts')
+  assert all('line-through' in e.evaluate('(e)=>getComputedStyle(e).textDecorationLine') for e in graphic.locator('del').all()),(path.relative_to(root).as_posix(),'a deletion is not struck through without scripts')
+  regression['nojs_story_states']+=1
+  page.close()
  nojs.close()
+ # Normal motion and the footer switch; the viewport passes above run with reduced motion.
+ motion=browser.new_context(viewport={'width':1440,'height':1050},offline=not bool(args.base_url),reduced_motion='no-preference')
+ page=motion.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
+ for path in story_pages:
+  page.goto(destination(path),wait_until='load')
+  page.evaluate('()=>{try{localStorage.removeItem("motion")}catch{}}');page.reload(wait_until='load')
+  expected=page.evaluate('[...document.querySelectorAll("[data-story] .story-step")].map(s=>s.dataset.state)')
+  order=list(range(len(expected)))+list(range(len(expected)-1,-1,-1))
+  for setting in ('on','off'):
+   if setting=='off':page.locator('.motion-toggle').click()
+   seen=[page.evaluate(SCROLL_TO_STEP,i) for i in order]
+   assert seen==[expected[i] for i in order],(path.relative_to(root).as_posix(),'motion '+setting,'the story picture does not follow the scrolled step',seen)
+   regression['story_scroll_checks']+=1
+  page.locator('.motion-toggle').click()
+ page.goto(destination(root/'case-studies/interleaf/index.html'),wait_until='load')
+ page.evaluate('()=>{try{localStorage.removeItem("motion")}catch{}}');page.reload(wait_until='load')
+ state=page.evaluate(MOTION_STATE);assert state['motion'] and state['scroll']=='smooth' and state['step']!='0s' and state['pressed']=='false',('motion is on by default',state)
+ page.locator('.motion-toggle').click()
+ state=page.evaluate(MOTION_STATE);assert not state['motion'] and state['scroll']=='auto' and state['step']=='0s' and state['pressed']=='true',('the footer switch turns motion off',state)
+ page.reload(wait_until='load')
+ state=page.evaluate(MOTION_STATE);assert not state['motion'] and state['scroll']=='auto' and state['step']=='0s',('the switch setting survives a reload',state)
+ page.locator('.motion-toggle').click()
+ state=page.evaluate(MOTION_STATE);assert state['motion'] and state['scroll']=='smooth' and state['step']!='0s',('the footer switch turns motion back on',state)
+ motion.close()
+ reduced=browser.new_context(offline=not bool(args.base_url),reduced_motion='reduce');page=reduced.new_page()
+ page.goto(destination(root/'case-studies/interleaf/index.html'),wait_until='load')
+ state=page.evaluate(MOTION_STATE);assert not state['motion'] and state['scroll']=='auto' and state['step']=='0s' and state['disabled'],('the system setting turns motion off and disables the switch',state)
+ reduced.close()
+ regression['motion_switch_checks']=5
+ # Old addresses still reach the moved page: with scripts the #section survives; without them the refresh still lands.
+ for scripts_on in (True,False):
+  visit=browser.new_context(java_script_enabled=scripts_on,offline=not bool(args.base_url));page=visit.new_page()
+  for path in redirects:
+   target=(path.parent/re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',path.read_text(encoding='utf-8')).group(1)).resolve().relative_to(root).as_posix()
+   page.goto(destination(path)+('#evidence' if scripts_on else ''))
+   page.wait_for_url(lambda url:unquote(urlsplit(url).path).endswith(target),timeout=10000)
+   if scripts_on:assert urlsplit(page.url).fragment=='evidence',(str(path.relative_to(root)),'the redirect drops the #section',page.url)
+   regression['redirect_checks']+=1
+  visit.close()
  # Text tracks require HTTP; serve the static files temporarily for a same-origin media check.
  with media_server() as media_base:
   media=browser.new_context();page=media.new_page()
@@ -396,7 +480,7 @@ with sync_playwright() as p:
     slug=PurePosixPath(asset['path']).parts[-2]
     assert slug not in recordings,('duplicate recording slug',slug)
     recordings[slug]=(asset['duration_seconds'],asset['dimensions'][0])
-  cue_pins={'steno':6,'krewcible':11,'neuraxic':7,'savebench':9}
+  cue_pins={'interleaf':6,'krewcible':11,'neuraxic':7,'savebench':9}
   assert set(recordings)==set(cue_pins),{'missing_recordings':sorted(set(cue_pins)-set(recordings)),'unexpected_recordings':sorted(set(recordings)-set(cue_pins))}
   media_checks=0
   for slug,(expected_duration,expected_width) in recordings.items():
@@ -439,4 +523,4 @@ with sync_playwright() as p:
 assert not errors,errors
 assert not remote,remote
 
-print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','video_playback_checks':media_checks,'interactions':f'existing controls, walkthroughs, galleries, no-JS fallback, transcripts and {media_checks} HTTP video/text-track playback checks passed',**modes,'javascript_errors':len(errors),'external_requests':len(remote),'steno_receipt':'served-bytes digest matches the file and SHA256SUMS.txt','curly_quotes_in_code':0,'text_files_scanned':f'{len(texts)} {scan_scope}',**{k:len(v) for k,v in problems.items()},'ready_to_publish':not any(problems.values())},indent=2))
+print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','video_playback_checks':media_checks,'interactions':f'existing controls, walkthroughs, galleries, no-JS fallback, transcripts and {media_checks} HTTP video/text-track playback checks passed',**modes,**regression,'javascript_errors':len(errors),'external_requests':len(remote),'interleaf_receipt':'served-bytes digest matches the file and SHA256SUMS.txt','curly_quotes_in_code':0,'text_files_scanned':f'{len(texts)} {scan_scope}',**{k:len(v) for k,v in problems.items()},'ready_to_publish':not any(problems.values())},indent=2))

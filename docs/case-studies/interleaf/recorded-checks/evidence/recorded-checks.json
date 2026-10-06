@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "title": "Steno synthetic drafting-check case study",
+  "input": {
+    "schema_version": 1,
+    "title": "Synthetic vendor incident: notice linkage and cap drafting review",
+    "provenance": "Wholly new illustrative clause excerpts authored for this private preparation package; no source contracts or curated legal positions were copied.",
+    "editorial_context": "A fictional vendor incident prompts a reviewer to inspect notice delivery mechanics and the relationship between an indemnity clause and a general liability cap. This narrative is not an event evaluated by the checks.",
+    "terms_boundary": "The 24-hour period and monetary limits are arbitrary illustration values, not recommended terms, actual losses, or an industry benchmark. These excerpts are not a complete agreement.",
+    "variants": {
+      "baseline": {
+        "label": "Synthetic review draft",
+        "sections": [
+          {
+            "id": "demo-notices",
+            "section_ref": "6",
+            "heading_text": "Notices",
+            "body_text": "Notices shall be delivered by email to the notice address designated by each party."
+          },
+          {
+            "id": "demo-incident",
+            "section_ref": "7",
+            "heading_text": "Security Incident",
+            "body_text": "Vendor shall provide written notice of a security incident within 24 hours."
+          },
+          {
+            "id": "demo-indemnity",
+            "section_ref": "8",
+            "heading_text": "Indemnity",
+            "body_text": "Vendor shall indemnify Customer against covered third-party claims, subject to a separate $300,000 limit."
+          },
+          {
+            "id": "demo-liability",
+            "section_ref": "9",
+            "heading_text": "Limitation of Liability",
+            "body_text": "Aggregate liability shall not exceed $100,000. Indemnification is addressed in Section 8."
+          }
+        ],
+        "edges": []
+      },
+      "revised": {
+        "label": "Illustrative edit for rerun",
+        "sections": [
+          {
+            "id": "demo-notices",
+            "section_ref": "6",
+            "heading_text": "Notices",
+            "body_text": "Notices shall be delivered by email to the notice address designated by each party."
+          },
+          {
+            "id": "demo-incident",
+            "section_ref": "7",
+            "heading_text": "Security Incident",
+            "body_text": "Vendor shall provide written notice of a security incident within 24 hours, in accordance with the Notices article."
+          },
+          {
+            "id": "demo-indemnity",
+            "section_ref": "8",
+            "heading_text": "Indemnity",
+            "body_text": "Vendor shall indemnify Customer against covered third-party claims, subject to a separate $300,000 limit."
+          },
+          {
+            "id": "demo-liability",
+            "section_ref": "9",
+            "heading_text": "Limitation of Liability",
+            "body_text": "Aggregate liability shall not exceed $100,000, excluding indemnification obligations. The separate indemnity limit in Section 8 applies to those obligations."
+          }
+        ],
+        "edges": []
+      }
+    },
+    "expected_finding_types": {
+      "baseline": {
+        "notice_linkage": [
+          "notice_obligation_without_mechanics_link"
+        ],
+        "cap_indemnity_drafting": [
+          "indemnity_in_lol_without_carveout"
+        ]
+      },
+      "revised": {
+        "notice_linkage": [],
+        "cap_indemnity_drafting": []
+      }
+    },
+    "interpretation": "No finding means only that these two bounded pattern checks produced no finding. It does not establish legal sufficiency, enforceability, timely notice, coverage, actual liability, successful end-to-end parsing, or release approval."
+  },
+  "recorded_output": {
+    "schema_version": 1,
+    "record_type": "recorded_local_component_checks",
+    "display_label": "Recorded local Steno checks on synthetic clauses; editorial visualization, not the live Steno UI.",
+    "input_boundary": "Manually structured synthetic sections and edges; no DOCX parser, database, private corpus, legal positions, model, or external engine used.",
+    "variants": {
+      "baseline": {
+        "label": "Synthetic review draft",
+        "findings": {
+          "notice_linkage": [
+            {
+              "audit_kind": "notice_method_consistency",
+              "finding_type": "notice_obligation_without_mechanics_link",
+              "severity": "medium",
+              "term": "notice",
+              "detail": "Section imposes a notice obligation but does not cross-reference the notice mechanics section.",
+              "suggested_action": "Add a cross-reference to the Notices article or align delivery method with the notice section.",
+              "section_ids": [
+                "demo-incident"
+              ],
+              "evidence": {
+                "notice_mechanics_sections": [
+                  "demo-notices"
+                ]
+              }
+            }
+          ],
+          "cap_indemnity_drafting": [
+            {
+              "audit_kind": "limitation_of_liability",
+              "finding_type": "indemnity_in_lol_without_carveout",
+              "severity": "low",
+              "term": "indemnification",
+              "detail": "Indemnification mentioned in LoL section without explicit carveout language.",
+              "suggested_action": "Verify indemnity is carved out of the cap or subject to it explicitly.",
+              "section_ids": [
+                "demo-liability"
+              ],
+              "evidence": {}
+            }
+          ]
+        },
+        "finding_count": 2
+      },
+      "revised": {
+        "label": "Illustrative edit for rerun",
+        "findings": {
+          "notice_linkage": [],
+          "cap_indemnity_drafting": []
+        },
+        "finding_count": 0
+      }
+    },
+    "interpretation": "No finding means only that these two bounded pattern checks produced no finding. It does not establish legal sufficiency, enforceability, timely notice, coverage, actual liability, successful end-to-end parsing, or release approval."
+  }
+}

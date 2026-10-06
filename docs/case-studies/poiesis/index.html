@@ -1,20 +1,239 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Poiesis — ZMS Labs</title><link href="../../assets/icons/favicon.svg" rel="icon"/><link href="../../site.css" rel="stylesheet"/><style>
-.artifact-study{margin:20px 0 36px;padding:34px;border-radius:18px;background:#102e39;color:#f0f7f3}.artifact-study>figcaption{font-size:clamp(1.4rem,2.5vw,2rem);letter-spacing:-.035em;margin-bottom:28px}.artifact-study>figcaption h2{font-size:inherit;font-weight:550;letter-spacing:inherit;line-height:inherit;margin:0}.artifact-promises{display:grid;grid-template-columns:1fr 1fr;gap:34px}.artifact-promises article{min-width:0;border-top:1px solid #688c95;padding-top:22px}.artifact-promises h3{font-size:1.25rem;color:white}.artifact-promises p{font-size:.92rem;color:#cededa}.byte-record{padding:22px;background:#e7f1ea;color:#18372f;border-radius:9px;margin:22px 0}.byte-record>span{font-size:.82rem;display:block}.byte-record>strong{font-family:ui-monospace,Consolas,monospace;font-size:2.4rem;font-weight:500;display:block;letter-spacing:.08em;margin:13px 0}.byte-record code{display:block;overflow-wrap:anywhere;font-size:.83rem;line-height:1.7}.expiry-record{margin:22px 0;padding:0;list-style:none}.expiry-record li{display:grid;grid-template-columns:102px 1fr;gap:20px;align-items:baseline;padding:15px 0;border-bottom:1px solid #42636b}.expiry-record strong{font-size:1.16rem;font-weight:500;color:#ffba87}.expiry-record span{font-size:.86rem;color:#dce7e2}.artifact-study>.caption{font-size:.8rem;color:#bdd1cf;margin:24px 0 0}.custody-map{margin:18px 0;padding:25px;background:#edf2ef;border:1px solid #bbcdc2;border-radius:12px}.custody-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px}.custody-pair article{min-width:0;border-top:3px solid #476858;padding-top:18px}.custody-pair h3{font-size:1.1rem}.custody-pair p,.custody-map figcaption{font-size:.88rem;color:var(--muted)}.custody-map figcaption{margin-top:22px}.artifact-hash{font-size:.85rem;overflow-wrap:anywhere}.artifact-outcome{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}.artifact-outcome strong{font-size:2rem}.artifact-outcome span{font-size:.9rem}
-.walk-step>div:only-child{grid-column:1/-1}#evidence .evidence-callout h4{font-size:1rem;font-weight:600;margin:24px 0 8px}#evidence .evidence-callout ul{margin:0 0 16px;padding-left:20px}#evidence .evidence-callout li{font-size:.93rem;line-height:1.6;margin-bottom:4px}#evidence .evidence-callout code{overflow-wrap:anywhere}
-@media(max-width:720px){.artifact-study{padding:24px 20px}.artifact-promises,.custody-pair{grid-template-columns:1fr;gap:24px}.artifact-promises h3{font-size:1.15rem}.byte-record{padding:19px}.expiry-record li{grid-template-columns:86px 1fr;gap:12px}.custody-map{padding:21px}.artifact-study>.caption{line-height:1.7}}
-</style><script defer="" src="../../site.js"></script><script defer="" src="../../walkthroughs.js"></script><meta content="When apps share a generation service, it should be clear which file came back and how long it remains available." name="description"/><link href="https://sternone.net/case-studies/poiesis/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ZMS Labs" property="og:site_name"/><meta content="Poiesis — ZMS Labs" property="og:title"/><meta content="When apps share a generation service, it should be clear which file came back and how long it remains available." property="og:description"/><meta content="https://sternone.net/case-studies/poiesis/" property="og:url"/><meta content="https://sternone.net/assets/og/og-default.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><link href="../../next.css" rel="stylesheet"/><script defer="" src="../../next.js"></script></head><body class="next-portfolio" data-page="poiesis"><a class="skip" href="#main">Skip to content</a><header class="header"><a class="brand" href="../../index.html">Zach Stern<span>Selected work</span></a><nav aria-label="Main navigation"><a href="../../index.html#professional">Professional</a><a href="../../index.html#independent">Independent</a><a href="../../about.html">About</a><a href="../../index.html#contact">Contact</a></nav><button aria-pressed="false" class="reading-toggle" hidden="" type="button">Pause motion</button></header><main id="main" tabindex="-1"><section class="case-hero wrap"><a class="breadcrumb" href="../../index.html#independent">← Independent projects</a><p class="eyebrow">Poiesis / Personal project</p><h1>I wanted a clear receipt<br/>and a bounded lifetime.</h1><p class="case-deck">When apps share a generation service, it should be clear which file came back and how long it remains available.</p></section><section aria-label="poiesis evidence story" class="scroll-story" data-story="poiesis"><div class="story-controls"><nav aria-label="Story chapters"><a data-story-go="0" href="#story-poiesis-1"><span>01</span>Bytes</a><a data-story-go="1" href="#story-poiesis-2"><span>02</span>Identity</a><a data-story-go="2" href="#story-poiesis-3"><span>03</span>Expiry</a><a data-story-go="3" href="#story-poiesis-4"><span>04</span>Custody</a></nav><a class="story-skip" href="#after-story-poiesis">Skip to the case ↓</a></div><div aria-hidden="true" class="story-stage"><article class="story-frame" data-frame="0"><div class="frame-art"><div class="byte-art"><p class="artifact-label">Stand-in generator / controlled test</p><strong>Hello</strong><div class="byte-grid"><span>48</span><span>65</span><span>6C</span><span>6C</span><span>6F</span></div><p>5 bytes / UTF-8 / no trailing newline</p></div></div><div class="frame-copy"><span class="eyebrow">01 / Bytes</span><h2>Identify the file that came back.</h2><p>The controlled text example returns five UTF-8 bytes: Hello, with no trailing newline.</p></div></article><article class="story-frame" data-frame="1"><div class="frame-art"><div class="record-board"><p class="artifact-label">Recorded artifact identity test</p><h3>SHA-256</h3><div class="record-row"><span>Text example</span><strong>Hello</strong></div><div class="record-row"><span>Bytes</span><strong>5</strong></div><div class="record-row"><span>Digest</span><strong>185f8db3…6381969</strong></div></div></div><div class="frame-copy"><span class="eyebrow">02 / Identity</span><h2>Match the returned bytes.</h2><p>The test checks the returned file’s SHA-256. This identifies bytes; it does not establish authorship, rights or truth.</p></div></article><article class="story-frame" data-frame="2"><div class="frame-art"><div class="record-board"><p class="artifact-label">Separate expiry test / controlled clock</p><h3>24 hours</h3><div class="record-row"><span>Before expiry</span><strong>Fetchable</strong></div><div class="record-row"><span>After expiry</span><strong>Access expires</strong></div><div class="record-row"><span>Cleanup call</span><strong>Expired file removed</strong></div></div></div><div class="frame-copy"><span class="eyebrow">03 / Expiry</span><h2>Keep the lifetime explicit.</h2><p>Expiry is enforced on access. An explicit cleanup call removes the expired file in these tests.</p></div></article><article class="story-frame" data-frame="3"><div class="frame-art"><div class="record-board"><p class="artifact-label">Physical erasure and autonomous scheduling unverified</p><h3>Separate checks</h3><div class="record-row"><span>File</span><strong>Byte identity + access expiry</strong></div><div class="record-row"><span>Prompt</span><strong>Sealed-key custody</strong></div><div class="record-row"><span>Scope</span><strong>8 isolated tests</strong></div></div></div><div class="frame-copy"><span class="eyebrow">04 / Custody</span><h2>Test custody separately.</h2><p>Eight isolated tests use stand-in generators, in-memory stores and a controlled clock. Prompt-key custody is a different boundary from returned-file identity.</p></div></article><div class="story-progress"><span></span></div></div><div class="story-track"><div aria-hidden="true" class="story-marker" id="story-poiesis-1"></div><div aria-hidden="true" class="story-marker" id="story-poiesis-2"></div><div aria-hidden="true" class="story-marker" id="story-poiesis-3"></div><div aria-hidden="true" class="story-marker" id="story-poiesis-4"></div></div><div class="story-static"><article><p class="eyebrow">01 / Bytes</p><h3>Identify the file that came back.</h3><p>The controlled text example returns five UTF-8 bytes: Hello, with no trailing newline.</p><div class="static-art"><div class="byte-art"><p class="artifact-label">Stand-in generator / controlled test</p><strong>Hello</strong><div class="byte-grid"><span>48</span><span>65</span><span>6C</span><span>6C</span><span>6F</span></div><p>5 bytes / UTF-8 / no trailing newline</p></div></div></article><article><p class="eyebrow">02 / Identity</p><h3>Match the returned bytes.</h3><p>The test checks the returned file’s SHA-256. This identifies bytes; it does not establish authorship, rights or truth.</p><div class="static-art"><div class="record-board"><p class="artifact-label">Recorded artifact identity test</p><h3>SHA-256</h3><div class="record-row"><span>Text example</span><strong>Hello</strong></div><div class="record-row"><span>Bytes</span><strong>5</strong></div><div class="record-row"><span>Digest</span><strong>185f8db3…6381969</strong></div></div></div></article><article><p class="eyebrow">03 / Expiry</p><h3>Keep the lifetime explicit.</h3><p>Expiry is enforced on access. An explicit cleanup call removes the expired file in these tests.</p><div class="static-art"><div class="record-board"><p class="artifact-label">Separate expiry test / controlled clock</p><h3>24 hours</h3><div class="record-row"><span>Before expiry</span><strong>Fetchable</strong></div><div class="record-row"><span>After expiry</span><strong>Access expires</strong></div><div class="record-row"><span>Cleanup call</span><strong>Expired file removed</strong></div></div></div></article><article><p class="eyebrow">04 / Custody</p><h3>Test custody separately.</h3><p>Eight isolated tests use stand-in generators, in-memory stores and a controlled clock. Prompt-key custody is a different boundary from returned-file identity.</p><div class="static-art"><div class="record-board"><p class="artifact-label">Physical erasure and autonomous scheduling unverified</p><h3>Separate checks</h3><div class="record-row"><span>File</span><strong>Byte identity + access expiry</strong></div><div class="record-row"><span>Prompt</span><strong>Sealed-key custody</strong></div><div class="record-row"><span>Scope</span><strong>8 isolated tests</strong></div></div></div></article></div></section><div class="story-end" id="after-story-poiesis" tabindex="-1"></div><details class="evidence-depth wrap" id="original-evidence" open=""><summary>Read the full evidence and technical record</summary><div class="technical-content"><p class="eyebrow retained-note">Original public case detail / retained with its evidence limits</p>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Poiesis · Zach Stern</title>
+<meta name="description" content="Several of my apps share one service for generating text and images. Poiesis gives each app a receipt for exactly what came back, a 24-hour expiry and prompts that don't linger after the job.">
+<link rel="canonical" href="https://sternone.net/case-studies/poiesis/">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/Archivo-latin.woff" as="font" type="font/woff" crossorigin>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Zach Stern">
+<meta property="og:title" content="Poiesis · Zach Stern">
+<meta property="og:description" content="Several of my apps share one service for generating text and images. Poiesis gives each app a receipt for exactly what came back, a 24-hour expiry and prompts that don't linger after the job.">
+<meta property="og:url" content="https://sternone.net/case-studies/poiesis/">
+<meta property="og:image" content="https://sternone.net/assets/og/og-poiesis.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Poiesis: a returned file with its fingerprint, kept for 24 hours and then refused.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e1b21">
+<link rel="stylesheet" href="../../site.css">
+<script defer src="../../site.js"></script>
+<script defer src="../../walkthroughs.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header on-night">
+  <a class="brand" href="../../index.html">Zach Stern<small>Commercial lawyer</small></a>
+  <nav aria-label="Main">
+    <a href="../../index.html#experience">Experience</a>
+    <a href="../../more-work.html">Work</a>
+    <a href="../../about.html">About</a>
+    <a class="ext" href="https://www.linkedin.com/in/zachary-s-21125214/">LinkedIn</a>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
 
-<nav aria-label="Case study sections" class="case-jump"><a href="#artifact">The file and its expiry</a><a href="#walkthrough">The five steps</a><a href="#custody">Stored prompts</a><a href="#contribution">What went into this work</a><a href="#evidence">Evidence and limits</a></nav>
-<figure class="artifact-study" id="artifact"><figcaption><h2>The file and its expiry.</h2></figcaption><div class="artifact-promises"><article><h3>Identify what was returned.</h3><p>In one test, a stand-in text generator returns five bytes. The file the service stores has exactly those bytes, and the same fingerprint.</p><div class="byte-record"><span>Five UTF-8 bytes · no trailing newline</span><strong>Hello</strong><span>Fingerprint of the returned bytes (a SHA-256 hash)</span><code>185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969</code></div><p>The fingerprint works like a receipt. The request says what was wanted, and the fingerprint identifies what came back.</p></article><article><h3>Make the deadline explicit.</h3><p>Other tests use sample files and a clock the test controls. Fetching a file doesn’t extend its deadline, and never fetching it doesn’t stop it being deleted.</p><ol class="expiry-record"><li><strong>Created</strong><span>The file and its expiry time are recorded.</span></li><li><strong>24 hours</strong><span>The file’s set lifetime ends.</span></li><li><strong>+1 second</strong><span>A request for the file is refused.</span></li><li><strong>Purge</strong><span>A cleanup call deletes the expired file.</span></li></ol></article></div><p class="caption">Two tests, drawn as one diagram. “Hello” is the exact text the passing test expects.</p></figure>
-<section aria-labelledby="walkthrough-title" class="walkthrough" data-walkthrough="" id="walkthrough"><h2 id="walkthrough-title">Follow the five steps.</h2><p class="walk-intro">The eight tests run the service’s own code for jobs, images, requests and stored prompts. Each step below covers one or more of them and says what they showed.</p><div class="walk-controls" data-walk-controls="" hidden=""><p aria-live="polite" data-walk-status="" role="status"></p><button data-walk-previous="" type="button">Previous</button><button data-walk-next="" type="button">Next step</button></div>
-<article class="walk-step" data-walk-step=""><div><h3 tabindex="-1">Return the image, then fetch it.</h3><p>The image engine’s code runs, but its request goes to a stand-in that answers with a small PNG image made for the test. The job finishes with exactly those bytes. A second test fetches the image back through the service and checks that it carries an expiry time.</p></div><aside class="walk-observation"><strong>The image came back unchanged</strong><p>The image handling ran on a real PNG file, and the file fetched back matched it byte for byte.</p></aside></article>
-<article class="walk-step" data-walk-step=""><div><h3 tabindex="-1">Fingerprint the returned text.</h3><p>A stand-in text generator sends “Hel” and then “lo” as the text streams in, and returns “Hello”. The service records one text file, marks the job complete and stores the exact bytes with their fingerprint.</p></div><aside class="walk-observation"><strong>The pieces and the final file agree</strong><p>The test checks both pieces, the final five bytes, the fingerprint and the <code>text/plain</code> file type.</p></aside></article>
-<article class="walk-step" data-walk-step=""><div><h3 tabindex="-1">Refuse the file after its deadline.</h3><p>The test fetches its sample file once, then moves the test clock to 24 hours and one second after the file was made. The next request for the file is refused. A cleanup call then reports one file deleted.</p></div><aside class="walk-observation"><div class="artifact-outcome"><strong>409</strong><span>A refusal after the deadline</span></div><p>The request is refused before anything is deleted, and the test checks both. In the service’s code, a file that never existed gets this same refusal on purpose, because after the deadline an app has no reason to tell the two apart.</p></aside></article>
-<article class="walk-step" data-walk-step=""><div><h3 tabindex="-1">Delete files nobody collected.</h3><p>A second sample file is never fetched. At 25 hours, a cleanup call deletes it and leaves the job with no files.</p></div><aside class="walk-observation"><strong>Not collecting a file doesn’t keep it longer</strong><p>An app that wants a file has to collect it within 24 hours.</p></aside></article>
-<article class="walk-step" data-walk-step=""><div><h3 tabindex="-1">Keep the prompt locked, with its key apart.</h3><p>Three tests check the stored prompt. It waits in the work queue locked, its key is deleted when the job finishes, and it can’t be unlocked under a different job’s ID. The next section explains why it’s built this way.</p></div></article>
-<div class="walk-links"><a href="artifact-custody-case.json">Raw record (JSON)</a><a href="#evidence">What the tests leave open</a></div></section>
-<section class="case-block" id="custody"><h2>Recover work without keeping its prompt indefinitely.</h2><div class="body-copy"><p>A worker, the part of the service that runs a job, may fail after accepting it. A second worker needs enough information to continue, which makes custody of the prompt (who holds it, and for how long) a real design problem: making work recoverable also creates something that could be kept too long.</p><figure class="custody-map"><div class="custody-pair"><article><h3>Work queue</h3><p>Holds the prompt, locked (encrypted), along with the job’s details. A test looks through everything in the queue and finds no readable copy of the prompt.</p></article><article><h3>Job record</h3><p>Holds the key, apart from the prompt. When the job finishes, the key is deleted. A test keeps a copy of the locked prompt, standing in for a backup, and shows it can no longer be opened.</p></article></div><figcaption>Where the prompt and its key sit in the tests.</figcaption></figure><p>The lock is also tied to the job’s ID. A test tries to open the prompt under another job’s ID, and it fails.</p><article class="decision-note"><h3>Decide how long each thing is kept.</h3><dl><dt>Choice</dt><dd>The prompt and the returned files end in different ways. When a job finishes, the prompt’s key is deleted, so the stored prompt becomes unreadable. Returned files expire 24 hours after they’re made, and a cleanup call deletes them whether or not anyone collected them.</dd><dt>Tradeoff</dt><dd>A set lifetime can make useful content unavailable. Recovery and delivery must fit within that limit; retrying forever would defeat it.</dd><dt>Evidence</dt><dd>Steps 3, 4 and 5 above.</dd></dl></article></div></section>
-<section class="case-block" id="contribution"><h2>What went into this work.</h2><div class="body-copy"><dl class="contribution"><div><dt>Direction</dt><dd>You get back exactly the file that was made, and nothing stays available forever.</dd></div><div><dt>What I did</dt><dd>I decide what each project is for and check what comes back. In July 2026 I decided Poiesis would be a shared service that my other apps call when they need something generated.</dd></div><div><dt>What the AI did</dt><dd>AI tools write the code, including the eight tests on this page.</dd></div></dl><p><a href="../../about.html#how-i-work">How I work with AI tools</a></p></div></section>
-<section class="case-block" id="evidence"><h2>What the tests show, and what they leave open.</h2><div class="body-copy"><div class="evidence-callout"><h3>What is real here</h3><p>Eight of the service’s own tests passed on 19 September 2026 against source revision <code>de39639</code>. Zero failures, zero skips and zero attempted external connections.</p><p>They ran on Python 3.11 with made-up data, storage held in memory, a clock the tests control and stand-ins for the text and image generators. The steps come from different tests, not one recorded job.</p><p>The tests don’t show:</p><ul><li>Real generation, or how good generated images or text would be.</li><li>Storage that lasts beyond a test run.</li><li>Cleanup that runs on a schedule by itself. Every deletion here came from a call the test made.</li><li>Whether every other copy of a key, such as one in a backup, is erased.</li><li>A second worker picking up a job after the first one fails.</li><li>Whether the service stays available in real use.</li><li>Whether a 24-hour limit fits any wider policy on keeping content.</li></ul><h4>What a fingerprint shows</h4><p>The fingerprint identifies the bytes returned. Authorship, rights, content accuracy and quality require separate evidence.</p><p>You can check the “Hello” fingerprint yourself: <code>printf 'Hello' | sha256sum</code> prints the same 64 characters.</p><div class="link-row"><a class="primary-link" href="#walkthrough">See the five steps</a><a href="artifact-custody-case.json">Raw record (JSON)</a></div></div></div></section>
-</div></details></main><footer class="footer"><a class="brand" href="../../index.html">Zach Stern</a><nav aria-label="Footer"><a href="../../about.html#how-i-work">How I work</a><a href="../../evidence.html">Evidence &amp; sources</a><a href="https://www.linkedin.com/in/zachary-s-21125214/">LinkedIn ↗</a></nav><span>Selected work / 2026</span></footer></body></html>
+<div class="night">
+  <section class="case-hero wrap">
+    <div>
+      <p class="crumb"><a href="../../more-work.html">Work</a> <span aria-hidden="true">/</span> Poiesis</p>
+      <span class="kicker">Poiesis · Shared generation</span>
+      <h1>Every file gets a receipt and an expiry date.</h1>
+      <p class="lead">Several of my apps share one service, Poiesis, for generating text and images. Each app needs proof of exactly what came back, a clear date when the file goes away, and prompts that don't linger once the job is done.</p>
+      <p class="status"><a href="../../evidence.html#status"><b>Component study</b></a> · eight tests passed on September 19, 2026, with no AI model running</p>
+      <div class="actions"><a class="action" href="#walkthrough">Follow the five steps</a><a class="action ghost" href="#evidence">What the tests show</a></div>
+    </div>
+    <div class="graphic-panel" role="img" aria-label="Test receipt: a stand-in generator returned the text Hello, five bytes. Its fingerprint, a SHA-256 code computed from those exact bytes, begins 185f8db3. The file is available for 24 hours, and a request one second later is refused.">
+      <span class="kicker">Test receipt · stand-in generator</span>
+      <p class="figure-num" style="font-size:clamp(64px,8vw,112px)">Hello</p>
+      <p class="fine" style="margin-top:14px">5 bytes · UTF-8 · no trailing newline</p>
+      <p class="fine" style="margin-top:26px">Fingerprint: a code computed from the exact bytes (SHA-256)</p>
+      <pre style="margin-top:8px;font-size:15px;line-height:1.55"><code>185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969</code></pre>
+      <div class="tiles-caption" style="margin-top:30px"><span><b>24</b>hours to collect the file</span><span><b>1 second</b>later, refused</span></div>
+    </div>
+  </section>
+
+  <section class="section tight" id="artifact" aria-labelledby="artifact-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="artifact-title">A set lifetime, collected or not.</h2>
+        <p class="lead">Fetching a file doesn't extend its deadline, and never fetching it doesn't keep it longer. The tests use sample files and a clock they control.</p>
+      </div>
+      <ol class="flow">
+        <li><b>Created</b><strong>The clock starts.</strong><p>The file and its expiry time are recorded.</p></li>
+        <li><b>24 hours</b><strong>The lifetime ends.</strong><p>The file's set lifetime is over.</p></li>
+        <li><b>Plus 1 second</b><strong>Requests are refused.</strong><p>A request for the file gets a refusal.</p></li>
+        <li><b>Cleanup</b><strong>The file is deleted.</strong><p>A cleanup call deletes the expired file, whether or not anyone collected it.</p></li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<section class="section" aria-labelledby="walkthrough-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="walkthrough-title">Follow the five steps.</h2>
+    </div>
+    <div class="walkthrough" data-walkthrough id="walkthrough">
+      <p class="walk-intro">The eight tests run the service's own code for jobs, images, requests and stored prompts. Each step below covers one or more of them and says what they showed. The steps come from different tests, not one recorded job.</p>
+      <div class="walk-controls" data-walk-controls hidden>
+        <p aria-live="polite" data-walk-status role="status"></p>
+        <button data-walk-previous type="button">Previous</button>
+        <button data-walk-next type="button">Next step</button>
+      </div>
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Return the image, then fetch it.</h3><p>The image engine's code runs, but its request goes to a stand-in that answers with a small PNG image made for the test. The job finishes with exactly those bytes. A second test fetches the image back through the service and checks that it carries an expiry time.</p></div>
+        <aside class="walk-observation"><h4>The image came back unchanged.</h4><p>The image handling ran on a real PNG file, and the file fetched back matched it byte for byte.</p></aside>
+      </article>
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Fingerprint the returned text.</h3><p>A stand-in text generator sends "Hel" and then "lo" as the text streams in, and returns "Hello". The service records one text file, marks the job complete and stores the exact bytes with their fingerprint.</p></div>
+        <aside class="walk-observation"><h4>The pieces and the final file agree.</h4><p>The test checks both pieces, the final five bytes, the fingerprint and the <code>text/plain</code> file type.</p></aside>
+      </article>
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Refuse the file after its deadline.</h3><p>The test fetches its sample file once, then moves the test clock to 24 hours and one second after the file was made. The next request for the file is refused. A cleanup call then reports one file deleted.</p></div>
+        <aside class="walk-observation"><p class="figure-num" style="font-size:56px;margin-top:0">409</p><h4 style="margin-top:12px">A refusal after the deadline.</h4><p>The request is refused before anything is deleted, and the test checks both. In the service's code, a file that never existed gets this same refusal on purpose, because after the deadline an app has no reason to tell the two apart. That last point comes from reading the source, not from the tests.</p></aside>
+      </article>
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Delete files nobody collected.</h3><p>A second sample file is never fetched. At 25 hours, a cleanup call deletes it and leaves the job with no files.</p></div>
+        <aside class="walk-observation"><h4>Not collecting a file doesn't keep it longer.</h4><p>An app that wants a file has to collect it within 24 hours.</p></aside>
+      </article>
+      <article class="walk-step" data-walk-step>
+        <div><h3 tabindex="-1">Keep the prompt locked, with its key apart.</h3><p>Three tests check the stored prompt. It waits in the work queue locked, its key is deleted when the job finishes, and it can't be unlocked under a different job's ID. The next section explains why it's built this way.</p></div>
+        <aside class="walk-observation"><h4>Three tests, three results.</h4><dl class="kv"><dt>Readable prompt in the queue</dt><dd>None found</dd><dt>Key after the job finishes</dt><dd>Deleted</dd><dt>Unlock under another job's ID</dt><dd>Fails</dd></dl></aside>
+      </article>
+      <div class="walk-links"><a href="artifact-custody-case.json">The test record (JSON)</a><a href="#evidence">What the tests leave open</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="custody" aria-labelledby="custody-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="custody-title">Recover the work without keeping the prompt forever.</h2>
+    </div>
+    <div class="prose">
+      <p>A worker, the part of the service that runs a job, may fail after accepting it. A second worker needs enough information to carry on. That makes custody of the prompt, meaning who holds it and for how long, a real design problem: making work recoverable also creates something that could be kept too long.</p>
+      <p>So the locked prompt and its key live in different places. The lock is also tied to the job's ID: a test tries to open the prompt under another job's ID, and it fails.</p>
+    </div>
+    <div class="split even" style="margin-top:48px">
+      <div class="method-card reveal"><h3>Work queue</h3><p>Holds the prompt, encrypted, along with the job's details. A test looks through everything in the queue and finds no readable copy of the prompt.</p></div>
+      <div class="method-card reveal"><h3>Job record</h3><p>Holds the key, apart from the prompt. When the job finishes, the key is deleted. A test keeps a copy of the locked prompt, standing in for a backup, and shows it can no longer be opened.</p></div>
+    </div>
+    <p class="fine" style="margin-top:16px">Where the prompt and its key sit in the tests.</p>
+    <div class="split" style="margin-top:72px">
+      <div><h3>Decide how long each thing is kept.</h3></div>
+      <div class="prose">
+        <p>The prompt and the returned files end in different ways. When a job finishes, the prompt's key is deleted, so the stored prompt becomes unreadable. Returned files expire 24 hours after they're made, and a cleanup call deletes them whether or not anyone collected them. Steps 3, 4 and 5 above show both.</p>
+        <p><b>The cost:</b> a set lifetime can make useful content unavailable. Recovery and delivery have to fit inside that limit; retrying forever would defeat it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contribution" aria-labelledby="contribution-title">
+  <div class="wrap">
+    <div class="section-head"><h2 id="contribution-title">What went into this work.</h2></div>
+    <div class="contribution">
+      <div>
+        <h3>What I did</h3>
+        <p>I decide what each project is for and check what comes back. In July 2026 I decided Poiesis would be a shared service that my other apps call when they need something generated. The rule I set for it: you get back exactly the file that was made, and nothing stays available forever.</p>
+      </div>
+      <div>
+        <h3>What the AI did</h3>
+        <p>AI tools write the code, including the eight tests on this page.</p>
+        <p><a href="../../about.html#how-i-work">How I work with AI tools</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="evidence" aria-labelledby="record-title">
+  <div class="wrap">
+    <div class="record">
+      <div>
+        <h2 id="record-title" style="font-size:clamp(30px,3vw,44px)">What the eight tests show, and what they leave open.</h2>
+      </div>
+      <dl>
+        <dt>Recorded</dt><dd>Eight of the service's own tests passed on September 19, 2026, at source revision <code>de39639</code>, with no failures, no skips and no attempted outside connections.</dd>
+        <dt>Source</dt><dd>Poiesis is private. The test record, which names each test, is public: <a href="artifact-custody-case.json">artifact-custody-case.json</a>.</dd>
+        <dt>Not shown yet</dt><dd>Nothing here proves a stored copy or backup was physically erased, or that a scheduler clears expired files on its own. Every deletion came from a call the test made.</dd>
+      </dl>
+    </div>
+    <details class="evidence-depth" style="margin-top:56px">
+      <summary>The full record: the eight tests and what they leave open</summary>
+      <div class="depth-body">
+        <div class="prose" style="overflow-wrap:anywhere">
+          <h3>The eight tests</h3>
+          <p>Each test's name as the record lists it, grouped by the file it lives in and what it covers.</p>
+          <h4 style="margin-top:1.4em">Returned files (steps 1 and 2) · <code>tests/test_executor.py</code></h4>
+          <ul>
+            <li><code>test_a_generation_runs_through_the_real_lifted_engine</code></li>
+            <li><code>test_artifacts_are_fetchable_and_carry_an_expiry</code></li>
+            <li><code>test_run_text_with_a_sink_streams_and_settles_completed</code></li>
+          </ul>
+          <h4 style="margin-top:1.4em">Expiry (steps 3 and 4) · <code>tests/test_api.py</code></h4>
+          <ul>
+            <li><code>test_artifacts_expire_at_24h_whether_or_not_collected</code></li>
+            <li><code>test_expiry_is_not_extended_by_never_fetching</code></li>
+          </ul>
+          <h4 style="margin-top:1.4em">Stored prompts (step 5) · <code>tests/test_durable.py</code></h4>
+          <ul>
+            <li><code>test_the_plaintext_prompt_never_reaches_the_queue_at_all</code></li>
+            <li><code>test_shredding_the_key_makes_the_ciphertext_permanently_unreadable</code></li>
+            <li><code>test_a_sealed_prompt_cannot_be_moved_to_another_generation</code></li>
+          </ul>
+        </div>
+        <div class="prose">
+          <h3>How they ran</h3>
+          <p>The tests ran on Python 3.11 with made-up data, storage held in memory, a clock the tests control and stand-ins for the text and image generators. No AI model, graphics processor or live generation service was called.</p>
+          <p>Beyond the two gaps in the record above, the tests don't show:</p>
+          <ul>
+            <li>Real generation, or how good generated images or text would be.</li>
+            <li>Storage that lasts beyond a test run.</li>
+            <li>A second worker picking up a job after the first one fails.</li>
+            <li>Whether the service stays available in real use.</li>
+            <li>Whether a 24-hour limit fits any wider policy on keeping content.</li>
+          </ul>
+        </div>
+        <div class="prose">
+          <h3>What a fingerprint shows</h3>
+          <p>The fingerprint identifies the bytes that came back. Authorship, rights, accuracy and quality need separate evidence.</p>
+          <p>You can check the "Hello" fingerprint yourself: <code>printf 'Hello' | sha256sum</code> prints the same 64 characters.</p>
+          <p>The record's attribution wording was updated on September 23, 2026, and the note on the 409 refusal was added then from the source. No tests were rerun, and the results didn't change.</p>
+        </div>
+        <div class="links"><a href="artifact-custody-case.json">The test record (JSON)</a><a href="../../evidence.html">What each project shows</a></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap next-case">
+    <div><span class="kicker">Next</span><a class="big" href="../../more-work.html">All work <span aria-hidden="true">&#8594;</span></a></div>
+    <a class="more" href="../../about.html">About me</a>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="../../index.html">Zach Stern</a>
+      <p>Commercial lawyer. Independent projects are my own work under the ZMS Labs name, built with AI tools.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="../../index.html#experience">Experience</a>
+      <a href="../../more-work.html">Work</a>
+      <a href="../../about.html">About</a>
+      <a href="../../about.html#how-i-work">How I work with AI tools</a>
+      <a href="../../evidence.html">Sources and records</a>
+      <a class="ext" href="https://www.linkedin.com/in/zachary-s-21125214/">LinkedIn</a>
+    </nav>
+    <div class="small"><p>© 2026 Zach Stern</p><button class="motion-toggle" type="button" hidden>Turn off motion</button></div>
+  </div>
+</footer>
+</body>
+</html>

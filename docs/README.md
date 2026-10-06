@@ -1,34 +1,20 @@
-# Source for the showcase site
+# Source for sternone.net
 
-This folder is the source of my project showcase at <https://sternone.net/>. Each page says what I wanted a project to do and what works so far.
+This folder is the published source of my site at <https://sternone.net/>. I'm a commercial lawyer; the site covers my professional work and the independent projects I build with AI tools under the ZMS Labs name.
 
-[Visit the showcase](https://sternone.net/) or open [index.html](index.html) locally. No build, model account, external font service, or application backend is required.
+[Visit the site](https://sternone.net/) or open [index.html](index.html) locally. No build, model account, external font service or application backend is required.
 
-## Explore
+## Pages
 
-The independent case studies:
-
-- [SaveBench](https://sternone.net/case-studies/savebench/): AI models design factories in the video game Satisfactory, and the running game measures what each factory delivers. The comparison interface, a factory an AI agent designed that the game scored as a FAIL, and later results.
-- [Steno](https://sternone.net/case-studies/steno/): a contract workstation that keeps the document, its connections and the questions under review together. The archived prototype, the Hallmark emblem (a grade and what backs it) and two recorded drafting checks.
-- [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): written methods that help AI agents (AI tools that carry out a multi-step task on their own) investigate a failure, compare options and check whether a change worked. Public source, in eleven releases since July 2026.
-- [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): a workspace for keeping track of several AI coding agents and their work between sessions. The agent glyphs, the main screen, the Surface Bridge (the part that turns a decision about an agent's next step into commands for the AI tool running it) and three tests of the review gate.
-
-Further independent work:
-
-- [Neuraxic](https://sternone.net/case-studies/neuraxic/): a writing workspace where a story's prose, people, places and rules develop together, with five tests of what each version of the story can see and how a new detail gets accepted.
-- [Krewcible](https://sternone.net/case-studies/krewcible/): shaping a character through choices you can see, change and take back, shown in the editor's own controls before anything is generated.
-- [Gridiron](https://sternone.net/case-studies/gridiron/): commentary for a football video game that follows what happened on the field. Two recorded runs of one made-up drive, and a research-source download.
-- [Enaction](https://sternone.net/case-studies/enaction/): keeping a character someone plays separate from the player, including whose memory a turn can change.
-- [Poiesis](https://sternone.net/case-studies/poiesis/): a shared service for generated files, and how to tell which file came back, how long to keep it, and how to make a stored prompt unreadable once a job finishes. Eight tests.
-
-Elsewhere on the site:
-
-- [About](https://sternone.net/about.html): who I am, where each project came from and how I work with AI tools.
-- [More work](https://sternone.net/more-work.html): the five supporting projects on one page, plus my fork (my own copy) of OpenClaw and the guide this site's pages and diagrams follow.
-- [Evidence and attribution](https://sternone.net/evidence.html): what each example shows, where it came from and where its evidence stops.
+- [Home](https://sternone.net/): experience, the agreements and litigation work, and the independent projects.
+- [Commercial agreements at Dovenmuehle](https://sternone.net/commercial-agreements.html) and [one court process for more than 100 competing claims](https://sternone.net/ear.html) at Tishler & Wald.
+- [Work](https://sternone.net/more-work.html): every role and project with its status.
+- [About](https://sternone.net/about.html), including [how I work with AI tools](https://sternone.net/about.html#how-i-work).
+- [Sources and records](https://sternone.net/evidence.html): the status key and table, credits and licenses.
+- Case studies, in order: [Interleaf](https://sternone.net/case-studies/interleaf/) (with its [drafting-check replay](https://sternone.net/case-studies/interleaf/recorded-checks/)), [SaveBench](https://sternone.net/case-studies/savebench/), [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/), [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/), [Neuraxic](https://sternone.net/case-studies/neuraxic/), [Krewcible](https://sternone.net/case-studies/krewcible/), [Gridiron](https://sternone.net/case-studies/gridiron/), [Enaction](https://sternone.net/case-studies/enaction/) and [Poiesis](https://sternone.net/case-studies/poiesis/).
 
 ## Maintain
 
 Edit the static HTML, `site.css`, `site.js` and `walkthroughs.js`; see [maintenance and verification](https://github.com/ZMS-Labs/showcase/blob/main/MAINTAINING.md). The [asset manifest](assets/manifest.json) identifies the exact presentation assets, and [EXPORT-MANIFEST.json](EXPORT-MANIFEST.json) lists every file in the site payload.
 
-The Gridiron download is a research snapshot that keeps its GPL notices and leaves out the original private Git history. Source for the seven private projects is not included here.
+The Gridiron download is a research snapshot that keeps its GPL notices and leaves out the original private Git history. Source for the other private projects is not included here.
