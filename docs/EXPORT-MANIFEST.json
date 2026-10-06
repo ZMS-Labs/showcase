@@ -15,8 +15,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 8908,
-      "sha256": "1cd481ef46f2794df389e4b2dbad94077574970cd080d55040fd6c25a75e1efb"
+      "bytes": 8916,
+      "sha256": "cd35afe8b0805f784b84859b710ab3b091f9e54d0ffc1d4617e1e44c6df90827"
     },
     {
       "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
@@ -79,6 +79,41 @@
       "sha256": "3331834c0f02ae7e11248d8ac71fe0ebd2ac42ad044421a3c62d8351121c9015"
     },
     {
+      "path": "assets/interleaf/hallmark-assay-vocabulary.png",
+      "bytes": 198339,
+      "sha256": "c4b6b5aaf90e08e33cf7312d8ac3e8717b289d27bec65a44e2bf18062c78c0ce"
+    },
+    {
+      "path": "assets/interleaf/hallmark-chip-and-detail.png",
+      "bytes": 227460,
+      "sha256": "fd8d9e84bda18accb17536b995a31e187507d62f25b5deeb0dede177a22cefab"
+    },
+    {
+      "path": "assets/interleaf/hallmark-fineness-ladder.png",
+      "bytes": 340352,
+      "sha256": "ba42cb6a1e89887d0a79afb93355bc512a4a3e1ce91b1f1fc4953e14fe4b78ed"
+    },
+    {
+      "path": "assets/interleaf/interleaf-prototype-walkthrough.webm",
+      "bytes": 3102722,
+      "sha256": "cc30ff77ae08f8aa9c16ab26384f75ae2d7ec5a08ecc92bf147729cc5325e689"
+    },
+    {
+      "path": "assets/interleaf/matter-map.png",
+      "bytes": 657861,
+      "sha256": "06d41b3186bf251a67d2b524686b775c22d7df1bd96145c1d6abbe8fea184d73"
+    },
+    {
+      "path": "assets/interleaf/walkthrough.en.vtt",
+      "bytes": 620,
+      "sha256": "46b3d357e2b488ac8c84014534ad56065a103cd1a44d156edf40b00320785b70"
+    },
+    {
+      "path": "assets/interleaf/workstation.png",
+      "bytes": 625808,
+      "sha256": "37056f7fd8b4495f3f6ab5bb002bd4eb1c1c973ecef22eda439e719d19eca32a"
+    },
+    {
       "path": "assets/krewcible/comparison.png",
       "bytes": 270661,
       "sha256": "ad850c2bdb70e436aef0a5615b2a0e937bf8047926faba0501461347b30e7e0b"
@@ -100,8 +135,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 25047,
-      "sha256": "707b265b86a03834c5cc07798eb0b8ec2e366930c52b32cfce33f6d5dfd70de7"
+      "bytes": 26643,
+      "sha256": "4efac5ff4ab0dc4fa65db69a4e7fdaac66c98728e243b274dd416740079bdf71"
     },
     {
       "path": "assets/neuraxic/claims.png",
@@ -159,6 +194,11 @@
       "sha256": "24b235a7278b7d060146acfcff4b0948f67ffac2ca38a34b3b7eed68c36ef36b"
     },
     {
+      "path": "assets/og/og-interleaf.png",
+      "bytes": 161405,
+      "sha256": "dad98f8d1dab8649e0959770ce795215ff5821122613c2ca1de5f2d7948be7dc"
+    },
+    {
       "path": "assets/og/og-krewcible.png",
       "bytes": 99450,
       "sha256": "e5c62011e8c85fd691e99fae598ecf8caaf4f66ba1547c50470effa407b29351"
@@ -177,11 +217,6 @@
       "path": "assets/og/og-savebench.png",
       "bytes": 116456,
       "sha256": "68a294b789adbfe967e365e012003a8820afba9171fa590ca18ab0ab582e807e"
-    },
-    {
-      "path": "assets/og/og-steno.png",
-      "bytes": 161825,
-      "sha256": "40e86a19556c10213ece7a7654b33eb27fd255f53ab9f6ff525d9296bfbcd425"
     },
     {
       "path": "assets/savebench/savebench-challenge.png",
@@ -214,41 +249,6 @@
       "sha256": "600dfacfa70562bdf58a299c63856e190c19c068db93ac77ae5428abb3435817"
     },
     {
-      "path": "assets/steno/hallmark-assay-vocabulary.png",
-      "bytes": 198432,
-      "sha256": "0f48529b14c7dec50fb08ed570b833f89b928d8c1b3da73d689c0cd9294dd17e"
-    },
-    {
-      "path": "assets/steno/hallmark-chip-and-detail.png",
-      "bytes": 227412,
-      "sha256": "d67d58cd84da6805dd8d956e568c6a702c817b3b0e3f636a97aae31090f10173"
-    },
-    {
-      "path": "assets/steno/hallmark-fineness-ladder.png",
-      "bytes": 340438,
-      "sha256": "5e928f8582d99fd78ab37036a458aff4bebcb011f0bfddb6eb6bc683285645db"
-    },
-    {
-      "path": "assets/steno/matter-map.png",
-      "bytes": 658350,
-      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465"
-    },
-    {
-      "path": "assets/steno/steno-prototype-walkthrough.webm",
-      "bytes": 2957288,
-      "sha256": "291ab110878f0d9e23d604ad10bc7e51a5e4a5efcb87475beb47ea2a541a8404"
-    },
-    {
-      "path": "assets/steno/walkthrough.en.vtt",
-      "bytes": 616,
-      "sha256": "08c0faecf900a3108d2046a3934e9fbe266d60e4f38f546c5fed7fcc8de9a54d"
-    },
-    {
-      "path": "assets/steno/workstation.png",
-      "bytes": 626355,
-      "sha256": "0cfe26065e406795fa2fa0de1188c2c45698df9840f9b35cc391a5d6b2e56ff1"
-    },
-    {
       "path": "case-studies/enaction/index.html",
       "bytes": 19173,
       "sha256": "bd1259c4305e3c191bd2e7295b403874a057115b2c1557e265f814a66a90db51"
@@ -260,8 +260,8 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 22134,
-      "sha256": "458f059aa8536cd0eddaf2bfb345161e502b23f50c73636c902afd93243e9cb4"
+      "bytes": 22146,
+      "sha256": "7b8536cb00abc106eb846ea53b46db4df936647a3d824761e560f1607cd89151"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -297,6 +297,46 @@
       "path": "case-studies/gridiron/recorded-replay.json",
       "bytes": 1393,
       "sha256": "6f47045689be3251eae890c9a4c613bbd4cb69bb4ab4180e1bb808a75c45fa03"
+    },
+    {
+      "path": "case-studies/interleaf/design-research.json",
+      "bytes": 3827,
+      "sha256": "787c3249df9d429500159a88b808c3a7e725ebd00a6434d27dc472eb6095db04"
+    },
+    {
+      "path": "case-studies/interleaf/hallmark-design.json",
+      "bytes": 1313,
+      "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
+    },
+    {
+      "path": "case-studies/interleaf/index.html",
+      "bytes": 21526,
+      "sha256": "f2b7bae6a667f2d2666cd540492f189b279ad58d349cf8bfe061508311f44264"
+    },
+    {
+      "path": "case-studies/interleaf/recorded-checks/case-data.js",
+      "bytes": 4022,
+      "sha256": "e12f871c7e60f40f5538733f4322848becdd86e2c15ea7ebb3499f0eaed9562a"
+    },
+    {
+      "path": "case-studies/interleaf/recorded-checks/case-study.js",
+      "bytes": 3295,
+      "sha256": "0862935655e2babe80fe570cfe814f36aae927924e797b4d81d8d265944cdb07"
+    },
+    {
+      "path": "case-studies/interleaf/recorded-checks/evidence/recorded-checks.json",
+      "bytes": 6207,
+      "sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e"
+    },
+    {
+      "path": "case-studies/interleaf/recorded-checks/evidence/verification.json",
+      "bytes": 2454,
+      "sha256": "2f72e5881266820f202941f8cb847966cf33950e26d8ae276a78f3969e708ab3"
+    },
+    {
+      "path": "case-studies/interleaf/recorded-checks/index.html",
+      "bytes": 17488,
+      "sha256": "fb852485c557f14ba46d6d345621c100426c501e45d0e672c82bf601f583b9d1"
     },
     {
       "path": "case-studies/krewcible/index.html",
@@ -349,44 +389,14 @@
       "sha256": "85400c77a8a437ccc29c73130e757086589b6c5ade9839ac23706db4e970b60e"
     },
     {
-      "path": "case-studies/steno/design-research.json",
-      "bytes": 3827,
-      "sha256": "787c3249df9d429500159a88b808c3a7e725ebd00a6434d27dc472eb6095db04"
-    },
-    {
-      "path": "case-studies/steno/hallmark-design.json",
-      "bytes": 1313,
-      "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
-    },
-    {
       "path": "case-studies/steno/index.html",
-      "bytes": 20971,
-      "sha256": "da6586c704d1db68710e74829da30c6e7af17ded239531bb94515b5ff1c4c139"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/case-data.js",
-      "bytes": 4022,
-      "sha256": "e12f871c7e60f40f5538733f4322848becdd86e2c15ea7ebb3499f0eaed9562a"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/case-study.js",
-      "bytes": 3295,
-      "sha256": "0862935655e2babe80fe570cfe814f36aae927924e797b4d81d8d265944cdb07"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
-      "bytes": 6207,
-      "sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/evidence/verification.json",
-      "bytes": 2454,
-      "sha256": "2f72e5881266820f202941f8cb847966cf33950e26d8ae276a78f3969e708ab3"
+      "bytes": 765,
+      "sha256": "a6c24eb8a844613bdb23253400c2eb38c31e195e07586d20a75c939b7353cfa9"
     },
     {
       "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 17301,
-      "sha256": "ab41d80c914393f9df91e59c74feaa3ae10065a7ca551c2ff05fa0af9995c319"
+      "bytes": 870,
+      "sha256": "063a1064f5c2fc69b059dbdaeb7da6eed1efe44c5a71cd1a3b8538fd7becf8f8"
     },
     {
       "path": "CNAME",
@@ -410,13 +420,13 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 11082,
-      "sha256": "4ba583136beaf544917e2ea5d9cac8a737304e385cb2eb20c582c3903b87dd9a"
+      "bytes": 11098,
+      "sha256": "99f3a397dcd0af65d137a06b1f6110393b3d7cf5576ccd3606813ef4ad55a624"
     },
     {
       "path": "index.html",
-      "bytes": 21301,
-      "sha256": "a2db59c032d323f3a8ad2a98e11ecd71e559c8ad90a3d6a0c10ca618b95fd25d"
+      "bytes": 21325,
+      "sha256": "cd2e85a5e1a36ffde3398cdf772f47a8f07f6f553f115a20b78c0fcc2fe58b3c"
     },
     {
       "path": "LICENSE",
@@ -425,13 +435,13 @@
     },
     {
       "path": "more-work.html",
-      "bytes": 8086,
-      "sha256": "d3e8e620862e4fc1187922976ece67a7a5f2d3bdffe1a5e01f17d4efcafd883e"
+      "bytes": 8094,
+      "sha256": "a0b8d1641e3f8a4f020fc2dcaaf04603fa19e691115ba3b0d367b615ec840fc4"
     },
     {
       "path": "README.md",
-      "bytes": 2250,
-      "sha256": "34f687dd3bbe2587f411de228191eb1822063f674224cec56e1480238b4283bd"
+      "bytes": 2262,
+      "sha256": "d40240b431f8027adc186dfb8b086099824214105e3847ecb54ee915a62c1aad"
     },
     {
       "path": "robots.txt",
@@ -440,8 +450,8 @@
     },
     {
       "path": "site.css",
-      "bytes": 36808,
-      "sha256": "b9d4c94a152d2fcd3436b858d946d702c1bc788979b52682e88f3f165208c3fe"
+      "bytes": 36812,
+      "sha256": "22b9496b4affcabffd325edca5e787267696b6c375483715c891f2c9febf924c"
     },
     {
       "path": "site.js",
@@ -450,8 +460,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 1630,
-      "sha256": "0b21fdd5bd1db439a6fb656fed1607524f674a8f1869a4a31e3a5c13709ef1e6"
+      "bytes": 1638,
+      "sha256": "b171f7437e8cf3746f96f6af73e856a5b0356479b47859fa319d879802658f5f"
     },
     {
       "path": "walkthroughs.js",

@@ -62,7 +62,7 @@ panel = lambda inner: '<div class="graphic-panel" style="width:460px;height:470p
 cards = {
     'og-default': frame(default, bg='paper'),
     'og-savebench': project('SaveBench', 'Can an AI design a factory that actually runs?', 'Sample data', img('savebench/savebench-workspace.png')),
-    'og-steno': project('Steno', 'A contract workstation that keeps the question next to the words.', 'Archived prototype, made-up content', img('steno/matter-map.png')),
+    'og-interleaf': project('Interleaf', 'A contract workstation that keeps the question next to the words.', 'Archived prototype, made-up content', img('interleaf/matter-map.png')),
     'og-epistemic-skills': project('Epistemic Skills', 'Teaching AI agents to check their own work.', 'Recorded check',
         panel('<span class="kicker" style="margin:0">First publication · Sept 19, 2026</span>' + TILES +
               '<div class="tiles-caption" style="max-width:none;margin-top:6px"><span><b>14 of 28</b>didn&#39;t match before the fix</span><span><b>28 of 28</b>matched after</span></div>')),

@@ -20,9 +20,9 @@ ZMS Labs is the name I use for my independent projects. AI tools write the code.
 
 ## Independent projects
 
-[![Steno's archived matter map with made-up content.](docs/assets/steno/matter-map.png)](https://sternone.net/case-studies/steno/)
+[![Interleaf's archived matter map with made-up content.](docs/assets/interleaf/matter-map.png)](https://sternone.net/case-studies/interleaf/)
 
-- [Steno](https://sternone.net/case-studies/steno/): a contract workstation that keeps the question next to the words. Two of its drafting checks flagged two gaps in a sample agreement and came back clean after the edits.
+- [Interleaf](https://sternone.net/case-studies/interleaf/): a contract workstation that keeps the question next to the words. Two of its drafting checks flagged two gaps in a sample agreement and came back clean after the edits.
 - [SaveBench](https://sternone.net/case-studies/savebench/): can an AI design a factory that actually runs? AI models design factories in Satisfactory and the running game measures what they deliver. The test checks its own measuring tool first and keeps failed runs on the record.
 - [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): seventeen public methods that teach AI agents to find the real cause and check their own work. [Source on GitHub](https://github.com/ZMS-Labs/epistemic-skills).
 - [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): a control room for a team of AI agents, built so their work can outlast a session.

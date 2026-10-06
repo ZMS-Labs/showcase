@@ -4,26 +4,28 @@
   "description": "Exact presentation assets; preparation source and render scaffolding are excluded.",
   "assets": [
     {
-      "path": "assets/steno/matter-map.png",
-      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465",
-      "bytes": 658350,
+      "path": "assets/interleaf/matter-map.png",
+      "sha256": "06d41b3186bf251a67d2b524686b775c22d7df1bd96145c1d6abbe8fea184d73",
+      "bytes": 657861,
       "dimensions": [
         1760,
         1100
       ],
       "kind": "Archived interface prototype rendered with newly authored fictional content",
-      "claim_boundary": "Design evidence; not current product operation or engine output"
+      "claim_boundary": "Design evidence; not current product operation or engine output",
+      "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
     },
     {
-      "path": "assets/steno/workstation.png",
-      "sha256": "0cfe26065e406795fa2fa0de1188c2c45698df9840f9b35cc391a5d6b2e56ff1",
-      "bytes": 626355,
+      "path": "assets/interleaf/workstation.png",
+      "sha256": "37056f7fd8b4495f3f6ab5bb002bd4eb1c1c973ecef22eda439e719d19eca32a",
+      "bytes": 625808,
       "dimensions": [
         1760,
         1100
       ],
       "kind": "Archived interface prototype rendered with newly authored fictional content",
-      "claim_boundary": "Design evidence; not current product operation or engine output"
+      "claim_boundary": "Design evidence; not current product operation or engine output",
+      "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
     },
     {
       "path": "assets/krewcible/workspace.png",
@@ -119,17 +121,18 @@
       "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result"
     },
     {
-      "path": "assets/steno/steno-prototype-walkthrough.webm",
-      "sha256": "291ab110878f0d9e23d604ad10bc7e51a5e4a5efcb87475beb47ea2a541a8404",
-      "bytes": 2957288,
+      "path": "assets/interleaf/interleaf-prototype-walkthrough.webm",
+      "sha256": "cc30ff77ae08f8aa9c16ab26384f75ae2d7ec5a08ecc92bf147729cc5325e689",
+      "bytes": 3102722,
       "dimensions": [
         1760,
         1100
       ],
-      "duration_seconds": 37.12,
+      "duration_seconds": 37.32,
       "audio_streams": 0,
       "kind": "Authentic page-only interaction recording",
-      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict"
+      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict",
+      "rename_note": "Recorded again on 2026-10-05 with the same script and route after the displayed name changed from its working name Steno to Interleaf (sidebar wordmark set slightly smaller to fit). Frame diffs show the same states; step timings differ by under 0.4 seconds."
     },
     {
       "path": "assets/krewcible/krewcible-walkthrough.webm",
@@ -193,40 +196,43 @@
       "claim_boundary": "Source-rendered lineage and size examples: a shared palette, clone rotation and full-tier tallies. The two-dot badge is the explicit unknown-runtime fallback. These are documentation specimens, not a live roster."
     },
     {
-      "path": "assets/steno/hallmark-fineness-ladder.png",
-      "sha256": "5e928f8582d99fd78ab37036a458aff4bebcb011f0bfddb6eb6bc683285645db",
-      "bytes": 340438,
+      "path": "assets/interleaf/hallmark-fineness-ladder.png",
+      "sha256": "ba42cb6a1e89887d0a79afb93355bc512a4a3e1ce91b1f1fc4953e14fe4b78ed",
+      "bytes": 340352,
       "dimensions": [
         1680,
         900
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
       "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran."
+      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran.",
+      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
     },
     {
-      "path": "assets/steno/hallmark-assay-vocabulary.png",
-      "sha256": "0f48529b14c7dec50fb08ed570b833f89b928d8c1b3da73d689c0cd9294dd17e",
-      "bytes": 198432,
+      "path": "assets/interleaf/hallmark-assay-vocabulary.png",
+      "sha256": "c4b6b5aaf90e08e33cf7312d8ac3e8717b289d27bec65a44e2bf18062c78c0ce",
+      "bytes": 198339,
       "dimensions": [
         1680,
         923
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
       "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks."
+      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks.",
+      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
     },
     {
-      "path": "assets/steno/hallmark-chip-and-detail.png",
-      "sha256": "d67d58cd84da6805dd8d956e568c6a702c817b3b0e3f636a97aae31090f10173",
-      "bytes": 227412,
+      "path": "assets/interleaf/hallmark-chip-and-detail.png",
+      "sha256": "fd8d9e84bda18accb17536b995a31e187507d62f25b5deeb0dede177a22cefab",
+      "bytes": 227460,
       "dimensions": [
         1680,
         1076
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
       "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance."
+      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance.",
+      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
     },
     {
       "path": "assets/neuraxic/library.png",
@@ -377,14 +383,14 @@
       "claim_boundary": "Identity card; the facts match the home page and About"
     },
     {
-      "path": "assets/og/og-steno.png",
-      "sha256": "40e86a19556c10213ece7a7654b33eb27fd255f53ab9f6ff525d9296bfbcd425",
-      "bytes": 161825,
+      "path": "assets/og/og-interleaf.png",
+      "sha256": "dad98f8d1dab8649e0959770ce795215ff5821122613c2ca1de5f2d7948be7dc",
+      "bytes": 161405,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Archived prototype, made-up content\", and a crop of the assets/steno/matter-map.png entry",
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Archived prototype, made-up content\", and a crop of the assets/interleaf/matter-map.png entry",
       "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },

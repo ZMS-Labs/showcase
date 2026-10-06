@@ -208,7 +208,7 @@ main:focus{outline:none}
 .doc[data-active] .clause-list li.on::before{color:var(--signal)}
 .doc-note{margin-top:16px;font-size:13.5px;color:var(--muted)}
 
-/* Clause text inside the sketch (Steno story) */
+/* Clause text inside the sketch (Interleaf story) */
 .clause-list .text{display:block;font-size:15px;line-height:1.45;margin-top:4px;color:var(--ink-2);font-weight:400}
 .doc ins{display:none;text-decoration:none;background:#fde3d2;border-radius:2px;padding:0 2px}
 .doc del{text-decoration:none}
