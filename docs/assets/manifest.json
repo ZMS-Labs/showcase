@@ -24,7 +24,7 @@
         1100
       ],
       "kind": "Compatibility copy of the earlier render, under its working name Steno",
-      "claim_boundary": "Kept only because the ZMS Labs organization profile on GitHub embeds this exact URL. It is the original Steno render, byte for byte; no page on this site uses it. Remove it once the profile points at assets/interleaf/matter-map.png."
+      "claim_boundary": "Kept permanently at its original address so existing direct links keep working, including the ZMS Labs organization profile's earlier embed. It is the original Steno render, byte for byte; no page on this site uses it."
     },
     {
       "path": "assets/interleaf/workstation.png",

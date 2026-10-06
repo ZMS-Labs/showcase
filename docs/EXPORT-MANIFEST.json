@@ -135,8 +135,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 27213,
-      "sha256": "30646bf44e7745b1bbbdefad032e5622f41e13bce7d71ecff1d4ff0c3d766fdc"
+      "bytes": 27199,
+      "sha256": "14f958dee908a8175b7d5abd5e4e7999c1dc11c6268afbe583fe134fc724d2d1"
     },
     {
       "path": "assets/neuraxic/claims.png",
