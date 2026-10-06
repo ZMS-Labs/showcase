@@ -224,6 +224,17 @@ if args.prepublish and any(problems.values()):
  raise SystemExit('Not ready to publish:\n'+json.dumps({k:v for k,v in problems.items() if v},indent=2))
 
 modes={'walkthroughs_stepped':0,'walkthroughs_stacked':0,'galleries_expanded':0,'galleries_link_only':0}
+regression={'narrow_feature_checks':0,'nojs_story_states':0,'motion_switch_checks':0,'story_scroll_checks':0}
+# Scrolls so a story step sits mid-screen, then waits for scrolling (smooth or not) to stop, polling on an interval.
+SCROLL_TO_STEP='''async (i) => {
+ const step=document.querySelectorAll('[data-story] .story-step')[i]; const r=step.getBoundingClientRect();
+ window.scrollTo(0,scrollY+r.top+r.height/2-innerHeight/2);
+ await new Promise(done=>{let last=-1,same=0;const t=setInterval(()=>{if(scrollY===last){if(++same>=3){clearInterval(t);done()}}else{same=0;last=scrollY}},50)});
+ await new Promise(done=>setTimeout(done,150));
+ return document.querySelector('[data-story] [data-graphic]').dataset.state }'''
+MOTION_STATE='''()=>({motion:document.documentElement.classList.contains('js-motion'),scroll:getComputedStyle(document.documentElement).scrollBehavior,
+ step:getComputedStyle(document.querySelector('.js-story .story-step h3')).transitionDuration,
+ pressed:document.querySelector('.motion-toggle').getAttribute('aria-pressed'),disabled:document.querySelector('.motion-toggle').disabled})'''
 if args.static_only:
  print(json.dumps({'static_checks':'passed','pages':len(pages),'local_links':'passed','receipt_hash':'passed','curly_quotes_in_code':0,'approved_punctuation_matches':len(dashes),**{k:len(v) for k,v in problems.items()},'ready_to_publish':not any(problems.values())},indent=2));raise SystemExit(0)
 from playwright.sync_api import sync_playwright
@@ -246,6 +257,11 @@ with sync_playwright() as p:
     img.evaluate('(e)=>e.decode()')
     assert img.evaluate('(e)=>e.complete&&e.naturalWidth>0'),(path,img.get_attribute('src'))
    page.evaluate('window.scrollTo(0,0)')
+   if width<1000:
+    # Below the 1000px breakpoint every feature, odd or even, stacks into one column.
+    tracks=page.evaluate('[...document.querySelectorAll(".feature")].map(f=>getComputedStyle(f).gridTemplateColumns.split(" ").length)')
+    assert all(t==1 for t in tracks),(path.relative_to(root).as_posix(),width,'a feature keeps more than one column',tracks)
+    regression['narrow_feature_checks']+=len(tracks)
    checks.append({'page':path.relative_to(root).as_posix(),'viewport':[width,height],'images':'loaded','horizontal_overflow':False})
    # The approved editorial view replaces some former hero controls with artifact inspection.
    for lead in page.locator('.visual-lead').all():
@@ -381,7 +397,47 @@ with sync_playwright() as p:
   assert page.locator('a[href="evidence/recorded-checks.json"]').count()>=1,str(path)
   assert page.locator('a[href="evidence/verification.json"]').count()>=1,str(path)
   page.close()
+ # Without scripts a scroll story shows only its final picture, so a clause sketch's edits agree with its final count.
+ story_pages=[path for path in pages if 'data-story' in path.read_text(encoding='utf-8')]
+ for path in story_pages:
+  page=nojs.new_page();page.goto(destination(path))
+  graphic=page.locator('[data-story] [data-graphic]')
+  shown=[e.get_attribute('data-on') for e in graphic.locator('.panel-state').all() if e.is_visible()]
+  assert all('final' in s.split() for s in shown),(path.relative_to(root).as_posix(),'a non-final picture shows without scripts',shown)
+  assert all(e.is_visible() for e in graphic.locator('ins').all()),(path.relative_to(root).as_posix(),'an edit is hidden without scripts')
+  assert all('line-through' in e.evaluate('(e)=>getComputedStyle(e).textDecorationLine') for e in graphic.locator('del').all()),(path.relative_to(root).as_posix(),'a deletion is not struck through without scripts')
+  regression['nojs_story_states']+=1
+  page.close()
  nojs.close()
+ # Normal motion and the footer switch; the viewport passes above run with reduced motion.
+ motion=browser.new_context(viewport={'width':1440,'height':1050},offline=not bool(args.base_url),reduced_motion='no-preference')
+ page=motion.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
+ for path in story_pages:
+  page.goto(destination(path),wait_until='load')
+  page.evaluate('()=>{try{localStorage.removeItem("motion")}catch{}}');page.reload(wait_until='load')
+  expected=page.evaluate('[...document.querySelectorAll("[data-story] .story-step")].map(s=>s.dataset.state)')
+  order=list(range(len(expected)))+list(range(len(expected)-1,-1,-1))
+  for setting in ('on','off'):
+   if setting=='off':page.locator('.motion-toggle').click()
+   seen=[page.evaluate(SCROLL_TO_STEP,i) for i in order]
+   assert seen==[expected[i] for i in order],(path.relative_to(root).as_posix(),'motion '+setting,'the story picture does not follow the scrolled step',seen)
+   regression['story_scroll_checks']+=1
+  page.locator('.motion-toggle').click()
+ page.goto(destination(root/'case-studies/steno/index.html'),wait_until='load')
+ page.evaluate('()=>{try{localStorage.removeItem("motion")}catch{}}');page.reload(wait_until='load')
+ state=page.evaluate(MOTION_STATE);assert state['motion'] and state['scroll']=='smooth' and state['step']!='0s' and state['pressed']=='false',('motion is on by default',state)
+ page.locator('.motion-toggle').click()
+ state=page.evaluate(MOTION_STATE);assert not state['motion'] and state['scroll']=='auto' and state['step']=='0s' and state['pressed']=='true',('the footer switch turns motion off',state)
+ page.reload(wait_until='load')
+ state=page.evaluate(MOTION_STATE);assert not state['motion'] and state['scroll']=='auto' and state['step']=='0s',('the switch setting survives a reload',state)
+ page.locator('.motion-toggle').click()
+ state=page.evaluate(MOTION_STATE);assert state['motion'] and state['scroll']=='smooth' and state['step']!='0s',('the footer switch turns motion back on',state)
+ motion.close()
+ reduced=browser.new_context(offline=not bool(args.base_url),reduced_motion='reduce');page=reduced.new_page()
+ page.goto(destination(root/'case-studies/steno/index.html'),wait_until='load')
+ state=page.evaluate(MOTION_STATE);assert not state['motion'] and state['scroll']=='auto' and state['step']=='0s' and state['disabled'],('the system setting turns motion off and disables the switch',state)
+ reduced.close()
+ regression['motion_switch_checks']=5
  # Text tracks require HTTP; serve the static files temporarily for a same-origin media check.
  with media_server() as media_base:
   media=browser.new_context();page=media.new_page()
@@ -439,4 +495,4 @@ with sync_playwright() as p:
 assert not errors,errors
 assert not remote,remote
 
-print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','video_playback_checks':media_checks,'interactions':f'existing controls, walkthroughs, galleries, no-JS fallback, transcripts and {media_checks} HTTP video/text-track playback checks passed',**modes,'javascript_errors':len(errors),'external_requests':len(remote),'steno_receipt':'served-bytes digest matches the file and SHA256SUMS.txt','curly_quotes_in_code':0,'text_files_scanned':f'{len(texts)} {scan_scope}',**{k:len(v) for k,v in problems.items()},'ready_to_publish':not any(problems.values())},indent=2))
+print(json.dumps({'page_viewport_checks':len(checks),'local_links':'passed','video_playback_checks':media_checks,'interactions':f'existing controls, walkthroughs, galleries, no-JS fallback, transcripts and {media_checks} HTTP video/text-track playback checks passed',**modes,**regression,'javascript_errors':len(errors),'external_requests':len(remote),'steno_receipt':'served-bytes digest matches the file and SHA256SUMS.txt','curly_quotes_in_code':0,'text_files_scanned':f'{len(texts)} {scan_scope}',**{k:len(v) for k,v in problems.items()},'ready_to_publish':not any(problems.values())},indent=2))
