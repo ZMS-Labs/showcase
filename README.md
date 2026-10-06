@@ -20,10 +20,10 @@ ZMS Labs is the name I use for my independent projects. AI tools write the code.
 
 ## Independent projects
 
-[![The SaveBench workspace with made-up sample data.](docs/assets/savebench/savebench-workspace.png)](https://sternone.net/case-studies/savebench/)
+[![Steno's archived matter map with made-up content.](docs/assets/steno/matter-map.png)](https://sternone.net/case-studies/steno/)
 
-- [SaveBench](https://sternone.net/case-studies/savebench/): can an AI design a factory that actually runs? AI models design factories in Satisfactory and the running game measures what they deliver. The test checks its own measuring tool first and keeps failed runs on the record.
 - [Steno](https://sternone.net/case-studies/steno/): a contract workstation that keeps the question next to the words. Two of its drafting checks flagged two gaps in a sample agreement and came back clean after the edits.
+- [SaveBench](https://sternone.net/case-studies/savebench/): can an AI design a factory that actually runs? AI models design factories in Satisfactory and the running game measures what they deliver. The test checks its own measuring tool first and keeps failed runs on the record.
 - [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): seventeen public methods that teach AI agents to find the real cause and check their own work. [Source on GitHub](https://github.com/ZMS-Labs/epistemic-skills).
 - [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/): a control room for a team of AI agents, built so their work can outlast a session.
 - [Neuraxic](https://sternone.net/case-studies/neuraxic/): a writing studio where a new story fact waits for the author's OK before it becomes settled.

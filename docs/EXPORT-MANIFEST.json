@@ -335,8 +335,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 26143,
-      "sha256": "367c9355a4555f64ca809b8f2a32a026e99c90480291158466d54b92ea29d2e4"
+      "bytes": 26165,
+      "sha256": "6182ac4d731e489f2ee139e30a25c24de49dcaad56aec069c568be07045efb28"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -360,8 +360,8 @@
     },
     {
       "path": "case-studies/steno/index.html",
-      "bytes": 20985,
-      "sha256": "a31cf06162141c56c9d76f9b9552bf3b4c34dd8470e37142d299314515c9e587"
+      "bytes": 20971,
+      "sha256": "da6586c704d1db68710e74829da30c6e7af17ded239531bb94515b5ff1c4c139"
     },
     {
       "path": "case-studies/steno/recorded-checks/case-data.js",
@@ -411,12 +411,12 @@
     {
       "path": "evidence.html",
       "bytes": 11082,
-      "sha256": "db63d34c35d22af23b8b262632c406c06ff56a25ebe05df4d87d7ae7475e263b"
+      "sha256": "4ba583136beaf544917e2ea5d9cac8a737304e385cb2eb20c582c3903b87dd9a"
     },
     {
       "path": "index.html",
       "bytes": 21301,
-      "sha256": "4c3c8c865f3ba1324bdd3eaa55583dd621394c96db9ff6be712dfb61605fa4db"
+      "sha256": "a2db59c032d323f3a8ad2a98e11ecd71e559c8ad90a3d6a0c10ca618b95fd25d"
     },
     {
       "path": "LICENSE",
@@ -426,12 +426,12 @@
     {
       "path": "more-work.html",
       "bytes": 8086,
-      "sha256": "c6120322bcaba42e4b1f9351f9469cbd335dc0528144bcd56b1970555e50a801"
+      "sha256": "d3e8e620862e4fc1187922976ece67a7a5f2d3bdffe1a5e01f17d4efcafd883e"
     },
     {
       "path": "README.md",
       "bytes": 2250,
-      "sha256": "911b4e741cd858015ae78844791b2a27c35a32ba6aa2f84e905a2b07a5a03856"
+      "sha256": "34f687dd3bbe2587f411de228191eb1822063f674224cec56e1480238b4283bd"
     },
     {
       "path": "robots.txt",

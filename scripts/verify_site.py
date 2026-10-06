@@ -117,7 +117,7 @@ wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|alm
 
 # The project list is decided: three featured projects, then six supporting ones, in this order.
 # A case study that is not listed here, or a link to one, is a problem to fix before publishing.
-ORDER=('savebench','steno','epistemic-skills','fleet-orchestrator','neuraxic','krewcible','gridiron','enaction','poiesis')
+ORDER=('steno','savebench','epistemic-skills','fleet-orchestrator','neuraxic','krewcible','gridiron','enaction','poiesis')
 FEATURED=ORDER[:3]
 VOID={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 HEADINGS=('h1','h2','h3','h4','h5','h6')

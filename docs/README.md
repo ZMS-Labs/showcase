@@ -11,7 +11,7 @@ This folder is the published source of my site at <https://sternone.net/>. I'm a
 - [Work](https://sternone.net/more-work.html): every role and project with its status.
 - [About](https://sternone.net/about.html), including [how I work with AI tools](https://sternone.net/about.html#how-i-work).
 - [Sources and records](https://sternone.net/evidence.html): the status key and table, credits and licenses.
-- Case studies, in order: [SaveBench](https://sternone.net/case-studies/savebench/), [Steno](https://sternone.net/case-studies/steno/) (with its [drafting-check replay](https://sternone.net/case-studies/steno/recorded-checks/)), [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/), [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/), [Neuraxic](https://sternone.net/case-studies/neuraxic/), [Krewcible](https://sternone.net/case-studies/krewcible/), [Gridiron](https://sternone.net/case-studies/gridiron/), [Enaction](https://sternone.net/case-studies/enaction/) and [Poiesis](https://sternone.net/case-studies/poiesis/).
+- Case studies, in order: [Steno](https://sternone.net/case-studies/steno/) (with its [drafting-check replay](https://sternone.net/case-studies/steno/recorded-checks/)), [SaveBench](https://sternone.net/case-studies/savebench/), [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/), [Fleet Orchestrator](https://sternone.net/case-studies/fleet-orchestrator/), [Neuraxic](https://sternone.net/case-studies/neuraxic/), [Krewcible](https://sternone.net/case-studies/krewcible/), [Gridiron](https://sternone.net/case-studies/gridiron/), [Enaction](https://sternone.net/case-studies/enaction/) and [Poiesis](https://sternone.net/case-studies/poiesis/).
 
 ## Maintain
 
