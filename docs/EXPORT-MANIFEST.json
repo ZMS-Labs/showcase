@@ -15,8 +15,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 9915,
-      "sha256": "0cf0547c0c9986e61d3764bffcabdca96691717a97d6634c9012f3fae949d044"
+      "bytes": 10988,
+      "sha256": "9f89505c3b60ff1dfbb16e6fff875af1642af48149cd78b345a82a737cb18926"
     },
     {
       "path": "assets/about/zach-stern-276.jpg",
@@ -285,8 +285,8 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 22146,
-      "sha256": "7b8536cb00abc106eb846ea53b46db4df936647a3d824761e560f1607cd89151"
+      "bytes": 22220,
+      "sha256": "b30225260542a0381a96de426ddc7967d71a7f1d749761e4112b51fecf53ea1b"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -335,8 +335,8 @@
     },
     {
       "path": "case-studies/interleaf/index.html",
-      "bytes": 21526,
-      "sha256": "f2b7bae6a667f2d2666cd540492f189b279ad58d349cf8bfe061508311f44264"
+      "bytes": 21595,
+      "sha256": "04c10ccd9f33333da9173821fdf6cef38251023b005b5c3aec594524799e2189"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/case-data.js",
@@ -400,8 +400,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 26165,
-      "sha256": "6182ac4d731e489f2ee139e30a25c24de49dcaad56aec069c568be07045efb28"
+      "bytes": 26234,
+      "sha256": "ebb8b164463754d2af34dd47cf1356c60f7274f57e577bd06e2ac2fb60b0b388"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -469,6 +469,11 @@
       "sha256": "937eb5a79dbe59967a61cb831cb5e2005fc3e352ae9e70213e3a45c561518621"
     },
     {
+      "path": "how-my-use-of-ai-grew.html",
+      "bytes": 7428,
+      "sha256": "f6878057396cbff50d798cd27ddb1fbd465cc6972def05e3af9d0d2eeeddb438"
+    },
+    {
       "path": "index.html",
       "bytes": 22103,
       "sha256": "8b218bdc7027e4bf41e2a2cac3f8d8c312ed70e80b1be6bb8b04999025ee4f52"
@@ -505,8 +510,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 1638,
-      "sha256": "b171f7437e8cf3746f96f6af73e856a5b0356479b47859fa319d879802658f5f"
+      "bytes": 1739,
+      "sha256": "1de2941e57f692c25c0b9b6309276c5ecaa91fd97a4f98ad7a1304aa71d4ef5a"
     },
     {
       "path": "walkthroughs.js",
