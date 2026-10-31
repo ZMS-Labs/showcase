@@ -536,6 +536,7 @@ main:has(>.contact:last-child)+.footer .wrap{border-top:1px solid #34332f;paddin
   .header nav{gap:4px 18px;font-size:15px}
   .hero h1{line-height:.84}
   .big-number .figure-num{font-size:clamp(40px,13vw,64px)}
+  .big-number.wide .figure-num{font-size:clamp(36px,12.5vw,64px)}
   th,td{padding-right:10px}
 }
 

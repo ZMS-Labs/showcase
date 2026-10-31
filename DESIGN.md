@@ -1,6 +1,6 @@
 # Design record: sternone.net
 
-This file records how the site looks and reads, and why. Earlier design records (the September 2026 editorial site and the October product-scroll candidate) are in the Git history of this file.
+This file records how the site looks and reads, and why. The current look, "The Record," dates from October 31, 2026. Earlier design records (the September 2026 editorial site and the October product-scroll candidate) are in the Git history of this file.
 
 ## Who it's for and what it has to do
 
@@ -10,22 +10,24 @@ Professional work comes first: Dovenmuehle (in-house, 2017 to 2026), then Tishle
 
 ## Two settings, one system
 
-- **Paper** (`#f6f5f1`) with ink (`#121212`) carries the professional work. Secondary text is `#62615b` (5.6:1 on paper). The signal color `#b8461a` (4.9:1 on paper) marks focus, active states and misses.
+- **Paper** (`#f6f5f1`) with ink (`#121212`) carries the professional work. Secondary text is `#62615b` (5.6:1 on paper). The signal color `#b8461a` (4.9:1 on paper) marks focus, active states, misses, section labels and the key figure.
 - **Night** (`#0e1b21`) with `#f1efe8` text carries ZMS Labs work. The ZMS orange `#ffac70` (9.5:1 on night) is its accent.
 - Moving from paper to night tells the reader they've moved from employer work to independent projects. No other color carries meaning on its own; every state also has a word.
 
-Archivo is the only typeface, served locally as a Latin WOFF subset that keeps both of its axes (weight 100 to 900, width 62 to 125), with the unmodified TTF as the fallback. Width does the work a second family would: the name and headings run at 80 to 88 percent width, figures at 70 percent with tabular numerals, small labels at 115 percent in capitals. Body text is 17 to 19 pixels at a 64-character measure.
+Archivo is the only typeface, served locally as a Latin WOFF subset that keeps both of its axes (weight 100 to 900, width 62 to 125), with the unmodified TTF as the fallback. Width does the work a second family would: the name, the key figure and the contact line run at 62 percent width and weight 850; page and section headings at 64 to 72 percent and weight 800; figures at 62 to 70 percent with tabular numerals; small labels at 115 percent in capitals. Body text is 17 to 19 pixels at a 64-character measure.
 
-A small capital label sits above a heading only when it adds something the heading doesn't: the employer and dates, the ZMS Labs marker that separates independent work, a project's name and kind, a step's place in a story, or what a picture is. Labels that only name the section ("The record", "How it works") are left out.
+The look is a kept record: hairline rules, one heavy rule at the top of each block, square corners, and numbered items (the in-house work, the tools) marked in the signal color. Buttons are square, with labels in capitals.
+
+A small capital label sits above a heading only when it adds something the heading doesn't: the employer and dates, the ZMS Labs marker that separates independent work, a project's name and kind, a step's place in a story, or what a picture is. On the home page each section's label carries its place, § 01 to § 05. Labels that only name the section ("The record", "How it works") are left out.
 
 Product captures keep each product's own look and are never recolored. Every image, recording and share card carries a short label saying what it is (Prototype, Component study, AI-generated artwork and so on).
 
 ## Page anatomy
 
-- **Home:** name and one-sentence proposition; three facts (nearly 10 years in-house, 7 years at Tishler &amp; Wald, the $17,487,520.30 claim); the two roles side by side, Dovenmuehle first; the agreements story; the litigation case with its timeline; ZMS Labs on night with three featured projects (Interleaf, SaveBench, Epistemic Skills) and two unlinked project summaries; how I work with AI; contact.
-- **About:** the hero carries my photograph as a plate: a 4:5 print in true color with a hairline edge, hung top right beside the heading with the label "Photo" and the place, and the ledger under it. On narrow screens it follows the lead in reading order. The photo is cropped and resized only, never retouched. The crop leaves out the two people standing closest to me; the crowd behind stays as background, including one spectator seen from behind at lower left.
+- **Home:** the name set very large on two lines; the one line ("Commercial counsel and legal operations. Building at ZMS Labs.") shown once, as the lead, with the proposition under it; the three facts (nearly 10 years in-house, 7 years at Tishler &amp; Wald, the $17,487,520.30 claim) as a ledger to the right; the two roles side by side, Dovenmuehle first; the agreements story; the litigation case with the claim set full width and its timeline as one ruled row; ZMS Labs on night with three featured projects (Interleaf, SaveBench, Epistemic Skills) and the two unlinked project summaries as a two-column list; how I work with AI; contact as a full ink band that runs into the footer.
+- **About:** the hero carries my photograph as a plate: a 4:5 print in true color with a hairline edge, hung top right beside the heading with the label "Photo" and the place, and the ledger under it. On narrow screens it follows the lead in reading order. "How this grew" shows the dated records from 2022 to January 2026 as one ruled row, the same form as the litigation timeline. The photo is cropped and resized only, never retouched. The crop leaves out the two people standing closest to me; the crowd behind stays as background, including one spectator seen from behind at lower left.
 - **Professional pages** (`ear.html`): problem, my part, result, then sources. One sentence says what the sources establish and what is my own account.
-- **Case pages:** a night hero (crumb, the project's label, a plain h1, a lead that states the problem and what the project does, the status line, the strongest real exhibit), a story or walkthrough that a non-engineer can follow, product exhibits, "What went into this work", a short record (what ran and when, the source, what isn't shown yet), a closed "full record" disclosure holding the technical detail, limits, credits and JSON links, then the next project.
+- **Case pages:** a night hero stacked in one column (crumb, the project's label, a large plain h1, a lead that states the problem and what the project does, the status line, then the strongest real exhibit at full width), a story or walkthrough that a non-engineer can follow, product exhibits, "What went into this work", a short record (what ran and when, the source, what isn't shown yet), a closed "full record" disclosure holding the technical detail, limits, credits and JSON links, then the next project.
 - **Sources and records** (`evidence.html`): the status key, the project table, and credits and licenses.
 - **404:** self-contained, because GitHub Pages serves it at any depth.
 
@@ -50,7 +52,7 @@ Privacy and claims: the litigation client and the competing creditor are not nam
 - Titles read "Page · Zach Stern"; og:title matches the title and og:description matches the meta description. Every page has an og:image at 1200 by 630 and `summary_large_image`.
 - Status lines: `<p class="status"><a href="evidence.html#status"><b>Label</b></a> · one plain clause</p>`, with the label matching the Evidence table.
 - Retained case-study order: Interleaf, SaveBench, Epistemic Skills. On the home page these are `.home-project` features, followed by one unlinked line each for Fleet Orchestrator and Poiesis.
-- Header navigation: Experience, Work, About, LinkedIn. Footer: Experience, Work, About, How I work with AI tools, Sources and records, LinkedIn. LinkedIn is the only contact route.
+- The header shows the name only; the one line appears once, in each page's own opening. Header navigation: Experience, Work, About, LinkedIn. Footer: Experience, Work, About, How I work with AI tools, Sources and records, LinkedIn. LinkedIn is the only contact route.
 - Walkthroughs keep the `[data-walkthrough]` contract that `walkthroughs.js` and the verifier use. Galleries keep the `.design-view` contract that `site.js` uses.
 
 ## Share cards
