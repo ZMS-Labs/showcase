@@ -2,8 +2,7 @@
   "schema_version": 1,
   "status": "recorded_local_component_checks_passed",
   "recorded_at_utc": "2026-09-19T16:37:18.269910+00:00",
-  "source_revision": "aad014b54dfcb065995f3acf80db797d33b4651d",
-  "source_distribution": "Private Steno source. Source code is not included in this case-study package.",
+  "source_distribution": "Application source code is not included in this case-study package.",
   "checks": [
     "notice mechanics linkage",
     "liability/indemnity drafting pattern"
@@ -14,12 +13,8 @@
     "passed": 3,
     "failed": 0
   },
-  "input_sha256": "39c47a4c5cc0470a6822ee87c21543586e89a6f9e9294a5308cb4edb4ea6595c",
-  "raw_output_sha256": "a1270a86854ef1731246cb4d52bc5f471287fe5b5547ccb4a600ed1ee43ab26a",
-  "public_evidence_sha256": "fd547b56824b5b9787bc0ea4020bebd55ff1aee016fe1cb9c4fbf93abd1149c2",
-  "served_bytes_sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e",
-  "served_bytes_sha256_note": "Added 2026-09-22. SHA-256 of the bytes of evidence/recorded-checks.json exactly as this site serves them, with LF line endings and no conversion. The site's SHA256SUMS.txt lists the same value.",
-  "recorded_digests_note": "The three digests recorded on 2026-09-19 reproduce only after converting line endings to CRLF. public_evidence_sha256 covers the whole file. input_sha256 covers json.dumps(input, indent=2) plus a trailing newline, and raw_output_sha256 covers the recorded_output section serialized the same way.",
+  "served_bytes_sha256": "e97113dd20ebde5c2bc350b5a462c4a829ed082d3ec00f6d73c9c59e2e31885f",
+  "served_bytes_sha256_note": "SHA-256 of the current public presentation copy of evidence/recorded-checks.json, with LF line endings. The site checksum list has the same value. This digest describes the edited presentation copy, not the original recording bytes.",
   "inputs": "Newly authored, manually structured synthetic clauses. Both examples supply an empty edge list.",
   "important_behavior": "The revised notice is recognized through its textual reference to the Notices article. This is not evidence that a document parser extracted or resolved a graph.",
   "limitations": [
@@ -27,7 +22,8 @@
     "No DOCX ingestion, database, private legal corpus, model call, formal engine, live incident, or real agreement was used.",
     "No findings from these selected checks do not establish legal sufficiency, coverage, enforceability, actual liability, or release approval.",
     "The contract values and edits are illustrative, not recommended positions.",
-    "The interface is an editorial visualization, not the actual Steno UI.",
+    "The interface is an editorial visualization, not the actual Interleaf UI.",
     "A small isolated focused-test run emitted an existing configuration warning because optional plugin loading was disabled. The selected tests were synchronous and passed."
-  ]
+  ],
+  "presentation_note": "Current product labels are used; private source identifiers and original-file digests are omitted. The recorded timestamp, observed counts and limitations describe the original run. No product checks were rerun for this update."
 }

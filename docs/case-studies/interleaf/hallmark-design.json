@@ -1,10 +1,8 @@
 {
   "schema": "showcase-design-notes@1",
-  "project": "Steno",
+  "project": "Interleaf",
   "component": "Hallmark",
   "examined": "2026-09-19",
-  "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-  "provenance": "Original design brief from a dedicated Claude Design session, followed by the implemented current component and styles. Rendered with new synthetic props in an authored documentation layout.",
   "meanings": {
     "tablet": "Modeled substantive grade, expressed through material, faceting and rank.",
     "medallions": [
@@ -23,5 +21,6 @@
     "Cross-check shares extracted facts with the primary check; independence is not implied.",
     "Design state labels are original vocabulary, not legal conclusions.",
     "Current component artwork is separate from the archived workstation prototype and the drafting-check receipt."
-  ]
+  ],
+  "presentation_note": "Public presentation copy of design observations, using current product labels. The design meanings and limits are unchanged."
 }

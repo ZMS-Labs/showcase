@@ -12,19 +12,7 @@
         1100
       ],
       "kind": "Archived interface prototype rendered with newly authored fictional content",
-      "claim_boundary": "Design evidence; not current product operation or engine output",
-      "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
-    },
-    {
-      "path": "assets/steno/matter-map.png",
-      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465",
-      "bytes": 658350,
-      "dimensions": [
-        1760,
-        1100
-      ],
-      "kind": "Compatibility copy of the earlier render, under its working name Steno",
-      "claim_boundary": "Kept permanently at its original address so existing direct links keep working, including the ZMS Labs organization profile's earlier embed. It is the original Steno render, byte for byte; no page on this site uses it."
+      "claim_boundary": "Design evidence; not current product operation or engine output"
     },
     {
       "path": "assets/interleaf/workstation.png",
@@ -35,30 +23,7 @@
         1100
       ],
       "kind": "Archived interface prototype rendered with newly authored fictional content",
-      "claim_boundary": "Design evidence; not current product operation or engine output",
-      "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
-    },
-    {
-      "path": "assets/krewcible/workspace.png",
-      "sha256": "271b368e84c15dc1319565e50026a1054adb31eec1afd95307d6e06cc04ff0bc",
-      "bytes": 295800,
-      "dimensions": [
-        2400,
-        1685
-      ],
-      "kind": "Existing checkpoint-editor components rendered and exercised with synthetic state",
-      "claim_boundary": "Component interaction evidence; not full application, generation service or persistence validation"
-    },
-    {
-      "path": "assets/krewcible/comparison.png",
-      "sha256": "ad850c2bdb70e436aef0a5615b2a0e937bf8047926faba0501461347b30e7e0b",
-      "bytes": 270661,
-      "dimensions": [
-        2400,
-        1680
-      ],
-      "kind": "Existing checkpoint-editor components rendered and exercised with synthetic state",
-      "claim_boundary": "Component interaction evidence; not full application, generation service or persistence validation"
+      "claim_boundary": "Design evidence; not current product operation or engine output"
     },
     {
       "path": "assets/fonts/Archivo.ttf",
@@ -73,38 +38,6 @@
       "bytes": 110864,
       "kind": "Latin subset of the Archivo.ttf entry above, keeping both the weight and width axes, in WOFF format; loaded first, with Archivo.ttf as the fallback",
       "notice": "assets/fonts/OFL.txt"
-    },
-    {
-      "path": "downloads/gridiron-research-source.zip",
-      "sha256": "48f5573e460871d6eb144461b668422f7057fbdebcb0589cbbc69400dfd32658",
-      "bytes": 492351,
-      "kind": "Reviewed Gridiron research-source snapshot; exact archive copy",
-      "claim_boundary": "Synthetic replay; no live-game validation; see included source documentation and notices"
-    },
-    {
-      "path": "assets/illustrations/gridiron-event-to-commentary.png",
-      "sha256": "3b3809975733620f670bd82f802efee4e5af7d0f8fac80ec29e8b726e24cf435",
-      "bytes": 2069203,
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "kind": "AI-generated conceptual editorial illustration",
-      "source": "OpenAI built-in image generation; newly authored prompt; reviewed for semantic clarity",
-      "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result",
-      "visual_meaning": "Football observations pass through an event record before commentary"
-    },
-    {
-      "path": "assets/illustrations/gridiron-event-to-commentary.webp",
-      "sha256": "3331834c0f02ae7e11248d8ac71fe0ebd2ac42ad044421a3c62d8351121c9015",
-      "bytes": 100690,
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "kind": "WebP display copy re-encoded from the gridiron-event-to-commentary.png entry above; the PNG keeps the original Content Credentials",
-      "source": "Re-encoded from the listed PNG; same pixels within WebP compression",
-      "claim_boundary": "Illustrative explanation only; not product operation, recorded evidence or a measured result"
     },
     {
       "path": "assets/illustrations/epistemic-investigate-compare-verify.png",
@@ -142,69 +75,7 @@
       "duration_seconds": 37.32,
       "audio_streams": 0,
       "kind": "Authentic page-only interaction recording",
-      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict",
-      "rename_note": "Recorded again on 2026-10-05 with the same script and route after the displayed name changed from its working name Steno to Interleaf (sidebar wordmark set slightly smaller to fit). Frame diffs show the same states; step timings differ by under 0.4 seconds."
-    },
-    {
-      "path": "assets/krewcible/krewcible-walkthrough.webm",
-      "sha256": "85071f09d2109aebdc4da779354d1ac320d4f5fc5e11d06fdb0c8df74711a9b7",
-      "bytes": 2265343,
-      "dimensions": [
-        1600,
-        1140
-      ],
-      "duration_seconds": 36.44,
-      "audio_streams": 0,
-      "kind": "Authentic page-only interaction recording",
-      "claim_boundary": "Recorded interaction with existing checkpoint components and deterministic composition in an isolated synthetic study; no generation, backend or persistence"
-    },
-    {
-      "path": "assets/fleet-orchestrator/fleet-orchestrator-cockpit.png",
-      "sha256": "c0abb4942827ef3eb27777dd0150bfaf3a207fabf4764fa258fb950942702817",
-      "bytes": 777108,
-      "dimensions": [
-        1500,
-        1082
-      ],
-      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
-      "claim_boundary": "The existing Stratus home component with synthetic agents and work, in a labeled capture frame. The live indicator and counts are fixture state; no live connection or full application is shown. The proposals panel is an existing placeholder."
-    },
-    {
-      "path": "assets/fleet-orchestrator/fleet-orchestrator-roles.png",
-      "sha256": "a2cd264bb517ebc7425618afb445bef9332e43c0a16384731788eecb129bab54",
-      "bytes": 321033,
-      "dimensions": [
-        1600,
-        791
-      ],
-      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
-      "claim_boundary": "Twelve role bindings from the actual glyph renderer. Name and idle state stay fixed; the role selects silhouette and motif and also influences deterministic identity details. Reviewer and security reviewer share a shield silhouette with different motifs."
-    },
-    {
-      "path": "assets/fleet-orchestrator/fleet-orchestrator-states.png",
-      "sha256": "aab9a311896d85eb6041a64890f1db5b87755096a52a9e4ffa7654d1f75c998f",
-      "bytes": 323340,
-      "dimensions": [
-        1600,
-        791
-      ],
-      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
-      "claim_boundary": "One synthetic implementer across twelve canonical state inputs. The interior glyph is identical while the state ring changes. Enlarged specimens do not establish small-size perceptual legibility or motion quality."
-    },
-    {
-      "path": "assets/fleet-orchestrator/fleet-orchestrator-details.png",
-      "sha256": "27ecbba4905227af9854c9bb6af74fd6dbda32a6f8c84894c2f2ad28dc430c88",
-      "bytes": 255958,
-      "dimensions": [
-        1600,
-        687
-      ],
-      "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "169177603e1892447648cfe08882ef89cf9c8468",
-      "claim_boundary": "Source-rendered lineage and size examples: a shared palette, clone rotation and full-tier tallies. The two-dot badge is the explicit unknown-runtime fallback. These are documentation specimens, not a live roster."
+      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict"
     },
     {
       "path": "assets/interleaf/hallmark-fineness-ladder.png",
@@ -215,9 +86,7 @@
         900
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran.",
-      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
+      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran."
     },
     {
       "path": "assets/interleaf/hallmark-assay-vocabulary.png",
@@ -228,9 +97,7 @@
         923
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks.",
-      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
+      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks."
     },
     {
       "path": "assets/interleaf/hallmark-chip-and-detail.png",
@@ -241,71 +108,7 @@
         1076
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance.",
-      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
-    },
-    {
-      "path": "assets/neuraxic/library.png",
-      "sha256": "82a7285ff9c779ea25403b98b28ad3f3e625bb408f8b47e8fc733e8d66a7bc3b",
-      "bytes": 130673,
-      "kind": "Authentic current interface rendered with synthetic API fixtures",
-      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
-      "claim_boundary": "The existing reduced-motion Library view presents worlds as tomes. Covers are the application’s procedural SVG placeholders, not model-generated depictions. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
-      "dimensions": [
-        1180,
-        472
-      ]
-    },
-    {
-      "path": "assets/neuraxic/prose.png",
-      "sha256": "6e55e72e670932cf6abfde214149866756dc9171f450a0c6277f80c1faafdaea",
-      "bytes": 72608,
-      "kind": "Authentic current interface rendered with synthetic API fixtures",
-      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
-      "claim_boundary": "The same focus exposes prose and a margin of rule, name and quantity suggestions produced by existing deterministic extraction code. No offer was accepted. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
-      "dimensions": [
-        1180,
-        968
-      ]
-    },
-    {
-      "path": "assets/neuraxic/neighborhood.png",
-      "sha256": "1e98fcf7b83d679e5a4bcfe1f08ff6c6d91961d518c21b1bee0a8dec9838764d",
-      "bytes": 33511,
-      "kind": "Authentic current interface rendered with synthetic API fixtures",
-      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
-      "claim_boundary": "The Neighborhood facet arranges the supplied relationships deterministically around Brine Lantern. This is a fixture-fed UI view, not a detector result. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
-      "dimensions": [
-        1180,
-        731
-      ]
-    },
-    {
-      "path": "assets/neuraxic/claims.png",
-      "sha256": "974ec7bb5ce55fc1ca9c75e3ae4af649c2d12606675c164fdbff94a082fb8897",
-      "bytes": 36657,
-      "kind": "Authentic current interface rendered with synthetic API fixtures",
-      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
-      "claim_boundary": "Gold seals mark fixture claims labelled canon; the proposed exception retains its open seal and Seal control. No promotion or persistence was performed. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
-      "dimensions": [
-        1180,
-        581
-      ]
-    },
-    {
-      "path": "assets/neuraxic/neuraxic-navigation.webm",
-      "sha256": "4d8a732737d7b77fc8139ba1758be240e8d14d5dcdf0bc426d50b24d5b752d48",
-      "bytes": 1727042,
-      "kind": "Authentic page-only navigation recording",
-      "source_revision": "f29176bff407ec8fb8050c9ac580fd8b3dd920a5",
-      "claim_boundary": "A genuine navigation recording through the current Neuraxic React shell, using new synthetic API fixtures. Library, tome, claims, prose, neighborhood and history views; no save, promotion, detector or model call. Authentic current React components with synthetic API response fixtures, rendered locally; no live product backend or persisted author action.",
-      "dimensions": [
-        1440,
-        1000
-      ],
-      "duration_seconds": 34.48,
-      "audio_streams": 0
+      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance."
     },
     {
       "path": "assets/savebench/savebench-challenge.png",
@@ -383,13 +186,13 @@
     },
     {
       "path": "assets/og/og-default.png",
-      "sha256": "04a381bd78774de13cc24e15b12d650e49b04c4fb3a2b9064030697dafb17d89",
-      "bytes": 54662,
+      "sha256": "3318395f8e5a4ac6de402e06253cd002b0567fda2209c0750ebe9f2835f63eed",
+      "bytes": 46140,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: \"Zach Stern\" and \"Commercial lawyer\" on paper, with the home page's opening line and three facts (nearly 10 years in-house at Dovenmuehle, 7 years as an attorney at Tishler & Wald, sternone.net)",
+      "kind": "Link-preview share card: Zach Stern, commercial counsel and legal operations; building at ZMS Labs.",
       "source": "Rendered for the site from HTML using the site stylesheet and Archivo",
       "claim_boundary": "Identity card; the facts match the home page and About"
     },
@@ -419,85 +222,13 @@
     },
     {
       "path": "assets/og/og-epistemic-skills.png",
-      "sha256": "f1ad166b5dbc1041a28f960859c2b363f8658f554b9b3a51bfe67deb658808e6",
-      "bytes": 49821,
+      "sha256": "16466963908df1af23a5de186e4ed8d7a92791114dd0723bbcba090918c74b46",
+      "bytes": 55784,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Recorded check\", and a drawn panel of 28 squares with the recorded counts \"14 of 28 didn't match before the fix\" and \"28 of 28 matched after\" from case-studies/epistemic-skills/publication-case.json",
-      "source": "Rendered for the site from HTML using the site stylesheet",
-      "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
-    },
-    {
-      "path": "assets/og/og-fleet-orchestrator.png",
-      "sha256": "0fc3b7504aabbb8dfc683916e90e7cb3952e556781f34dfc0895c78e05330067",
-      "bytes": 215440,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Made-up agent identity\", and a crop of the assets/fleet-orchestrator/fleet-orchestrator-cockpit.png entry",
-      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
-      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
-    },
-    {
-      "path": "assets/og/og-neuraxic.png",
-      "sha256": "747b668738f7d4daeff1806b4baef5ccf1cffd33d870492323d62a135f3bc2b1",
-      "bytes": 64407,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Fictional content\", and a crop of the assets/neuraxic/neighborhood.png entry",
-      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
-      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
-    },
-    {
-      "path": "assets/og/og-krewcible.png",
-      "sha256": "e5c62011e8c85fd691e99fae598ecf8caaf4f66ba1547c50470effa407b29351",
-      "bytes": 99450,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Made-up choices\", and a crop of the assets/krewcible/workspace.png entry",
-      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
-      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
-    },
-    {
-      "path": "assets/og/og-gridiron.png",
-      "sha256": "24b235a7278b7d060146acfcff4b0948f67ffac2ca38a34b3b7eed68c36ef36b",
-      "bytes": 398928,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"AI-generated artwork\", and a crop of the assets/illustrations/gridiron-event-to-commentary.png entry",
-      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
-      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
-    },
-    {
-      "path": "assets/og/og-enaction.png",
-      "sha256": "91295a37307f9c04bbd0cafc2156bcb7b589e8a5ad046d319ed7db3b7cac5701",
-      "bytes": 55301,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Twelve tests, made-up scene\", and a drawn panel showing the chosen character receiving a turn's memories and the other participants receiving none, as the tests in case-studies/enaction/role-boundary-case.json describe",
-      "source": "Rendered for the site from HTML using the site stylesheet",
-      "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
-    },
-    {
-      "path": "assets/og/og-poiesis.png",
-      "sha256": "8d77dd5f8a210878b1bdbbb7087b6db11dfae80e9fbac3b0c1be43faf37f826d",
-      "bytes": 56224,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Eight tests, stand-in generator\", and a drawn panel with the \"Hello\" fingerprint example and the create, 24-hour expiry and purge steps from case-studies/poiesis/artifact-custody-case.json",
+      "kind": "Link-preview share card: Epistemic Skills, with the first publication of this showcase dated September 19, 2026, and the historical file check.",
       "source": "Rendered for the site from HTML using the site stylesheet",
       "claim_boundary": "Link preview only; the drawn panel restates the recorded result and is not a screenshot"
     },

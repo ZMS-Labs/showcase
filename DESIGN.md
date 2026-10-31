@@ -4,7 +4,7 @@ This file records how the site looks and reads, and why. Earlier design records 
 
 ## Who it's for and what it has to do
 
-The site introduces me to people who might hire me: in-house legal teams and the people they work with. The first screen has to establish a credible commercial lawyer with practical judgment who also improves how work gets done. Everything after that should give a reason to keep reading.
+The site introduces me to people who might hire me: in-house legal teams and the people they work with. The first screen has to establish commercial counsel with practical judgment and experience improving legal operations. Everything after that should give a reason to keep reading.
 
 Professional work comes first: Dovenmuehle (in-house, 2017 to 2026), then Tishler &amp; Wald (2007 to 2016). Independent work comes second, under the ZMS Labs name, and is kept visibly separate from employer work.
 
@@ -22,9 +22,9 @@ Product captures keep each product's own look and are never recolored. Every ima
 
 ## Page anatomy
 
-- **Home:** name and one-sentence proposition; three facts (nearly 10 years in-house, 7 years at Tishler &amp; Wald, the $17,487,520.30 claim); the two roles side by side, Dovenmuehle first; the agreements story; the litigation case with its timeline; ZMS Labs on night with three featured projects (Interleaf, SaveBench, Epistemic Skills) and the other six as an index; how I work with AI; contact.
+- **Home:** name and one-sentence proposition; three facts (nearly 10 years in-house, 7 years at Tishler &amp; Wald, the $17,487,520.30 claim); the two roles side by side, Dovenmuehle first; the agreements story; the litigation case with its timeline; ZMS Labs on night with three featured projects (Interleaf, SaveBench, Epistemic Skills) and two unlinked project summaries; how I work with AI; contact.
 - **About:** the hero carries my photograph as a plate: a 4:5 print in true color with a hairline edge, hung top right beside the heading with the label "Photo" and the place, and the ledger under it. On narrow screens it follows the lead in reading order. The photo is cropped and resized only, never retouched. The crop leaves out the two people standing closest to me; the crowd behind stays as background, including one spectator seen from behind at lower left.
-- **Professional pages** (`commercial-agreements.html`, `ear.html`): problem, my part, result, then sources. One sentence says what the sources establish and what is my own account.
+- **Professional pages** (`ear.html`): problem, my part, result, then sources. One sentence says what the sources establish and what is my own account.
 - **Case pages:** a night hero (crumb, the project's label, a plain h1, a lead that states the problem and what the project does, the status line, the strongest real exhibit), a story or walkthrough that a non-engineer can follow, product exhibits, "What went into this work", a short record (what ran and when, the source, what isn't shown yet), a closed "full record" disclosure holding the technical detail, limits, credits and JSON links, then the next project.
 - **Sources and records** (`evidence.html`): the status key, the project table, and credits and licenses.
 - **404:** self-contained, because GitHub Pages serves it at any depth.
@@ -49,7 +49,7 @@ Privacy and claims: the litigation client and the competing creditor are not nam
 
 - Titles read "Page · Zach Stern"; og:title matches the title and og:description matches the meta description. Every page has an og:image at 1200 by 630 and `summary_large_image`.
 - Status lines: `<p class="status"><a href="evidence.html#status"><b>Label</b></a> · one plain clause</p>`, with the label matching the Evidence table.
-- Project order everywhere: Interleaf, SaveBench, Epistemic Skills, Fleet Orchestrator, Neuraxic, Krewcible, Gridiron, Enaction, Poiesis. On the home page the first three are `.home-project` features and the rest are `.gallery-card` rows.
+- Retained case-study order: Interleaf, SaveBench, Epistemic Skills. On the home page these are `.home-project` features, followed by one unlinked line each for Fleet Orchestrator and Poiesis.
 - Header navigation: Experience, Work, About, LinkedIn. Footer: Experience, Work, About, How I work with AI tools, Sources and records, LinkedIn. LinkedIn is the only contact route.
 - Walkthroughs keep the `[data-walkthrough]` contract that `walkthroughs.js` and the verifier use. Galleries keep the `.design-view` contract that `site.js` uses.
 
