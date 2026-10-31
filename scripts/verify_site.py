@@ -131,9 +131,9 @@ dashes=hits(re.compile('['+''.join(map(chr,(0x2012,0x2013,0x2014,0x2015,0x2e3a,0
 # and employment claims. The approved LinkedIn contact route is allowed. License texts are quoted as issued, so they are skipped.
 wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|almost\s+all)\s+of\s+(?:the\s+|my\s+)?(?:code|coding|programming|building)\b|r\xe9sum|resum\xe9',re.I),skip=('LICENSE','OFL.txt'))
 
-# The project list is decided: three featured projects, then six supporting ones, in this order.
+# The retained case studies remain in this order; other home summaries have no links.
 # A case study that is not listed here, or a link to one, is a problem to fix before publishing.
-ORDER=('interleaf','savebench','epistemic-skills','fleet-orchestrator','neuraxic','krewcible','gridiron','enaction','poiesis')
+ORDER=('interleaf','savebench','epistemic-skills')
 FEATURED=ORDER[:3]
 VOID={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 HEADINGS=('h1','h2','h3','h4','h5','h6')
@@ -227,9 +227,6 @@ for index,name in enumerate(ORDER):
   contract.append(f'{rel}: explicit AI coding attribution is missing')
  for target in doc.targets():
   if project(target) and project(target) not in ORDER:contract.append(f'{rel}: invalid independent-case route')
-more=Tree(root/'more-work.html')
-listed=[n for n in unique(map(project,more.targets())) if n in ORDER]
-if listed!=sorted(listed,key=ORDER.index):contract.append(out_of_order('more-work.html',listed,sorted(listed,key=ORDER.index)))
 readme=repo/'README.md'
 if readme.is_file():
  items=re.findall(r'^[ \t]*[-*+][ \t]+\[[^\]]*\]\([^)\s]*?case-studies/([A-Za-z0-9_.-]+)/',readme.read_text(encoding='utf-8'),re.M)
@@ -480,7 +477,7 @@ with sync_playwright() as p:
     slug=PurePosixPath(asset['path']).parts[-2]
     assert slug not in recordings,('duplicate recording slug',slug)
     recordings[slug]=(asset['duration_seconds'],asset['dimensions'][0])
-  cue_pins={'interleaf':6,'krewcible':11,'neuraxic':7,'savebench':9}
+  cue_pins={'interleaf':6,'savebench':9}
   assert set(recordings)==set(cue_pins),{'missing_recordings':sorted(set(cue_pins)-set(recordings)),'unexpected_recordings':sorted(set(recordings)-set(cue_pins))}
   media_checks=0
   for slug,(expected_duration,expected_width) in recordings.items():

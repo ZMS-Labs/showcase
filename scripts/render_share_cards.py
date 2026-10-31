@@ -5,7 +5,10 @@ temporary HTML file inside docs/, served on loopback for the moment it is captur
 After rendering, update the matching entries in docs/assets/manifest.json and run
 scripts/site_manifest.py --write. Needs Python's playwright package and its Chromium browser.
 """
-import pathlib, shutil
+import pathlib, shutil, argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--only", nargs="+", help="Render only the named cards")
+args = parser.parse_args()
 from functools import partial
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from threading import Thread
@@ -47,10 +50,10 @@ stat = lambda big, small, first=False: (
     '<div style="font-size:17px;color:#62615b;margin-top:4px">' + small + '</div></div>')
 
 default = ('<div style="position:absolute;inset:64px 64px 56px;display:flex;flex-direction:column">'
-           '<span class="kicker" style="margin:0">Commercial lawyer</span>'
+           '<span class="kicker" style="margin:0">Commercial counsel and legal operations</span>'
            '<div style="font-size:176px;font-weight:680;font-stretch:80%;letter-spacing:-.045em;line-height:.86;margin-top:22px;margin-left:-6px">Zach Stern</div>'
            '<div style="font-size:32px;line-height:1.3;letter-spacing:-.012em;margin-top:30px;max-width:34ch;color:#2c2c29">'
-           'I turn contract terms into decisions a business can act on, and build the processes that make the next agreement easier.</div>'
+           'Building at ZMS Labs.</div>'
            '<div style="margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);border-top:1.5px solid #121212">'
            + stat('Nearly 10 years', 'In-house at Dovenmuehle', True)
            + stat('7 years', 'Attorney at Tishler &amp; Wald')
@@ -64,23 +67,9 @@ cards = {
     'og-savebench': project('SaveBench', 'Can an AI design a factory that actually runs?', 'Sample data', img('savebench/savebench-workspace.png')),
     'og-interleaf': project('Interleaf', 'A contract workstation that keeps the question next to the words.', 'Archived prototype, made-up content', img('interleaf/matter-map.png')),
     'og-epistemic-skills': project('Epistemic Skills', 'Teaching AI agents to check their own work.', 'Recorded check',
-        panel('<span class="kicker" style="margin:0">First publication · Sept 19, 2026</span>' + TILES +
+        panel('<span class="kicker" style="margin:0">First publication of this showcase · September 19, 2026</span>' + TILES +
               '<div class="tiles-caption" style="max-width:none;margin-top:6px"><span><b>14 of 28</b>didn&#39;t match before the fix</span><span><b>28 of 28</b>matched after</span></div>')),
-    'og-fleet-orchestrator': project('Fleet Orchestrator', 'A control room for a team of AI agents.', 'Made-up agent identity', img('fleet-orchestrator/fleet-orchestrator-cockpit.png')),
-    'og-neuraxic': project('Neuraxic', 'A writing studio where new story facts wait for your OK.', 'Fictional content', img('neuraxic/neighborhood.png')),
-    'og-krewcible': project('Krewcible', 'Character design from choices you can see and undo.', 'Made-up choices', img('krewcible/workspace.png')),
-    'og-gridiron': project('Gridiron', 'Football commentary that waits for the facts.', 'AI-generated artwork', img('illustrations/gridiron-event-to-commentary.png')),
-    'og-enaction': project('Enaction', 'Role-play where each character keeps its own memory.', 'Twelve tests, made-up scene',
-        panel('<span class="kicker" style="margin:0">One accepted turn · who gets the memory</span>'
-              + box('Guide', 'Chosen speaker · gets the new memories', True)
-              + box('Archivist', 'Another character · nothing added')
-              + box('You', 'The person playing · nothing added'))),
-    'og-poiesis': project('Poiesis', 'A shared AI service with receipts and expiry dates.', 'Eight tests, stand-in generator',
-        panel('<span class="kicker" style="margin:0">What came back, and for how long</span>'
-              '<div style="font-size:96px;font-weight:680;font-stretch:80%;letter-spacing:-.04em;line-height:1">Hello</div>'
-              '<div style="font-size:17px;color:#b4c2c5">5 bytes · fingerprint <code style="color:#f1efe8">185f8db3...6381969</code></div>'
-              '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:auto">'
-              + box('Created', 'expiry recorded') + box('24 hours', 'then refused') + box('Purged', 'cleanup call', True) + '</div>')),
+
 }
 
 class Quiet(SimpleHTTPRequestHandler):
@@ -94,6 +83,7 @@ try:
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1200, 'height': 630}, device_scale_factor=1)
         for name, html in cards.items():
+            if args.only and name not in args.only: continue
             (TMP / (name + '.html')).write_text(html, encoding='utf-8')
             pg.goto(base + name + '.html', wait_until='networkidle')
             pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(150)
