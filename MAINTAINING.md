@@ -89,3 +89,5 @@ Follow the [ZMS Labs documentation standard](https://github.com/ZMS-Labs/.github
 ## Review history
 
 September 2026: the first critical review of the whole site, by a separate AI agent. The pull requests that followed it record what changed.
+
+October 31, 2026: the site was redesigned in one pull request ("The Record"); DESIGN.md records the look.

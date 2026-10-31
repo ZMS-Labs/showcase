@@ -30,8 +30,8 @@
     },
     {
       "path": "about.html",
-      "bytes": 10257,
-      "sha256": "92670a8c2c29f55b87e396979d5d038a76536ef10a9fe5b8ac57b4ac29d949d0"
+      "bytes": 10959,
+      "sha256": "ad366ce9fb53476907c028351392a3677bccd8297c8b0e21256d6aa282971636"
     },
     {
       "path": "assets/about/zach-stern-276.jpg",
@@ -175,8 +175,8 @@
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
-      "bytes": 22308,
-      "sha256": "8528e58ec0a533b87acd5e03ddde112c619392d67c54cdeee299505082b6f3f1"
+      "bytes": 22254,
+      "sha256": "360892186dd0bc9ecd89c2323f9069c06d7f218f5073babd447b367536354a58"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -195,8 +195,8 @@
     },
     {
       "path": "case-studies/interleaf/index.html",
-      "bytes": 21546,
-      "sha256": "74f38c84575817c57d8a6d33d08a4906060b289f7ef88fd36f95f5f1bf7df36c"
+      "bytes": 21492,
+      "sha256": "7405877f172e05b8543788693b983403d8dbe686ace83a6bbaf629877754f8d8"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/case-data.js",
@@ -220,13 +220,13 @@
     },
     {
       "path": "case-studies/interleaf/recorded-checks/index.html",
-      "bytes": 17636,
-      "sha256": "c38997a3c98e7530e6b9c27de8e11b528da7acaecf954095b0335df299f99eaa"
+      "bytes": 17582,
+      "sha256": "c0e5984f35a11ff0ae88f513cd6abed0696a7f9095bad98440b36fd0b97dd1ff"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 26234,
-      "sha256": "ebb8b164463754d2af34dd47cf1356c60f7274f57e577bd06e2ac2fb60b0b388"
+      "bytes": 26224,
+      "sha256": "80df1eb30214ef2d9754e1f70fc4bd11e4fa1e06c3f8ff9c765554a65f1519c7"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -240,23 +240,23 @@
     },
     {
       "path": "ear.html",
-      "bytes": 5163,
-      "sha256": "1bd9c2645be417469502915e900b6499518a0d684e6642cd850e885e60821e68"
+      "bytes": 5109,
+      "sha256": "2b3e916ab77730f4d9fa4b99b50c83897238308c5e4c0e37e28e988f547e0986"
     },
     {
       "path": "evidence.html",
-      "bytes": 8930,
-      "sha256": "43cbaf44c22fc5af4f1c5533d2113838d5cbce96b3248172c0d138c8f1134295"
+      "bytes": 8876,
+      "sha256": "8d6ea47540b08ecb35e9c42560c8ecd7a752621e4eb8b1a661f65485cdf29c8a"
     },
     {
       "path": "how-my-use-of-ai-grew.html",
-      "bytes": 4832,
-      "sha256": "7fccfb40c2e74259f41baf93e9ca87ad2c990aab315e623b9429d1e06131ab4c"
+      "bytes": 4784,
+      "sha256": "817c628a16e48686fa3c4c7e8273f9d8b2629fb8c28b755933f899730471de66"
     },
     {
       "path": "index.html",
-      "bytes": 19775,
-      "sha256": "f24e1e7471199d3bcdbd63342e2cfbdf2b8aa6b920fb24d2ada7f716262b165c"
+      "bytes": 19867,
+      "sha256": "0304caf0637807b7f1a702734b43b79337df5985e60e6967b1cae44fc475ea10"
     },
     {
       "path": "more-work.html",
@@ -270,8 +270,8 @@
     },
     {
       "path": "site.css",
-      "bytes": 39961,
-      "sha256": "ed85de0deede27377aefa223265e5a7eb7eccf63e4705aab2103c52e97bf3ccb"
+      "bytes": 42477,
+      "sha256": "f83910e18a1ff92dda641502189ce4b4bc348027d46e196bf52db885af325a60"
     },
     {
       "path": "site.js",
@@ -281,7 +281,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 957,
-      "sha256": "8dd2e62a5058cebf59573fc136f1a10ae2c0792b1112b943951d0500e4459092"
+      "sha256": "1717599bde9e6ac4a1b6ee056fb83b883abdf3e7242ed6ee32511b3d761bac99"
     },
     {
       "path": "walkthroughs.js",
