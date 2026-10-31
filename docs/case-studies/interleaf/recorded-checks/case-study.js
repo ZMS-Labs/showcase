@@ -1,6 +1,6 @@
 'use strict';
 (() => {
-  const data = window.STENO_CASE_STUDY;
+  const data = window.INTERLEAF_CASE_STUDY;
   const clauses = document.getElementById('clauses');
   const findings = document.getElementById('findings');
   const selectors = [...document.querySelectorAll('[data-case]')];

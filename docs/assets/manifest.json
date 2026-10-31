@@ -12,19 +12,7 @@
         1100
       ],
       "kind": "Archived interface prototype rendered with newly authored fictional content",
-      "claim_boundary": "Design evidence; not current product operation or engine output",
-      "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
-    },
-    {
-      "path": "assets/steno/matter-map.png",
-      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465",
-      "bytes": 658350,
-      "dimensions": [
-        1760,
-        1100
-      ],
-      "kind": "Compatibility copy of the earlier render, under its working name Steno",
-      "claim_boundary": "Kept permanently at its original address so existing direct links keep working, including the ZMS Labs organization profile's earlier embed. It is the original Steno render, byte for byte; no page on this site uses it."
+      "claim_boundary": "Design evidence; not current product operation or engine output"
     },
     {
       "path": "assets/interleaf/workstation.png",
@@ -35,8 +23,7 @@
         1100
       ],
       "kind": "Archived interface prototype rendered with newly authored fictional content",
-      "claim_boundary": "Design evidence; not current product operation or engine output",
-      "rename_note": "Rendered again on 2026-10-05 from the archived prototype with the displayed name changed from its working name Steno to Interleaf; the longer sidebar wordmark is set slightly smaller to fit. Pixel diffs against the earlier render show no other change."
+      "claim_boundary": "Design evidence; not current product operation or engine output"
     },
     {
       "path": "assets/fonts/Archivo.ttf",
@@ -88,8 +75,7 @@
       "duration_seconds": 37.32,
       "audio_streams": 0,
       "kind": "Authentic page-only interaction recording",
-      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict",
-      "rename_note": "Recorded again on 2026-10-05 with the same script and route after the displayed name changed from its working name Steno to Interleaf (sidebar wordmark set slightly smaller to fit). Frame diffs show the same states; step timings differ by under 0.4 seconds."
+      "claim_boundary": "Recorded interaction with the archived interface prototype; fictional content, no engine or verdict"
     },
     {
       "path": "assets/interleaf/hallmark-fineness-ladder.png",
@@ -100,9 +86,7 @@
         900
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran.",
-      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
+      "claim_boundary": "Current Hallmark component artwork, rendered with synthetic display states. Increasing facet detail expresses the original grade vocabulary; uncovered sits outside the ladder. No contract was assessed and no verification engine ran."
     },
     {
       "path": "assets/interleaf/hallmark-assay-vocabulary.png",
@@ -113,9 +97,7 @@
         923
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks.",
-      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
+      "claim_boundary": "The grade stays gold as the evidence settings change. Engine, Cross-check, Exception and Authority are the original evidence categories. Populated marks here are illustrative inputs, not results of executed checks."
     },
     {
       "path": "assets/interleaf/hallmark-chip-and-detail.png",
@@ -126,9 +108,7 @@
         1076
       ],
       "kind": "Existing component artwork rendered with synthetic inputs in an authored documentation composition",
-      "source_revision": "30c5803a64595b756c251d089e14da3843189064",
-      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance.",
-      "rename_note": "Rendered again on 2026-10-05 with the displayed name changed from its working name Steno to Interleaf (the breadcrumb and, on the certificate, its heading). Pixel diffs against the earlier render show no other change."
+      "claim_boundary": "The same component family at row and detail scale, with synthetic metadata and verification pending. Assay Certificate is original product language; this specimen is not a certificate for a real document or legal assurance."
     },
     {
       "path": "assets/savebench/savebench-challenge.png",

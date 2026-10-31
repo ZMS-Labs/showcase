@@ -54,7 +54,6 @@ The browser check discovers every HTML page and renders it at 1440, 390 and 320 
 
 The Interleaf and SaveBench recordings capture the real interfaces (for Interleaf, the archived prototype) being operated with made-up content. They have native controls, no autoplay, text tracks and selectable transcripts. Do not describe them as live product operation. Record where new media came from, and inspect both pixels and metadata before replacing any of them. The Interleaf Hallmark galleries use current component artwork with made-up inputs; keep them distinct from archived prototypes, live connections, test runs and real assessments. The verifier checks every gallery as well as the product-specific checks it already had.
 
-Interleaf was called Steno while it was built; it was renamed on October 5, 2026 because Steno (steno.com) is an established legal-tech company. Its workspace images, recording and Hallmark boards were rendered again from the archived prototype's private renderers with only the displayed name changed; the private provenance note records the exact string changes and pixel diffs. Its JSON evidence records keep the original name, as dated records. The old addresses under `case-studies/steno/` are redirect pages; keep them so existing links work. Two kinds of file stay at the old addresses on purpose: byte-identical copies of the four JSON records under `case-studies/steno/` (the verifier checks they match the moved copies), so published evidence links keep working; and `assets/steno/matter-map.png`, the original render, kept permanently because direct links to it may exist beyond the ZMS Labs organization profile, which now uses `assets/interleaf/matter-map.png`.
 
 Run `python scripts/replay_manifest_case.py` in a full clone to reproduce the historical Epistemic Skills publication case. This uses public Git objects and requires no network or model. Its 28-file counts describe that historical publication.
 
@@ -85,7 +84,7 @@ The native organization profile lives in the public `.github` repository. It lin
 
 ## Visual documentation quality
 
-Follow the [ZMS Labs documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain) for changed visuals. Check labels, arrows, order, grouping and status against the source, and say whether a visual shows a concept, an implementation or an observation. Keep real demonstrations real, keep each product's own look, provide a text equivalent and record where each visual came from. Look at the result where it will actually appear, and note what you checked and what you could not. One review, plus rechecks of anything it affects, is enough.
+Follow the [ZMS Labs documentation standard](https://github.com/ZMS-Labs/.github/blob/main/docs/documentation-standard.md#use-visuals-to-explain) for changed visuals. Check labels, arrows, order, grouping and status against the source, and say whether a visual shows a concept, an implementation or an observation. Keep real demonstrations real, keep each product's own look, provide a text equivalent and record where each visual came from. Look at the result where it will actually appear, and note what you checked and what you could not. Review the result and recheck anything it affects.
 
 ## Review history
 

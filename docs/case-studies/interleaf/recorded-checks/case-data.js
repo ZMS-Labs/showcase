@@ -1,4 +1,4 @@
-window.STENO_CASE_STUDY = {
+window.INTERLEAF_CASE_STUDY = {
   "cases": [
     {
       "id": "before",

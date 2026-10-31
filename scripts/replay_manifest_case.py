@@ -26,6 +26,6 @@ for label, revision, expected in CASES:
     if len(different) != expected:
         raise SystemExit(f"Unexpected historical result at {revision}: {len(different)} differences")
     results.append({"stage": label, "commit": revision, "payload_files": len(manifest["files"]),
-                    "manifest_differences": len(different), "different_paths": different})
+                    "manifest_differences": len(different)})
 print(json.dumps({"scope": "Historical committed-file integrity; not a skill performance benchmark",
                   "results": results}, indent=2))

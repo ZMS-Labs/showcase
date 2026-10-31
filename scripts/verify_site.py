@@ -68,7 +68,7 @@ assert not missing,missing
 redirects=[path for path in pages if 'http-equiv="refresh"' in path.read_text(encoding='utf-8')]
 for path in redirects:
  found=re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',path.read_text(encoding='utf-8'))
- assert found and (path.parent/found.group(1)).resolve().is_file(),(str(path.relative_to(root)),'redirect target missing')
+ assert found and (path.parent/urlsplit(found.group(1)).path).resolve().is_file(),(str(path.relative_to(root)),'redirect target missing')
 pages=[path for path in pages if path not in redirects]
 moved={path.parent.name for path in redirects if path.parent.parent==root/'case-studies'}
 # Records published at a moved page's old address stay there, byte for byte the same as the moved copies.
@@ -457,10 +457,12 @@ with sync_playwright() as p:
  for scripts_on in (True,False):
   visit=browser.new_context(java_script_enabled=scripts_on,offline=not bool(args.base_url));page=visit.new_page()
   for path in redirects:
-   target=(path.parent/re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',path.read_text(encoding='utf-8')).group(1)).resolve().relative_to(root).as_posix()
-   page.goto(destination(path)+('#evidence' if scripts_on else ''))
+   redirect_url=urlsplit(re.search(r'http-equiv="refresh" content="0; url=([^"]+)"',path.read_text(encoding='utf-8')).group(1))
+   target=(path.parent/redirect_url.path).resolve().relative_to(root).as_posix()
+   page.goto(destination(path)+('#evidence' if scripts_on and not redirect_url.fragment else ''))
    page.wait_for_url(lambda url:unquote(urlsplit(url).path).endswith(target),timeout=10000)
-   if scripts_on:assert urlsplit(page.url).fragment=='evidence',(str(path.relative_to(root)),'the redirect drops the #section',page.url)
+   expected_fragment=redirect_url.fragment or ('evidence' if scripts_on else '')
+   if expected_fragment:assert urlsplit(page.url).fragment==expected_fragment,(str(path.relative_to(root)),'the redirect drops the #section',page.url)
    regression['redirect_checks']+=1
   visit.close()
  # Text tracks require HTTP; serve the static files temporarily for a same-origin media check.

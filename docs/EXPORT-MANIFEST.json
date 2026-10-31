@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 15632,
-      "sha256": "cebe6c58a523e888791f6cd63ac01b027331ab23489cb43d4152a24d27190baf"
+      "bytes": 13309,
+      "sha256": "5123a568597fcb12066be78910a283d0b042a9a72a66e0d4e8dd29893d25ed44"
     },
     {
       "path": "assets/og/og-default.png",
@@ -174,14 +174,9 @@
       "sha256": "600dfacfa70562bdf58a299c63856e190c19c068db93ac77ae5428abb3435817"
     },
     {
-      "path": "assets/steno/matter-map.png",
-      "bytes": 658350,
-      "sha256": "62d65760a8a3a77bad7af6e02501fbcadcf8a8e8a8ed5926e2af714dd0aa7465"
-    },
-    {
       "path": "case-studies/epistemic-skills/index.html",
       "bytes": 22308,
-      "sha256": "668c39d5ef7622bdd89c62827817b4dd0e0c9def5f15674276f5276ee0e8cf83"
+      "sha256": "8528e58ec0a533b87acd5e03ddde112c619392d67c54cdeee299505082b6f3f1"
     },
     {
       "path": "case-studies/epistemic-skills/publication-case.json",
@@ -190,48 +185,48 @@
     },
     {
       "path": "case-studies/interleaf/design-research.json",
-      "bytes": 3827,
-      "sha256": "787c3249df9d429500159a88b808c3a7e725ebd00a6434d27dc472eb6095db04"
+      "bytes": 3812,
+      "sha256": "58088f4e01d3666c7aa24c9dcc39704cdf87fcabc8dea9c2d1786c2b90a02117"
     },
     {
       "path": "case-studies/interleaf/hallmark-design.json",
-      "bytes": 1313,
-      "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
+      "bytes": 1193,
+      "sha256": "fcd051e730b0213ec871f1c924d480896fd289e7a9762e658fe7de4d2d68bb5e"
     },
     {
       "path": "case-studies/interleaf/index.html",
-      "bytes": 21671,
-      "sha256": "ac3b851ddee20d22a0344fe81fb782321a6fc63efac18a0d8f987e6bc0d9839b"
+      "bytes": 21546,
+      "sha256": "74f38c84575817c57d8a6d33d08a4906060b289f7ef88fd36f95f5f1bf7df36c"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/case-data.js",
-      "bytes": 4022,
-      "sha256": "e12f871c7e60f40f5538733f4322848becdd86e2c15ea7ebb3499f0eaed9562a"
+      "bytes": 4026,
+      "sha256": "9f2d1f32e095200cd7b38d3619ca1ec51c918f315fffa4954cde0d543b695afd"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/case-study.js",
-      "bytes": 3295,
-      "sha256": "0862935655e2babe80fe570cfe814f36aae927924e797b4d81d8d265944cdb07"
+      "bytes": 3299,
+      "sha256": "56d9a9301f39d3777dad07cb21d0213f42e787a27e02daab308d751575a8cafd"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/evidence/recorded-checks.json",
-      "bytes": 6207,
-      "sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e"
+      "bytes": 6250,
+      "sha256": "e97113dd20ebde5c2bc350b5a462c4a829ed082d3ec00f6d73c9c59e2e31885f"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/evidence/verification.json",
-      "bytes": 2454,
-      "sha256": "2f72e5881266820f202941f8cb847966cf33950e26d8ae276a78f3969e708ab3"
+      "bytes": 2077,
+      "sha256": "8d76df502f30c8e06f167d5c37f414aadb568b14f01839934885133743fef2b4"
     },
     {
       "path": "case-studies/interleaf/recorded-checks/index.html",
-      "bytes": 17564,
-      "sha256": "323a9125fd321aef5bb39b78c3d3862accf7b943318c818db088fd44f8bc31fd"
+      "bytes": 17636,
+      "sha256": "c38997a3c98e7530e6b9c27de8e11b528da7acaecf954095b0335df299f99eaa"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 26266,
-      "sha256": "46d30c63cc13d92708945ac6265a8df621f933eb458812d2a3ef4913f291c843"
+      "bytes": 26234,
+      "sha256": "ebb8b164463754d2af34dd47cf1356c60f7274f57e577bd06e2ac2fb60b0b388"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -242,36 +237,6 @@
       "path": "case-studies/savebench/measurement-case.json",
       "bytes": 13902,
       "sha256": "85400c77a8a437ccc29c73130e757086589b6c5ade9839ac23706db4e970b60e"
-    },
-    {
-      "path": "case-studies/steno/design-research.json",
-      "bytes": 3827,
-      "sha256": "787c3249df9d429500159a88b808c3a7e725ebd00a6434d27dc472eb6095db04"
-    },
-    {
-      "path": "case-studies/steno/hallmark-design.json",
-      "bytes": 1313,
-      "sha256": "df10742c158034fa6a5c1cfc865182d4c67b9b274d98cea8e9149e892f4bccdc"
-    },
-    {
-      "path": "case-studies/steno/index.html",
-      "bytes": 1622,
-      "sha256": "36868e70b925d22ffc788fc5216c54ec4d7bdec0241c4943fe009ed833aea738"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/evidence/recorded-checks.json",
-      "bytes": 6207,
-      "sha256": "546dbbe744468824a3df20d51322e294050a56ba2a507246340973185073038e"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/evidence/verification.json",
-      "bytes": 2454,
-      "sha256": "2f72e5881266820f202941f8cb847966cf33950e26d8ae276a78f3969e708ab3"
-    },
-    {
-      "path": "case-studies/steno/recorded-checks/index.html",
-      "bytes": 1690,
-      "sha256": "227bf0e96eaba520f20a3d44dbdfdc10aa2b8b042d8890b9c195b00012334393"
     },
     {
       "path": "ear.html",
@@ -292,6 +257,11 @@
       "path": "index.html",
       "bytes": 19775,
       "sha256": "f24e1e7471199d3bcdbd63342e2cfbdf2b8aa6b920fb24d2ada7f716262b165c"
+    },
+    {
+      "path": "more-work.html",
+      "bytes": 450,
+      "sha256": "3bdd17a4ed26dad360252fd98a8307442f113fd13bc28377e0edce9403dec80e"
     },
     {
       "path": "robots.txt",
