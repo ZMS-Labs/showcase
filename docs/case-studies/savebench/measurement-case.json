@@ -114,6 +114,10 @@
     {
       "date": "2026-09-23",
       "change": "Schema 2. Added date_basis, designer, measurement_conditions, depot_checkpoints, instrument_repair, miss_analysis, later_finding_warmup, earlier_passes_note, credits, later_summary, model_labels and sources, read from SaveBench's private records and the public upstream projects. Revised the fourth important limit to point to later_summary. No existing figure changed, and no game was rerun."
+    },
+    {
+      "date": "2026-11-17",
+      "change": "Added three later_summary entries for 1 to 17 November, a model label for DeepSeek V4 Flash and a sources entry for the November run records, read from SaveBench's private records. No existing figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -209,13 +213,32 @@
       "contestant": "Cursor's Auto setting. The records do not show which model it used.",
       "outcome": "No session passed. The outcomes on record, for the first and fourth sessions, were INCONCLUSIVE because the factory had not been left untouched long enough.",
       "limits": "The contestant's instructions in those sessions did not state the hands-off rule, and the required 600 game seconds was an unintended default. The next session, set up on 2026-09-23, states the rule and asks for 60 seconds; it had no recorded result as of 03:52 UTC that day."
+    },
+    {
+      "date": "2026-11-01",
+      "what": "Zach Stern widened the goal: an AI agent plays the game and builds the factory itself, by the game's own rules, from an empty world, observed and assessed as it goes. The test became a ladder of the game's own milestones."
+    },
+    {
+      "date": "2026-11-12",
+      "what": "A scripted run, not an AI model, climbed the first stretch of the ladder from an empty world: the parts for milestone 2-1 and for the Space Elevator, then 50 Smart Plating made by an Assembler and delivered.",
+      "contestant": "A fixed script. No model chose its moves.",
+      "outcome": "PASS. The game accepted the delivery and moved from its first phase to the next. Earlier scripted attempts failed and were kept as recorded.",
+      "limits": "The run declared three departures from normal play: a storage box for ore and ingots, 20 extra starting parts to pay for the box, and extra starting fuel. It shows the ladder can be climbed. It does not show that a model can climb it."
+    },
+    {
+      "dates": "2026-11-12 to 2026-11-17",
+      "what": "The first AI player on the ladder's first rung, milestone 1-1, choosing every move itself.",
+      "contestant": "DeepSeek V4 Flash (as configured).",
+      "outcome": "Five recorded runs, none earned. In the fifth, 14 of 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. That run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.",
+      "limits": "One model on one rung, with the seat's instructions and tools changing between runs, so this is not a score on a fixed instrument and not a ranking."
     }
   ],
   "model_labels": {
     "Claude Opus 4.7": "As configured in the 13 September comparisons, whose records carry the configured label only. As its runtime reported in the campaign: session records from 16 September on give the model as claude-opus-4-7 for the same contestant setup.",
     "GPT-5.5": "As configured: GPT-5.5 was the contestant's configured default model. No runtime report of the model was recorded.",
     "Cursor Auto": "Cursor chooses the model, and the records do not show which one it used.",
-    "9 September designer": "Not named; see designer.model_note."
+    "9 September designer": "Not named; see designer.model_note.",
+    "DeepSeek V4 Flash": "As configured: the seat's route named deepseek/deepseek-v4-flash, and the run records carry that label. No separate runtime report of the model was recorded."
   },
   "sources": {
     "note": "Commits in SaveBench's private repository. The 9 September measurement conditions come from that run's frozen task file, which is also private.",
@@ -247,6 +270,10 @@
       {
         "revision": "d858ad34baf7ccbd73ab78ecb08eb5197fdc337e",
         "covers": "19 to 23 September: the quota sessions and the next session's terms."
+      },
+      {
+        "revision": null,
+        "covers": "1 to 17 November: the goal change, the scripted ladder run and the five AI player runs. These run records are filed outside the repository's history, so no commit is given."
       }
     ]
   }
