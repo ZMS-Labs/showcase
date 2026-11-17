@@ -105,8 +105,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 30120,
-      "sha256": "cd8f2679985c20d742450d3feea34170b6bcaeeefa89f0e0c9ad0373a5daba03"
+      "bytes": 37655,
+      "sha256": "4ee5cbeae6b8ec78e51d13eef4331e2c04371be3b7e524b1c48752cfcb36dc02"
     },
     {
       "path": "assets/og/og-default.png",
@@ -160,8 +160,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 20043,
-      "sha256": "7ed30659da3f26ba83b10cb74cc6643dd06fce466aba652782e4f5e3a9234fdb"
+      "bytes": 41993,
+      "sha256": "fba0a10465da2ff08db184a97a97bce6cddc6da4fc0b64fba6801f0454073e31"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -170,8 +170,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/progress.css",
-      "bytes": 1936,
-      "sha256": "1ca1bc9e7b6146ed1b181d47d8dff42bfac30762a6d2ccf596920c90a604652b"
+      "bytes": 2292,
+      "sha256": "92cfa3ecc8d618e5bb3955691f301c312106507f1dcce47adb7e85b7f05984a0"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
@@ -329,9 +329,79 @@
       "sha256": "07bc1f0e982b18d3068aee5e846450c50ebca219ff22a72157c4ceae83a1c46e"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/ConstructorMk1.png",
+      "bytes": 29778,
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/IronIngot.png",
+      "bytes": 26375,
+      "sha256": "a927268148236a863c7baecd395b1137c37dc3831e1345732d3c144beebdd032"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/IronPlate.png",
+      "bytes": 24439,
+      "sha256": "b20d7a0dd6a250519abe00b84850ce4e928ce215a8b99b0dab1d5dc9202edae1"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/IronRod.png",
+      "bytes": 25838,
+      "sha256": "f4e90728bd307ab0e76b83add7dcb51527be68ec414ca886269e2f6864caaf19"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/MinerMk1.png",
+      "bytes": 23957,
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/OreIron.png",
+      "bytes": 33236,
+      "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-belt.jpg",
+      "bytes": 106669,
+      "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-elevator.jpg",
+      "bytes": 105745,
+      "sha256": "269195d5cf750a21810990a26152002cf2e2e771549754854515a8f154fb5449"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-miner.jpg",
+      "bytes": 30522,
+      "sha256": "a9507392b51e31ccc3ddcc82d3d8195e45c31e70f8dacd1e3f63524c6e9e6712"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-model.jpg",
+      "bytes": 126479,
+      "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/world.jpg",
+      "bytes": 575534,
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
+      "bytes": 5561,
+      "sha256": "88742df8f00cfd39dd30fc2fcaf9a909649d35220b997f641321b5394c47471f"
+    },
+    {
       "path": "assets/savebench/walkthrough/walkthrough.js",
-      "bytes": 68255,
-      "sha256": "47067bdd026ed459c41469868748aa80eb667214dbe46cf5b8545c55bdc16c9b"
+      "bytes": 68315,
+      "sha256": "86a320ed215f0594c07d92157e61c3e4d86ef513c2c6c749655b7ec4f72790d8"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
@@ -385,8 +455,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 49870,
-      "sha256": "6ec15c22ba015b9d28cd25759b11a049075bfa5dc49177f80a7b88d63f68a8ce"
+      "bytes": 62136,
+      "sha256": "9e7be71f5afd14662edc8153703ecac1de72dccd17632aff5dacc279ca6f1b49"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
