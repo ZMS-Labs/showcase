@@ -596,7 +596,7 @@ const CSS = `
 .sbw-bar button{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid #2c313a;background:#15171c;color:#f4f1ea;font:600 14px inherit;font-family:inherit;cursor:pointer}
 .sbw button:focus-visible,.sbw input:focus-visible{outline:2px solid #fa8c3c;outline-offset:2px}
 .sbw-scrub{flex:1;min-width:160px;min-height:36px;accent-color:#fa8c3c}
-.sbw-time{font:600 13px ui-monospace,Menlo,Consolas,monospace;color:#a9adb6;min-width:112px;text-align:right}
+.sbw-time{font:600 13px ui-monospace,Menlo,Consolas,monospace;color:#a9adb6;min-width:112px;text-align:right;white-space:nowrap;padding-right:6px}
 .sbw-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .sbw-chips button{min-height:36px;padding:0 10px;border-radius:8px;border:1px solid #2c313a;background:transparent;color:#a9adb6;font:500 12px ui-monospace,Menlo,Consolas,monospace;cursor:pointer}
 .sbw-chips button.on{color:#f4f1ea;border-color:#fa8c3c}
@@ -615,7 +615,7 @@ function mount(el, data, opts) {
   scrub.type = 'range'; scrub.min = 0; scrub.step = 0.01; scrub.value = 0; scrub.setAttribute('aria-label', 'Timeline');
   bar.append(bPlay, bRe, bSnd, scrub, time); ui.append(bar, chips); el.append(cv, ui);
   const x = cv.getContext('2d'), IM = {};
-  let eng = null, T = 0, playing = false, last = 0, ac = null, sound = true, dead = false, started = false; let raf = 0;
+  let raf = 0, eng = null, T = 0, playing = false, last = 0, ac = null, sound = true, dead = false, started = false;
   const poster = data.poster || 0;
   function draw() { if (eng) eng.frame(started ? T : poster); }
   function stopAudio() { if (ac) { try { ac.close(); } catch (e) {} ac = null; } }
@@ -623,7 +623,7 @@ function mount(el, data, opts) {
   function sync() { if (!eng) return; scrub.value = T; time.textContent = `${T.toFixed(1)} s / ${eng.dur.toFixed(1)} s`; bPlay.textContent = playing ? 'Pause' : 'Play'; const cs = [...chips.children]; cs.forEach((b, i) => b.classList.toggle('on', started && T >= +b.dataset.t && (i === cs.length - 1 || T < +cs[i + 1].dataset.t))); }
   function tick(ts) { if (!playing || dead) return; const dt = (ts - last) / 1000; last = ts; T = Math.min(eng.dur, T + dt); draw(); sync(); if (T >= eng.dur) { playing = false; stopAudio(); sync(); return; } raf = requestAnimationFrame(tick); }
   function play() { if (!eng) return; if (T >= eng.dur) T = 0; started = true; playing = true; last = performance.now(); startAudio(); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); sync(); }
-  function pause() { playing = false; stopAudio(); sync(); }
+  function pause() { playing = false; cancelAnimationFrame(raf); stopAudio(); sync(); }
   function seek(t) { if (!eng) return; started = true; T = clamp(t, 0, eng.dur); draw(); if (playing) startAudio(); sync(); }
   bPlay.onclick = () => playing ? pause() : play();
   bRe.onclick = () => { T = 0; play(); };
