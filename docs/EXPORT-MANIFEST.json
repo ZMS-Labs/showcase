@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 41748,
-      "sha256": "539c78a6734dd076a432e0ea4f2cc638b90224147e4c38f9296d474d8f112d54"
+      "bytes": 44052,
+      "sha256": "6167536ddfe84e75f4c22c58e37d6377076df84b8e9a69060dd2d6b301f32520"
     },
     {
       "path": "assets/og/og-default.png",
@@ -169,6 +169,16 @@
       "sha256": "f3bc567b3020d6135c518ef109587ca93c1d25af5127fa7effeb1b1ab8dbf9b4"
     },
     {
+      "path": "assets/savebench/film/opus-milestone-1-3-poster.jpg",
+      "bytes": 199789,
+      "sha256": "0634523502912b43c0306c24ed7c8e0caa29bda2c1648d1ee030f38010a16d82"
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-3.mp4",
+      "bytes": 18471312,
+      "sha256": "2571777fe4155f679f614314d437dc5b6035a6a5410cf9fac36bb164217c43ae"
+    },
+    {
       "path": "assets/savebench/film/sol-milestone-1-1-poster.jpg",
       "bytes": 199670,
       "sha256": "0d1772953a094f5f7ef26aa6bb51a47fc7af9ca1836dea81b8626fbf9057d024"
@@ -177,6 +187,16 @@
       "path": "assets/savebench/film/sol-milestone-1-1.mp4",
       "bytes": 16252244,
       "sha256": "04ada14881536cc2b946cb9edbf1ca8634f27e87456f9e01ea68fc1524c9acf3"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-2-poster.jpg",
+      "bytes": 190777,
+      "sha256": "342d88851c7c487f6d44eeb35c15bc9e3ee29a89f6cc27dcc08436c4083f2682"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-2.mp4",
+      "bytes": 18355356,
+      "sha256": "653c716a0127fed592de03cbc3ade13deb65fe8d2b264226487cd171ed540b19"
     },
     {
       "path": "assets/savebench/savebench-challenge.png",
@@ -510,8 +530,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 170718,
-      "sha256": "a6d3d6956eebb7805ddcdb50dbf06b79cbbb83d65acc604cf6cf8ed3f021fb63"
+      "bytes": 172993,
+      "sha256": "5c39668175dd3368cca358b76c50c988f6921b7f29781b4234d04325ae8be892"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
