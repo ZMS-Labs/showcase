@@ -299,6 +299,28 @@
       "claim_boundary": "Shown on the SaveBench case study beside the November 16 model run. It illustrates the factory; it is not a measurement record."
     },
     {
+      "path": "assets/savebench/film/opus-milestone-1-2.mp4",
+      "sha256": "f3bc567b3020d6135c518ef109587ca93c1d25af5127fa7effeb1b1ab8dbf9b4",
+      "bytes": 15847978,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Film from the game Satisfactory (game camera, 80 seconds, silent): the factory built by Claude Opus 5.5 for milestone 1-2. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Shown on the SaveBench case study beside the November 17 model runs. It illustrates the factory; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-2-poster.jpg",
+      "sha256": "befc209ae1c283be77ae261838d114e9507b3a27f7d385797d6be2a1655f3cee",
+      "bytes": 191435,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (film frame): a wide view from the same film. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Shown on the SaveBench case study beside the November 17 model runs. It illustrates the factory; it is not a measurement record."
+    },
+    {
       "path": "assets/savebench/film/sol-milestone-1-1.mp4",
       "sha256": "04ada14881536cc2b946cb9edbf1ca8634f27e87456f9e01ea68fc1524c9acf3",
       "bytes": 16252244,
