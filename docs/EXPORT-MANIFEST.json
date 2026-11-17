@@ -530,8 +530,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 172993,
-      "sha256": "5c39668175dd3368cca358b76c50c988f6921b7f29781b4234d04325ae8be892"
+      "bytes": 211927,
+      "sha256": "3fb0cf3eab6b1c3b2db38ba3d10675257dd6d7cfaac5fdc7d911a920d9269e65"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -540,8 +540,8 @@
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
-      "bytes": 28039,
-      "sha256": "ac7145bad472d8121e66e28ff88bc1b45bef352c69b6f9dbd895f198558b446f"
+      "bytes": 29382,
+      "sha256": "dcc167c4d32a3c56815269695c47346ae2418e4b69f0623889ff6f15a674e57d"
     },
     {
       "path": "ear.html",
@@ -560,8 +560,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20208,
-      "sha256": "c1b6d94186b0d393fc4f3c0934e93ff794a597475932609d9f53534803543712"
+      "bytes": 20257,
+      "sha256": "1e1c7cf34b8383f768597d8902cc1d3f5861467562d45c0eb595d6d5c66754f6"
     },
     {
       "path": "more-work.html",

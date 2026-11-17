@@ -142,6 +142,10 @@
     {
       "date": "2026-11-17",
       "change": "Added to the limits of the three 17 November model runs on milestones 1-2 and 1-3 that their machines stood on uneven ground, read from the game's build replies in the run records. No figure changed."
+    },
+    {
+      "date": "2026-11-17",
+      "change": "Added a later_summary entry for the GPT-6.1 Sol run on milestone 1-3, which was not earned, read from the run record. No existing figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -311,6 +315,13 @@
       "contestant": "Claude Opus 5.5 (as configured).",
       "outcome": "PASS by the test's rule. The game accepted the payment, and the run record marks it fully earned. Machines the model built made 134 Iron Plate (100 needed), 356 Screws (300 needed) and 336 Wire (300 needed), and no machine was fed by hand. Three Miner Mk1s, seven belts and four storage boxes stood at the end. 32 model replies, 147 moves, 1.43 US dollars by the test gateway's count.",
       "limits": "One run, not repeated, started from an empty world; it does not continue the earlier milestone's world. The model acted through the test's direct building tools, not the fuller command set a contestant will use later. The first payment was refused 68 Iron Plate short, because plates the machines had made were spent on belts. The model then made 72 Iron Plate by hand at the bench, which the record marks as not counted as earned, and paid. The test credits the milestone because the machines made more than the cost and its rule lets hand made items pay for buildings; physically, most of the plates handed in were made by hand. Other declared hand steps: 25 iron ore and 30 copper ore mined by hand to clear nodes; burner fuel put in by hand; finished parts carried by hand to pay, 28 of the Iron Plate straight from a Constructor's output. Two moves were refused, 13 failed, and 28 further moves were not run because an earlier move in the same reply failed. The machines were not on level ground: the test's building tool placed some on rocks and cliff faces, tens of metres above or below their neighbours, and reported the asked height to the model, not the built one. The game accepted the belts between them."
+    },
+    {
+      "date": "2026-11-17",
+      "what": "Milestone 1-3 tried from an empty world by a second AI model that chose every move, and not earned.",
+      "contestant": "GPT-6.1 Sol (as configured).",
+      "outcome": "FAIL. The 60 minute limit ran out and nothing was paid. Machines the model built made 194 Iron Plate (100 needed), 663 Wire (300 needed) and 140 Screws (300 needed), and no machine was fed by hand. 97 model replies, one move each, 0.94 US dollars by the test gateway's count.",
+      "limits": "One run, not repeated, started from an empty world. The model acted through the test's direct building tools, not the fuller command set a contestant will use later. It set a machine to make Screws only at reply 72 of 97. Before that three belts were refused as too steep and one as unaffordable, and one move was refused. Declared hand steps: 26 copper ore and 22 iron ore mined by hand to clear nodes; burner fuel put in by hand; parts carried by hand. The prices behind the dollar figure have not been checked against the provider. The machines were not on level ground, as in the other 17 November model runs."
     }
   ],
   "model_labels": {
