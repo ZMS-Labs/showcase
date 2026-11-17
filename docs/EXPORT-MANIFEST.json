@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 39366,
-      "sha256": "30d0587979f048e323855f369cfcfc367d104ce58380669fa9c0fc6b1ece7d1e"
+      "bytes": 39478,
+      "sha256": "70e441549437e5b959099566916f16d373c217494bcb1615e780d0ec5aa13f65"
     },
     {
       "path": "assets/og/og-default.png",
@@ -140,8 +140,8 @@
     },
     {
       "path": "assets/og/og-savebench.png",
-      "bytes": 116456,
-      "sha256": "68a294b789adbfe967e365e012003a8820afba9171fa590ca18ab0ab582e807e"
+      "bytes": 574660,
+      "sha256": "e229fc612758f416b6174e84f0d225f330635ce85cb6962a7e1b6041d37b563f"
     },
     {
       "path": "assets/savebench/film/film.js",
@@ -195,8 +195,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 47402,
-      "sha256": "3c295e899d42a1ea70c33e6de91ac854eaefae4a1cac284f27fe446c1e27eb6f"
+      "bytes": 47426,
+      "sha256": "7ba4c5b181f82b9a4e9d8a0e1cc3f701af35292a8989944368e5b74710be5c84"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -430,8 +430,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 6945,
-      "sha256": "61138575f98e31af72b439a439134192bb6f1b30f3216206aa34562f4652d953"
+      "bytes": 6957,
+      "sha256": "eefd7c5d03433f9c53bcbed76770ce479b03dec77523ce407a6e12958fd0da68"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -490,8 +490,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 68725,
-      "sha256": "46c3716efbaaff02adb8ec5f331d80f6537972e7080c1a59915c137e64250820"
+      "bytes": 71271,
+      "sha256": "a5c322716c5f993d1fe8175437965223da352ed1f525c9c243ea87aa92145758"
     },
     {
       "path": "case-studies/savebench/interface-study.json",

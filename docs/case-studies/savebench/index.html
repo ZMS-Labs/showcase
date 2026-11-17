@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SaveBench · Zach Stern</title>
-<meta name="description" content="AI models design factories in the game Satisfactory, and the running game measures what they deliver. The test checks its own measuring tool first, keeps failed runs on the record, and changed when its rules rewarded the wrong thing.">
+<meta name="description" content="SaveBench asks whether an AI can build a working factory in the game Satisfactory, with the running game as the judge. It checks its own measuring tool first, keeps failed runs on the record, and reports what scripts and AI models have each earned.">
 <link rel="canonical" href="https://sternone.net/case-studies/savebench/">
 <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/Archivo-latin.woff" as="font" type="font/woff" crossorigin>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Zach Stern">
 <meta property="og:title" content="SaveBench · Zach Stern">
-<meta property="og:description" content="AI models design factories in the game Satisfactory, and the running game measures what they deliver. The test checks its own measuring tool first, keeps failed runs on the record, and changed when its rules rewarded the wrong thing.">
+<meta property="og:description" content="SaveBench asks whether an AI can build a working factory in the game Satisfactory, with the running game as the judge. It checks its own measuring tool first, keeps failed runs on the record, and reports what scripts and AI models have each earned.">
 <meta property="og:url" content="https://sternone.net/case-studies/savebench/">
 <meta property="og:image" content="https://sternone.net/assets/og/og-savebench.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SaveBench prototype workspace with made-up sample data.">
+<meta property="og:image:alt" content="SaveBench: an aerial game view of the small factory an AI model built, with miners, belts and machines in a rocky basin.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0e1b21">
 <link rel="stylesheet" href="../../site.css">
@@ -73,10 +73,10 @@
     </figure>
     <h3 class="sbp-h">Where it stands, as of November 17, 2026</h3>
     <dl class="sbp-now">
-      <div><dt>Live game mod</dt><dd>0.10.19, live since Nov 16, 7:08 PM CST (Nov 17, 01:08 UTC). Verified</dd></div>
+      <div><dt>Live game mod</dt><dd>0.10.20, live on the first server since Nov 17, 12:03 AM CST (06:03 UTC). Its three fixes are not yet checked in the game. Verified</dd></div>
       <div><dt>Best AI model result</dt><dd>Claude Opus 5.5 earned milestone 1-1 from a blank world on Nov 16, 11:48 PM CST, in 10 replies for 35 cents: 128 Iron Plate, 184 Iron Rod and 248 Concrete made by machines, no machine fed by hand. Declared hand steps: clearing two nodes, burner fuel, carrying finished parts to pay. One run, not repeated. Verified</dd></div>
       <div><dt>Best script factory</dt><dd>Run BQ, Nov 16: milestones 1-2 and 1-1 earned in one world from Miner Mk1s and belts, burner fed by belt, 142 checks of 142. Verified</dd></div>
-      <div><dt>Not done yet</dt><dd>The AI result has not been repeated and no AI has earned milestone 1-2. Doubling a factory for milestone 1-3 failed at the power wires. No vehicle has carried cargo and no train has run. Open</dd></div>
+      <div><dt>Not done yet</dt><dd>The AI result has not been repeated and no AI has earned milestone 1-2. Doubling a factory for milestone 1-3 stopped for lack of Cable. No vehicle has carried cargo and no train has run. Open</dd></div>
     </dl>
     <h3 class="sbp-h">Every version, newest first</h3>
     <ol class="sbp-versions" reversed>
@@ -97,7 +97,7 @@
             <li><strong>1:28</strong>: Four stills filmed in the real game. November 9: a smelter feeding a constructor by belt, built by script. November 12: the Space Elevator over the base that earned phase one, by script. November 12: a smelter and constructors that DeepSeek placed by itself. November 14: a Miner Mk1 on an iron node, belted to a smelter, built by DeepSeek.</li>
             <li><strong>1:36</strong>: The scoreboard. Script: milestone 1-1 on November 14 with every part from miners by belt; milestone 1-2 on November 16 the same way, with a copper Wire line; and both milestones again in one world on November 16 with the burner fed by belt, 142 checks of 142. AI models: DeepSeek run 4 on November 14 built a miner line but never powered it; DeepSeek run 5 on November 16 built one miner and one belt and lost 14 of 30 replies to thinking; Claude Opus 5.5 on November 16 earned milestone 1-1 with every part made by machines. All six are verified from run records. An AI model has earned its first milestone, in one run that has not been repeated yet.</li>
             <li><strong>1:44</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12 and 13: Space Elevator phase one, a Miner Mk1 feeding a belt, then 300 plates by belt. November 14: milestone 1-1 by a real factory and the first copper Wire. November 16: milestone 1-2, a burner fed by belt, and an AI model earns milestone 1-1. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 38 of 52 on November 14 and 42 of 52 on November 16. The last two counts are a work thread&#x27;s own and were not read from a file.</li>
-            <li><strong>1:52</strong>: What is still ahead. A script run earned milestones 1-2 and 1-1 in one world, but doubling its iron line for milestone 1-3 stopped when the game refused the new power wires. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. Claude Opus 5.5 earned milestone 1-1 once; next it has to repeat that, belt into the bank, feed the burner by belt, and go on to milestone 1-2. Trains, Hypertubes and overclocking were tried for the first time on November 16 and do not work yet.</li>
+            <li><strong>1:52</strong>: What is still ahead. A script run earned milestones 1-2 and 1-1 in one world, but doubling its iron line for milestone 1-3 stopped because the bank had no Cable for the new power lines. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. Claude Opus 5.5 earned milestone 1-1 once; next it has to repeat that, belt into the bank, feed the burner by belt, and go on to milestone 1-2. Trains, Hypertubes and overclocking were tried for the first time on November 16 and do not work yet.</li>
             <li><strong>2:00</strong>: The diagrams are drawn from run records. The stills are real game footage. On November 16 an AI model, Claude Opus 5.5, earned milestone 1-1 in one run that has not been repeated yet. Satisfactory imagery is the property of Coffee Stain Studios.</li>
           </ol>
         </details>
@@ -144,11 +144,24 @@
       </li>
     </ol>
     <h3 class="sbp-h">Results, day by day</h3>
-    <p class="fine" style="max-width:72ch">Game results logged from November 12, 2026 to November 16, 2026, newest first. Verified means the line was read from a run record when it was written. Unverified means it was reported by the work and not read again. Failed runs are kept. Later results join this log at its next update.</p>
+    <p class="fine" style="max-width:72ch">Game results logged from November 12, 2026 to November 17, 2026, newest first. Verified means the line was read from a run record when it was written. Unverified means it was reported by the work and not read again. Failed runs are kept. Later results join this log at its next update.</p>
     <div class="sbp-days">
       <details class="sbp-day">
+        <summary><time datetime="2026-11-17">November 17, 2026</time> · 7 results</summary>
+        <p>A quiet night after the first AI milestone. Mod 0.10.20 went live just after midnight and the second game server came back on it, but nothing has run in the game since 11:49 PM CST on November 16. This entry covers midnight to 7:48 AM CST.</p>
+        <ul>
+          <li><span class="label">Verified</span><div>Mod 0.10.20 is live on the first game server. It carries three fixes: overclocking above 100%, the Hypertube entrance, and joining rail to a station platform. None of the three has been checked in the game yet.<small>Nov 17, 06:03 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>The second game server was restarted on mod 0.10.20 and reported ready at 12:18 AM CST.<small>Nov 17, 06:12 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Why run BQ&#x27;s extra stage stopped: each new power line costs one Cable and the bank held none. It was not a placement fault. A player would craft Cable from Wire first; the bank held 64 Wire.</div></li>
+          <li><span class="label">Unverified</span><div>The next script run, BR, is written and tested offline (102 tests passed). It continues from BQ&#x27;s saved world, crafts Cable, finishes the doubled iron line, then goes for milestone 1-3 and milestone 2-1. Milestone 2-2 has been added as a later extra. Not run yet.</div></li>
+          <li><span class="label">Unverified</span><div>The GPT-6.1 Sol player is installed as a second AI model, on a budget of five dollars a day. It has not played yet.<small>Nov 17, 06:00 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A tracing tool for the AI models&#x27; calls (Langfuse, internal only) was merged. Whether it is up and running has not been observed.<small>Nov 17, 06:38 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>The public SaveBench pages on sternone.net were updated twice overnight with this log and the video, including the Claude Opus 5.5 result and a film of that run.</div></li>
+        </ul>
+      </details>
+      <details class="sbp-day">
         <summary><time datetime="2026-11-16">November 16, 2026</time> · 16 results</summary>
-        <p>Work resumed at about 5:00 PM CST after two days stopped, and the evening was the busiest yet. A script earned milestone 1-2 with a copper Wire line, a burner ran on belt-fed fuel with no hand refuel, mod 0.10.19 went live and a second game server was added. DeepSeek&#x27;s fifth run did not finish. Trains, Hypertubes and overclocking above 100% were tried for the first time and do not work yet. Lines are in time order.</p>
+        <p>Work resumed at about 5:00 PM CST after two days stopped, and the evening was the busiest yet. A script earned milestone 1-2 with a copper Wire line, a burner ran on belt-fed fuel with no hand refuel, mod 0.10.19 went live and a second game server was added. DeepSeek&#x27;s fifth run did not finish. Late in the evening one script run earned both milestones in one world, and then an AI model, Claude Opus 5.5, earned milestone 1-1: the first milestone earned by an AI. Trains, Hypertubes and overclocking above 100% were tried for the first time and do not work yet. Lines are in time order.</p>
         <ul>
           <li><span class="label">Verified</span><div>Run BO passed, 28 checks of 28: a burner ran on fuel that came to it by belt from a container, with no hand refuel. 64 Iron Plate (60 wanted) reached the bank by belt. This closes the hand-refuel gap and is the first live use of the put-into-storage step.<small>Nov 16, 23:14 UTC</small></div></li>
           <li><span class="label">Verified</span><div>Run BP passed, 52 checks of 52: milestone 1-2 was earned by a real factory. A copper line at the copper node made 304 Wire (300 wanted) and an iron line made 196 Iron Plate (190 wanted) and 170 Iron Rod (170 wanted), all by belt from Miner Mk1s. The milestone took 150 Iron Plate, 150 Iron Rod and 300 Wire and was paid and launched. The declared hand moves were clearing each node once, starting fuel, 48 early Wire carried to pay for the iron line, and the finished Wire carried to the bank once. A scripted run, not an AI model.<small>Nov 16, 23:27 UTC</small></div></li>
@@ -319,7 +332,7 @@
       <li><time datetime="2026-11-12">Nov 12 to 17</time><p>The first AI player tried the first rung, milestone 1-1. DeepSeek V4 Flash (as configured) played five recorded runs and earned none. In the fifth, 14 of its 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. The run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.</p></li>
       <li class="key"><time datetime="2026-11-14">Nov 14, 2026</time><p>A script earned milestone 1-1 the way a player does. Miners on an iron node and a stone node fed machines by belt: 324 Iron Plate, 202 Iron Rod and 203 Concrete arrived by belt, and no ore, ingot or part was moved by hand between machines. The game accepted the payment. All 59 of the run's checks passed. This is a script, not an AI.</p></li>
       <li><time datetime="2026-11-16">Nov 16, 2026</time><p>The script earned milestone 1-2 the same way, with a copper line making 304 Wire by belt. All 52 checks passed. In a separate run a burner ran on fuel that reached it by belt, which closed the last regular hand step.</p></li>
-      <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>Late that evening, US Central time, one script run earned milestones 1-2 and 1-1 in a single world that started empty. All 142 checks passed. A further stage that tried to double the iron line stopped when the new machines could not be wired; it was not part of the verdict and is kept on the record.</p></li>
+      <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>Late that evening, US Central time, one script run earned milestones 1-2 and 1-1 in a single world that started empty. All 142 checks passed. A further stage that tried to double the iron line stopped because the script had no Cable for the new power lines; it was not part of the verdict and is kept on the record.</p></li>
       <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>An AI model earned a milestone for the first time, shortly before midnight US Central time (November 17 by UTC, the date the evidence file uses). Claude Opus 5.5 (as configured) started in an empty world and earned milestone 1-1 in 10 replies over about 24 minutes, for 35 cents. It chose every move. It put a Miner Mk1 on an iron node and another on a stone node, and built a Smelter, two Constructors, belts and two storage boxes. Those machines made 248 Concrete, 128 Iron Plate and 184 Iron Rod, more than the milestone costs, and nothing that paid for it was made by hand. Three steps were done by hand and are declared: clearing the loose rock off each node before placing a miner, fuelling the burner, and carrying the finished parts from the storage boxes to pay. The model first tried to run a belt straight to the payment point and the test's tools refused, which is a gap in the tools. It is one run and has not been repeated.</p></li>
     </ol>
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">The factory the AI built, on film</h3>
