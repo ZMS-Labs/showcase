@@ -44,112 +44,19 @@
     <div>
       <p class="crumb"><a href="../../index.html#independent">Work</a> <span aria-hidden="true">/</span> SaveBench</p>
       <span class="kicker">SaveBench · AI factory design</span>
-      <h1>Can an AI design a factory that actually runs?</h1>
-      <p class="lead">SaveBench asks AI models to design a factory in the game Satisfactory, then lets the running game measure what it delivers. A factory that only works on paper doesn't count.</p>
+      <h1>Can an AI build a factory that actually runs?</h1>
+      <p class="lead">SaveBench asks whether an AI can build a working factory in the game Satisfactory, by the game's own rules, with the running game as the judge. It began with AI models designing factories that the game then measured. A factory that only works on paper doesn't count.</p>
       <p class="status"><a href="../../evidence.html#status"><b>Recorded experiment</b></a> · game runs from September 9 to November 17, 2026 · <a href="#evidence" style="white-space:nowrap">see the record</a></p>
     </div>
     <figure class="exhibit">
-      <img src="../../assets/savebench/savebench-workspace.png" alt="The SaveBench workspace: a factory layout on a map beside the challenge's conditions and an activity feed, with made-up contestants." width="1600" height="1100">
-      <figcaption><span><span class="label">Prototype</span> Made-up sample data, game artwork removed</span></figcaption>
+      <img src="../../assets/savebench/walkthrough/current-frame.jpg" alt="The SaveBench scoreboard on November 17, 2026: what the script and the AI model have each done in the live game." width="1920" height="1080">
+      <figcaption><span><span class="label">Walkthrough</span> Where it stood on November 17, 2026</span></figcaption>
     </figure>
   </section>
 </div>
 
-<section class="section" id="walkthrough" aria-labelledby="trial-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Experiment · Sept 9, 2026</span>
-      <h2 id="trial-title">Before you judge the factory, check the ruler.</h2>
-      <p class="lead">An AI agent designed a copper and concrete factory from the challenge alone: 34 buildings, 15 belts and 7 power lines. Nobody changed it afterward. Then the game measured it.</p>
-    </div>
-    <div class="story" data-story>
-      <div class="story-graphic">
-        <div class="panel" data-graphic style="background:#fff;color:var(--ink);border-color:var(--rule)" aria-hidden="true">
-          <div class="panel-state" data-on="control">
-            <span class="kicker">Trial 1 · the control</span>
-            <div class="bars">
-              <p class="bar-group">Sample factory that should deliver</p>
-              <div class="bar-row"><span>Copper</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val">0/min</span></div>
-              <div class="bar-row"><span>Concrete</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span><span class="bar-target" style="--t:21.4%"></span></span><span class="val">0/min</span></div>
-            </div>
-            <span class="state-chip">Inconclusive · the tool is broken</span>
-          </div>
-          <div class="panel-state" data-on="repair">
-            <span class="kicker">Trial 2 · repaired controls</span>
-            <div class="bars">
-              <p class="bar-group">Connected control</p>
-              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill" style="--v:88.5%"></span></span><span class="val">61.97</span></div>
-              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:85.7%"></span></span><span class="val">60.00</span></div>
-              <p class="bar-group">Disconnected control</p>
-              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span></span><span class="val">0.00</span></div>
-              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span></span><span class="val">0.00</span></div>
-            </div>
-            <span class="state-chip">Tool sees delivery and its absence</span>
-          </div>
-          <div class="panel-state" data-on="measure fail final">
-            <span class="kicker">Trial 2 · AI's factory, per minute</span>
-            <div class="bars">
-              <p class="bar-group">Copper ingots · target 20</p>
-              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill miss" style="--v:22.7%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val miss">15.87</span></div>
-              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:85.7%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val">60.00</span></div>
-              <div class="bar-row"><span>Window 3</span><span class="bar-track"><span class="bar-fill" style="--v:87.1%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val">60.99</span></div>
-              <p class="bar-group">Concrete · target 15</p>
-              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill" style="--v:76.9%"></span><span class="bar-target" style="--t:75%"></span></span><span class="val">15.37</span></div>
-              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:76.2%"></span><span class="bar-target" style="--t:75%"></span></span><span class="val">15.25</span></div>
-              <div class="bar-row"><span>Window 3</span><span class="bar-track"><span class="bar-fill miss" style="--v:74.4%"></span><span class="bar-target" style="--t:75%"></span></span><span class="val miss">14.88</span></div>
-            </div>
-            <span class="state-chip fail" data-on="fail final">FAIL · 2 of 3 windows missed</span>
-          </div>
-        </div>
-      </div>
-      <ol class="story-steps reading-copy-body">
-        <li class="story-step" data-state="control">
-          <span class="kicker">Trial 1</span>
-          <h3>Test the measuring tool first.</h3>
-          <p>Every trial starts with a control: a sample factory with a known answer. This one should have delivered both products. It showed zero copper and zero concrete in each of two 61-second windows.</p>
-          <p>That meant the measuring tool was broken, so the AI's factory was never judged. A missing measurement isn't scored as zero production.</p>
-        </li>
-        <li class="story-step" data-state="repair">
-          <h3>Find the fault, then prove the fix.</h3>
-          <p>The part that writes a design into the game's save file filled in a storage filter the game leaves empty. Materials reached the belts, but the depot counted none. The fix writes the filter the way the game does.</p>
-          <p>In the second trial the connected control delivered both products and a disconnected copy delivered nothing. Now the tool could see a delivery, and see when there wasn't one.</p>
-        </li>
-        <li class="story-step" data-state="measure">
-          <span class="kicker">Trial 2</span>
-          <h3>Measure the same design again.</h3>
-          <p>Same design, byte for byte, and the same rule, fixed in advance: at least 20 copper ingots and 15 concrete a minute in every two-minute window, after a three-minute warmup.</p>
-        </li>
-        <li class="story-step" data-state="fail">
-          <h3>Two of three windows missed. The FAIL stays.</h3>
-          <p>Copper missed the first window. None had reached the depot when measuring began, most likely because the first ingots were still on a long belt, but the record doesn't prove that. Concrete missed the third by a hair: 30 delivered where 30.25 were needed, because one concrete machine runs at exactly the target rate. A good later window doesn't cancel an earlier miss.</p>
-          <p>The FAIL is specific and useful, so it stays on the record. Nobody loosened the target or combined the two trials into a score.</p>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<section class="section band" id="since" aria-labelledby="since-title">
-  <div class="wrap split">
-    <div>
-      <h2 id="since-title">When the rules rewarded the wrong thing, I changed the test.</h2>
-      <p style="margin-top:24px">In a later campaign, an AI model earned the game's milestones by feeding machines by hand and never built a conveyor belt. At first I called that a flaw in the model. Then I decided SaveBench measures factory design, not whether an AI chooses to automate. So the test became a production quota the factory has to keep meeting while nobody touches it, an approach from the <a class="ext" href="https://arxiv.org/abs/2503.09617">Factorio Learning Environment</a> research benchmark.</p>
-    </div>
-    <ol class="timeline">
-      <li><time datetime="2026-09-12">Sep 12, 2026</time><p>A harder challenge: 120 copper ingots and 60 concrete a minute in every window, slow belts only. Every AI design failed, and those FAILs were kept.</p></li>
-      <li class="key"><time datetime="2026-09-13">Sep 13, 2026</time><p>The same targets with faster belts allowed. Designs by Claude Opus 4.7 and GPT-5.5 (as configured) passed every window. Claude's first pass came from revising its own design after a measured FAIL. Both also had FAILs, so this isn't a ranking.</p></li>
-      <li><time datetime="2026-09-13">Sep 13 to 19</time><p>A campaign in a persistent world, judged by milestones bought in the game. Claude Opus 4.7 (as its runtime reported) bought eight. While it did, the interface let it move items into and out of machines without spending game time.</p></li>
-      <li class="key"><time datetime="2026-09-18">Sep 18, 2026</time><p>I changed what SaveBench measures: a quota the factory must keep meeting through a hands-off period.</p></li>
-      <li><time datetime="2026-09-22">Sep 22 to 23</time><p>The first quota sessions: 30 wire a minute into a declared depot. No session has passed yet. Two were inconclusive because the factory wasn't left untouched long enough, and the instructions had left out the hands-off rule. The latest session states it, and had no result as of September 23.</p></li>
-      <li class="key"><time datetime="2026-11-01">Nov 1, 2026</time><p>I widened the goal. An AI agent should play the game and build the factory itself, by the game's own rules, starting from an empty world, and be watched and judged as it goes. The test became a ladder of the game's own milestones.</p></li>
-      <li class="key"><time datetime="2026-11-12">Nov 12, 2026</time><p>A script, not an AI, climbed the first stretch of that ladder from an empty world. Its factory made the parts for milestone 2-1 and for the Space Elevator, an Assembler made 50 Smart Plating, the game accepted the delivery and moved on to its next phase. Earlier attempts failed and were kept. The run declared three departures from normal play: a storage box for ore and ingots, 20 extra starting parts to pay for the box, and extra starting fuel. It shows the ladder can be climbed. It doesn't show that a model can climb it.</p></li>
-      <li><time datetime="2026-11-12">Nov 12 to 17</time><p>The first AI player tried the first rung, milestone 1-1. DeepSeek V4 Flash (as configured) played five recorded runs and earned none. In the fifth, 14 of its 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. The run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.</p></li>
-    </ol>
-  </div>
-</section>
-
 <!-- savebench-progress:start -->
-<section class="section" id="progress" aria-labelledby="progress-title">
+<section class="section band" id="progress" aria-labelledby="progress-title">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Walkthrough · version of November 17, 2026</span>
@@ -315,6 +222,102 @@
   </div>
 </section>
 <!-- savebench-progress:end -->
+
+<section class="section" id="walkthrough" aria-labelledby="trial-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Experiment · Sept 9, 2026</span>
+      <h2 id="trial-title">Before you judge the factory, check the ruler.</h2>
+      <p class="lead">An AI agent designed a copper and concrete factory from the challenge alone: 34 buildings, 15 belts and 7 power lines. Nobody changed it afterward. Then the game measured it.</p>
+    </div>
+    <div class="story" data-story>
+      <div class="story-graphic">
+        <div class="panel" data-graphic style="background:#fff;color:var(--ink);border-color:var(--rule)" aria-hidden="true">
+          <div class="panel-state" data-on="control">
+            <span class="kicker">Trial 1 · the control</span>
+            <div class="bars">
+              <p class="bar-group">Sample factory that should deliver</p>
+              <div class="bar-row"><span>Copper</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val">0/min</span></div>
+              <div class="bar-row"><span>Concrete</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span><span class="bar-target" style="--t:21.4%"></span></span><span class="val">0/min</span></div>
+            </div>
+            <span class="state-chip">Inconclusive · the tool is broken</span>
+          </div>
+          <div class="panel-state" data-on="repair">
+            <span class="kicker">Trial 2 · repaired controls</span>
+            <div class="bars">
+              <p class="bar-group">Connected control</p>
+              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill" style="--v:88.5%"></span></span><span class="val">61.97</span></div>
+              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:85.7%"></span></span><span class="val">60.00</span></div>
+              <p class="bar-group">Disconnected control</p>
+              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span></span><span class="val">0.00</span></div>
+              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:0%"></span></span><span class="val">0.00</span></div>
+            </div>
+            <span class="state-chip">Tool sees delivery and its absence</span>
+          </div>
+          <div class="panel-state" data-on="measure fail final">
+            <span class="kicker">Trial 2 · AI's factory, per minute</span>
+            <div class="bars">
+              <p class="bar-group">Copper ingots · target 20</p>
+              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill miss" style="--v:22.7%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val miss">15.87</span></div>
+              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:85.7%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val">60.00</span></div>
+              <div class="bar-row"><span>Window 3</span><span class="bar-track"><span class="bar-fill" style="--v:87.1%"></span><span class="bar-target" style="--t:28.6%"></span></span><span class="val">60.99</span></div>
+              <p class="bar-group">Concrete · target 15</p>
+              <div class="bar-row"><span>Window 1</span><span class="bar-track"><span class="bar-fill" style="--v:76.9%"></span><span class="bar-target" style="--t:75%"></span></span><span class="val">15.37</span></div>
+              <div class="bar-row"><span>Window 2</span><span class="bar-track"><span class="bar-fill" style="--v:76.2%"></span><span class="bar-target" style="--t:75%"></span></span><span class="val">15.25</span></div>
+              <div class="bar-row"><span>Window 3</span><span class="bar-track"><span class="bar-fill miss" style="--v:74.4%"></span><span class="bar-target" style="--t:75%"></span></span><span class="val miss">14.88</span></div>
+            </div>
+            <span class="state-chip fail" data-on="fail final">FAIL · 2 of 3 windows missed</span>
+          </div>
+        </div>
+      </div>
+      <ol class="story-steps reading-copy-body">
+        <li class="story-step" data-state="control">
+          <span class="kicker">Trial 1</span>
+          <h3>Test the measuring tool first.</h3>
+          <p>Every trial starts with a control: a sample factory with a known answer. This one should have delivered both products. It showed zero copper and zero concrete in each of two 61-second windows.</p>
+          <p>That meant the measuring tool was broken, so the AI's factory was never judged. A missing measurement isn't scored as zero production.</p>
+        </li>
+        <li class="story-step" data-state="repair">
+          <h3>Find the fault, then prove the fix.</h3>
+          <p>The part that writes a design into the game's save file filled in a storage filter the game leaves empty. Materials reached the belts, but the depot counted none. The fix writes the filter the way the game does.</p>
+          <p>In the second trial the connected control delivered both products and a disconnected copy delivered nothing. Now the tool could see a delivery, and see when there wasn't one.</p>
+        </li>
+        <li class="story-step" data-state="measure">
+          <span class="kicker">Trial 2</span>
+          <h3>Measure the same design again.</h3>
+          <p>Same design, byte for byte, and the same rule, fixed in advance: at least 20 copper ingots and 15 concrete a minute in every two-minute window, after a three-minute warmup.</p>
+        </li>
+        <li class="story-step" data-state="fail">
+          <h3>Two of three windows missed. The FAIL stays.</h3>
+          <p>Copper missed the first window. None had reached the depot when measuring began, most likely because the first ingots were still on a long belt, but the record doesn't prove that. Concrete missed the third by a hair: 30 delivered where 30.25 were needed, because one concrete machine runs at exactly the target rate. A good later window doesn't cancel an earlier miss.</p>
+          <p>The FAIL is specific and useful, so it stays on the record. Nobody loosened the target or combined the two trials into a score.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="since" aria-labelledby="since-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="since-title">When the rules rewarded the wrong thing, I changed the test.</h2>
+      <p style="margin-top:24px">In a later campaign, an AI model earned the game's milestones by feeding machines by hand and never built a conveyor belt. At first I called that a flaw in the model. Then I decided SaveBench measures factory design, not whether an AI chooses to automate. So the test became a production quota the factory has to keep meeting while nobody touches it, an approach from the <a class="ext" href="https://arxiv.org/abs/2503.09617">Factorio Learning Environment</a> research benchmark.</p>
+    </div>
+    <ol class="timeline">
+      <li><time datetime="2026-09-12">Sep 12, 2026</time><p>A harder challenge: 120 copper ingots and 60 concrete a minute in every window, slow belts only. Every AI design failed, and those FAILs were kept.</p></li>
+      <li class="key"><time datetime="2026-09-13">Sep 13, 2026</time><p>The same targets with faster belts allowed. Designs by Claude Opus 4.7 and GPT-5.5 (as configured) passed every window. Claude's first pass came from revising its own design after a measured FAIL. Both also had FAILs, so this isn't a ranking.</p></li>
+      <li><time datetime="2026-09-13">Sep 13 to 19</time><p>A campaign in a persistent world, judged by milestones bought in the game. Claude Opus 4.7 (as its runtime reported) bought eight. While it did, the interface let it move items into and out of machines without spending game time.</p></li>
+      <li class="key"><time datetime="2026-09-18">Sep 18, 2026</time><p>I changed what SaveBench measures: a quota the factory must keep meeting through a hands-off period.</p></li>
+      <li><time datetime="2026-09-22">Sep 22 to 23</time><p>The first quota sessions: 30 wire a minute into a declared depot. No session has passed yet. Two were inconclusive because the factory wasn't left untouched long enough, and the instructions had left out the hands-off rule. The latest session states it, and had no result as of September 23.</p></li>
+      <li class="key"><time datetime="2026-11-01">Nov 1, 2026</time><p>I widened the goal. An AI agent should play the game and build the factory itself, by the game's own rules, starting from an empty world, and be watched and judged as it goes. The test became a ladder of the game's own milestones.</p></li>
+      <li class="key"><time datetime="2026-11-12">Nov 12, 2026</time><p>A script, not an AI, climbed the first stretch of that ladder from an empty world. Its factory made the parts for milestone 2-1 and for the Space Elevator, an Assembler made 50 Smart Plating, the game accepted the delivery and moved on to its next phase. Earlier attempts failed and were kept. The run declared three departures from normal play: a storage box for ore and ingots, 20 extra starting parts to pay for the box, and extra starting fuel. It shows the ladder can be climbed. It doesn't show that a model can climb it.</p></li>
+      <li><time datetime="2026-11-12">Nov 12 to 17</time><p>The first AI player tried the first rung, milestone 1-1. DeepSeek V4 Flash (as configured) played five recorded runs and earned none. In the fifth, 14 of its 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. The run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.</p></li>
+      <li class="key"><time datetime="2026-11-14">Nov 14, 2026</time><p>A script earned milestone 1-1 the way a player does. Miners on an iron node and a stone node fed machines by belt: 324 Iron Plate, 202 Iron Rod and 203 Concrete arrived by belt, and no ore, ingot or part was moved by hand between machines. The game accepted the payment. All 59 of the run's checks passed. This is a script, not an AI.</p></li>
+      <li><time datetime="2026-11-16">Nov 16, 2026</time><p>The script earned milestone 1-2 the same way, with a copper line making 304 Wire by belt. All 52 checks passed. In a separate run a burner ran on fuel that reached it by belt, which closed the last regular hand step.</p></li>
+      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>One script run earned milestones 1-2 and 1-1 in a single world that started empty. All 142 checks passed. A further stage that tried to double the iron line stopped when the new machines could not be wired; it was not part of the verdict and is kept on the record. No AI model has earned a milestone on the ladder yet.</p></li>
+    </ol>
+  </div>
+</section>
 
 <section class="section" id="interface" aria-labelledby="interface-title">
   <div class="wrap">

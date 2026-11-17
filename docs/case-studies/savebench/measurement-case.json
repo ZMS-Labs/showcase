@@ -122,6 +122,10 @@
     {
       "date": "2026-11-17",
       "change": "Revised the sixth important limit: the page now also shows images of the game in its walkthrough and progress section. They are not part of this measurement record."
+    },
+    {
+      "date": "2026-11-17",
+      "change": "Added later_summary entries for the scripted milestone runs of 14, 16 and 17 November, read from SaveBench's private run records. No existing figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -235,6 +239,27 @@
       "contestant": "DeepSeek V4 Flash (as configured).",
       "outcome": "Five recorded runs, none earned. In the fifth, 14 of 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. That run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.",
       "limits": "One model on one rung, with the seat's instructions and tools changing between runs, so this is not a score on a fixed instrument and not a ranking."
+    },
+    {
+      "date": "2026-11-14",
+      "what": "Milestone 1-1 from an empty world, with ore from miners on the map's nodes and every part moved between machines by belt.",
+      "contestant": "A fixed script. No model chose its moves.",
+      "outcome": "PASS, 59 checks of 59. By belt: 324 Iron Plate, 202 Iron Rod and 203 Concrete. The game accepted the milestone payment.",
+      "limits": "Declared hand moves: clearing the rock deposit on each node once, and refuelling the burner. A script run shows the route exists; it does not show a model can take it."
+    },
+    {
+      "date": "2026-11-16",
+      "what": "Milestone 1-2 from an empty world, with a copper line for Wire and an iron line, by belt from miners.",
+      "contestant": "A fixed script. No model chose its moves.",
+      "outcome": "PASS, 52 checks of 52. By belt: 304 Wire, 196 Iron Plate and 170 Iron Rod. In a separate run the same day a burner ran on fuel fed by belt, 28 checks of 28.",
+      "limits": "Declared hand moves: clearing each node once, starting fuel, 48 early Wire carried to pay for the iron line, and the finished Wire carried to the bank once."
+    },
+    {
+      "date": "2026-11-17",
+      "what": "Milestones 1-2 and 1-1 earned in one world that started empty, in a single run.",
+      "contestant": "A fixed script. No model chose its moves.",
+      "outcome": "PASS, 142 checks of 142. By belt: 230 Iron Plate, 190 Iron Rod and 369 Wire for milestone 1-2; 201 Concrete, 342 Iron Plate and 214 Iron Rod for milestone 1-1. No ore, ingot or part was moved by hand after the start.",
+      "limits": "A further stage that tried to double the iron line built its second machines but the game refused all three power wires, so that stage failed. It was declared outside the run's verdict. No AI model has earned a milestone on the ladder as of this date."
     }
   ],
   "model_labels": {

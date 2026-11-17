@@ -277,6 +277,17 @@
       "claim_boundary": "A personal photo for the About page; not evidence for any project or claim"
     },
     {
+      "path": "assets/savebench/walkthrough/current-frame.jpg",
+      "sha256": "5eb596c01b8d819ba66026e7cf95fc1807755621811b45f85ab19573528c598c",
+      "bytes": 190465,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "kind": "One frame of the SaveBench walkthrough animation (its scoreboard), rendered from the version of 2026-11-17. It includes icons from the game Satisfactory, which belong to their owners.",
+      "claim_boundary": "A drawn summary of dated results; the results themselves are in the run records, not in this picture."
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
       "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8",
       "bytes": 29778,
