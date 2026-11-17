@@ -73,17 +73,17 @@
     </figure>
     <h3 class="sbp-h">Where it stands, as of November 17, 2026</h3>
     <dl class="sbp-now">
-      <div><dt>Live game mod</dt><dd>0.10.20, live on the first server since Nov 17, 12:03 AM CST (06:03 UTC). Its Hypertube fix is confirmed in the game; rail joined once; overclocking above 100% not yet seen. Verified</dd></div>
-      <div><dt>Best AI model result</dt><dd>Two models have earned milestone 1-1 from a blank world, no machine fed by hand: Claude Opus 5.5 (Nov 16, 10 replies, 35 cents) and GPT-6.1 Sol (Nov 17, 44 replies, about 39 cents by our gateway&#x27;s count). Declared hand steps in both: clearing two nodes, burner fuel, carrying finished parts to pay. Verified</dd></div>
-      <div><dt>Best script factory</dt><dd>Run BQ, Nov 16: milestones 1-2 and 1-1 earned in one world from Miner Mk1s and belts, burner fed by belt, 142 checks of 142. Verified</dd></div>
-      <div><dt>Not done yet</dt><dd>No AI has earned milestone 1-2. Doubling a factory for milestone 1-3 stopped for lack of Cable; the follow-up run BR is running. No vehicle has carried cargo and no train has run. Open</dd></div>
+      <div><dt>Live game mod</dt><dd>0.10.20, live on the first server since Nov 17, 12:03 AM CST (06:03 UTC). Its Hypertube and rail fixes are confirmed in the game, and overclocking to 150% is reported working. Verified</dd></div>
+      <div><dt>Best AI model result</dt><dd>Claude Opus 5.5 earned milestones 1-1, 1-2 and 1-3; GPT-6.1 Sol earned 1-1 and 1-2. Each run started from a blank world and no machine was fed by hand. Declared: nodes cleared by hand, burner fuel by hand, finished parts carried to pay, and on 1-3 Opus hand-crafted 72 plates to replace ones spent on belts. Verified</dd></div>
+      <div><dt>Best script factory</dt><dd>Run BQ, Nov 16: milestones 1-2 and 1-1 earned in one world from Miner Mk1s and belts, burner fed by belt, 142 checks of 142. Its follow-up for 1-3 failed on Nov 17. Verified</dd></div>
+      <div><dt>Not done yet</dt><dd>No one has earned several milestones in one world past 1-2. The script made no Screws for 1-3, cause unknown. The locomotive did not move. No vehicle has carried cargo. Open</dd></div>
     </dl>
     <h3 class="sbp-h">Every version, newest first</h3>
     <ol class="sbp-versions" reversed>
       <li class="is-current">
         <span class="label">Current version</span>
         <h4><time datetime="2026-11-17">November 17, 2026</time></h4>
-        <p>Adds the first milestones earned by AI models (Claude Opus 5.5 on November 16, GPT-6.1 Sol on November 17), milestone 1-2 earned by a script with a copper Wire line, the burner that runs on belt fed fuel, and the first rail piece and Hypertube.</p>
+        <p>Adds the first milestones earned by AI models: Claude Opus 5.5 reached milestone 1-3 and GPT-6.1 Sol reached 1-2, each from a blank world. Also milestone 1-2 by script with a copper Wire line, the burner fed by belt, and the first rail piece and locomotive.</p>
         <button type="button" class="sbp-pick" data-v="2026-11-17" aria-pressed="true" hidden>Show this version</button>
         <details class="transcript">
           <summary>Read this version's transcript</summary>
@@ -93,12 +93,12 @@
             <li><strong>0:20</strong>: The script run, run BL, November 14, shown as a diagram that is not to scale. The script clears the rock on an iron node by hand and builds a Miner Mk1 on it, powered by a Biomass Burner. Belts carry ore to the Smelter, ingots to the Constructor and plates into the bank. 324 Iron Plate arrive by belt, where 320 were wanted. The Constructor then switches to Iron Rod, and 202 arrive, where 200 were wanted. A second line starts at a Miner Mk1 on a stone node. The game refuses a belt that is too long, so the stone passes through four containers before a Constructor turns it into Concrete: 203, where 200 were wanted. No part was moved by hand between machines. In this run the burner was still refuelled by hand; that gap closed on November 16. The finished Concrete is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-1. 59 checks of 59 passed. This is a script run, not an AI.</li>
             <li><strong>0:46</strong>: The second script run, run BP, November 16, shown as a diagram. Milestone 1-2 costs 150 Iron Plate, 150 Iron Rod and 300 Wire. The script builds a copper line first, at a copper node 268 metres from the bank: a Miner Mk1, a Smelter and a Constructor making Wire. The first 48 Wire are carried to the bank to pay for the iron line, a declared carry. The iron line runs into the bank by belt: 196 Iron Plate where 190 were wanted, then 170 Iron Rod where 170 were wanted. The copper line gets its container and 304 Wire arrive in it by belt, where 300 were wanted. The finished Wire is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-2. 52 checks of 52 passed. In a separate run the same evening, a burner ran on fuel fed by belt with no hand refuel.</li>
             <li><strong>1:03</strong>: The DeepSeek run, run 4, November 14, shown as a diagram. DeepSeek cleared the rock and built a Miner Mk1, a Smelter, a Constructor, storage, a Biomass Burner and two belts, and wired the burner to the miner. It had spent all its Iron Rod. The last belt was refused because it cost 16 Iron Plate and the bank held 1. Power poles also cost Iron Rod, so the Smelter and Constructor never got power; for the poles this is inferred. Our harness told the model only that the placement was refused, so it spent 15 of its 34 replies looking for clear ground. The run stopped at its budget of 95 cents and the milestone was not earned. The fault was in our harness, not in how the model played. The fix was live for run 5 on November 16. In run 5 the model was told what it could not afford, but 14 of its 30 replies were used up thinking and produced no action, and it did not finish either. DeepSeek has now tried five times.</li>
-            <li><strong>1:13</strong>: The Claude Opus 5.5 run, run 6, November 16, shown as a diagram. Claude Opus 5.5, an AI model, plays milestone 1-1 by itself from a blank world. It looked up an iron node, cleared the rock by hand, and built a Biomass Burner, a Miner Mk1, a Smelter and a Constructor, joined by belts. It tried to belt the Constructor to the bank and was refused, because our tool list did not offer the bank as a belt target, so it built a storage box. It ran power to a stone node and built a second Miner Mk1, a second Constructor and a second storage box for Concrete. Machines made everything the milestone costs: 128 Iron Plate where 100 were needed, then 184 Iron Rod where 100 were needed after it switched the Constructor, and 248 Concrete where 200 were needed. No machine was fed by hand. The declared hand steps were clearing the two nodes, 200 biomass for the burner, and collecting the finished parts from storage to pay. The game accepted the payment and launched milestone 1-1, after 10 replies and 35 cents. The next morning, November 17, a second AI model, GPT-6.1 Sol, earned the same milestone the same way in 44 replies: 144 Iron Plate, 168 Iron Rod and 221 Concrete made by machines, with the same declared hand steps.</li>
+            <li><strong>1:13</strong>: The Claude Opus 5.5 run, run 6, November 16, shown as a diagram. Claude Opus 5.5, an AI model, plays milestone 1-1 by itself from a blank world. It looked up an iron node, cleared the rock by hand, and built a Biomass Burner, a Miner Mk1, a Smelter and a Constructor, joined by belts. It tried to belt the Constructor to the bank and was refused, because our tool list did not offer the bank as a belt target, so it built a storage box. It ran power to a stone node and built a second Miner Mk1, a second Constructor and a second storage box for Concrete. Machines made everything the milestone costs: 128 Iron Plate where 100 were needed, then 184 Iron Rod where 100 were needed after it switched the Constructor, and 248 Concrete where 200 were needed. No machine was fed by hand. The declared hand steps were clearing the two nodes, 200 biomass for the burner, and collecting the finished parts from storage to pay. The game accepted the payment and launched milestone 1-1, after 10 replies and 35 cents. This was the first milestone earned by an AI. The next day, November 17, Claude Opus 5.5 went on to earn milestones 1-2 and 1-3, and a second AI model, GPT-6.1 Sol, earned milestones 1-1 and 1-2, each run starting from a blank world.</li>
             <li><strong>1:28</strong>: Four stills filmed in the real game. November 9: a smelter feeding a constructor by belt, built by script. November 12: the Space Elevator over the base that earned phase one, by script. November 12: a smelter and constructors that DeepSeek placed by itself. November 14: a Miner Mk1 on an iron node, belted to a smelter, built by DeepSeek.</li>
-            <li><strong>1:36</strong>: The scoreboard. Script: milestone 1-1 on November 14 with every part from miners by belt; milestone 1-2 on November 16 the same way, with a copper Wire line; and both milestones again in one world on November 16 with the burner fed by belt, 142 checks of 142. AI models: DeepSeek runs 4 and 5 on November 14 and 16 built a miner line but did not finish; Claude Opus 5.5 on November 16 earned milestone 1-1 in 10 replies with every part made by machines; GPT-6.1 Sol on November 17 earned milestone 1-1 in 44 replies with every part made by machines. All are verified from run records. Two AI models have each earned milestone 1-1. Neither has gone further yet.</li>
-            <li><strong>1:44</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12 and 13: Space Elevator phase one, a Miner Mk1 feeding a belt, then 300 plates by belt. November 14: milestone 1-1 by a real factory and the first copper Wire. November 16: milestone 1-2, a burner fed by belt, and an AI model earns milestone 1-1. November 17: a second AI model, GPT-6.1 Sol, earns milestone 1-1, and the first rail piece is joined. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 38 of 52 on November 14 and 42 of 52 on November 16. The last two counts are a work thread&#x27;s own and were not read from a file.</li>
-            <li><strong>1:54</strong>: What is still ahead. A script run earned milestones 1-2 and 1-1 in one world, but doubling its iron line for milestone 1-3 stopped because the bank had no Cable for the new power lines. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. Claude Opus 5.5 and GPT-6.1 Sol have each earned milestone 1-1 once; next comes milestone 1-2, belting into the bank, and feeding the burner by belt. On November 17 a rail piece joined for the first time and a Hypertube was built, but no train has run yet and overclocking above 100% has not been seen to take effect.</li>
-            <li><strong>2:02</strong>: The diagrams are drawn from run records. The stills are real game footage. On November 16 and 17 two AI models, Claude Opus 5.5 and GPT-6.1 Sol, each earned milestone 1-1. Satisfactory imagery is the property of Coffee Stain Studios.</li>
+            <li><strong>1:36</strong>: The scoreboard. Script: milestone 1-1 on November 14 with every part from miners by belt; milestone 1-2 on November 16 the same way, then both again in one world; on November 17 it tried milestone 1-3 in that world and failed, because no Screws were made. AI models: Claude Opus 5.5 earned milestones 1-1 and 1-2 on November 16 and 17 with every part made by machines; Claude Opus 5.5 earned milestone 1-3 on November 17, where its machines made enough of everything but it had spent plates on belts, so it crafted 72 plates by hand before paying; GPT-6.1 Sol earned milestones 1-1 and 1-2 on November 17 with every part made by machines. All are verified from run records. AI models have earned five milestones, each from a blank world. DeepSeek has not finished one.</li>
+            <li><strong>1:44</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12 and 13: Space Elevator phase one, a Miner Mk1 feeding a belt, then 300 plates by belt. November 14: milestone 1-1 by a real factory and the first copper Wire. November 16: milestone 1-2, a burner fed by belt, and an AI model earns milestone 1-1. November 17: AI models earn milestones 1-1, 1-2 and 1-3, and the first rail piece and locomotive are placed. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 38 of 52 on November 14 and 42 of 52 on November 16. The last two counts are a work thread&#x27;s own and were not read from a file.</li>
+            <li><strong>1:54</strong>: What is still ahead. The script&#x27;s follow-up run crafted Cable and doubled its iron line, but made no Screws, so milestone 1-3 failed and the cause is not known yet. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. Each AI milestone so far started from a blank world; next comes several milestones in one world, belting into the bank, and feeding the burner by belt. On November 17 a rail piece joined and a locomotive was placed on it and given a timetable, but it did not move, because the game reported the station unreachable.</li>
+            <li><strong>2:02</strong>: The diagrams are drawn from run records. The stills are real game footage. On November 16 and 17 AI models earned five milestones: Claude Opus 5.5 reached milestone 1-3 and GPT-6.1 Sol reached milestone 1-2. Satisfactory imagery is the property of Coffee Stain Studios.</li>
           </ol>
         </details>
       </li>
@@ -147,8 +147,8 @@
     <p class="fine" style="max-width:72ch">Game results logged from November 12, 2026 to November 17, 2026, newest first. Verified means the line was read from a run record when it was written. Unverified means it was reported by the work and not read again. Failed runs are kept. Later results join this log at its next update.</p>
     <div class="sbp-days">
       <details class="sbp-day">
-        <summary><time datetime="2026-11-17">November 17, 2026</time> · 11 results</summary>
-        <p>A second AI model earned milestone 1-1. After a quiet night, runs resumed at 8:43 AM CST: the fourth train test joined a rail piece for the first time and built a Hypertube, and GPT-6.1 Sol then earned milestone 1-1 from a blank world, the same result Claude Opus 5.5 reached the night before. Mod 0.10.20 went live just after midnight. This entry covers midnight to 9:40 AM CST so far. Lines are in time order.</p>
+        <summary><time datetime="2026-11-17">November 17, 2026</time> · 17 results</summary>
+        <p>The day AI models pulled ahead of the script. After a quiet night, runs resumed at 8:43 AM CST. GPT-6.1 Sol earned milestone 1-1, then Claude Opus 5.5 earned 1-2, Sol earned 1-2, and Opus earned 1-3 (with one declared exception), each from a blank world. The script&#x27;s own try at milestone 1-3 failed. A rail piece joined and a locomotive was placed, but it did not move. Mod 0.10.20 went live just after midnight. This entry covers midnight to 12:30 PM CST so far. Lines are in time order.</p>
         <ul>
           <li><span class="label">Verified</span><div>Mod 0.10.20 is live on the first game server. It carries three fixes: overclocking above 100%, the Hypertube entrance, and joining rail to a station platform. None of the three has been checked in the game yet.<small>Nov 17, 06:03 UTC</small></div></li>
           <li><span class="label">Unverified</span><div>The second game server was restarted on mod 0.10.20 and reported ready at 12:18 AM CST.<small>Nov 17, 06:12 UTC</small></div></li>
@@ -161,6 +161,12 @@
           <li><span class="label">Verified</span><div>A second AI model earned milestone 1-1. GPT-6.1 Sol earned it from a blank world in 44 replies, one action per reply, for about 39 cents by our gateway&#x27;s count (the prices are not checked against the provider). It built the same kind of factory as Claude Opus 5.5: two Miner Mk1s, a Smelter, two Constructors, two storage boxes, five belts and a burner. Machines made 144 Iron Plate, 168 Iron Rod and 221 Concrete (100, 100 and 200 needed); no machine was fed by hand. Declared hand steps: clearing the two nodes, 200 biomass for the burner, and collecting finished parts from storage to pay.<small>Nov 17, 14:54 UTC</small></div></li>
           <li><span class="label">Unverified</span><div>Script run BR (Cable, the doubled iron line, then milestones 1-3 and 2-1) started at 9:22 AM CST and is running. Train test 5 is queued behind it.<small>Nov 17, 15:31 UTC</small></div></li>
           <li><span class="label">Verified</span><div>Tracing of the AI models&#x27; calls was switched on at the gateway after the GPT-6.1 Sol run ended, so that run was not traced. Whether tracing works has not been observed.<small>Nov 17, 15:21 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>Script run BR. It continued run BQ&#x27;s world, crafted 6 Cable from Wire, built the three power lines and doubled the iron line (122 Iron Plate to the bank at 31.7 a minute). It then set up Screws for milestone 1-3 and none were made in 15 minutes, so milestone 1-3 failed and milestone 2-1 was not reached. The cause is not established. 25 checks passed, 2 failed.<small>Nov 17, 15:22 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Train test 5. The rail piece joined again and a locomotive was placed on it and given a two-stop timetable. Set to go, it did not move (0 cm): the game reported the station unreachable. The cause is not established. In the same test, overclocking a machine to 150% while keeping it fed is reported as taking effect.<small>Nov 17, 15:43 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Claude Opus 5.5 earned milestone 1-2 from a blank world in 14 replies for 53 cents. Machines made 175 Iron Plate, 213 Iron Rod and 825 Wire (150, 150 and 300 needed); no machine was fed by hand. Same declared hand steps as before.<small>Nov 17, 15:55 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>GPT-6.1 Sol earned milestone 1-2 from a blank world in 82 replies for about 77 cents by our gateway&#x27;s count. Machines made 198 Iron Plate, 151 Iron Rod and 316 Wire; no machine was fed by hand.<small>Nov 17, 16:30 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Claude Opus 5.5 earned milestone 1-3 from a blank world in 32 replies for 1.43 dollars, with one declared exception. Machines made 134 Iron Plate, 356 Screws and 336 Wire (100, 300 and 300 needed) and no machine was fed by hand. But it had spent machine-made plates on belts, so its first payment was refused 68 plates short. It crafted 72 plates by hand at the HUB bench and then paid. The scoring rule lets hand-made parts pay for buildings, so the run counts, but 68 or more of the plates handed in were hand-made.<small>Nov 17, 17:13 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>These three AI runs each started from a blank world; the milestones were not earned one after another in a single world. Fixes proposed from them: tell the model about belt slope limits, offer Splitters and Mergers, show belt cost first, and let it belt into the bank.</div></li>
         </ul>
       </details>
       <details class="sbp-day">
@@ -339,6 +345,8 @@
       <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>Late that evening, US Central time, one script run earned milestones 1-2 and 1-1 in a single world that started empty. All 142 checks passed. A further stage that tried to double the iron line stopped because the script had no Cable for the new power lines; it was not part of the verdict and is kept on the record.</p></li>
       <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>An AI model earned a milestone for the first time, shortly before midnight US Central time (November 17 by UTC, the date the evidence file uses). Claude Opus 5.5 (as configured) started in an empty world and earned milestone 1-1 in 10 replies over about 24 minutes, for 35 cents. It chose every move. It put a Miner Mk1 on an iron node and another on a stone node, and built a Smelter, two Constructors, belts and two storage boxes. Those machines made 248 Concrete, 128 Iron Plate and 184 Iron Rod, more than the milestone costs, and nothing that paid for it was made by hand. Three steps were done by hand and are declared: clearing the loose rock off each node before placing a miner, fuelling the burner, and carrying the finished parts from the storage boxes to pay. The model first tried to run a belt straight to the payment point and the test's tools refused, which is a gap in the tools. It is one run and has not been repeated.</p></li>
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>A second AI model earned the same milestone. GPT-6.1 Sol (as configured) started in an empty world and earned milestone 1-1 in 44 replies over about 26 minutes. The test's own count of the cost was 39 cents, and the provider's prices behind that count have not been checked. It chose every move, one action per reply. It built the same kind of factory: a Miner Mk1 on an iron node and another on a stone node, a Smelter, two Constructors, belts and two storage boxes. Those machines made 221 Concrete, 144 Iron Plate and 168 Iron Rod, more than the milestone costs, and nothing that paid for it was made by hand. The same three hand steps are declared: clearing the loose rock off each node, fuelling the burner, and carrying the finished parts from the storage boxes to pay. It is one run and has not been repeated. Two models have now each earned this milestone once, under slightly different versions of the game mod, so this is not a ranking.</p></li>
+      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>Both models earned the next milestone, 1-2, each in a new run from an empty world. It costs 150 Iron Plate, 150 Iron Rod and 300 Wire, so it needs a copper line as well as an iron one. Claude Opus 5.5 took 14 replies and its machines made 175 Iron Plate, 213 Iron Rod and 825 Wire; its first payment was refused one Wire short, and it waited for its machines and paid. GPT-6.1 Sol took 82 replies, one move each, and its machines made 198 Iron Plate, 151 Iron Rod and 316 Wire. Neither fed a machine by hand. The test's own count of the cost was 53 cents for Claude Opus 5.5 and 77 cents for GPT-6.1 Sol; the provider's prices behind the second count have not been checked. The declared hand steps are the same as before: clearing each node, fuelling the burner, and carrying finished parts to pay. One run each, not repeated.</p></li>
+      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>Claude Opus 5.5 earned milestone 1-3, with a caveat that belongs beside the result. The milestone costs 100 Iron Plate, 300 Screws and 300 Wire. In a new run from an empty world its machines made 134 Iron Plate, 356 Screws and 336 Wire, and no machine was fed by hand. But it had spent machine made plates on belts, so its first payment was refused 68 Iron Plate short. It then made 72 Iron Plate by hand at the bench and paid. The test counts the milestone as earned, because the machines made more than the cost and its rule lets hand made items pay for buildings. Even so, most of the plates handed in were made by hand, which is not what a factory is for. The run took 32 replies and 147 moves, 13 of which failed, mostly belts on sloping ground, and the test's own count of the cost was 1.43 dollars. One run, not repeated.</p></li>
     </ol>
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">The factories the AIs built, on film</h3>
     <div>
@@ -360,9 +368,9 @@
 <!-- savebench-ai-runs:start -->
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">What each AI did, reply by reply</h3>
     <div>
-    <p style="margin-top:clamp(40px,5vw,64px)">These lists come from the run records. Each numbered item is one reply from the AI model. A reply can hold several moves, and the model chose every one. Its note is the short plan it wrote with the reply, cut at 240 characters, and it uses the test's own names for buildings and map positions. A move with nothing after it was carried out. A refusal is quoted as the test recorded it.</p>
+    <p style="margin-top:clamp(40px,5vw,64px)">These lists come from the run records. Each numbered item is one reply from the AI model. A reply can hold several moves, and the model chose every one. Its note is the short plan it wrote with the reply, cut at 240 characters, and it uses the test's own names for buildings and map positions. A move with nothing after it was carried out. A refusal or a failure is quoted as the test recorded it. A dash in a note is shown as a hyphen. Each run started from an empty world.</p>
       <details class="transcript">
-        <summary>Claude Opus 5.5, Nov 16, 2026: 10 replies, 51 moves</summary>
+        <summary>Claude Opus 5.5, milestone 1-1, Nov 16, 2026: 10 replies, 51 moves</summary>
         <p class="fine" style="margin-top:12px">Milestone 1-1, earned. 50 of 51 moves were carried out, 1 was refused. Its machines made 128 Iron Plate, 248 Concrete, 184 Iron Rod. No machine was fed by hand. Mined by hand to clear the nodes: 26 Iron Ore, 53 Limestone.</p>
         <ol>
           <li>
@@ -469,7 +477,7 @@
         </ol>
       </details>
       <details class="transcript">
-        <summary>GPT-6.1 Sol, Nov 17, 2026: 44 replies, 44 moves</summary>
+        <summary>GPT-6.1 Sol, milestone 1-1, Nov 17, 2026: 44 replies, 44 moves</summary>
         <p class="fine" style="margin-top:12px">Milestone 1-1, earned. 44 of 44 moves were carried out. Its machines made 144 Iron Plate, 168 Iron Rod, 221 Concrete. No machine was fed by hand. Mined by hand to clear the nodes: 30 Iron Ore, 50 Limestone.</p>
         <ol>
           <li>
@@ -737,6 +745,973 @@
           </li>
         </ol>
       </details>
+      <details class="transcript">
+        <summary>Claude Opus 5.5, milestone 1-2, Nov 17, 2026: 14 replies, 68 moves</summary>
+        <p class="fine" style="margin-top:12px">Milestone 1-2, earned. 65 of 68 moves were carried out, 2 were refused, 1 did not work. Its machines made 825 Wire, 175 Iron Plate, 213 Iron Rod. No machine was fed by hand. Mined by hand to clear the nodes: 22 Copper Ore, 26 Iron Ore. 4 further moves were not run, because an earlier move in the same reply failed.</p>
+        <ol>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: burner near nodes, 1 smelter copper-&gt;constructor wire first, use wire to build more smelters; iron line for plate/rod.</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+              <li>Look for Copper Ore nearby</li>
+              <li>Look for Limestone nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: sequential. Phase1 copper site at ore_copper-1 (23143,-13428): miner-&gt;smelter(21900)-&gt;constructor wire(20700)-&gt;storage(19500,-13428); burner+pole there. Make ~320 wire, collect storage to bank. Phase2: dismantle, rebuild at iron node…</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_copper-1</li>
+              <li>Build a Smelter</li>
+              <li>Build a Constructor</li>
+              <li>Lay a belt from smelter-1 to constructor-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">4 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site at ore_copper-1 (23143,-13428). Smelter-1 at 21100,-13428. Constructor moved north-ish due to steep belt. Next: set wire recipe, storage after constructor, burner+pole, power lines, fuel 100 biomass. Later iron line near bank f…</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from miner_mk1-1 to smelter-1</li>
+              <li>Take down constructor-1</li>
+              <li>Build a Constructor</li>
+              <li>Lay a belt from smelter-1 to constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire line at copper-1. Next: connect burner-&gt;pole-1, miner-&gt;pole-1, smelter-&gt;pole-1, pole-1-&gt;pole-2, constructor-&gt;pole-2; fuel burner 100 biomass. Then chain poles toward bank (~85m each) for iron line near bank (iron-1 at -1287,-14…</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-1 to make Copper Ingot</li>
+              <li>Set constructor-2 to make Wire</li>
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-2 to storage-1</li>
+              <li>Build a Biomass Burner</li>
+              <li>Build a Power Pole</li>
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire line at copper-1 powered (burner-1, pole-1, pole-2). Next: chain poles toward bank (~85m each) for iron line near bank (iron-1 at -1287,-1490): miner-&gt;smelter-&gt;constructor plate-&gt;storage-&gt;bank. Storage-1 collects wire; collect…</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from burner-1 to pole-1</li>
+              <li>Run a power line from miner_mk1-1 to pole-1</li>
+              <li>Run a power line from smelter-1 to pole-1</li>
+              <li>Run a power line from pole-1 to pole-2</li>
+              <li>Run a power line from constructor-2 to pole-2</li>
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire line running into storage-1. Wire low (9): need wire from line for poles. Plan: find iron node near copper line to avoid long pole chain; else chain 3 poles to iron-1 near bank. Iron line: miner-&gt;smelter-&gt;constructor(plate, lat…</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+              <li>Look closely at smelter-1</li>
+              <li>Wait 60 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line at iron-3 (2598,-2140): miner-&gt;smelter(1300,-2140)-&gt;constructor(1300,-700)-&gt;bank belt. Next: power miner/smelter/constructor to pole-4, set recipes IngotIron &amp; IronPlate, belts. Periodically collect storage-1 (wire).</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-1 made</li>
+              <li>Build a Power Pole</li>
+              <li>Build a Power Pole</li>
+              <li>Build a Miner on ore_iron-3</li>
+              <li>Build a Smelter</li>
+              <li>Build a Constructor</li>
+              <li>Run a power line from pole-2 to pole-3</li>
+              <li>Run a power line from pole-3 to pole-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line at iron-3: miner_mk1-2-&gt;smelter-2-&gt;constructor-3 (plate, later rod via set_recipe)-&gt;bank. pole-4 full now. Need 150 plate,150 rod, 300 wire automated. Collect storage-1 wire periodically. Watch burner fuel (refuel biomass).</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from miner_mk1-2 to pole-4</li>
+              <li>Run a power line from smelter-2 to pole-4</li>
+              <li>Run a power line from constructor-3 to pole-4</li>
+              <li>Set smelter-2 to make Iron Ingot</li>
+              <li>Set constructor-3 to make Iron Plate</li>
+              <li>Lay a belt from miner_mk1-2 to smelter-2</li>
+              <li>Lay a belt from smelter-2 to constructor-3</li>
+              <li>Lay a belt from constructor-3 to bank. <strong>Refused: to 'bank' is not one of your buildings ['burner-1', 'constructor-2', 'constructor-3', 'miner_mk1-1', 'miner_mk1-2', 'pole-1', 'pole-2', 'pole-3', 'pole-4', 'smelter-1', 'smelter-2', 'storage-1']</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner_mk1-2-&gt;smelter-2-&gt;constructor-3(plate)-&gt;storage-2. Copper: -&gt;constructor-2 wire-&gt;storage-1. Collect storage-1/storage-2 periodically. After 150+ plate automated, set constructor-3 to Recipe_IronRod_C. Need 150 plate,150 ro…</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-3 to storage-2</li>
+              <li>Collect what storage-1 made</li>
+              <li>Wait 60 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner_mk1-2-&gt;smelter-2-&gt;constructor-3(plate)-&gt;storage-2. Copper: -&gt;constructor-2 wire-&gt;storage-1. Collect storage-1/storage-2 periodically. After 150+ plate automated, set constructor-3 to Recipe_IronRod_C. Need 150 plate,150 ro…</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+              <li>Collect what storage-1 made</li>
+              <li>Collect what storage-2 made</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-1 made</li>
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Wire done (304). Plates should be &gt;=150 after this collect; constructor-3 switched to rod. Need 150 rod at 15/min (~10 min): wait, collect storage-2 periodically, then pay. Refuel burner-1 biomass when &lt;40. If plates still &lt;150, switch bac…</p>
+            <ul style="margin-top:0">
+              <li>Wait 100 seconds</li>
+              <li>Collect what storage-2 made</li>
+              <li>Set constructor-3 to make Iron Rod</li>
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plates 172, wire 304 done. Collecting rods from storage-2 (15/min). Need 150 automated rod, then pay. Refuel burner-1 if biomass &lt;40.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-2 made</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: All automated counts cover the cost; paying milestone 1-2.</p>
+            <ul style="margin-top:0">
+              <li>Pay for the milestone. <strong>Refused: the bank is short of the cost: {'wire': 1}</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Bank was 1 wire short; collecting storage-1 wire then paying milestone 1-2.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-1 made</li>
+              <li>Pay for the milestone</li>
+            </ul>
+          </li>
+        </ol>
+      </details>
+      <details class="transcript">
+        <summary>GPT-6.1 Sol, milestone 1-2, Nov 17, 2026: 82 replies, 82 moves</summary>
+        <p class="fine" style="margin-top:12px">Milestone 1-2, earned. 75 of 82 moves were carried out, 7 did not work. Its machines made 316 Wire, 198 Iron Plate, 151 Iron Rod. No machine was fed by hand. Mined by hand to clear the nodes: 30 Copper Ore, 21 Iron Ore.</p>
+        <ol>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need automated 150 plates,150 rods,300 wire. Build iron line first; preserve wire for burner, smelter and poles; recycle iron smelter for copper later if necessary.</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need automated 150 plates,150 rods,300 wire. Inspect copper location to plan one burner and limited 48 starting wire; iron node at (-1287,-1490).</p>
+            <ul style="margin-top:0">
+              <li>Look for Copper Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Bootstrap automated copper wire first: copper miner (23143,-13428), smelter ~21943,-13428, wire constructor ~20743,-13428, storage ~19543,-13428. One burner at19000,-11000; pole1 21000,-12000 connects burner/miner/smelter/pole2. Pole2 1550…</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_copper-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automation first. Miner23143,-13428 -&gt; smelter21943,-13428 -&gt; wire constructor20743,-13428 -&gt; storage19543,-13428. Burner21000,-11000, pole1 22000,-12000 powers miner/smelter + pole2; pole2 powers constructor. Harvest wire then exte…</p>
+            <ul style="margin-top:0">
+              <li>Build a Biomass Burner</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: miner -&gt; smelter21943,-13428 -&gt; wire constructor20743,-13428 -&gt; storage19543,-13428. Burner21000,-11000; pole1 22000,-12000 feeds miner/smelter/pole2; pole2 feeds constructor. Then extend power 250m toward iron(-1287,-1490).</p>
+            <ul style="margin-top:0">
+              <li>Build a Smelter</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper startup: pole1 burner+miner+smelter+pole2. Pole2 constructor and extension toward iron. Only 15 wire left so conserve until automated wire arrives.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Start automated copper wire locally, collect storage. Pole1 burner+miner+smelter+pole2; pole2 constructor and extension toward iron.</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: pole1 links burner, miner, smelter, pole2. Pole2 powers wire constructor then extends chain toward iron. Build local storage for automated wire.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from burner-1 to pole-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first. Pole1: burner+miner+smelter+pole2. Build belted copper wire constructor/storage, then extend power chain toward iron.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-1 to miner_mk1-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: miner→smelter→wire constructor→storage. Pole1 reserves final connector for pole2, which powers constructor and extends toward iron.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-1 to smelter-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper automation: belt miner→smelter, build wire constructor + pole2 + storage. Need automated wire to fund iron power poles and smelter; pole1 has one free connector reserved for pole2.</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-1 to make Copper Ingot</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automation first: belt smelter→wire constructor→storage at copper node. Pole1 has one free port for pole2. Then collect automated wire to build iron line and power chain.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from miner_mk1-1 to smelter-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper: build wire constructor west of smelter, pole2 linked from pole1, then storage. Collect automated wire for building iron factory. Iron node -1287,-1490; power chain must reach it.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Pole2 links pole1 and wire constructor; extend power toward iron node (-1287,-1490) via poles &lt;=90m apart. Copper storage then collect wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Complete copper line: power constructor-1 from pole-2, set wire, belt smelter-&gt;constructor, build storage nearby and belt. Extend pole chain toward iron (-1287,-1490).</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-1 to pole-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish automated copper: set constructor-1 wire, belt smelter-1 to it, build storage near [18143,-13428] and belt output. Then iron node and chain power toward it.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to constructor-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper line with smelter-1 -&gt; constructor-1 -&gt; storage near [18143,-13428]. Collect wire to afford poles and iron smelter. Then locate iron and chain power toward it.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-1 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automation: next build storage at [18143,-13428], belt constructor-1 into it. Collect wire for further construction, locate iron and extend power chain.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-1 to constructor-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need fix smelter-&gt;constructor steep belt; inspect elevations/ports then reposition constructor if necessary.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Reposition copper constructor farther from smelter to avoid steep belt; rebuild at [18143,-13428], then wire, recipe, belt.</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rebuild copper constructor 30m west of smelter to reduce belt slope; connect power, set wire recipe, and belt next.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: power constructor-2, set wire, belt smelter-1 to it; storage after. Need automated 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: belt smelter-1 to constructor-2 next, then storage. Need automated 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-2 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Complete copper belt, then output storage. Need automated 150 plates,150 rods,300 wire. One action per reply.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-1 to constructor-2. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper smelter westward belts failed TooSteep twice. Rebuild constructor north/south of smelter instead. Need 150 plate,150 rod,300 wire automated; ample time.</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Try copper constructor north of smelter; westward belts twice TooSteep. Need automated 150 plates,150 rods,300 wire. One burner powers all via chained poles.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Test northward copper belt; if successful power constructor-3 from pole-2 and set Wire. Need automated 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-1 to constructor-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper belt now works. Power constructor-3, set Wire, build end storage. Need automated 150 plate,150 rod,300 wire. One burner only.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to constructor-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper powered and belted. Next end storage near constructor-3 then belt; discover iron nodes. Need 150 plates,150 rods,300 wire automated; one burner.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-3 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line running; add end box and belt then collect wire. Need automated 150 plates/150 rods/300 wire. One burner; reserve pole connector for chaining. Discover iron next.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper running. Need automated 150 plates/150 rods/300 wire. Belt output box then discover iron; one burner powers all via pole chain.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-3 to storage-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automated line running; output box belt too steep downhill north. Rebuild box ~30m east/west at same y for gentler grade. Need 150 plates,150 rods,300 wire. Single burner powers all; iron node discovery next.</p>
+            <ul style="margin-top:0">
+              <li>Take down storage-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line running; try output storage 30m east for gentler belt slope. Then collect automated wire to fund poles/smelter, discover iron node and build iron line. Cost 150 plates 150 rods 300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container. <strong>Did not work: no_surface_hit</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper running; need belt-fed end storage. Try west of constructor for gentler slope. Then collect wire for iron line; milestone 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line needs end storage belt; then collect wire to fund iron smelter and poles. Need 150 automated plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-3 to storage-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automated line running into storage-2. Locate iron for second extractor line; need 150 plates,150 rods,300 wire automated. Burner at 21000,-11000; pole-2 at18000,-11500.</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line automated and powered remotely; collect wire to finance iron line and power chain to bank. Iron nodes near bank: ore_iron-1 (-1287,-1490), -2 (1567,1576), -3 (2598,-2140). Need 150 plates,150 rods,300 wire automated.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automated line complete. Need power chain from pole-2 (18000,-11500) via (11000,-7500),(4000,-3500),near iron node(-1287,-1490). Build iron miner/smelter/constructor/storage; switch plate to rod after 150 plates. Only one burner; fu…</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build iron automation near bank; connect power from copper pole-2 via (11000,-7500),(4000,-3500),(-1000,-3500). Need preserve plates for belts; current 54 before miner.</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_iron-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Extend power from copper pole-2 via new pole at (11000,-7500), then (4000,-3500), then iron machines near bank. Copper line already automated; collect storage-2 later for 300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line automated to storage-2. Extend power pole-3 -&gt; new pole (4000,-3500) -&gt; iron line near bank. Need 150 plates,150 rods,300 wire automated; iron miner-2 unpowered.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to pole-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Connect new pole to pole-3, then power iron miner, new smelter and constructor from it (four total lines). Build iron line near bank, plates first then rods; collect wire from storage-2 periodically.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner-2 -&gt; new smelter at (-2800,-1490) -&gt; constructor at (-4300,-1490) -&gt; storage at (-5800,-1490). Pole-4 powers all three. Plates first, then rods. Copper line already running; collect storage-2 periodically and refuel burner.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-3 to pole-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner-2 -&gt; new smelter (-2800,-1490) -&gt; constructor (-4300,-1490) -&gt; storage (-5800,-1490). Pole-4 has incoming link, can power three. Plates then rods. Copper storage-2 running; collect wire and refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Build a Smelter</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron line: power smelter-2 and constructor at (-4300,-1490) from pole-4; miner -&gt; smelter -&gt; constructor -&gt; storage (-5800,-1490). Plates then rods. Copper storage-2 running; collect wire and refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-4 to miner_mk1-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron: set smelter-2 iron ingots, belt miner-2 -&gt; smelter-2; build constructor (-4300,-1490), power via pole-4 fourth connector, make plates then rods, output storage. Copper running; collect wire/refuel soon.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-4 to smelter-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Set iron line: belt miner_mk1-2 to smelter-2, build constructor near (-4300,-1490), add pole-5 chained from pole-4 for constructor; plates then rods into storage. Copper wire running; refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-2 to make Iron Ingot</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build iron constructor at (-4300,-1490), pole-5 linked from pole-4, then storage. Produce 150+ plates then 150 rods. Copper runs into storage-2; refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from miner_mk1-2 to smelter-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron constructor then pole-5 from pole-4 (currently 3 links), belt smelter-2 to constructor and storage. Make 150 plates then 150 rods; copper accumulates in storage-2. Refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build pole-5, link pole-4 -&gt; pole-5 -&gt; constructor-4. Set iron plates and belt smelter-2 -&gt; constructor-4 -&gt; new storage. Need 150 automated plates then 150 rods; copper storage accumulating. Refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next connect pole-5 to constructor-4, set iron plate, belt smelter-2 -&gt; constructor-4 -&gt; new storage. Produce 150 automated plates then switch to 150 rods. Copper wire accumulating. Refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-4 to pole-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron line: set constructor-4 iron plate, belt smelter-2 to it, build storage nearby and belt output. Need 150 automated plates then switch to 150 rods. Copper wire accumulating; refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-5 to constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron line: belt smelter-2 to constructor-4; build storage at (-5800,-1490), belt constructor output. Produce 150 automated plates then switch to 150 rods. Copper wire accumulating; refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-4 to make Iron Plate</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron line with storage at (-5800,-1490) and output belt. Collect 150 automated plates then switch constructor-4 to rods for 150. Copper wire accumulating; refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-2 to constructor-4. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron smelter-&gt;constructor belt failed too steep at 18.6m; inspect position/ports, then relocate constructor farther (25-30m) if needed. Need automated 150 plates,150 rods,300 wire; copper line running. Refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Relocate iron constructor farther from smelter to resolve steep belt; try at [-5800,-1490] (30 m). Copper automated wire running; refuel burner soon. Need 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Relocate iron constructor 30 m from smelter to avoid steep belt. Copper wire running; refuel burner soon. Need automated 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Test relocated iron constructor belt before wiring. Then power pole-5, plate recipe, storage output. Copper running; burner needs fuel soon. Goal automated 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-2 to constructor-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next set constructor-5 to iron plates; build output storage once enough plates (currently 9). Copper storage has 267 wire: collect soon. Refill burner with 100 biomass. Goal automated 150 plates,150 rods,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-5 to constructor-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line belted and powered. Need end storage (10 plates,10 rods; bank 9 plates). Collect copper wire, refill burner, bootstrap one plate if necessary, build storage for constructor-5. Goal 150 automated plates +150 rods +300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-5 to make Iron Plate</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect automated wire toward 300; iron constructor is running. Need 10 plates to build its end storage (currently bank 9); collect constructor output once, build and belt storage, then accumulate 150 plates and switch to rods. Refill burn…</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect initial automated plates to afford iron-line storage (10 plates/10 rods). Build storage near constructor-5 then belt it; accumulate 150 plates, switch constructor to rods for 150. Wire requirement covered; refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Collect what constructor-5 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Wire quota covered. Let iron plates accumulate to afford storage plus belt, then build a storage near constructor-5; collect 150 automated plates then switch to rods for 150. Refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Wire quota covered. Iron plates accumulating. Build storage near constructor-5 and belt its output, collect 150 automated plates, then switch constructor to rods for 150.</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect plates to afford iron-line storage and belt; need 150 automated plates and 150 rods total. Wire quota covered.</p>
+            <ul style="margin-top:0">
+              <li>Collect what constructor-5 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron line with belted storage, then accumulate 150 plates in bank and switch constructor-5 to rods for 150. Wire quota covered; burner fuel ample.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron storage belt; collect enough plates to hold 150 after building costs, then switch constructor-5 to rods and collect 150. Wire quota covered.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-5 to storage-3. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Relocate iron output storage onto flatter terrain near constructor-5; then belt, accumulate 150 plates and switch to rods for 150. Wire quota covered.</p>
+            <ul style="margin-top:0">
+              <li>Take down storage-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build iron output storage on another side to avoid steep terrain; belt constructor-5 to it, accumulate 150 automated plates, then switch to rods for 150. Wire quota covered.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Connect iron output storage, accumulate at least 150 automated plates and sufficient bank plates, then switch constructor-5 to rods for 150 automated rods. Wire quota met.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-5 to storage-4. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron storage placements 25-34 m away were too steep (storage terrain ~9m above constructor). Try storage ~44m away to reduce slope, then belt finished plates and later rods into it. Need 150 plates/150 rods automated; wire quota met.</p>
+            <ul style="margin-top:0">
+              <li>Take down storage-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Try storage 43m from iron constructor to reduce slope; belt to it, accumulate 150 automated plates then switch constructor to rods for 150. Wire quota already met.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Connect iron output storage; need 150 automated plates and rods, wire quota met. Switch iron constructor to rods after enough plates.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-5 to storage-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line now belts into storage-5. Need bank plate 150 and automated plate &gt;=150 before switching constructor-5 to rods; wire already sufficient.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect automated plates, then switch constructor-5 to rods once bank and automated plates both reach 150. Wire requirement already met.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-5 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate and wire requirements met in bank and automation. Existing belted iron line now makes rods into storage-5; need 150 automated rods, then collect and pay. Burner has 76 biomass.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-5 to make Iron Rod</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate/wire requirements met. Iron constructor-5 now makes rods via belts into storage-5; need 150 automated rods, collect then pay. Burner has 75 biomass.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate/wire requirements met. Belt-fed constructor-5 produces rods into storage-5; need 150 automated rods before collecting and paying. Storage currently 33 rods; burner has 59 biomass.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate and wire requirements met in bank. Need 150 automated rods; storage-5 has 72, constructor-5 makes 15/min. Wait until at least 150, collect storage-5, then pay. Burner has 43 biomass, sufficient.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 150 automated rods. Storage-5 currently has 111; wait 120 seconds, then reassess and collect once it holds 150. Plates and wire already sufficient; burner fuel adequate.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect 150 automated rods from belted storage; bank then covers all milestone costs. Next action: pay.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-5 made</li>
+            </ul>
+          </li>
+          <li>
+            <ul style="margin-top:0">
+              <li>Pay for the milestone</li>
+            </ul>
+          </li>
+        </ol>
+      </details>
+      <details class="transcript">
+        <summary>Claude Opus 5.5, milestone 1-3, Nov 17, 2026: 32 replies, 147 moves</summary>
+        <p class="fine" style="margin-top:12px">Milestone 1-3, earned. 132 of 147 moves were carried out, 2 were refused, 13 did not work. Its machines made 336 Wire, 134 Iron Plate, 151 Iron Rod, 100 Iron Ore, 356 Screws. No machine was fed by hand. Mined by hand to clear the nodes: 30 Copper Ore, 25 Iron Ore. Made at the bench by hand: 72 Iron Plate. 28 further moves were not run, because an earlier move in the same reply failed. Its first payment was refused 68 Iron Plate short, because plates its machines had made were spent on belts. It then made 72 Iron Plate by hand and paid, so most of the plates handed in were made by hand. The machines made 134 where 100 were needed, which is why the test counts the milestone as earned.</p>
+        <ol>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: burner+pole chain; copper miner-&gt;smelter-&gt;wire constructor-&gt;box; iron miner-&gt;smelter-&gt;constructor(plate then rod)-&gt;screw constructor-&gt;box. Wire budget tight: more poles from produced wire.</p>
+            <ul style="margin-top:0">
+              <li>Look for Copper Ore nearby</li>
+              <li>Look for Iron Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site at copper-1 (~231,-134 m): miner-&gt;smelter-&gt;constructor(wire)-&gt;storage, burner+pole there. Next: power lines burner/miner/smelter/constructor to pole, belts, fuel 100 biomass. Then iron line near bank (2nd burner from produced w…</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_copper-1</li>
+              <li>Build a Smelter</li>
+              <li>Build a Constructor</li>
+              <li>Build a Storage Container</li>
+              <li>Build a Biomass Burner</li>
+              <li>Build a Power Pole</li>
+              <li>Set smelter-1 to make Copper Ingot</li>
+              <li>Set constructor-1 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site at copper-1 (~231,-134 m): miner-&gt;smelter-&gt;constructor(wire)-&gt;storage-1, burner-1+pole-1 (pole full). Next: verify running; then iron line near bank (2nd burner from produced wire): iron-1 miner-&gt;smelter-&gt;plate/rod/screw constr…</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from burner-1 to pole-1</li>
+              <li>Run a power line from miner_mk1-1 to pole-1</li>
+              <li>Run a power line from smelter-1 to pole-1</li>
+              <li>Run a power line from constructor-1 to pole-1</li>
+              <li>Lay a belt from miner_mk1-1 to smelter-1</li>
+              <li>Lay a belt from smelter-1 to constructor-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">2 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site at copper-1 (~231,-134 m): miner-&gt;smelter-&gt;constructor(wire)-&gt;storage. Belt smelter-&gt;constructor-1 was too steep; moved constructor south of smelter. Next: belt constructor-&gt;storage (move storage near constructor if too far/ste…</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+              <li>Take down constructor-1</li>
+              <li>Build a Constructor</li>
+              <li>Run a power line from constructor-2 to pole-1</li>
+              <li>Set constructor-2 to make Wire</li>
+              <li>Lay a belt from smelter-1 to constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire line: miner_mk1-1-&gt;smelter-1-&gt;constructor-2(wire)-&gt;storage-1, collect storage-1 into bank later. pole-1 is FULL (4 lines) - for iron line need to rework pole (burner-&gt;pole-2 chain). Need iron line: plate 100, screw 300.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-2 to storage-1</li>
+              <li>Look for Iron Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire line running: miner_mk1-1-&gt;smelter-1-&gt;constructor-2(wire)-&gt;storage-1; collect storage-1 into bank periodically. pole-1 FULL. Burner at (21743,-12000), ~250m from bank. Plan iron line: find iron node near burner or chain poles (…</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+              <li>Look closely at smelter-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rebuilding power: pole-2 (burner,smelter,constructor-2,link), pole-3 (link, miner, 2 free). Next: collect wire from storage-1, chain poles (&lt;=90m) from pole-3 toward iron nodes near bank (iron-3 at 2598,-2140; iron-1 -1287,-1490) for iron…</p>
+            <ul style="margin-top:0">
+              <li>Take down pole-1</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from burner-1 to pole-2</li>
+              <li>Run a power line from smelter-1 to pole-2</li>
+              <li>Run a power line from constructor-2 to pole-2</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-2 to pole-3</li>
+              <li>Run a power line from miner_mk1-1 to pole-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Chaining poles 4,5,6 toward iron-3 (2598,-2140). Next: connect miner to pole-6, smelter ~(1300,-1200) iron ingot, constructor ~(100,-400)? plate first (100 plates) then rod; later 2nd constructor screws; storage at end; collect. Power budg…</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-1 made</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-3 to pole-4</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-4 to pole-5</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-5 to pole-6</li>
+              <li>Build a Miner on ore_iron-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner2-&gt;smelter(4000,-2140)-&gt;constructor(5400,-2140) plates-&gt;storage (6800,-2140) next; power constructor on pole-6. After ~100 plates collected from storage, collect storage, set constructor to rod, belt storage-&gt;screw construc…</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from miner_mk1-2 to pole-6</li>
+              <li>Build a Smelter</li>
+              <li>Set smelter-7 to make Iron Ingot. <strong>Refused: building 'smelter-7' is not one of your buildings ['burner-1', 'constructor-2', 'miner_mk1-1', 'miner_mk1-2', 'pole-2', 'pole-3', 'pole-4', 'pole-5', 'pole-6', 'smelter-1', 'smelter-2', 'storage-1']</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">5 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner2-&gt;smelter-2-&gt;constructor(5400,-2140) plates-&gt;storage (6800,-2140); power constructor on pole-7 (pole-6 full: pole5,miner2,smelter2,pole7). After 100 plates collected, set constructor to rod, belt storage-&gt;screw constructor…</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-2 to make Iron Ingot</li>
+              <li>Run a power line from smelter-2 to pole-6</li>
+              <li>Lay a belt from miner_mk1-2 to smelter-2</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-6 to pole-7</li>
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner2-&gt;smelter-2-&gt;constructor-3 plates-&gt;storage-2 (6800,-2140). pole-7 has pole6,constructor3; 2 free. After 100 plates collected, set constructor-3 to rod; build screw constructor (8200,-2140, on pole-7) belt storage-2-&gt;it-&gt;ne…</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from constructor-3 to pole-7</li>
+              <li>Set constructor-3 to make Iron Plate</li>
+              <li>Lay a belt from smelter-2 to constructor-3</li>
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-3 to storage-2. <strong>Did not work: unaffordable</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">1 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner2-&gt;smelter-2-&gt;constructor-3 plates-&gt;storage-2 (6800,-2140). pole-7 has pole6,constructor3; 2 free. Once 100 plates are collected, set constructor-3 to rod, then build a screw constructor at (8200,-2140) on pole-7 and belt s…</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-1 made</li>
+              <li>Wait 60 seconds</li>
+              <li>Collect what constructor-3 made</li>
+              <li>Lay a belt from constructor-3 to storage-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner2-&gt;smelter-2-&gt;constructor-3 plates-&gt;storage-2 (6800,-2140). constructor-4 (8200,-2140) screw recipe on pole-7 (pole-7 then has 1 free). Once ~100+ plates collected (plus extra for belts/storage), set constructor-3 to Recipe…</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+              <li>Run a power line from constructor-4 to pole-7</li>
+              <li>Set constructor-4 to make Screws</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-2 made</li>
+              <li>Collect what storage-1 made</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plates done (126), wire should be done after storage-1 collect. Now constructor-3 makes rods -&gt; storage-2 -&gt; constructor-4 screws -&gt; storage-3 (9600,-2140). Collect storage-3 repeatedly until 300 screws, then pay. Refuel burner-1 with biom…</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+              <li>Collect what storage-1 made</li>
+              <li>Set constructor-3 to make Iron Rod</li>
+              <li>Collect what storage-2 made</li>
+              <li>Lay a belt from storage-2 to constructor-4</li>
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-4 to storage-3</li>
+              <li>Wait 60 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rods-&gt;storage-2-&gt;constructor-4 screws-&gt;storage-3. Collect storage-3 until 300 screws, then pay. Burner fuel ok (~106).</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-3 made</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Screw line stalled: storage-2 has 144 rods but constructor-4 empty. Diagnosing.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+              <li>Look closely at storage-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Removed storage-2 (out belt wasn't feeding). Now constructor-3 rods -&gt; constructor-4 screws -&gt; storage-3. Need 300 screws; then collect storage-3 and pay. Burner fuel 46: refuel biomass later.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-2 made</li>
+              <li>Take down storage-2</li>
+              <li>Lay a belt from constructor-3 to constructor-4. <strong>Did not work: no_free_conveyor_port</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">2 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rebuilt rod constructor (constructor-5) since constructor-3 output port was stuck. Chain smelter-2 -&gt; c5 rods -&gt; c4 screws -&gt; storage-3. Need 300 screws (~5 min), then collect storage-3 and pay.</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-3</li>
+              <li>Build a Constructor. <strong>Did not work: no_surface_hit</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">5 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Building rod constructor-5 between smelter-2 and constructor-4 (screws) -&gt; storage-3. Need 300 screws (~6 min), then collect storage-3 and pay.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+              <li>Run a power line from constructor-5 to pole-7</li>
+              <li>Set constructor-5 to make Iron Rod</li>
+              <li>Lay a belt from smelter-2 to constructor-5. <strong>Did not work: no_free_conveyor_port</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">2 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rebuilt smelter (port was blocked). Chain miner2-&gt;smelter3-&gt;c5 rod-&gt;c4 screw-&gt;storage-3. Then wait ~8 min, collect storage-3, pay (need 300 screw).</p>
+            <ul style="margin-top:0">
+              <li>Take down smelter-2</li>
+              <li>Build a Smelter</li>
+              <li>Run a power line from smelter-3 to pole-6</li>
+              <li>Set smelter-3 to make Iron Ingot</li>
+              <li>Lay a belt from miner_mk1-2 to smelter-3. <strong>Did not work: no_free_conveyor_port</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">2 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Miner2-&gt;smelter3 belt failed (no free port). Testing smelter3-&gt;c5-&gt;c4 belts; if ok, collect+dismantle miner_mk1-2 and rebuild it on its node, then belt to smelter-3. Then wait, collect storage-3, pay (need 300 screw).</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-3 to constructor-5</li>
+              <li>Lay a belt from constructor-5 to constructor-4. <strong>Did not work: no_free_conveyor_port</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">1 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rebuilt screw constructor as constructor-6 (c5-&gt;c6-&gt;storage-3). Next: dismantle+rebuild miner_mk1-2 on its iron node (collect it first), belt to smelter-3. Then wait, collect storage-3, pay (need 300 screw).</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-4</li>
+              <li>Build a Constructor</li>
+              <li>Set constructor-6 to make Screws</li>
+              <li>Lay a belt from constructor-5 to constructor-6. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">3 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Rebuilding iron line: miner_mk1-2 dismantled -&gt; rebuild on nearest iron node (~2598,-2140), belt to smelter-3. c7 = screw constructor replacing c6 (too steep). Then power c7 (pole-7 or new pole), belt c7-&gt;storage-3, belt storage-3-&gt;bank? w…</p>
+            <ul style="margin-top:0">
+              <li>Collect what miner_mk1-2 made</li>
+              <li>Take down miner_mk1-2</li>
+              <li>Take down constructor-6</li>
+              <li>Look for Iron Ore nearby</li>
+              <li>Build a Constructor</li>
+              <li>Set constructor-7 to make Screws</li>
+              <li>Lay a belt from constructor-5 to constructor-7. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner_mk1-3(ore_iron-3)-&gt;smelter-3-&gt;c5 rod-&gt;c8 screw -&gt;storage-3 (9600,-2140) -&gt;bank? Next: belt c8-&gt;storage-3, wait, collect storage-3, pay. Need 300 automated screws. If c8 too steep, try another spot near c5 at similar elevat…</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_iron-3</li>
+              <li>Lay a belt from miner_mk1-3 to smelter-3</li>
+              <li>Run a power line from miner_mk1-3 to pole-6</li>
+              <li>Take down constructor-7</li>
+              <li>Build a Constructor</li>
+              <li>Set constructor-8 to make Screws</li>
+              <li>Lay a belt from constructor-5 to constructor-8. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">1 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner_mk1-3-&gt;smelter-3-&gt;c5 rod-&gt;screw constructor-&gt;storage-3 (9600,-2140). Then wait, collect storage-3, pay. Need 300 automated screws (~40/min). If steep, try spots at same height as c5 (e.g. 6100,-1500 was steep too; try 4600…</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-8</li>
+              <li>Build a Constructor</li>
+              <li>Set constructor-9 to make Screws</li>
+              <li>Lay a belt from constructor-5 to constructor-9. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">2 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: c5 rod -&gt; storage-3 (9600,-2140) -&gt; belt -&gt; new screw constructor ~11000,-2140 -&gt; new storage ~12500 -&gt; collect to bank. Power new constructor via new pole linked to pole-5 (9200,-5400). Then wait, collect, pay (need 300 auto screws).</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-5 to storage-3. <strong>Did not work: no_free_conveyor_port</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">2 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 auto screws. c5 (rod) output belt failing: steep to c9, no free port to storage-3. Inspecting ports/heights to pick placement.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-5</li>
+              <li>Look closely at storage-3</li>
+              <li>Look closely at constructor-9</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Screw line: c5 rod -&gt; c10 screw at same y (7400,-2900) -&gt; storage-3; collect storage-3 to bank. If steep again try other spots (e.g. 6100,-1400).</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-9</li>
+              <li>Build a Constructor</li>
+              <li>Set constructor-10 to make Screws</li>
+              <li>Lay a belt from constructor-5 to constructor-10</li>
+              <li>Run a power line from constructor-10 to pole-7</li>
+              <li>Lay a belt from constructor-10 to storage-3. <strong>Did not work: no_free_conveyor_port</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate and wire are already covered; only 300 screws are needed. Line: c5 rod -&gt; c10 screw -&gt; storage-4 (new box at 8900,-2900). Once ~300 screws are in storage-4, collect it into the bank and pay. If the belt fails, try building the box at…</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-10 to storage-4</li>
+              <li>Wait 60 seconds</li>
+              <li>Look closely at constructor-10</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Power was out because the burner had no fuel, so I refuelled it. Line: c5 rod -&gt; c10 screw -&gt; storage-4. Need 300 screws in storage-4 (it had 48); at about 40 per minute that is roughly 7 minutes. Then collect storage-4 into the bank and p…</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+              <li>Wait 120 seconds</li>
+              <li>Look closely at constructor-10</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Waiting about 6 minutes for screws to build up in storage-4 (needed 300; it had 76), then collecting into the bank and paying. If pay is refused, check the bank screw count, wait longer, collect storage-4 again and retry. Refuel burner-1 i…</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-4 made</li>
+              <li>Pay for the milestone. <strong>Refused: the bank is short of the cost: {'plate': 68}</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: The bank was short 68 plates after building. Hand-crafting about 72 plates from the iron ingots in the bank, then paying. If pay is still refused, read the reason.</p>
+            <ul style="margin-top:0">
+              <li>Craft Iron Plate by hand at the bench, 20 times. <strong>Made by hand, not counted as earned: 40 Iron Plate</strong></li>
+              <li>Craft Iron Plate by hand at the bench, 16 times. <strong>Made by hand, not counted as earned: 32 Iron Plate</strong></li>
+              <li>Pay for the milestone</li>
+            </ul>
+          </li>
+        </ol>
+      </details>
     </div>
 <!-- savebench-ai-runs:end -->
   </div>
@@ -827,7 +1802,7 @@
       <dl>
         <dt>Recorded</dt><dd>Two trials in the game on September 9, 2026. Every rate, target and window above comes from their records. The later results come from SaveBench's own run records through November 17, 2026.</dd>
         <dt>Prototype</dt><dd>The screens and recording show the prototype's own controls on made-up sample data, with no game, model or server behind them.</dd>
-        <dt>Not shown yet</dt><dd>A pass on the newer quota test, a repeat by either of the two AI models that have each earned milestone 1-1 once, a milestone past 1-1 by a model, and any ranking of models. The September 9 result covers one design on one challenge.</dd>
+        <dt>Not shown yet</dt><dd>A pass on the newer quota test, a repeat of any milestone a model has earned (each was earned once), several milestones earned in one continuing world by a model, a milestone past 1-3, and any ranking of models. The September 9 result covers one design on one challenge.</dd>
       </dl>
     </div>
     <details class="evidence-depth" style="margin-top:56px">
