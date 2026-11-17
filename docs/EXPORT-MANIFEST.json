@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 40609,
-      "sha256": "695f4f3440fdb710294d684507889b354e8325c36c385d020c8746d6dea3caf5"
+      "bytes": 41748,
+      "sha256": "539c78a6734dd076a432e0ea4f2cc638b90224147e4c38f9296d474d8f112d54"
     },
     {
       "path": "assets/og/og-default.png",
@@ -157,6 +157,16 @@
       "path": "assets/savebench/film/opus-milestone-1-1.mp4",
       "bytes": 15816235,
       "sha256": "7c8932697456b2a5df7cbfb6920b6f145448fbc4bfee7ca5fe95c4fdd510c56d"
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-2-poster.jpg",
+      "bytes": 191435,
+      "sha256": "befc209ae1c283be77ae261838d114e9507b3a27f7d385797d6be2a1655f3cee"
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-2.mp4",
+      "bytes": 15847978,
+      "sha256": "f3bc567b3020d6135c518ef109587ca93c1d25af5127fa7effeb1b1ab8dbf9b4"
     },
     {
       "path": "assets/savebench/film/sol-milestone-1-1-poster.jpg",
@@ -500,8 +510,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 169177,
-      "sha256": "d30013728dc819aba520cac1ef700ae6084f23ca64e880be19156dac7442d21e"
+      "bytes": 170718,
+      "sha256": "a6d3d6956eebb7805ddcdb50dbf06b79cbbb83d65acc604cf6cf8ed3f021fb63"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -510,8 +520,8 @@
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
-      "bytes": 27015,
-      "sha256": "885ba28f45c4f4f62dfa04b4a953bd25e039d0934bc5d89ab2719232ec54ae59"
+      "bytes": 28039,
+      "sha256": "ac7145bad472d8121e66e28ff88bc1b45bef352c69b6f9dbd895f198558b446f"
     },
     {
       "path": "ear.html",
