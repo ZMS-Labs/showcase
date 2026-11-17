@@ -210,13 +210,13 @@
     },
     {
       "path": "assets/og/og-savebench.png",
-      "sha256": "68a294b789adbfe967e365e012003a8820afba9171fa590ca18ab0ab582e807e",
-      "bytes": 116456,
+      "sha256": "e229fc612758f416b6174e84f0d225f330635ce85cb6962a7e1b6041d37b563f",
+      "bytes": 574660,
       "dimensions": [
         1200,
         630
       ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Sample data\", and a crop of the assets/savebench/savebench-workspace.png entry",
+      "kind": "Link-preview share card: the project name and one-line question on night, the label \"Game film, November 2026\", and a crop of the assets/savebench/film/opus-milestone-1-1-poster.jpg entry (an image from the game Satisfactory; Satisfactory and its artwork belong to their owners)",
       "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
       "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     },
@@ -275,6 +275,28 @@
       ],
       "kind": "Personal photograph of Zach Stern (a selfie at Soldier Field, Chicago), supplied by him on October 6, 2026; cropped to 4:5 and resized only, with no retouching or tonal change and no embedded metadata",
       "claim_boundary": "A personal photo for the About page; not evidence for any project or claim"
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-1.mp4",
+      "sha256": "7c8932697456b2a5df7cbfb6920b6f145448fbc4bfee7ca5fe95c4fdd510c56d",
+      "bytes": 15816235,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Film from the game Satisfactory (game camera, 72 seconds, silent): the factory built by Claude Opus 5.5 for milestone 1-1. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Shown on the SaveBench case study beside the November 16 model run. It illustrates the factory; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-1-poster.jpg",
+      "sha256": "82f36f6ffa394bdc4b119e111be4bfe62a2c7f138ca80f374815c039eca200dc",
+      "bytes": 212323,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (film frame): the opening view of the same film. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Shown on the SaveBench case study beside the November 16 model run. It illustrates the factory; it is not a measurement record."
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
@@ -748,28 +770,6 @@
       ],
       "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-17. It illustrates the project; it is not a measurement record."
-    },
-    {
-      "path": "assets/savebench/film/opus-milestone-1-1.mp4",
-      "sha256": "7c8932697456b2a5df7cbfb6920b6f145448fbc4bfee7ca5fe95c4fdd510c56d",
-      "bytes": 15816235,
-      "dimensions": [
-        1280,
-        720
-      ],
-      "kind": "Film from the game Satisfactory (game camera, 72 seconds, silent): the factory built by Claude Opus 5.5 for milestone 1-1. Satisfactory and its artwork belong to their owners.",
-      "claim_boundary": "Shown on the SaveBench case study beside the November 16 model run. It illustrates the factory; it is not a measurement record."
-    },
-    {
-      "path": "assets/savebench/film/opus-milestone-1-1-poster.jpg",
-      "sha256": "82f36f6ffa394bdc4b119e111be4bfe62a2c7f138ca80f374815c039eca200dc",
-      "bytes": 212323,
-      "dimensions": [
-        1280,
-        720
-      ],
-      "kind": "Image from the game Satisfactory (film frame): the opening view of the same film. Satisfactory and its artwork belong to their owners.",
-      "claim_boundary": "Shown on the SaveBench case study beside the November 16 model run. It illustrates the factory; it is not a measurement record."
     }
   ]
 }

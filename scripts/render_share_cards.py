@@ -64,7 +64,7 @@ panel = lambda inner: '<div class="graphic-panel" style="width:460px;height:470p
 
 cards = {
     'og-default': frame(default, bg='paper'),
-    'og-savebench': project('SaveBench', 'Can an AI design a factory that actually runs?', 'Sample data', img('savebench/savebench-workspace.png')),
+    'og-savebench': project('SaveBench', 'Can an AI build a factory that actually runs?', 'Game film, November 2026', img('savebench/film/opus-milestone-1-1-poster.jpg')),
     'og-interleaf': project('Interleaf', 'A contract workstation that keeps the question next to the words.', 'Archived prototype, made-up content', img('interleaf/matter-map.png')),
     'og-epistemic-skills': project('Epistemic Skills', 'Teaching AI agents to check their own work.', 'Recorded check',
         panel('<span class="kicker" style="margin:0">First publication of this showcase · September 19, 2026</span>' + TILES +
