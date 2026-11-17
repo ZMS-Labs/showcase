@@ -299,6 +299,28 @@
       "claim_boundary": "Shown on the SaveBench case study beside the November 16 model run. It illustrates the factory; it is not a measurement record."
     },
     {
+      "path": "assets/savebench/film/sol-milestone-1-1.mp4",
+      "sha256": "04ada14881536cc2b946cb9edbf1ca8634f27e87456f9e01ea68fc1524c9acf3",
+      "bytes": 16252244,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Film from the game Satisfactory (game camera, 72 seconds, silent): the factory built by GPT-6.1 Sol for milestone 1-1. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Shown on the SaveBench case study beside the November 17 model run. It illustrates the factory; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-1-poster.jpg",
+      "sha256": "0d1772953a094f5f7ef26aa6bb51a47fc7af9ca1836dea81b8626fbf9057d024",
+      "bytes": 199670,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (film frame): a wide view from the same film. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Shown on the SaveBench case study beside the November 17 model run. It illustrates the factory; it is not a measurement record."
+    },
+    {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
       "sha256": "83027203d0a12a2f31412dcde449c8a8187a0ba3ebebef0650213d80f2387c57",
       "bytes": 216254,

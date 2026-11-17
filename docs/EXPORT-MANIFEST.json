@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 39478,
-      "sha256": "c8ca7b8471c48944569d2ac461e3415fecdf23f09b0d4731956b893b5d8f7b92"
+      "bytes": 40609,
+      "sha256": "1e3edc01c2ada85b37339b98a8f0f407a404f2a9ec562b2bfdb443d3f5413b4d"
     },
     {
       "path": "assets/og/og-default.png",
@@ -145,8 +145,8 @@
     },
     {
       "path": "assets/savebench/film/film.js",
-      "bytes": 662,
-      "sha256": "178772552acc9e1c7e6258cd53c62f8e6d1e35d6486fec8abae794893e2bc282"
+      "bytes": 737,
+      "sha256": "55d2d4d266eb917fc213ea389bc12fda5bd037c27f30b63a0ab45b19ec49e990"
     },
     {
       "path": "assets/savebench/film/opus-milestone-1-1-poster.jpg",
@@ -157,6 +157,16 @@
       "path": "assets/savebench/film/opus-milestone-1-1.mp4",
       "bytes": 15816235,
       "sha256": "7c8932697456b2a5df7cbfb6920b6f145448fbc4bfee7ca5fe95c4fdd510c56d"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-1-poster.jpg",
+      "bytes": 199670,
+      "sha256": "0d1772953a094f5f7ef26aa6bb51a47fc7af9ca1836dea81b8626fbf9057d024"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-1.mp4",
+      "bytes": 16252244,
+      "sha256": "04ada14881536cc2b946cb9edbf1ca8634f27e87456f9e01ea68fc1524c9acf3"
     },
     {
       "path": "assets/savebench/savebench-challenge.png",
@@ -490,8 +500,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 98807,
-      "sha256": "1933fffc43d475573fb2109afb197f42aa20c0e05b721e0819e960a9c18f7e13"
+      "bytes": 99965,
+      "sha256": "105b9fb1ce59caeabd7418d03460d3dffb33a6318afddba87bf5dedc22fa599f"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
