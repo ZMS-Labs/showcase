@@ -121,7 +121,7 @@
     {
       "path": "assets/manifest.json",
       "bytes": 44052,
-      "sha256": "6167536ddfe84e75f4c22c58e37d6377076df84b8e9a69060dd2d6b301f32520"
+      "sha256": "759c4c354444f49a8c4d08fb0644108d0a8696a86adb12a54260f6e6a811e06f"
     },
     {
       "path": "assets/og/og-default.png",
@@ -230,13 +230,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 210852,
-      "sha256": "7ca337df4e0568819418463f7f91b19ba18eba8d0181211f18ab19af3d669a58"
+      "bytes": 210295,
+      "sha256": "fe83c191a2c18cb9aed2d05e8b82a7bc9db20bf5605f47939a087cdf6992d666"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 48090,
-      "sha256": "b55fd2d2fb0e1cafd0fbd35cf8fdd8008660315d75da28afa104bd3b8b41d9a8"
+      "bytes": 48128,
+      "sha256": "c087cee90e59c3aff09668476b7572713f2d2d3706a0a1b77282532a648f93ae"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -470,8 +470,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 7426,
-      "sha256": "748ea6e88e37e00488023fa0dc731fc1bb40c1947768ef820a6580cbfd2a1902"
+      "bytes": 7475,
+      "sha256": "f2256f70b2d811f719f321626c38a00e64d0328563614419d209d22952ba0c2e"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -530,8 +530,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 211927,
-      "sha256": "3fb0cf3eab6b1c3b2db38ba3d10675257dd6d7cfaac5fdc7d911a920d9269e65"
+      "bytes": 212943,
+      "sha256": "be764d985bd5e9b7e5a5d59fceca00756b4139c599efb941964bf1387c14472e"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
