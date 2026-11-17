@@ -347,6 +347,7 @@
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>A second AI model earned the same milestone. GPT-6.1 Sol (as configured) started in an empty world and earned milestone 1-1 in 44 replies over about 26 minutes. The test's own count of the cost was 39 cents, and the provider's prices behind that count have not been checked. It chose every move, one action per reply. It built the same kind of factory: a Miner Mk1 on an iron node and another on a stone node, a Smelter, two Constructors, belts and two storage boxes. Those machines made 221 Concrete, 144 Iron Plate and 168 Iron Rod, more than the milestone costs, and nothing that paid for it was made by hand. The same three hand steps are declared: clearing the loose rock off each node, fuelling the burner, and carrying the finished parts from the storage boxes to pay. It is one run and has not been repeated. Two models have now each earned this milestone once, under slightly different versions of the game mod, so this is not a ranking.</p></li>
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>Both models earned the next milestone, 1-2, each in a new run from an empty world. It costs 150 Iron Plate, 150 Iron Rod and 300 Wire, so it needs a copper line as well as an iron one. Claude Opus 5.5 took 14 replies and its machines made 175 Iron Plate, 213 Iron Rod and 825 Wire; its first payment was refused one Wire short, and it waited for its machines and paid. GPT-6.1 Sol took 82 replies, one move each, and its machines made 198 Iron Plate, 151 Iron Rod and 316 Wire. Neither fed a machine by hand. The test's own count of the cost was 53 cents for Claude Opus 5.5 and 77 cents for GPT-6.1 Sol; the provider's prices behind the second count have not been checked. The declared hand steps are the same as before: clearing each node, fuelling the burner, and carrying finished parts to pay. One run each, not repeated.</p></li>
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>Claude Opus 5.5 earned milestone 1-3, with a caveat that belongs beside the result. The milestone costs 100 Iron Plate, 300 Screws and 300 Wire. In a new run from an empty world its machines made 134 Iron Plate, 356 Screws and 336 Wire, and no machine was fed by hand. But it had spent machine made plates on belts, so its first payment was refused 68 Iron Plate short. It then made 72 Iron Plate by hand at the bench and paid. The test counts the milestone as earned, because the machines made more than the cost and its rule lets hand made items pay for buildings. Even so, most of the plates handed in were made by hand, which is not what a factory is for. The run took 32 replies and 147 moves, 13 of which failed, mostly belts on sloping ground, and the test's own count of the cost was 1.43 dollars. One run, not repeated.</p></li>
+      <li><time datetime="2026-11-17">Nov 17, 2026</time><p>GPT-6.1 Sol tried milestone 1-3 and did not earn it. In a new run from an empty world it had 60 minutes, and the time ran out with 140 of the 300 Screws made. Its machines had made the Iron Plate and Wire the milestone costs (194 and 663, against 100 and 300), and no machine was fed by hand. It set a machine to make Screws only at reply 72 of 97, after three belts were refused as too steep and it rebuilt part of its Wire line. Nothing was paid, and the run stays on the record as a miss. It took 97 replies, one move each, and the test's own count of the cost was 94 cents; the provider's prices behind that count have not been checked. One run, not repeated.</p></li>
     </ol>
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">The factories the AIs built, on film</h3>
     <div>
@@ -1730,6 +1731,594 @@
               <li>Craft Iron Plate by hand at the bench, 20 times. <strong>Made by hand, not counted as earned: 40 Iron Plate</strong></li>
               <li>Craft Iron Plate by hand at the bench, 16 times. <strong>Made by hand, not counted as earned: 32 Iron Plate</strong></li>
               <li>Pay for the milestone</li>
+            </ul>
+          </li>
+        </ol>
+      </details>
+      <details class="transcript">
+        <summary>GPT-6.1 Sol, milestone 1-3, Nov 17, 2026: 97 replies, 97 moves</summary>
+        <p class="fine" style="margin-top:12px">Milestone 1-3, not earned. Stopped: the time limit ran out. 92 of 97 moves were carried out, 1 was refused, 4 did not work. Its machines made 663 Wire, 194 Iron Plate, 391 Iron Rod, 140 Screws. No machine was fed by hand. Mined by hand to clear the nodes: 26 Copper Ore, 22 Iron Ore. The milestone costs 100 Iron Plate, 300 Screws and 300 Wire. Its machines made enough Iron Plate and Wire but 140 of the 300 Screws, because it set a machine to make Screws only at reply 72 of 97. Nothing was paid.</p>
+        <ol>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automate copper wire first to unlock wire for more smelters/poles; then iron plates, switch to rods feeding screws. Need automated 100 plates,300 screws,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Look for Copper Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Find iron; one burner powers iron and copper via pole chain. Automate copper wire first as initial 48 wire allows only one smelter plus 5 poles.</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automate copper wire locally first to unlock abundant wire. Copper at (23143,-13428). Build smelter/constructor/storage 12m apart toward bank; burner local. Then extend power to iron and automate plates, rods-&gt;screws. Need 100 plate,300 sc…</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_copper-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper local line: miner at (23143,-13428) -&gt; smelter (21900,-13428) -&gt; wire constructor -&gt; storage. Build burner/pole locally, fuel100. Need automated 100 plates,300 screws,300 wire. After copper collect wire for more power infrastructure…</p>
+            <ul style="margin-top:0">
+              <li>Build a Smelter</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Bootstrap copper locally, then use its automated wire to expand power to iron. Need 100 automated plates,300 screws,300 wire. Copper miner23143,-13428 smelter21100,-13428.</p>
+            <ul style="margin-top:0">
+              <li>Build a Biomass Burner</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Power copper locally first: burner-&gt;pole-&gt;miner/smelter, pole chain to constructor. Copper wire funds expansion to iron; goal automated 100 plates 300 screws 300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Start automated copper locally. Pole1 burner/miner/smelter/pole2; pole2 constructor and expansion link. Then wire funds poles and iron line.</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: pole1 connects burner, miner, smelter, pole2. Copper constructor on pole2; wire output storage. Extend poles toward iron later.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from burner-1 to pole-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: pole1 serves burner, miner, smelter, pole2. Copper constructor on pole2; output to storage. Extend power toward iron later.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-1 to miner_mk1-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper line: miner1 -&gt; smelter1 -&gt; wire constructor -&gt; storage. Pole1 fourth connector reserved for pole2. Then extend power toward iron node (-1287,-1490).</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-1 to smelter-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: miner1 -&gt; smelter1 -&gt; wire constructor -&gt; storage. Pole1 fourth connector reserved for pole2. Then extend power toward iron (-1287,-1490).</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-1 to make Copper Ingot</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper automated line first. Build wire constructor ~19500,-13428, pole2 ~18500,-11500 linked pole1, storage ~18000,-13428. Then chain power toward iron.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from miner_mk1-1 to smelter-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper first: wire constructor then pole2 linked pole1 (pole1 has last socket), wire to pole2, belt smelter-&gt;constructor-&gt;storage. Need 300 automated wire. Then power poles chain toward iron at -1287,-1490.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper: pole2 link pole1, connect constructor1, wire recipe, belts smelter1-&gt;constructor1-&gt;new storage. Pole1 full after link; extend toward iron via pole2.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line next: power constructor1 from pole2, wire recipe, belt smelter1-&gt;constructor1; build storage at 17900,-13428 and belt output. Need automate 100 plates 300 screws 300 wire. Extend power toward iron using chained poles.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-1 to pole-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next set constructor-1 wire recipe, belt smelter-1 to it, build storage at 17900,-13428 and belt output. Need 100 automated plates, 300 screws, 300 wire. Extend power toward iron (-1287,-1490) with chained poles.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to constructor-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper line: belt smelter-1 -&gt; constructor-1; build storage at 17900,-13428 then belt constructor to storage. Copper wire funds poles/smelter. Extend power toward iron (-1287,-1490). Need automated 100 plates,300 screws,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-1 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper line with storage at 17900,-13428 and belt constructor-1 to box. Copper wire funds poles/smelter. Extend power toward iron (-1287,-1490). Need automated 100 plates,300 screws,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-1 to constructor-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper smelter-&gt;constructor belt refused too steep (29.2m despite 16m XY). Inspect elevations before repositioning constructor to same terrain height; no hand feeding.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Reposition copper constructor to a different side of smelter to avoid too-steep conveyor; preserve fully belted inputs.</p>
+            <ul style="margin-top:0">
+              <li>Take down constructor-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Try copper constructor perpendicular to previous failed belt; then power, wire recipe, belt. Need automated 100 plates,300 screws,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper constructor moved perpendicular after too-steep belt. Set wire then belt smelter-1 -&gt; constructor-2; need automated 100 plate,300 screw,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need automated 100 plate,300 screw,300 wire. Copper miner/smelter powered. Try smelter-1 -&gt; constructor-2 belt next; earlier westward constructor failed too steep.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-2 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Establish copper wire belt, then storage. Need automated 100 plates,300 screws,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-1 to constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line established; add output storage then collect wire to fund iron line. Need automated 100 plate,300 screw,300 wire; one burner for all.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire automated line completes to storage. Need locate iron; one burner power chain, use copper wire for more smelters/poles. Need automated 100 plate 300 screw 300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-2 to storage-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Reposition wire storage farther along +Y to avoid steep belt ports. Copper line running; need 300 wire then iron plate/screw lines, chained power from sole burner.</p>
+            <ul style="margin-top:0">
+              <li>Take down storage-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Place wire storage 30m beyond constructor to reduce belt slope; finish copper line then extend power toward iron.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish automated copper-wire line. Need 300 wire,100 plate,300 screw. Then iron miner+smelter+constructor, switch plate-&gt;rod and add screw constructor. 3 reinforced constructors remain affordable? bank reinforced6.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-2 to storage-2. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need finish copper storage belt (two too-steep failures). Inspect ports/orientation; then 300 automated wire. Need iron line for100 plates+300 screws. Burner/poles in copper area, iron location unknown.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper output storage near constructor at similar elevation; prior two north-side placements caused TooSteep. Then build iron automation, using copper wire for extra poles/smelter.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish copper wire storage connection, then collect wire for more poles/smelter. Build iron automated plate then rods-&gt;screws; goal 100 plate 300 screw 300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-2 to storage-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automated line running into storage-3. Need iron extractor-&gt;smelter-&gt;constructor plates then rods-&gt;screws. Recover unused storage-2 if materials needed. Goal automated 100 plate,300 screw,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line running. Collect automated wire for construction; need extend pole chain ~240m to iron near bank, then iron miner/smelter/constructor/storage. Goal 100 automated plate,300 screw,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper automated line running to storage-3. Reclaim unused box, collect wire soon, chain poles toward iron at (-1287,-1490); build iron miner/smelter/constructor/storage. Goal 100 plate,300 screw,300 wire automated.</p>
+            <ul style="margin-top:0">
+              <li>Take down storage-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line automated. Collect wire for poles/smelter; chain power from pole-2 (19000,-11500) toward iron node (-1287,-1490) via &lt;=90m hops. Need automated 100 plates,300 screws,300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build automated iron near bank; extend power chain from pole-2 toward bank in &lt;=90m hops. Iron smelter -&gt; plate constructor -&gt; storage; later switch to rods and add screw constructor. Need 100 plates,300 screws,300 wire automated.</p>
+            <ul style="margin-top:0">
+              <li>Build a Miner on ore_iron-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Extend power from pole-2 via (11500,-7500), (4000,-3500) to iron miner near bank. Copper line running; collect storage-3 later for 300 automated wire. Build iron smelter-&gt;plate constructor-&gt;storage then switch to rods-&gt;screw constructor.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Extend copper power to iron: next pole at (4000,-3500), then pole near iron. Copper wire line running; later collect storage-3. Iron line will make plates, then rods into screws.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-2 to pole-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Chain pole-3 to new pole-4, then pole near iron. Copper line running; collect wire later. Build iron smelter and constructor with belts, plates first then rods/screws.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Extend powered chain to iron miner; build pole near iron, iron smelter and constructor. Copper line running; collect its wire for buildings and 300 milestone. Iron plates first, then rods to screws.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-3 to pole-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper wire line running. Power iron miner, then build iron smelter and constructor near it; belt ore-&gt;ingot-&gt;plates-&gt;storage. Add pole for constructor; later change plate line to rods-&gt;screws.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-4 to miner_mk1-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build iron chain southward: miner(-1287,-1490)-&gt;smelter(-1287,-2900)-&gt;constructor(-1287,-4300)-&gt;storage. Pole-4 powers smelter; chain another pole for constructors. Make 100+ automated plates, then rods and screws.</p>
+            <ul style="margin-top:0">
+              <li>Build a Smelter</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: set smelter iron recipe, belt miner-2 to smelter-2, build constructor at (-1287,-4300). Pole-4 has one connector left: reserve for new pole to power constructors. Produce 100 automated plates then rods/screws. Copper line runnin…</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-4 to smelter-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next belt miner_mk1-2 to smelter-2, build constructor at (-1287,-4300). Pole-4 has one connector left reserved for pole chain. Produce automated plates then rods/screws; copper wire line running. Refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-2 to make Iron Ingot</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build iron constructor at (-1287,-4300), chain new pole from pole-4 to power it. Make plates then rods then screws, with storage at line end. Copper wire running; refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from miner_mk1-2 to smelter-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron constructor for plates, then rods and screws; needs new pole chained from pole-4, recipe, belts and end storage. Copper wire line running; refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Chain pole-4 to new pole, power constructor-3; plate recipe and belts to end storage. Copper wire runs; refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next power constructor-3 from pole-5, set iron plate, belt smelter-2 to it and then end storage. Need 100 automated plate, 300 screw, 300 wire. Refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-4 to pole-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Power constructor then recipe iron plate; belt smelter-2 -&gt; constructor-3 -&gt; new storage. Need 100 automated plates, 300 screws, 300 wire. Refill burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-5 to constructor-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron line: belt smelter-2 -&gt; constructor-3, build storage near constructor and belt output. Need 100 automated plates then rods for screws. Refill burner soon; copper wire line already running.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-3 to make Iron Plate</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish iron plate line with output storage, collect copper wire and refuel burner soon. Need 100 automated plates then switch iron constructor to rods feeding screw constructor.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from smelter-2 to constructor-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Add iron output storage then collect initial constructor plates to afford its belt. Need 100 automated plates and 300 screws; copper line running. Refuel burner soon (53 biomass last seen).</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect initial automated plates to afford 14 m belt constructor-3 -&gt; storage-4. Copper line running; need 100 plates, 300 screws, 300 wire. Refuel burner shortly.</p>
+            <ul style="margin-top:0">
+              <li>Collect what constructor-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 12 plates to belt constructor-3 to storage-4 (14m). Then let plate line accumulate 100+ plates, collect copper wire, refuel burner, switch iron constructor to rods and add belted screw constructor/storage.</p>
+            <ul style="margin-top:0">
+              <li>Collect what constructor-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish automated plate storage. Need 100 plates,300 screws,300 wire automated; later switch constructor-3 to rods feeding a new screw constructor. Refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-3 to storage-4. <strong>Did not work: unaffordable</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect plates to afford constructor-3 -&gt; storage-4 belt (20 plates); then accumulate 100 plates before switching to rods and adding belted screw constructor. Refuel burner soon.</p>
+            <ul style="margin-top:0">
+              <li>Collect what constructor-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Accumulate automated plates in storage-4; need 100 banked plus build costs. Copper wire accumulating storage-3. Refuel burner next, then build rod -&gt; screw extension after plates.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-3 to storage-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Both automated lines running. Accumulate plates storage-4 and wire storage-3. After &gt;=140 plates, switch constructor-3 to rods and extend with screw constructor/storage. Refuel now.</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated copper wire and iron plate lines running. Need 100 plates, 300 wire, 300 screws. Accumulate ~170 plates before switching iron constructor to rods and adding belted screw constructor + storage; keep burner fueled.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Let automated plate and wire lines accumulate. Need ~160 bank plates before switching constructor-3 to rods and adding belted screw constructor/storage. Keep burner fueled; milestone 100 plate, 300 screw, 300 wire.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated iron plates and wire running. Accumulate ~170 bank plates before switching constructor-3 to rods; then belt storage-4 into new screw constructor and output storage. Need bank 100 plate, 300 screw, 300 wire; keep burner fueled.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-4 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Keep iron plates running until bank holds ~170 (100 milestone plus new screw-line belts/storage). Then switch constructor-3 to rods, empty storage-4 of plates, belt storage-4 into a new screw constructor and storage. Wire already nearly co…</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Accumulate plates to ~165 bank after collecting storage-4, covering 100 milestone plus screw-line belts and storage. Then switch constructor-3 to rods; empty storage-4 first, belt it into a new screw constructor and output storage. Add pol…</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect plates, then switch constructor-3 to rods. Extend storage-4 output into a new screw constructor and end storage; power via a new pole chained from pole-4. Need 100 plates, 300 wire, 300 automated screws banked.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-4 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish with automated screws: change iron constructor to rods, extend storage-4 -&gt; new screw constructor -&gt; new storage. Need new power pole chained from pole-4; inspect connectors. Collect copper wire to exceed 300, then 300 screws and pa…</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-3 to make Iron Rod</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need automate 300 screws from iron rod line. Build screw constructor + storage near storage-4, belt through them, power via pole-5 if free else chain from pole-4. Also collect wire storage-3 to exceed 300.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at pole-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automate screws: new constructor after storage-4 rod buffer; set screw recipe, belt storage-4 into it, add output storage and power via new pole linked to pole-5. Collect wire too; need 300 screws and 300 wire automated.</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Finish automated screws: pole-5 has link+smelter-2+constructor-3; link new pole-6 to pole-5 then constructor-4. Recipe Screw, belt storage-4 -&gt; constructor-4 -&gt; new storage. Collect wire and screws, pay.</p>
+            <ul style="margin-top:0">
+              <li>Build a Power Pole</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next connect pole-6 to constructor-4, set Screw recipe, belt storage-4 into it, build output storage and belt to it. Collect wire and 300 automated screws, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-5 to pole-6</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Connect screw constructor, set Recipe_Screw_C, belt storage-4 to constructor-4; build storage at (-1287,-8500) and belt screw output into it. Collect wire and 300 automated screws then pay.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from pole-6 to constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Next belt storage-4 to constructor-4, build screw storage at (-1287,-8500), belt constructor-4 to it. Collect wire and 300 automated screws then pay.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-4 to make Screws</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Storage-4 contains old plates and rods; belt to screw constructor. Next build screw storage (-1287,-8500) and belt constructor-4 to it; collect wire and 300 automated screws, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from storage-4 to constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Build screw output storage, then belt constructor-4 to it. Storage-4 has old plates before rods: ensure rods flow if screw constructor remains idle. Need collect 300 automated screws and at least 19 more wire, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Screw line now complete. Collect wire from storage-3, then wait for 300 screws in storage-5; plate requirement already covered.</p>
+            <ul style="margin-top:0">
+              <li>Lay a belt from constructor-4 to storage-5</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate requirement covered; wire collected now. Automated rod-to-screw line running into storage-5; wait until at least 300 screws, collect, then pay. Burner has 61 biomass; refuel if needed.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated plates and wire covered. Screw line running into storage-5 at 40/min; need 300 screws collected. Burner has 59 biomass.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated plates and wire covered in bank. Screw line producing 40/min into storage-5, currently 109; wait until at least 300, collect and pay. Burner has 40 biomass, sufficient.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated plate and wire costs covered. Storage-5 has 140 screws; need 300. Screw line fully belted and powered; wait for production, then collect storage-5 and pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate and wire covered. Storage-5 has 140 automated screws; need 300. Refuel sole burner, then wait for screws, collect storage-5, and pay.</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plate and wire requirements covered. Storage-5 holds 140 automated screws; let belted screw line reach 300, then collect and pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 automated screws in storage-5; last count 140. Plate and wire already covered. Wait for belted screw production, then collect and pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 automated screws; storage-5 last had 140. Plates and wire covered. Wait for screw production, then collect storage-5 and pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated plates and wire covered. Screw line feeds storage-5 (140 screws last shown); wait until it holds 300, then collect and pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plates and wire are covered. Fully belted screw line has 140 screws in storage-5; wait for 300, collect storage-5, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 automated screws; storage-5 has 140 despite extended waits. Inspect screw constructor to diagnose stalled production.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 automated screws; storage-5 currently has 140. Watch whether another 120 seconds increases output; all lines are belted and powered.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 automated screws; storage-5 has 140 despite long waits. Diagnose screw constructor: powered but idle, with rods available in belted storage-4.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 160 more automated screws. Inspect screw constructor for stalled input/power; storage-4 has 368 belted rods, storage-5 140 screws. 394 seconds remain.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Screw line stalled at 140 screws despite powered constructor and 373 rods in upstream storage. Need diagnose input/belt; require 300 automated screws then collect and pay.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 160 more automated screws. Rods accumulate in storage-4 but constructor-4 has no input; bypass storage-4 by dismantling it and belting constructor-3 directly to constructor-4. Refuel first.</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Storage-4 is not feeding the screw constructor. Remove it, then belt constructor-3 directly to constructor-4; need 160 more automated screws before collecting storage-5 and paying.</p>
+            <ul style="margin-top:0">
+              <li>Take down storage-4. <strong>Refused: storage-4 still holds items; collect them into the bank (or another box) first</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Empty storage-4 so it can be dismantled; replace its two belts with constructor-3 -&gt; constructor-4 to finish automated screws.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-4 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 300 automated screws; storage-5 has 140. Check whether screw output grows before altering the existing belted rod-to-screw line.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 160 more screws from automated rod line. Diagnose constructor-4 input/power; storage-4 has 44 rods but screw machine appears idle.</p>
+            <ul style="margin-top:0">
+              <li>Look closely at constructor-4</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Collect automated screws now; need 300 total. If screw production remains stalled, inspect power or rebuild intermediate rod storage routing.</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-5 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 160 more automated screws. Check storage-5 next; rod buffer has 56 and screw constructor is powered.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
             </ul>
           </li>
         </ol>
