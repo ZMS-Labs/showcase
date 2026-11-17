@@ -21,6 +21,10 @@
 <meta name="theme-color" content="#0e1b21">
 <link rel="stylesheet" href="../../site.css">
 <script defer src="../../site.js"></script>
+<link rel="stylesheet" href="../../assets/savebench/walkthrough/progress.css">
+<script defer src="../../assets/savebench/walkthrough/walkthrough.js"></script>
+<script defer src="../../assets/savebench/walkthrough/data.js"></script>
+<script defer src="../../assets/savebench/walkthrough/init.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -40,16 +44,184 @@
     <div>
       <p class="crumb"><a href="../../index.html#independent">Work</a> <span aria-hidden="true">/</span> SaveBench</p>
       <span class="kicker">SaveBench · AI factory design</span>
-      <h1>Can an AI design a factory that actually runs?</h1>
-      <p class="lead">SaveBench asks AI models to design a factory in the game Satisfactory, then lets the running game measure what it delivers. A factory that only works on paper doesn't count.</p>
+      <h1>Can an AI build a factory that actually runs?</h1>
+      <p class="lead">SaveBench asks whether an AI can build a working factory in the game Satisfactory, by the game's own rules, with the running game as the judge. It began with AI models designing factories that the game then measured. A factory that only works on paper doesn't count.</p>
       <p class="status"><a href="../../evidence.html#status"><b>Recorded experiment</b></a> · game runs from September 9 to November 17, 2026 · <a href="#evidence" style="white-space:nowrap">see the record</a></p>
     </div>
     <figure class="exhibit">
-      <img src="../../assets/savebench/savebench-workspace.png" alt="The SaveBench workspace: a factory layout on a map beside the challenge's conditions and an activity feed, with made-up contestants." width="1600" height="1100">
-      <figcaption><span><span class="label">Prototype</span> Made-up sample data, game artwork removed</span></figcaption>
+      <img src="../../assets/savebench/walkthrough/current-frame.jpg" alt="The SaveBench scoreboard on November 17, 2026: what the script and the AI model have each done in the live game." width="1920" height="1080">
+      <figcaption><span><span class="label">Walkthrough</span> Where it stood on November 17, 2026</span></figcaption>
     </figure>
   </section>
 </div>
+
+<!-- savebench-progress:start -->
+<section class="section band" id="progress" aria-labelledby="progress-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Walkthrough · version of November 17, 2026</span>
+      <h2 id="progress-title">Watch where it stands now.</h2>
+      <p class="lead">A short animation of what the game has accepted so far, redrawn when the results change. Earlier versions stay below, so the progress can be followed in order.</p>
+    </div>
+    <figure class="sbp-player">
+      <div class="sbp-mount" id="sbp-mount" data-current="2026-11-17" data-base="../../assets/savebench/walkthrough/versions/">
+        <img class="sbp-fallback" src="../../assets/savebench/walkthrough/versions/2026-11-17/img/real-belt.jpg" alt="A still from the game: camera film of a script run, November 9." width="960" height="540" loading="lazy">
+        <p class="sbp-nojs">The animation needs JavaScript. Every version's transcript is below.</p>
+      </div>
+      <figcaption class="fine" id="sbp-now" style="margin-top:12px">Showing the version of November 17, 2026. It starts when you press Play, and has sound. The diagrams are drawn from run records; the photographs are stills from the game.</figcaption>
+    </figure>
+    <h3 class="sbp-h">Where it stands, as of November 17, 2026</h3>
+    <dl class="sbp-now">
+      <div><dt>Live game mod</dt><dd>0.10.19, live since Nov 16, 7:08 PM CST (Nov 17, 01:08 UTC). Verified</dd></div>
+      <div><dt>Best factory so far</dt><dd>Milestones 1-1 and 1-2 earned by script from Miner Mk1s and belts alone. Run BP, Nov 16: 304 Wire, 196 Iron Plate and 170 Iron Rod by belt. Verified</dd></div>
+      <div><dt>Best AI model result</dt><dd>DeepSeek built a miner, belts and machines and collected 49 rods in run 3 (Nov 13). Unverified Runs 4 and 5 did not finish. Verified</dd></div>
+      <div><dt>Not done yet</dt><dd>No AI model has finished a milestone. A Tractor drove 26 metres on autopilot, but no vehicle has carried cargo and no train has run. Run BQ (three milestones in one world) has no result yet. Open</dd></div>
+    </dl>
+    <h3 class="sbp-h">Every version, newest first</h3>
+    <ol class="sbp-versions" reversed>
+      <li class="is-current">
+        <span class="label">Current version</span>
+        <h4><time datetime="2026-11-17">November 17, 2026</time></h4>
+        <p>Adds milestone 1-2 earned by a script with a copper Wire line, the burner that now runs on belt fed fuel, the fifth DeepSeek run, and the first tries at trains, Hypertubes and overclocking.</p>
+        <button type="button" class="sbp-pick" data-v="2026-11-17" aria-pressed="true" hidden>Show this version</button>
+        <details class="transcript">
+          <summary>Read this version's transcript</summary>
+          <ol>
+            <li><strong>0:00</strong>: SaveBench. Can an AI build a working factory in Satisfactory, by the game&#x27;s own rules? This is where it stands on November 17, 2026.</li>
+            <li><strong>0:06</strong>: The first milestone. Start in a blank world and earn milestone 1-1. It costs 100 Iron Plate, 100 Iron Rod and 200 Concrete. It must be done the way a player does it: ore comes from miners on the map&#x27;s ore nodes, parts move between machines by belt, and hands are only for getting started. The game is the judge: the milestone counts when the live game accepts the payment and launches it. Two have tried. Script is a reference run, a fixed list of steps we wrote, and it is not an AI. DeepSeek is an AI model, deepseek-v4-flash, choosing every step by itself on a budget of one dollar a day.</li>
+            <li><strong>0:20</strong>: The script run, run BL, November 14, shown as a diagram that is not to scale. The script clears the rock on an iron node by hand and builds a Miner Mk1 on it, powered by a Biomass Burner. Belts carry ore to the Smelter, ingots to the Constructor and plates into the bank. 324 Iron Plate arrive by belt, where 320 were wanted. The Constructor then switches to Iron Rod, and 202 arrive, where 200 were wanted. A second line starts at a Miner Mk1 on a stone node. The game refuses a belt that is too long, so the stone passes through four containers before a Constructor turns it into Concrete: 203, where 200 were wanted. No part was moved by hand between machines. In this run the burner was still refuelled by hand; that gap closed on November 16. The finished Concrete is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-1. 59 checks of 59 passed. This is a script run, not an AI.</li>
+            <li><strong>0:46</strong>: The second script run, run BP, November 16, shown as a diagram. Milestone 1-2 costs 150 Iron Plate, 150 Iron Rod and 300 Wire. The script builds a copper line first, at a copper node 268 metres from the bank: a Miner Mk1, a Smelter and a Constructor making Wire. The first 48 Wire are carried to the bank to pay for the iron line, a declared carry. The iron line runs into the bank by belt: 196 Iron Plate where 190 were wanted, then 170 Iron Rod where 170 were wanted. The copper line gets its container and 304 Wire arrive in it by belt, where 300 were wanted. The finished Wire is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-2. 52 checks of 52 passed. In a separate run the same evening, a burner ran on fuel fed by belt with no hand refuel.</li>
+            <li><strong>1:03</strong>: The DeepSeek run, run 4, November 14, shown as a diagram. DeepSeek cleared the rock and built a Miner Mk1, a Smelter, a Constructor, storage, a Biomass Burner and two belts, and wired the burner to the miner. It had spent all its Iron Rod. The last belt was refused because it cost 16 Iron Plate and the bank held 1. Power poles also cost Iron Rod, so the Smelter and Constructor never got power; for the poles this is inferred. Our harness told the model only that the placement was refused, so it spent 15 of its 34 replies looking for clear ground. The run stopped at its budget of 95 cents and the milestone was not earned. The fault was in our harness, not in how the model played. The fix was live for run 5 on November 16. In run 5 the model was told what it could not afford, but 14 of its 30 replies were used up thinking and produced no action, and it did not finish either. DeepSeek has now tried five times.</li>
+            <li><strong>1:13</strong>: Four stills filmed in the real game. November 9: a smelter feeding a constructor by belt, built by script. November 12: the Space Elevator over the base that earned phase one, by script. November 12: a smelter and constructors that DeepSeek placed by itself. November 14: a Miner Mk1 on an iron node, belted to a smelter, built by DeepSeek.</li>
+            <li><strong>1:21</strong>: The scoreboard. Script: Space Elevator phase one on November 12, using storage boxes filled by hand; milestone 1-1 on November 14 with every part from miners by belt; milestone 1-2 on November 16 the same way, with a copper Wire line. All three are verified from run records. DeepSeek: on November 13 it built a miner, belts and machines and collected 49 Iron Rod, which is unverified; run 4 on November 14 built a miner line but never powered it; run 5 on November 16 built one miner and one belt and lost 14 of 30 replies to thinking. No AI model has finished a milestone yet.</li>
+            <li><strong>1:29</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12 and 13: Space Elevator phase one, a Miner Mk1 feeding a belt, then 300 plates by belt. November 14: milestone 1-1 by a real factory and the first copper Wire. November 16: milestone 1-2, a burner fed by belt, and a second game server. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 38 of 52 on November 14 and 42 of 52 on November 16. The last two counts are a work thread&#x27;s own and were not read from a file.</li>
+            <li><strong>1:37</strong>: What is still ahead. A long script run that earns three milestones in one world has started and has no result yet. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. No AI model has finished a milestone; DeepSeek has tried five times and a run with a second model is queued. Trains, Hypertubes and overclocking were tried for the first time on November 16 and do not work yet.</li>
+            <li><strong>1:45</strong>: The diagrams are drawn from run records. The stills are real game footage. Satisfactory imagery is the property of Coffee Stain Studios.</li>
+          </ol>
+        </details>
+      </li>
+      <li>
+        <span class="label">Earlier version</span>
+        <h4><time datetime="2026-11-16">November 16, 2026</time></h4>
+        <p>First version drawn from real results: milestone 1-1 earned by a script from miners and belts, the DeepSeek run that did not finish, four real game stills, the scoreboard and what is still ahead.</p>
+        <button type="button" class="sbp-pick" data-v="2026-11-16" aria-pressed="false" hidden>Show this version</button>
+        <details class="transcript">
+          <summary>Read this version's transcript</summary>
+          <ol>
+            <li><strong>0:00</strong>: SaveBench. Can an AI build a working factory in Satisfactory, by the game&#x27;s own rules? This is where it stands on November 16, 2026.</li>
+            <li><strong>0:06</strong>: The first milestone. Start in a blank world and earn milestone 1-1. It costs 100 Iron Plate, 100 Iron Rod and 200 Concrete. It must be done the way a player does it: ore comes from miners on the map&#x27;s ore nodes, parts move between machines by belt, and hands are only for getting started. The game is the judge: the milestone counts when the live game accepts the payment and launches it. Two have tried. Script is a reference run, a fixed list of steps we wrote, and it is not an AI. DeepSeek is an AI model, deepseek-v4-flash, choosing every step by itself on a budget of one dollar a day.</li>
+            <li><strong>0:20</strong>: The script run, run BL, November 14, shown as a diagram that is not to scale. The script clears the rock on an iron node by hand and builds a Miner Mk1 on it, powered by a Biomass Burner. Belts carry ore to the Smelter, ingots to the Constructor and plates into the bank. 324 Iron Plate arrive by belt, where 320 were wanted. The Constructor then switches to Iron Rod, and 202 arrive, where 200 were wanted. A second line starts at a Miner Mk1 on a stone node. The game refuses a belt that is too long, so the stone passes through four containers before a Constructor turns it into Concrete: 203, where 200 were wanted. No part was moved by hand between machines. The burner was still refuelled by hand, a known gap. The finished Concrete is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-1. 59 checks of 59 passed. This is a script run, not an AI.</li>
+            <li><strong>0:46</strong>: The DeepSeek run, run 4, November 14, shown as a diagram. DeepSeek cleared the rock and built a Miner Mk1, a Smelter, a Constructor, storage, a Biomass Burner and two belts, and wired the burner to the miner. It had spent all its Iron Rod. The last belt was refused because it cost 16 Iron Plate and the bank held 1. Power poles also cost Iron Rod, so the Smelter and Constructor never got power; for the poles this is inferred. Our harness told the model only that the placement was refused, so it spent 15 of its 34 replies looking for clear ground. The run stopped at its budget of 95 cents and the milestone was not earned. The fault was in our harness, not in how the model played. A fix is written and not yet live.</li>
+            <li><strong>0:56</strong>: Four stills filmed in the real game. November 9: a smelter feeding a constructor by belt, built by script. November 12: the Space Elevator over the base that earned phase one, by script. November 12: a smelter and constructors that DeepSeek placed by itself. November 14: a Miner Mk1 on an iron node, belted to a smelter, built by DeepSeek.</li>
+            <li><strong>1:04</strong>: The scoreboard. Script: on November 12, Space Elevator phase one earned from a blank world using storage boxes filled by hand; on November 13, 324 Iron Plate and 153 Iron Rod by belt from a Miner Mk1; on November 14, milestone 1-1 earned with every part from miners by belt. All three are verified from run records. DeepSeek: on November 13 it built a miner, belts and machines and collected 49 Iron Rod before its budget ran out, which is unverified; on November 14 it built a miner line but never powered it. No AI model has finished a milestone yet.</li>
+            <li><strong>1:12</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12: Space Elevator phase one and the first Miner Mk1 feeding a belt. November 13: over 300 plates by belt from a miner, and the first Tractor built. November 14: milestone 1-1 by a real factory, the first copper Wire and the first closed vehicle loop. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 29 of 52 on November 13 and 38 of 52 on November 14. The last count is a work thread&#x27;s own and was not read from a file.</li>
+            <li><strong>1:20</strong>: What is still ahead. Milestone 1-2 by a real factory needs 150 Iron Plate, 150 Iron Rod and 300 Wire; the run is packaged and waiting to launch. A Tractor, two stations and a closed loop are built, but the game still refuses to let the Tractor drive and the cause is not known. No AI model has finished a milestone; DeepSeek&#x27;s next run waits for the fix that tells it when it cannot afford a build. Beyond that lies the whole game: 141 buildings, and the aim is all of them.</li>
+            <li><strong>1:28</strong>: The diagrams are drawn from run records. The stills are real game footage. Satisfactory imagery is the property of Coffee Stain Studios.</li>
+          </ol>
+        </details>
+      </li>
+      <li>
+        <span class="label">Concept, not real play</span>
+        <h4><time datetime="2026-10-27">October 27, 2026</time></h4>
+        <p>The first video. A concept of what SaveBench was meant to become, drawn before the game had measured anything. Layouts, contestants and numbers are placeholders.</p>
+        <button type="button" class="sbp-pick" data-v="2026-10-27" aria-pressed="false" hidden>Show this version</button>
+        <details class="transcript">
+          <summary>Read this version's transcript</summary>
+          <ol>
+            <li><strong>0:00</strong>: SaveBench concept video from October 27, 2026. This is a concept, not real play. It was drawn before anything had been measured in the game. Its factory layouts were made up for the drawing and its numbers were placeholders.</li>
+            <li><strong>0:05</strong>: The concept challenge: build 15 Iron Plate per minute and 10 Iron Rod per minute with a short list of allowed buildings and two iron nodes. Two placeholder contestants, model A and model B, lock the contract.</li>
+            <li><strong>0:19</strong>: The camera flies in to the build site. Model A plans a layout with two smelters feeding three constructors, then builds it. The camera cuts to model B, which builds a line fed through a splitter.</li>
+            <li><strong>0:46</strong>: A game lens shows the same factory tilted into three dimensions. It is labelled as a reconstruction, with a placeholder where real footage would go.</li>
+            <li><strong>0:54</strong>: A trial panel shows three measurement windows. The plate and rod rates read as placeholders because the game had not measured anything.</li>
+            <li><strong>1:01</strong>: The two layouts are compared side by side. No winner is declared.</li>
+            <li><strong>1:08</strong>: A replay bar scrubs back through the build.</li>
+            <li><strong>1:14</strong>: The camera pulls out to the whole map and draws train, drone and truck routes to a Space Elevator. These routes were illustrations of an idea, not results.</li>
+            <li><strong>1:24</strong>: End card. Layouts were fixtures and the values were placeholders.</li>
+          </ol>
+        </details>
+      </li>
+    </ol>
+    <h3 class="sbp-h">Results, day by day</h3>
+    <p class="fine" style="max-width:72ch">Game results logged from November 12, 2026 to November 16, 2026, newest first. Verified means the line was read from a run record when it was written. Unverified means it was reported by the work and not read again. Failed runs are kept. Later results join this log at its next update.</p>
+    <div class="sbp-days">
+      <details class="sbp-day">
+        <summary><time datetime="2026-11-16">November 16, 2026</time> · 13 results</summary>
+        <p>Work resumed at about 5:00 PM CST after two days stopped, and the evening was the busiest yet. A script earned milestone 1-2 with a copper Wire line, a burner ran on belt-fed fuel with no hand refuel, mod 0.10.19 went live and a second game server was added. DeepSeek&#x27;s fifth run did not finish. Trains, Hypertubes and overclocking above 100% were tried for the first time and do not work yet. Lines are in time order.</p>
+        <ul>
+          <li><span class="label">Verified</span><div>Run BO passed, 28 checks of 28: a burner ran on fuel that came to it by belt from a container, with no hand refuel. 64 Iron Plate (60 wanted) reached the bank by belt. This closes the hand-refuel gap and is the first live use of the put-into-storage step.<small>Nov 16, 23:14 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BP passed, 52 checks of 52: milestone 1-2 was earned by a real factory. A copper line at the copper node made 304 Wire (300 wanted) and an iron line made 196 Iron Plate (190 wanted) and 170 Iron Rod (170 wanted), all by belt from Miner Mk1s. The milestone took 150 Iron Plate, 150 Iron Rod and 300 Wire and was paid and launched. The declared hand moves were clearing each node once, starting fuel, 48 early Wire carried to pay for the iron line, and the finished Wire carried to the bank once. A scripted run, not an AI model.<small>Nov 16, 23:27 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>First overclock test: a machine held at 50% clock speed, but the research that unlocks overclocking was refused and the run stopped before 150% was tried.<small>Nov 17, 00:17 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Game mod 0.10.19 went live after a 10-minute soak, with 0.10.18 kept as the backup. Its code was merged first with all 11 automated checks passing.<small>Nov 17, 01:08 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>DeepSeek run 5 did not earn milestone 1-1. It stopped at its budget after 30 replies with one Miner Mk1, one belt, two smelters and a constructor standing, and the smelter never powered. 14 of the 30 replies produced no action, 13 of them because the model used its whole reply limit thinking. The fix from run 4 worked: refused builds now say &quot;unaffordable&quot; and what is missing. The findings list six more fixes, two of them harness defects.<small>Nov 17, 01:10 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Three checks on a later-game save. A machine held 50% clock speed for 40 seconds, but 150% was refused. A Hypertube connection was refused. A Miner on a Caterium node fed a belt (89 items), but the Caterium research did not open.<small>Nov 17, 01:31 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A save for train tests was made: Space Elevator phase 2 and milestone 6-3 were paid and launched in the game. The bank was restocked from outside the game between sessions, which is declared as save-making and is not player play.<small>Nov 17, 01:46 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>First train test: two Train Stations were built, but the game refused the rail between them, so no train was assembled.<small>Nov 17, 01:55 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Water: a pipe was flushed and a flow limit was set in the live game.<small>Nov 17, 01:58 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>The Tractor, same run: the game accepted the autopilot command for the first time and the Tractor drove 26 metres (2,612.6 cm) onto the next path segment before the stop command. The game simulated the drive rather than physically driving it, and no cargo was carried. Corrected at 11:25 PM CST: this line first said the Tractor moved 0 cm, taken from the run&#x27;s own summary line, which measured the wrong position value.</div></li>
+          <li><span class="label">Verified</span><div>A second game server was added so two runs can go at once, and the game helper can now address it. Both changes were merged.</div></li>
+          <li><span class="label">Failed</span><div>Third train test: one rail piece was built, but it joined neither station, so the mod removed it and stopped. No train yet.<small>Nov 17, 03:18 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>The code for mod 0.10.20 was merged with all 11 automated checks passing. It is aimed at overclocking above 100%, the Hypertube connection and rails at a train platform. It is not live yet.<small>Nov 17, 04:30 UTC</small></div></li>
+        </ul>
+      </details>
+      <details class="sbp-day">
+        <summary><time datetime="2026-11-14">November 14, 2026</time> · 11 results</summary>
+        <p>The first full milestone built the way a player builds it. By mid-morning a scripted factory had earned milestone 1-1 with every part coming from miners by belt. Before 1 PM the first copper line made Wire, the first closed vehicle loop was built (the Tractor still would not drive on it), and mod 0.10.18 went live. DeepSeek&#x27;s fourth run did not finish, for a reason traced to the harness. Lines are in time order.</p>
+        <ul>
+          <li><span class="label">Verified</span><div>The game helper was switched to the version that accepts the new path option. This was the step the Tractor work was waiting on.<small>Nov 14, 14:49 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>Three Tractor loop attempts in 25 minutes. Each built five path points and then the game refused the sixth as blocked by an obstacle, on both sides of the stations and at every sideways shift tried. No loop closed and the Tractor did not drive.</div></li>
+          <li><span class="label">Failed</span><div>Run BM, the belt-fed burner test, failed. The fuel container and the belt from it into the burner were built, but there was no way to put fuel into a storage container, which a player does by opening it and dropping items in.<small>Nov 14, 15:22 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BL passed, 59 checks of 59: milestone 1-1 was earned by a real factory. Miner Mk1s on an iron node and a stone node fed machines by belt, and 324 Iron Plate (320 wanted), 202 Iron Rod (200 wanted) and 203 Concrete (200 wanted) arrived by belt. The milestone was then paid and launched from those parts. No ore, ingot or part was moved by hand between machines. The declared hand moves were clearing the rock deposit on each node once and putting biomass in the burner. This is the run that stopped halfway on November 13. It is a scripted run, not an AI model&#x27;s result.<small>Nov 14, 15:39 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>A fourth Tractor loop attempt. One ring placed all its ground points and was refused only on the final turn into the station, as too sharp.<small>Nov 14, 16:44 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>DeepSeek run 4 did not earn milestone 1-1. The model cleared a deposit and built a Miner Mk1, a smelter, a constructor, storage, a burner and belts, but never powered the smelter or constructor, and it stopped at its budget ($0.95) after 34 replies. The findings put the cause on the harness, not the model: when a build was refused because the bank could not pay for it, the model was told only that the placement was refused, so it spent 15 replies looking for clear ground. That is established for one belt and inferred for the power poles. A fix is written but not yet live.<small>Nov 14, 16:52 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>The first closed vehicle loop was built. The run surveyed for open, flat ground first, as a player would, and laid a 13-point racetrack that closed into the station.<small>Nov 14, 17:34 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>The code for game mod 0.10.18 was merged into the main codebase with all 11 automated checks passing. It adds the missing step from run BM: putting items into a storage container.<small>Nov 14, 17:44 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Game mod 0.10.18 went live after a 10-minute soak, with 0.10.17 kept as the backup. The new put-into-storage step has not yet been tried in the game.<small>Nov 14, 18:34 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BN passed, 26 checks of 26: the first copper line. A Miner Mk1 on a copper node 268 m from the bank fed a smelter and a constructor, and 64 Wire (60 wanted) reached a container by belt. Only iron and stone had been mined before this.<small>Nov 14, 18:35 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>The game helper was switched again, to the version that matches mod 0.10.18.<small>Nov 14, 18:56 UTC</small></div></li>
+        </ul>
+      </details>
+      <details class="sbp-day">
+        <summary><time datetime="2026-11-13">November 13, 2026</time> · 21 results</summary>
+        <p>The day factories started working the way a player&#x27;s do. A Miner Mk1 on an ore node fed belts, a smelter and a constructor, first for 20 parts, then 100, then more than 300. The first full milestone factory still stopped halfway, at a belt that was too long. In the evening a factory earned a coupon and spent it in the shop, and the first vehicle was built but would not drive. The game mod moved from 0.10.13 to 0.10.16 over the day. Lines are in time order.</p>
+        <ul>
+          <li><span class="label">Verified</span><div>The rock deposit that sits on an ore node and blocks a miner can now be cleared by hand-mining it, as a player does. A Miner Mk1 was then built on that iron node.<small>Nov 13, 15:41 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BE passed: a Miner Mk1 on a limestone node fed a constructor by belt, and 21 products (20 wanted) arrived in a storage container by belt. The only hand move was 50 biomass of starting fuel.<small>Nov 13, 15:54 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>DeepSeek, playing by itself, cleared a deposit, built a Miner Mk1, belted miner to smelter to constructor and collected 49 rods. Its $1 daily budget stopped the run before the milestone.<small>Nov 13, 16:13 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>Run BF, the same line on iron, failed at its last belt: the belt cost 22 Iron Plate and the bank held 21.<small>Nov 13, 16:39 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Game mod 0.10.14 went live.<small>Nov 13, 17:27 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BH passed, 25 checks of 25: the game&#x27;s own starting kit was banked once, then a Miner Mk1 on iron fed a smelter and a constructor, with the last belt running into the bank. 23 products arrived by belt (20 wanted). This is the step BF failed.<small>Nov 13, 18:08 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BI passed, 28 of 28: 104 Iron Plate (100 wanted) and then 102 Iron Rod (100 wanted) reached the bank by belt from a Miner Mk1. One hand refuel of the burner was needed and is listed as such.<small>Nov 13, 20:16 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A conveyor lift carried 60 items up to a container.<small>Nov 13, 20:40 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Run BJ passed, 30 of 30: ore travelled by belt through a relay container into the bank, and a 90 m power line worked. Nothing was moved by hand after the start.<small>Nov 13, 20:52 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>Run BK, the first try at milestone 1-1 as a real factory. The iron half passed, with 324 Iron Plate (320 wanted) and 153 Iron Rod (150 wanted) by belt from a Miner Mk1. It then failed at the stone line, because the game refused a belt as too long. The fix places each container where the belt actually reaches, as a player would.<small>Nov 13, 21:14 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A fidelity gap closed on mod 0.10.15: loading a blueprint on top of an existing container is now refused, the same as the game refuses a player. On the older mod it was accepted.<small>Nov 13, 23:05 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Game mod 0.10.16 went live after a 10-minute soak, with 0.10.15 kept as the backup.<small>Nov 14, 00:17 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A vehicle path, a Tractor and its stored route were all built in the live game. The path step had been refused on the older mod; 0.10.16 fixed that.<small>Nov 14, 01:00 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A factory earned a coupon in the AWESOME Sink, carried it to the bank and bought a Coffee Cup in the AWESOME Shop. This is the first purchase with a coupon the factory earned. The power fuse was tripped and reset in the same run.<small>Nov 14, 01:06 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>The count of game actions checked in the live game went from 29 to 37 of 52 during the day. The eight added cover pipes, the lift, the sink coupon, the fuse, the three vehicle steps and the shop purchase.</div></li>
+          <li><span class="label">Failed</span><div>The follow-up Tractor run tried six route and position variations. The game refused autopilot on every one. Route order, where the Tractor stands and fuel are ruled out. A return path straight back between the two stations was refused as too sharp a turn.<small>Nov 14, 01:16 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>A third try, meant to close the path into a loop, could not build the way back either; the game refused it as blocked by an obstacle. The Tractor still did not drive. A player would lay the loop over open ground with extra path points, which the mod could not do yet.<small>Nov 14, 01:28 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Game mod 0.10.17 went live. It lets a vehicle path end on open ground and reports the game&#x27;s own autopilot state.<small>Nov 14, 02:10 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>A Truck Station was switched between loading and unloading in the live game. The same run read the autopilot state for the first time: the game reports no error, but does not count either Tractor as standing on a path, and the path network runs one way only. Which of those two stops the Tractor is not established.<small>Nov 14, 02:36 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>The count of game actions checked in the live game rose to 38 of 52 with the Truck Station step.<small>Nov 14, 02:42 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>The 0.10.17 code change was merged into the main codebase with all 11 automated checks passing.<small>Nov 14, 03:12 UTC</small></div></li>
+        </ul>
+      </details>
+      <details class="sbp-day">
+        <summary><time datetime="2026-11-12">November 12, 2026</time> · 5 results</summary>
+        <p>Phase one had just been earned by script, using storage boxes filled by hand. By the afternoon a Miner Mk1 was running on a node and feeding a belt for the first time.</p>
+        <ul>
+          <li><span class="label">Verified</span><div>Run BB passed, 26 checks of 26: three storage boxes each took about 90 ore from a portable miner and fed a smelter. Its own record notes the limit: the ore was moved by hand, not by belt, so it shows storage works and nothing about belts or a Miner Mk1.<small>Nov 12, 16:49 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>First Miner Mk1 seen powered and feeding a belt: built on a limestone node, wired to a burner, and 12 Limestone arrived in a container by belt. Thirteen other nodes refused the miner, each because a hand-mineable rock deposit sat on the node.<small>Nov 12, 20:58 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>A survey of every buildable in the game: 141 buildings, 15 of them proven in the live game at that point.</div></li>
+          <li><span class="label">Verified</span><div>Game mod 0.10.13 went live, adding the hand-mining of deposits.<small>Nov 13, 00:55 UTC</small></div></li>
+          <li><span class="label">Failed</span><div>Run BD: the first miner, belt and constructor line placed everything but its second belt, which cost 12 Iron Plate with 11 in the bank. No product reached the box.<small>Nov 13, 01:00 UTC</small></div></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+<!-- savebench-progress:end -->
 
 <section class="section" id="walkthrough" aria-labelledby="trial-title">
   <div class="wrap">
@@ -140,6 +312,9 @@
       <li class="key"><time datetime="2026-11-01">Nov 1, 2026</time><p>I widened the goal. An AI agent should play the game and build the factory itself, by the game's own rules, starting from an empty world, and be watched and judged as it goes. The test became a ladder of the game's own milestones.</p></li>
       <li class="key"><time datetime="2026-11-12">Nov 12, 2026</time><p>A script, not an AI, climbed the first stretch of that ladder from an empty world. Its factory made the parts for milestone 2-1 and for the Space Elevator, an Assembler made 50 Smart Plating, the game accepted the delivery and moved on to its next phase. Earlier attempts failed and were kept. The run declared three departures from normal play: a storage box for ore and ingots, 20 extra starting parts to pay for the box, and extra starting fuel. It shows the ladder can be climbed. It doesn't show that a model can climb it.</p></li>
       <li><time datetime="2026-11-12">Nov 12 to 17</time><p>The first AI player tried the first rung, milestone 1-1. DeepSeek V4 Flash (as configured) played five recorded runs and earned none. In the fifth, 14 of its 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. The run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.</p></li>
+      <li class="key"><time datetime="2026-11-14">Nov 14, 2026</time><p>A script earned milestone 1-1 the way a player does. Miners on an iron node and a stone node fed machines by belt: 324 Iron Plate, 202 Iron Rod and 203 Concrete arrived by belt, and no ore, ingot or part was moved by hand between machines. The game accepted the payment. All 59 of the run's checks passed. This is a script, not an AI.</p></li>
+      <li><time datetime="2026-11-16">Nov 16, 2026</time><p>The script earned milestone 1-2 the same way, with a copper line making 304 Wire by belt. All 52 checks passed. In a separate run a burner ran on fuel that reached it by belt, which closed the last regular hand step.</p></li>
+      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>One script run earned milestones 1-2 and 1-1 in a single world that started empty. All 142 checks passed. A further stage that tried to double the iron line stopped when the new machines could not be wired; it was not part of the verdict and is kept on the record. No AI model has earned a milestone on the ladder yet.</p></li>
     </ol>
   </div>
 </section>
@@ -256,7 +431,7 @@
           <h3>The captures</h3>
           <p>The screenshots come from a development branch of the private prototype, commit <code>58cfbde8</code>. The small print in each corner, "Real Satisfactory terrain" and "renderer pin ba8b915", is the prototype's own label for the public map renderer <a class="ext" href="https://github.com/valentinps/satisfactorymap/tree/ba8b9151cb961f80634d2d8560c75ff7cc4279d8">valentinps/satisfactorymap at ba8b915</a>. The terrain was removed for publication, so the captures don't show the renderer or the game working. No independent test of the interface itself was finished.</p>
           <p>Nothing on this page was rerun for the site: no new game session, model contest or paid trial.</p>
-          <p class="fine">An independent research prototype, not affiliated with or endorsed by Coffee Stain Studios. Satisfactory is a trademark of its owner; no game artwork is distributed here.</p>
+          <p class="fine">An independent hobby project, not affiliated with or endorsed by Coffee Stain Studios. Satisfactory and its artwork belong to their owners.</p>
         </div>
         <div class="links"><a href="measurement-case.json">Run record (JSON)</a><a href="interface-study.json">Capture record (JSON)</a><a href="../../evidence.html">All sources and records</a></div>
       </div>
