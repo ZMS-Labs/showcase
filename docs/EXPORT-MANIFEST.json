@@ -14,21 +14,6 @@
       "sha256": "96aac7067fca7d85b76d0cf992059d9c26bcc2f76197fbff7c9e46844a111c8e"
     },
     {
-      "path": "CNAME",
-      "bytes": 13,
-      "sha256": "6ed8a82e67203dcc0b275f7dff6e6eb33f49c6578abedba4d3f7c9c91402755a"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 35149,
-      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
-    },
-    {
-      "path": "README.md",
-      "bytes": 1655,
-      "sha256": "af47b4a306be0148d76111d46642335d1e6cb160c30b2d4d0887ce3444076740"
-    },
-    {
       "path": "about.html",
       "bytes": 10959,
       "sha256": "ad366ce9fb53476907c028351392a3677bccd8297c8b0e21256d6aa282971636"
@@ -120,8 +105,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 41748,
-      "sha256": "539c78a6734dd076a432e0ea4f2cc638b90224147e4c38f9296d474d8f112d54"
+      "bytes": 44052,
+      "sha256": "6167536ddfe84e75f4c22c58e37d6377076df84b8e9a69060dd2d6b301f32520"
     },
     {
       "path": "assets/og/og-default.png",
@@ -169,6 +154,16 @@
       "sha256": "f3bc567b3020d6135c518ef109587ca93c1d25af5127fa7effeb1b1ab8dbf9b4"
     },
     {
+      "path": "assets/savebench/film/opus-milestone-1-3-poster.jpg",
+      "bytes": 199789,
+      "sha256": "0634523502912b43c0306c24ed7c8e0caa29bda2c1648d1ee030f38010a16d82"
+    },
+    {
+      "path": "assets/savebench/film/opus-milestone-1-3.mp4",
+      "bytes": 18471312,
+      "sha256": "2571777fe4155f679f614314d437dc5b6035a6a5410cf9fac36bb164217c43ae"
+    },
+    {
       "path": "assets/savebench/film/sol-milestone-1-1-poster.jpg",
       "bytes": 199670,
       "sha256": "0d1772953a094f5f7ef26aa6bb51a47fc7af9ca1836dea81b8626fbf9057d024"
@@ -177,6 +172,16 @@
       "path": "assets/savebench/film/sol-milestone-1-1.mp4",
       "bytes": 16252244,
       "sha256": "04ada14881536cc2b946cb9edbf1ca8634f27e87456f9e01ea68fc1524c9acf3"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-2-poster.jpg",
+      "bytes": 190777,
+      "sha256": "342d88851c7c487f6d44eeb35c15bc9e3ee29a89f6cc27dcc08436c4083f2682"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-2.mp4",
+      "bytes": 18355356,
+      "sha256": "653c716a0127fed592de03cbc3ade13deb65fe8d2b264226487cd171ed540b19"
     },
     {
       "path": "assets/savebench/savebench-challenge.png",
@@ -249,6 +254,11 @@
       "sha256": "da20db546516d74d5774c9b0e930be9668cc4b1fd63477b04d0343a5a24d03e0"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-10-27/img/grass.jpg",
+      "bytes": 142755,
+      "sha256": "8613e2bbf383e6d494e4246a60425eafa993f5b3b5f486de3c1d3b4c22ace7bc"
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/IronIngot.png",
       "bytes": 26375,
       "sha256": "a927268148236a863c7baecd395b1137c37dc3831e1345732d3c144beebdd032"
@@ -299,11 +309,6 @@
       "sha256": "72af9e3b43ad19b241092220d21c1de3858f4fac06403ee54c23d72c0636c05b"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-10-27/img/grass.jpg",
-      "bytes": 142755,
-      "sha256": "8613e2bbf383e6d494e4246a60425eafa993f5b3b5f486de3c1d3b4c22ace7bc"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/world.jpg",
       "bytes": 575534,
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
@@ -344,16 +349,6 @@
       "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/SmelterMk1.png",
-      "bytes": 30206,
-      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/StorageContainerMk1.png",
-      "bytes": 29086,
-      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-11-16/img/real-belt.jpg",
       "bytes": 106669,
       "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
@@ -372,6 +367,16 @@
       "path": "assets/savebench/walkthrough/versions/2026-11-16/img/real-model.jpg",
       "bytes": 126479,
       "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-16/img/world.jpg",
@@ -414,16 +419,6 @@
       "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/SmelterMk1.png",
-      "bytes": 30206,
-      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/StorageContainerMk1.png",
-      "bytes": 29086,
-      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-belt.jpg",
       "bytes": 106669,
       "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
@@ -442,6 +437,16 @@
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-model.jpg",
       "bytes": 126479,
       "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/world.jpg",
@@ -510,8 +515,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 170718,
-      "sha256": "a6d3d6956eebb7805ddcdb50dbf06b79cbbb83d65acc604cf6cf8ed3f021fb63"
+      "bytes": 172993,
+      "sha256": "5c39668175dd3368cca358b76c50c988f6921b7f29781b4234d04325ae8be892"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -522,6 +527,11 @@
       "path": "case-studies/savebench/measurement-case.json",
       "bytes": 28039,
       "sha256": "ac7145bad472d8121e66e28ff88bc1b45bef352c69b6f9dbd895f198558b446f"
+    },
+    {
+      "path": "CNAME",
+      "bytes": 13,
+      "sha256": "6ed8a82e67203dcc0b275f7dff6e6eb33f49c6578abedba4d3f7c9c91402755a"
     },
     {
       "path": "ear.html",
@@ -544,9 +554,19 @@
       "sha256": "c1b6d94186b0d393fc4f3c0934e93ff794a597475932609d9f53534803543712"
     },
     {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
       "path": "more-work.html",
       "bytes": 450,
       "sha256": "3bdd17a4ed26dad360252fd98a8307442f113fd13bc28377e0edce9403dec80e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1655,
+      "sha256": "af47b4a306be0148d76111d46642335d1e6cb160c30b2d4d0887ce3444076740"
     },
     {
       "path": "robots.txt",
