@@ -118,6 +118,10 @@
     {
       "date": "2026-11-17",
       "change": "Added three later_summary entries for 1 to 17 November, a model label for DeepSeek V4 Flash and a sources entry for the November run records, read from SaveBench's private records. No existing figure changed."
+    },
+    {
+      "date": "2026-11-17",
+      "change": "Revised the sixth important limit: the page now also shows images of the game in its walkthrough and progress section. They are not part of this measurement record."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
