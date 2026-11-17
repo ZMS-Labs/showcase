@@ -130,6 +130,10 @@
     {
       "date": "2026-11-17",
       "change": "Added a later_summary entry and a model label for the Claude Opus 5.5 run of 17 November, the first milestone earned by a model, read from SaveBench's private run record. Removed the sentence saying no model had earned a milestone. No existing figure changed."
+    },
+    {
+      "date": "2026-11-17",
+      "change": "Added a later_summary entry and a model label for the GPT-6.1 Sol run of 17 November, the second model to earn milestone 1-1, read from SaveBench's private run record. No existing figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -271,6 +275,13 @@
       "contestant": "Claude Opus 5.5 (as configured).",
       "outcome": "PASS. The game accepted the payment, and the run record marks it fully earned. Machines the model built made 248 Concrete (200 needed), 128 Iron Plate (100 needed) and 184 Iron Rod (100 needed). Nothing that paid for the milestone was made by hand and no machine was fed by hand. The factory: two Miner Mk1s on an iron node and a stone node, one Smelter, two Constructors, two storage boxes, five belts and one biomass burner. 10 model replies over about 24 minutes, 0.35 US dollars.",
       "limits": "Dated by UTC; it was the evening of 16 November in US Central time, the date the page uses. One run, not repeated. Declared hand steps: 26 iron ore and 53 limestone mined by hand to clear the two nodes before the miners were placed, not counted toward the cost; 200 biomass put in the burner by hand; finished parts carried by hand from the storage boxes to pay. The model acted through the test's direct building tools, not the fuller command set a contestant will use later. Its first try at a belt to the payment point was refused by those tools. One Constructor made Iron Plate and was then switched to Iron Rod."
+    },
+    {
+      "date": "2026-11-17",
+      "what": "Milestone 1-1 earned from an empty world by a second AI model that chose every move.",
+      "contestant": "GPT-6.1 Sol (as configured).",
+      "outcome": "PASS. The game accepted the payment, and the run record marks it fully earned. Machines the model built made 221 Concrete (200 needed), 144 Iron Plate (100 needed) and 168 Iron Rod (100 needed). Nothing that paid for the milestone was made by hand and no machine was fed by hand. The factory: two Miner Mk1s on an iron node and a stone node, one Smelter, two Constructors, two storage boxes, five belts and one biomass burner. 44 model replies, one action each, over about 26 minutes. The test's gateway counted 0.39 US dollars; the provider prices behind that count were not checked, so it is a count and not a bill.",
+      "limits": "The same date by UTC and by US Central time. One run, not repeated. Declared hand steps: 30 iron ore and 50 limestone mined by hand to clear the two nodes before the miners were placed, not counted toward the cost; 200 biomass put in the burner by hand; finished parts carried by hand from the storage boxes to pay. The model acted through the test's direct building tools, not the fuller command set a contestant will use later. One Constructor made Iron Plate and was then switched to Iron Rod. This run used a newer version of the test's game mod than the Claude Opus 5.5 run, and each model has one run, so the two results are not a ranking."
     }
   ],
   "model_labels": {
@@ -279,7 +290,8 @@
     "Cursor Auto": "Cursor chooses the model, and the records do not show which one it used.",
     "9 September designer": "Not named; see designer.model_note.",
     "DeepSeek V4 Flash": "As configured: the seat's route named deepseek/deepseek-v4-flash, and the run records carry that label. No separate runtime report of the model was recorded.",
-    "Claude Opus 5.5": "As configured: the seat's route named anthropic/claude-opus-5-5, and the run record carries that label. No separate runtime report of the model was recorded."
+    "Claude Opus 5.5": "As configured: the seat's route named anthropic/claude-opus-5-5, and the run record carries that label. No separate runtime report of the model was recorded.",
+    "GPT-6.1 Sol": "As configured: the seat's route named openai/gpt-6.1-sol, and the run record carries that label. No separate runtime report of the model was recorded."
   },
   "sources": {
     "note": "Commits in SaveBench's private repository. The 9 September measurement conditions come from that run's frozen task file, which is also private.",
@@ -314,7 +326,7 @@
       },
       {
         "revision": null,
-        "covers": "1 to 17 November: the goal change, the scripted ladder runs, the five DeepSeek runs and the Claude Opus 5.5 run. These run records are filed outside the repository's history, so no commit is given."
+        "covers": "1 to 17 November: the goal change, the scripted ladder runs, the five DeepSeek runs, the Claude Opus 5.5 run and the GPT-6.1 Sol run. These run records are filed outside the repository's history, so no commit is given."
       }
     ]
   }

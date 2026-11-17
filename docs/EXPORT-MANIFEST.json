@@ -121,7 +121,7 @@
     {
       "path": "assets/manifest.json",
       "bytes": 39478,
-      "sha256": "70e441549437e5b959099566916f16d373c217494bcb1615e780d0ec5aa13f65"
+      "sha256": "c8ca7b8471c48944569d2ac461e3415fecdf23f09b0d4731956b893b5d8f7b92"
     },
     {
       "path": "assets/og/og-default.png",
@@ -190,13 +190,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 207701,
-      "sha256": "910e42abdb2d7a89795c75ff8815ede4b1bc499b57ba5efe5a02e015dbeb9781"
+      "bytes": 216254,
+      "sha256": "83027203d0a12a2f31412dcde449c8a8187a0ba3ebebef0650213d80f2387c57"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 47426,
-      "sha256": "7ba4c5b181f82b9a4e9d8a0e1cc3f701af35292a8989944368e5b74710be5c84"
+      "bytes": 47971,
+      "sha256": "1c869aa1cf08379df54662836fbf384733761ed31c7fca031729ed41a31e32e9"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -430,8 +430,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 6957,
-      "sha256": "eefd7c5d03433f9c53bcbed76770ce479b03dec77523ce407a6e12958fd0da68"
+      "bytes": 7280,
+      "sha256": "572d64a28ea678de7f66e2b2d5e40eb4e3f6141532f9e58f5d80c8fa1c71bf89"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -490,8 +490,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 71271,
-      "sha256": "a5c322716c5f993d1fe8175437965223da352ed1f525c9c243ea87aa92145758"
+      "bytes": 74493,
+      "sha256": "0f0f2332b47e1628152090f8e8ad420ed3c2dfd788324e89a0d59bd94768ebf1"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -500,8 +500,8 @@
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
-      "bytes": 20720,
-      "sha256": "e9dac956d23bb6fc1dfac02458af9102ceb6b0ef0b0962fb918814920783a756"
+      "bytes": 22666,
+      "sha256": "bb251e1764809923a0ea1af800a372ae8913c8fab175f70af4429f7a4b9d2aeb"
     },
     {
       "path": "ear.html",
@@ -520,8 +520,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20139,
-      "sha256": "192321fdae4aad26ec4f751a569ab6dd6608e6b9c653e4e0ef49f0bfd8f0c96a"
+      "bytes": 20188,
+      "sha256": "707e609df0f141ab8e0725093c5cf6e51992d1c5812d24971b79ca38d3795aad"
     },
     {
       "path": "more-work.html",
