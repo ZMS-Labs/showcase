@@ -615,14 +615,14 @@ function mount(el, data, opts) {
   scrub.type = 'range'; scrub.min = 0; scrub.step = 0.01; scrub.value = 0; scrub.setAttribute('aria-label', 'Timeline');
   bar.append(bPlay, bRe, bSnd, scrub, time); ui.append(bar, chips); el.append(cv, ui);
   const x = cv.getContext('2d'), IM = {};
-  let eng = null, T = 0, playing = false, last = 0, ac = null, sound = true, dead = false, started = false;
+  let eng = null, T = 0, playing = false, last = 0, ac = null, sound = true, dead = false, started = false; let raf = 0;
   const poster = data.poster || 0;
   function draw() { if (eng) eng.frame(started ? T : poster); }
   function stopAudio() { if (ac) { try { ac.close(); } catch (e) {} ac = null; } }
   function startAudio() { stopAudio(); if (!sound || !eng) return; const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return; ac = new AC(); const m = mixTo(ac, ac.destination), now = ac.currentTime + .05; eng.cues.forEach(c => { if (c.t >= T) sfx(ac, m, c.type, now + (c.t - T), c.v); }); }
   function sync() { if (!eng) return; scrub.value = T; time.textContent = `${T.toFixed(1)} s / ${eng.dur.toFixed(1)} s`; bPlay.textContent = playing ? 'Pause' : 'Play'; const cs = [...chips.children]; cs.forEach((b, i) => b.classList.toggle('on', started && T >= +b.dataset.t && (i === cs.length - 1 || T < +cs[i + 1].dataset.t))); }
-  function tick(ts) { if (!playing || dead) return; const dt = (ts - last) / 1000; last = ts; T = Math.min(eng.dur, T + dt); draw(); sync(); if (T >= eng.dur) { playing = false; stopAudio(); sync(); return; } requestAnimationFrame(tick); }
-  function play() { if (!eng) return; if (T >= eng.dur) T = 0; started = true; playing = true; last = performance.now(); startAudio(); requestAnimationFrame(tick); sync(); }
+  function tick(ts) { if (!playing || dead) return; const dt = (ts - last) / 1000; last = ts; T = Math.min(eng.dur, T + dt); draw(); sync(); if (T >= eng.dur) { playing = false; stopAudio(); sync(); return; } raf = requestAnimationFrame(tick); }
+  function play() { if (!eng) return; if (T >= eng.dur) T = 0; started = true; playing = true; last = performance.now(); startAudio(); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); sync(); }
   function pause() { playing = false; stopAudio(); sync(); }
   function seek(t) { if (!eng) return; started = true; T = clamp(t, 0, eng.dur); draw(); if (playing) startAudio(); sync(); }
   bPlay.onclick = () => playing ? pause() : play();
