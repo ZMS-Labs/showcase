@@ -225,8 +225,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 26256,
-      "sha256": "0d75f327a4489c10bb8e9882fe9c268cb55e6b46eb7804457f95fbdd57265df3"
+      "bytes": 27682,
+      "sha256": "d86d878a8473798259fd57b12aca68546b80c7d64bc3cc6c444b9ef948e51943"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -235,8 +235,8 @@
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
-      "bytes": 13902,
-      "sha256": "85400c77a8a437ccc29c73130e757086589b6c5ade9839ac23706db4e970b60e"
+      "bytes": 16303,
+      "sha256": "d421bacc5e2ec001024374e918b1173c1491f9056815330617734b34338eed47"
     },
     {
       "path": "ear.html",
@@ -246,7 +246,7 @@
     {
       "path": "evidence.html",
       "bytes": 8876,
-      "sha256": "8d6ea47540b08ecb35e9c42560c8ecd7a752621e4eb8b1a661f65485cdf29c8a"
+      "sha256": "1aebd1c42af83720be7e250ec8d41d8ea5b43396edca20398eeee8e92e2c7427"
     },
     {
       "path": "how-my-use-of-ai-grew.html",
@@ -255,8 +255,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 19867,
-      "sha256": "0304caf0637807b7f1a702734b43b79337df5985e60e6967b1cae44fc475ea10"
+      "bytes": 19876,
+      "sha256": "5bbb2b800bef42b4a4d359829bd669eb992f39375928329023df8726dd740c97"
     },
     {
       "path": "more-work.html",
@@ -281,7 +281,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 957,
-      "sha256": "1717599bde9e6ac4a1b6ee056fb83b883abdf3e7242ed6ee32511b3d761bac99"
+      "sha256": "b7f4ce9615cddb116c94edcd152109f502eaddceea321b43304ac3e4648dc499"
     },
     {
       "path": "walkthroughs.js",
