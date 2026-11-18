@@ -893,6 +893,39 @@
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-17. It illustrates the project; it is not a measurement record."
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-opus-1-1.jpg",
+      "sha256": "053510d284b72780f22a6333c117289abe3c6ecf9fe39d23fd5d0b56359fd063",
+      "bytes": 135409,
+      "dimensions": [
+        1024,
+        576
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-17. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-opus-2-1.jpg",
+      "sha256": "7ea9a4b0940a7802a1b9ffabff8b45d1470d31c0ea0005e800f137b2651efd5a",
+      "bytes": 126743,
+      "dimensions": [
+        1024,
+        576
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-17. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-sol-1-1.jpg",
+      "sha256": "df3f3e6712bb2698e530857931d697153b931b03946924bc5dbdeef94c230c68",
+      "bytes": 132028,
+      "dimensions": [
+        1024,
+        576
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-17. It illustrates the project; it is not a measurement record."
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/world.jpg",
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
       "bytes": 575534,
