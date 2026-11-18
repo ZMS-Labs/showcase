@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 44052,
-      "sha256": "759c4c354444f49a8c4d08fb0644108d0a8696a86adb12a54260f6e6a811e06f"
+      "bytes": 45232,
+      "sha256": "c6918b8c743712068d32f03a0497e6bbc7ced5581c240a2ea0f77c242282144d"
     },
     {
       "path": "assets/og/og-default.png",
@@ -199,6 +199,16 @@
       "sha256": "653c716a0127fed592de03cbc3ade13deb65fe8d2b264226487cd171ed540b19"
     },
     {
+      "path": "assets/savebench/film/sol-milestone-1-3-poster.jpg",
+      "bytes": 183181,
+      "sha256": "d68e6c49fecb1833b0ccade47000c9862b76939ebce3a732daf5ce6747673f21"
+    },
+    {
+      "path": "assets/savebench/film/sol-milestone-1-3.mp4",
+      "bytes": 25850019,
+      "sha256": "7639025c3619e1f63ded631f3867ab11e1b8f38138aed04f597568762bb0d313"
+    },
+    {
       "path": "assets/savebench/savebench-challenge.png",
       "bytes": 105023,
       "sha256": "4e65983018b93328e57dedd24f5bcd147dfceed490b2c38e85585479b4e907ef"
@@ -230,13 +240,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 210295,
-      "sha256": "fe83c191a2c18cb9aed2d05e8b82a7bc9db20bf5605f47939a087cdf6992d666"
+      "bytes": 216298,
+      "sha256": "af3bc97bb26bd925eb0ff36a7e80639f7cd25de10da54c262f2ff76fd998e1a6"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 48128,
-      "sha256": "c087cee90e59c3aff09668476b7572713f2d2d3706a0a1b77282532a648f93ae"
+      "bytes": 48423,
+      "sha256": "fa721a5c1c2bd71abffdf28da31f7462401fc34b563c2f382b30c2fb9220cc36"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -470,8 +480,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 7475,
-      "sha256": "f2256f70b2d811f719f321626c38a00e64d0328563614419d209d22952ba0c2e"
+      "bytes": 7749,
+      "sha256": "22db0e992151b2597eed0eb7af88b226367ff00cfa91afb972ae83a963a431a6"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -530,8 +540,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 212943,
-      "sha256": "be764d985bd5e9b7e5a5d59fceca00756b4139c599efb941964bf1387c14472e"
+      "bytes": 216616,
+      "sha256": "8eaade48f0ec9f1a5d039c37570b6af0849adf5ee5e2a4fe648077a4f9ec0840"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -540,8 +550,8 @@
     },
     {
       "path": "case-studies/savebench/measurement-case.json",
-      "bytes": 29382,
-      "sha256": "dcc167c4d32a3c56815269695c47346ae2418e4b69f0623889ff6f15a674e57d"
+      "bytes": 30864,
+      "sha256": "879469e700ffd481a9973ea7d40e1bc73f40d0cd5dfdcbdbe668d3e75fb97a3c"
     },
     {
       "path": "ear.html",
@@ -560,8 +570,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20257,
-      "sha256": "1e1c7cf34b8383f768597d8902cc1d3f5861467562d45c0eb595d6d5c66754f6"
+      "bytes": 20274,
+      "sha256": "ebd4b8e2f04a219309c689a347ced7d9fbd9277035f717ba4f20b59ee1340741"
     },
     {
       "path": "more-work.html",
