@@ -605,8 +605,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 243788,
-      "sha256": "54a562e1d0284dc32e7fd06ae7ed71eb5131cbbeced7f7a55bea732da78f7639"
+      "bytes": 245118,
+      "sha256": "f8f3f5cf84e04f8cdbab91edf5d79fcdf51ff4f4bb2ada42e3c986b3ce73ab43"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -617,6 +617,41 @@
       "path": "case-studies/savebench/measurement-case.json",
       "bytes": 32866,
       "sha256": "f8c5b4ee103a2249037e80fef078b08db13dd1ea89cce8c8e5d47c38b84760b6"
+    },
+    {
+      "path": "case-studies/savebench/runs/opus-1-1.html",
+      "bytes": 56846,
+      "sha256": "b0159c0cb90218ea84f51f8ecb235b2e3050dcca51fec170665291fd04ccfce8"
+    },
+    {
+      "path": "case-studies/savebench/runs/opus-1-2.html",
+      "bytes": 61787,
+      "sha256": "828bc393a806126bb7ea440b3cb498c53dff6c5260c56c9e43249fb3bd27d693"
+    },
+    {
+      "path": "case-studies/savebench/runs/opus-1-3.html",
+      "bytes": 84641,
+      "sha256": "909b53705b36d3b9768ef89bf645693007c059443e1cd4724a3f52323f874e74"
+    },
+    {
+      "path": "case-studies/savebench/runs/opus-2-1.html",
+      "bytes": 77344,
+      "sha256": "d75a4f9e45f70a2220979b441ce55282af041f5bb429a7258b3902a02d2c4e30"
+    },
+    {
+      "path": "case-studies/savebench/runs/sol-1-1.html",
+      "bytes": 63695,
+      "sha256": "af822bdb66ae1de3123af32add8c67ff5423b416a13b58ce6440de6ddc49f71f"
+    },
+    {
+      "path": "case-studies/savebench/runs/sol-1-2.html",
+      "bytes": 81932,
+      "sha256": "d842b8cf4732b76c96565d8fa039a70bcb8158d6b4a125719d508abafabfd520"
+    },
+    {
+      "path": "case-studies/savebench/runs/sol-1-3.html",
+      "bytes": 89795,
+      "sha256": "907bc369c0f6ba3d9fe2856434780a824c82d756f6481d4a0a9e4acc4fdcffa9"
     },
     {
       "path": "ear.html",
@@ -660,8 +695,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 957,
-      "sha256": "b7f4ce9615cddb116c94edcd152109f502eaddceea321b43304ac3e4648dc499"
+      "bytes": 1766,
+      "sha256": "1f01c366c85e76710391668dc772fea3aa25e2171329c7506f8abbf6109a193f"
     },
     {
       "path": "walkthroughs.js",
