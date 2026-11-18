@@ -214,6 +214,21 @@
       "sha256": "341348f963de91cebb62a08de45de176c6a091b77787c9ef7b73c822b345bfa9"
     },
     {
+      "path": "assets/savebench/film/scripted-factory-20261118-poster-640.jpg",
+      "bytes": 55220,
+      "sha256": "f47d4d5507850ce95e4c39c0eebd425850523a80409e751ff5c736975e958e7c"
+    },
+    {
+      "path": "assets/savebench/film/scripted-factory-20261118-poster.jpg",
+      "bytes": 189141,
+      "sha256": "02f8ea911f75432a41b331e0ab688aa7127a2a540d93cd5f32329c9fdb1bc55f"
+    },
+    {
+      "path": "assets/savebench/film/scripted-factory-20261118.mp4",
+      "bytes": 23745119,
+      "sha256": "12ba59f6dbc147e7f26df9215a388bebda250de6b93ece7c98564a2d1b64a748"
+    },
+    {
       "path": "assets/savebench/film/sol-milestone-1-1-poster-640.jpg",
       "bytes": 60526,
       "sha256": "95a6bd0f8c6858eadee037be58787972649319d3f51a27a00475d2d4b7946989"
@@ -705,8 +720,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 30380,
-      "sha256": "3f3b1ccb7b7ad9b76f81d6a3b3e68b8348589bc59addcf98b76e304edf2bbf12"
+      "bytes": 32365,
+      "sha256": "4fa0bc12b7f88307707d0d2f2b0e9d183ad31f96a981cb6175aa7d073387a1ad"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
