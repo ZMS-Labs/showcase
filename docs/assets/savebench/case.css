@@ -1,0 +1,22 @@
+/* SaveBench case study and archive: the AI run cards and the archive list. */
+.sbr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px 32px;margin-top:8px}
+.sbr-card{min-width:0;border-top:1px solid var(--ink);padding-top:16px}
+.sbr-card:first-child{border-top:3px solid var(--signal);padding-top:14px}
+.sbr-card h3{font-size:clamp(20px,1vw + 14px,24px);line-height:1.2;margin:0}
+.sbr-card .sbr-ms{display:block;font-size:.8em;font-weight:500;color:var(--muted);margin-top:4px}
+.sbr-result{margin:8px 0 14px;font-size:16px;line-height:1.45}
+.sbr-result time{font-weight:600}
+.sbr-film{margin:0}
+.sbr-film figcaption{font-size:14.5px}
+.sbr-links{margin:12px 0 0;font-weight:600}
+.sbr-archive{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:0;max-width:72ch}
+.sbr-archive li{border-top:1px solid var(--rule);padding:12px 0}
+.sbr-archive li:last-child{border-bottom:1px solid var(--rule)}
+.sbr-archive-night{margin-top:28px}
+.sbr-archive-night li{border-color:rgba(255,255,255,.25)}
+.sbr-older-h{margin:56px 0 16px;font-size:clamp(20px,1vw + 14px,24px)}
+.sbr-older{grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:32px 24px}
+.sbr-older [data-sb-film] span{font-size:14px!important;padding:6px 10px!important;left:10px!important;bottom:10px!important}
+.sbr-older .sbr-card h3{font-size:19px}
+.sbr-older .sbr-result,.sbr-older .sbr-film figcaption{font-size:14px}
+.sbr-older .sbr-card:first-child{border-top:1px solid var(--ink);padding-top:16px}
