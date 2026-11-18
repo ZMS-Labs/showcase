@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 46386,
-      "sha256": "7ea9de17ab9935d2400a5d04497bdaada1eb5bc18b94144016163cfa83c9f599"
+      "bytes": 48131,
+      "sha256": "47da9908dd36b3c5355ddd3c247213fe7de013234f88da0228f62f809835b274"
     },
     {
       "path": "assets/og/og-default.png",
@@ -255,8 +255,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 48773,
-      "sha256": "8760ccc83f223061f8e5eeebcb1cf0e9e435a9049e78530f65925341edb71fe6"
+      "bytes": 49069,
+      "sha256": "efa9c9d51a6cb1cf6f88b9cbfff65e2c0624b424ee865cf4aeb6c8fd8f9dc71e"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -484,14 +484,29 @@
       "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-opus-1-1.jpg",
+      "bytes": 135409,
+      "sha256": "053510d284b72780f22a6333c117289abe3c6ecf9fe39d23fd5d0b56359fd063"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-opus-2-1.jpg",
+      "bytes": 126743,
+      "sha256": "7ea9a4b0940a7802a1b9ffabff8b45d1470d31c0ea0005e800f137b2651efd5a"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-sol-1-1.jpg",
+      "bytes": 132028,
+      "sha256": "df3f3e6712bb2698e530857931d697153b931b03946924bc5dbdeef94c230c68"
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/world.jpg",
       "bytes": 575534,
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 8034,
-      "sha256": "321395626a6c4012c22566d72ebc50c23d2e5c07b0f0e6f5e9d967f16d7c2984"
+      "bytes": 8142,
+      "sha256": "e509702c52e4381d827e97ba6249846c7adc83cc00aa6214482cf0100049a7d6"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -550,8 +565,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 239478,
-      "sha256": "4fb87e1632394d59041b6e5e4cd3c9d12b47b9cf26342056f9f0aab8ed2e7716"
+      "bytes": 239635,
+      "sha256": "691cddcfa15b40fdc618dc26fbb3802e98e7ca92cf0761cef69f4d114f25f2e7"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
