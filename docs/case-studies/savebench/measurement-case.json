@@ -150,6 +150,10 @@
     {
       "date": "2026-11-18",
       "change": "Added a later_summary entry for the script run of 17 November that earned milestone 1-3 in the continuing world, read from the run record. No existing figure changed."
+    },
+    {
+      "date": "2026-11-18",
+      "change": "Added a later_summary entry for the Claude Opus 5.5 run that earned milestone 2-1, read from the run record. No existing figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -333,6 +337,13 @@
       "contestant": "A fixed script. No model chose its moves.",
       "outcome": "PASS for milestone 1-3: the game accepted 100 Iron Plate, 300 Screws and 300 Wire and the milestone was purchased from earned items. By belt in this run: 130 Iron Plate from the doubled iron line at 31.6 a minute, then 304 Screws at 34.8 a minute from a rod Constructor belted into a screw Constructor. The record's check that every part the milestone takes came from a Miner Mk1 by belt passed. The run as a whole is marked failed, 33 checks passed and 2 failed, because its milestone 2-1 stage stopped at its first step.",
       "limits": "It continued the saved world of the earlier one-world run; the doubling of the iron line was done in this run. Finished Wire was carried to the bank by hand for payment. A search for plants to burn found none near the nodes. An earlier run the same day made no Screws and failed milestone 1-3; it is kept on the record. Milestone 2-1 was not earned: the bench refused to craft Reinforced Iron Plate because the bank was full, 24 of 24 slots."
+    },
+    {
+      "date": "2026-11-18",
+      "what": "Milestone 2-1 (Part Assembly), the first milestone of tier 2, earned from an empty world by an AI model that chose every move.",
+      "contestant": "Claude Opus 5.5 (as configured).",
+      "outcome": "PASS by the test's rule. The model paid the milestone itself and the record marks it fully earned. The test counted 300 Iron Plate, 200 Iron Rod, 200 Cable and 500 Screws toward the cost as taken from storage boxes its machines filled; in total its machines put 325 Iron Plate, 366 Iron Rod, 267 Cable and 542 Screws into storage. Three Miner Mk1s and 11 belts. 23 model replies, 138 moves, 1.26 US dollars by the test gateway's count.",
+      "limits": "One run, not repeated, started from an empty world; it does not continue the model's earlier milestones. The model acted through the test's direct building tools. Not every part moved by belt: the model carried 138 copper ore and 46 iron ore into Smelters by hand to start, and over the run carried 217 Iron Ingot and 57 Copper Ingot into machines by hand. It made parts at the bench for its buildings (114 Wire, 37 Iron Rod, 24 Screws, 10 Cable, 2 Reinforced Iron Plate) and, in its last reply, 160 Iron Plate, 40 of them from its starting stock and not counted as earned. 70 ore were mined by hand to clear nodes; burner fuel was put in by hand. Two moves were refused, 3 failed, and 13 were not run. The heights the machines were placed at have not been checked for this run."
     }
   ],
   "model_labels": {

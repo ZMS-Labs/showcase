@@ -74,7 +74,7 @@
     <h3 class="sbp-h">Where it stands, as of November 17, 2026</h3>
     <dl class="sbp-now">
       <div><dt>Live game mod</dt><dd>0.10.20, live on the first server since Nov 17, 12:03 AM CST (06:03 UTC). Its Hypertube and rail fixes are confirmed in the game, and overclocking to 150% is reported working. Verified</dd></div>
-      <div><dt>Best AI model result</dt><dd>Claude Opus 5.5 earned milestones 1-1, 1-2 and 1-3; GPT-6.1 Sol earned 1-1 and 1-2. Each run started from a blank world and no machine was fed by hand. Declared: nodes cleared by hand, burner fuel by hand, finished parts carried to pay, and on 1-3 Opus hand-crafted 72 plates to replace ones spent on belts. Verified</dd></div>
+      <div><dt>Best AI model result</dt><dd>Claude Opus 5.5 earned 1-1, 1-2, 1-3 and 2-1 (first tier 2 milestone); GPT-6.1 Sol earned 1-1 and 1-2. Each run started from a blank world. 1-1 and 1-2 had no machine fed by hand. Declared on 1-3: 72 plates hand-crafted. Declared on 2-1: 184 ore carried into machines by hand, 160 plates crafted at the bench. Verified</dd></div>
       <div><dt>Best script factory</dt><dd>Tier 1 finished in one world: milestones 1-2 and 1-1 (run BQ, Nov 16), then 1-3 (run BS, Nov 17, 304 Screws by belt at 34.8 a minute), every part from Miner Mk1s by belt. Verified</dd></div>
       <div><dt>Not done yet</dt><dd>Tier 2 not started: the script&#x27;s 2-1 stopped on a full inventory. AI milestones have not been chained in one world. GPT-6.1 Sol ran out of time on 1-3. No train or vehicle has carried cargo; drones do not pair yet. Open</dd></div>
     </dl>
@@ -83,7 +83,7 @@
       <li class="is-current">
         <span class="label">Current version</span>
         <h4><time datetime="2026-11-17">November 17, 2026</time></h4>
-        <p>Adds tier 1 finished by a script in one world, the first milestones earned by AI models (Claude Opus 5.5 reached 1-3, GPT-6.1 Sol reached 1-2, each from a blank world), the burner fed by belt, and the first locomotive drive.</p>
+        <p>Adds tier 1 finished by a script in one world, the first milestones earned by AI models (Claude Opus 5.5 reached 2-1, GPT-6.1 Sol reached 1-2, each from a blank world, with declared hand help on the later ones), the burner fed by belt, and the first locomotive drive.</p>
         <button type="button" class="sbp-pick" data-v="2026-11-17" aria-pressed="true" hidden>Show this version</button>
         <details class="transcript">
           <summary>Read this version's transcript</summary>
@@ -93,12 +93,12 @@
             <li><strong>0:20</strong>: The script run, run BL, November 14, shown as a diagram that is not to scale. The script clears the rock on an iron node by hand and builds a Miner Mk1 on it, powered by a Biomass Burner. Belts carry ore to the Smelter, ingots to the Constructor and plates into the bank. 324 Iron Plate arrive by belt, where 320 were wanted. The Constructor then switches to Iron Rod, and 202 arrive, where 200 were wanted. A second line starts at a Miner Mk1 on a stone node. The game refuses a belt that is too long, so the stone passes through four containers before a Constructor turns it into Concrete: 203, where 200 were wanted. No part was moved by hand between machines. In this run the burner was still refuelled by hand; that gap closed on November 16. The finished Concrete is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-1. 59 checks of 59 passed. This is a script run, not an AI.</li>
             <li><strong>0:46</strong>: The second script run, run BP, November 16, shown as a diagram. Milestone 1-2 costs 150 Iron Plate, 150 Iron Rod and 300 Wire. The script builds a copper line first, at a copper node 268 metres from the bank: a Miner Mk1, a Smelter and a Constructor making Wire. The first 48 Wire are carried to the bank to pay for the iron line, a declared carry. The iron line runs into the bank by belt: 196 Iron Plate where 190 were wanted, then 170 Iron Rod where 170 were wanted. The copper line gets its container and 304 Wire arrive in it by belt, where 300 were wanted. The finished Wire is carried to the bank once, to pay. The game accepts the payment and launches milestone 1-2. 52 checks of 52 passed. In a separate run the same evening, a burner ran on fuel fed by belt with no hand refuel.</li>
             <li><strong>1:03</strong>: The DeepSeek run, run 4, November 14, shown as a diagram. DeepSeek cleared the rock and built a Miner Mk1, a Smelter, a Constructor, storage, a Biomass Burner and two belts, and wired the burner to the miner. It had spent all its Iron Rod. The last belt was refused because it cost 16 Iron Plate and the bank held 1. Power poles also cost Iron Rod, so the Smelter and Constructor never got power; for the poles this is inferred. Our harness told the model only that the placement was refused, so it spent 15 of its 34 replies looking for clear ground. The run stopped at its budget of 95 cents and the milestone was not earned. The fault was in our harness, not in how the model played. The fix was live for run 5 on November 16. In run 5 the model was told what it could not afford, but 14 of its 30 replies were used up thinking and produced no action, and it did not finish either. DeepSeek has now tried five times.</li>
-            <li><strong>1:13</strong>: The Claude Opus 5.5 run, run 6, November 16, shown as a diagram. Claude Opus 5.5, an AI model, plays milestone 1-1 by itself from a blank world. It looked up an iron node, cleared the rock by hand, and built a Biomass Burner, a Miner Mk1, a Smelter and a Constructor, joined by belts. It tried to belt the Constructor to the bank and was refused, because our tool list did not offer the bank as a belt target, so it built a storage box. It ran power to a stone node and built a second Miner Mk1, a second Constructor and a second storage box for Concrete. Machines made everything the milestone costs: 128 Iron Plate where 100 were needed, then 184 Iron Rod where 100 were needed after it switched the Constructor, and 248 Concrete where 200 were needed. No machine was fed by hand. The declared hand steps were clearing the two nodes, 200 biomass for the burner, and collecting the finished parts from storage to pay. The game accepted the payment and launched milestone 1-1, after 10 replies and 35 cents. This was the first milestone earned by an AI. The next day, November 17, Claude Opus 5.5 went on to earn milestones 1-2 and 1-3, and a second AI model, GPT-6.1 Sol, earned milestones 1-1 and 1-2, each run starting from a blank world.</li>
+            <li><strong>1:13</strong>: The Claude Opus 5.5 run, run 6, November 16, shown as a diagram. Claude Opus 5.5, an AI model, plays milestone 1-1 by itself from a blank world. It looked up an iron node, cleared the rock by hand, and built a Biomass Burner, a Miner Mk1, a Smelter and a Constructor, joined by belts. It tried to belt the Constructor to the bank and was refused, because our tool list did not offer the bank as a belt target, so it built a storage box. It ran power to a stone node and built a second Miner Mk1, a second Constructor and a second storage box for Concrete. Machines made everything the milestone costs: 128 Iron Plate where 100 were needed, then 184 Iron Rod where 100 were needed after it switched the Constructor, and 248 Concrete where 200 were needed. No machine was fed by hand. The declared hand steps were clearing the two nodes, 200 biomass for the burner, and collecting the finished parts from storage to pay. The game accepted the payment and launched milestone 1-1, after 10 replies and 35 cents. This was the first milestone earned by an AI. The next day, November 17, Claude Opus 5.5 went on to earn milestones 1-2, 1-3 and 2-1, the first of tier 2, and a second AI model, GPT-6.1 Sol, earned milestones 1-1 and 1-2, each run starting from a blank world.</li>
             <li><strong>1:28</strong>: Four stills filmed in the real game. November 9: a smelter feeding a constructor by belt, built by script. November 12: the Space Elevator over the base that earned phase one, by script. November 12: a smelter and constructors that DeepSeek placed by itself. November 14: a Miner Mk1 on an iron node, belted to a smelter, built by DeepSeek.</li>
-            <li><strong>1:36</strong>: The scoreboard. Script: milestone 1-1 on November 14 with every part from miners by belt; milestone 1-2 on November 16 the same way, then both again in one world; on November 17, after a first try that made no Screws, it earned milestone 1-3 in that same world with 304 Screws by belt, finishing all of tier 1 in one factory. AI models: Claude Opus 5.5 earned milestones 1-1 and 1-2 on November 16 and 17 with every part made by machines; Claude Opus 5.5 earned milestone 1-3 on November 17, where its machines made enough of everything but it had spent plates on belts, so it crafted 72 plates by hand before paying; GPT-6.1 Sol earned milestones 1-1 and 1-2 on November 17 with every part made by machines, and its try at 1-3 ran out of time. All are verified from run records. The script has finished tier 1 in one world, and AI models have earned five milestones, each from a blank world. DeepSeek has not finished one.</li>
-            <li><strong>1:44</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12 and 13: Space Elevator phase one, a Miner Mk1 feeding a belt, then 300 plates by belt. November 14: milestone 1-1 by a real factory and the first copper Wire. November 16: milestone 1-2, a burner fed by belt, and an AI model earns milestone 1-1. November 17: the script finishes tier 1 in one world, AI models earn milestones 1-1, 1-2 and 1-3, and a locomotive drives for the first time. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 38 of 52 on November 14 and 42 of 52 on November 16. The last two counts are a work thread&#x27;s own and were not read from a file.</li>
-            <li><strong>1:54</strong>: What is still ahead. The script&#x27;s next step in its world, milestone 2-1, stopped at once because its inventory was full and the bench refused to craft; a player would empty some into a container first. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. GPT-6.1 Sol&#x27;s try at milestone 1-3 ran out of time with 140 of 300 Screws made. Every AI milestone so far started from a blank world; next comes several milestones in one world. On November 17 a locomotive drove 57 metres along a new rail piece to the next station, but it cannot make the return trip yet and no train has carried cargo.</li>
-            <li><strong>2:02</strong>: The diagrams are drawn from run records. The stills are real game footage. By November 17 a script had earned milestones 1-1, 1-2 and 1-3 in one world. On November 16 and 17 AI models earned five milestones: Claude Opus 5.5 reached milestone 1-3 and GPT-6.1 Sol reached milestone 1-2. Satisfactory imagery is the property of Coffee Stain Studios.</li>
+            <li><strong>1:36</strong>: The scoreboard. Script: milestone 1-1 on November 14 with every part from miners by belt; milestone 1-2 on November 16 the same way, then both again in one world; on November 17, after a first try that made no Screws, it earned milestone 1-3 in that same world with 304 Screws by belt, finishing all of tier 1 in one factory. AI models: Claude Opus 5.5 earned milestones 1-1 and 1-2 on November 16 and 17 with every part made by machines; Claude Opus 5.5 earned milestone 1-3 on November 17, where its machines made enough of everything but it had spent plates on belts, so it crafted 72 plates by hand before paying; Claude Opus 5.5 earned milestone 2-1 on November 17, the first tier 2 milestone, but it carried 184 ore into its machines by hand and crafted 160 plates at the bench before paying; GPT-6.1 Sol earned milestones 1-1 and 1-2 on November 17 with every part made by machines, and its try at 1-3 ran out of time. All are verified from run records. The script has finished tier 1 in one world, and AI models have earned six milestones, each from a blank world. DeepSeek has not finished one.</li>
+            <li><strong>1:44</strong>: How it got here. October 27: the concept video, before anything had been measured in the game. November 9: the first belt between two machines in the live game. November 12 and 13: Space Elevator phase one, a Miner Mk1 feeding a belt, then 300 plates by belt. November 14: milestone 1-1 by a real factory and the first copper Wire. November 16: milestone 1-2, a burner fed by belt, and an AI model earns milestone 1-1. November 17: the script finishes tier 1 in one world, AI models earn milestones 1-1, 1-2, 1-3 and 2-1, and a locomotive drives for the first time. Game actions checked in the live game rose from 5 of 51 on November 9 to 28 of 51 on November 11, 38 of 52 on November 14 and 42 of 52 on November 16. The last two counts are a work thread&#x27;s own and were not read from a file.</li>
+            <li><strong>1:54</strong>: What is still ahead. The script&#x27;s next step in its world, milestone 2-1, stopped at once because its inventory was full and the bench refused to craft; a player would empty some into a container first. A Tractor drove 26 metres on autopilot on November 16, but no vehicle has carried cargo between stations yet. GPT-6.1 Sol&#x27;s try at milestone 1-3 ran out of time with 140 of 300 Screws made. Claude Opus 5.5 reached tier 2 but carried some ore into machines by hand. Every AI milestone so far started from a blank world; next comes several milestones in one world. On November 17 a locomotive drove 57 metres along a new rail piece to the next station, but it cannot make the return trip yet and no train has carried cargo.</li>
+            <li><strong>2:02</strong>: The diagrams are drawn from run records. The stills are real game footage. By November 17 a script had earned milestones 1-1, 1-2 and 1-3 in one world. On November 16 and 17 AI models earned six milestones: Claude Opus 5.5 reached milestone 2-1 and GPT-6.1 Sol reached milestone 1-2. Satisfactory imagery is the property of Coffee Stain Studios.</li>
           </ol>
         </details>
       </li>
@@ -147,8 +147,8 @@
     <p class="fine" style="max-width:72ch">Game results logged from November 12, 2026 to November 17, 2026, newest first. Verified means the line was read from a run record when it was written. Unverified means it was reported by the work and not read again. Failed runs are kept. Later results join this log at its next update.</p>
     <div class="sbp-days">
       <details class="sbp-day">
-        <summary><time datetime="2026-11-17">November 17, 2026</time> · 22 results</summary>
-        <p>The day AI models pulled ahead of the script. After a quiet night, runs resumed at 8:43 AM CST. GPT-6.1 Sol earned milestone 1-1, then Claude Opus 5.5 earned 1-2, Sol earned 1-2, and Opus earned 1-3 (with one declared exception), each from a blank world. The script failed its first try at milestone 1-3, then earned it on a second run, finishing all of tier 1 in one world. Sol&#x27;s try at 1-3 ran out of time. A locomotive drove along a new rail piece for the first time. Mod 0.10.20 went live just after midnight. This entry covers midnight to 6:10 PM CST so far. Lines are in time order.</p>
+        <summary><time datetime="2026-11-17">November 17, 2026</time> · 25 results</summary>
+        <p>The day AI models pulled ahead of the script. After a quiet night, runs resumed at 8:43 AM CST. GPT-6.1 Sol earned milestone 1-1, then Claude Opus 5.5 earned 1-2, Sol earned 1-2, Opus earned 1-3 and then 2-1, the first tier 2 milestone (both with declared hand help), each from a blank world. The script failed its first try at milestone 1-3, then earned it on a second run, finishing all of tier 1 in one world. Sol&#x27;s try at 1-3 ran out of time. A locomotive drove along a new rail piece for the first time. Mod 0.10.20 went live just after midnight. This entry covers midnight to 8:00 PM CST so far. Lines are in time order.</p>
         <ul>
           <li><span class="label">Verified</span><div>Mod 0.10.20 is live on the first game server. It carries three fixes: overclocking above 100%, the Hypertube entrance, and joining rail to a station platform. None of the three has been checked in the game yet.<small>Nov 17, 06:03 UTC</small></div></li>
           <li><span class="label">Unverified</span><div>The second game server was restarted on mod 0.10.20 and reported ready at 12:18 AM CST.<small>Nov 17, 06:12 UTC</small></div></li>
@@ -172,6 +172,9 @@
           <li><span class="label">Failed</span><div>Drone test: both Drone Ports were built and given batteries, but pairing them was reported as not applied, so no drone was built or flown. The record suggests the first port did take its destination and the check is stricter than the game; not yet confirmed. The world for this test was prepared by a restock job, not by play.<small>Nov 17, 21:11 UTC</small></div></li>
           <li><span class="label">Verified</span><div>The script finished tier 1 in one world. Run BS continued run BQ&#x27;s world, crafted Cable, doubled the iron line (130 Iron Plate at 31.6 a minute), then made 304 Screws by belt at 34.8 a minute and earned milestone 1-3. Every part the milestone took came from a Miner Mk1 by belt. Milestones 1-1, 1-2 and 1-3 were all earned in this one factory.<small>Nov 17, 21:27 UTC</small></div></li>
           <li><span class="label">Failed</span><div>Same run, milestone 2-1 (start of tier 2): stopped at its first step. The bench refused to craft Reinforced Iron Plate because the inventory was full (24 of 24 slots). A player would first put surplus into a storage container. 33 checks passed, 2 failed.</div></li>
+          <li><span class="label">Failed</span><div>Script run BT, the next step into tier 2 in the script&#x27;s world: it crafted Reinforced Iron Plate and built a third Constructor, then a belt to a fourth Constructor was refused as too steep. Milestone 2-1 was not reached.<small>Nov 18, 00:12 UTC</small></div></li>
+          <li><span class="label">Verified</span><div>Claude Opus 5.5 earned milestone 2-1 (Part Assembly), the first tier 2 milestone earned by an AI, from a blank world in 23 replies for about 1.26 dollars. It built 3 Miner Mk1s and 11 belts, and its machines made the full cost (300 Iron Plate, 200 Iron Rod, 200 Cable, 500 Screws). Declared hand help, larger than in earlier runs: it carried 184 ore into machines by hand (46 iron, 138 copper, the copper taken from its own miner), and before paying it crafted 160 Iron Plate at the HUB bench, 40 of them marked as not earned, because its stored plates had been used up. The game accepted the payment. By the scoring rule hand-made parts pay only for buildings, so the run counts, but this is further from how a player runs a factory than the 1-1 and 1-2 runs.<small>Nov 18, 00:35 UTC</small></div></li>
+          <li><span class="label">Unverified</span><div>The film of that run is the first made entirely by the automatic camera job, with no PC involved.</div></li>
         </ul>
       </details>
       <details class="sbp-day">
@@ -354,6 +357,7 @@
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>Claude Opus 5.5 earned milestone 1-3, with a caveat that belongs beside the result. The milestone costs 100 Iron Plate, 300 Screws and 300 Wire. In a new run from an empty world its machines made 134 Iron Plate, 356 Screws and 336 Wire, and no machine was fed by hand. But it had spent machine made plates on belts, so its first payment was refused 68 Iron Plate short. It then made 72 Iron Plate by hand at the bench and paid. The test counts the milestone as earned, because the machines made more than the cost and its rule lets hand made items pay for buildings. Even so, most of the plates handed in were made by hand, which is not what a factory is for. The run took 32 replies and 147 moves, 13 of which failed, mostly belts on sloping ground, and the test's own count of the cost was 1.43 dollars. One run, not repeated.</p></li>
       <li><time datetime="2026-11-17">Nov 17, 2026</time><p>GPT-6.1 Sol tried milestone 1-3 and did not earn it. In a new run from an empty world it had 60 minutes, and the time ran out with 140 of the 300 Screws made. Its machines had made the Iron Plate and Wire the milestone costs (194 and 663, against 100 and 300), and no machine was fed by hand. It set a machine to make Screws only at reply 72 of 97, after three belts were refused as too steep and it rebuilt part of its Wire line. Nothing was paid, and the run stays on the record as a miss. It took 97 replies, one move each, and the test's own count of the cost was 94 cents; the provider's prices behind that count have not been checked. One run, not repeated.</p></li>
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>The script finished tier 1 in one world. That afternoon, US Central time, it continued the world where it had earned milestones 1-2 and 1-1 the night before. It doubled its iron line with a second Smelter and Constructor, then set one Constructor to Iron Rod and belted it into a second making Screws: 304 Screws reached the bank by belt at about 35 a minute. Milestone 1-3 was paid with 100 Iron Plate, 300 Screws and 300 Wire, every part from a Miner Mk1 by belt, and the game accepted it. Finished Wire was carried to the bank by hand to pay, as before. An earlier try that day had made no Screws and failed; it stays on the record. The same run then started milestone 2-1 and stopped at its first step, because the bank was full and the bench refused to craft. This is a script, not an AI.</p></li>
+      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>An AI model earned a tier 2 milestone for the first time. That evening, US Central time, Claude Opus 5.5 started in an empty world and earned milestone 2-1, Part Assembly, which costs 300 Iron Plate, 200 Iron Rod, 200 Cable and 500 Screws. It built three Miner Mk1s, Smelters, Constructors and 11 belts, and the test counted every part it paid as taken from its machines' storage boxes. Its factory was not all belts, though: to get started it carried 184 ore and, over the run, 274 ingots into machines by hand, and it made parts for its buildings at the bench. The run took 23 replies and about 57 minutes, and the test's own count of the cost was 1.26 dollars. One run, not repeated, and not in the same world as its earlier milestones.</p></li>
     </ol>
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">The factories the AIs built, on film</h3>
     <div>
@@ -399,7 +403,14 @@
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory GPT-6.1 Sol built on November 17 while trying milestone 1-3. The run did not earn the milestone: its hour ran out with 140 of the 300 Screws made. It shows the miners, Smelters and Constructors, the belts, the burner and the storage boxes. This is a shortened cut: about 7 seconds where the camera showed only a cliff face were taken out. There is no sound and no text on screen.</figcaption>
     </figure>
-    <p class="fine" style="margin-top:24px">These factories work, but they are not laid out as a player would lay them out. The test's building tool put some machines on rocks and cliff faces, in places tens of metres above or below the machine next to them, and it did not tell the model the height it had built at. The game accepted the belts and they carried the parts. Three of the films are shortened cuts that leave out seconds where the camera passed through rock or showed only a cliff face.</p>
+    <figure style="margin:32px 0 0">
+      <a href="../../assets/savebench/film/opus-milestone-2-1.mp4" data-sb-film data-label="Film of the factory Claude Opus 5.5 built for milestone 2-1" style="display:block;position:relative">
+        <img src="../../assets/savebench/film/opus-milestone-2-1-poster.jpg" alt="A cluster of machines in a rocky hollow on red desert ground, with palm trees behind." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (73 seconds, silent)</span>
+      </a>
+      <figcaption class="fine" style="margin-top:12px">Game camera film of the factory Claude Opus 5.5 built on November 17 for milestone 2-1, Part Assembly, the first tier 2 milestone a model has earned. It shows the miners, the machines and the belts. This is a shortened cut: about 14 seconds of close-ups of the ground and of single machines were taken out. It was filmed by an automatic camera job. There is no sound and no text on screen.</figcaption>
+    </figure>
+    <p class="fine" style="margin-top:24px">These factories work, but they are not laid out as a player would lay them out. The test's building tool put some machines on rocks and cliff faces, in places tens of metres above or below the machine next to them, and it did not tell the model the height it had built at. The game accepted the belts and they carried the parts. Four of the films are shortened cuts that leave out seconds where the camera passed through rock, showed only a cliff face or stayed close on the ground.</p>
     </div>
 <!-- savebench-ai-runs:start -->
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">What each AI did, reply by reply</h3>
@@ -2336,6 +2347,269 @@
           </li>
         </ol>
       </details>
+      <details class="transcript">
+        <summary>Claude Opus 5.5, milestone 2-1, Nov 17, 2026: 23 replies, 138 moves</summary>
+        <p class="fine" style="margin-top:12px">Milestone 2-1, earned. 133 of 138 moves were carried out, 2 were refused, 3 did not work. Its machines made 325 Iron Plate, 542 Screws, 366 Iron Rod, 267 Cable, 174 Iron Ingot. Mined by hand to clear the nodes: 46 Iron Ore, 24 Copper Ore. Made at the bench by hand: 114 Wire, 37 Iron Rod, 24 Screws, 2 Reinforced plate, 10 Cable, 160 Iron Plate. 13 further moves were not run, because an earlier move in the same reply failed. The milestone costs 300 Iron Plate, 200 Iron Rod, 200 Cable and 500 Screws, and the test counted exactly that many as taken from its machines' storage boxes. Not every part travelled by belt: it also carried 184 ore and 274 ingots into machines by hand, and made parts at the bench for its buildings. In its last reply it made 160 Iron Plate at the bench; the 40 made from its starting stock were not counted.</p>
+        <ol>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Start: scouting nodes.</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+              <li>Look for Copper Ore nearby</li>
+              <li>Look for Limestone nearby</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: bootstrap copper via portable miner on copper-1 -&gt; hand-fed smelter-1 (temp, at 900,900) -&gt; bench wire -&gt; more smelters/poles. Later dismantle smelter-1 and build fresh belt-fed ones. Iron line: Mk1 on ore_iron-1 (-1287,-1490) -&gt; sme…</p>
+            <ul style="margin-top:0">
+              <li>Put a Portable Miner on ore_copper-1</li>
+              <li>Build a Biomass Burner</li>
+              <li>Carry 100 Biomass into burner-1 as fuel</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from burner-1 to pole-1</li>
+              <li>Build a Smelter</li>
+              <li>Run a power line from smelter-1 to pole-1</li>
+              <li>Set smelter-1 to make Copper Ingot</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: smelter-1 hand-fed copper (bootstrap) -&gt; bench wire for buildings. Iron: miner-2 on ore_iron-1 -&gt; smelter-2 (100,-1500) -&gt; constructors (plate first, then rod/screw) -&gt; storage -&gt; bank. pole-1 full (burner,smelter1,miner2,smelter2):…</p>
+            <ul style="margin-top:0">
+              <li>Collect what miner-1 made</li>
+              <li>Carry 38 Copper Ore into smelter-1</li>
+              <li>Build a Miner on ore_iron-1</li>
+              <li>Run a power line from miner-2 to pole-1. <strong>Refused: a 'miner-2' is not one of your buildings ['burner-1', 'miner-1', 'miner_mk1-1', 'pole-1', 'smelter-1']</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">4 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron line: miner_mk1-1 -&gt; smelter-2 (-100,-1500) -&gt; constructor(s) plate/rod/screw -&gt; storage -&gt; bank belt. pole-1: burner,smelter1,miner_mk1-1,pole-2. pole-2 has 2 free after smelter-2 (keep 1 for chain). Copper ingots from smelter-1 -&gt; b…</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from miner_mk1-1 to pole-1</li>
+              <li>Build a Smelter</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-1 to pole-2</li>
+              <li>Run a power line from smelter-2 to pole-2</li>
+              <li>Set smelter-2 to make Iron Ingot</li>
+              <li>Lay a belt from miner_mk1-1 to smelter-2</li>
+              <li>Collect what smelter-1 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Iron: miner_mk1-1-&gt;smelter-2-&gt;constructor-1(plate)-&gt;storage-1. pole-2 now full except chain slot. Plan: craft wire from copper ingots (bootstrap) for 2nd burner + poles + smelters. Add 2nd iron miner+smelter -&gt; rod con -&gt; screw con. Copper…</p>
+            <ul style="margin-top:0">
+              <li>Build a Constructor</li>
+              <li>Run a power line from constructor-1 to pole-2</li>
+              <li>Set constructor-1 to make Iron Plate</li>
+              <li>Lay a belt from smelter-2 to constructor-1</li>
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-1 to storage-1</li>
+              <li>Craft Wire by hand at the bench, 16 times. <strong>Made by hand: 32 Wire</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: line2 iron miner-&gt;smelter-&gt;rod con-&gt;screw con-&gt;storage. Copper line miner-&gt;smelter-&gt;wire con-&gt;cable con-&gt;storage (far, poles). Need 2nd burner (15plate15rod25wire). Constructors need 2 RIP+8 cable each. Belts ~12 plates each. Plate l…</p>
+            <ul style="margin-top:0">
+              <li>Look for Iron Ore nearby</li>
+              <li>Look for Copper Ore nearby</li>
+              <li>Collect what miner-1 made</li>
+              <li>Collect what smelter-1 made</li>
+              <li>Carry 100 Copper Ore into smelter-1</li>
+              <li>Collect what storage-1 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Line2 at ore_iron-3 (2598,-2140): miner-&gt;smelter-3(2600,-3600)-&gt;rod con(2600,-5000)-&gt;screw con(2600,-6400)-&gt;storage(2600,-7800). burner-2 powers line2 via pole-3 (full after 3); add pole-4 chained for constructors. Next: fuel burner-2 100…</p>
+            <ul style="margin-top:0">
+              <li>Craft Wire by hand at the bench, 11 times. <strong>Made by hand: 22 Wire</strong></li>
+              <li>Build a Biomass Burner</li>
+              <li>Build a Miner on ore_iron-3</li>
+              <li>Build a Smelter</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from burner-2 to pole-3</li>
+              <li>Run a power line from miner_mk1-2 to pole-3</li>
+              <li>Run a power line from smelter-3 to pole-3</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Line2 at ore_iron-3: miner_mk1-2-&gt;smelter-3(2600,-3600)-&gt;con-2 rod(2600,-5000)-&gt;screw con(2600,-6400)-&gt;storage(2600,-7800). pole-4(1800,-5000) chained from pole-3. Next: belt smelter-3-&gt;constructor-2, build screw con-3 + storage-2, connect…</p>
+            <ul style="margin-top:0">
+              <li>Carry 100 Biomass into burner-2 as fuel</li>
+              <li>Lay a belt from miner_mk1-2 to smelter-3</li>
+              <li>Set smelter-3 to make Iron Ingot</li>
+              <li>Build a Constructor</li>
+              <li>Build a Power Pole</li>
+              <li>Run a power line from pole-3 to pole-4</li>
+              <li>Run a power line from constructor-2 to pole-4</li>
+              <li>Set constructor-2 to make Iron Rod</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Line2: miner_mk1-2-&gt;smelter-3-&gt;con-2 rod-&gt;con-3 screw-&gt;storage-2(2600,-7800). Need rods 200 too: later switch con-1 (plates) to rod once ~300 plates automated, or add rod line. Copper line for cable later at ore_copper-1 (23143,-13428) - f…</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-1 made</li>
+              <li>Lay a belt from smelter-3 to constructor-2</li>
+              <li>Build a Constructor</li>
+              <li>Run a power line from constructor-3 to pole-4</li>
+              <li>Set constructor-3 to make Screws</li>
+              <li>Lay a belt from constructor-2 to constructor-3</li>
+              <li>Build a Storage Container</li>
+              <li>Lay a belt from constructor-3 to storage-2</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Line2: miner_mk1-2-&gt;smelter-3-&gt;con-2 rod-&gt;con-3 screw-&gt;storage-2. Line1 plates-&gt;storage-1. Next: copper Mk1 line (miner-&gt;smelter-&gt;con wire-&gt;con cable-&gt;storage) for 200 cable; then con-1 switch to rod after 300 plates.</p>
+            <ul style="margin-top:0">
+              <li>Look for Copper Ore nearby</li>
+              <li>Collect what smelter-1 made</li>
+              <li>Collect what miner-1 made</li>
+              <li>Collect what storage-1 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: copper site at ore_copper-1 (23143,-13428): own burner + Mk1 miner + smelter + con wire + con cable + storage, then collect storage once. Need rods (burner 15, smelter 5, screws for 2 RP) -&gt; smelter-1 hand-fed iron for bootstrap ingo…</p>
+            <ul style="margin-top:0">
+              <li>Set smelter-1 to make Iron Ingot</li>
+              <li>Carry 66 Iron Ore into smelter-1. <strong>Refused: earned inputs only: you have collected 46 ore_iron and fed 0, so at most 46 may go into a machine</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">5 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plan: copper site at ore_copper-1 (23143,-13428). Power by chaining ~3 poles from pole-4 (1800,-5000) instead of new burner (burners 60MW total, enough). Site: Mk1 miner (have 1 portable_miner) + smelter + con wire + con cable + storage; c…</p>
+            <ul style="margin-top:0">
+              <li>Carry 46 Iron Ore into smelter-1</li>
+              <li>Craft Wire by hand at the bench, 20 times. <strong>Made by hand: 40 Wire</strong></li>
+              <li>Craft Wire by hand at the bench, 10 times. <strong>Made by hand: 20 Wire</strong></li>
+              <li>Collect what miner-1 made</li>
+              <li>Wait 60 seconds</li>
+              <li>Collect what smelter-1 made</li>
+              <li>Collect what storage-1 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site plan (own burner, no pole chain since pole-4 likely full): miner at ore_copper-1 (23143,-13428); smelter (21743,-13428); con wire (20343,-13428); con cable (18943,-13428); storage (17543,-13428); burner-3 (21743,-11800) fuel 10…</p>
+            <ul style="margin-top:0">
+              <li>Craft Iron Rod by hand at the bench, 20 times. <strong>Made by hand: 20 Iron Rod</strong></li>
+              <li>Craft Iron Rod by hand at the bench, 17 times. <strong>Made by hand: 17 Iron Rod</strong></li>
+              <li>Craft Screws by hand at the bench, 6 times. <strong>Made by hand: 24 Screws</strong></li>
+              <li>Craft Reinforced Iron Plate by hand at the bench, 2 times. <strong>Made by hand: 2 Reinforced plate</strong></li>
+              <li>Craft Cable by hand at the bench, 10 times. <strong>Made by hand: 10 Cable</strong></li>
+              <li>Carry 58 Biomass into burner-1 as fuel</li>
+              <li>Carry 33 Biomass into burner-2 as fuel</li>
+              <li>Build a Miner on ore_copper-1. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Plates done once storage-1 collected (&gt;=300). con-1 now rods -&gt;storage-1 (need 200). con-3 screws -&gt;storage-2 (need 500). Copper site plan (own burner): miner at ore_copper-1 (23143,-13428); smelter (21743,-13428) Recipe_IngotCopper_C; con…</p>
+            <ul style="margin-top:0">
+              <li>Collect what storage-1 made</li>
+              <li>Collect what storage-2 made</li>
+              <li>Set constructor-1 to make Iron Rod</li>
+              <li>Collect what miner-1 made</li>
+              <li>Take down miner-1</li>
+              <li>Build a Miner on ore_copper-1</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site building. Next: power lines burner-3/miner_mk1-3/smelter-4/pole-6 -&gt; pole-5; con-4,con-5 -&gt; pole-6; recipes IngotCopper, Wire, Cable; belts miner3-&gt;smelter4-&gt;con4-&gt;con5-&gt;storage3; fuel burner-3. Watch plates: bank must hold 300…</p>
+            <ul style="margin-top:0">
+              <li>Build a Biomass Burner</li>
+              <li>Build a Power Pole</li>
+              <li>Build a Power Pole</li>
+              <li>Build a Smelter</li>
+              <li>Build a Constructor</li>
+              <li>Build a Constructor</li>
+              <li>Build a Storage Container</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper site wiring. Next: set con-5 Cable; belts miner3-&gt;smelter4-&gt;con4-&gt;con5-&gt;storage3; supply burner-3 fuel biomass ~100. Watch plates: bank must hold 300 plate at pay; may switch con-1 back to plate later.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from burner-3 to pole-5</li>
+              <li>Run a power line from miner_mk1-3 to pole-5</li>
+              <li>Run a power line from smelter-4 to pole-5</li>
+              <li>Run a power line from pole-6 to pole-5</li>
+              <li>Run a power line from constructor-4 to pole-6</li>
+              <li>Run a power line from constructor-5 to pole-6</li>
+              <li>Set smelter-4 to make Copper Ingot</li>
+              <li>Set constructor-4 to make Wire</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line: miner3-&gt;smelter4-&gt;con4(wire)-&gt;con5(cable)-&gt;storage3, burner-3 fueled. Next: forage biomass for burners (burner1/2 need ~100 each over 36min), check plates (need 300 in bank at pay; con-1 can switch to plate). Collect storage-1…</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-5 to make Cable</li>
+              <li>Lay a belt from miner_mk1-3 to smelter-4</li>
+              <li>Lay a belt from smelter-4 to constructor-4. <strong>Did not work: placement_refused</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">3 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line: miner3-&gt;smelter4-&gt;wire con-&gt;con5(cable)-&gt;storage3. Smelter4-&gt;con4 belt was too steep; rebuilding wire constructor at 21743,-14900; then power to pole-6, set Recipe_Wire_C, belt smelter-4-&gt;it, it-&gt;constructor-5, con5-&gt;storage-3…</p>
+            <ul style="margin-top:0">
+              <li>Carry 50 Biomass into burner-3 as fuel</li>
+              <li>Take down constructor-4</li>
+              <li>Build a Constructor</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line: miner3-&gt;smelter4-&gt;con6(wire)-&gt;con5(cable)-&gt;storage3. Need rod 200 (storage-1 from con-1), screw 500 (storage-2), cable 200 (storage-3). Keep burners fueled (forage biomass). Collect storages periodically, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Run a power line from constructor-6 to pole-6</li>
+              <li>Set constructor-6 to make Wire</li>
+              <li>Lay a belt from smelter-4 to constructor-6</li>
+              <li>Lay a belt from constructor-6 to constructor-5</li>
+              <li>Lay a belt from constructor-5 to storage-3</li>
+              <li>Collect what storage-1 made</li>
+              <li>Collect what storage-2 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Copper line: miner3-&gt;smelter4-&gt;con6(wire)-&gt;con5(cable)-&gt;storage3. Need rod 200 (storage-1 from con-1), cable 200 (storage-3). Screw/plate done. Keep burners fueled. Wait, collect, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-1 made</li>
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Need 77 more automated cable from storage-3 (copper line ~15/min). Burners refueled. After collect, if cable automated&gt;=200, pay; else wait more and collect again.</p>
+            <ul style="margin-top:0">
+              <li>Carry 40 Biomass into burner-3 as fuel</li>
+              <li>Carry 19 Biomass into burner-2 as fuel</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Wait 120 seconds</li>
+              <li>Collect what storage-3 made</li>
+            </ul>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Bank plate 145 &lt; 300 needed. constructor-1 switched to plates (20/min) -&gt; storage-1. Need ~155 plates (~8 min). Burner-1 low fuel: forage leaves, craft Recipe_Biomass_Leaves_C, supply burner-1 fuel. Then wait, collect storage-1, pay.</p>
+            <ul style="margin-top:0">
+              <li>Set constructor-1 to make Iron Plate</li>
+              <li>Pick plants for fuel. <strong>Did not work: no_pickupable_foliage</strong></li>
+            </ul>
+            <p class="fine" style="margin:6px 0 0">1 later moves in this reply were not run.</p>
+          </li>
+          <li>
+            <p class="fine" style="margin:0 0 6px">Its note: Automated already covers the cost (plate 300 of 300 counted). The bank lacks plates, so I collect ingots and plates and bench-craft plates to fill it, then pay. If short: craft more or wait for storage-1, then pay.</p>
+            <ul style="margin-top:0">
+              <li>Collect what smelter-3 made</li>
+              <li>Collect what smelter-2 made</li>
+              <li>Collect what storage-1 made</li>
+              <li>Craft Iron Plate by hand at the bench, 20 times. <strong>Made by hand: 40 Iron Plate</strong></li>
+              <li>Craft Iron Plate by hand at the bench, 20 times. <strong>Made by hand: 40 Iron Plate</strong></li>
+              <li>Craft Iron Plate by hand at the bench, 20 times. <strong>Made by hand: 40 Iron Plate</strong></li>
+              <li>Craft Iron Plate by hand at the bench, 20 times. <strong>Made by hand, not counted as earned: 40 Iron Plate</strong></li>
+              <li>Pay for the milestone</li>
+            </ul>
+          </li>
+        </ol>
+      </details>
     </div>
 <!-- savebench-ai-runs:end -->
   </div>
@@ -2426,7 +2700,7 @@
       <dl>
         <dt>Recorded</dt><dd>Two trials in the game on September 9, 2026. Every rate, target and window above comes from their records. The later results come from SaveBench's own run records through November 17, 2026.</dd>
         <dt>Prototype</dt><dd>The screens and recording show the prototype's own controls on made-up sample data, with no game, model or server behind them.</dd>
-        <dt>Not shown yet</dt><dd>A pass on the newer quota test, a repeat of any milestone a model has earned (each was earned once), several milestones earned in one continuing world by a model, a milestone past 1-3, and any ranking of models. The September 9 result covers one design on one challenge.</dd>
+        <dt>Not shown yet</dt><dd>A pass on the newer quota test, a repeat of any milestone a model has earned (each was earned once), several milestones earned in one continuing world by a model, a milestone past 2-1, and any ranking of models. The September 9 result covers one design on one challenge.</dd>
       </dl>
     </div>
     <details class="evidence-depth" style="margin-top:56px">
