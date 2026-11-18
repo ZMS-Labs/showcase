@@ -41,17 +41,18 @@
 <main id="main" tabindex="-1">
 
 <div class="night">
-  <section class="case-hero wrap">
+  <section class="case-hero wrap text-first">
     <div>
       <p class="crumb"><a href="../../index.html#independent">Work</a> <span aria-hidden="true">/</span> SaveBench</p>
       <span class="kicker">SaveBench · AI factory design</span>
       <h1>Can an AI build a factory that actually runs?</h1>
       <p class="lead">SaveBench asks whether an AI can build a working factory in the game Satisfactory, by the game's own rules, with the running game as the judge. It began with AI models designing factories that the game then measured. A factory that only works on paper doesn't count.</p>
+      <p class="lead" style="margin-top:20px;font-size:clamp(17px,.45vw + 14px,20px)">The game unlocks buildings in tiers, and each tier has numbered milestones: 1-1 is tier 1, milestone 1. You earn a milestone by handing in the parts it costs, and the game itself accepts the payment, so the game is the judge.</p>
       <p class="status"><a href="../../evidence.html#status"><b>Recorded experiment</b></a> · game runs from September 9 to November 17, 2026 · <a href="#evidence" style="white-space:nowrap">see the record</a></p>
-      <p class="status">Newest: <a href="#film-opus-2-1">watch the factory Claude Opus 5.5 built for milestone 2-1</a>, the first tier 2 milestone a model has earned</p>
+      <p class="status">Newest: <a href="#film-opus-2-1">watch the factory Claude Opus 5.5 built for milestone 2-1 (Part Assembly)</a>, the first tier 2 milestone a model has earned</p>
     </div>
     <figure class="exhibit">
-      <img src="../../assets/savebench/walkthrough/current-frame.jpg" alt="The SaveBench scoreboard on November 17, 2026: what the script and the AI model have each done in the live game." width="1920" height="1080">
+      <a href="#progress"><img src="../../assets/savebench/walkthrough/current-frame.jpg" alt="Scoreboard, state on November 17, 2026. Script, a reference run and not an AI: milestone 1-1 on Nov 14 with every part from miners by belt; 1-2 on Nov 16 the same way, then both again in one world; 1-3 on Nov 17 in that same world, all of tier 1 in one factory. Milestones from miners and belts: 3. AI models, choosing every step themselves: Claude Opus 5.5 earned 1-1 and 1-2 on Nov 16 and 17 with every part made by machines, then 1-3 and 2-1 on Nov 17, both with declared hand help; GPT-6.1 Sol earned 1-1 and 1-2, and its try at 1-3 ran out of time. Different milestones earned by AI models: 4 (Claude Opus 5.5: 4, GPT-6.1 Sol: 2). Banner: script, tier 1 in one world; Claude Opus 5.5 to 2-1 with hand help; GPT-6.1 Sol to 1-2." width="1920" height="1080" fetchpriority="high"></a>
       <figcaption><span><span class="label">Walkthrough</span> Where it stood on November 17, 2026</span></figcaption>
     </figure>
   </section>
@@ -350,7 +351,7 @@
       <li class="key"><time datetime="2026-11-12">Nov 12, 2026</time><p>A script, not an AI, climbed the first stretch of that ladder from an empty world. Its factory made the parts for milestone 2-1 and for the Space Elevator, an Assembler made 50 Smart Plating, the game accepted the delivery and moved on to its next phase. Earlier attempts failed and were kept. The run declared three departures from normal play: a storage box for ore and ingots, 20 extra starting parts to pay for the box, and extra starting fuel. It shows the ladder can be climbed. It doesn't show that a model can climb it.</p></li>
       <li><time datetime="2026-11-12">Nov 12 to 17</time><p>The first AI player tried the first rung, milestone 1-1. DeepSeek V4 Flash (as configured) played five recorded runs and earned none. In the fifth, 14 of its 30 replies held no move, 13 of them because the reply ran out of room while the model was still thinking. The run stopped when its daily budget was spent, with 41 iron ore collected by hand and nothing made by its machines.</p></li>
       <li class="key"><time datetime="2026-11-14">Nov 14, 2026</time><p>A script earned milestone 1-1 the way a player does. Miners on an iron node and a stone node fed machines by belt: 324 Iron Plate, 202 Iron Rod and 203 Concrete arrived by belt, and no ore, ingot or part was moved by hand between machines. The game accepted the payment. All 59 of the run's checks passed. This is a script, not an AI.</p></li>
-      <li><time datetime="2026-11-16">Nov 16, 2026</time><p>The script earned milestone 1-2 the same way, with a copper line making 304 Wire by belt. All 52 checks passed. In a separate run a burner ran on fuel that reached it by belt, which closed the last regular hand step.</p></li>
+      <li><time datetime="2026-11-16">Nov 16, 2026</time><p>The script earned milestone 1-2 the same way, with a copper line making 304 Wire by belt. All 52 checks passed. In a separate run a burner ran on fuel that reached it by belt, so it no longer needs refuelling by hand. Clearing each node and carrying finished parts to the bank to pay are still done by hand.</p></li>
       <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>Late that evening, US Central time, one script run earned milestones 1-2 and 1-1 in a single world that started empty. All 142 checks passed. A further stage that tried to double the iron line stopped because the script had no Cable for the new power lines; it was not part of the verdict and is kept on the record.</p></li>
       <li class="key"><time datetime="2026-11-16">Nov 16, 2026</time><p>An AI model earned a milestone for the first time, shortly before midnight US Central time (November 17 by UTC, the date the evidence file uses). Claude Opus 5.5 (as configured) started in an empty world and earned milestone 1-1 in 10 replies over about 24 minutes, for 35 cents. It chose every move. It put a Miner Mk1 on an iron node and another on a stone node, and built a Smelter, two Constructors, belts and two storage boxes. Those machines made 248 Concrete, 128 Iron Plate and 184 Iron Rod, more than the milestone costs, and nothing that paid for it was made by hand. Three steps were done by hand and are declared: clearing the loose rock off each node before placing a miner, fuelling the burner, and carrying the finished parts from the storage boxes to pay. The model first tried to run a belt straight to the payment point and the test's tools refused, which is a gap in the tools. It is one run and has not been repeated.</p></li>
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>A second AI model earned the same milestone. GPT-6.1 Sol (as configured) started in an empty world and earned milestone 1-1 in 44 replies over about 26 minutes. The test's own count of the cost was 39 cents, and the provider's prices behind that count have not been checked. It chose every move, one action per reply. It built the same kind of factory: a Miner Mk1 on an iron node and another on a stone node, a Smelter, two Constructors, belts and two storage boxes. Those machines made 221 Concrete, 144 Iron Plate and 168 Iron Rod, more than the milestone costs, and nothing that paid for it was made by hand. The same three hand steps are declared: clearing the loose rock off each node, fuelling the burner, and carrying the finished parts from the storage boxes to pay. It is one run and has not been repeated. Two models have now each earned this milestone once, under slightly different versions of the game mod, so this is not a ranking.</p></li>
@@ -358,55 +359,55 @@
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>Claude Opus 5.5 earned milestone 1-3, with a caveat that belongs beside the result. The milestone costs 100 Iron Plate, 300 Screws and 300 Wire. In a new run from an empty world its machines made 134 Iron Plate, 356 Screws and 336 Wire, and no machine was fed by hand. But it had spent machine made plates on belts, so its first payment was refused 68 Iron Plate short. It then made 72 Iron Plate by hand at the bench and paid. The test counts the milestone as earned, because the machines made more than the cost and its rule lets hand made items pay for buildings. Even so, most of the plates handed in were made by hand, which is not what a factory is for. The run took 32 replies and 147 moves, 13 of which failed, mostly belts on sloping ground, and the test's own count of the cost was 1.43 dollars. One run, not repeated.</p></li>
       <li><time datetime="2026-11-17">Nov 17, 2026</time><p>GPT-6.1 Sol tried milestone 1-3 and did not earn it. In a new run from an empty world it had 60 minutes, and the time ran out with 140 of the 300 Screws made. Its machines had made the Iron Plate and Wire the milestone costs (194 and 663, against 100 and 300), and no machine was fed by hand. It set a machine to make Screws only at reply 72 of 97, after three belts were refused as too steep and it rebuilt part of its Wire line. Nothing was paid, and the run stays on the record as a miss. It took 97 replies, one move each, and the test's own count of the cost was 94 cents; the provider's prices behind that count have not been checked. One run, not repeated.</p></li>
       <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>The script finished tier 1 in one world. That afternoon, US Central time, it continued the world where it had earned milestones 1-2 and 1-1 the night before. It doubled its iron line with a second Smelter and Constructor, then set one Constructor to Iron Rod and belted it into a second making Screws: 304 Screws reached the bank by belt at about 35 a minute. Milestone 1-3 was paid with 100 Iron Plate, 300 Screws and 300 Wire, every part from a Miner Mk1 by belt, and the game accepted it. Finished Wire was carried to the bank by hand to pay, as before. An earlier try that day had made no Screws and failed; it stays on the record. The same run then started milestone 2-1 and stopped at its first step, because the bank was full and the bench refused to craft. This is a script, not an AI.</p></li>
-      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>An AI model earned a tier 2 milestone for the first time. That evening, US Central time, Claude Opus 5.5 started in an empty world and earned milestone 2-1, Part Assembly, which costs 300 Iron Plate, 200 Iron Rod, 200 Cable and 500 Screws. It built three Miner Mk1s, Smelters, Constructors and 11 belts, and the test counted every part it paid as taken from its machines' storage boxes. Its factory was not all belts, though: to get started it carried 184 ore and, over the run, 274 ingots into machines by hand, and it made parts for its buildings at the bench. The run took 23 replies and about 57 minutes, and the test's own count of the cost was 1.26 dollars. One run, not repeated, and not in the same world as its earlier milestones.</p></li>
+      <li class="key"><time datetime="2026-11-17">Nov 17, 2026</time><p>An AI model earned a tier 2 milestone for the first time. That evening, US Central time (November 18 by UTC, the date the evidence file uses), Claude Opus 5.5 started in an empty world and earned milestone 2-1, Part Assembly, which costs 300 Iron Plate, 200 Iron Rod, 200 Cable and 500 Screws. It built three Miner Mk1s, Smelters, Constructors and 11 belts, and the test counted every part it paid as taken from its machines' storage boxes. Its factory was not all belts, though: to get started it carried 184 ore and, over the run, 274 ingots into machines by hand, and it made parts for its buildings at the bench. And because its stored plates had run low, 145 against the 300 it needed, in its last reply it made 160 Iron Plate at the bench before paying (40 of them from starting stock, which the test marks as not earned), so about half the plates handed in were made by hand. The test still counted the milestone's plates as taken from storage boxes, because its machines had made more than the cost. The run took 23 replies and about 57 minutes, and the test's own count of the cost was 1.26 dollars. One run, not repeated, and not in the same world as its earlier milestones.</p></li>
     </ol>
     <h3 style="margin-top:clamp(40px,5vw,64px);margin-bottom:16px">The factories the AIs built, on film</h3>
     <div>
     <figure style="margin:0">
       <a href="../../assets/savebench/film/opus-milestone-1-1.mp4" data-sb-film data-label="Film of the factory Claude Opus 5.5 built for milestone 1-1" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/opus-milestone-1-1-poster.jpg" alt="An aerial view of a small factory in a rocky desert basin: miners, belts, machines and storage boxes." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/opus-milestone-1-1-poster.jpg" srcset="../../assets/savebench/film/opus-milestone-1-1-poster-640.jpg 640w, ../../assets/savebench/film/opus-milestone-1-1-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (72 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory Claude Opus 5.5 built in its November 16 run. It flies over the two miners, the belts, the Smelter, the Constructors and the storage boxes. There is no sound and no text on screen. The film shows the factory; the result comes from the run record.</figcaption>
     </figure>
     <figure style="margin:32px 0 0">
       <a href="../../assets/savebench/film/sol-milestone-1-1.mp4" data-sb-film data-label="Film of the factory GPT-6.1 Sol built for milestone 1-1" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/sol-milestone-1-1-poster.jpg" alt="A wide aerial view of a small factory on a grey rock shelf in a desert: miners, belts, machines and storage boxes, with palm trees around it." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/sol-milestone-1-1-poster.jpg" srcset="../../assets/savebench/film/sol-milestone-1-1-poster-640.jpg 640w, ../../assets/savebench/film/sol-milestone-1-1-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (72 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory GPT-6.1 Sol built in its November 17 run, on the same spot of the map. It flies over the two miners, the belts, the Smelter, the Constructors and the storage boxes. There is no sound and no text on screen. The film shows the factory; the result comes from the run record.</figcaption>
     </figure>
     <figure style="margin:32px 0 0">
       <a href="../../assets/savebench/film/opus-milestone-1-2.mp4" data-sb-film data-label="Film of the factory Claude Opus 5.5 built for milestone 1-2" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/opus-milestone-1-2-poster.jpg" alt="An aerial view of a small group of machines on a grey rock outcrop in a desert, with a mesa behind it." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/opus-milestone-1-2-poster.jpg" srcset="../../assets/savebench/film/opus-milestone-1-2-poster-640.jpg 640w, ../../assets/savebench/film/opus-milestone-1-2-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (80 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory Claude Opus 5.5 built for milestone 1-2 on November 17. It shows the copper miner, the Smelters and Constructors, the belts, the burner and the storage boxes, on two sites joined by a power line. There is no sound and no text on screen.</figcaption>
     </figure>
     <figure style="margin:32px 0 0">
       <a href="../../assets/savebench/film/sol-milestone-1-2.mp4" data-sb-film data-label="Film of the factory GPT-6.1 Sol built for milestone 1-2" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/sol-milestone-1-2-poster.jpg" alt="A Smelter putting out copper ingots beside a miner on a copper node, joined by a belt of ore, on grey rock." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/sol-milestone-1-2-poster.jpg" srcset="../../assets/savebench/film/sol-milestone-1-2-poster-640.jpg 640w, ../../assets/savebench/film/sol-milestone-1-2-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (72 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory GPT-6.1 Sol built for milestone 1-2 on November 17. It shows the miners, a Smelter, the belts, the burner and the storage boxes on a rock outcrop. This is a shortened cut: about 7 seconds where the camera passed through rock were taken out. There is no sound and no text on screen.</figcaption>
     </figure>
     <figure style="margin:32px 0 0">
       <a href="../../assets/savebench/film/opus-milestone-1-3.mp4" data-sb-film data-label="Film of the factory Claude Opus 5.5 built for milestone 1-3" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/opus-milestone-1-3-poster.jpg" alt="A miner, a Smelter, a Constructor and a burner close together on grey rock, joined by belts and a power line." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/opus-milestone-1-3-poster.jpg" srcset="../../assets/savebench/film/opus-milestone-1-3-poster-640.jpg 640w, ../../assets/savebench/film/opus-milestone-1-3-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (65 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory Claude Opus 5.5 built for milestone 1-3 on November 17. It shows the miners, Smelters and Constructors, the belts, the burner and a storage box. This is a shortened cut: about 14 seconds where the camera passed through rock were taken out, so some Constructors that stand on cliff ledges are not in it. There is no sound and no text on screen.</figcaption>
     </figure>
     <figure style="margin:32px 0 0">
       <a href="../../assets/savebench/film/sol-milestone-1-3.mp4" data-sb-film data-label="Film of the factory GPT-6.1 Sol built while trying milestone 1-3, which it did not earn" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/sol-milestone-1-3-poster.jpg" alt="A row of machines on a grey rock outcrop above a desert, with a miner at one end and a mesa behind." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/sol-milestone-1-3-poster.jpg" srcset="../../assets/savebench/film/sol-milestone-1-3-poster-640.jpg 640w, ../../assets/savebench/film/sol-milestone-1-3-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (72 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory GPT-6.1 Sol built on November 17 while trying milestone 1-3. The run did not earn the milestone: its hour ran out with 140 of the 300 Screws made. It shows the miners, Smelters and Constructors, the belts, the burner and the storage boxes. This is a shortened cut: about 7 seconds where the camera showed only a cliff face were taken out. There is no sound and no text on screen.</figcaption>
     </figure>
     <figure id="film-opus-2-1" style="margin:32px 0 0">
       <a href="../../assets/savebench/film/opus-milestone-2-1.mp4" data-sb-film data-label="Film of the factory Claude Opus 5.5 built for milestone 2-1" style="display:block;position:relative">
-        <img src="../../assets/savebench/film/opus-milestone-2-1-poster.jpg" alt="A cluster of machines in a rocky hollow on red desert ground, with palm trees behind." width="1280" height="720" loading="lazy" style="width:100%;height:auto;display:block">
+        <img src="../../assets/savebench/film/opus-milestone-2-1-poster.jpg" srcset="../../assets/savebench/film/opus-milestone-2-1-poster-640.jpg 640w, ../../assets/savebench/film/opus-milestone-2-1-poster.jpg 1280w" sizes="(max-width:700px) 100vw, 50vw" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
         <span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (73 seconds, silent)</span>
       </a>
       <figcaption class="fine" style="margin-top:12px">Game camera film of the factory Claude Opus 5.5 built on November 17 for milestone 2-1, Part Assembly, the first tier 2 milestone a model has earned. It shows the miners, the machines and the belts. This is a shortened cut: about 14 seconds of close-ups of the ground and of single machines were taken out. It was filmed by an automatic camera job. There is no sound and no text on screen.</figcaption>
@@ -2619,7 +2620,8 @@
 <section class="section" id="interface" aria-labelledby="interface-title">
   <div class="wrap">
     <div class="section-head">
-      <h2 id="interface-title">Watch how the factory gets designed.</h2>
+      <span class="kicker">Earlier method · September 2026 prototype, since replaced</span>
+      <h2 id="interface-title">How the September prototype designed factories.</h2>
       <p class="lead">The workspace puts the factory map beside the challenge's conditions, the revision you're looking at and an activity feed. Earlier builds of this interface ran the real comparisons on September 12 and 13.</p>
     </div>
     <div class="design-view" aria-label="SaveBench prototype views">
@@ -2629,7 +2631,7 @@
         <button type="button" aria-pressed="false" data-view-src="../../assets/savebench/savebench-revision.png" data-view-alt="SaveBench prototype showing A1's earlier shortfall after A2 has met its targets" data-view-caption="Selecting the older A1 brings back its diagram and result, and A2's later success doesn't overwrite A1's shortfall.">Earlier revision</button>
         <button type="button" aria-pressed="false" data-view-src="../../assets/savebench/savebench-comparison.png" data-view-alt="SaveBench comparison table beside B1's eight-building diagram" data-view-caption="A2 and B1 meet the targets with different layouts. The comparison keeps measurements, design notes, each contestant's own notes and open questions apart, and names no overall winner.">Compare designs</button>
       </div>
-      <div class="screen-frame"><img class="design-screen" src="../../assets/savebench/savebench-workspace.png" alt="SaveBench prototype with the A1 factory, shared criteria and an activity feed" width="1600" height="1100"></div>
+      <div class="screen-frame"><img class="design-screen" src="../../assets/savebench/savebench-workspace.png" alt="SaveBench prototype with the A1 factory, shared criteria and an activity feed" width="1600" height="1100" loading="lazy" decoding="async"></div>
       <p class="view-caption" aria-live="polite">A1's factory stays beside its public plan, its revision activity and its result.</p>
       <div class="view-actions"><span class="label">Prototype · sample data</span><a data-full-resolution href="../../assets/savebench/savebench-workspace.png">Open full-resolution image</a><button type="button" data-enlarge>Expand interface view</button></div>
       <noscript><p class="fine">Scripts are off, so the view switcher is hidden. Every view is available at full resolution: <a href="../../assets/savebench/savebench-challenge.png">Challenge &amp; criteria</a>, <a href="../../assets/savebench/savebench-revision.png">Earlier revision</a> and <a href="../../assets/savebench/savebench-comparison.png">Compare designs</a>.</p></noscript>
@@ -2647,11 +2649,11 @@
   <div class="wrap split">
     <div>
       <span class="kicker">Recording · 33 seconds</span>
-      <h2 id="recording-title">Watch a comparison take shape.</h2>
+      <h2 id="recording-title">Watch a prototype comparison (sample data).</h2>
       <p style="margin-top:24px">The prototype's real controls running on the same sample data: look at the criteria, start the preview, step through its events, go back to an earlier revision, then compare the latest designs.</p>
     </div>
     <figure class="video-study">
-      <video controls playsinline preload="metadata" poster="../../assets/savebench/savebench-workspace.png" aria-label="SaveBench prototype recording" aria-describedby="recording-caption">
+      <video controls playsinline preload="metadata" poster="../../assets/savebench/savebench-design-workflow-poster.jpg" aria-label="SaveBench prototype recording" aria-describedby="recording-caption">
         <source src="../../assets/savebench/savebench-design-workflow.mp4" type="video/mp4">
         <track default kind="captions" label="English descriptions" src="../../assets/savebench/savebench-design-workflow.en.vtt" srclang="en">
         <p><a href="../../assets/savebench/savebench-design-workflow.mp4">Download the recording</a> or read the transcript below.</p>
@@ -2701,7 +2703,7 @@
       <dl>
         <dt>Recorded</dt><dd>Two trials in the game on September 9, 2026. Every rate, target and window above comes from their records. The later results come from SaveBench's own run records through November 17, 2026.</dd>
         <dt>Prototype</dt><dd>The screens and recording show the prototype's own controls on made-up sample data, with no game, model or server behind them.</dd>
-        <dt>Not shown yet</dt><dd>A pass on the newer quota test, a repeat of any milestone a model has earned (each was earned once), several milestones earned in one continuing world by a model, a milestone past 2-1, and any ranking of models. The September 9 result covers one design on one challenge.</dd>
+        <dt>Not shown yet</dt><dd>A pass on the newer quota test, a repeat by the same model of any milestone it has earned (each model earned each of its milestones once), several milestones earned in one continuing world by a model, a milestone past 2-1, and any ranking of models. The September 9 result covers one design on one challenge.</dd>
       </dl>
     </div>
     <details class="evidence-depth" style="margin-top:56px">
@@ -2745,7 +2747,7 @@
 
 <dialog class="image-dialog" aria-label="Expanded SaveBench prototype">
   <div class="dialog-bar"><span>Prototype · made-up sample data · game artwork removed</span><span class="view-actions"><a data-dialog-original href="../../assets/savebench/savebench-workspace.png">Open full-resolution image</a><button type="button" data-close>Close</button></span></div>
-  <img src="../../assets/savebench/savebench-workspace.png" alt="">
+  <img src="../../assets/savebench/savebench-workspace.png" alt="" loading="lazy" decoding="async">
   <p class="dialog-caption"></p>
 </dialog>
 </main>

@@ -54,6 +54,8 @@ h4{font-size:18px;letter-spacing:-.01em;line-height:1.25;font-stretch:96%}
 p{max-width:var(--measure);text-wrap:pretty}
 p+p{margin-top:1em}
 .kicker{display:block;font-size:13px;font-weight:600;font-stretch:115%;letter-spacing:.1em;text-transform:uppercase;line-height:1.4;color:var(--signal);margin-bottom:22px}
+/* The signal colour is just under 4.5:1 on the grey band, so band kickers use a darker shade. */
+.band .kicker{color:#a8401a}
 .night .kicker{color:var(--signal-night)}
 :is(.role,.story-step,.walk-step,.prose) .kicker{color:var(--muted)}
 .night :is(.role,.story-step,.walk-step,.prose) .kicker{color:var(--on-night-2)}
@@ -501,6 +503,9 @@ main:has(>.contact:last-child)+.footer .wrap{border-top:1px solid #34332f;paddin
   .case-hero>div:first-child{display:contents}
   .case-hero>div:first-child>:not(.crumb,.kicker,h1){order:2}
   .case-hero>:not(:first-child){order:1;margin-top:28px;align-self:stretch}
+  /* A hero picture full of small text is unreadable at phone width, so its words come first. */
+  .case-hero.text-first>div:first-child>:not(.crumb,.kicker,h1){order:1}
+  .case-hero.text-first>:not(:first-child){order:2}
   .feature:nth-of-type(even) .feature-copy{order:0}
   .tools{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tools>div:nth-child(3){padding-left:0;border-left:0}
@@ -538,6 +543,10 @@ main:has(>.contact:last-child)+.footer .wrap{border-top:1px solid #34332f;paddin
   .big-number .figure-num{font-size:clamp(40px,13vw,64px)}
   .big-number.wide .figure-num{font-size:clamp(36px,12.5vw,64px)}
   th,td{padding-right:10px}
+}
+@media (max-width:360px){
+  .table-scroll th,.table-scroll td{padding-right:8px}
+  .table-scroll thead th{letter-spacing:0}
 }
 
 /* Print: everything visible, no controls */

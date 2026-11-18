@@ -154,6 +154,10 @@
     {
       "date": "2026-11-18",
       "change": "Added a later_summary entry for the Claude Opus 5.5 run that earned milestone 2-1, read from the run record. No existing figure changed."
+    },
+    {
+      "date": "2026-11-18",
+      "change": "Added to the limits of the Claude Opus 5.5 milestone 2-1 entry that it is dated by UTC and was the evening of 17 November in US Central time. No figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -343,7 +347,7 @@
       "what": "Milestone 2-1 (Part Assembly), the first milestone of tier 2, earned from an empty world by an AI model that chose every move.",
       "contestant": "Claude Opus 5.5 (as configured).",
       "outcome": "PASS by the test's rule. The model paid the milestone itself and the record marks it fully earned. The test counted 300 Iron Plate, 200 Iron Rod, 200 Cable and 500 Screws toward the cost as taken from storage boxes its machines filled; in total its machines put 325 Iron Plate, 366 Iron Rod, 267 Cable and 542 Screws into storage. Three Miner Mk1s and 11 belts. 23 model replies, 138 moves, 1.26 US dollars by the test gateway's count.",
-      "limits": "One run, not repeated, started from an empty world; it does not continue the model's earlier milestones. The model acted through the test's direct building tools. Not every part moved by belt: the model carried 138 copper ore and 46 iron ore into Smelters by hand to start, and over the run carried 217 Iron Ingot and 57 Copper Ingot into machines by hand. It made parts at the bench for its buildings (114 Wire, 37 Iron Rod, 24 Screws, 10 Cable, 2 Reinforced Iron Plate) and, in its last reply, 160 Iron Plate, 40 of them from its starting stock and not counted as earned. 70 ore were mined by hand to clear nodes; burner fuel was put in by hand. Two moves were refused, 3 failed, and 13 were not run. The heights the machines were placed at have not been checked for this run."
+      "limits": "Dated by UTC; it was the evening of 17 November in US Central time, the date the page uses. One run, not repeated, started from an empty world; it does not continue the model's earlier milestones. The model acted through the test's direct building tools. Not every part moved by belt: the model carried 138 copper ore and 46 iron ore into Smelters by hand to start, and over the run carried 217 Iron Ingot and 57 Copper Ingot into machines by hand. It made parts at the bench for its buildings (114 Wire, 37 Iron Rod, 24 Screws, 10 Cable, 2 Reinforced Iron Plate) and, in its last reply, 160 Iron Plate, 40 of them from its starting stock and not counted as earned. 70 ore were mined by hand to clear nodes; burner fuel was put in by hand. Two moves were refused, 3 failed, and 13 were not run. The heights the machines were placed at have not been checked for this run."
     }
   ],
   "model_labels": {
