@@ -14,21 +14,6 @@
       "sha256": "96aac7067fca7d85b76d0cf992059d9c26bcc2f76197fbff7c9e46844a111c8e"
     },
     {
-      "path": "CNAME",
-      "bytes": 13,
-      "sha256": "6ed8a82e67203dcc0b275f7dff6e6eb33f49c6578abedba4d3f7c9c91402755a"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 35149,
-      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
-    },
-    {
-      "path": "README.md",
-      "bytes": 1655,
-      "sha256": "af47b4a306be0148d76111d46642335d1e6cb160c30b2d4d0887ce3444076740"
-    },
-    {
       "path": "about.html",
       "bytes": 10959,
       "sha256": "ad366ce9fb53476907c028351392a3677bccd8297c8b0e21256d6aa282971636"
@@ -121,7 +106,7 @@
     {
       "path": "assets/manifest.json",
       "bytes": 46386,
-      "sha256": "cd73ddb16a7648df93d8bc55b489740fedc2ebf4d72120f39345bc7b5c685a5a"
+      "sha256": "7ea9de17ab9935d2400a5d04497bdaada1eb5bc18b94144016163cfa83c9f599"
     },
     {
       "path": "assets/og/og-default.png",
@@ -250,13 +235,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 216298,
-      "sha256": "af3bc97bb26bd925eb0ff36a7e80639f7cd25de10da54c262f2ff76fd998e1a6"
+      "bytes": 215697,
+      "sha256": "f038d1554548b2baf55d1ed312484c71861da345446053bd2dbfefb90f3b56b1"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 48423,
-      "sha256": "fa721a5c1c2bd71abffdf28da31f7462401fc34b563c2f382b30c2fb9220cc36"
+      "bytes": 48773,
+      "sha256": "8760ccc83f223061f8e5eeebcb1cf0e9e435a9049e78530f65925341edb71fe6"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -287,6 +272,11 @@
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/DroneStation.png",
       "bytes": 17771,
       "sha256": "da20db546516d74d5774c9b0e930be9668cc4b1fd63477b04d0343a5a24d03e0"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-10-27/img/grass.jpg",
+      "bytes": 142755,
+      "sha256": "8613e2bbf383e6d494e4246a60425eafa993f5b3b5f486de3c1d3b4c22ace7bc"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/IronIngot.png",
@@ -339,11 +329,6 @@
       "sha256": "72af9e3b43ad19b241092220d21c1de3858f4fac06403ee54c23d72c0636c05b"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-10-27/img/grass.jpg",
-      "bytes": 142755,
-      "sha256": "8613e2bbf383e6d494e4246a60425eafa993f5b3b5f486de3c1d3b4c22ace7bc"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/world.jpg",
       "bytes": 575534,
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
@@ -384,16 +369,6 @@
       "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/SmelterMk1.png",
-      "bytes": 30206,
-      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/StorageContainerMk1.png",
-      "bytes": 29086,
-      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-11-16/img/real-belt.jpg",
       "bytes": 106669,
       "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
@@ -412,6 +387,16 @@
       "path": "assets/savebench/walkthrough/versions/2026-11-16/img/real-model.jpg",
       "bytes": 126479,
       "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-16/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-16/img/world.jpg",
@@ -454,16 +439,6 @@
       "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/SmelterMk1.png",
-      "bytes": 30206,
-      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/StorageContainerMk1.png",
-      "bytes": 29086,
-      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/real-belt.jpg",
       "bytes": 106669,
       "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
@@ -484,14 +459,24 @@
       "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-17/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/world.jpg",
       "bytes": 575534,
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 7749,
-      "sha256": "22db0e992151b2597eed0eb7af88b226367ff00cfa91afb972ae83a963a431a6"
+      "bytes": 8034,
+      "sha256": "321395626a6c4012c22566d72ebc50c23d2e5c07b0f0e6f5e9d967f16d7c2984"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -550,8 +535,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 237577,
-      "sha256": "b7e8014acd513f8c9ce5a1d7f76d0401afcc4dfa8ed47d06d30f1dc6c83f209e"
+      "bytes": 239289,
+      "sha256": "0cb4c766448ca10428117d17d3c30bab5be5f7b492a357eee3491a9dba679bb6"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -562,6 +547,11 @@
       "path": "case-studies/savebench/measurement-case.json",
       "bytes": 32554,
       "sha256": "cb63793676ff07de169f7e6d2af65d49c7d5c706320da7f9998761d381c22503"
+    },
+    {
+      "path": "CNAME",
+      "bytes": 13,
+      "sha256": "6ed8a82e67203dcc0b275f7dff6e6eb33f49c6578abedba4d3f7c9c91402755a"
     },
     {
       "path": "ear.html",
@@ -584,9 +574,19 @@
       "sha256": "0e434a3f7d952dc10e707017b3ddd237443377a7d437a31a116b032a3028378b"
     },
     {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
       "path": "more-work.html",
       "bytes": 450,
       "sha256": "3bdd17a4ed26dad360252fd98a8307442f113fd13bc28377e0edce9403dec80e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1655,
+      "sha256": "af47b4a306be0148d76111d46642335d1e6cb160c30b2d4d0887ce3444076740"
     },
     {
       "path": "robots.txt",
