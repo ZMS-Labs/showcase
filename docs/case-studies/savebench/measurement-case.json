@@ -146,6 +146,10 @@
     {
       "date": "2026-11-17",
       "change": "Added a later_summary entry for the GPT-6.1 Sol run on milestone 1-3, which was not earned, read from the run record. No existing figure changed."
+    },
+    {
+      "date": "2026-11-18",
+      "change": "Added a later_summary entry for the script run of 17 November that earned milestone 1-3 in the continuing world, read from the run record. No existing figure changed."
     }
   ],
   "date_basis": "All dates are UTC, as in the run records.",
@@ -322,6 +326,13 @@
       "contestant": "GPT-6.1 Sol (as configured).",
       "outcome": "FAIL. The 60 minute limit ran out and nothing was paid. Machines the model built made 194 Iron Plate (100 needed), 663 Wire (300 needed) and 140 Screws (300 needed), and no machine was fed by hand. 97 model replies, one move each, 0.94 US dollars by the test gateway's count.",
       "limits": "One run, not repeated, started from an empty world. The model acted through the test's direct building tools, not the fuller command set a contestant will use later. It set a machine to make Screws only at reply 72 of 97. Before that three belts were refused as too steep and one as unaffordable, and one move was refused. Declared hand steps: 26 copper ore and 22 iron ore mined by hand to clear nodes; burner fuel put in by hand; parts carried by hand. The prices behind the dollar figure have not been checked against the provider. The machines were not on level ground, as in the other 17 November model runs."
+    },
+    {
+      "date": "2026-11-17",
+      "what": "Milestone 1-3 earned in the same world as the earlier one-world run, which completes tier 1 (milestones 1-1 to 1-3) in one world.",
+      "contestant": "A fixed script. No model chose its moves.",
+      "outcome": "PASS for milestone 1-3: the game accepted 100 Iron Plate, 300 Screws and 300 Wire and the milestone was purchased from earned items. By belt in this run: 130 Iron Plate from the doubled iron line at 31.6 a minute, then 304 Screws at 34.8 a minute from a rod Constructor belted into a screw Constructor. The record's check that every part the milestone takes came from a Miner Mk1 by belt passed. The run as a whole is marked failed, 33 checks passed and 2 failed, because its milestone 2-1 stage stopped at its first step.",
+      "limits": "It continued the saved world of the earlier one-world run; the doubling of the iron line was done in this run. Finished Wire was carried to the bank by hand for payment. A search for plants to burn found none near the nodes. An earlier run the same day made no Screws and failed milestone 1-3; it is kept on the record. Milestone 2-1 was not earned: the bench refused to craft Reinforced Iron Plate because the bank was full, 24 of 24 slots."
     }
   ],
   "model_labels": {
