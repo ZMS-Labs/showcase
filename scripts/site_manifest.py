@@ -92,7 +92,7 @@ if guides:
     noun = "guide" if len(guides) == 1 else "guides"
     scope_text += f" and the maintainer {noun} {' and '.join(guides)}, which GitHub Pages also serves as plain text"
 files = []
-for path in sorted(ROOT.rglob("*")):
+for path in sorted(ROOT.rglob("*"), key=lambda p: p.parts):  # case-sensitive on every OS, so Windows matches Linux
     if path.is_file() and path.relative_to(ROOT).as_posix() not in excluded:
         files.append({"path": path.relative_to(ROOT).as_posix(), "bytes": path.stat().st_size,
                       "sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
