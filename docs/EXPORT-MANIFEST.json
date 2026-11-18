@@ -699,9 +699,14 @@
       "sha256": "1ceb22353af8af690e195bb70760ed5fa75858b49016044c7e6eec2c2cad2398"
     },
     {
+      "path": "case-studies/savebench/compare.html",
+      "bytes": 95967,
+      "sha256": "eb1005dc143ca6b8417a59df32fb53d5e67e21e2aa2bb8e505540fd35ec74998"
+    },
+    {
       "path": "case-studies/savebench/index.html",
-      "bytes": 30225,
-      "sha256": "b2b654fab563780b76cb434163749190b82921d7b75926c92d5849c4175e6c3a"
+      "bytes": 30380,
+      "sha256": "3f3b1ccb7b7ad9b76f81d6a3b3e68b8348589bc59addcf98b76e304edf2bbf12"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -790,8 +795,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 1876,
-      "sha256": "cd93f8910c795402188fc07a61c0f3c411e6ec8401b96c5fe83522e9107bc47c"
+      "bytes": 1986,
+      "sha256": "276b3f250448ef0d068e671a636c9d83f1d2ed25dfb15db1bb0438abf1c2e82c"
     },
     {
       "path": "walkthroughs.js",
