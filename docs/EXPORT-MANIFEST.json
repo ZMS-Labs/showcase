@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 52929,
-      "sha256": "870bcdbfcb7dc58ac55458386d5f7be9c7cef9e45f22d000c1a7d434da47c828"
+      "bytes": 62209,
+      "sha256": "2128730f02c52a978b2dcacf85932ac690ac404aea63be01e388fd49aef670f4"
     },
     {
       "path": "assets/og/og-default.png",
@@ -295,13 +295,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 216010,
-      "sha256": "80eec504d4c7e4bae583244d6c0ac7d9954a3f18a282a7bcce8a32a4915d38c4"
+      "bytes": 215991,
+      "sha256": "087bfaa581448fd8e10e5e344373452ddcece430108db5427eaf456495aa95ca"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 49355,
-      "sha256": "3b425c96860d5f324449c8b2725a8debb92234f4be4c0b10ad06661e72d5532d"
+      "bytes": 79258,
+      "sha256": "230cc19bb9481de13dc2c8fd087910bda796be469528dc55d622b45e0ecf9a77"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -554,6 +554,91 @@
       "sha256": "f6edb248f8590cfe1677d43aa437a971a0162a955b8502738366271f89312b30"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/ConstructorMk1.png",
+      "bytes": 29778,
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/IronIngot.png",
+      "bytes": 26375,
+      "sha256": "a927268148236a863c7baecd395b1137c37dc3831e1345732d3c144beebdd032"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/IronPlate.png",
+      "bytes": 24439,
+      "sha256": "b20d7a0dd6a250519abe00b84850ce4e928ce215a8b99b0dab1d5dc9202edae1"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/IronRod.png",
+      "bytes": 25838,
+      "sha256": "f4e90728bd307ab0e76b83add7dcb51527be68ec414ca886269e2f6864caaf19"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/MinerMk1.png",
+      "bytes": 23957,
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/OreIron.png",
+      "bytes": 33236,
+      "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-belt.jpg",
+      "bytes": 106669,
+      "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-elevator.jpg",
+      "bytes": 105745,
+      "sha256": "269195d5cf750a21810990a26152002cf2e2e771549754854515a8f154fb5449"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-miner.jpg",
+      "bytes": 30522,
+      "sha256": "a9507392b51e31ccc3ddcc82d3d8195e45c31e70f8dacd1e3f63524c6e9e6712"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-model.jpg",
+      "bytes": 126479,
+      "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-opus-1-1.jpg",
+      "bytes": 135409,
+      "sha256": "053510d284b72780f22a6333c117289abe3c6ecf9fe39d23fd5d0b56359fd063"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-opus-2-1.jpg",
+      "bytes": 126743,
+      "sha256": "7ea9a4b0940a7802a1b9ffabff8b45d1470d31c0ea0005e800f137b2651efd5a"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/real-sol-1-1.jpg",
+      "bytes": 132028,
+      "sha256": "df3f3e6712bb2698e530857931d697153b931b03946924bc5dbdeef94c230c68"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/img/world.jpg",
+      "bytes": 575534,
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-18/transcript.txt",
+      "bytes": 8901,
+      "sha256": "58d19fac7d759a92c28e9d9c47ab33d612599fd489c6372b8770d3b917c5ac28"
+    },
+    {
       "path": "assets/savebench/walkthrough/walkthrough.js",
       "bytes": 68315,
       "sha256": "86a320ed215f0594c07d92157e61c3e4d86ef513c2c6c749655b7ec4f72790d8"
@@ -610,13 +695,13 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 226942,
-      "sha256": "f13749bd9e4328b202611c0e433f7ac8161d7b3f8a9cdb657565c79e6163d177"
+      "bytes": 239992,
+      "sha256": "1ceb22353af8af690e195bb70760ed5fa75858b49016044c7e6eec2c2cad2398"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 29814,
-      "sha256": "e78bd2ae5a2ad54a16dea9839624b42a76bc620a4adbe371032f8ed698abce8c"
+      "bytes": 30225,
+      "sha256": "b2b654fab563780b76cb434163749190b82921d7b75926c92d5849c4175e6c3a"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -681,7 +766,7 @@
     {
       "path": "index.html",
       "bytes": 20978,
-      "sha256": "82fdf54eb54ee6921fde243438df1fc6061d18f635e34bbf3bfb556fb2addf77"
+      "sha256": "b8d748c55c70cd7bd10b8f8ec25feb62e86e2dbafd7c90e0550ef8dc2b84e87e"
     },
     {
       "path": "more-work.html",
