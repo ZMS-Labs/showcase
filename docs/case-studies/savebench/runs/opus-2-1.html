@@ -583,7 +583,11 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-app
       const lines=sv('g',{});
       const link=(a,b,cls)=>{const p=pos[a],q=pos[b];if(!p||!q)return;
         let x1=p.x+BW,y1=p.y+BH/2,x2=q.x,y2=q.y+BH/2;
-        if(x2<=x1){x1=p.x+BW/2;y1=p.y+BH;x2=q.x+BW/2;y2=q.y;}
+        // Same column (say Wire into Cable): loop out of the right edge and back in, so the belt and its arrow
+        // stay outside both boxes whichever is higher. A belt to a column on the left leaves by the left edge.
+        if(q.x===p.x){x2=q.x+BW;const bx=x1+22;
+          lines.append(sv('path',{d:'M'+x1+','+y1+' C'+bx+','+y1+' '+bx+','+y2+' '+x2+','+y2,'class':cls}));return;}
+        if(q.x<p.x){x1=p.x;x2=q.x+BW;}
         const mx=(x1+x2)/2;
         lines.append(sv('path',{d:'M'+x1+','+y1+' C'+mx+','+y1+' '+mx+','+y2+' '+x2+','+y2,'class':cls}));};
       s.cols.forEach(c=>c.items.forEach(it=>{if(it.node)link(it.node,it.id,'sst-fac-tie');}));
