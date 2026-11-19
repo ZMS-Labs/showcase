@@ -735,38 +735,38 @@
     },
     {
       "path": "case-studies/savebench/runs/opus-1-1.html",
-      "bytes": 58592,
-      "sha256": "3ea092fc87c89c34e38d30bfbf1829a2508063b85708b9a21864ea01518e0aa8"
+      "bytes": 67716,
+      "sha256": "0c3c8349cf0f551baf7fb626ae82175dcbbcc2b32df20256d242496ca03c0609"
     },
     {
       "path": "case-studies/savebench/runs/opus-1-2.html",
-      "bytes": 63523,
-      "sha256": "fc823235aa9169cce1cded1ec3551e061422dacaa72a55d99ce011f5fad69f51"
+      "bytes": 72969,
+      "sha256": "65f0206de6a41acdc1a9a429066ffe2bc55f9acba25adc49872f7a35072ebb16"
     },
     {
       "path": "case-studies/savebench/runs/opus-1-3.html",
-      "bytes": 86484,
-      "sha256": "0d8a67c12f16529c647ee566598901d02b23e54ec58e8eaac92360b3c1f95aaa"
+      "bytes": 98429,
+      "sha256": "dbdbe851450958263611deca04eadfadc6d1f479b70f7ef81ee7b7ac8ab02545"
     },
     {
       "path": "case-studies/savebench/runs/opus-2-1.html",
-      "bytes": 79201,
-      "sha256": "6462bb220866d0ffb1b4a2b644a4702362c7913d615ae59c5709380f6500ff2a"
+      "bytes": 90492,
+      "sha256": "ccd15d8510a7a9f05735ca91578b1aba8b8660cb9de8bcb223f47c2524337aa9"
     },
     {
       "path": "case-studies/savebench/runs/sol-1-1.html",
-      "bytes": 65458,
-      "sha256": "04435c5da4107b63f3b37f34a6bad0459b082c947aaa738910f8007b3472588c"
+      "bytes": 74599,
+      "sha256": "10c8c2eb944209c58f578ccaa64bbaa0c7baff8abd65dbf670eb9403895acdd7"
     },
     {
       "path": "case-studies/savebench/runs/sol-1-2.html",
-      "bytes": 83705,
-      "sha256": "b05dd71da6c10e0a3ed1de5596e1e084c8569cd3190c6483ea90c1ee7f8b70fc"
+      "bytes": 94032,
+      "sha256": "10379bfe897287505056ee7133ae4bba553b3122ff2e958dcee71625f0f3eca4"
     },
     {
       "path": "case-studies/savebench/runs/sol-1-3.html",
-      "bytes": 91698,
-      "sha256": "7790757c1cddc244b47254d7a3b5caa84a4834e1427435019afd83dd22d171fd"
+      "bytes": 101943,
+      "sha256": "c1028fe7bd882f9f9c96b51201ef1f503ec716e96da79cf79873b5adf808453b"
     },
     {
       "path": "ear.html",
