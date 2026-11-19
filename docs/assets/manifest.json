@@ -1278,6 +1278,17 @@
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-19. It illustrates the project; it is not a measurement record."
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/film-script-phase-one.jpg",
+      "sha256": "9d4bfc05ef8056e362598555595a348e368da43e453459c4213bda4ec6631593",
+      "bytes": 115025,
+      "dimensions": [
+        960,
+        540
+      ],
+      "kind": "Image from the game Satisfactory (film frame): camera film of the script world after Space Elevator phase one, November 19. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-19. It illustrates the project; it is not a measurement record."
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/world.jpg",
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
       "bytes": 575534,
@@ -1307,6 +1318,13 @@
       "sha256": "0c0424f08ef64aa47a427f8300e812d955b23e3ecadb980de636153fd4f38b54",
       "bytes": 1704713,
       "kind": "Film clip from the game Satisfactory (film clip): camera film of the staged oil check, November 18, filmed from its saved world (14 s). Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-19. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/film/script-phase-one.mp4",
+      "sha256": "41cac733446fea0037361dd2a6fdcd0d60407f5f4c8172d7787d6b1aa3aa5b82",
+      "bytes": 1477066,
+      "kind": "Film clip from the game Satisfactory (film clip): camera film of the script world after Space Elevator phase one and milestone 3-1, November 19 (13 s). Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-19. It illustrates the project; it is not a measurement record."
     }
   ]
