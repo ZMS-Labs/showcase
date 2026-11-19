@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 71489,
-      "sha256": "5f465f95cfeba340b5adf0c704bea5518acc4b5c8ffc7454f2072a8fd124d0ed"
+      "bytes": 68646,
+      "sha256": "5b8fa953f74aef514723f2f346b11e03b83f45c0580320c6e64e740679f4ccfc"
     },
     {
       "path": "assets/og/og-default.png",
@@ -310,13 +310,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 216718,
-      "sha256": "ba07468f89c89be297b4183f9b9e49e7b05edbe3b0493f6281c70f719fbea8bf"
+      "bytes": 321576,
+      "sha256": "a8fcdfcb5ad13b6b2f4bfb11e0609710473fc7b8baa987f78231e8477a9e31e6"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 109415,
-      "sha256": "7574b9f228440823f95178b483a6cad52b3ef5ac07b9b1aa6820896ceee4920d"
+      "bytes": 94754,
+      "sha256": "ecf7966402da9f11d51fec8d845df50a34dbfd3494695756030a625921675252"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -654,14 +654,24 @@
       "sha256": "ebacb1bcd0454145c42c40151662a8485fa4c5954793fa7a15bff9cf38da0d54"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/film/oil-probe.mp4",
+      "bytes": 1704713,
+      "sha256": "0c0424f08ef64aa47a427f8300e812d955b23e3ecadb980de636153fd4f38b54"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/film/opus-2-2-live.mp4",
+      "bytes": 1492128,
+      "sha256": "abc90f17a4dfd037b539b795342c7b26620826bf96a0a06983ed7bca693c37a0"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/film/script-2-3.mp4",
+      "bytes": 1379519,
+      "sha256": "0f5061229ac999c5256538893261b3a3cd5e34f5a0f420df33ee275d3a9fbc38"
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/ConstructorMk1.png",
       "bytes": 29778,
       "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/IronIngot.png",
-      "bytes": 26375,
-      "sha256": "a927268148236a863c7baecd395b1137c37dc3831e1345732d3c144beebdd032"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/IronPlate.png",
@@ -674,59 +684,24 @@
       "sha256": "f4e90728bd307ab0e76b83add7dcb51527be68ec414ca886269e2f6864caaf19"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/MinerMk1.png",
-      "bytes": 23957,
-      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/OreIron.png",
-      "bytes": 33236,
-      "sha256": "2b804bdde6bad17b6ddb32d687f750038da75b38fedc9fd88d16e2066f74f351"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/SmelterMk1.png",
-      "bytes": 30206,
-      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
-    },
-    {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/StorageContainerMk1.png",
       "bytes": 29086,
       "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-belt.jpg",
-      "bytes": 106669,
-      "sha256": "0c2a59c54b7a051dcb18b11abf6e1e0052deda9ce49ac9d81f65bd97c23c7e5d"
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/film-oil-probe.jpg",
+      "bytes": 106438,
+      "sha256": "6399a0f739388a5bca2162d78c3f68a1a69db1fc7db8124c3f5a11a4d0d5d306"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-elevator.jpg",
-      "bytes": 105745,
-      "sha256": "269195d5cf750a21810990a26152002cf2e2e771549754854515a8f154fb5449"
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/film-opus-2-2-live.jpg",
+      "bytes": 97311,
+      "sha256": "194a74d964332c076e1b640e00818d79e3031acdcd30f82ce52e7f817636982a"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-miner.jpg",
-      "bytes": 30522,
-      "sha256": "a9507392b51e31ccc3ddcc82d3d8195e45c31e70f8dacd1e3f63524c6e9e6712"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-model.jpg",
-      "bytes": 126479,
-      "sha256": "09d3409af469fe2da09c08beaf4704202ee3da18f68c2676df90337f22336b39"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-opus-1-1.jpg",
-      "bytes": 135409,
-      "sha256": "053510d284b72780f22a6333c117289abe3c6ecf9fe39d23fd5d0b56359fd063"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-opus-2-1.jpg",
-      "bytes": 126743,
-      "sha256": "7ea9a4b0940a7802a1b9ffabff8b45d1470d31c0ea0005e800f137b2651efd5a"
-    },
-    {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/real-sol-1-1.jpg",
-      "bytes": 132028,
-      "sha256": "df3f3e6712bb2698e530857931d697153b931b03946924bc5dbdeef94c230c68"
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/film-script-2-3.jpg",
+      "bytes": 107666,
+      "sha256": "223b6a2b62b0942876fa6fc52934c3a3135feb0238101415046030dd91712112"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/world.jpg",
@@ -735,13 +710,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/transcript.txt",
-      "bytes": 9399,
-      "sha256": "08c9458754fd9c06765bff657f2a2f77c23c11d163c139741d8d07ee5244f196"
+      "bytes": 4216,
+      "sha256": "4eb71b28280327a07ef74b5e1231d76a6f57bbb42ce12b3e227e19b962a580b6"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
-      "bytes": 68315,
-      "sha256": "86a320ed215f0594c07d92157e61c3e4d86ef513c2c6c749655b7ec4f72790d8"
+      "bytes": 73116,
+      "sha256": "6838c43c41582ccf903bb63f11f1dbdd288ed770fdaad3d9b3396251d09cbad1"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
@@ -795,8 +770,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 258531,
-      "sha256": "d7fc8681eaf14a0da41fd988234cfac4bb675b5c6844d786b4ab39e5878f364a"
+      "bytes": 253348,
+      "sha256": "31aaf694e0f510d40f98baf61a1f818b2c75c629eff11b05199b01cad31c57c5"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -805,8 +780,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 32337,
-      "sha256": "97c95e69b0c43316a54145afa4562da23993db4fd6465267d0cf9edb12af5522"
+      "bytes": 31911,
+      "sha256": "66a3f6c0f47e668ab6727feb89802dca967a117ee8d6d25794478e4dcbe4a55b"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -870,8 +845,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20976,
-      "sha256": "dcfa797967a2f5b752288eb50176df36e500cbd53abe8309878fbed33686eee3"
+      "bytes": 20565,
+      "sha256": "331195590f8faf95aeea846b208866309ba1f16ecbcc6a99af5379ee93e3d2b8"
     },
     {
       "path": "more-work.html",
