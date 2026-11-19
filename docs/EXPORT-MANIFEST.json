@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 69863,
-      "sha256": "63f74b9e0e6f9e40fb56f695d4bd4527d137578b657d46d17ffdb45fe52a284a"
+      "bytes": 69842,
+      "sha256": "ea7bd5a3bc971158acd4ae9d7fd28c15900c856e21579c653b647211cf63e9bc"
     },
     {
       "path": "assets/og/og-default.png",
@@ -315,8 +315,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 96858,
-      "sha256": "4ff7ad71f28b9e57dc7ac68119482cd1cc089081de851bb35e9415c733871ca0"
+      "bytes": 96957,
+      "sha256": "be3f4c7c5c915386ea25bff9a8bb7349018f0554fbf74899ad95bf154775a184"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -669,9 +669,9 @@
       "sha256": "0f5061229ac999c5256538893261b3a3cd5e34f5a0f420df33ee275d3a9fbc38"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/film/script-phase-one.mp4",
-      "bytes": 1477066,
-      "sha256": "41cac733446fea0037361dd2a6fdcd0d60407f5f4c8172d7787d6b1aa3aa5b82"
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/film/script-space-elevator.mp4",
+      "bytes": 1328887,
+      "sha256": "e3594322022aefe2688af9317419b61636c2299400a05042b9b6800ff89db642"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/ConstructorMk1.png",
@@ -709,9 +709,9 @@
       "sha256": "223b6a2b62b0942876fa6fc52934c3a3135feb0238101415046030dd91712112"
     },
     {
-      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/film-script-phase-one.jpg",
-      "bytes": 115025,
-      "sha256": "9d4bfc05ef8056e362598555595a348e368da43e453459c4213bda4ec6631593"
+      "path": "assets/savebench/walkthrough/versions/2026-11-19/img/film-script-space-elevator.jpg",
+      "bytes": 84179,
+      "sha256": "e1b4c7ec65bf4fde3347a865e27bbb4db326b7fd9d869aec23cb188c92cedfdc"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/img/world.jpg",
@@ -720,8 +720,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/transcript.txt",
-      "bytes": 4907,
-      "sha256": "6d03a61dd0cc9f787e71d65fda1620f011b737ac13bec6b3810daeae6de89339"
+      "bytes": 4922,
+      "sha256": "d13387dcee612d4c953e1cf6d0d64e8b8a63cce07686b4d96fba4735da5047e3"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -780,8 +780,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 254955,
-      "sha256": "03611b6fc4b12a47155a2b0c5a71c64067c1d5e5b5f25bc1c98d4e6b75ca329c"
+      "bytes": 254978,
+      "sha256": "14395621abf1ee50e7e9fccc819d0c2d2e9fb19fd273b5452a836c75680eca57"
     },
     {
       "path": "case-studies/savebench/compare.html",
