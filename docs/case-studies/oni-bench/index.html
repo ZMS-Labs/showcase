@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ONI Bench · Zach Stern</title>
+<meta name="description" content="ONI Bench asks whether an AI can keep a colony alive in the game Oxygen Not Included, one move at a time, with the running game as the judge. It is SaveBench's sibling. The run viewer is built and shown here with made-up data; no game run has been recorded yet.">
+<link rel="canonical" href="https://sternone.net/case-studies/oni-bench/">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/Archivo-latin.woff" as="font" type="font/woff" crossorigin>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Zach Stern">
+<meta property="og:title" content="ONI Bench · Zach Stern">
+<meta property="og:description" content="ONI Bench asks whether an AI can keep a colony alive in the game Oxygen Not Included, one move at a time, with the running game as the judge. It is SaveBench's sibling. The run viewer is built and shown here with made-up data; no game run has been recorded yet.">
+<meta property="og:url" content="https://sternone.net/case-studies/oni-bench/">
+<meta property="og:image" content="https://sternone.net/assets/og/og-oni-bench.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ONI Bench: the run viewer's progress curve, drawn from made-up sample data, beside the question it asks.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0e1b21">
+<link rel="stylesheet" href="../../site.css">
+<script defer src="../../site.js"></script>
+<link rel="stylesheet" href="../../assets/savebench/walkthrough/progress.css">
+<link rel="stylesheet" href="../../assets/savebench/case.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header on-night">
+  <a class="brand" href="../../index.html">Zach Stern</a>
+  <nav aria-label="Main">
+    <a href="../../index.html#experience">Experience</a>
+    <a href="../../index.html#independent">Work</a>
+    <a href="../../about.html">About</a>
+    <a class="ext" href="https://www.linkedin.com/in/zachary-s-21125214/">LinkedIn</a>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
+
+<div class="night">
+  <section class="case-hero wrap text-first">
+    <div>
+      <p class="crumb"><a href="../../index.html#independent">Work</a> <span aria-hidden="true">/</span> ONI Bench</p>
+      <span class="kicker">ONI Bench · AI colony survival</span>
+      <h1>Can an AI keep a colony alive?</h1>
+      <p class="lead">ONI Bench asks whether an AI can run a colony in the game Oxygen Not Included, where a few small colonists have to be kept breathing, fed and sane underground. The AI plays one move at a time and the running game is the judge. It is the sibling of <a href="../savebench/index.html">SaveBench</a>, which asks the same of a factory.</p>
+      <p class="lead" style="margin-top:20px;font-size:clamp(17px,.45vw + 14px,20px)">The game keeps time in cycles, one in-game day each. The test is a ladder of milestones, from a working toilet to a closed oxygen loop. A milestone counts only when a small program inside the game reads it from the game's own state. What the AI says it did counts for nothing.</p>
+      <p class="status"><a href="../../evidence.html#status"><b>Interface study</b></a> · the run viewer with made-up data; no game run recorded yet · <a href="#evidence" style="white-space:nowrap">see the record</a></p>
+    </div>
+    <figure class="exhibit">
+      <img src="../../assets/oni-bench/viewer-scoreboard.png" alt="The ONI Bench run viewer's scoreboard, with a bar across the top reading Sample data: made-up sample data for designing the viewer, no game was played and no model was run. Below it the heading How far each seat keeps a colony going, and a ledger of 40 runs, 3 model seats, 29 passes and $29.59 of spend, all made up." width="1920" height="1001" fetchpriority="high">
+      <figcaption><span><span class="label">Interface study</span> Made-up data, November 20, 2026</span></figcaption>
+    </figure>
+  </section>
+</div>
+
+<section class="section band" id="now" aria-labelledby="now-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Where it stands · November 20, 2026</span>
+      <h2 id="now-title">Built to be judged. Not yet played.</h2>
+      <p class="lead">The plan, the in-game program and the viewer exist. The first test on real hardware has not run, so there are no results to show.</p>
+    </div>
+    <dl class="sbp-now">
+      <div><dt>First test</dt><dd>Can the game run 20 turns with no one at the keyboard, save a checkpoint and load it again? The program inside the game, the turn driver and the test kit are written and pass against a stand-in game. The run on real hardware has not happened. Open</dd></div>
+      <div><dt>AI model results</dt><dd>None. No AI model plays until a scripted run has passed the first milestone, so that no money is spent on a test that might be broken. Not run</dd></div>
+      <div><dt>Game footage</dt><dd>None yet. Films will follow SaveBench's rules: silent, captioned, never autoplayed, any cut declared in the caption. Not run</dd></div>
+      <div><dt>Run viewer</dt><dd>Built, with made-up data. It reads the same run records the real runs will write. Shown below</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="judged" aria-labelledby="judged-title">
+  <div class="wrap reading-copy-body">
+    <div class="section-head">
+      <h2 id="judged-title">How the game judges it.</h2>
+    </div>
+    <div class="tools">
+      <div><h3>The game is the judge</h3><p>A small program inside the game pauses it, applies the AI's move, runs a fixed slice of game time and reads the colony back. A milestone counts only when that reading shows it.</p></div>
+      <div><h3>One move per turn</h3><p>The game waits while the AI decides, so a slow model is not punished for thinking. It sees the colony as text and asks for one move.</p></div>
+      <div><h3>Misses stay on the record</h3><p>A run that falls short is kept and shown. A run stopped by the test's own machinery is marked Not run and repeated, never counted against the model.</p></div>
+      <div><h3>Played as a player would</h3><p>No sandbox, no debug mode, no instant building. A script that plays from a fixed list of moves is the reference run, never counted as an AI.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="ladder" aria-labelledby="ladder-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The ladder · as planned</span>
+      <h2 id="ladder-title">What counts as progress.</h2>
+      <p class="lead">Each rung tests one thing a player has to learn. These are the planned first two tiers; the exact pass rules will be checked against the game's own data files before any scored run.</p>
+    </div>
+    <div class="table-scroll" role="region" aria-label="Planned milestones" tabindex="0">
+      <table class="status-table">
+        <thead><tr><th scope="col">Milestone</th><th scope="col">Passes when the game shows</th><th scope="col">Tests</th><th scope="col">Result</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">1-1 Toilet and wash</th><td>An outhouse and a wash basin built and used</td><td>Building basics</td><td>Not run</td></tr>
+          <tr><th scope="row">1-2 First research</th><td>A research station powered by a hand-cranked generator, one technology done</td><td>Power, research</td><td>Not run</td></tr>
+          <tr><th scope="row">1-3 Fed colony</th><td>Every colonist fed for 5 straight cycles from a farm the AI built</td><td>Food</td><td>Not run</td></tr>
+          <tr><th scope="row">1-4 Breathable base</th><td>Oxygen production keeps living space breathable for 5 cycles</td><td>Air</td><td>Not run</td></tr>
+          <tr><th scope="row">2-1 Oxygen loop</th><td>Oxygen made from water, with the leftover hydrogen burned for power</td><td>A closed loop</td><td>Not run</td></tr>
+          <tr><th scope="row">2-2 Water recycling</th><td>Dirty water cleaned and reused for 10 cycles</td><td>Liquids</td><td>Not run</td></tr>
+          <tr><th scope="row">2-3 Stable temperature</th><td>The base held inside a set temperature band for 10 cycles</td><td>Heat</td><td>Not run</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine" style="margin-top:16px;max-width:72ch">Beside the ladder, and never blended into it: cycles survived before the first colonist dies, colony health every few cycles (breathable space, stress, food stored, power), and the cost of each milestone in dollars.</p>
+  </div>
+</section>
+
+<section class="section" id="viewer" aria-labelledby="viewer-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Interface study · made-up data</span>
+      <h2 id="viewer-title">What the results will look like.</h2>
+      <p class="lead">The viewer was built first, on invented runs, so the real ones arrive in a form that is already readable. Every screen below shows made-up data and says so across its top.</p>
+    </div>
+    <div class="sbr-grid">
+      <article class="sbr-card">
+        <h3>The progress curve <span class="sbr-ms">how far up the ladder, by cycle, turn or cost</span></h3>
+        <figure class="sbr-film">
+          <img src="../../assets/oni-bench/viewer-progress-curve.png" alt="The viewer's progress curve: four made-up seats climb a ladder of milestones from 1-1 to 2-3 against game cycles, each drawn with its own line style and named at the line's end." width="1920" height="1484" loading="lazy">
+          <figcaption class="fine" style="margin-top:12px">There is no pass mark. Each seat is shown by how far it gets and how fast, in game time, in turns and in money. The scripted reference is labelled and never counted as an AI. Made-up data.</figcaption>
+        </figure>
+      </article>
+      <article class="sbr-card">
+        <h3>Every turn, replayed <span class="sbr-ms">from the run's transcript</span></h3>
+        <figure class="sbr-film">
+          <img src="../../assets/oni-bench/viewer-replay.png" alt="The viewer's replay of one made-up run: what the AI saw, the one move it asked for as plain JSON, what the game did with it, and a scrolling list of every turn." width="1920" height="1268" loading="lazy">
+          <figcaption class="fine" style="margin-top:12px">Step through a run one move at a time: what the AI saw, what it asked for and what the game did. Refused moves are quoted as recorded. Made-up data.</figcaption>
+        </figure>
+      </article>
+      <article class="sbr-card">
+        <h3>Head to head <span class="sbr-ms">two AIs, one milestone, every run</span></h3>
+        <figure class="sbr-film">
+          <img src="../../assets/oni-bench/viewer-head-to-head.png" alt="The viewer's head to head chart: the share of a milestone's goal reached after each turn, one solid line per run for one made-up seat and one dashed line per run for the other." width="1728" height="813" loading="lazy">
+          <figcaption class="fine" style="margin-top:12px">One AI ranks above another only when each has at least two runs and their ranges do not overlap. Otherwise the viewer says pilot or tied. Made-up data.</figcaption>
+        </figure>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="contribution" aria-labelledby="contribution-title">
+  <div class="wrap">
+    <div class="section-head"><h2 id="contribution-title">What went into this work.</h2></div>
+    <div class="contribution">
+      <div>
+        <h3>What I did</h3>
+        <p>I decide what each project is for and check what comes back. ONI Bench carries over what SaveBench taught: the game judges, failed runs stay on the record, and no model is ranked on one run. I approved the plan, which judges by the live game's state rather than by edited save files.</p>
+      </div>
+      <div>
+        <h3>What the AI did</h3>
+        <p>AI tools write the code: the program inside the game, the turn driver, the tests and this viewer. AI tools also did the background research, with sources cited in the project's records.</p>
+        <p><a href="../../about.html#how-i-work">How I work with AI tools</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="evidence" aria-labelledby="record-title">
+  <div class="wrap">
+    <div class="record">
+      <div>
+        <h2 id="record-title" style="font-size:clamp(30px,3vw,44px)">What exists, and what it shows.</h2>
+      </div>
+      <dl>
+        <dt>Shown</dt><dd>The run viewer's own screens, drawn from made-up sample data written by a script. No game was played and no model was run to make them.</dd>
+        <dt>Built</dt><dd>As of November 20, 2026: the plan, the program that runs inside the game, the turn driver and its tests, which pass against a stand-in game.</dd>
+        <dt>Not shown yet</dt><dd>Any run in the real game, any milestone passed, any game footage, and any AI model result. The milestone pass rules are planned and still to be checked against the game's data files.</dd>
+      </dl>
+    </div>
+    <p class="fine" style="margin-top:32px">An independent hobby project, not affiliated with or endorsed by Klei Entertainment. Oxygen Not Included and its artwork belong to their owners. This page shows no game artwork.</p>
+    <div class="links"><a href="project-record.json">Project record (JSON)</a><a href="../../evidence.html">All sources and records</a></div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap next-case">
+    <div><span class="kicker">More work</span><a class="big" href="../../index.html#independent">Independent projects <span aria-hidden="true">&#8594;</span></a></div>
+    <a class="more" href="../../index.html#independent">All work</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="../../index.html">Zach Stern</a>
+      <p>Commercial counsel and legal operations. Independent projects are my own work under the ZMS Labs name, built with AI tools.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="../../index.html#experience">Experience</a>
+      <a href="../../index.html#independent">Work</a>
+      <a href="../../about.html">About</a>
+      <a href="../../about.html#how-i-work">How I work with AI tools</a>
+      <a href="../../evidence.html">Sources and records</a>
+      <a class="ext" href="https://www.linkedin.com/in/zachary-s-21125214/">LinkedIn</a>
+    </nav>
+    <div class="small"><p>© 2026 Zach Stern</p><button class="motion-toggle" type="button" hidden>Turn off motion</button></div>
+  </div>
+</footer>
+</body>
+</html>

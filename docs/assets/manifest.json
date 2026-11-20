@@ -1366,6 +1366,62 @@
       "bytes": 1265371,
       "kind": "Film clip from the game Satisfactory (film clip): camera film of the two Coal Generators of the script's coal plant, filmed from the saved world of its November 19 coal run (three cuts, 15.5 s). Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-20. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/oni-bench/viewer-scoreboard.png",
+      "sha256": "1badbf7f5d499c02d3ddc3ae43173f8134700b590955681781e376e6c7fa1a9f",
+      "bytes": 185015,
+      "dimensions": [
+        1920,
+        1001
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/oni-bench/viewer-progress-curve.png",
+      "sha256": "7303530f9c6f86bbcabbc9c0a4503c6edc82b3904440ff0d0fd7e940dee53827",
+      "bytes": 169850,
+      "dimensions": [
+        1920,
+        1484
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/oni-bench/viewer-replay.png",
+      "sha256": "61054cbd565b390afc637b8a0e99a5b3c7370d2af6940cedef37dfb6ec7cc495",
+      "bytes": 217867,
+      "dimensions": [
+        1920,
+        1268
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/oni-bench/viewer-head-to-head.png",
+      "sha256": "618989815b3ebfb123a7359b0aae2e080d7888f239717dde95c363ef30a07c40",
+      "bytes": 111353,
+      "dimensions": [
+        1728,
+        813
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/og/og-oni-bench.png",
+      "sha256": "c2dca99dc3ba4c459ca52f75746fc92f8db12c61afe490916f25153458c54b31",
+      "bytes": 78002,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Interface study, made-up data\", and a crop of the assets/oni-bench/viewer-progress-curve.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
     }
   ]
 }
