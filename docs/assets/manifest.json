@@ -520,13 +520,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "sha256": "a8fcdfcb5ad13b6b2f4bfb11e0609710473fc7b8baa987f78231e8477a9e31e6",
-      "bytes": 321576,
+      "sha256": "e4738c0de4268cc62a67fcac5c452e653fb9b8db275ff654364276da91407156",
+      "bytes": 285102,
       "dimensions": [
         1920,
         1080
       ],
-      "kind": "One frame of the SaveBench walkthrough animation (a real game film of the factory that earned milestone 2-3), rendered from the version of 2026-11-19. It includes imagery from the game Satisfactory, which belongs to its owners.",
+      "kind": "One frame of the SaveBench walkthrough animation (a real game film of the coal generators that carried the whole base), rendered from the version of 2026-11-20. It includes imagery from the game Satisfactory, which belongs to its owners.",
       "claim_boundary": "A drawn summary of dated results; the results themselves are in the run records, not in this picture."
     },
     {
@@ -1326,6 +1326,46 @@
       "bytes": 1328887,
       "kind": "Film clip from the game Satisfactory (film clip): camera film of the Space Elevator and factory the script built, November 19 (14 s). Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-19. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-20/img/MinerMk1.png",
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42",
+      "bytes": 23957,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-20. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-20/img/film-coal-generators.jpg",
+      "sha256": "97d7489c06b6e751a11246d5979649bd087815c82afaad3bfbeebba04fc73c37",
+      "bytes": 82908,
+      "dimensions": [
+        960,
+        540
+      ],
+      "kind": "Image from the game Satisfactory (film frame): camera film of the Coal Generators of the script's coal plant, November 19 run. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-20. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-20/img/world.jpg",
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
+      "bytes": 575534,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-20. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-20/film/coal-generators.mp4",
+      "sha256": "1fa120af94976e826b8a77d7f338eb4c38aef144358e0f506f95c4cfb33e5512",
+      "bytes": 1265371,
+      "kind": "Film clip from the game Satisfactory (film clip): camera film of the two Coal Generators of the script's coal plant, filmed from the saved world of its November 19 coal run (three cuts, 15.5 s). Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-20. It illustrates the project; it is not a measurement record."
     }
   ]
 }

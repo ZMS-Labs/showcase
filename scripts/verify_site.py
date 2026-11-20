@@ -266,7 +266,8 @@ with sync_playwright() as p:
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth+1'),(str(path.relative_to(root)),width,'overflow',page.evaluate('Array.from(document.querySelectorAll("body *")).filter(e=>{const r=e.getBoundingClientRect();return r.width&&r.right>innerWidth+1}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,right:e.getBoundingClientRect().right}))'))
    for img in page.locator('img[src]').all():
     img.evaluate('(e)=>{e.loading="eager"}')
-    if img.is_visible():img.scroll_into_view_if_needed()
+    # The player hides its fallback still once it mounts, so scroll by script: no wait for a visible, stable element.
+    img.evaluate('(e)=>e.scrollIntoView({block:"center"})')
     img.evaluate('(e)=>e.decode()')
     assert img.evaluate('(e)=>e.complete&&e.naturalWidth>0'),(path,img.get_attribute('src'))
    page.evaluate('window.scrollTo(0,0)')
