@@ -830,8 +830,8 @@
     },
     {
       "path": "case-studies/oni-bench/index.html",
-      "bytes": 14933,
-      "sha256": "bdca0551a1f804d0a57a41e5ff57ab5fb864a5bb865becfbf596f12aae0f46fe"
+      "bytes": 15372,
+      "sha256": "6e3333bcec523058f0546f6a843df2856599f330d9e777262750217f68c730a5"
     },
     {
       "path": "case-studies/oni-bench/project-record.json",
