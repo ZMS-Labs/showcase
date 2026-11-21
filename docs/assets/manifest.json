@@ -519,14 +519,70 @@
       "claim_boundary": "Shown on the SaveBench case study beside the November 17 model run. It illustrates the factory; it is not a measurement record."
     },
     {
+      "path": "assets/oni-bench/viewer-scoreboard.png",
+      "sha256": "1badbf7f5d499c02d3ddc3ae43173f8134700b590955681781e376e6c7fa1a9f",
+      "bytes": 185015,
+      "dimensions": [
+        1920,
+        1001
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/oni-bench/viewer-progress-curve.png",
+      "sha256": "7303530f9c6f86bbcabbc9c0a4503c6edc82b3904440ff0d0fd7e940dee53827",
+      "bytes": 169850,
+      "dimensions": [
+        1920,
+        1484
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/oni-bench/viewer-replay.png",
+      "sha256": "61054cbd565b390afc637b8a0e99a5b3c7370d2af6940cedef37dfb6ec7cc495",
+      "bytes": 217867,
+      "dimensions": [
+        1920,
+        1268
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/oni-bench/viewer-head-to-head.png",
+      "sha256": "618989815b3ebfb123a7359b0aae2e080d7888f239717dde95c363ef30a07c40",
+      "bytes": 111353,
+      "dimensions": [
+        1728,
+        813
+      ],
+      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
+      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+    },
+    {
+      "path": "assets/og/og-oni-bench.png",
+      "sha256": "c2dca99dc3ba4c459ca52f75746fc92f8db12c61afe490916f25153458c54b31",
+      "bytes": 78002,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Interface study, made-up data\", and a crop of the assets/oni-bench/viewer-progress-curve.png entry",
+      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
+      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+    },
+    {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "sha256": "e4738c0de4268cc62a67fcac5c452e653fb9b8db275ff654364276da91407156",
-      "bytes": 285102,
+      "sha256": "1d786b5f10b2c2fcbedaf247c19cec20cc92f1a98c181ed5776d00f9e6f086f3",
+      "bytes": 203347,
       "dimensions": [
         1920,
         1080
       ],
-      "kind": "One frame of the SaveBench walkthrough animation (a real game film of the coal generators that carried the whole base), rendered from the version of 2026-11-20. It includes imagery from the game Satisfactory, which belongs to its owners.",
+      "kind": "One frame of the SaveBench walkthrough animation (a card: a fourth ai model earned milestone 2-1), rendered from the version of 2026-11-21. It includes imagery from the game Satisfactory, which belongs to its owners.",
       "claim_boundary": "A drawn summary of dated results; the results themselves are in the run records, not in this picture."
     },
     {
@@ -1368,60 +1424,26 @@
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-20. It illustrates the project; it is not a measurement record."
     },
     {
-      "path": "assets/oni-bench/viewer-scoreboard.png",
-      "sha256": "1badbf7f5d499c02d3ddc3ae43173f8134700b590955681781e376e6c7fa1a9f",
-      "bytes": 185015,
+      "path": "assets/savebench/walkthrough/versions/2026-11-21/img/MinerMk1.png",
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42",
+      "bytes": 23957,
       "dimensions": [
-        1920,
-        1001
+        128,
+        128
       ],
-      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
-      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-21. It illustrates the project; it is not a measurement record."
     },
     {
-      "path": "assets/oni-bench/viewer-progress-curve.png",
-      "sha256": "7303530f9c6f86bbcabbc9c0a4503c6edc82b3904440ff0d0fd7e940dee53827",
-      "bytes": 169850,
+      "path": "assets/savebench/walkthrough/versions/2026-11-21/img/world.jpg",
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
+      "bytes": 575534,
       "dimensions": [
-        1920,
-        1484
+        2048,
+        2048
       ],
-      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
-      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
-    },
-    {
-      "path": "assets/oni-bench/viewer-replay.png",
-      "sha256": "61054cbd565b390afc637b8a0e99a5b3c7370d2af6940cedef37dfb6ec7cc495",
-      "bytes": 217867,
-      "dimensions": [
-        1920,
-        1268
-      ],
-      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
-      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
-    },
-    {
-      "path": "assets/oni-bench/viewer-head-to-head.png",
-      "sha256": "618989815b3ebfb123a7359b0aae2e080d7888f239717dde95c363ef30a07c40",
-      "bytes": 111353,
-      "dimensions": [
-        1728,
-        813
-      ],
-      "kind": "ONI Bench run viewer screen rendered in Chromium from made-up sample data (oni-bench viewer/sample/make_sample.py); a bar across the top of the viewer says it is sample data",
-      "claim_boundary": "Interface evidence only; no game was played and no model was run, so it supports no result"
-    },
-    {
-      "path": "assets/og/og-oni-bench.png",
-      "sha256": "c2dca99dc3ba4c459ca52f75746fc92f8db12c61afe490916f25153458c54b31",
-      "bytes": 78002,
-      "dimensions": [
-        1200,
-        630
-      ],
-      "kind": "Link-preview share card: the project name and one-line description on night, the label \"Interface study, made-up data\", and a crop of the assets/oni-bench/viewer-progress-curve.png entry",
-      "source": "Rendered for the site from HTML using the site stylesheet and the listed entry",
-      "claim_boundary": "Link preview only; the label on the card says what the picture is, and the listed entry sets what it supports"
+      "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-21. It illustrates the project; it is not a measurement record."
     }
   ]
 }
