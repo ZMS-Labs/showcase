@@ -133,7 +133,7 @@ wording=hits(re.compile(r'with\s+AI\s+assistance|\b(?:most|much|nearly\s+all|alm
 
 # The retained case studies remain in this order; other home summaries have no links.
 # A case study that is not listed here, or a link to one, is a problem to fix before publishing.
-ORDER=('interleaf','savebench','epistemic-skills')
+ORDER=('interleaf','savebench','epistemic-skills','oni-bench')
 FEATURED=ORDER[:3]
 VOID={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 HEADINGS=('h1','h2','h3','h4','h5','h6')

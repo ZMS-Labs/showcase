@@ -25,6 +25,7 @@ ZMS Labs is the name I use for my independent projects. AI tools write the code.
 - [Interleaf](https://sternone.net/case-studies/interleaf/): a contract workstation that keeps the question next to the words. Two of its drafting checks flagged two gaps in a sample agreement and came back clean after the edits.
 - [SaveBench](https://sternone.net/case-studies/savebench/): can an AI design a factory that actually runs? AI models design factories in Satisfactory and the running game measures what they deliver. The test checks its own measuring tool first and keeps failed runs on the record.
 - [Epistemic Skills](https://sternone.net/case-studies/epistemic-skills/): seventeen public methods that teach AI agents to find the real cause and check their own work. [Source on GitHub](https://github.com/ZMS-Labs/epistemic-skills).
+- [ONI Bench](https://sternone.net/case-studies/oni-bench/): SaveBench's sibling. Can an AI keep a colony alive in Oxygen Not Included, with the running game as the judge? The run viewer is built and shown with made-up data; no game run has been recorded yet.
 
 Each project page says what ran and when, what's sample content, and what hasn't been tested yet. The [Sources page](https://sternone.net/evidence.html) has a dated record for every project. These are personal projects; questions and conversations are welcome through [LinkedIn](https://www.linkedin.com/in/zachary-s-21125214/).
 
