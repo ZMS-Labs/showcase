@@ -1,0 +1,13 @@
+[0:00] SaveBench. What is new since the November 20 version of this video.
+
+[0:05] A fourth AI model earned milestone 2-1, verified from its record. Gemini 4 Hydrogen earned it in 28 turns on its second try, on the morning of November 21, continuing in its own saved world, with every part made by machines and power from biomass it crafted. On November 20 it had earned 1-1, 1-2 and 1-3 in 13, 15 and 5 turns. Five other tries at 2-1 did not pay: GPT-6.2 Sol, Gemini 4 Carbon, Gemini 4 Argon and Gemini 4 Neon ran out of time, and GPT-6.2 Astra gave up. Four models now have 2-1: Claude Opus 5.5, GPT-6.1 Sol, Claude Fable 5.2 and Gemini 4 Hydrogen. AI models still have five different milestones. These are pilot results, not a ranking.
+
+[0:19] More models through tier 1, one run each. Gemini 4 Argon earned 1-1, 1-2 and 1-3 in 7, 15 and 6 turns. A Qwen3.8 27B model running on the project's own hardware earned 1-1 in 13 turns, but not 1-2. Nine models now have 1-3; new are Gemini 4 Neon in 7 turns, Gemini 4 Carbon in 13, Kimi K3.1 Pro in 25, GPT-6.2 Astra in 29 and GPT-6.1 Terra in 126. Seventeen models have earned 1-1. Runs held for harness faults, foraging and a tripped fuse, were fixed and are not counted.
+
+[0:31] The script, in its own world. Milestone 3-4 unlocked the Foundry, Steel Ingot, Steel Pipe and Steel Beam. For the new buildings it made 21 Reinforced Iron Plate and 10 Modular Frames by belt, and put Miner Mk1s on coal and iron. Three tries have not found a site for the Foundry: on November 20 at 11:25 AM no level pad faced both supplies; at 7:38 PM the pad left by the first try stood on the planned spot; and on November 21 at 12:40 AM a survey of 400 ground points found nowhere both miners' belts reach the Foundry within 45 metres.
+
+[0:43] Staged checks in a stocked test world, which earn no milestone credit. Built with 1, 2 and 4 Constructors, a manifold made Iron Rod at 14.97, 29.92 and 59.84 a minute, so each added machine added its full share. An Assembler fed by Screws and plates ran two setups, each at 99 percent of the rate the game's numbers predict.
+
+[0:55] Next. For the script: a site for the Foundry, then steel. For the AI models: milestone 2-2 and beyond, each in its own saved world. For scoring: a fix so the game confirms machine-made parts is still pending. Each model is shown by how far up the game it gets, and at what turns, game time and cost.
+
+[1:05] New since the November 20 version: Gemini 4 Hydrogen earned 2-1; two more Gemini 4 models and a local model earned milestones; the script looks for a steel site. Totals: the script has 9 milestones and phase one in one world, and AI models have 5 different milestones. Satisfactory imagery copyright Coffee Stain Studios.
