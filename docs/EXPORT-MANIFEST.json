@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 76222,
-      "sha256": "751b7cb1cb9876dbc268a824558aa516b227a521fa39ef8ea134c48153e4139e"
+      "bytes": 77372,
+      "sha256": "9154ab716f866cbc429007ea53cea6e5c298369304f951b857b99eef1fe00dcd"
     },
     {
       "path": "assets/og/og-default.png",
@@ -335,13 +335,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 203347,
-      "sha256": "1d786b5f10b2c2fcbedaf247c19cec20cc92f1a98c181ed5776d00f9e6f086f3"
+      "bytes": 208619,
+      "sha256": "d4af76702cc358a022d703f6697b490b65d1843d3154ea962026bd619e6a2fb1"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 118405,
-      "sha256": "1fbb69081feaaa34bdb81ce3cd9b161bc0b573e39126b64575789d6e64cc5c82"
+      "bytes": 124183,
+      "sha256": "08cdfe0773f2e8b283c13a0e9d0d3026dab7513d1c623bee520edca25ba3797e"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -505,8 +505,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-16/transcript.txt",
-      "bytes": 4521,
-      "sha256": "d8bee33ef1250953d06df2b674731636c4fbe2e6602a3357854e4dc350de0156"
+      "bytes": 4311,
+      "sha256": "50dd81cf7b7a897513889da94220709faca6e2f8cb49dd4f5945e791cee8663d"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/img/ConstructorMk1.png",
@@ -590,8 +590,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-17/transcript.txt",
-      "bytes": 8316,
-      "sha256": "a0d3e209a954812c8ce437c4c6aa38234674e7aba821cce6f6f39c3bbfe2a6e4"
+      "bytes": 8133,
+      "sha256": "7656a2ff07592e5e7ca78668f98ffcd5c76ee9c7cbd1ad0e7c6d84468edf4635"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-18/img/ConstructorMk1.png",
@@ -675,8 +675,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-18/transcript.txt",
-      "bytes": 8964,
-      "sha256": "6e65800f85767511fd7841827880d131673413576cf6a9bfc83a4663e994df33"
+      "bytes": 8745,
+      "sha256": "b9500d392fee01c55a5fcc80f6cac0a0a7f47310f531c2ef217da018e1528d7f"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-19/film/oil-probe.mp4",
@@ -770,8 +770,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-20/transcript.txt",
-      "bytes": 3742,
-      "sha256": "a10c411b2fa9daf87a71529136d261bc94b5f74925a6af32bb156d065fbb557b"
+      "bytes": 3746,
+      "sha256": "c36b5ca6aa7188891e396f1d87924de764d77af580ce5dd404d583f5a7f19614"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-21/img/MinerMk1.png",
@@ -785,8 +785,23 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-21/transcript.txt",
-      "bytes": 2732,
-      "sha256": "f73f2a930c4ef8ebf091928a5358c6458e8e03b5b041af4dca9b8772bb83315b"
+      "bytes": 2741,
+      "sha256": "f6655d0213feda30a6fb0dfca764da024a6e8cc2b405085fba7505e3c4d3e69a"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-23/img/MinerMk1.png",
+      "bytes": 23957,
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-23/img/world.jpg",
+      "bytes": 575534,
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-23/transcript.txt",
+      "bytes": 2137,
+      "sha256": "9f64b7e794b224a0768b748f61e82c52bd4545de6b6c9febcc92a54ec6fad74e"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -855,8 +870,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 274490,
-      "sha256": "b946161b3d9acb523d24be0c140373bcc79656f0857f09065c64dc4a0e8b43b6"
+      "bytes": 278624,
+      "sha256": "c2d51476c87cd87671efd80b35e6dc12cf44fb61da4656a56f91e17525fd5157"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -865,8 +880,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 33592,
-      "sha256": "25f4dc27fb8c0e987752d5960d49538a1f4b34e1dca278caf80eeb4e192a8bbf"
+      "bytes": 33915,
+      "sha256": "3e56d33cd1911a3db6f813515277208914291cbbb8fb82297c8d7af0f6d27989"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -930,8 +945,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 21135,
-      "sha256": "c189bbfb5c349c9c2b542ee187a24113ec58672edb6b74fbc6a5d31b59c0ad3d"
+      "bytes": 21166,
+      "sha256": "694c31fe6f9cc1058c6f6bcca10755248286abc6c1f4b89218ad6ac685f996cd"
     },
     {
       "path": "more-work.html",
