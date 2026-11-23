@@ -8,6 +8,6 @@
 
 [0:43] Staged checks in a stocked test world, which earn no milestone credit. Built with 1, 2 and 4 Constructors, a manifold made Iron Rod at 14.97, 29.92 and 59.84 a minute, so each added machine added its full share. An Assembler fed by Screws and plates ran two setups, each at 99 percent of the rate the game's numbers predict.
 
-[0:55] Next. For the script: a site for the Foundry, then steel. For the AI models: milestone 2-2 and beyond, each in its own saved world. For scoring: a fix so the game confirms machine-made parts is still pending. Each model is shown by how far up the game it gets, and at what turns and game time.
+[0:55] Next. For the script: a site for the Foundry, then steel. For the AI models: milestone 2-2 and beyond, each in its own saved world. For scoring: a fix so the game confirms machine-made parts is still pending. Each model is shown by how far up the game it gets, in how many turns and how much game time.
 
 [1:05] New since the November 20 version: Gemini 4 Hydrogen earned 2-1; two more Gemini 4 models and a local model earned milestones; the script looks for a steel site. Totals: the script has 9 milestones and phase one in one world, and AI models have 5 different milestones. Satisfactory imagery copyright Coffee Stain Studios.
