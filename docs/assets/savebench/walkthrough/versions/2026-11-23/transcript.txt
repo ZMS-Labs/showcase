@@ -1,0 +1,11 @@
+[0:00] SaveBench. What is new since the November 21 version of this video.
+
+[0:05] The script's steel line, verified from its run records. On November 21 at 7:59 AM, on its fourth try, it found a site where belts from both its coal and iron miners reach a Foundry, checked every piece with a dry run, and built a Foundry on Steel Ingot, a Splitter, one Constructor on Steel Pipe, one on Steel Beam, and a Merger, all on the coal grid. Three times it ran short of Iron Plate, for the last belt and for the way back to Rotors; by that evening both were fixed. That evening the line ran: its container held 104 Steel Pipe and 39 Steel Beam at the end of the check.
+
+[0:19] Milestone 4-1, the first of tier 4, paid and launched on the evening of November 21: 100 Steel Pipe, 100 Modular Frames made by the Assembler by belt, 200 Rotors and 500 Concrete, every part made by its machines. Declared: Steel Pipe and Concrete were carried from containers to the bank. The script now has ten milestones and Space Elevator phase one in one world. Steel took seven tries over two days.
+
+[0:33] AI models, verified from their records, not a ranking. Gemini 4 Hydrogen earned milestone 2-2 twice, in 26 and 24 turns, in the same saved world where it holds 1-1 through 2-1. It is the first model to earn 2-2 twice, and the only one chaining milestones in one world. Its two tries at 2-3 ran out of time. Other tries are on the full record. AI models still have five different milestones.
+
+[0:47] Next. For the script: the rest of tier 4. For the AI models: milestone 2-3. For scoring: a fix so the game confirms machine-made parts is still pending. Each model is shown by how far up the game it gets, in how many turns and how much game time.
+
+[0:57] New since the November 21 version: the script built a steel line and earned milestone 4-1, and Gemini 4 Hydrogen earned 2-2 twice. Totals: the script has 10 milestones and phase one in one world, and AI models have 5 different milestones. Satisfactory imagery copyright Coffee Stain Studios.
