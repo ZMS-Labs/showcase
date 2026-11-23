@@ -340,8 +340,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 124183,
-      "sha256": "08cdfe0773f2e8b283c13a0e9d0d3026dab7513d1c623bee520edca25ba3797e"
+      "bytes": 124058,
+      "sha256": "9f33793c7fa613a2bbaae384e5e570f08e5de57dbe634cf356b55b758bac0f4d"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -800,8 +800,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-23/transcript.txt",
-      "bytes": 2137,
-      "sha256": "9f64b7e794b224a0768b748f61e82c52bd4545de6b6c9febcc92a54ec6fad74e"
+      "bytes": 2043,
+      "sha256": "563a01049cec98974137b6451bb53b7fd548d131470c855a8a3ace8803ba3602"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -870,8 +870,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 278624,
-      "sha256": "c2d51476c87cd87671efd80b35e6dc12cf44fb61da4656a56f91e17525fd5157"
+      "bytes": 278530,
+      "sha256": "ca3232e82755572719440a3119fce467838b6956ef0c62699b4f0d265624c109"
     },
     {
       "path": "case-studies/savebench/compare.html",
