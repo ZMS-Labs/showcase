@@ -121,7 +121,7 @@
     {
       "path": "assets/manifest.json",
       "bytes": 77372,
-      "sha256": "037c32d5accfb8bb4694fe81d026cdc453570429f6eb56ed5988f18ff090a5f7"
+      "sha256": "f8f3bcd96b4dde6d0247bbd7e1dc3b2271b61dd00a6d3e22a33e8ae57c20434e"
     },
     {
       "path": "assets/og/og-default.png",
@@ -335,13 +335,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 207934,
-      "sha256": "c9d79b0661cc1e1845f73812cdaca94255cc3834e4dd4875a4e85d0d42151cb2"
+      "bytes": 207629,
+      "sha256": "243c82286a325fa73c4f6f4cfb93eebd03d2bd560aeeca5a5438fa0edf9f0e51"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 124589,
-      "sha256": "0828cb1cf7d8b2745835001998b9cebf196b1678542941c871a342bbeb6c5ce7"
+      "bytes": 124584,
+      "sha256": "706fa1717d7156d801fca6349fdbe6c6495b6bde5b38284318d4fd0d3584d8e5"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -800,8 +800,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-23/transcript.txt",
-      "bytes": 2033,
-      "sha256": "218b17d8322b056ef992f2640770d8e60becbe622d4f7ba5fda4d406de935264"
+      "bytes": 2028,
+      "sha256": "6d419d88b4d14c8c8e647877990e9e25968837df964255dac24e6b2a9f04eedc"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
@@ -870,8 +870,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 280198,
-      "sha256": "d8852564074db3b77dc35a8822c2412a427507bc7226a67cbdab5c6bef9b7576"
+      "bytes": 280193,
+      "sha256": "aea0bb25c88387beb1cfb0f1a4a313d6d7de069bac6168c0ca7e989d741fc635"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -880,8 +880,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 33940,
-      "sha256": "dd104472a6f60d15b07d4fb223c79177718c6410ea90e518ecbf1a5940dae24c"
+      "bytes": 33939,
+      "sha256": "65d588ac54173923e61b90f6e525b5d2bff56b7589eaf2e4c6cb1a1c535fc02c"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -946,7 +946,7 @@
     {
       "path": "index.html",
       "bytes": 21162,
-      "sha256": "5e0c4076dbc53340c7b393ff72e24f6cb6fe2ab50324cc68a9c3df17c62a3137"
+      "sha256": "bd6580572a705bb35a6eee6e825df0f7d97d32b34614afc5f589eb0770bf81d4"
     },
     {
       "path": "more-work.html",
