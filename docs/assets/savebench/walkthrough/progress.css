@@ -16,6 +16,11 @@
 .sbp-versions p{font-size:15.5px;line-height:1.5;color:var(--muted);margin:0}
 .sbp-pick{font:inherit;font-size:15px;font-weight:600;margin-top:12px;padding:9px 14px;min-height:44px;border:1px solid var(--ink);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer}
 .sbp-pick[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.sbp-picker{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 0}
+.sbp-picker .fine{margin:0 6px 0 0}
+.sbp-picker .sbp-pick{min-height:40px;padding:6px 12px;border:1px solid var(--ink);background:transparent;color:inherit;font:inherit;font-size:15px;cursor:pointer;border-radius:2px}
+.sbp-picker .sbp-pick[aria-pressed="true"]{background:var(--ink);color:var(--paper,#fff)}
+.sbp-picker .sbp-pick:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
 .sbp-days{display:grid;gap:0;margin-top:8px}
 .sbp-day{border-top:1px solid var(--rule);padding:12px 0}
 .sbp-day summary{cursor:pointer;font-weight:600;font-size:17px;min-height:32px}

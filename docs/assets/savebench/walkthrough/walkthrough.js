@@ -1,6 +1,6 @@
 /* SaveBench walkthrough player. One dependency-free file, no external requests.
    window.SaveBenchWalkthrough.mount(element, versionData, { base: 'versions/2026-11-16/' })
-   versionData is a version's scenes.json (already parsed). Engines: "v2" (data-driven, real results) and
+   versionData is a version's scenes.json (already parsed). Engines: "v3" (cinematic: map camera, factories plotted from run records, charts, film; from Nov 24), "v2" (data-driven, real results) and
    "concept1" (the October 27 concept animation, kept for the history). Never autoplays. */
 (function () {
 'use strict';
@@ -620,6 +620,193 @@ ENG.v2 = function (x, IM, data, ctl) {
 };
 
 // =====================================================================================
+// Engine "v3" (Nov 24): cinematic. A camera flies over the real game map; every factory is plotted where its
+// run records put it; charts and real film clips move. All positions and numbers come from the version's data.
+// =====================================================================================
+ENG.v3 = function (x, IM, data, ctl) {
+  const D = data.map || {};
+  const KC = { M:'#fa8c3c', S:'#f2c14e', C:'#38bdf8', A:'#c4b5fd', F:'#f472b6', B:'#8b93a1', G:'#a3e635', K:'#ff8a7a', P:'#4b5563', J:'#7ddc9a', W:'#60a5fa', H:'#f4f1ea', E:'#f4f1ea', X:'#8b93a1' };
+  const KN = { M:'Miner', S:'Smelter', C:'Constructor', A:'Assembler', F:'Foundry', B:'Storage', G:'Biomass Burner', K:'Coal Generator', J:'Splitter or Merger', W:'Water Extractor', H:'HUB', P:'Power pole' };
+  const ICO = { M:'MinerMk1', S:'SmelterMk1', C:'ConstructorMk1', B:'StorageContainerMk1', J:'ConveyorAttachmentSplitter' };
+  const SIZE = { M:9, S:9, C:8, A:11, F:11, B:6, G:7, K:12, P:2.2, J:5, W:9, H:12, E:16, X:8 };
+  function rr(X, Y, w, h, r, fill, stroke, lw = 1) { x.beginPath(); x.roundRect(X, Y, w, h, r); if (fill) { x.fillStyle = fill; x.fill(); } if (stroke) { x.lineWidth = lw; x.strokeStyle = stroke; x.stroke(); } }
+  function tx(s, X, Y, font, col, al = 'left', base = 'alphabetic') { x.font = font; x.fillStyle = col; x.textAlign = al; x.textBaseline = base; x.fillText(s, X, Y); }
+  function A(a, fn) { if (a <= 0.001) return; x.save(); x.globalAlpha *= clamp(a); fn(); x.restore(); }
+  function lines(s, maxW, font) { x.font = font; const out = []; let line = ''; for (const w of String(s).split(' ')) { const t = line ? line + ' ' + w : w; if (x.measureText(t).width > maxW && line) { out.push(line); line = w; } else line = t; } if (line) out.push(line); return out; }
+  function wrap(s, X, Y, maxW, lh, font, col, al = 'left') { const ls = lines(s, maxW, font); ls.forEach((l, i) => tx(l, X, Y + i * lh, font, col, al)); return Y + (ls.length - 1) * lh; }
+  function hex(X, Y, s, col) { x.save(); x.translate(X, Y); x.scale(s / 26, s / 26); x.translate(-13, -15); x.strokeStyle = col; x.lineWidth = 2.6; x.beginPath(); x.moveTo(13, 2); x.lineTo(24, 8); x.lineTo(24, 22); x.lineTo(13, 28); x.lineTo(2, 22); x.lineTo(2, 8); x.closePath(); x.stroke(); x.fillStyle = col; x.beginPath(); x.moveTo(13, 9); x.lineTo(19, 12.5); x.lineTo(19, 17.5); x.lineTo(13, 21); x.lineTo(7, 17.5); x.lineTo(7, 12.5); x.closePath(); x.fill(); x.restore(); }
+  function badge(X, Y, letter, col, s = 30) { rr(X, Y, s, s, 7, 'rgba(0,0,0,.35)', col, 2.5); tx(letter, X + s / 2, Y + s / 2 + 1, `800 ${s * .55}px ${FB}`, col, 'center', 'middle'); }
+  function pill(s, X, Y, col, al = 'left', fs = 16) { x.font = `700 ${fs}px ${FM}`; const w = x.measureText(s).width + 26, X0 = al === 'right' ? X - w : al === 'center' ? X - w / 2 : X; rr(X0, Y, w, fs + 18, 9, 'rgba(11,12,15,.88)', col, 1.5); tx(s, X0 + 13, Y + fs + 4, `700 ${fs}px ${FM}`, col); return w; }
+  function vignette(s = .6) { const g = x.createRadialGradient(W / 2, H / 2, H * .3, W / 2, H / 2, H * .95); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${s})`); x.fillStyle = g; x.fillRect(0, 0, W, H); }
+  function grain(t) { x.save(); x.globalAlpha = .035; for (let i = 0; i < 90; i++) { const r = Math.sin(i * 91.7 + Math.floor(t * 24) * 13.1) * 43758.5; const fx = (r - Math.floor(r)) * W, fy = ((r * 7.3) - Math.floor(r * 7.3)) * H; x.fillStyle = i % 2 ? '#fff' : '#000'; x.fillRect(fx, fy, 2, 2); } x.restore(); }
+  function bars(k) { if (k <= 0) return; const h = 64 * k; x.fillStyle = '#000'; x.fillRect(0, 0, W, h); x.fillRect(0, H - h, W, h); }
+  function headline(eyebrow, head, u, X = 72, Y = 128) { const k = back(seg(u, .15, .8)); A(seg(u, .1, .5), () => { tx(eyebrow, X, Y - 56, `700 17px ${FM}`, C.or); x.save(); x.translate(X, Y); x.scale(1, .9 + .1 * k); tx(head, 0, 0, `800 54px ${FH}`, C.tx); x.restore(); }); }
+  // ---- camera over map space (8192 units across) ----
+  const lz = (a, b, k) => Math.exp(lerp(Math.log(a), Math.log(b), k));
+  function camAt(keys, u) { if (u <= keys[0].t) return keys[0]; for (let i = 1; i < keys.length; i++) { const a = keys[i - 1], b = keys[i]; if (u <= b.t) { const k = eio(seg(u, a.t, b.t)); return { cx: lerp(a.cx, b.cx, k), cy: lerp(a.cy, b.cy, k), z: lz(a.z, b.z, k) }; } } return keys[keys.length - 1]; }
+  function S(cam, p) { return [(p[0] - cam.cx) * cam.z + W / 2, (p[1] - cam.cy) * cam.z + H / 2]; }
+  function mapBg(cam, dark = .45) {
+    x.fillStyle = C.bg; x.fillRect(0, 0, W, H);
+    const m = IM.world; if (m) { x.save(); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high'; const [sx, sy] = S(cam, [0, 0]); const sz = 8192 * cam.z; x.filter = cam.z > 1.2 ? `blur(${Math.min(6, (cam.z - 1.2) * 1.4)}px) saturate(.8)` : 'saturate(.85)'; x.drawImage(m, sx, sy, sz, sz); x.restore(); }
+    x.fillStyle = `rgba(11,12,15,${dark})`; x.fillRect(0, 0, W, H);
+    if (cam.z > .9) { // 100 m grid (1 map unit is about 0.92 m)
+      const step = 109, a = clamp((cam.z - .9) / 1.2) * .5; x.save(); x.globalAlpha = a; x.strokeStyle = 'rgba(244,241,234,.12)'; x.lineWidth = 1; x.beginPath();
+      const x0 = Math.floor((cam.cx - W / 2 / cam.z) / step) * step, y0 = Math.floor((cam.cy - H / 2 / cam.z) / step) * step;
+      for (let gx = x0; gx < cam.cx + W / 2 / cam.z; gx += step) { const X = S(cam, [gx, 0])[0]; x.moveTo(X, 0); x.lineTo(X, H); }
+      for (let gy = y0; gy < cam.cy + H / 2 / cam.z; gy += step) { const Y = S(cam, [0, gy])[1]; x.moveTo(0, Y); x.lineTo(W, Y); }
+      x.stroke(); x.restore();
+      // scale bar
+      A(a * 2, () => { const L = 109 * cam.z; x.fillStyle = C.tx; x.fillRect(W - 72 - L, H - 112, L, 3); tx('100 m', W - 72, H - 124, `600 15px ${FM}`, C.mu, 'right'); });
+    }
+  }
+  function glyph(k, X, Y, s, a = 1, icons = false) {
+    const c = KC[k] || C.mu; if (k === 'P') { x.globalAlpha = a * .7; x.fillStyle = c; x.fillRect(X - s / 2, Y - s / 2, s, s); x.globalAlpha = 1; return; }
+    x.save(); x.globalAlpha *= a; x.shadowColor = c; x.shadowBlur = s * 1.6; rr(X - s / 2, Y - s / 2, s, s, s * .22, c); x.shadowBlur = 0;
+    if (icons && ICO[k] && IM[ICO[k]] && s >= 26) { rr(X - s / 2, Y - s / 2, s, s, s * .22, 'rgba(11,12,15,.92)', c, 2); x.drawImage(IM[ICO[k]], X - s * .4, Y - s * .4, s * .8, s * .8); }
+    x.restore();
+  }
+  function plot(cam, pts, u0, u, dur, opts = {}) { // buildings appear in record order
+    const n = pts.length, sc = opts.scale || clamp(cam.z / 1.6, .55, 3.2);
+    pts.forEach((p, i) => { const ti = u0 + (n > 1 ? i / (n - 1) : 0) * dur; if (u < ti) return; const k = back(seg(u, ti, ti + .35)); const [X, Y] = S(cam, [p[1], p[2]]); if (X < -40 || X > W + 40 || Y < -40 || Y > H + 40) return; glyph(p[0], X, Y, (SIZE[p[0]] || 6) * sc * (opts.big || 1) * Math.max(.01, k), opts.alpha == null ? 1 : opts.alpha, opts.icons); });
+  }
+  function legend(X, Y, keys, a) { A(a, () => { rr(X, Y, 300, 30 + keys.length * 34, 14, C.pn, C.ln); keys.forEach((k, i) => { glyph(k, X + 30, Y + 32 + i * 34, 14); tx(KN[k], X + 52, Y + 38 + i * 34, `600 18px ${FB}`, C.tx); }); }); }
+  function caption(s, u, t, col = C.mu) { A(seg(u, t, t + .4), () => { tx(s, 72, H - 84, `600 16px ${FM}`, col); }); }
+
+  // ---------------------------------------------------------------- scenes
+  function open(sc, u) {
+    const cam = camAt([{ t: 0, cx: 4096, cy: 4096, z: .118 }, { t: 1.2, cx: 4096, cy: 4096, z: .13 }, { t: sc.t1 - sc.t0, cx: 1700, cy: 2760, z: 1.05 }], u);
+    mapBg(cam, .3 + .25 * seg(u, 3, 6));
+    const p = S(cam, [1700, 2780]); A(seg(u, 2.5, 4) * (1 - seg(u, 6, 7)), () => { x.strokeStyle = C.or; x.lineWidth = 2; const r = 40 + 30 * Math.sin(u * 3); x.beginPath(); x.arc(p[0], p[1], r, 0, 7); x.stroke(); tx('GRASS FIELDS · WHERE EVERY RUN STARTS', p[0] + r + 16, p[1] + 6, `700 18px ${FM}`, C.or); });
+    vignette(.7);
+    const k = back(seg(u, .4, 1.3)); A(seg(u, .3, .8) * (1 - seg(u, 4.6, 5.4)), () => { x.save(); x.translate(W / 2, H / 2 - 30); x.scale(.85 + .15 * k, .85 + .15 * k); x.font = `800 128px ${FH}`; const tw = x.measureText('SaveBench').width; hex(-tw / 2 - 40, -40, 84, C.or); tx('SaveBench', 30, 0, `800 128px ${FH}`, C.tx, 'center', 'middle'); x.restore(); });
+    A(seg(u, 1.3, 2) * (1 - seg(u, 4.6, 5.4)), () => { tx(sc.line, W / 2, H / 2 + 80, `600 34px ${FB}`, '#dfe2e8', 'center'); tx(sc.sub, W / 2, H / 2 + 130, `700 18px ${FM}`, C.or, 'center'); });
+    bars(1 - seg(u, 5, 7) * .4);
+  }
+  function atlas(sc, u) {
+    const L = sc.t1 - sc.t0, ctr = D.center || [1650, 2780];
+    const cam = camAt([{ t: 0, cx: 1700, cy: 2760, z: 1.05 }, { t: 3, cx: ctr[0], cy: ctr[1], z: 2.1 }, { t: L - 6, cx: ctr[0] + 30, cy: ctr[1] - 10, z: 2.4 }, { t: L - 1, cx: 1950, cy: 2720, z: 1.4 }, { t: L, cx: 1960, cy: 2720, z: 1.38 }], u);
+    mapBg(cam, .55);
+    const runs = D.runs || []; const n = runs.length; const t0 = 2, span = 8;
+    let shown = 0, bld = 0;
+    runs.forEach((r, i) => { const ti = t0 + i / Math.max(1, n - 1) * span; if (u < ti) return; shown++; bld += r.b.length; const fresh = 1 - seg(u, ti, ti + 1.2); x.save(); if (fresh > 0) { x.globalCompositeOperation = 'lighter'; } plot(cam, r.b, ti, u, .5, { alpha: .35 + .65 * fresh, scale: 1.25 }); x.restore(); });
+    // the script's base, outlined
+    A(seg(u, L - 5.5, L - 4.5), () => { plot(cam, D.script || [], L - 5.5, u, 1.2, { scale: 1.5 }); const p = S(cam, [2400, 2690]); x.strokeStyle = C.or; x.setLineDash([8, 8]); x.lineWidth = 2; x.beginPath(); x.arc(p[0], p[1], 90, 0, 7); x.stroke(); x.setLineDash([]); tx('THE SCRIPT’S COAL PLANT', p[0] - 100, p[1] - 110, `700 17px ${FM}`, C.or); });
+    vignette(.55);
+    headline(sc.eyebrow, sc.head, u);
+    // counters
+    A(seg(u, 1.6, 2.2), () => { rr(72, 168, 420, 128, 16, C.pn, C.ln); tx('AI RUNS PLOTTED', 100, 210, `700 15px ${FM}`, C.mu); tx(String(shown), 100, 270, `800 56px ${FH}`, C.tx); tx('BUILDINGS', 290, 210, `700 15px ${FM}`, C.mu); tx(bld.toLocaleString('en-US'), 290, 270, `800 56px ${FH}`, C.tx); });
+    legend(W - 372, 168, ['M', 'S', 'C', 'A', 'F', 'K', 'G', 'B', 'J'], seg(u, 3, 3.6) * (1 - seg(u, L - 6.5, L - 5.8)));
+    caption(sc.note, u, 2);
+  }
+  function race(sc, u) {
+    const L = sc.t1 - sc.t0; bgPanel3();
+    headline(sc.eyebrow, sc.head, u);
+    // chart
+    const X0 = 140, Y0 = 860, CW = 1080, CH = 560, TMAX = 150, tp = lerp(0, TMAX, eo(seg(u, 1.5, 11.5)));
+    A(seg(u, .6, 1.2), () => {
+      x.strokeStyle = C.ln; x.lineWidth = 1; for (let m = 0; m <= 3; m++) { const Y = Y0 - m / 3 * CH; x.beginPath(); x.moveTo(X0, Y); x.lineTo(X0 + CW, Y); x.stroke(); tx(String(m), X0 - 20, Y + 6, `600 16px ${FM}`, C.mu, 'right'); }
+      for (let t = 0; t <= TMAX; t += 25) { const X = X0 + t / TMAX * CW; tx(String(t), X, Y0 + 32, `600 15px ${FM}`, C.mu, 'center'); }
+      tx('TURN', X0 + CW, Y0 + 62, `700 14px ${FM}`, C.mu, 'right'); tx('MILESTONES BOUGHT', X0, Y0 - CH - 22, `700 14px ${FM}`, C.mu);
+      // playhead
+      const PX = X0 + tp / TMAX * CW; x.strokeStyle = 'rgba(250,140,60,.5)'; x.setLineDash([4, 6]); x.beginPath(); x.moveTo(PX, Y0 - CH - 6); x.lineTo(PX, Y0); x.stroke(); x.setLineDash([]); tx('turn ' + Math.round(tp), PX, Y0 - CH - 30, `700 15px ${FM}`, C.or, 'center');
+    });
+    (sc.runs || []).forEach((r, ri) => { const col = C[r.col];
+      const pts = [[0, 0]]; r.buys.forEach((b, j) => { pts.push([b.t, j]); pts.push([b.t, j + 1]); }); pts.push([r.end, r.buys.length]);
+      x.save(); x.lineWidth = 5; x.strokeStyle = col; x.shadowColor = col; x.shadowBlur = 14; x.beginPath(); let last = null;
+      for (let i = 0; i < pts.length; i++) { const [t, m] = pts[i]; const tt = Math.min(t, tp); const X = X0 + tt / TMAX * CW, Y = Y0 - m / 3 * CH - ri * 4; if (i === 0) x.moveTo(X, Y); else x.lineTo(X, Y); last = [X, Y]; if (t > tp) break; }
+      x.stroke(); x.restore();
+      if (last) { x.beginPath(); x.arc(last[0], last[1], 8, 0, 7); x.fillStyle = col; x.fill(); }
+      r.buys.forEach((b, j) => { if (tp < b.t) return; const k = back(seg(tp, b.t, b.t + 6)); const X = X0 + b.t / TMAX * CW, Y = Y0 - (j + 1) / 3 * CH - ri * 4; x.save(); x.translate(X + (ri - 1) * 4, Y - 30 - ri * 30); x.scale(k, k); pill(b.m, 0, -22, col, 'center', 15); x.restore(); });
+      if (tp >= r.end && r.endNote) A(seg(tp, r.end, r.end + 8), () => tx(r.endNote, X0 + r.end / TMAX * CW + 16, Y0 - r.buys.length / 3 * CH + 34 + ri * 26, `600 15px ${FM}`, col));
+    });
+    // key with badges
+    A(seg(u, 1, 1.6), () => (sc.runs || []).forEach((r, i) => { const Y = 196 + i * 58; badge(1300, Y, r.letter, C[r.col], 38); tx(r.name, 1352, Y + 27, `800 26px ${FH}`, C.tx); tx(r.sum, 1352, Y + 52, `600 15px ${FM}`, C.mu); }));
+    // mini factory maps, what each one built, at their game coordinates
+    const MW = 176, MH = 230; (sc.runs || []).forEach((r, i) => { const MX = 1300 + i * (MW + 14), MY = 420; const kA = seg(u, 12, 12.6); A(kA, () => { rr(MX, MY, MW, MH, 12, '#101217', C[r.col], 1.5); x.save(); x.beginPath(); x.roundRect(MX, MY, MW, MH, 12); x.clip(); const run = (D.runs || []).find(q => q.id === r.id); if (run) { const xs = run.b.map(p => p[1]), ys = run.b.map(p => p[2]); const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2, z = Math.min(MW / (Math.max(...xs) - Math.min(...xs) + 40), MH / (Math.max(...ys) - Math.min(...ys) + 40)); const cam = { cx, cy, z }; const ox = MX + MW / 2 - W / 2, oy = MY + MH / 2 - H / 2; x.translate(ox, oy); plot(cam, run.b, 12.2 + i * .3, u, 3, { scale: .9 }); } x.restore(); tx(r.letter + ' · ' + (run ? run.b.length : 0) + ' BUILDINGS', MX, MY + MH + 24, `700 13px ${FM}`, C[r.col]); }); });
+    A(seg(u, 12.4, 13), () => tx('What each one built, as its run records place it. North is up.', 1300, 720, `500 16px ${FB}`, C.mu));
+    A(seg(u, 14, 14.6), () => { pill('NO WINNER IS DECLARED · ONE RUN EACH', 1300, 780, C.un, 'left', 16); wrap(sc.note, 1300, 860, 540, 30, `500 22px ${FB}`, '#dfe2e8'); });
+  }
+  function bgPanel3() { x.fillStyle = '#0d0f13'; x.fillRect(0, 0, W, H); const g = x.createRadialGradient(W * .3, H * .2, 50, W * .3, H * .2, W); g.addColorStop(0, 'rgba(250,140,60,.07)'); g.addColorStop(1, 'rgba(0,0,0,0)'); x.fillStyle = g; x.fillRect(0, 0, W, H); vignette(.5); }
+  function filmpower(sc, u) {
+    const L = sc.t1 - sc.t0; x.fillStyle = '#000'; x.fillRect(0, 0, W, H);
+    const v = ctl && ctl.vids && ctl.vids[sc.film], m = (v && v.readyState >= 2) ? v : IM[sc.poster];
+    if (m) { const mw = m.videoWidth || m.width, mh = m.videoHeight || m.height, s = Math.max(W / mw, H / mh) * (1.04 + .06 * u / L); x.drawImage(m, (W - mw * s) / 2 - 20 * u / L, (H - mh * s) / 2, mw * s, mh * s); }
+    x.fillStyle = 'rgba(11,12,15,.25)'; x.fillRect(0, 0, W, H); vignette(.75); bars(1);
+    pill(sc.filmTag, 72, 92, C.ok, 'left', 16); pill(sc.date, W - 72, 92, C.or, 'right', 16);
+    const cap = (sc.captions || []).filter(c => u >= c.t).pop(); if (cap) A(eo(seg(u, cap.t, cap.t + .4)), () => { const yy = wrap(cap.h, 72, H - 190, 1100, 50, `800 42px ${FH}`, C.tx); if (cap.sub) wrap(cap.sub, 72, yy + 44, 1100, 32, `500 24px ${FB}`, '#dfe2e8'); });
+    // power gauge: the third generator
+    const g = sc.gauge; if (g) A(seg(u, g.t, g.t + .5), () => { const PX = W - 560, PY = 190, PW = 488, PH = 500; tx(g.note, PX + 28, PY + PH - 18, `500 15px ${FB}`, C.mu); rr(PX, PY, PW, PH, 18, 'rgba(13,15,19,.9)', C.pw, 1.5);
+      rr(PX, PY, PW, PH, 18, 'rgba(13,15,19,.9)', C.pw, 1.5); tx(g.label, PX + 28, PY + 44, `700 15px ${FM}`, C.pw);
+      const k = eo(seg(u, g.t + .6, g.t + 2.4)), cap = Math.round(lerp(g.from, g.to, k)), cx = PX + PW / 2, cy = PY + 250, R = 150;
+      x.lineCap = 'round'; x.lineWidth = 22; x.strokeStyle = '#262a33'; x.beginPath(); x.arc(cx, cy, R, Math.PI * .8, Math.PI * 2.2); x.stroke();
+      x.strokeStyle = C.pw; x.shadowColor = C.pw; x.shadowBlur = 18; x.beginPath(); x.arc(cx, cy, R, Math.PI * .8, Math.PI * .8 + Math.PI * 1.4 * cap / g.to); x.stroke(); x.shadowBlur = 0;
+      x.strokeStyle = C.ok; x.lineWidth = 10; x.beginPath(); x.arc(cx, cy, R - 30, Math.PI * .8, Math.PI * .8 + Math.PI * 1.4 * (g.use / g.to) * k); x.stroke(); x.lineCap = 'butt';
+      tx(cap + ' MW', cx, cy + 10, `800 52px ${FH}`, C.tx, 'center'); tx('CAPACITY', cx, cy + 46, `700 15px ${FM}`, C.mu, 'center');
+      tx(g.use + ' MW in use', cx, cy + 82, `600 20px ${FB}`, C.ok, 'center');
+      for (let i = 0; i < 3; i++) { const on = i < 2 || u > g.t + 2.2; const kk = i < 2 ? 1 : back(seg(u, g.t + 2.2, g.t + 2.8)); A(on ? 1 : .2, () => { x.save(); x.translate(PX + 120 + i * 124, PY + 420); x.scale(kk, kk); rr(-44, -26, 88, 52, 10, i === 2 ? 'rgba(255,138,122,.2)' : '#1d2027', KC.K, 2); tx('GEN ' + (i + 1), 0, 6, `700 15px ${FM}`, C.tx, 'center'); x.restore(); }); }
+      
+    });
+  }
+  function scriptmap(sc, u) {
+    const L = sc.t1 - sc.t0, pts = D.script || []; const xs = pts.map(p => p[1]), ys = pts.map(p => p[2]);
+    const bx = [Math.min(...xs, D.copper[0]), Math.max(...xs, D.copper[0])], by = [Math.min(...ys, D.copper[1]), Math.max(...ys, D.copper[1])];
+    const cx = (bx[0] + bx[1]) / 2, cy = (by[0] + by[1]) / 2, zf = Math.min(W * .78 / (bx[1] - bx[0]), H * .62 / (by[1] - by[0]));
+    const F = sc.focus || [cx, cy, zf]; const cam = camAt([{ t: 0, cx, cy: cy + 40, z: zf * .8 }, { t: 2.4, cx, cy, z: zf }, { t: 4.2, cx: F[0], cy: F[1], z: F[2] }, { t: L, cx: F[0] + 12, cy: F[1] - 6, z: F[2] * 1.06 }], u);
+    mapBg(cam, .62);
+    plot(cam, pts, .6, u, 1.6, { scale: clamp(cam.z / 1.1, 1.3, 4.2), icons: true });
+    (sc.calls || []).forEach(c => { if (u < c.t) return; const p = S(cam, c.at), k = back(seg(u, c.t, c.t + .5)), col = c.bad ? C.bad : C[c.col] || C.or;
+      x.save(); x.strokeStyle = col; x.lineWidth = 2.5; const r = (c.r || 34) * (.6 + .4 * k) + (c.bad ? 6 * Math.sin(u * 6) : 0); x.beginPath(); x.arc(p[0], p[1], r, 0, 7); x.stroke();
+      if (c.bad) { x.beginPath(); x.moveTo(p[0] - 14, p[1] - 14); x.lineTo(p[0] + 14, p[1] + 14); x.moveTo(p[0] + 14, p[1] - 14); x.lineTo(p[0] - 14, p[1] + 14); x.stroke(); }
+      const lx = p[0] + (c.dx || 50), ly = p[1] + (c.dy || -50); x.beginPath(); x.moveTo(p[0] + r * .7 * Math.sign(c.dx || 1), p[1] + r * .7 * Math.sign(c.dy || -1)); x.lineTo(lx, ly); x.stroke(); x.restore();
+      x.save(); x.translate(lx, ly); x.scale(k, k); const w = Math.max(...[c.h, c.s || ''].map(s => { x.font = `800 24px ${FH}`; return x.measureText(s).width; })) + 36; const X0 = (c.dx || 50) < 0 ? -w : 0; rr(X0, -30, w, c.s ? 74 : 46, 12, 'rgba(13,15,19,.94)', col, 1.5); tx(c.h, X0 + 18, 2, `800 24px ${FH}`, C.tx); if (c.s) tx(c.s, X0 + 18, 32, `600 16px ${FB}`, C.mu); x.restore(); });
+    vignette(.5); headline(sc.eyebrow, sc.head, u);
+    legend(W - 372, 168, ['M', 'S', 'C', 'A', 'F', 'K', 'W', 'B'], seg(u, 1.5, 2));
+    caption(sc.note, u, 1.2);
+  }
+  function tally(sc, u) {
+    bgPanel3(); headline(sc.eyebrow, sc.head, u);
+    const order = sc.ladder; const X0 = 120, Y0 = 280, CW = 132, gap = 14;
+    order.forEach((m, i) => { const X = X0 + i * (CW + gap); const kS = back(seg(u, .8 + i * .12, 1.3 + i * .12)), kA = m.ai ? back(seg(u, 2.8 + i * .12, 3.3 + i * .12)) : 0;
+      A(seg(u, .6 + i * .1, 1 + i * .1), () => { rr(X, Y0, CW, 470, 14, '#14161b', C.ln); tx(m.id, X + CW / 2, Y0 + 50, `800 34px ${FH}`, C.tx, 'center'); tx(m.n || '', X + CW / 2, Y0 + 80, `600 13px ${FM}`, C.mu, 'center'); });
+      if (m.script) { x.save(); x.translate(X + CW / 2, Y0 + 190); x.scale(kS, kS); rr(-52, -44, 104, 88, 14, 'rgba(250,140,60,.18)', C.or, 2); tx('SCRIPT', 0, 8, `800 18px ${FM}`, C.or, 'center'); x.restore(); }
+      if (m.ai) { x.save(); x.translate(X + CW / 2, Y0 + 340); x.scale(kA, kA); rr(-52, -44, 104, 88, 14, 'rgba(56,189,248,.16)', C.A, 2); tx('AI', 0, 0, `800 22px ${FM}`, C.A, 'center'); tx(m.ai, 0, 24, `600 13px ${FM}`, C.mu, 'center'); x.restore(); }
+      if (m.isNew && u > 4) A(.6 + .4 * Math.sin(u * 5), () => pill('NEW', X + CW / 2, Y0 - 50, C.un, 'center', 15)); });
+    A(seg(u, 4.4, 5), () => wrap(sc.note, X0, Y0 + 560, 1700, 32, `500 24px ${FB}`, '#dfe2e8'));
+  }
+  function end(sc, u) {
+    const cam = camAt([{ t: 0, cx: 1900, cy: 2760, z: 1.3 }, { t: sc.t1 - sc.t0, cx: 4096, cy: 4096, z: .2 }], u);
+    mapBg(cam, .78); plot(cam, D.script || [], 0, 99, 0, { alpha: .6 }); vignette(.8);
+    A(seg(u, 0, .8), () => { x.font = `800 96px ${FH}`; const tw = x.measureText('SaveBench').width; hex(W / 2 - tw / 2 - 10, 352, 64, C.or); tx('SaveBench', W / 2 + 36, 384, `800 96px ${FH}`, C.tx, 'center');
+      sc.lines.forEach((s, i, arr) => A(eo(seg(u, 1 + i * .5, 1.5 + i * .5)), () => wrap(s, W / 2, 490 + i * 56, 1500, 34, `500 29px ${FB}`, i === arr.length - 1 ? C.mu : '#dfe2e8', 'center'))); });
+  }
+  const DRAW = { open, atlas, race, filmpower, scriptmap, tally, end };
+  const cues = []; const q = (t, type, v = 1) => cues.push({ t, type, v });
+  for (const sc of data.scenes) { const o = sc.t0;
+    if (sc.type === 'open') { q(o, 'swell', .9); q(o + .5, 'whoosh', .8); q(o + 1.4, 'chime', .5); q(o + 4.5, 'whoosh', .6); }
+    if (sc.type === 'atlas') { q(o, 'whoosh', .6); for (let i = 0; i < 24; i++) q(o + 2 + i * 8 / 24, 'tick', .35); q(o + 11, 'pop'); }
+    if (sc.type === 'race') { q(o, 'swell', .6); (sc.runs || []).forEach(r => r.buys.forEach(b => q(o + 1.5 + b.t / 150 * 10, 'pop', .9))); q(o + 12, 'zip', .5); q(o + 14, 'click'); }
+    if (sc.type === 'filmpower') { q(o, 'whoosh', .7); if (sc.gauge) { q(o + sc.gauge.t + .6, 'swell', .6); q(o + sc.gauge.t + 2.2, 'thud'); } }
+    if (sc.type === 'scriptmap') { q(o, 'whoosh', .6); (sc.calls || []).forEach(c => q(o + c.t, c.bad ? 'low' : 'pop', .8)); }
+    if (sc.type === 'tally') { q(o, 'swell', .5); sc.ladder.forEach((m, i) => { if (m.script) q(o + .8 + i * .12, 'tick', .5); if (m.ai) q(o + 2.8 + i * .12, 'tick', .6); }); }
+    if (sc.type === 'end') q(o + 1, 'chime', .7);
+  }
+  cues.sort((a, b) => a.t - b.t);
+  return {
+    dur: data.dur, cues, chips: data.scenes.map(s => [s.t0, s.chip]),
+    filmAt(t) { let sc = data.scenes[0]; for (const s of data.scenes) if (t >= s.t0) sc = s; if (!sc.film) return null; return { key: sc.film, local: Math.max(0, t - sc.t0 - (sc.lead || 0)) }; },
+    frame(t) {
+      x.save(); x.clearRect(0, 0, W, H);
+      let sc = data.scenes[0]; for (const s of data.scenes) if (t >= s.t0) sc = s;
+      const u = t - sc.t0; DRAW[sc.type](sc, u);
+      const fin = 1 - seg(u, 0, .5), fout = seg(t, sc.t1 - .35, sc.t1); const f = Math.max(sc === data.scenes[0] ? 0 : fin, sc.type === 'end' ? 0 : fout); if (f > 0) { x.fillStyle = `rgba(0,0,0,${f})`; x.fillRect(0, 0, W, H); }
+      grain(t);
+      x.font = `600 14px ${FM}`; x.fillStyle = 'rgba(169,173,182,.75)'; x.textAlign = 'right'; x.textBaseline = 'alphabetic'; if (data.stampLine) x.fillText(data.stampLine, W - 32, H - 22);
+      x.restore();
+    }
+  };
+};
+
+// =====================================================================================
 // The player: canvas, Play/Pause, Replay, Sound, timeline, scene buttons.
 // =====================================================================================
 const CSS = `
@@ -677,5 +864,5 @@ function mount(el, data, opts) {
   });
   return { ready, render(t) { started = true; T = t; draw(); }, seek, play, pause, get dur() { return eng ? eng.dur : data.dur; }, get cues() { return eng ? eng.cues : []; }, destroy() { dead = true; pause(); Object.values(VIDS).forEach(v => { try { v.pause(); v.removeAttribute('src'); v.load(); } catch (e) {} }); el.innerHTML = ''; } };
 }
-window.SaveBenchWalkthrough = { mount, version: 2 };
+window.SaveBenchWalkthrough = { mount, version: 3 };
 })();
