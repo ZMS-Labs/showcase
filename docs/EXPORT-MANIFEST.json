@@ -170,8 +170,8 @@
     },
     {
       "path": "assets/savebench/case.css",
-      "bytes": 1518,
-      "sha256": "4fb2c41b292b461f94789a575390a2e5e0d5fd3a53e859009a5ccf356ce2f44b"
+      "bytes": 1661,
+      "sha256": "61d5cc9347699e0b588dd689929a66b16015cdf67b3cd1f7bcf9c3534ace3d37"
     },
     {
       "path": "assets/savebench/film/film.js",
@@ -350,8 +350,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/progress.css",
-      "bytes": 2772,
-      "sha256": "2908ab00e24b56d16f8f8f615c1c99b20e62c9d71aceb8a42efc3a46c4feb120"
+      "bytes": 5606,
+      "sha256": "086767ef33aef80a78b80c9513219f5495f1f6142651ed6868aa870eab7dc926"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
@@ -925,8 +925,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 35066,
-      "sha256": "4a81ee653abf3b2a7638646a949ec2f2c64a346a8d377381c5f9268410299bcf"
+      "bytes": 40004,
+      "sha256": "270982c11f21d969aaf91b3056662db4edc9a9534387bde193bfbb309a961147"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -990,8 +990,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20779,
-      "sha256": "76e28d82325369786317e4d57171256bd584d7bd5b90b54f6229d7bc4cc24cac"
+      "bytes": 20179,
+      "sha256": "5b7bfee640a06e1bbe92dbf41e75e9c721f60631ba63f11e95539b7474d2661b"
     },
     {
       "path": "more-work.html",
