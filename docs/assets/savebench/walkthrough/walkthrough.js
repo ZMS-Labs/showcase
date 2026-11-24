@@ -637,7 +637,7 @@ ENG.v3 = function (x, IM, data, ctl) {
   function hex(X, Y, s, col) { x.save(); x.translate(X, Y); x.scale(s / 26, s / 26); x.translate(-13, -15); x.strokeStyle = col; x.lineWidth = 2.6; x.beginPath(); x.moveTo(13, 2); x.lineTo(24, 8); x.lineTo(24, 22); x.lineTo(13, 28); x.lineTo(2, 22); x.lineTo(2, 8); x.closePath(); x.stroke(); x.fillStyle = col; x.beginPath(); x.moveTo(13, 9); x.lineTo(19, 12.5); x.lineTo(19, 17.5); x.lineTo(13, 21); x.lineTo(7, 17.5); x.lineTo(7, 12.5); x.closePath(); x.fill(); x.restore(); }
   function badge(X, Y, letter, col, s = 30) { rr(X, Y, s, s, 7, 'rgba(0,0,0,.35)', col, 2.5); tx(letter, X + s / 2, Y + s / 2 + 1, `800 ${s * .55}px ${FB}`, col, 'center', 'middle'); }
   function pill(s, X, Y, col, al = 'left', fs = 16) { x.font = `700 ${fs}px ${FM}`; const w = x.measureText(s).width + 26, X0 = al === 'right' ? X - w : al === 'center' ? X - w / 2 : X; rr(X0, Y, w, fs + 18, 9, 'rgba(11,12,15,.88)', col, 1.5); tx(s, X0 + 13, Y + fs + 4, `700 ${fs}px ${FM}`, col); return w; }
-  function vignette(s = .6) { const g = x.createRadialGradient(W / 2, H / 2, H * .3, W / 2, H / 2, H * .95); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${s})`); x.fillStyle = g; x.fillRect(0, 0, W, H); }
+  const VG = {}; function vignette(s = .6) { const g = VG[s] || (VG[s] = (() => { const gg = x.createRadialGradient(W / 2, H / 2, H * .3, W / 2, H / 2, H * .95); gg.addColorStop(0, 'rgba(0,0,0,0)'); gg.addColorStop(1, `rgba(0,0,0,${s})`); return gg; })()); x.fillStyle = g; x.fillRect(0, 0, W, H); }
   function grain(t) { x.save(); x.globalAlpha = .035; for (let i = 0; i < 90; i++) { const r = Math.sin(i * 91.7 + Math.floor(t * 24) * 13.1) * 43758.5; const fx = (r - Math.floor(r)) * W, fy = ((r * 7.3) - Math.floor(r * 7.3)) * H; x.fillStyle = i % 2 ? '#fff' : '#000'; x.fillRect(fx, fy, 2, 2); } x.restore(); }
   function bars(k) { if (k <= 0) return; const h = 64 * k; x.fillStyle = '#000'; x.fillRect(0, 0, W, h); x.fillRect(0, H - h, W, h); }
   function headline(eyebrow, head, u, X = 72, Y = 128) { const k = back(seg(u, .15, .8)); A(seg(u, .1, .5), () => { tx(eyebrow, X, Y - 56, `700 17px ${FM}`, C.or); x.save(); x.translate(X, Y); x.scale(1, .9 + .1 * k); tx(head, 0, 0, `800 54px ${FH}`, C.tx); x.restore(); }); }
@@ -645,9 +645,15 @@ ENG.v3 = function (x, IM, data, ctl) {
   const lz = (a, b, k) => Math.exp(lerp(Math.log(a), Math.log(b), k));
   function camAt(keys, u) { if (u <= keys[0].t) return keys[0]; for (let i = 1; i < keys.length; i++) { const a = keys[i - 1], b = keys[i]; if (u <= b.t) { const k = eio(seg(u, a.t, b.t)); return { cx: lerp(a.cx, b.cx, k), cy: lerp(a.cy, b.cy, k), z: lz(a.z, b.z, k) }; } } return keys[keys.length - 1]; }
   function S(cam, p) { return [(p[0] - cam.cx) * cam.z + W / 2, (p[1] - cam.cy) * cam.z + H / 2]; }
+  const MAPS = {};
+  function mapImg(soft) { const key = soft ? 's' : 'h'; if (MAPS[key] !== undefined) return MAPS[key]; const m = IM.world; if (!m) return (MAPS[key] = null);
+    const c = document.createElement('canvas'); c.width = m.width; c.height = m.height; const g = c.getContext('2d'); g.filter = soft ? 'blur(1.2px) saturate(.8)' : 'saturate(.85)'; g.drawImage(m, 0, 0); return (MAPS[key] = c); }
   function mapBg(cam, dark = .45) {
     x.fillStyle = C.bg; x.fillRect(0, 0, W, H);
-    const m = IM.world; if (m) { x.save(); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high'; const [sx, sy] = S(cam, [0, 0]); const sz = 8192 * cam.z; x.filter = cam.z > 1.2 ? `blur(${Math.min(6, (cam.z - 1.2) * 1.4)}px) saturate(.8)` : 'saturate(.85)'; x.drawImage(m, sx, sy, sz, sz); x.restore(); }
+    const m = mapImg(cam.z > 1.2); if (m) { const [sx, sy] = S(cam, [0, 0]), sz = 8192 * cam.z, k = m.width / 8192;
+      // draw only the part of the map that is on screen
+      const vx0 = Math.max(0, -sx / cam.z), vy0 = Math.max(0, -sy / cam.z), vx1 = Math.min(8192, (W - sx) / cam.z), vy1 = Math.min(8192, (H - sy) / cam.z);
+      if (vx1 > vx0 && vy1 > vy0) { x.imageSmoothingEnabled = true; x.imageSmoothingQuality = cam.z > 1.2 ? 'low' : 'high'; x.drawImage(m, vx0 * k, vy0 * k, (vx1 - vx0) * k, (vy1 - vy0) * k, sx + vx0 * cam.z, sy + vy0 * cam.z, (vx1 - vx0) * cam.z, (vy1 - vy0) * cam.z); } }
     x.fillStyle = `rgba(11,12,15,${dark})`; x.fillRect(0, 0, W, H);
     if (cam.z > .9) { // 100 m grid (1 map unit is about 0.92 m)
       const step = 109, a = clamp((cam.z - .9) / 1.2) * .5; x.save(); x.globalAlpha = a; x.strokeStyle = 'rgba(244,241,234,.12)'; x.lineWidth = 1; x.beginPath();
@@ -659,11 +665,14 @@ ENG.v3 = function (x, IM, data, ctl) {
       A(a * 2, () => { const L = 109 * cam.z; x.fillStyle = C.tx; x.fillRect(W - 72 - L, H - 112, L, 3); tx('100 m', W - 72, H - 124, `600 15px ${FM}`, C.mu, 'right'); });
     }
   }
+  const SPR = {};
+  function sprite(k) { if (SPR[k]) return SPR[k]; const c = KC[k] || C.mu, n = 96, q = 24, cv = document.createElement('canvas'); cv.width = cv.height = n; const g = cv.getContext('2d');
+    g.shadowColor = c; g.shadowBlur = 30; g.fillStyle = c; g.beginPath(); g.roundRect(q, q, n - 2 * q, n - 2 * q, (n - 2 * q) * .22); g.fill(); g.shadowBlur = 0; g.fill(); return (SPR[k] = cv); }
   function glyph(k, X, Y, s, a = 1, icons = false) {
-    const c = KC[k] || C.mu; if (k === 'P') { x.globalAlpha = a * .7; x.fillStyle = c; x.fillRect(X - s / 2, Y - s / 2, s, s); x.globalAlpha = 1; return; }
-    x.save(); x.globalAlpha *= a; x.shadowColor = c; x.shadowBlur = s * 1.6; rr(X - s / 2, Y - s / 2, s, s, s * .22, c); x.shadowBlur = 0;
-    if (icons && ICO[k] && IM[ICO[k]] && s >= 26) { rr(X - s / 2, Y - s / 2, s, s, s * .22, 'rgba(11,12,15,.92)', c, 2); x.drawImage(IM[ICO[k]], X - s * .4, Y - s * .4, s * .8, s * .8); }
-    x.restore();
+    if (k === 'P') { const ga = x.globalAlpha; x.globalAlpha = ga * a * .7; x.fillStyle = KC.P; x.fillRect(X - s / 2, Y - s / 2, s, s); x.globalAlpha = ga; return; }
+    const ga = x.globalAlpha; x.globalAlpha = ga * a; x.drawImage(sprite(k), X - s, Y - s, s * 2, s * 2);
+    if (icons && ICO[k] && IM[ICO[k]] && s >= 26) { const c = KC[k] || C.mu; rr(X - s / 2, Y - s / 2, s, s, s * .22, 'rgba(11,12,15,.92)', c, 2); x.drawImage(IM[ICO[k]], X - s * .4, Y - s * .4, s * .8, s * .8); }
+    x.globalAlpha = ga;
   }
   function plot(cam, pts, u0, u, dur, opts = {}) { // buildings appear in record order
     const n = pts.length, sc = opts.scale || clamp(cam.z / 1.6, .55, 3.2);
@@ -780,6 +789,7 @@ ENG.v3 = function (x, IM, data, ctl) {
       sc.lines.forEach((s, i, arr) => A(eo(seg(u, 1 + i * .5, 1.5 + i * .5)), () => wrap(s, W / 2, 490 + i * 56, 1500, 34, `500 29px ${FB}`, i === arr.length - 1 ? C.mu : '#dfe2e8', 'center'))); });
   }
   const DRAW = { open, atlas, race, filmpower, scriptmap, tally, end };
+  mapImg(true); mapImg(false); Object.keys(KC).forEach(sprite); // build caches once, before Play
   const cues = []; const q = (t, type, v = 1) => cues.push({ t, type, v });
   for (const sc of data.scenes) { const o = sc.t0;
     if (sc.type === 'open') { q(o, 'swell', .9); q(o + .5, 'whoosh', .8); q(o + 1.4, 'chime', .5); q(o + 4.5, 'whoosh', .6); }
