@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 78524,
-      "sha256": "98b850ff68b71f3bd2473486e09568e4d350a561f7e27b9a83ff70d56b8ff093"
+      "bytes": 82157,
+      "sha256": "3213d50141540b6650e4ea52b11137631d435d99a8bf3ea583392a28d9ee9557"
     },
     {
       "path": "assets/og/og-default.png",
@@ -335,13 +335,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 188421,
-      "sha256": "7a911b3f8fd96a9b9390dbf2d5b88d014ba420f1cab83a59f89ad1dff001ad2f"
+      "bytes": 132061,
+      "sha256": "d9c2d6010b923ef86e9948b11b4a731f3e91d4c5a984a42c8b34898b61b9ab81"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 129935,
-      "sha256": "ab445766494cfde4ffca11cfb1f6ff2a022f1acd7bb2582eeabedab674e52de2"
+      "bytes": 171772,
+      "sha256": "7326138d9f7c5aca8b2e8cdc4a4aa40e4243b15b7ac84ac24a614ad69831fb85"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -350,8 +350,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/progress.css",
-      "bytes": 2292,
-      "sha256": "92cfa3ecc8d618e5bb3955691f301c312106507f1dcce47adb7e85b7f05984a0"
+      "bytes": 2772,
+      "sha256": "2908ab00e24b56d16f8f8f615c1c99b20e62c9d71aceb8a42efc3a46c4feb120"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
@@ -804,9 +804,39 @@
       "sha256": "6d419d88b4d14c8c8e647877990e9e25968837df964255dac24e6b2a9f04eedc"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/film/coal-generators.mp4",
+      "bytes": 1265371,
+      "sha256": "1fa120af94976e826b8a77d7f338eb4c38aef144358e0f506f95c4cfb33e5512"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/ConstructorMk1.png",
+      "bytes": 29778,
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/ConveyorAttachmentSplitter.png",
+      "bytes": 33135,
+      "sha256": "c744194a9337f02037eabde3c84d5b3655f67234e4463e37c27047d0e40268ad"
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-24/img/MinerMk1.png",
       "bytes": 23957,
       "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/film-coal-generators.jpg",
+      "bytes": 82908,
+      "sha256": "97d7489c06b6e751a11246d5979649bd087815c82afaad3bfbeebba04fc73c37"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-24/img/world.jpg",
@@ -815,13 +845,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-24/transcript.txt",
-      "bytes": 1397,
-      "sha256": "90edf3578768d2275b819be8951a88c4cbf8db8b30ddfdb2b0b0955aa980ea58"
+      "bytes": 1652,
+      "sha256": "2008e66a7b407ce0374b7272daab87758f5ccd8d10f5ec4d3b9c9ab1578dcc9f"
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
-      "bytes": 73116,
-      "sha256": "6838c43c41582ccf903bb63f11f1dbdd288ed770fdaad3d9b3396251d09cbad1"
+      "bytes": 96033,
+      "sha256": "f137b1f948b71bfaa51d1f3adf4050fdced11bd65d5f023994e98d20a4a9f22c"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
@@ -885,8 +915,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 286500,
-      "sha256": "79d3dab3d8a4957640d656e497c555bf140e3cbed1a7330ef03950c38b9101b0"
+      "bytes": 286983,
+      "sha256": "9075ebad6989f5c1539ae1ec1100b98abbb31d1913812425d3637fc390bff82b"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -895,8 +925,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 34194,
-      "sha256": "39c171c7a900411b48678aacd9a81da660e15e6fab583fbd2693af797e3451ba"
+      "bytes": 35066,
+      "sha256": "4a81ee653abf3b2a7638646a949ec2f2c64a346a8d377381c5f9268410299bcf"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -960,8 +990,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 21029,
-      "sha256": "f627077a8216b89835aa67cdf0351b35f93e917dfb3b7214ee81ee22cc5ca88b"
+      "bytes": 20779,
+      "sha256": "76e28d82325369786317e4d57171256bd584d7bd5b90b54f6229d7bc4cc24cac"
     },
     {
       "path": "more-work.html",
