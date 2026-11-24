@@ -20,3 +20,6 @@
 .sbr-older .sbr-card h3{font-size:19px}
 .sbr-older .sbr-result,.sbr-older .sbr-film figcaption{font-size:14px}
 .sbr-older .sbr-card:first-child{border-top:1px solid var(--ink);padding-top:16px}
+.sbr-about{margin-top:6px}
+.sbr-about>summary{cursor:pointer;font-size:13.5px;color:var(--muted);min-height:28px}
+.sbr-about p{margin:6px 0 0}
