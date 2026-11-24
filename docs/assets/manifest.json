@@ -576,13 +576,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "sha256": "243c82286a325fa73c4f6f4cfb93eebd03d2bd560aeeca5a5438fa0edf9f0e51",
-      "bytes": 207629,
+      "sha256": "7a911b3f8fd96a9b9390dbf2d5b88d014ba420f1cab83a59f89ad1dff001ad2f",
+      "bytes": 188421,
       "dimensions": [
         1920,
         1080
       ],
-      "kind": "One frame of the SaveBench walkthrough animation (a card: a steel line, built on the fourth try), rendered from the version of 2026-11-23. It includes imagery from the game Satisfactory, which belongs to its owners.",
+      "kind": "One frame of the SaveBench walkthrough animation (a card: three marathons, three milestones each), rendered from the version of 2026-11-24. It includes imagery from the game Satisfactory, which belongs to its owners.",
       "claim_boundary": "A drawn summary of dated results; the results themselves are in the run records, not in this picture."
     },
     {
@@ -1466,6 +1466,28 @@
       ],
       "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-23. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/MinerMk1.png",
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42",
+      "bytes": 23957,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-24. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/world.jpg",
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
+      "bytes": 575534,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-24. It illustrates the project; it is not a measurement record."
     }
   ]
 }
