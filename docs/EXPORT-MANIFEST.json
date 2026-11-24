@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 77372,
-      "sha256": "f8f3bcd96b4dde6d0247bbd7e1dc3b2271b61dd00a6d3e22a33e8ae57c20434e"
+      "bytes": 78524,
+      "sha256": "98b850ff68b71f3bd2473486e09568e4d350a561f7e27b9a83ff70d56b8ff093"
     },
     {
       "path": "assets/og/og-default.png",
@@ -155,8 +155,8 @@
     },
     {
       "path": "assets/oni-bench/viewer-progress-curve.png",
-      "bytes": 169850,
-      "sha256": "7303530f9c6f86bbcabbc9c0a4503c6edc82b3904440ff0d0fd7e940dee53827"
+      "bytes": 189937,
+      "sha256": "d65a00c1b162187bf916e05dcf11775485c942b3b43dbd183f647a81bba05397"
     },
     {
       "path": "assets/oni-bench/viewer-replay.png",
@@ -165,8 +165,8 @@
     },
     {
       "path": "assets/oni-bench/viewer-scoreboard.png",
-      "bytes": 185015,
-      "sha256": "1badbf7f5d499c02d3ddc3ae43173f8134700b590955681781e376e6c7fa1a9f"
+      "bytes": 210087,
+      "sha256": "1b1eea0c082986de00a87aaf89930cc047f00696281597e3b99109d49b314c8d"
     },
     {
       "path": "assets/savebench/case.css",
@@ -335,13 +335,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 207629,
-      "sha256": "243c82286a325fa73c4f6f4cfb93eebd03d2bd560aeeca5a5438fa0edf9f0e51"
+      "bytes": 188421,
+      "sha256": "7a911b3f8fd96a9b9390dbf2d5b88d014ba420f1cab83a59f89ad1dff001ad2f"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 124584,
-      "sha256": "706fa1717d7156d801fca6349fdbe6c6495b6bde5b38284318d4fd0d3584d8e5"
+      "bytes": 129935,
+      "sha256": "ab445766494cfde4ffca11cfb1f6ff2a022f1acd7bb2582eeabedab674e52de2"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -804,6 +804,21 @@
       "sha256": "6d419d88b4d14c8c8e647877990e9e25968837df964255dac24e6b2a9f04eedc"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/MinerMk1.png",
+      "bytes": 23957,
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/img/world.jpg",
+      "bytes": 575534,
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-24/transcript.txt",
+      "bytes": 1397,
+      "sha256": "90edf3578768d2275b819be8951a88c4cbf8db8b30ddfdb2b0b0955aa980ea58"
+    },
+    {
       "path": "assets/savebench/walkthrough/walkthrough.js",
       "bytes": 73116,
       "sha256": "6838c43c41582ccf903bb63f11f1dbdd288ed770fdaad3d9b3396251d09cbad1"
@@ -860,8 +875,8 @@
     },
     {
       "path": "case-studies/oni-bench/index.html",
-      "bytes": 15372,
-      "sha256": "6e3333bcec523058f0546f6a843df2856599f330d9e777262750217f68c730a5"
+      "bytes": 15293,
+      "sha256": "622b36280cd4fec3556da105b25185dff81ee9c83026cd18bff5cdc81d845dd8"
     },
     {
       "path": "case-studies/oni-bench/project-record.json",
@@ -870,8 +885,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 280193,
-      "sha256": "aea0bb25c88387beb1cfb0f1a4a313d6d7de069bac6168c0ca7e989d741fc635"
+      "bytes": 286500,
+      "sha256": "79d3dab3d8a4957640d656e497c555bf140e3cbed1a7330ef03950c38b9101b0"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -880,8 +895,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 33939,
-      "sha256": "65d588ac54173923e61b90f6e525b5d2bff56b7589eaf2e4c6cb1a1c535fc02c"
+      "bytes": 34194,
+      "sha256": "39c171c7a900411b48678aacd9a81da660e15e6fab583fbd2693af797e3451ba"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -945,8 +960,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 21162,
-      "sha256": "bd6580572a705bb35a6eee6e825df0f7d97d32b34614afc5f589eb0770bf81d4"
+      "bytes": 21029,
+      "sha256": "f627077a8216b89835aa67cdf0351b35f93e917dfb3b7214ee81ee22cc5ca88b"
     },
     {
       "path": "more-work.html",
