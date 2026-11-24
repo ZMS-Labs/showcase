@@ -121,7 +121,7 @@
     {
       "path": "assets/manifest.json",
       "bytes": 82157,
-      "sha256": "3213d50141540b6650e4ea52b11137631d435d99a8bf3ea583392a28d9ee9557"
+      "sha256": "8731959eae120d2fd0af42aaa8560997e83fd82c48c03a86c511edfcf3698c96"
     },
     {
       "path": "assets/og/og-default.png",
@@ -335,8 +335,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 132061,
-      "sha256": "d9c2d6010b923ef86e9948b11b4a731f3e91d4c5a984a42c8b34898b61b9ab81"
+      "bytes": 111653,
+      "sha256": "f0d47e8da14196c6325dd6ac8b4e3ee764976b53dcef80ec4ccd1c2f42b6490d"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
@@ -850,8 +850,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
-      "bytes": 96033,
-      "sha256": "f137b1f948b71bfaa51d1f3adf4050fdced11bd65d5f023994e98d20a4a9f22c"
+      "bytes": 97307,
+      "sha256": "71eca18cb95919967b6432c0bc68da7020604d3f7c06ce311629bfbb669e0417"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
