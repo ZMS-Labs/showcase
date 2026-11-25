@@ -1607,9 +1607,20 @@
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-belted-pipe.jpg",
+      "sha256": "88b9016f4b98ddcbf925041000ac8ea3c96550ec96575d2b70064b908eebc5c9",
+      "bytes": 164851,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-marathons.jpg",
-      "sha256": "c480730d6ac3c4b8d89b0a0afc3eaa4fe6ad73bd8b4420e9e5b9559e83605ef5",
-      "bytes": 176223,
+      "sha256": "ff1ec8db7de4af309ea604a0bfb411b9ddff6df73ca90ad646448f051c11cfdf",
+      "bytes": 203975,
       "dimensions": [
         1280,
         720
@@ -1630,9 +1641,16 @@
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-11-25/film/marathon-ends.mp4",
-      "sha256": "16f724d095fc118ac39cee0c9a286f65a9470fe597dbd20affdb159a77f2c17f",
-      "bytes": 6378890,
-      "kind": "Film clip from the game Satisfactory (film clip): camera films of the end state of three November 24 Marathon runs (Claude Opus 5.5 on server c, GPT-6.2 Astra on e, GPT-6.2 Sol on e), filmed from each run's final save; four cuts, 19 s. Satisfactory and its artwork belong to their owners.",
+      "sha256": "5467ed2f478665bce90bc8d12cb5b569532451758511c0dfbb63c9c287f1db83",
+      "bytes": 7544542,
+      "kind": "Film clip from the game Satisfactory (film clip): camera films of the end state of five Marathon runs (Gemini 4 Neon and Gemini 4 Argon, Nov 24 evening; Claude Opus 5.5, GPT-6.2 Astra and GPT-6.2 Sol, Nov 24 afternoon), filmed from each run's final save; five cuts, 24 s. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/film/script-belted-pipe.mp4",
+      "sha256": "0cce00c05d4342d49377343f3e0d627d944fb7bff8bfd3a8b573caf73bd1cdd9",
+      "bytes": 4228072,
+      "kind": "Film clip from the game Satisfactory (film clip): camera film of the script's world saved right after phase two's Automated Wiring was earned from belted pipe (run of Nov 25, 12:07 AM CST), filmed Nov 25; three cuts, 18 s. Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
     }
   ]
