@@ -794,18 +794,18 @@ ENG.v3 = function (x, IM, data, ctl) {
   }
   function pairs(sc, u) {
     bgPanel3(); headline(sc.eyebrow, sc.head, u);
-    const rows = sc.rows || [], X0 = 480, XW = 1000, Y0 = 236, RH = Math.min(96, 640 / Math.max(1, rows.length)), TMAX = 150, tp = lerp(0, TMAX + 8, eo(seg(u, 1.6, 10.5)));
+    const rows = sc.rows || [], X0 = 480, XW = 1000, Y0 = 226, RH = Math.min(96, 660 / Math.max(1, rows.length)), TMAX = 150, tp = lerp(0, TMAX + 8, eo(seg(u, 1.6, 10.5)));
     A(seg(u, .8, 1.4), () => { x.strokeStyle = C.ln; x.lineWidth = 1; for (let t = 0; t <= TMAX; t += 25) { const X = X0 + t / TMAX * XW; x.beginPath(); x.moveTo(X, Y0 - 14); x.lineTo(X, Y0 + rows.length * RH); x.stroke(); tx(String(t), X, Y0 + rows.length * RH + 28, `600 15px ${FM}`, C.mu, 'center'); }
       tx('TURN', X0 + XW, Y0 + rows.length * RH + 56, `700 14px ${FM}`, C.mu, 'right'); tx('BOUGHT', X0 + XW + 30, Y0 - 24, `700 13px ${FM}`, C.mu);
       const PX = X0 + Math.min(tp, TMAX) / TMAX * XW; x.strokeStyle = 'rgba(250,140,60,.55)'; x.setLineDash([4, 6]); x.beginPath(); x.moveTo(PX, Y0 - 14); x.lineTo(PX, Y0 + rows.length * RH); x.stroke(); x.setLineDash([]); if (tp < TMAX - .5) tx('turn ' + Math.round(tp), PX, Y0 - 24, `700 15px ${FM}`, C.or, 'center'); });
     rows.forEach((r, i) => { const Y = Y0 + i * RH, col = C[r.col] || C.or, kr = seg(u, .7 + i * .1, 1.2 + i * .1);
-      A(kr, () => { if (i % 2 === 0) rr(48, Y - 4, X0 + XW + 340 - 48, RH - 4, 10, 'rgba(255,255,255,.025)'); x.fillStyle = col; x.fillRect(60, Y + 10, 5, RH - 30); tx(r.name, 82, Y + RH / 2 - 4, `800 25px ${FH}`, C.tx); tx(r.runs.length === 2 ? 'TWO MARATHONS' : 'ONE MARATHON', 82, Y + RH / 2 + 22, `600 13px ${FM}`, C.mu); });
+      A(kr, () => { if (i % 2 === 0) rr(48, Y - 4, X0 + XW + 340 - 48, RH - 4, 10, 'rgba(255,255,255,.025)'); x.fillStyle = col; x.fillRect(60, Y + 10, 5, RH - 30); tx(r.name, 82, Y + RH / 2 - 4, `800 25px ${FH}`, C.tx); tx(['ONE MARATHON', 'TWO MARATHONS', 'THREE MARATHONS', 'FOUR MARATHONS'][r.runs.length - 1] || (r.runs.length + ' MARATHONS'), 82, Y + RH / 2 + 22, `600 13px ${FM}`, C.mu); });
       const n = r.runs.length;
-      r.runs.forEach((run, j) => { const yy = n === 1 ? Y + RH / 2 - 2 : Y + RH * (j ? .66 : .26);
+      r.runs.forEach((run, j) => { const yy = n === 1 ? Y + RH / 2 - 2 : Y + 4 + (RH - 12) * (j + .5) / n;
         A(kr * (run.nr ? .5 : 1), () => { x.strokeStyle = '#23272f'; x.lineWidth = 2; x.beginPath(); x.moveTo(X0, yy); x.lineTo(X0 + XW, yy); x.stroke();
           const e = Math.min(run.end, tp); x.save(); x.strokeStyle = col; x.lineWidth = 4; x.lineCap = 'round'; if (run.nr) x.setLineDash([7, 7]); x.beginPath(); x.moveTo(X0, yy); x.lineTo(X0 + e / TMAX * XW, yy); x.stroke(); x.restore();
-          let px = -99; run.buys.forEach(([t, m]) => { if (tp < t) return; const k = back(seg(tp, t, t + 5)); const X = X0 + t / TMAX * XW, LX = Math.max(X, px + 50); px = LX; x.save(); x.translate(LX, yy); x.scale(k, k); rr(-23, -12, 46, 24, 12, col); tx(m, 0, 5, `800 13px ${FM}`, '#0b0c0f', 'center'); x.restore(); });
-          if (tp >= run.end) { const ke = seg(tp, run.end, run.end + 6); A(ke, () => { const EX = X0 + run.end / TMAX * XW; x.fillStyle = col; x.fillRect(EX - 1.5, yy - 9, 3, 18); tx(String(run.buys.length), X0 + XW + 44, yy + 8, `800 24px ${FH}`, run.nr ? C.mu : col, 'center'); if (run.nr) tx('no result', EX + 12, yy - 12, `600 13px ${FM}`, C.mu); }); } });
+          let px = -99; run.buys.forEach(([t, m]) => { if (tp < t) return; const k = back(seg(tp, t, t + 5)); const X = X0 + t / TMAX * XW, LX = Math.max(X, px + 50); px = LX; x.save(); x.translate(LX, yy); x.scale(k, k); const ph = n > 2 ? 19 : 24; rr(-22, -ph / 2, 44, ph, ph / 2, col); tx(m, 0, 4.5, `800 ${n > 2 ? 12 : 13}px ${FM}`, '#0b0c0f', 'center'); x.restore(); });
+          if (tp >= run.end) { const ke = seg(tp, run.end, run.end + 6); A(ke, () => { const EX = X0 + run.end / TMAX * XW; x.fillStyle = col; x.fillRect(EX - 1.5, yy - 9, 3, 18); tx(String(run.buys.length), X0 + XW + 44, yy + 8, `800 ${n > 2 ? 20 : 24}px ${FH}`, run.nr ? C.mu : col, 'center'); if (run.nr) tx('no result', EX + 12, yy - 12, `600 13px ${FM}`, C.mu); }); } });
       });
       const kt = back(seg(u, 11 + i * .15, 11.5 + i * .15)); if (kt > 0) { x.save(); x.translate(X0 + XW + 96, Y + RH / 2 - 30); x.scale(kt, kt); pill(r.tag, 0, 0, r.tag === 'TIED' ? C.ok : C.un, 'left', 15); x.restore(); if (r.why) A(kt, () => tx(r.why, X0 + XW + 96, Y + RH / 2 + 26, `500 15px ${FB}`, C.mu)); }
     });
