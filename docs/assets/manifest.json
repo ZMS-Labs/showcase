@@ -1607,6 +1607,17 @@
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-marathons.jpg",
+      "sha256": "c480730d6ac3c4b8d89b0a0afc3eaa4fe6ad73bd8b4420e9e5b9559e83605ef5",
+      "bytes": 176223,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
       "path": "assets/savebench/walkthrough/versions/2026-11-25/img/world.jpg",
       "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
       "bytes": 575534,
@@ -1615,6 +1626,13 @@
         2048
       ],
       "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/film/marathon-ends.mp4",
+      "sha256": "16f724d095fc118ac39cee0c9a286f65a9470fe597dbd20affdb159a77f2c17f",
+      "bytes": 6378890,
+      "kind": "Film clip from the game Satisfactory (film clip): camera films of the end state of three November 24 Marathon runs (Claude Opus 5.5 on server c, GPT-6.2 Astra on e, GPT-6.2 Sol on e), filmed from each run's final save; four cuts, 19 s. Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
     }
   ]
