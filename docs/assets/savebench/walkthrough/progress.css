@@ -52,6 +52,12 @@
 .sbg-track{margin-bottom:22px}
 .sbg-race small{display:none}
 @media (max-width:560px){.sbg-race li{grid-template-columns:minmax(0,1fr)}.sbg-race small{grid-column:1;display:block}.sbg-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.sbg-stats b{font-size:36px}.sbg-stats span{font-size:13px}}
+.sbg-tracks{display:grid;gap:2px}
+.sbg-tag{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.04em;vertical-align:2px;border:1px solid var(--rule);color:var(--muted)}
+.sbg-tag-tied{border-color:var(--ink);color:var(--ink)}
+.sbg-race .sbg-why{display:block;grid-column:auto;font-weight:400;font-size:12.5px;color:var(--muted)}
+.sbg-race.sbg-pairs li>small,.sbg-race.sbg-pairs li>small{display:none}
+.sbg-track.is-nr .sbg-run{background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 10px)}
 .sbp-more{margin-top:32px;border-top:1px solid var(--rule);padding-top:12px}
 .sbp-more>summary{cursor:pointer;font-weight:600;min-height:32px}
 .sbp-more .sbp-now{margin-top:16px}

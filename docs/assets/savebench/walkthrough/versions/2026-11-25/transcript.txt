@@ -1,0 +1,9 @@
+[0:00] SaveBench, November 25. What is new since the November 24 version.
+
+[0:06] The script's world from above, from its run records. On November 24 the script built a copper line: a Miner on the copper node, two Smelters, Wire and Cable Constructors and a Stator Assembler, feeding an Automated Wiring Assembler on the coal grid. On November 25 a belt route with six relay containers carried Steel Pipe from the steel line to it, with no hand carrying. From that belted pipe the line made and paid all 100 Automated Wiring that Space Elevator phase two needs. Phase two still needs 1,000 Versatile Framework and 1,000 Smart Plating.
+
+[0:26] Second AI Marathons, each in its own blank world. Claude Fable 5.2 bought three milestones in both runs. GPT-6.2 Astra bought three in both. GPT-6.2 Sol bought three in both, one run ending on 2-5 and the other on 1-3. GPT-6.1 Terra bought three and then two. Claude Opus 5.5 bought three, but its first run counts as no result, so it has one counted run. Gemini 4 Hydrogen and Gemini 4 Argon each bought three in their first Marathon. The ranges overlap, so no model ranks above another, and no AI Marathon has bought a fourth milestone yet.
+
+[0:46] Where the ladder stands: the script holds ten milestones and phase one, and has paid all of phase two's Automated Wiring. AI models hold six different milestones; GPT-6.2 Sol is the fourth model to earn 2-5. No winner is declared.
+
+[0:53] Maps and charts are drawn from run records. There is no new film in this version.

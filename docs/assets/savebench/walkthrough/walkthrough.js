@@ -763,14 +763,53 @@ ENG.v3 = function (x, IM, data, ctl) {
     const F = sc.focus || [cx, cy, zf]; const cam = camAt([{ t: 0, cx, cy: cy + 40, z: zf * .8 }, { t: 2.4, cx, cy, z: zf }, { t: 4.2, cx: F[0], cy: F[1], z: F[2] }, { t: L, cx: F[0] + 12, cy: F[1] - 6, z: F[2] * 1.06 }], u);
     mapBg(cam, .62);
     plot(cam, pts, .6, u, 1.6, { scale: clamp(cam.z / 1.1, 1.3, 4.2), icons: true });
+    if (sc.route && D[sc.route]) { // a belt route: drawn on, then items flow along it
+      const rp = D[sc.route].map(p => S(cam, p)), segL = []; let tot = 0; for (let i = 1; i < rp.length; i++) { const l = Math.hypot(rp[i][0] - rp[i - 1][0], rp[i][1] - rp[i - 1][1]); segL.push(l); tot += l; }
+      const at = d => { for (let i = 0; i < segL.length; i++) { if (d <= segL[i]) { const f = d / segL[i]; return [rp[i][0] + (rp[i + 1][0] - rp[i][0]) * f, rp[i][1] + (rp[i + 1][1] - rp[i][1]) * f]; } d -= segL[i]; } return rp[rp.length - 1]; };
+      const k = eo(seg(u, sc.routeAt, sc.routeAt + 2.2));
+      if (k > 0) { x.save(); x.lineCap = 'round'; x.lineJoin = 'round'; x.strokeStyle = 'rgba(250,140,60,.28)'; x.lineWidth = 16; const path = () => { x.beginPath(); x.moveTo(rp[0][0], rp[0][1]); let d = 0; for (let i = 1; i < rp.length; i++) { if (d + segL[i - 1] <= tot * k) { x.lineTo(rp[i][0], rp[i][1]); d += segL[i - 1]; } else { const e = at(tot * k); x.lineTo(e[0], e[1]); break; } } };
+        path(); x.stroke(); x.strokeStyle = C.or; x.lineWidth = 5; path(); x.stroke(); x.restore();
+        if (k >= 1) { const sp = 42, off = ((u - sc.routeAt - 2.2) * 90) % sp; x.fillStyle = '#fff3e6'; for (let d = off; d < tot; d += sp) { const q2 = at(d); x.beginPath(); x.arc(q2[0], q2[1], 4.5, 0, 7); x.fill(); } } }
+      if (sc.relaysKey) plot(cam, D[sc.relaysKey] || [], sc.routeAt + .2, u, 1.8, { scale: clamp(cam.z / 1.1, 1.3, 4.2), icons: true });
+    }
+    if (sc.newKey && D[sc.newKey]) { const np = D[sc.newKey], t0 = sc.newAt || 4, dd = sc.newDur || 2;
+      np.forEach((p, i) => { const ti = t0 + (np.length > 1 ? i / (np.length - 1) : 0) * dd; if (u < ti) return; const kk = seg(u, ti, ti + .7); if (kk >= 1) return; const q2 = S(cam, [p[1], p[2]]); A((1 - kk) * .85, () => { x.strokeStyle = '#ffffff'; x.lineWidth = 2; x.beginPath(); x.arc(q2[0], q2[1], 8 + 46 * kk, 0, 7); x.stroke(); }); });
+      plot(cam, np, t0, u, dd, { scale: clamp(cam.z / 1.1, 1.3, 4.2), icons: true }); }
     (sc.calls || []).forEach(c => { if (u < c.t) return; const p = S(cam, c.at), k = back(seg(u, c.t, c.t + .5)), col = c.bad ? C.bad : C[c.col] || C.or;
       x.save(); x.strokeStyle = col; x.lineWidth = 2.5; const r = (c.r || 34) * (.6 + .4 * k) + (c.bad ? 6 * Math.sin(u * 6) : 0); x.beginPath(); x.arc(p[0], p[1], r, 0, 7); x.stroke();
       if (c.bad) { x.beginPath(); x.moveTo(p[0] - 14, p[1] - 14); x.lineTo(p[0] + 14, p[1] + 14); x.moveTo(p[0] + 14, p[1] - 14); x.lineTo(p[0] - 14, p[1] + 14); x.stroke(); }
       const lx = p[0] + (c.dx || 50), ly = p[1] + (c.dy || -50); x.beginPath(); x.moveTo(p[0] + r * .7 * Math.sign(c.dx || 1), p[1] + r * .7 * Math.sign(c.dy || -1)); x.lineTo(lx, ly); x.stroke(); x.restore();
       x.save(); x.translate(lx, ly); x.scale(k, k); const w = Math.max(...[c.h, c.s || ''].map(s => { x.font = `800 24px ${FH}`; return x.measureText(s).width; })) + 36; const X0 = (c.dx || 50) < 0 ? -w : 0; rr(X0, -30, w, c.s ? 74 : 46, 12, 'rgba(13,15,19,.94)', col, 1.5); tx(c.h, X0 + 18, 2, `800 24px ${FH}`, C.tx); if (c.s) tx(c.s, X0 + 18, 32, `600 16px ${FB}`, C.mu); x.restore(); });
     vignette(.5); headline(sc.eyebrow, sc.head, u);
-    legend(W - 372, 168, ['M', 'S', 'C', 'A', 'F', 'K', 'W', 'B'], seg(u, 1.5, 2));
+    legend(W - 372, 168, ['M', 'S', 'C', 'A', 'F', 'K', 'W', 'B'], seg(u, 1.5, 2) * (sc.meter ? 1 - seg(u, sc.meter.t - .6, sc.meter.t) : 1));
+    if (sc.meter) { const m = sc.meter, PW = 600, PX = W - PW - 72, PY = 168, PH = 90 + m.rows.length * 112; const km = back(seg(u, m.t, m.t + .6));
+      if (km > 0) { x.save(); x.globalAlpha *= seg(u, m.t, m.t + .3); x.translate(PX + PW, PY); x.scale(.92 + .08 * km, .92 + .08 * km); x.translate(-PW, 0);
+        rr(0, 0, PW, PH, 18, 'rgba(13,15,19,.94)', C.or, 1.5); tx(m.label, 28, 46, `700 16px ${FM}`, C.or);
+        m.rows.forEach((r, i) => { const Y = 90 + i * 112, kv = r.hot ? eo(seg(u, m.t + .8, m.t + 3.6)) : 1, v = Math.round(lerp(r.from || 0, r.v, kv)), done = v >= r.of;
+          tx(r.n, 28, Y + 14, `800 26px ${FH}`, r.hot ? C.tx : '#c9ccd3'); tx(v.toLocaleString('en-US') + ' / ' + r.of.toLocaleString('en-US'), PW - 28, Y + 14, `800 26px ${FH}`, done ? C.ok : C.mu, 'right');
+          rr(28, Y + 32, PW - 56, 14, 7, '#262a33'); if (v > 0) { x.save(); if (done) { x.shadowColor = C.ok; x.shadowBlur = 16; } rr(28, Y + 32, (PW - 56) * v / r.of, 14, 7, done ? C.ok : C.or); x.restore(); }
+          tx(r.s, 28, Y + 74, `500 17px ${FB}`, C.mu); if (done && r.hot) A(seg(u, m.t + 3.6, m.t + 4), () => pill('PAID', PW - 28, Y + 54, C.ok, 'right', 14)); });
+        x.restore(); } }
     caption(sc.note, u, 1.2);
+  }
+  function pairs(sc, u) {
+    bgPanel3(); headline(sc.eyebrow, sc.head, u);
+    const rows = sc.rows || [], X0 = 480, XW = 1000, Y0 = 236, RH = Math.min(96, 640 / Math.max(1, rows.length)), TMAX = 150, tp = lerp(0, TMAX + 8, eo(seg(u, 1.6, 10.5)));
+    A(seg(u, .8, 1.4), () => { x.strokeStyle = C.ln; x.lineWidth = 1; for (let t = 0; t <= TMAX; t += 25) { const X = X0 + t / TMAX * XW; x.beginPath(); x.moveTo(X, Y0 - 14); x.lineTo(X, Y0 + rows.length * RH); x.stroke(); tx(String(t), X, Y0 + rows.length * RH + 28, `600 15px ${FM}`, C.mu, 'center'); }
+      tx('TURN', X0 + XW, Y0 + rows.length * RH + 56, `700 14px ${FM}`, C.mu, 'right'); tx('BOUGHT', X0 + XW + 30, Y0 - 24, `700 13px ${FM}`, C.mu);
+      const PX = X0 + Math.min(tp, TMAX) / TMAX * XW; x.strokeStyle = 'rgba(250,140,60,.55)'; x.setLineDash([4, 6]); x.beginPath(); x.moveTo(PX, Y0 - 14); x.lineTo(PX, Y0 + rows.length * RH); x.stroke(); x.setLineDash([]); if (tp < TMAX - .5) tx('turn ' + Math.round(tp), PX, Y0 - 24, `700 15px ${FM}`, C.or, 'center'); });
+    rows.forEach((r, i) => { const Y = Y0 + i * RH, col = C[r.col] || C.or, kr = seg(u, .7 + i * .1, 1.2 + i * .1);
+      A(kr, () => { if (i % 2 === 0) rr(48, Y - 4, X0 + XW + 340 - 48, RH - 4, 10, 'rgba(255,255,255,.025)'); x.fillStyle = col; x.fillRect(60, Y + 10, 5, RH - 30); tx(r.name, 82, Y + RH / 2 - 4, `800 25px ${FH}`, C.tx); tx(r.runs.length === 2 ? 'TWO MARATHONS' : 'ONE MARATHON', 82, Y + RH / 2 + 22, `600 13px ${FM}`, C.mu); });
+      const n = r.runs.length;
+      r.runs.forEach((run, j) => { const yy = n === 1 ? Y + RH / 2 - 2 : Y + RH * (j ? .66 : .26);
+        A(kr * (run.nr ? .5 : 1), () => { x.strokeStyle = '#23272f'; x.lineWidth = 2; x.beginPath(); x.moveTo(X0, yy); x.lineTo(X0 + XW, yy); x.stroke();
+          const e = Math.min(run.end, tp); x.save(); x.strokeStyle = col; x.lineWidth = 4; x.lineCap = 'round'; if (run.nr) x.setLineDash([7, 7]); x.beginPath(); x.moveTo(X0, yy); x.lineTo(X0 + e / TMAX * XW, yy); x.stroke(); x.restore();
+          let px = -99; run.buys.forEach(([t, m]) => { if (tp < t) return; const k = back(seg(tp, t, t + 5)); const X = X0 + t / TMAX * XW, LX = Math.max(X, px + 50); px = LX; x.save(); x.translate(LX, yy); x.scale(k, k); rr(-23, -12, 46, 24, 12, col); tx(m, 0, 5, `800 13px ${FM}`, '#0b0c0f', 'center'); x.restore(); });
+          if (tp >= run.end) { const ke = seg(tp, run.end, run.end + 6); A(ke, () => { const EX = X0 + run.end / TMAX * XW; x.fillStyle = col; x.fillRect(EX - 1.5, yy - 9, 3, 18); tx(String(run.buys.length), X0 + XW + 44, yy + 8, `800 24px ${FH}`, run.nr ? C.mu : col, 'center'); if (run.nr) tx('no result', EX + 12, yy - 12, `600 13px ${FM}`, C.mu); }); } });
+      });
+      const kt = back(seg(u, 11 + i * .15, 11.5 + i * .15)); if (kt > 0) { x.save(); x.translate(X0 + XW + 96, Y + RH / 2 - 30); x.scale(kt, kt); pill(r.tag, 0, 0, r.tag === 'TIED' ? C.ok : C.un, 'left', 15); x.restore(); if (r.why) A(kt, () => tx(r.why, X0 + XW + 96, Y + RH / 2 + 26, `500 15px ${FB}`, C.mu)); }
+    });
+    A(seg(u, 13, 13.6), () => { pill(sc.verdict, 72, H - 176, C.un, 'left', 18); wrap(sc.note, 72, H - 104, 1600, 30, `500 22px ${FB}`, '#dfe2e8'); });
   }
   function tally(sc, u) {
     bgPanel3(); headline(sc.eyebrow, sc.head, u);
@@ -788,7 +827,7 @@ ENG.v3 = function (x, IM, data, ctl) {
     A(seg(u, 0, .8), () => { x.font = `800 96px ${FH}`; const tw = x.measureText('SaveBench').width; hex(W / 2 - tw / 2 - 10, 352, 64, C.or); tx('SaveBench', W / 2 + 36, 384, `800 96px ${FH}`, C.tx, 'center');
       sc.lines.forEach((s, i, arr) => A(eo(seg(u, 1 + i * .5, 1.5 + i * .5)), () => wrap(s, W / 2, 490 + i * 56, 1500, 34, `500 29px ${FB}`, i === arr.length - 1 ? C.mu : '#dfe2e8', 'center'))); });
   }
-  const DRAW = { open, atlas, race, filmpower, scriptmap, tally, end };
+  const DRAW = { open, atlas, race, filmpower, scriptmap, pairs, tally, end };
   mapImg(true); mapImg(false); Object.keys(KC).forEach(sprite); // build caches once, before Play
   const cues = []; const q = (t, type, v = 1) => cues.push({ t, type, v });
   for (const sc of data.scenes) { const o = sc.t0;
@@ -797,6 +836,9 @@ ENG.v3 = function (x, IM, data, ctl) {
     if (sc.type === 'race') { q(o, 'swell', .6); (sc.runs || []).forEach(r => r.buys.forEach(b => q(o + 1.5 + b.t / 150 * 10, 'pop', .9))); q(o + 12, 'zip', .5); q(o + 14, 'click'); }
     if (sc.type === 'filmpower') { q(o, 'whoosh', .7); if (sc.gauge) { q(o + sc.gauge.t + .6, 'swell', .6); q(o + sc.gauge.t + 2.2, 'thud'); } }
     if (sc.type === 'scriptmap') { q(o, 'whoosh', .6); (sc.calls || []).forEach(c => q(o + c.t, c.bad ? 'low' : 'pop', .8)); }
+    if (sc.type === 'scriptmap' && sc.route) { q(o + sc.routeAt, 'zip', .6); }
+    if (sc.type === 'scriptmap' && sc.meter) { q(o + sc.meter.t, 'swell', .5); q(o + sc.meter.t + 3.6, 'chime', .6); }
+    if (sc.type === 'pairs') { q(o, 'swell', .6); (sc.rows || []).forEach(r => r.runs.forEach(run => run.buys.forEach(b => q(o + 1.6 + b[0] / 150 * 8.9, 'tick', .45)))); (sc.rows || []).forEach((r, i) => q(o + 11 + i * .15, 'click', .5)); q(o + 13, 'thud', .6); }
     if (sc.type === 'tally') { q(o, 'swell', .5); sc.ladder.forEach((m, i) => { if (m.script) q(o + .8 + i * .12, 'tick', .5); if (m.ai) q(o + 2.8 + i * .12, 'tick', .6); }); }
     if (sc.type === 'end') q(o + 1, 'chime', .7);
   }
