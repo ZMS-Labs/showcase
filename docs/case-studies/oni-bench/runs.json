@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-26T03:00:00Z",
+ "as_of": "2026-11-26T13:47:00Z",
  "colonies": [
   {
    "cycle_at_end": 1,
@@ -171,6 +171,33 @@
    ],
    "started": "2026-11-24T21:45:01+00:00",
    "turns": 20
+  },
+  {
+   "cycle_at_end": 10,
+   "deaths": 3,
+   "duplicants_at_end": 0,
+   "ended": "2026-11-26T04:27:09+00:00",
+   "game_time_s": 5529.32,
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 5
+    }
+   },
+   "harness_revs": [
+    8
+   ],
+   "id": "opus-long-1",
+   "kind": "campaign",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "outcome": "earned",
+   "sittings": [
+    "20261126T021619Z",
+    "20261126T041304Z"
+   ],
+   "started": "2026-11-26T02:11:01+00:00",
+   "turns": 78
   }
  ],
  "edition": "oni",
@@ -180,10 +207,7 @@
   "no_evidence": 2,
   "setup_jobs": 9
  },
- "live": {
-  "job": "20261126T021003Z-campaign-opus-long-8e05ea",
-  "job_name": "campaign-opus-long"
- },
+ "live": null,
  "schema": "savebench-run-record/0",
  "sittings": [
   {
@@ -3316,9 +3340,913 @@
    ],
    "turns_done": 20,
    "turns_recorded": 20
+  },
+  {
+   "beds": 3,
+   "colony": "opus-long-1",
+   "cycle_at_end": 9,
+   "deaths": 1,
+   "duplicants": [
+    {
+     "calories_kcal": 3144.6,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0.01
+    },
+    {
+     "calories_kcal": 3165.92,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0
+    }
+   ],
+   "ended": "2026-11-26T04:13:04+00:00",
+   "food_kcal": 14707.4,
+   "game_time_s": 5206.59,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 5
+    }
+   },
+   "harness_rev": 8,
+   "id": "20261126T021619Z",
+   "job": "20261126T021003Z-campaign-opus-long-8e05ea",
+   "ledger_head": "2bef1fa99ddc6da7899f3662f05dd7cb8ab3b3b115349a5c74eee5f1a9315f1b",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": false,
+   "orders_applied": 154,
+   "orders_refused": 15,
+   "proof_copy": "NOT_RUN",
+   "proof_files": null,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "976fb43c21d02cf577e46364b5364c772441acf1899001c068f594aa22482473",
+    "report": "results/jobs/20261126T021003Z-campaign-opus-long-8e05ea.json",
+    "report_sha256": "4f5e4fefa14e64b33263d77f3fa4d532a90091e0d17a4331aac7313bc692a5db"
+   },
+   "started": "2026-11-26T02:11:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 120,
+     "applied": 6,
+     "note": "Dupes are now down in the cave, and the cuprite at x108-111 y181 is dug, so metal should be on the floor. I place the Research Station and Manual Generator near the dupes in the cave. I also dig the cuprite and sandstone in reach: more meta",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 120,
+     "applied": 7,
+     "note": "The Research Station and Manual Generator have no wire. I run wire from the Research Station cells (115,182-183) across y183 to the generator (119-120,y183). I also place an Outhouse and 3 cots in the cave (G1), and dig nearby algae and dir",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "Late in cycle 1 and the dupes are asleep. The research station has no power because nobody runs the manual generator yet; that should start once they wake. I queue reachable algae and dirt digs near the beds for the oxygen machine and farmi",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 300,
+     "applied": 4,
+     "note": "Cycle 2 has started and the dupes are asleep. The Research Station and the Manual Generator are wired; they need dupes awake to run them. The outhouse and third bed are planned and in reach. I raise them to priority 9 so they get built firs",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The power look shows the Manual Generator on circuit 12 and the Research Station on circuit 14, so the wire is broken. The map shows no building at x117-118 y183; that is the skipped cell. I re-run the wire from the station to the generator",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 9
+    },
+    {
+     "advance_s": 240,
+     "applied": 3,
+     "note": "The wire layer shows built wire at x115-120 y183 plus x115 y182, so the station and generator should join once the network updates. The extra wire planned at y182 runs through solid rock and is not needed, so I cancel it. The generator show",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "The power look shows the Manual Generator (circuit 12) and the Research Station (circuit 14) are still separate networks. The map shows no wire at x117-118 y183, so the earlier run left that gap. I place wire on those two cells one at a tim",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "Must be built in unoccupied space",
+      "Must be built in unoccupied space"
+     ],
+     "refused": 2,
+     "turn": 11
+    },
+    {
+     "advance_s": 120,
+     "applied": 6,
+     "note": "The wire runs x115-120 y183, but the Research Station and the Manual Generator still sit on separate circuits. The station's power port is likely its left-offset cell (114,182), not its origin. So I run wire at x114 y182-183 to tie the port",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was a refusal",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Rowan is incapacitated with breath 0 at (137,177), inside the water pool (x131-144 y176-181). He likely fell in through the y182-184 digs. I have no tool to drain or rescue him fast. Catalina and Steve are idle. I mark reachable algae and d",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Rowan is drowning in the pool and I cannot reach him. The power look still shows the Research Station and Manual Generator on separate circuits, even though wire covers x114-120 y183. Likely cause: wires placed in separate drags do not join",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "Rowan is drowning at 137,177 and I cannot reach him. Research has no power because the generator was taken down. I rebuild a Manual Generator right beside the Research Station (115-116, y182-183), at 117,183. Then I lay wire over every cell",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [
+      "Must be built on solid ground"
+     ],
+     "refused": 1,
+     "turn": 16
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The ManualGenerator at 117,183 was refused for lack of solid ground. Steve stands at 118,183, and the cells under it (118-119 y182) are algae, so they are solid. I place the generator there. The wire already planned at x116-118 y183/184 sho",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 17
+    },
+    {
+     "advance_s": 240,
+     "applied": 3,
+     "note": "The Research Station was deconstructed on turn 15, so research cannot run. The Manual Generator is planned at 118-119 y183-184. I place a new ResearchCenter right beside it at 120,183 (cells 120-121 y183-184, floor y182 is algae/dirt). I wi",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 18
+    },
+    {
+     "advance_s": 300,
+     "applied": 2,
+     "note": "Cycle 3 has just started and both dupes are asleep. The Manual Generator (118,183) and Research Station (120,183) are planned with wire over both footprints, and all of it is in reach. The outhouse floor tiles at 123-125 y183 are also plann",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Steve's area (y183-184, x118-129: generator, research, outhouse) and Catalina's area (bed floor y185-186, x130-142, ladder x133 up to the pod) are cut off from each other, so Catalina cannot reach the toilet. I place a ladder at x129 from y",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 20
+    },
+    {
+     "advance_s": 60,
+     "applied": 1,
+     "note": "The power look shows the Manual Generator (circuit 18) and the Research Station (circuit 20) on separate circuits, so there is a wire gap between x118 and x121. I re-place wire across both rows of the two footprints (x118-121, y183 and y184",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "Must be built in unoccupied space",
+      "Must be built in unoccupied space"
+     ],
+     "refused": 2,
+     "turn": 21
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "The wires layer shows wire on every cell x116-121 y183-184, yet the generator (118,183) and Research Station (120,183) are on separate circuits. The wire was placed in several separate orders, so the cells likely never joined, most likely b",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 22
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Research Station and wires were deconstructed; Manual Generator still at 118,183. Rebuild ResearchCenter at 120,183 and lay ONE continuous wire line x118-121 y183 so generator and station share a circuit. Then research can resume.",
+     "note_cut": false,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 23
+    },
+    {
+     "advance_s": 240,
+     "applied": 1,
+     "note": "Cycle 4 has started and both dupes are asleep. The Research Station is replanned at 120,183, with one wire line from the generator at 118,183, and all of it is in reach. I advance so it gets built, then check the power look to see whether t",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 24
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The Research Station at 120,183 is built but has no power, because the Manual Generator was deconstructed on turn 22. I replace the generator at 118,183 (cells 118-119 y183-184, on algae at y182). Then I lay wire x118-119 y183 to join the s",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 25
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "The power look shows the generator (circuit 9) and the Research Station (circuit 11) still on separate circuits. Wire is built only at 118-119 y183. I lay one line from x117 to x122 on both rows y183 and y184 so the station's port is covere",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 26
+    },
+    {
+     "advance_s": 60,
+     "applied": 1,
+     "note": "The generator (118,183) and the Research Station (120,183) are still on separate circuits. The wires were built in several orders, and the skipped cells never joined them. Fix: deconstruct everything in x117-122 y183-184 (both buildings and",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 27
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "Generator at 118,183 survived. Rebuild ResearchCenter at 120,183 and wire 119-120 y183 to join the built wire at 118,183. The floor under the pod room (y189 x124-132) was dug out: HQ and RationBox show Missing Tile and food is unreachable. ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 28
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The Manual Generator at 118,183 was taken down by the turn 27 deconstruct, and so was the wire at 118,183. Wire at 119-120 y183 is built, and the Research Station at 120,183 is planned and in reach. I re-place the generator at 118,183 with ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 29
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "Generator (118,183) and Research Station (120,183) are still on separate circuits. The station's power port is likely its right cell (121,183), where no wire may be built. I add wire at 121,183 and a parallel run on y184 from x118 to x121 t",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 30
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was a refusal",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 31
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "The generator (118,183) and Research Station (120,183) are still on separate circuits. The wires were laid in separate drags, and drags that were not one line do not join. Two rows (y183 and y184) built by different drags are the likely cau",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 32
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Power area x117-122 y183-184 is clear again after the deconstruct. Following the note: one wire line x117-122 on y183 first, then the Manual Generator at 118,183 and the Research Station at 120,183 on top of it, all at priority 9. Dupes are",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 33
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "Generator (118,183) and Research Station (120,183) are still on separate circuits, even after one wire drag on y183. The ports may be on the upper row y184. I lay one continuous wire drag x117-122 on y184 at priority 9. If both ports are on",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 34
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was a refusal",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 35
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "Generator (118,183) and Research Station (120,183) are on separate circuits although both wire rows y183 and y184 are built. Likely the generator's port is on one row and the station's on the other, and the rows never join. I drag vertical ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [
+      "Must be built in unoccupied space",
+      "Must be built in unoccupied space"
+     ],
+     "refused": 2,
+     "turn": 36
+    },
+    {
+     "advance_s": 60,
+     "applied": 1,
+     "note": "Every cell x117-122 on y183 and y184 has a built wire, yet the generator (circuit 25) and the station (circuit 17) are still apart. So wire laid before the buildings does not link them. New plan: clear the area completely. Then place the Ma",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 37
+    },
+    {
+     "advance_s": 180,
+     "applied": 3,
+     "note": "Power area x117-122 y183-184 is cleared (only wire 117,183 and 116,182 remain). The buildable look says both ports are at the origin cell (dx0,dy0): generator port 118,183, station port 120,183. I place the ManualGenerator at 118,183 and th",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 38
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "Generator (118,183), Research Station (120,183) and wire x118-121 y183 all finished this advance. The power look still shows two circuits (9 and 11). The game may not have rebuilt its network yet, since the buildings were only just complete",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 39
+    },
+    {
+     "advance_s": 60,
+     "applied": 1,
+     "note": "Generator (118,183) and station (120,183) are built with wire x118-121 y183 under them, but the power look still shows two circuits. The wire was planned together with the buildings, so the order 'buildings built first, then one wire drag' ",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 40
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The power area x118-121 y183-184 is clear after the turn 40 deconstruct. Following my notes: place only the Manual Generator at 118,183 and the Research Station at 120,183 now, priority 9. When both are built, I lay one wire drag x118-121 y",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 41
+    },
+    {
+     "advance_s": 120,
+     "applied": 0,
+     "note": "Generator (118,183) and Research Station (120,183) are planned again on cleared ground and are in reach. I let the dupes build both. Next stop: one wire drag x118-121 y183. Then I check the station's own panel, not only the power look, to s",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 42
+    },
+    {
+     "advance_s": 120,
+     "applied": 1,
+     "note": "Generator (118,183) and Research Station (120,183) are both built on cleared ground, with no wire under them. As my notes planned, I now lay one wire drag x118-121 y183 at priority 9 so the two share one circuit. Next stop I check the power",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 43
+    },
+    {
+     "advance_s": 120,
+     "applied": 0,
+     "note": "The single wire drag x118-121 y183 is planned in reach, laid after the generator and station were built. I let the dupes build it, then check the power look to see if the two share a circuit. Food is 10.4k kcal for 2 dupes, about 5 cycles, ",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 44
+    },
+    {
+     "advance_s": 60,
+     "applied": 1,
+     "note": "Wire x118-121 y183 laid after both buildings still leaves the generator (circuit 9) and station (circuit 8) apart, so wire cells from this tool may not join. I remove the wire and next stop try one reversed drag 121->118. If that fails, I s",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 45
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Last deconstruct removed the gen, station and wires; Missing Research Station alert. Replacing gen 118,183 + station 120,183 + wire x118-121 y183 in one go at p9. Next stop I read the station's building panel for its power status instead of",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 46
+    },
+    {
+     "advance_s": 60,
+     "applied": 1,
+     "note": "Pod offer: three dupes and 5 Nutrient Bars (4000 kcal). Food is the bottleneck: 10.4k kcal for 2 dupes, and there is no farm or research yet. A third mouth now would cut the food runway to about 3.5 cycles. I take the food package to buy ti",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 47
+    },
+    {
+     "advance_s": 90,
+     "applied": 0,
+     "note": "The generator (circuit 9) and the station (circuit 8) are still on separate circuits. The turn-46 wire line x118-121 y183 does not appear among my open orders, so it may never have been built. I place it again at p9. If the game refuses it ",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 48
+    },
+    {
+     "advance_s": 300,
+     "applied": 2,
+     "note": "The station panel says No Power and holds no dirt. Research consumes dirt. The manual generator only runs when a dupe is working at the station, so likely nothing is wrong with the wires; the station just has no dirt and no work. Only 2 dir",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 49
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "The generator (circuit 9) and the station (circuit 8) are still apart and the station says No Power. Earlier wire drags on y183 were refused as occupied, so I cannot tell whether that wire exists, is only planned, or is broken. I try a seco",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 50
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "The generator (circuit 25) and the station (circuit 24) are still apart. I cannot tell if wire exists on y183 under them, where the ports are. I re-place wire x118-121 y183: a refusal for occupied space likely means it is there, and accepta",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 51
+    },
+    {
+     "advance_s": 180,
+     "applied": 2,
+     "note": "Wires exist at x117-122 y183-184, so the station and generator are connected. The station's real problem is an empty dirt store: research uses dirt, and the station holds none. A dupe only cranks the generator when a consumer asks for power",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 52
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was a refusal",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 53
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was a refusal",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 54
+    },
+    {
+     "advance_s": 300,
+     "applied": 3,
+     "note": "Research is stalled because the station has no dirt, and no dirt is in reach. Reach shows dupes standing at y182 x112-117 and at y181 x108-111. I dig the algae at x112-116 y181 to make a 1-deep step. That brings the dirt at x114-116 y180 in",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 55
+    },
+    {
+     "advance_s": 180,
+     "applied": 2,
+     "note": "The station shows Missing Tile because I dug 121,182 under it, so it needs a floor again. I tile x120-122 y182 at p9. Dirt is in reach at x108-114 y179, so I dig it at p9 so the station can get dirt. After that, research FarmingTech should ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 56
+    },
+    {
+     "advance_s": 180,
+     "applied": 4,
+     "note": "Dirt at x108-114 y179 is dug but the station holds none and the dupes sit idle. I sweep the dug area at p9 so the loose dirt gets moved and dig more reachable dirt at x107-112 y178. A storage locker near the station gives the swept dirt som",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 57
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "Both dupes are at 53-60% breath. The air in the base is thin and mostly CO2, so oxygen comes before research. MineralDeoxidizer is buildable now. I place one at 122,183 on the existing wire x117-122 y183-184 so it shares the manual generato",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 58
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Steve is suffocating. The base air is mostly CO2. There is a sealed oxygen pocket at x138-143 y189, but the y190 digs toward it are out of reach because x134-135 y189 has no floor next to the x133 ladder. Tiling x134-135 y189 lets dupes wal",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 59
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Steve is suffocating at 45% breath; the base air is mostly CO2. The fix in progress is to tile x134-135 y189, so dupes can reach and open the sealed oxygen pocket at x138-143 y189-190, and to finish the MineralDeoxidizer. I raise those erra",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 60
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Both dupes are suffocating at 40-45% breath; the air is mostly CO2. The fix is the planned MineralDeoxidizer at 122,183. I put it at priority 9 and dig the one cuprite cell in reach for its metal. I also dig algae next to it for fuel. Short",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 61
+    },
+    {
+     "advance_s": 90,
+     "applied": 6,
+     "note": "Both dupes are at 42-45% breath in mostly-CO2 air. The fix is to get the planned MineralDeoxidizer at 122,183 built. It needs metal ore, and the marked cuprite cell at 146,186 is in reach. I set that dig and the deoxidizer to priority 9 and",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 62
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Both dupes are suffocating; Catalina is at 27% breath. Oxygen sits at x135-143 y188-189, right next to the pod room, which now has a floor at x134-135 y189. Digging 136-138 y190 opens the room to that pocket, so oxygen rises in and the CO2 ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "already marked"
+     ],
+     "refused": 1,
+     "turn": 63
+    }
+   ],
+   "turns_done": 63,
+   "turns_recorded": 59
+  },
+  {
+   "beds": 3,
+   "colony": "opus-long-1",
+   "cycle_at_end": 10,
+   "deaths": 3,
+   "duplicants": [],
+   "ended": "2026-11-26T04:27:09+00:00",
+   "food_kcal": 14301.6,
+   "game_time_s": 5529.32,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 5
+    }
+   },
+   "harness_rev": 8,
+   "id": "20261126T041304Z",
+   "job": "20261126T021003Z-campaign-opus-long-8e05ea",
+   "ledger_head": "5c694471c629d845bcb385f7bb44efd8f15db26cf6535b9ecad7613c909e568f",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": false,
+   "orders_applied": 19,
+   "orders_refused": 0,
+   "proof_copy": "PASS",
+   "proof_files": 20,
+   "research_done": 0,
+   "sitting": 2,
+   "source": {
+    "out_log_sha256": "976fb43c21d02cf577e46364b5364c772441acf1899001c068f594aa22482473",
+    "report": "results/jobs/20261126T021003Z-campaign-opus-long-8e05ea.json",
+    "report_sha256": "4f5e4fefa14e64b33263d77f3fa4d532a90091e0d17a4331aac7313bc692a5db"
+   },
+   "started": "2026-11-26T04:13:04+00:00",
+   "stop": "colony_lost",
+   "stop_words": "Every colonist died, so the colony is over",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "Both dupes are low on breath in mostly-CO2 air. The fixes in progress: dig x136-138 y190 to open the pod room to the oxygen pocket at x136-143 y189. Dig the cuprite cell at 146,186, which Steve stands next to, to get metal for the planned M",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 1
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "Both dupes are short of breath in air that is mostly CO2. Catalina is at 25%. Small oxygen pockets sit at the top of the pod room and just above it (x131-132 y193, x131 y194). I place a ladder at x131 y190-193 at priority 9 so a dupe can cl",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Both dupes are suffocating in CO2 air. Breathable oxygen collects above the pod room at y194-195 (x123-126, x128-129, x131). I dig the sandstone at x127 and x130 y194 to join those pockets, and I raise the planned ladder at x131 to priority",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 600,
+     "applied": 4,
+     "note": "Both dupes are suffocating in CO2 air. Steve is carrying supplies, likely the dug cuprite from 146,186, to the planned MineralDeoxidizer at 122,183. Catalina is digging toward the O2 pocket at x136-143 y189. The deoxidizer also needs algae,",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 168.9,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 167.22,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 164.22,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 150.9,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 50.76,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 42.9,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 30,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 30,
+     "applied": 4,
+     "note": "Both dupes are asleep in CO2 air: Catalina is at 6% breath and Steve at 0%. Asleep, they cannot go and recover breath. I set schedule 0 to all-work hours to wake them, so they can move to the small oxygen pockets (x123-131 y194-195 above th",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 180,
+     "applied": 3,
+     "note": "Steve is incapacitated with no breath and Catalina is at 0.9% breath. The air everywhere is CO2. The only oxygen is a few scattered cells, too little to save them. A Printing Pod offer comes in about 185 s. I put the schedule back to a norm",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 190,
+     "applied": 0,
+     "note": "Both dupes are incapacitated with no breath in air that is almost all CO2. No order can reach them in time: they cannot act, and nothing is close enough to make oxygen. I am recording the lesson and advancing to the Printing Pod offer (~184",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 75,
+     "applied": 0,
+     "note": "Catalina, the last duplicant, is incapacitated with no breath and will die. No order can save her. The Printing Pod makes its next offer in about 69 s. A newly printed duplicant is the only way the colony continues. I advance to that offer ",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    }
+   ],
+   "turns_done": 15,
+   "turns_recorded": 15
   }
  ],
- "source_commit": "c7a0898946684112527cc990d88be3a22d359109",
+ "source_commit": "4348770cf90cb1fddc813f8945d0cd45c142b626",
  "source_ref": "ZMS-Labs/oni-bench@oni-relay",
- "status_sha256": "2a6425346537ee29391787fa20f2ee78c7bfba8df59f141b75a45cacb04beed5"
+ "status_sha256": "30dff613e4493e61094da26ec07ee1c18493f6841dc480209cd38b77b4bf67a1"
 }
