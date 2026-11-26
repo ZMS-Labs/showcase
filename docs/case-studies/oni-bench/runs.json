@@ -1,0 +1,3324 @@
+{
+ "as_of": "2026-11-26T03:00:00Z",
+ "colonies": [
+  {
+   "cycle_at_end": 1,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-21T22:29:08+00:00",
+   "game_time_s": 79.75,
+   "goals_passed": {},
+   "harness_revs": [],
+   "id": "rehearsal-20261121T222755Z",
+   "kind": "rehearsal",
+   "model": "claude-fable-5-2",
+   "model_name": "Claude Fable 5.2",
+   "outcome": "no_result",
+   "sittings": [
+    "20261121T222755Z"
+   ],
+   "started": "2026-11-21T22:26:01+00:00",
+   "turns": 0
+  },
+  {
+   "cycle_at_end": 1,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-21T22:59:08+00:00",
+   "game_time_s": 79.75,
+   "goals_passed": {},
+   "harness_revs": [],
+   "id": "rehearsal-20261121T225155Z",
+   "kind": "rehearsal",
+   "model": "claude-fable-5-2",
+   "model_name": "Claude Fable 5.2",
+   "outcome": "no_result",
+   "sittings": [
+    "20261121T225155Z"
+   ],
+   "started": "2026-11-21T22:41:01+00:00",
+   "turns": 0
+  },
+  {
+   "cycle_at_end": 2,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-21T23:59:11+00:00",
+   "game_time_s": 840.06,
+   "goals_passed": {},
+   "harness_revs": [],
+   "id": "rehearsal-20261121T232854Z",
+   "kind": "rehearsal",
+   "model": "claude-fable-5-2",
+   "model_name": "Claude Fable 5.2",
+   "outcome": "not_reached",
+   "sittings": [
+    "20261121T232854Z"
+   ],
+   "started": "2026-11-21T23:27:01+00:00",
+   "turns": 10
+  },
+  {
+   "cycle_at_end": 3,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-22T00:41:04+00:00",
+   "game_time_s": 1500.03,
+   "goals_passed": {},
+   "harness_revs": [],
+   "id": "rehearsal-20261122T000523Z",
+   "kind": "rehearsal",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "outcome": "no_result",
+   "sittings": [
+    "20261122T000523Z"
+   ],
+   "started": "2026-11-22T00:01:01+00:00",
+   "turns": 0
+  },
+  {
+   "cycle_at_end": 6,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-22T03:08:04+00:00",
+   "game_time_s": 3150.01,
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    }
+   },
+   "harness_revs": [],
+   "id": "rehearsal-20261122T014755Z",
+   "kind": "rehearsal",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "outcome": "earned",
+   "sittings": [
+    "20261122T014755Z"
+   ],
+   "started": "2026-11-22T01:46:01+00:00",
+   "turns": 26
+  },
+  {
+   "cycle_at_end": 9,
+   "deaths": 0,
+   "duplicants_at_end": 4,
+   "ended": "2026-11-22T09:24:07+00:00",
+   "game_time_s": 5150.37,
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 7
+    }
+   },
+   "harness_revs": [],
+   "id": "attempt-1",
+   "kind": "campaign",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "outcome": "earned",
+   "sittings": [
+    "20261122T065855Z"
+   ],
+   "started": "2026-11-22T06:57:01+00:00",
+   "turns": 65
+  },
+  {
+   "cycle_at_end": 11,
+   "deaths": 1,
+   "duplicants_at_end": 4,
+   "ended": "2026-11-24T20:11:07+00:00",
+   "game_time_s": 6000.1,
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    }
+   },
+   "harness_revs": [],
+   "id": "attempt-2",
+   "kind": "campaign",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "outcome": "earned",
+   "sittings": [
+    "20261124T041655Z",
+    "20261124T143854Z",
+    "20261124T193720Z"
+   ],
+   "started": "2026-11-24T04:15:01+00:00",
+   "turns": 75
+  },
+  {
+   "cycle_at_end": 4,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-24T22:22:03+00:00",
+   "game_time_s": 1800.03,
+   "goals_passed": {},
+   "harness_revs": [
+    4
+   ],
+   "id": "gpt-astra-1",
+   "kind": "campaign",
+   "model": "gpt-6.2-astra",
+   "model_name": "GPT-6.2 Astra",
+   "outcome": "not_reached",
+   "sittings": [
+    "20261124T214714Z"
+   ],
+   "started": "2026-11-24T21:45:01+00:00",
+   "turns": 20
+  }
+ ],
+ "edition": "oni",
+ "ladder": "oni-g21",
+ "left_out": {
+  "check_jobs": 9,
+  "no_evidence": 2,
+  "setup_jobs": 9
+ },
+ "live": {
+  "job": "20261126T021003Z-campaign-opus-long-8e05ea",
+  "job_name": "campaign-opus-long"
+ },
+ "schema": "savebench-run-record/0",
+ "sittings": [
+  {
+   "beds": 0,
+   "colony": "rehearsal-20261121T222755Z",
+   "cycle_at_end": 1,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 3500.35,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 3.05
+    },
+    {
+     "calories_kcal": 3500.35,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 3.21
+    },
+    {
+     "calories_kcal": 3500.35,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 3.02
+    }
+   ],
+   "ended": "2026-11-21T22:29:08+00:00",
+   "food_kcal": 16000,
+   "game_time_s": 79.75,
+   "goals": {
+    "G1": "NOT_RUN",
+    "G10": "NOT_RUN",
+    "G11": "NOT_RUN",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_RUN",
+    "G14": "NOT_RUN",
+    "G15": "NOT_RUN",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_RUN",
+    "G4": "NOT_RUN",
+    "G5": "NOT_RUN",
+    "G6": "NOT_RUN",
+    "G7": "NOT_RUN",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_RUN"
+   },
+   "goals_passed": {},
+   "harness_rev": null,
+   "id": "20261121T222755Z",
+   "job": "20261121T222541Z-rehearse-fable-addff6",
+   "ledger_head": "71a4129dd5b678aa367e87e1d469cc56b97cf4242a24bd868fb4aba10a45b054",
+   "model": "claude-fable-5-2",
+   "model_name": "Claude Fable 5.2",
+   "no_result": true,
+   "orders_applied": 0,
+   "orders_refused": 0,
+   "proof_copy": "PASS",
+   "proof_files": 11,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "781bd6f8c7be014833577237fda23214a1992b665a7b6c28584c80bc405a4f9d",
+    "report": "results/jobs/20261121T222541Z-rehearse-fable-addff6.json",
+    "report_sha256": "238d542ab879e5ad1c1c5abf451e79c181c8c280562e960cf5561c564215aefa"
+   },
+   "started": "2026-11-21T22:26:01+00:00",
+   "stop": "harness_fault",
+   "stop_words": "The test's own request to the AI was malformed, so no move was played",
+   "toilets": 0,
+   "turns": [],
+   "turns_done": 0,
+   "turns_recorded": 0
+  },
+  {
+   "beds": 0,
+   "colony": "rehearsal-20261121T225155Z",
+   "cycle_at_end": 1,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 3500.35,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 3.05
+    },
+    {
+     "calories_kcal": 3500.35,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 3.21
+    },
+    {
+     "calories_kcal": 3500.35,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 3.02
+    }
+   ],
+   "ended": "2026-11-21T22:59:08+00:00",
+   "food_kcal": 16000,
+   "game_time_s": 79.75,
+   "goals": {
+    "G1": "NOT_RUN",
+    "G10": "NOT_RUN",
+    "G11": "NOT_RUN",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_RUN",
+    "G14": "NOT_RUN",
+    "G15": "NOT_RUN",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_RUN",
+    "G4": "NOT_RUN",
+    "G5": "NOT_RUN",
+    "G6": "NOT_RUN",
+    "G7": "NOT_RUN",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_RUN"
+   },
+   "goals_passed": {},
+   "harness_rev": null,
+   "id": "20261121T225155Z",
+   "job": "20261121T224016Z-rehearse-fable-18c4d5",
+   "ledger_head": "b77257a17914966b344b8fa86aeecbb8fb946636fe9ac589f7365706a0bf5c37",
+   "model": "claude-fable-5-2",
+   "model_name": "Claude Fable 5.2",
+   "no_result": true,
+   "orders_applied": 0,
+   "orders_refused": 0,
+   "proof_copy": "PASS",
+   "proof_files": 11,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "21e1730b09580f7c8ee57af6659d6fa3fb3727322f6a86ac5ba36b10c7fc1562",
+    "report": "results/jobs/20261121T224016Z-rehearse-fable-18c4d5.json",
+    "report_sha256": "c0f7485d7438b5bb840a14ea9debd5f631cf43047c73261fc1ecfc6cc46d987c"
+   },
+   "started": "2026-11-21T22:41:01+00:00",
+   "stop": "harness_fault",
+   "stop_words": "The test's own request to the AI was malformed, so no move was played",
+   "toilets": 0,
+   "turns": [],
+   "turns_done": 0,
+   "turns_recorded": 0
+  },
+  {
+   "beds": 3,
+   "colony": "rehearsal-20261121T232854Z",
+   "cycle_at_end": 2,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 3392.53,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3417.53,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3392.53,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0
+    }
+   ],
+   "ended": "2026-11-21T23:59:11+00:00",
+   "food_kcal": 14898.5,
+   "game_time_s": 840.06,
+   "goals": {
+    "G1": "NOT_REACHED",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {},
+   "harness_rev": null,
+   "id": "20261121T232854Z",
+   "job": "20261121T232654Z-rehearse-fable-2e9d5c",
+   "ledger_head": "b618d3d643b40307d59671b7db4a372d9256454d2f7e5418fb2fdbca810d3647",
+   "model": "claude-fable-5-2",
+   "model_name": "Claude Fable 5.2",
+   "no_result": false,
+   "orders_applied": 33,
+   "orders_refused": 5,
+   "proof_copy": "PASS",
+   "proof_files": 14,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "0b6b097f3e1c67e07d165d00cd5644455cfc3c3c63ee43dfa639eeb9b2760365",
+    "report": "results/jobs/20261121T232654Z-rehearse-fable-2e9d5c.json",
+    "report_sha256": "715adc459be8c9f8e61bcd91a661d7fe1c49e6960be21a9ae233bbf5b02cd456"
+   },
+   "started": "2026-11-21T23:27:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 100,
+     "applied": 4,
+     "note": "Game start: 3 dupes in a small pocket. Goal G1/G2 first: dig a left room for beds and research, a right room plus an upper corridor through the cuprite cluster at x139-143,y194-196 for metal, and place an outhouse and beds. Queue Basic Farm",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one"
+     ],
+     "refused": 4,
+     "turn": 1
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "Digging is under way in the left room, right room and the cuprite corridor, but the first building orders were refused because no raw mineral was in stock yet. Working toward G1 (toilet and beds). Sandstone should now be dropping from the d",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 75,
+     "applied": 5,
+     "note": "Outhouse and first bed are built; the cuprite corridor at y194-196 is mostly dug. Working toward G1 (2 more beds) and G2 (research station + manual generator + wire in the upper corridor). I expect beds to be built this advance, and the gen",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 90,
+     "applied": 6,
+     "note": "Beds (3) and the outhouse are built, so G1 only needs to hold. The generator and research station are still planned in the upper corridor; G2 depends on them. Next I want the G4 clock started and access to the cavern below. I am adding a wa",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 120,
+     "applied": 1,
+     "note": "Generator and research station are built; battery, deoxidizer, wash basin and the shaft ladders are still planned. Working toward G2 (first research) and G4 (oxygen building running). I raise priority on the research/power corridor so the d",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [
+      "not solid"
+     ],
+     "refused": 1,
+     "turn": 5
+    },
+    {
+     "advance_s": 90,
+     "applied": 5,
+     "note": "All three dupes are idle and an alert says a building lacks resources: the research station has no dirt and the deoxidizer has no algae, because nothing dug so far yielded either. Working toward G2 and G4. I dig the dirt beside the upper co",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 75,
+     "applied": 3,
+     "note": "The buildings look shows the research station and deoxidizer are built and wired but not operational: they are waiting on dirt and algae. The dirt at x134-135,y195-196 is now dug, so research (G2) should start once a dupe delivers it in the",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 120,
+     "applied": 6,
+     "note": "Research station and deoxidizer are still not operational (waiting on dirt, algae or generator power) and the dupes are just waking. Toward G3 I start a Microbe Musher food line: dig a 2-wide pit at x132-133 down to the water for a pitcher ",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was cut off at the token limit; keep it shorter",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: the reply was cut off at the token limit; keep it shorter",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    }
+   ],
+   "turns_done": 10,
+   "turns_recorded": 10
+  },
+  {
+   "beds": 3,
+   "colony": "rehearsal-20261122T000523Z",
+   "cycle_at_end": 3,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 2734.01,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3130.5,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3291.9,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0
+    }
+   ],
+   "ended": "2026-11-22T00:41:04+00:00",
+   "food_kcal": 18045.7,
+   "game_time_s": 1500.03,
+   "goals": {
+    "G1": "NOT_REACHED",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {},
+   "harness_rev": null,
+   "id": "20261122T000523Z",
+   "job": "20261122T000045Z-rehearse-opus-e4b610",
+   "ledger_head": "9f86d38876e8fb9a1cab2d9ef11020d85d80beb1fad813044412120e49df4d7a",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": true,
+   "orders_applied": 48,
+   "orders_refused": 10,
+   "proof_copy": "PASS",
+   "proof_files": 14,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "35eb5682d46cc2bf0bea1f10c56ae54ba206aad268c1cbbba2ccc99d3aa76f10",
+    "report": "results/jobs/20261122T000045Z-rehearse-opus-e4b610.json",
+    "report_sha256": "46d3ba66d2c0249030e63089017f0f7a6c8a858aed04503ae98f40ee0deee6d3"
+   },
+   "started": "2026-11-22T00:01:01+00:00",
+   "stop": "connection",
+   "stop_words": "The connection to the AI dropped mid-run",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "unusable reply twice: every order needs a type",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 1
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "Cycle 1 start. Small start room x123-134,y190-193 on floor y189; big open cavern below y186-188 (floor y185 x127-143). Opening a shaft at x133 with a ladder to the lower cavern, placing outhouse up top, 3 cots and a research station below, ",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one"
+     ],
+     "refused": 6,
+     "turn": 2
+    },
+    {
+     "advance_s": 90,
+     "applied": 5,
+     "note": "No build materials in stock yet. Digging sandstone beside the start room (x119-122 and x134-137) for raw building material, plus cuprite in the lower cavern for the research station's metal. Next stop I place the ladder, outhouse, beds and ",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 90,
+     "applied": 7,
+     "note": "Sandstone has been dug, so loose material should now be on the floor. Placing an outhouse, three beds and a ladder down to the lower cavern, all from sandstone. Digging the cuprite next to the cavern for the metal the research station and g",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Dups idle, sandstone and cuprite dug. Next: power and research. I'm placing a Research Station and a Manual Generator on the lower cavern floor (y185 solid x127-143) with a wire between them. I'm queueing FarmingTech research and digging mo",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [
+      "no material for Metal in stock yet; try again next stop, or name one",
+      "no material for Metal in stock yet; try again next stop, or name one",
+      "not solid"
+     ],
+     "refused": 3,
+     "turn": 5
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "The Research Station is planned and Steve is supplying it. Copper ore is still short, so the Manual Generator and wire were refused. I'm retrying them with Cuprite named and digging the cuprite and carbon cluster east of the cavern (x149-15",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Late cycle 1 and the dups are asleep. The research station, manual generator and wire are planned. Next goal is G4 oxygen: placing a Mineral Deoxidizer on the lower cavern floor and wiring it to the same generator circuit. Also digging cupr",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "not solid"
+     ],
+     "refused": 1,
+     "turn": 7
+    },
+    {
+     "advance_s": 200,
+     "applied": 3,
+     "note": "Cycle 2 has started and the dups are asleep. The research station, manual generator, deoxidizer and wires are planned and will be built once they wake. The deoxidizer will need algae, so I'm queuing algae digs in the lower cavern's west wal",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Everything is built: beds, outhouse, research station, manual generator and deoxidizer. The dups are idle, likely because the research station needs dirt and the deoxidizer needs algae, and none is loose yet. Digging a dirt block west of th",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The dups are idle because the earlier dirt and algae digs (the ! cells at y186-189 x100-116) sit 5-7 tiles above the lower cavern floor at y181, so nobody can reach them. I'm queuing reachable digs instead: the algae and dirt wall at x99-10",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "About 83% through cycle 2, downtime, so idle dups are expected. The research station and deoxidizer show not operational, likely no power or dirt/algae yet. Queuing easy digs next to the lower cavern floor: dirt x97-98 y182-184 and algae in",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 150,
+     "applied": 6,
+     "note": "Rowan sleeps at (99,182). He seems trapped west of the 2-deep pit I dug at x112-116 y180-181, and there is no route back up to the y185 floor. Fixes: tile over the pit and add a ladder at x126 y184-186 so he can return. The station needs di",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Diagnosis: the Mineral Deoxidizer's power input is its upper cell (130,187), but the wire runs along y186, so it gets no power. The Research Station has nothing in it: the dirt digs at y190 x140-143 are still pending. I'm wiring the deoxidi",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    }
+   ],
+   "turns_done": 13,
+   "turns_recorded": 13
+  },
+  {
+   "beds": 3,
+   "colony": "rehearsal-20261122T014755Z",
+   "cycle_at_end": 6,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 3380.26,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 0.6
+    },
+    {
+     "calories_kcal": 3541.86,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3175.04,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0.07
+    }
+   ],
+   "ended": "2026-11-22T03:08:04+00:00",
+   "food_kcal": 16251.4,
+   "game_time_s": 3150.01,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    }
+   },
+   "harness_rev": null,
+   "id": "20261122T014755Z",
+   "job": "20261122T014513Z-rehearse-opus-8c577b",
+   "ledger_head": "8bd1d427017943663f1365c36c7691f4bdb33edf8028ce1968316ef4ac5bd0ba",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": false,
+   "orders_applied": 89,
+   "orders_refused": 9,
+   "proof_copy": "PASS",
+   "proof_files": 17,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "1ec9c4dd2d867d443b808feeb66320c83871d1c3626e8a88345e996901b8d79e",
+    "report": "results/jobs/20261122T014513Z-rehearse-opus-8c577b.json",
+    "report_sha256": "1259412855cdaa5c5986a714a05ab222ac2824fbfd13448f2586b30776d3d19c"
+   },
+   "started": "2026-11-22T01:46:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 180,
+     "applied": 3,
+     "note": "Cycle 1. The start room is cramped. There is a large open cavern below it at y186-188, x108-147, with a solid floor at y185 from x127-143. I'll open a ladder route at x133, put an Outhouse and 3 Beds on the cavern floor (G1), and dig the cu",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one"
+     ],
+     "refused": 5,
+     "turn": 1
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Nothing can be built because there is no loose material yet. I'm digging the sandstone, algae, dirt and cuprite wall east of the start room (x134-143, y189-191) to make debris for ladders, beds and the Outhouse. Then I'll place them next st",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 90,
+     "applied": 6,
+     "note": "Digging has made the hole at (133,189) and is breaking the east wall, so loose sandstone, dirt and algae should exist now. Retrying the ladder from the start room down into the cavern, then an Outhouse and 3 Beds on the cavern floor (y185 i",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "Outhouse and 2 beds are built and the third bed waits on material. Two duplicants are idle. I'm opening the algae/carbon/cuprite wall at the east end of the cavern (x149-156, y185-188). That gives metal ore for the Research Station, Manual ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Outhouse and 3 beds are built (G1 clock running). No research station yet. Free floor in the cavern at x144-148 y186. Placing a Research Station and a Manual Generator there, wired together, so G2 can start. The cuprite digs I already order",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "Must be built on solid ground"
+     ],
+     "refused": 1,
+     "turn": 5
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Outhouse and 3 beds are built, so the G1 clock is running. The Research Station sits at x145-146. The generator was refused at x148 because x149 has no floor. I'm moving the ManualGenerator to x147-148, which has dirt floor at y185 and the ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "End of cycle 1, duplicants are asleep. Outhouse and 3 beds stand, so the G1 clock runs. The Research Station needs power, and the ManualGenerator and MineralDeoxidizer wait on metal. I'm digging the cuprite and carbon band at x151-160, y183",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Cycle 2 begins with the duplicants asleep. The ManualGenerator (147,186) and MineralDeoxidizer (143,186) are waiting on metal. Cuprite digs are already ordered east of the cavern at x150-161, y181-185. I'm raising the priority of those digs",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The generator and deoxidizer are now built, and all 3 duplicants are idle. I'm laying a wire line from x143 to x148 at y186 so the Manual Generator powers the Research Station and the deoxidizer, letting FarmingTech research start (G2). I'm",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 9
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Generator, Research Station and deoxidizer are built and wired, but the station is not operational. It probably needs dirt to research, and the deoxidizer needs algae. All dupes are idle, so the stock is likely empty. I'm digging the dirt a",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Everything is built but all dupes are idle, so nothing reachable is left to do. The earlier dirt and algae digs look like they landed on gas cells. New digs target solid cells I can see on the map: dirt and algae at x144-145 y189-190, right",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "The station and deoxidizer are not operational. The dupes have been idle because my earlier digs landed on gas cells. Real dirt and algae: x144 y185 is algae next to the deoxidizer and is not under a building. There is dirt and algae at x12",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Station and deoxidizer still lack dirt and algae, and the dupes idle because most digs hit gas. Under the cavern floor (y185, x127-143) the layer at y183-184 is solid algae and dirt. I'm tunnelling it from the west at x126-135, y183-184, ne",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The station needs dirt and the deoxidizer needs algae. My x126-135 tunnel hit open gas. The real algae/dirt layer is at y183-184, x136-144. Dupes can go down the x126 ladder to y184, but the y182 floor has gaps at x131-132 and x137-140. I'l",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 90,
+     "applied": 4,
+     "note": "Dupes idle because my y183 digs hit open gas. Real solid dirt near them: (145,183) on the y182 floor east, and y180 x114-116 under algae at y181 x112-116 to the west. Digging y181 x112-116 then y180 x115-116 as a one-step staircase so nobod",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "The Research Station, Manual Generator and dirt floor at x145-148 look cut off. My algae dig at (144,185) left a 3-deep shaft down to y183, so dupes can't cross to the generator, and with no power the station sits idle. A tile at (144,185) ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "nothing with a priority here"
+     ],
+     "refused": 1,
+     "turn": 16
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Station, deoxidizer and generator are built and wired, but nothing is operational because there is no dirt or algae to deliver. The dupes are idle on the y183 walkway. Algae is at (128-129,180-181) right under the dug floor hole at x128 y18",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 17
+    },
+    {
+     "advance_s": 200,
+     "applied": 3,
+     "note": "Cycle 4 has started and the dupes are asleep. The algae/dirt digs at x128-129 y179-181 are done, and the debris should lie in that pit. The planned ladder at x128 y179-183 will let the dupes reach it and carry algae to the deoxidizer and di",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 18
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The pit at x128-129 y177-178 is dug, but the x128 ladder stops at y179. Dupes can drop in but cannot climb back, so they won't fetch the dug algae and dirt lying on the y176 floor. That is why everything sits idle. I'm extending the ladder ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    },
+    {
+     "advance_s": 150,
+     "applied": 6,
+     "note": "The dupes are idle and the station and deoxidizer have no inputs. The pit x129 bottom (y175) may not connect to the x128 ladder, so I'm adding a ladder at x129 y175-176. New safe digs: dirt and algae at x130-131 y175-176 next to the pit (no",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 20
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Research Station and deoxidizer both report not operational, which looks like no power. The Manual Generator only runs when a dupe operates it, and there is no battery to create demand or store power. I'm placing a Battery at (144,186) on t",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 21
+    },
+    {
+     "advance_s": 200,
+     "applied": 4,
+     "note": "Station and deoxidizer show not operational. I believe they lack power: with no battery there is no demand, so nobody runs the Manual Generator. The battery at (144,186) is still only planned, so it gets priority 9. The cuprite pit at x149-",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 22
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The battery is now built and wired at y186 between the deoxidizer, Research Station and Manual Generator. All three consumers still report not operational. My best theory is that the battery is empty and nobody has run the generator yet. I'",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 23
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Generator and battery read operational, but the Research Station and deoxidizer do not. Their power ports are likely on the top row (y187), and my wire only runs along y186. ManualDeliveryKG pauses deliveries while a building is not operati",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 24
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Station and deoxidizer still read not operational. Both have their power port at the origin cell, which is wired, so I think the battery is simply empty: nobody has cranked the generator yet. I'm raising generator and station priority and p",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 25
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The station and deoxidizer still read not operational while the generator and battery read operational, so I think the battery is empty. The dupes are asleep at the cycle start. I'll watch their 'doing' after this advance to see whether any",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 26
+    }
+   ],
+   "turns_done": 26,
+   "turns_recorded": 26
+  },
+  {
+   "beds": 4,
+   "colony": "attempt-1",
+   "cycle_at_end": 9,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 3207.92,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 2.08
+    },
+    {
+     "calories_kcal": 2843.51,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 2.49
+    },
+    {
+     "calories_kcal": 1816.25,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 23.76
+    },
+    {
+     "calories_kcal": 1035.61,
+     "health_hp": 100,
+     "name": "Banhi",
+     "stress_pct": 24.05
+    }
+   ],
+   "ended": "2026-11-22T09:24:07+00:00",
+   "food_kcal": 24276.9,
+   "game_time_s": 5150.37,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 7
+    }
+   },
+   "harness_rev": null,
+   "id": "20261122T065855Z",
+   "job": "20261122T065648Z-campaign-opus-4a8b71",
+   "ledger_head": "e200f0e81469cb297d77cb9644490acf23ceadd90d6352733359e80aea591e91",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": false,
+   "orders_applied": 244,
+   "orders_refused": 19,
+   "proof_copy": "PASS",
+   "proof_files": 21,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "a129e46255e83b82142a43ebd0e4c69f4177914e69048caf78636eda64371eae",
+    "report": "results/jobs/20261122T065648Z-campaign-opus-4a8b71.json",
+    "report_sha256": "0a2ef0be34dc0417996dbc34d2a97c234074449f416d1820791d5bdfe03ca801"
+   },
+   "started": "2026-11-22T06:57:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 90,
+     "applied": 6,
+     "note": "Beds, outhouse and ladder are built, so G1 is ticking. Metal is still the blocker for the Research Station (G2) and the generator. I'm queueing digs on the closest cuprite: x143 y189, x147-150 y190 and x151-153 y183-184. Then I'll try to pl",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Cycle 2 start. Beds, outhouse and ladder are built, so G1 is ticking. The Research Station (123,190) and Manual Generator (131,190) are placed and wait for copper ore. I'm digging more cuprite at the east end (x152-159, y182-183) and raisin",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Research Station and Manual Generator are built, so FarmingTech research (G2) should begin. Next is oxygen for G4: a Mineral Deoxidizer on the existing wire at y190 in the base pocket, fed with the plentiful algae. A Microbe Musher can wait",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The Research Station and Manual Generator are built and the dupes are idle. FarmingTech research for G2 should run, powered by the manual generator. Food comes next: a Microbe Musher in the cavern near the beds. I'm also queueing digs on th",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 150,
+     "applied": 6,
+     "note": "Dupes are idle because most dig orders are out of reach (ceilings, holes). The planned deoxidizer and battery up at y193 probably can't be reached, and there is no metal. I'm cancelling both and re-placing them on the pocket floor next to t",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "no material for Metal in stock yet; try again next stop, or name one",
+      "no material for Metal in stock yet; try again next stop, or name one"
+     ],
+     "refused": 2,
+     "turn": 11
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "Cycle 3 start. Metal is still the blocker: the battery was refused and the research station and generator used all the copper. A cuprite mass sits at x153-158 y176-181 in the open pit east of the cavern floor. I place a ladder x153 y182-186",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "Metal is still the blocker. The map shows a large cuprite mass at x159-168, y176-184 right next to idle Catalina at (165,180). I'm digging x159-167 y177-182 for copper, then retrying the battery and its wire. I'm also adding a wash basin ne",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The suffocation alert comes from Rowan and Catalina digging cuprite in a low-gas pocket of the pit near (157,176). They are recovering breath and are not in danger yet. The real gap is oxygen generation: the Mineral Deoxidizer at (122,190) ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The suffocation alert comes from Rowan and Catalina digging cuprite in a low-gas pocket near (152,179). Dupes leave to recover breath on their own, so the digs stay; that copper is needed for the battery. The Mineral Deoxidizer at 122,190 i",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "Rowan (37% breath) and Catalina (45%) are digging cuprite in an unbreathable pocket at about (153,178), likely CO2 settled in the pit. To keep them alive I'm cancelling the pit digs at x152-168 y175-184; there should already be copper for t",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 16
+    },
+    {
+     "advance_s": 30,
+     "applied": 2,
+     "note": "Rowan (53% breath) and Catalina (37%) stand idle at (152,179) at the bottom of the pit. The ladder at x153 only reaches down to y182, so they cannot climb out of the bad air and are trapped. Emergency: extend the ladder at x153 from y179 to",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 17
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "Rowan (54% breath) and Catalina (37%) are trapped at the pit bottom (152,179) and are doing Construction Supply. They are most likely fetching material for the emergency ladder at x153 y179-181, which is already set to top priority. Nothing",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 18
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "Rowan and Catalina are stuck at the pit bottom (152,179). Catalina's breath is at 31% and falling. Both are already on Construction Supply for the emergency ladder at x153 y179-181, which links to the ladder from y182 up. I'm keeping that l",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    },
+    {
+     "advance_s": 200,
+     "applied": 3,
+     "note": "The pit crisis is over: the ladder at (153,180) is built and all three dupes are at 100% breath. G1 is ticking and FarmingTech is researching on the manual generator. The deoxidizer at (122,190) lacks algae, which causes the oxygen alert. I",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 20
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "The pod offers show only as 'unknown'. Index 0 is usually a duplicant, and a fourth worker speeds up digging, research and farming. Food at 19.7k kcal is tight but workable, since FarmingTech is coming. The deoxidizer at (122,190) still lac",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 21
+    },
+    {
+     "advance_s": 200,
+     "applied": 5,
+     "note": "All dupes are idle, and the deoxidizer at (122,190) still lacks algae. Research likely stalls too because the research station needs dirt. The map shows algae at x116-119 y189, beside the base pocket, and algae and dirt in the west cavern f",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 22
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Cycle 4 has begun and the dupes are asleep. G1 needs a bed for each of the 4 dupes, and only 3 beds exist, so I'm adding a 4th in the east cavern at about x146 y186. The deoxidizer still lacks algae, so I'm raising priority on the pending a",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 23
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The 4th bed is built, so G1 can start ticking. The algae digs at x113-117 y189 are still pending; the deoxidizer and research need them. I'm raising the priority on those digs and on the deoxidizer and research area, then advancing to let t",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 24
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "All dupes are idle because the pending digs are ceilings they cannot reach. Easy algae is at x122-124 y183, right under Steve at (124,184), and dirt is at x125-126 y183. The west cavern floor at y179 is all dirt. I'm digging both so the deo",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 25
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Dupes are idle because the areas are cut off. Steve and the dug algae/dirt debris (x120-124 y182-183) sit on a ledge with no route up to the base pocket (y190), and Rowan is on the west floor (y179) with no route up. The x119 ladder links t",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 26
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The base is linked to the ledge by the x119 ladder, so the algae and dirt debris there can now reach the deoxidizer and research station. To get more algae and dirt close to the working dupes, I'm digging the west cavern wall at x103-105 y1",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "nothing with a priority here"
+     ],
+     "refused": 1,
+     "turn": 27
+    },
+    {
+     "advance_s": 300,
+     "applied": 3,
+     "note": "Cycle 5, dupes asleep. Food is 17k kcal, about 4 cycles of food, and research is still 0 because the research station lacks dirt and the deoxidizer lacks algae. The ledge (x120-126 y183-184) now joins the base by the x119 ladder, and a soli",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 28
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "The dupes are idle and the research station and deoxidizer both lack material. The look shows the ledge already dug open from x124 to x131 at y183-184. Solid dirt and algae remain right beside it at x131-140 y183-184 (dirt x131-132, x136-14",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 29
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Likely root cause: the top of the x119 ladder (y190) has solid sandstone at x119 y191, so a duplicant cannot climb from the ladder up into the base pocket. Three dupes and all the dug dirt and algae on the ledge and in the west cavern are c",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 30
+    },
+    {
+     "advance_s": 150,
+     "applied": 7,
+     "note": "The x119 y191 dig worked: Steve is now in the base. Research and the deoxidizer still lack dirt and algae, so no reachable debris is left. I'm opening new dirt sources: a ladder at x143 y186-189 to reach the dirt at x143-146 y190, digging t",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 31
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Near the end of cycle 5, everyone is asleep. The research station and deoxidizer still lack dirt and algae. The closest sources are dirt at x120-121 y193, which sits just above the base pocket and is reached by digging x119-124 y192-193, an",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 32
+    },
+    {
+     "advance_s": 180,
+     "applied": 4,
+     "note": "Cycle 6 has begun and the dupes are asleep. The research station has no dirt and the deoxidizer has no algae, so oxygen is low and breath is dipping in the sleeping area. Digs are pending for dirt above the base pocket (x119-124 y192-193), ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 33
+    },
+    {
+     "advance_s": 170,
+     "applied": 3,
+     "note": "The dirt dig above the base looks done: x119-126 y192 is open, and the east upper pocket x135-143 y193-195 is open. Research and the deoxidizer still lack material. Dirt sits at x133-142 y196-197 right above that pocket, with algae at x134-",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 34
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Dupes are doing Find Safe Area and Recover Breath, so air is the crisis: the deoxidizer has had no algae for cycles and my digging made more open space. Above the dug east upper pocket (x134-142 y191-198) there is oxylite at x139 y199, x137",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 35
+    },
+    {
+     "advance_s": 150,
+     "applied": 7,
+     "note": "The pod offers show no details. A 5th duplicant would break G1 (we have 4 beds) and add oxygen load during the air crisis, so I reject. Air fix: rush the x142 ladder into the upper pocket, then dig the algae and oxylite in its ceiling at y1",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 36
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Air crisis. The lower base (y183-191) reads as CO2, and only the upper dug pockets hold oxygen. Rowan breathes fine at (140,196); the other three are at 45-60% breath. Fastest fix: rush the oxylite digs at x137-139 y199-201, since oxylite d",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "nothing with a priority here"
+     ],
+     "refused": 1,
+     "turn": 37
+    },
+    {
+     "advance_s": 90,
+     "applied": 4,
+     "note": "Air crisis: the deoxidizer has no algae, so oxygen is not being made. The nearest easy algae is x128-129 y180-181, right under the open lower cavern floor at y182; I'm digging it at priority 9 so it drops as debris to feed the deoxidizer at",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 38
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Air crisis. The deoxidizer has no algae, and every new dig opens empty cells that thin the remaining oxygen. I'm cancelling the big non-essential digs at the top (x131-136 and x142-150, y198-201). I'm keeping the oxylite access digs at x137",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 39
+    },
+    {
+     "advance_s": 60,
+     "applied": 5,
+     "note": "Air crisis. Banhi is down at 0 breath, and the deoxidizer has had no algae for cycles. The fastest algae is right at the upper oxygen pocket: x142 y198-199 sits directly above the x142 ladder top, x143-145 y199 is beside it, and x136 y198 i",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 40
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Air crisis: Banhi is incapacitated at 0 breath and Rowan is rescuing her. The deoxidizer still has no algae, and it also needs power from the manual generator. I'm keeping every algae dig and delivery at priority 9: the notch dig at x128-12",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 41
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Air crisis. Banhi is down at 0 breath. The deoxidizer has no algae, and the night shift starts soon, when sleeping dupes would sit in CO2. I'm setting schedule 0 to all-work so everyone stays awake and can finish the priority-9 algae dig at",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 42
+    },
+    {
+     "advance_s": 30,
+     "applied": 5,
+     "note": "Air crisis. Banhi is incapacitated at 0 breath. The deoxidizer has no algae and everyone else is on Recover Breath, so nobody digs. The upper pocket x136-142 y195-199 still has oxygen and borders the pending oxylite and algae digs at y198-1",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 43
+    },
+    {
+     "advance_s": 60,
+     "applied": 4,
+     "note": "Air crisis, 36 s left in cycle 6. Banhi is incapacitated and the rest are on Recover Breath. The deoxidizer has no algae and runs on the manual generator. More digs would only dilute the air, so I keep the algae digs at priority 9: x128-129",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 44
+    },
+    {
+     "advance_s": 30,
+     "applied": 4,
+     "note": "Cycle 6 is almost over and the air crisis goes on. Banhi is incapacitated, the others are recovering breath, and the deoxidizer has no algae. I add no new digs, because empty cells dilute the oxygen. Algae digs and deliveries stay at priori",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 45
+    },
+    {
+     "advance_s": 30,
+     "applied": 0,
+     "note": "no stops left this cycle: run to the cycle boundary",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 46
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Cycle 7: breath has recovered (Banhi 94%). The deoxidizer, research station and musher are still unsupplied, and dupes are digging the algae and dirt digs near x142 y189-199. I am putting sleep back in schedule 0 to limit stress, and raisin",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 47
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "Cycle 7: breath is fine for now, but the deoxidizer still has no algae and three dupes are idle. Reachable algae sits beside the upper oxygen pocket: x142-147 y200-201, next to open x138-141, and x133-136 y199-201. Digging it at priority 9 ",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 48
+    },
+    {
+     "advance_s": 120,
+     "applied": 6,
+     "note": "Two dupes idle means the pending digs are out of reach. Algae x134-135 y198 sits right above where dupes stand (Banhi at 134,196) but was never ordered, so I dig it. I extend the x142 ladder to y200 and put a tile at 143,198 so dupes can wa",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 49
+    },
+    {
+     "advance_s": 90,
+     "applied": 5,
+     "note": "Algae cells x134-135 y198 and x146-147 y200 are dug and the debris looks reachable, yet the deoxidizer is still not operational. Either the fetch hasn't happened yet or it lacks power from the manual generator. The research center and mushe",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 50
+    },
+    {
+     "advance_s": 120,
+     "applied": 7,
+     "note": "The deoxidizer has had algae dug for it. With dupes on downtime nobody turns the manual generator, so power is the likely gap; work resumes after sleep. For later algae I open a route to the west algae seam (x112-116 y197-198): extend the x",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 51
+    },
+    {
+     "advance_s": 150,
+     "applied": 7,
+     "note": "Cycle 8 start. The deoxidizer, research station and musher are all non-operational, so no O2 is being made, research is stalled and food is not cooked. I am digging more algae next to the open west corridor (x114-118 y199-200) and dirt next",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 52
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "I misread the legends. In the second map B is Algae, while in the first map A was Algae, so several earlier 'algae' digs were sandstone. The real algae seam is west at x110-117, y197-203, where Rowan and Catalina are digging now, with oxyli",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 53
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "I re-read the map. Algae (B) is at x100-109 y198 and x104-109 y197, right beside the open, dug cells x110-113 y197-199 where Rowan and Catalina are working. I am ordering those algae cells dug at high priority so they can be carried to the ",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 54
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "Re-read the maps. The real algae within reach is at x97-101 y199 and x95-98 y200, beside the open west cave where dupes stand on floor y196. That dig also takes dirt for research and oxylite at x103 y199. There is a second seam at x100-103 ",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 55
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "The deoxidizer still has no algae. Pending digs ('!' marks a dig order) cover the west cave floor. Verified algae (B) sits at x96-103 y204, right above the open cells x96-99 y203 and the ladders at x94-96, so it can be reached. The algae at",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 56
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "The algae digs at y204 x95-103 and y203 x103-112 cannot be reached. The west cave is about 6 cells high from floor y197 to y203 and has no ladder from the floor, so nobody digs them and the deoxidizer never gets algae. I am adding ladders a",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 57
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "The deoxidizer still has no algae. A large algae seam sits at x118-131 y207 and x115-118 y208, just above the open west cave column x114-118, which reaches up to y206. That column has no ladder, so nobody can reach it. I am placing a ladder",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "already marked"
+     ],
+     "refused": 1,
+     "turn": 58
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The ladder at x116 now reaches y206, and the cells x114-119 y207 are dug open. The algae seam at x120-131 y207 sits just east, behind dirt and sand at y206. I dig a 2-high tunnel x117-131 y206-207, with tiles at x117-118 y205 as floor. Dupe",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 59
+    },
+    {
+     "advance_s": 100,
+     "applied": 5,
+     "note": "Fix: in this map B is Algae, so the 'algae seam' at y207 was sand. I cancel that tunnel. Real algae near the base: x131 y200 (behind dirt x132 y199-200, next to the open pocket where Banhi stands at x133-134 y196) and x146 y181-182 (beside ",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 60
+    },
+    {
+     "advance_s": 200,
+     "applied": 3,
+     "note": "End of cycle 8. The deoxidizer still has no algae. Re-read the map with B=Algae: a pillar between the two lakes holds algae at x129 y177 and x128-129 y176, with walls x127 (A) and x130 (D/S), so digging it is water-safe. It sits under the o",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 61
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Banhi sleeps in the pocket at y196-201. That pocket links to the base by the x142 ladder (y188-200), so Banhi is not trapped and should eat on waking. 'Building lacks resources' means the research station has no dirt and the deoxidizer no a",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 62
+    },
+    {
+     "advance_s": 100,
+     "applied": 4,
+     "note": "Banhi is stranded on the ledge x132-134 (floor y195). East of it is the open shaft x135-141, which has no ladder down to the x135 ladder at y188, so she is stuck in Find Safe Area at 100% bladder. Fix: a ladder at x135 y189-196. For algae I",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "already marked"
+     ],
+     "refused": 1,
+     "turn": 63
+    },
+    {
+     "advance_s": 100,
+     "applied": 3,
+     "note": "Banhi is freed by the x135 ladder. Steve is digging the algae approach at x130-132 y174-176, and Banhi is digging dirt at x134-139 y202 for research and the musher. Reading the current map (top y203), the algae is at x131-132 y173 and x134 ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 64
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "The deoxidizer still has no algae. Re-read this map with E=Algae: the water-flooded tunnel at x130-134 y174-176 blocks the south algae. There is an isolated algae cell at x146 y178, walled by sandstone, sand and dirt, with no water next to ",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 65
+    }
+   ],
+   "turns_done": 65,
+   "turns_recorded": 59
+  },
+  {
+   "beds": 3,
+   "colony": "attempt-2",
+   "cycle_at_end": 8,
+   "deaths": 1,
+   "duplicants": [
+    {
+     "calories_kcal": 1233.85,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 8.33
+    },
+    {
+     "calories_kcal": 2928.56,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 9.52
+    },
+    {
+     "calories_kcal": 2527.03,
+     "health_hp": 100,
+     "name": "Ren",
+     "stress_pct": 7.11
+    },
+    {
+     "calories_kcal": 2933.54,
+     "health_hp": 100,
+     "name": "Amari",
+     "stress_pct": 16.47
+    }
+   ],
+   "ended": "2026-11-24T05:59:07+00:00",
+   "food_kcal": 22746.1,
+   "game_time_s": 4623.18,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    }
+   },
+   "harness_rev": null,
+   "id": "20261124T041655Z",
+   "job": "20261124T041402Z-campaign-opus-670707",
+   "ledger_head": "75a00e23de9790b1e1a30c6423bb153759c78e44bb98bb29c5af5988c29312c5",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": false,
+   "orders_applied": 135,
+   "orders_refused": 16,
+   "proof_copy": "PASS",
+   "proof_files": 21,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "388821bd1ab6d14360554cdfe7e65becec8be6fdcdc9c9313c9a2bebdb63ee24",
+    "report": "results/jobs/20261124T041402Z-campaign-opus-670707.json",
+    "report_sha256": "b0a3a5bd8af343e44e02234cbf95ac081c8a95bea85b41c577a8b6bc3fadf440"
+   },
+   "started": "2026-11-24T04:15:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Cycle 1 start. The base is a small room at y190-193 with a tile floor at y189. Below it is an open corridor at y186-188 with a sandstone floor at y185 from x127 to 143. I will dig through (133,189) and put a ladder down into that corridor. ",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one",
+      "no material for BuildableRaw&BuildingWood in stock yet; try again next stop, or name one"
+     ],
+     "refused": 6,
+     "turn": 1
+    },
+    {
+     "advance_s": 60,
+     "applied": 6,
+     "note": "No mined material exists yet, so all builds were refused. I'll dig sandstone beside the start room and cuprite to the east to make material. I'm also retrying the ladder, outhouse and beds with sandstone named, so they become planned builds",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [
+      "Must be built on solid ground"
+     ],
+     "refused": 1,
+     "turn": 2
+    },
+    {
+     "advance_s": 90,
+     "applied": 2,
+     "note": "Material is coming in from the digs. Ladder, outhouse and beds are planned. Next I add a Research Station and a Manual Generator in the lower corridor, wired together, for G2. I am also digging more sandstone, cuprite and dirt nearby for bu",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "no material for Metal in stock yet; try again next stop, or name one",
+      "no material for Metal in stock yet; try again next stop, or name one",
+      "no material for Metal in stock yet; try again next stop, or name one"
+     ],
+     "refused": 3,
+     "turn": 3
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "No metal in stock yet; the earlier cuprite dig cell was actually empty. Digging the real cuprite at x146-150, y186-190 to the east of the corridor gives copper for the Research Station, Manual Generator and wire. Also placing the third bed ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "Still no metal: the earlier east dig hit empty cells. Cuprite is at x151-154, y186-188, at the east end of the lower corridor, so I dig there for copper. Once copper is in stock I place the Research Station and Manual Generator for G2. Adva",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Still no copper: the cells dug so far were gas, not ore. The map shows Cuprite at x139-143 y194-196, next to the dug pocket at x136-138 y194, and at x153-157 y184-185 below the east end of the corridor. I dig both at high priority so copper",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 60,
+     "applied": 3,
+     "note": "Rowan is at (154,179) in a sunken cave filled with what looks like CO2 (','), and his breath is 62% and falling. I am placing a sandstone ladder at x153 from y179 up to the corridor at y188 so he can climb out. Cuprite sits right beside tha",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "Rowan is idle at (154,179) in the CO2 cave with his breath at 45%. The ladder at x153 from y179 to y188 is still only planned. I am raising those ladder errands to priority 9 so they get built first and he can climb out to the oxygen in the",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "Rowan is trapped in the CO2 pit at (154,179) with 18% breath. The x153 ladder rescue is already at priority 9. Catalina and Steve are finishing Eat and the toilet and should then build it. I add no other errands so they don't get distracted",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 40,
+     "applied": 3,
+     "note": "Rowan is incapacitated in the CO2 pit and will likely die; the rescue ladder at x153 is already at priority 9. Copper is still the main blocker. Cuprite sits at x151-152 y182-184 by the east corridor end and at x156-161 y182, so I dig those",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 40,
+     "applied": 2,
+     "note": "Rowan is incapacitated in the CO2 pit at (154,179). Catalina and Steve are asleep, so nobody is building the priority-9 rescue ladder at x153. I am setting the schedule to all work for now so they wake up, build the ladder and carry him out",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Cycle 2 begins. Rowan has been out of breath in the CO2 pit for a while and will most likely die; no order can bring back his breath in time. I am putting the normal schedule back for Catalina and Steve (work, 1 hour downtime, 3 hours sleep",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "Rowan is incapacitated in the CO2 pit at (154,179). The rescue ladder at x153 is built down to y185; y179-184 is still planned at priority 9. Catalina and Steve are awake and building. I give no new orders that would pull them away from the",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 90,
+     "applied": 2,
+     "note": "Rowan died in the CO2 pit. Steve is now digging in the same CO2 at (156,183) with his breath falling. I am cancelling every errand in the CO2 cave (x150-167, y176-184), which covers the rescue ladder and the cuprite digs, so nobody goes the",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 90,
+     "applied": 4,
+     "note": "Copper is still the blocker. There is cuprite east of the corridor at x161-164, y188-191. A gap in the floor at y185, x151-157, opens down into the CO2 cave. I'll tile that gap in sandstone, leaving the x153 ladder so Steve can climb out. T",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 120,
+     "applied": 1,
+     "note": "Copper is still missing. There is solid cuprite at x158-164, y183-184. It sits right next to the breathable pocket where Steve and Catalina are working (x151-157, y183-184). The cuprite row at y182 stays in place as a floor between them and",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 16
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Copper is still the blocker. Cuprite sits at (156,182), right under Steve, and at x159-166 y182. The '!' cells at x158-164 y183-184 are pending digs. Both duplicants are idle and breathing fine, so I dig the nearest cuprite at high priority",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 17
+    },
+    {
+     "advance_s": 30,
+     "applied": 3,
+     "note": "Steve is at (164,179) in the CO2 cave with breath at 45%. The digs at y182 opened the cave floor. I cancel every dig at x154-167, y176-184 so he stops working there. Then I finish the rescue ladder at x153 from y179 to y184 at priority 9. I",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 18
+    },
+    {
+     "advance_s": 30,
+     "applied": 1,
+     "note": "Steve is in the CO2 cave at (155,179) with 18% breath, likely building the rescue ladder at x153. Ladder cells y179, y181 and y184 are still planned. I keep them at priority 9 so the ladder finishes and he can climb out to the breathable po",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Steve and Catalina are near the x153 rescue ladder in the CO2 cave. Steve's breath is recovering. I cancel every errand in the cave (x150-167, y176-184) so they climb out to the corridor and stay out. Then I put the pending cuprite digs at ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 20
+    },
+    {
+     "advance_s": 90,
+     "applied": 2,
+     "note": "Copper is the blocker. The pending cuprite digs at x139-143 y194-196 seem out of reach. I'm placing a ladder at x138 from the corridor (y186) up through the gap at y189 into the open pocket at x135-138 y191-194, so the duplicants can reach ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 21
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Copper is the blocker. Cuprite sits beside the open west corridor: (108,186), (111,187), (116,188), (117,183) and (121,184). That area is open and far from the CO2 cave. I dig those cells at priority 8 so the ore can feed a Research Station",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "not solid",
+      "not solid"
+     ],
+     "refused": 2,
+     "turn": 22
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "Copper ore is the blocker for the Research Station, the generator and the deoxidizer. My earlier digs at (117,183) and (121,184) were refused because the coordinates were off. The cuprite is really at (121,183), (117,182) and x108-111 y181,",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 23
+    },
+    {
+     "advance_s": 120,
+     "applied": 6,
+     "note": "The duplicants are disinfecting. Copper (metal ore) is still the blocker for the Research Station. The copper digs at (116,188), (111,187) and (108,186) are still pending. I raise them to priority 9 and add the cuprite at (104,184) and (104",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 24
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "The Research Station is built and Steve and Catalina are idle. Research uses dirt, and none has been dug, so I dig the dirt beside the open pocket at x139-143 y194-196, which the ladder at x138 reaches, at priority 8. The cuprite at x143-14",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 25
+    },
+    {
+     "advance_s": 120,
+     "applied": 1,
+     "note": "A pod offer is waiting, but the look shows every offer's kind as unknown. With only 2 duplicants left I take offer 0, hoping it is a duplicant; the first offers are usually duplicants. The pending dirt digs at (133,196-197) will feed resear",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [
+      "nothing with a priority here"
+     ],
+     "refused": 1,
+     "turn": 26
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Ren was printed, so there are 3 dupes with 3 beds and an outhouse; G1 should hold. Research is stalled because the Research Station has no dirt. Dirt sits open at x140-145 y190, east of the base pocket, and at x135-138 y195. I dig both at p",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 27
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "The duplicants are asleep at the end of cycle 3. The digs for dirt (x141-146 y190), copper (108,186), (111,187), (116,188) and algae (x116-119 y189) are queued. I advance into cycle 4 so they can work those digs, then research FarmingTech f",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 28
+    },
+    {
+     "advance_s": 150,
+     "applied": 1,
+     "note": "Start of cycle 4 and the duplicants are asleep. The digs for dirt (x140-146 y190, x135-138 y195), copper and algae are already queued. I raise the dirt digs to priority 8 so the Research Station gets dirt and FarmingTech can start. Then I a",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 29
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The dirt digs at x141-146 y190 sit about 3 cells above the corridor (y186-188) and are out of reach, so dupes stay idle and research is stalled. I place ladders at x141 and x144 from y186 to y189, priority 8, so dupes can climb and dig the ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 30
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The dirt I targeted at y190 is mostly open space already, so the dupes are idle and research is stalled. Real dirt lies in the corridor floor at x145-148 y185. Dupes standing in the y186 corridor can dig straight down into it. That is west ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 31
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Research is stalled for lack of dirt. Steve stands in the open pocket at y196-197 (x133-144). Its ceiling at y198 is dirt (x133, x143-145), algae and cuprite (x146), with more cuprite at (137-138,199), all reachable. I'm digging that ceilin",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 32
+    },
+    {
+     "advance_s": 120,
+     "applied": 5,
+     "note": "Research is stalled because there is no dirt. Steve is in the pocket at x133-143, y195-198. Real dirt sits at x131-132 y198-199, beside the open cells at x133 y198. Cuprite (copper) is at x136 y200, and there is algae overhead. I extend the",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 33
+    },
+    {
+     "advance_s": 300,
+     "applied": 3,
+     "note": "Research stalled: no dirt. Dirt sits just above the pocket where Steve stands: x131-132 y200-202 and x133 y202, with algae at x132-135 y200. Dig them at priority 8 so the Research Station gets dirt (and algae for a later deoxidizer). Dupes ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 34
+    },
+    {
+     "advance_s": 240,
+     "applied": 1,
+     "note": "Cycle 5 start, dupes asleep. Research is stalled for lack of dirt. The dirt and algae digs at x131-135 y200-202 sit right above Steve's pocket and are still pending. I raise them to priority 9 so the Research Station gets dirt after the dup",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [
+      "already marked"
+     ],
+     "refused": 1,
+     "turn": 35
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Research has stalled for lack of dirt. The shaft above Steve (x131, y199-202) is now open. A solid dirt band runs along y203 at x134-145. I add a ladder up the x131 shaft and dig that band at high priority, so dirt debris reaches the Resear",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 36
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Research has stalled because the Research Station has no dirt, and the dirt at y202-203 is out of reach (the x131 ladder is blocked by sand at y197). There is solid dirt right under the lower corridor floor: x131-132 and x138-139 at y184, u",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 37
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Research has stalled because the Research Station has no dirt. The corridor floor digs at y185 flooded with dirty water. There is solid dirt under the sandstone floor: x136-137 at y183-184 and x139-141 at y183-184. I dig through the floor t",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 38
+    },
+    {
+     "advance_s": 200,
+     "applied": 3,
+     "note": "Cycle 6 has started and the dupes are asleep. Research is stalled because the Research Station has no dirt. Digs under the corridor floor at y183-184 are queued. I add more reachable dirt near the ladders at x125-126 y183 and x121-122 y182,",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 39
+    },
+    {
+     "advance_s": 200,
+     "applied": 3,
+     "note": "The Research Station still has no dirt. Most of the queued dirt cells have turned into dirty water or algae, or sit out of reach. Solid dirt sits at x109-115 y189, above an algae strip at y188, at the west end of the lower corridor (y186-18",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 40
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Research is still stalled because no dirt reaches the Research Station. The dirt digs at y189 x109-119 cannot be reached: sand at y190 and sandstone at x120-122 y190-191 cut them off from the start room. I dig a short 2-high tunnel west fro",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 41
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "A pod offer is waiting. Its four offers show as unknown, so I pick index 0, which is most likely a duplicant. A fourth dupe would help with digging. Research is still stalled for lack of dirt. Solid dirt sits at x101-108 y186-190, at the we",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 42
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "Research is stalled because the Research Station has no dirt. There is solid dirt at x120-121 y193, right above Catalina and Ren in the start room at y190. The sandstone at y192 sits between them and the dirt. I dig both rows at priority 9 ",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 43
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Research is stalled for lack of dirt and the dupes are idle. Solid dirt sits at x148-150 y200-202, east of Steve's pocket (x134-140 y195-200). I extend the x138 ladder to y200 and dig a tunnel at y199-200 from x140 to x149 at priority 9: cu",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 44
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Research is still stalled for lack of dirt. Solid dirt sits just under the lower corridor at (131,183) and (145,183), and the cells above it are open or dirty water. I add short ladders down from the y186 corridor and dig those cells at pri",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 45
+    },
+    {
+     "advance_s": 300,
+     "applied": 2,
+     "note": "Cycle 7. The Research Station shows not operational. It needs 60 W of power as well as dirt, and we have no generator and no metal. Reachable dirt (x154-156 y195-197) and cuprite (x153-154 y196-197) sit about 10 cells east of the pocket at ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 46
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The Research Station needs 60 W of power. I place a Manual Generator in the corridor right of the station at (139,186) and run a wire to the station's power port at (136,186). Copper is needed for both, so I raise the priority on the cuprit",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "Must be built on solid ground"
+     ],
+     "refused": 1,
+     "turn": 47
+    },
+    {
+     "advance_s": 60,
+     "applied": 2,
+     "note": "Steve is starving at 567 kcal because he is cut off. Between his pocket floor at y196 and the x138 ladder there is an open shaft at x136-137, y190-195. Dupes cannot cross a gap with no floor. I bridge it with tiles at (136,195) and (137,195",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 48
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "The y196-197 tunnel is open east to x156, and Steve is reachable again. Research needs power, so the tiles at 139-140 y185 go up first, then a Manual Generator, which needs copper. I dig the cuprite and dirt under the tunnel floor (x154-156",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 49
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The Manual Generator is now built at 139,186. Research and the Outhouse ('Toilet out of order') both still need dirt. Solid dirt sits at x116-119 y198-202, west of the x131 ladder, behind a band of sand and sandstone. I dig a 2-high tunnel ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 50
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The y198-199 tunnel to the western dirt is being dug. Dirt also sits at x114-116 y197, right under the tunnel's west end, so I queue it at high priority to feed the Research Station and the Outhouse. Then I advance and let the digging run.",
+     "note_cut": false,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 51
+    },
+    {
+     "advance_s": 90,
+     "applied": 0,
+     "note": "The dupes are digging the y198 tunnel west toward the dirt at x116-121. Dirty water is pooling at y198. Steve is in it recovering breath with 999 kcal; he should go eat at the ration box once he can breathe. With 19.9k kcal in stock this is",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 52
+    },
+    {
+     "advance_s": 150,
+     "applied": 1,
+     "note": "Amari is digging the y198 tunnel west and has reached x121. Dirt sits at y196 x106-112, behind sand at x113-116, just below the tunnel area. I queue a high-priority dig there so dirt can feed the Research Station and the Outhouse. Food is f",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 53
+    },
+    {
+     "advance_s": 120,
+     "applied": 0,
+     "note": "The dupes are digging the y198-199 tunnel west toward the dirt at x105-107 y196 and x101-103 y197. Those digs are already queued. I am letting time run so the dirt gets dug and hauled to the Research Station and the Outhouse. Research needs",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 54
+    },
+    {
+     "advance_s": 300,
+     "applied": 1,
+     "note": "End of cycle 7 and the dupes are asleep. The y198 tunnel holds dirty water. Solid dirt at x114-117 y203 borders the open gas pocket at x117-121 y199-202, so it should be reachable from the west tunnel. I queue it at high priority to feed th",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 55
+    },
+    {
+     "advance_s": 300,
+     "applied": 2,
+     "note": "Cycle 8. Research is still stalled because the station needs dirt as well as hand power, and the Outhouse needs dirt too. The west tunnel at y199 is open from x104 to x131. Dirt sits just under it: x105-107 at y196 (below algae at y197-198)",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 56
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The earlier west dirt pits at x100-107 y196-197 now read as gas or sand, so they are dug; that dirt should be getting hauled. For more dirt, the band at x104-113 y204 sits above algae at y203, and the open area x97-108 y200-202 lies below i",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 57
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Research and the Outhouse still need dirt. Column x119 is an open gas shaft from y201 to y205, and it ends right under a dirt band at x117-125 y206. I place a ladder up that shaft from the west tunnel at y199 and queue the dirt band at prio",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 58
+    }
+   ],
+   "turns_done": 58,
+   "turns_recorded": 58
+  },
+  {
+   "beds": 3,
+   "colony": "attempt-2",
+   "cycle_at_end": 11,
+   "deaths": 1,
+   "duplicants": [
+    {
+     "calories_kcal": 3599.82,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 22
+    },
+    {
+     "calories_kcal": 1088.65,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 47.75
+    },
+    {
+     "calories_kcal": 3024.67,
+     "health_hp": 100,
+     "name": "Ren",
+     "stress_pct": 27.91
+    },
+    {
+     "calories_kcal": 3485.26,
+     "health_hp": 100,
+     "name": "Amari",
+     "stress_pct": 54.64
+    }
+   ],
+   "ended": "2026-11-24T15:15:05+00:00",
+   "food_kcal": 15779.8,
+   "game_time_s": 6150.1,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    }
+   },
+   "harness_rev": null,
+   "id": "20261124T143854Z",
+   "job": "20261124T143603Z-campaign-opus-811d91",
+   "ledger_head": "52afc0b4782a8007ce939e487f24f1ef719af1833068f0f74aa51d62078ef4dc",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": true,
+   "orders_applied": 43,
+   "orders_refused": 3,
+   "proof_copy": "PASS",
+   "proof_files": 17,
+   "research_done": 0,
+   "sitting": 2,
+   "source": {
+    "out_log_sha256": "d5b59d437289dd6fd3bb793dbba0bc39b654b48a6925c44fe5942e2161c82c71",
+    "report": "results/jobs/20261124T143603Z-campaign-opus-811d91.json",
+    "report_sha256": "8f98ac0208820067353797a9644713ee866236088c8ac17d9096b60b44d36044"
+   },
+   "started": "2026-11-24T14:37:01+00:00",
+   "stop": "provider",
+   "stop_words": "The AI provider's gateway refused further calls mid-run",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The dirt band at x117-125 y206 has been dug and now reads as gas, so that dirt should be hauled to the Research Station and the Outhouse. More solid dirt sits right above it at x114-117 y207 and x112-114 y208. I queue those at priority 9 an",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 1
+    },
+    {
+     "advance_s": 120,
+     "applied": 1,
+     "note": "Research Station and Outhouse still show not operational and are probably still missing dirt. Several dirt pockets have been dug, so the debris should exist. I set priority 9 on the corridor block holding the Research Station, Manual Genera",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "The Outhouse and Research Station are still not operational, most likely because no dirt has been delivered. The dug dirt may be lying far west or underwater. I raise the Outhouse's errands to priority 9 to match the Research Station, then ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 200,
+     "applied": 0,
+     "note": "Cycle 9 has just started and most dupes are asleep. The Research Station probably reads non-operational only because the Manual Generator is idle. The Outhouse still needs dirt. Dirt pits at y206 and y196-197 were dug and their errands sit ",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 150,
+     "applied": 1,
+     "note": "Cycle 9 has begun. The Research Station and the Outhouse are still not operational, most likely because they lack dirt. Amari is relieving herself on the floor, so the Outhouse cannot be used. Solid dirt sits close at x114-116 y180, so I qu",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Research Station and Outhouse are still not operational, most likely from missing dirt; dupes sit idle, so the queued errands are probably unreachable. Dirt sits at x111-114 y178-179 under algae at y180-181 near the open column at x111 y181",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 70,
+     "applied": 4,
+     "note": "Dupes sit idle, so no dirt debris is reachable and my earlier dig orders were probably out of reach. Two reachable dirt cells: x164 y191, next to the open area x154-163 y186-189 where Ren stands, and x150 y201, at the east edge of the pocke",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 120,
+     "applied": 0,
+     "note": "Ladders x163 y186-190 and x149 y197-200 are planned, and digs are queued for the dirt cells at x164 y191 and x150 y201. Steve and Ren are building. I let time run so the ladders get built and the dirt gets dug and hauled to the Research Sta",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "The pod offers all read as 'unknown', so I cannot tell a duplicant from a care package. Food covers only about 4.5 cycles for 4 dupes and research is still stalled, so another mouth is a risk. I reject the offers and keep the dupes on the d",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "Dupes are idle, and the Research Station and Outhouse still need dirt. The ladder at x153 reaches down to y178. Solid dirt sits at x150-152 y177, just below its foot behind sand at y178, and at x146 y179-180, west of the ladder behind a san",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Catalina, Ren and Amari are digging the dirt I queued near the foot of the x153 ladder. More solid dirt sits at x149-153 y176, right under those pits, so I queue it too. That should get dirt to the Research Station and the Outhouse, so Farm",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 60,
+     "applied": 0,
+     "note": "Cycle 9 is nearly over and the dupes are asleep. The dirt pits at x149-152 y177 are now open gas, so that dirt should be debris waiting to be hauled to the Research Station and the Outhouse. I give no new orders and run time to the cycle bo",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 200,
+     "applied": 2,
+     "note": "Cycle 10 has begun and most dupes are asleep. The dirt pits at x149-152 y177 now read as gas, so dirt debris should be lying there for hauling to the Research Station and the Outhouse once the dupes wake. Four dupes share 3 beds, so I add a",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "not researched: PlanterBox"
+     ],
+     "refused": 1,
+     "turn": 13
+    },
+    {
+     "advance_s": 200,
+     "applied": 2,
+     "note": "Research Station and Outhouse still read not operational, most likely from missing dirt. The x149-152 y177 pit is open, with a shallow layer of polluted water at y176 on a sand floor, so dupes can walk there off the x153 ladder. Dirt sits a",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 90,
+     "applied": 3,
+     "note": "Diagnosis: the Research Station (136,186) and the Outhouse (141,186) have no floor. Cells x136-137 y185 and x141 y185 read as gas, so the floor was dug out from under them, and that is why they are not operational, not missing dirt. I place",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 15
+    },
+    {
+     "advance_s": 200,
+     "applied": 4,
+     "note": "The Outhouse now works after the floor fix. The Research Station still reads non-operational, likely from no power or dirt; the manual generator is wired to it. Beds at 128 and 130 lack floor because x129-130 y185 are gas, so I tile them. D",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 16
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "Catalina is low on breath and seeking a safe area, so CO2 is likely pooling in the y186 corridor. I'll put an oxygen diffuser at (132,190) on the existing y190 wire, which links to the manual generator. The bed at 130 is not operational bec",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 17
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "The Research Station and the new deoxidizer read non-operational. The likely cause is no power while nobody is cranking the manual generator, since there is no battery. I am adding a battery on the y190 wire so cranked power is stored and f",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 18
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Cycle 11. The Research Station and the deoxidizer are not running, most likely for lack of power: there is no battery and nobody cranks the generator. The battery at 134,190, its wire and the tile under the bed at 130 are still only planned",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    }
+   ],
+   "turns_done": 19,
+   "turns_recorded": 19
+  },
+  {
+   "beds": 3,
+   "colony": "attempt-2",
+   "cycle_at_end": 11,
+   "deaths": 1,
+   "duplicants": [
+    {
+     "calories_kcal": 3833.42,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 44.23
+    },
+    {
+     "calories_kcal": 3078.63,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 19.72
+    },
+    {
+     "calories_kcal": 3433.41,
+     "health_hp": 100,
+     "name": "Ren",
+     "stress_pct": 25.64
+    },
+    {
+     "calories_kcal": 3633.37,
+     "health_hp": 100,
+     "name": "Amari",
+     "stress_pct": 42.4
+    }
+   ],
+   "ended": "2026-11-24T20:11:07+00:00",
+   "food_kcal": 14200,
+   "game_time_s": 6000.1,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    }
+   },
+   "harness_rev": null,
+   "id": "20261124T193720Z",
+   "job": "20261124T193203Z-campaign-opus-reopen-717ec5",
+   "ledger_head": "00c920bda2738468d05bceed8ad5ae6602e9b08d7749afeffa1938c190d7c542",
+   "model": "claude-opus-5-5",
+   "model_name": "Claude Opus 5.5",
+   "no_result": false,
+   "orders_applied": 59,
+   "orders_refused": 1,
+   "proof_copy": "PASS",
+   "proof_files": 18,
+   "research_done": 0,
+   "sitting": 3,
+   "source": {
+    "out_log_sha256": "851f28a8c160f3d99b5c80133351084fb1a16d5ddb22878bb1833ea1488deb1b",
+    "report": "results/jobs/20261124T193203Z-campaign-opus-reopen-717ec5.json",
+    "report_sha256": "49dfd49b9434c6f5d4d5af0e84fe1f809dfe31dee66aaa59022313b23f011ca7"
+   },
+   "started": "2026-11-24T19:33:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 1,
+   "turns": [
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The dirt band at y206 x116-121 has been dug and now reads as gas, so dirt should be on its way to the Research Station and the Outhouse. More dirt sits right above it at y207 x114-117 and y208 x112-114. I extend the x119 ladder to y206-207 ",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 1
+    },
+    {
+     "advance_s": 200,
+     "applied": 2,
+     "note": "End of cycle 8. The Research Station and Outhouse are still not operational. The y206 dirt band is dug, so loose dirt should exist. I raise the errand priority on the station, the generator and the Outhouse to 9 so the dirt gets delivered a",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 300,
+     "applied": 0,
+     "note": "Cycle 8 is ending. The Research Station and Outhouse are not operational, almost certainly because they still need dirt. The dirt bands at y206-208 are already queued or dug, and both buildings are at priority 9. I give no new orders and le",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 200,
+     "applied": 6,
+     "note": "Research Station and Outhouse are still idle for lack of dirt. The dirt dug at y206 may not reach base: the y200 link from the x131/x133 ladders to x138 has algae at y201 and no floor at y199, and Ren sleeps down at 133,201. Fix: dig y201 x",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "The Research Station and Outhouse still lack dirt. The y206 dirt is dug, and the y199 walkway tiles are planned to link it to the base. I add a closer dirt source: x114-116 y181 and x112-114 y180, under the planned x114 ladder. I prioritise",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 200,
+     "applied": 4,
+     "note": "The legend changes between looks. In the last map D=Sand and E=Dirt, so the earlier 'dirt' digs probably hit sand, and that is why research and the Outhouse still starve. Real dirt (E) sits at x99-116 y178-181 under the western gas cave (x1",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "In this map D is Dirt. Real dirt sits at x144-145 y176-177, just below the x146 ladder, which ends at y179. I dig x145-146 y176-178. Sand at x143 and fertilizer at x144 stay as the barrier to the lake. I extend the ladder down so the dirt r",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The pod offers show as 'unknown', so I leave them waiting for now. The earlier dig at x145 y176-178 let water in. Real dirt (D) still sits at x149-153 y177-178, through sand at x147-148, and at x144 y178. I dig x147-153 y177-178 at high pri",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The Outhouse and Research Station are still not operational. The last map shows real dirt (D) at x149-153 y176, just east of the x146 ladder bottom (y176), under the water that leaked in. I dig x147-153 y176 at priority 9 to get dirt for re",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 300,
+     "applied": 5,
+     "note": "Cycle 10 start. The Research Station and Outhouse are still idle for lack of dirt. I reject the pod offers: food is about 4 cycles away and new mouths would speed starvation. The dirt queued at x147-153 y176-178 should come out. I add the s",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [
+      "already marked; not solid"
+     ],
+     "refused": 1,
+     "turn": 10
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Dupes are idle, so the queued dirt digs are probably unreachable. In the wide map D=Dirt. Two dirt pockets look reachable. (1) x140 and x142 at y175, plus x140-142 at y174, just west of the x146 ladder bottom (y175). The floor under it is g",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "Dupes are mostly idle, so the earlier dirt digs are unreachable. In this map E=Dirt, and real dirt sits at x128-129 y177-179, under the algae at x128-130 y180-183. Ladder x131 reaches y182-186 in gas. I dig a shaft at x128-129 y177-183 and ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 120,
+     "applied": 4,
+     "note": "The x129 ladder now reaches y177. Real dirt (E in this map) sits at x130 y176-177 and x129-131 y175, right at the shaft bottom. I dig those cells at top priority so the dirt can feed the Research Station (FarmingTech) and the Outhouse. Fert",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The dirt cells at the bottom of the x129 shaft (x129-131 y175) now read as gas ('!'), so they have been dug and loose dirt should exist. I let the dupes haul it to the Research Station (top priority) and the Outhouse. FarmingTech then start",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 14
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The x129 shaft ladder runs only y177-183. Cells x129 y184-185 are open gas, so the shaft does not link to the corridor at y186, and dupes cannot reach the dug dirt; that is why they idle. I add ladders at x129 y184-185 to join the corridor,",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "The ladders at x129 y184-185 that join the shaft to the corridor are planned, and Steve and Amari are supplying construction. I put those ladders at top priority so the dug dirt at the shaft bottom (x129-131 y175) becomes reachable and can ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 16
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The x129 ladders at y175-176 and y184-185 are now built, so the shaft reaches the corridor and the dug dirt at the shaft bottom should be reachable. The dupes are asleep near the cycle end. I keep the Research Station and Outhouse at top pr",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 17
+    }
+   ],
+   "turns_done": 17,
+   "turns_recorded": 17
+  },
+  {
+   "beds": 3,
+   "colony": "gpt-astra-1",
+   "cycle_at_end": 4,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 3854.74,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3858.41,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3662.4,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0
+    }
+   ],
+   "ended": "2026-11-24T22:22:03+00:00",
+   "food_kcal": 19325.8,
+   "game_time_s": 1800.03,
+   "goals": {
+    "G1": "NOT_REACHED",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "NOT_REACHED",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "NOT_REACHED",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {},
+   "harness_rev": 4,
+   "id": "20261124T214714Z",
+   "job": "20261124T214404Z-campaign-gpt-74dc1d",
+   "ledger_head": "c6cb75e744679bd68f05830dca5cda7334723a45ad21fb4ddeee64338c48ca38",
+   "model": "gpt-6.2-astra",
+   "model_name": "GPT-6.2 Astra",
+   "no_result": false,
+   "orders_applied": 88,
+   "orders_refused": 3,
+   "proof_copy": "PASS",
+   "proof_files": 19,
+   "research_done": 0,
+   "sitting": 1,
+   "source": {
+    "out_log_sha256": "844847385d4208ebaaf2b265faf0e7cdbea08fd3a3c0d2948ff14bddd220068d",
+    "report": "results/jobs/20261124T214404Z-campaign-gpt-74dc1d.json",
+    "report_sha256": "f132d845bb7799c2759f452abc4090d9192e00bb30d5675268b42f70296e5853"
+   },
+   "started": "2026-11-24T21:45:01+00:00",
+   "stop": "run_limit",
+   "stop_words": "Stopped at its run limit",
+   "toilets": 3,
+   "turns": [
+    {
+     "advance_s": 55,
+     "applied": 2,
+     "note": "The pod platform is boxed in by sandstone. Open level corridors on both sides while preserving the y189 floor: west gives space for sanitation and beds, east exposes dirt and algae. Start on the west first so building sites become available",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 1
+    },
+    {
+     "advance_s": 75,
+     "applied": 7,
+     "note": "The west corridor has room for a toilet and three beds on solid ground. Give those builds precedence over further tunneling. Open a ladder shaft between the beds and pod into the algae and copper below for oxygen production, power and resea",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 65,
+     "applied": 5,
+     "note": "Beds and toilet are built, but the outhouse needs dirt. Mine dirt at the west end without removing its foundation. The ladder is approaching copper near its foot; mine sideways there for the first power circuit. Mark the higher ore east of ",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 50,
+     "applied": 5,
+     "note": "The lower east pocket is accessible and touches cuprite at (146,186) and (148,187). Mine across both seams for the first power grid. Extend the pod-level floor east over the gap so miners can stand next to the stalled upper tunnel. Mine dir",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 70,
+     "applied": 7,
+     "note": "The mined cuprite can supply a compact grid on the existing floor east of the pod. Put research nearest the pod light, connect the wheel, battery and oxygen diffuser on one wire, and start farming research. Mine algae below for diffuser fue",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "unknown_tech"
+     ],
+     "refused": 1,
+     "turn": 5
+    },
+    {
+     "advance_s": 105,
+     "applied": 3,
+     "note": "Queue Basic Farming for G2 and the planter boxes. The lower corridor already has headroom for a farm; preserve its natural floor at x127–142 y185. Mine a narrow access cut just east of that floor toward the water for a pitcher pump, without",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 30,
+     "applied": 3,
+     "note": "Rowan and Steve are stranded in the CO₂ pocket below the mined copper. Give them a priority escape ladder at Rowan's position, with a walkway west from its top to the intact lower corridor floor. That reconnects them to the pod shaft, meals",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 30,
+     "applied": 7,
+     "note": "Rowan and Steve are idle during downtime with no route to oxygen. Switch to work now and cut a staircase west from Steve: clear headroom above the solid steps at x152, 151, 150 and 149, ending on the upper ledge. This route needs no deliver",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 30,
+     "applied": 5,
+     "note": "Start the escape stair one cell lower: (152,179) is reachable rock beside Rowan. Clearing it and the marks above it leaves (152,178) as a foothold. Each successive tread rises one cell west to the upper shelf; leave the rock under each trea",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 45,
+     "applied": 6,
+     "note": "The suffocation alerts cleared, but the stair from the copper pit ends below the farm corridor. Keep the remaining footholds, add ladder rungs at the lip, and cancel the deep ladder so nobody goes back down to build it. Restore toilet and s",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 10
+    },
+    {
+     "advance_s": 90,
+     "applied": 4,
+     "note": "Everyone is back in bed and the outhouse works. Add a second toilet for the shared wake-up rush. Keep the wheel and farming research ahead of excavation; mine dirt beside the new ladder for research and sanitation without cutting into the f",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "The wheel and station are reachable from the main ladder, but the farm ledge ends three cells east of it. Bridge that gap so hauling dirt and seeds doesn't require a detour through the pit. Expose the dirt above the east end of the main flo",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 140,
+     "applied": 5,
+     "note": "The main corridor is reachable, but the overhead dirt is not: miners can stand on the vertical ladder, not in the air beside it. Extend a horizontal ladder at y195 and mine the dirt above it for research and farming. Add a third outhouse on",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 13
+    },
+    {
+     "advance_s": 100,
+     "applied": 5,
+     "note": "The wire cells cover the correct ports, so another generator isn't the first fix. Trace the circuit once more to join any adjacent but disconnected segments. Give each duplicant a toilet for G1. Start a pitcher pump for handwashing and futu",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [
+      "Must be built in unoccupied space"
+     ],
+     "refused": 1,
+     "turn": 14
+    },
+    {
+     "advance_s": 180,
+     "applied": 2,
+     "note": "The wheel and battery are built, but downtime doesn't tell us whether research has power during work hours. Leave the grid alone for now. Extend the existing ladder beside the pitcher pump so a miner can clear the last two cells blocking it",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 110,
+     "applied": 2,
+     "note": "Everyone is asleep, so the station's current status doesn't tell us whether the wheel powers it during work time. Keep the wheel and FarmingTech ahead of the pump excavation, then check what the three duplicants are doing after they wake.",
+     "note_cut": false,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 16
+    },
+    {
+     "advance_s": 90,
+     "applied": 6,
+     "note": "The listed ports match the wire cells, but neither consumer is working and the crew is idle. Test a separate circuit on the accessible lower ledge: lay one uninterrupted wire run first, then put the wheel, station and battery on it. Mine re",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 17
+    },
+    {
+     "advance_s": 155,
+     "applied": 3,
+     "note": "The pump is operational, and the new wheel and station are both reachable. Let those builds finish. Extend the lower corridor west from the main ladder: the open space above y185 needs only a floor to make room for fifteen planter boxes. Sp",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 18
+    },
+    {
+     "advance_s": 130,
+     "applied": 3,
+     "note": "Reject the unidentified pod offers to keep food demand at 3,000 kcal per cycle. Both circuits are built, and the last reachable excavation jobs are finishing. Give the lower wheel and station priority over new work and see whether FarmingTe",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "Both stations are built and Basic Farming is selected, but nobody is working during downtime. Leave the crew free to use the toilets and sleep. Extend the upper mining ladder west into the sand bank; that gives access to the three marked ce",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 20
+    }
+   ],
+   "turns_done": 20,
+   "turns_recorded": 20
+  }
+ ],
+ "source_commit": "c7a0898946684112527cc990d88be3a22d359109",
+ "source_ref": "ZMS-Labs/oni-bench@oni-relay",
+ "status_sha256": "2a6425346537ee29391787fa20f2ee78c7bfba8df59f141b75a45cacb04beed5"
+}
