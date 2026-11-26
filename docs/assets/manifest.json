@@ -520,8 +520,8 @@
     },
     {
       "path": "assets/oni-bench/progress-curve.png",
-      "sha256": "bbb7dd3e43588c100e18a5de631b7715a3a9e350e8bcafe42593da66509519e4",
-      "bytes": 122330,
+      "sha256": "30e37b3e20d4f041889c7fb201793f02dd1dce8f1cb23f5ea2c53a5c747bdee0",
+      "bytes": 122235,
       "dimensions": [
         1980,
         1094
@@ -531,8 +531,8 @@
     },
     {
       "path": "assets/og/og-oni-bench.png",
-      "sha256": "1c99fecbbe26865096133f447c2436513c1c6dacce06cee208a5697f7a345c6f",
-      "bytes": 58815,
+      "sha256": "1d8b3f19c4fcd4089730558f35c080212e7712c08804fdaa9b99ba999d8d2d4f",
+      "bytes": 58632,
       "dimensions": [
         1200,
         630

@@ -1,13 +1,13 @@
 {
   "project": "ONI Bench",
-  "as_of": "2026-11-26T03:00:00Z",
+  "as_of": "2026-11-26T13:47:00Z",
   "status_label": "Recorded experiment",
   "summary": "A live-play benchmark: an AI plays Oxygen Not Included one move per turn through a program inside the game, and a milestone counts only when that program reads it from game state.",
   "shown": [
     {
       "asset": "case-studies/oni-bench/runs.json",
       "kind": "Recorded experiment",
-      "data": "8 runs in 10 sittings, from the run host's job reports (ZMS-Labs/oni-bench@oni-relay at c7a0898946684112527cc990d88be3a22d359109)"
+      "data": "9 runs in 12 sittings, from the run host's job reports (ZMS-Labs/oni-bench@oni-relay at 4348770cf90cb1fddc813f8945d0cd45c142b626)"
     }
   ],
   "best_result": {
@@ -15,7 +15,7 @@
     "name": "Sanitation and beds",
     "of": 21,
     "model": "Claude Opus 5.5",
-    "counted_runs": 3
+    "counted_runs": 4
   },
   "ranking": [
     {
