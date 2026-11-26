@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" data-edition="oni">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ONI Bench · Zach Stern</title>
-<meta name="description" content="ONI Bench asks whether an AI can keep a colony alive in the game Oxygen Not Included, one move at a time, with the running game as the judge. It is SaveBench's sibling. The run viewer is built and shown here with made-up data; no game run has been recorded yet.">
+<meta name="description" content="ONI Bench asks whether an AI can keep a colony alive in the game Oxygen Not Included, one move at a time, with the running game as the judge. Best result so far: milestone 1 of 21, by Claude Opus 5.5.">
 <link rel="canonical" href="https://sternone.net/case-studies/oni-bench/">
 <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/Archivo-latin.woff" as="font" type="font/woff" crossorigin>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Zach Stern">
 <meta property="og:title" content="ONI Bench · Zach Stern">
-<meta property="og:description" content="ONI Bench asks whether an AI can keep a colony alive in the game Oxygen Not Included, one move at a time, with the running game as the judge. It is SaveBench's sibling. The run viewer is built and shown here with made-up data; no game run has been recorded yet.">
+<meta property="og:description" content="ONI Bench asks whether an AI can keep a colony alive in the game Oxygen Not Included, one move at a time, with the running game as the judge. Best result so far: milestone 1 of 21, by Claude Opus 5.5.">
 <meta property="og:url" content="https://sternone.net/case-studies/oni-bench/">
 <meta property="og:image" content="https://sternone.net/assets/og/og-oni-bench.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ONI Bench: the run viewer's progress curve, drawn from made-up sample data, beside the question it asks.">
+<meta property="og:image:alt" content="ONI Bench: how far each AI model has taken a colony up a ladder of 21 milestones, drawn from the run records.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0e1b21">
 <link rel="stylesheet" href="../../site.css">
 <script defer src="../../site.js"></script>
-<link rel="stylesheet" href="../../assets/savebench/walkthrough/progress.css">
 <link rel="stylesheet" href="../../assets/savebench/case.css">
+<link rel="stylesheet" href="../../assets/oni-bench/savebench-design/tokens.css">
+<link rel="stylesheet" href="../../assets/oni-bench/oni.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -36,6 +37,7 @@
   </nav>
 </header>
 <main id="main" tabindex="-1">
+<nav class="ob-nav" aria-label="ONI Bench"><div class="wrap"><span class="ob-nav-t">ONI Bench</span><a href="./index.html" aria-current="page">Overview</a><a href="./leaderboard.html">Leaderboard</a><a href="./runs/index.html">Every run</a><a href="./reports/index.html">Daily report</a></div></nav>
 
 <div class="night">
   <section class="case-hero wrap text-first">
@@ -44,12 +46,12 @@
       <span class="kicker">ONI Bench · AI colony survival</span>
       <h1>Can an AI keep a colony alive?</h1>
       <p class="lead">ONI Bench asks whether an AI can run a colony in the game Oxygen Not Included, where a few small colonists have to be kept breathing, fed and sane underground. The AI plays one move at a time and the running game is the judge. It is the sibling of <a href="../savebench/index.html">SaveBench</a>, which asks the same of a factory.</p>
-      <p class="lead" style="margin-top:20px;font-size:clamp(17px,.45vw + 14px,20px)">The game keeps time in cycles, one in-game day each. The test is a ladder of milestones, from a working toilet to a closed oxygen loop. A milestone counts only when a small program inside the game reads it from the game's own state. What the AI says it did counts for nothing.</p>
-      <p class="status"><a href="../../evidence.html#status"><b>Interface study</b></a> · the run viewer with made-up data; no game run recorded yet · <a href="#evidence" style="white-space:nowrap">see the record</a></p>
+      <p class="status"><a href="../../evidence.html#status"><b>Recorded experiment</b></a> · 5 counted runs by 3 AI models, November 21, 2026 to November 25, 2026 · <a href="#evidence" style="white-space:nowrap">see the record</a></p>
     </div>
-    <figure class="exhibit">
-      <img src="../../assets/oni-bench/viewer-scoreboard.png" alt="The ONI Bench run viewer's scoreboard, with a bar across the top reading Sample data: made-up sample data for designing the viewer, no game was played and no model was run. Below it the heading How far each seat keeps a colony going, and a ledger of 40 runs, 3 model seats and 29 passes, all made up." width="1920" height="1000" fetchpriority="high">
-      <figcaption><span><span class="label">Interface study</span> Made-up data, November 20, 2026</span></figcaption>
+    <figure class="exhibit ob-panel">
+      <p class="ob-best"><b>Best result so far: milestone 1 of 21, Sanitation and beds.</b> Claude Opus 5.5 earned it in 3 of its 3 counted colonies, at the earliest by cycle 4. No model has earned milestone 2, First research.</p>
+      <div class="sbd sbd-chart ob-chart"><svg class="sbd-curve" viewBox="0 0 760 320" role="img" aria-label="Progress up the ONI G1 to G21 ladder by game time (minutes)"><line class="grid" x1="56" x2="640" y1="288" y2="288"/><text x="48" y="292" text-anchor="end">0</text><line class="grid" x1="56" x2="640" y1="235.42857142857144" y2="235.42857142857144"/><text x="48" y="239.42857142857144" text-anchor="end">4</text><line class="grid" x1="56" x2="640" y1="182.85714285714286" y2="182.85714285714286"/><text x="48" y="186.85714285714286" text-anchor="end">8</text><line class="grid" x1="56" x2="640" y1="130.2857142857143" y2="130.2857142857143"/><text x="48" y="134.2857142857143" text-anchor="end">12</text><line class="grid" x1="56" x2="640" y1="77.71428571428572" y2="77.71428571428572"/><text x="48" y="81.71428571428572" text-anchor="end">16</text><line class="grid" x1="56" x2="640" y1="25.142857142857167" y2="25.142857142857167"/><text x="48" y="29.142857142857167" text-anchor="end">20</text><line class="grid" x1="56" x2="56" y1="288" y2="292"/><text x="56" y="304" text-anchor="middle">0</text><line class="grid" x1="347.9951334144431" x2="347.9951334144431" y1="288" y2="292"/><text x="347.9951334144431" y="304" text-anchor="middle">50</text><line class="grid" x1="639.9902668288862" x2="639.9902668288862" y1="288" y2="292"/><text x="639.9902668288862" y="304" text-anchor="middle">100</text><text x="640" y="316" text-anchor="end">Game time (minutes)</text><desc>Claude Fable 5.2, Rehearsal, Nov 21, 5:27 PM: Not reached. No milestones. Ended at minute 14. Claude Opus 5.5, Rehearsal, Nov 21, 7:46 PM: Earned. Sanitation and beds at minute 40. Ended at minute 52.5. Claude Opus 5.5, Colony attempt-1: Earned. Sanitation and beds at minute 70. Ended at minute 85.84. Claude Opus 5.5, Colony attempt-2: Earned. Sanitation and beds at minute 40. Ended at minute 100. GPT-6.2 Astra, Colony gpt-astra-1: Not reached. No milestones. Ended at minute 30.</desc><path class="run" d="M56 288H137.76447725871236" stroke="#62615b"><title>Claude Fable 5.2, Rehearsal, Nov 21, 5:27 PM: Not reached. No milestones. Ended at minute 14.</title></path><path class="run" d="M56 288H289.59610673155447V274.85714285714283H362.5958634022766" stroke="#1f6f73"><title>Claude Opus 5.5, Rehearsal, Nov 21, 7:46 PM: Earned. Sanitation and beds at minute 40. Ended at minute 52.5.</title></path><path class="run" d="M56 288H464.79318678022037V274.85714285714283H557.2943250945817" stroke="#1f6f73"><title>Claude Opus 5.5, Colony attempt-1: Earned. Sanitation and beds at minute 70. Ended at minute 85.84.</title></path><path class="run" d="M56 288H289.59610673155447V274.85714285714283H640" stroke="#1f6f73"><title>Claude Opus 5.5, Colony attempt-2: Earned. Sanitation and beds at minute 40. Ended at minute 100.</title></path><path class="run" d="M56 288H231.2" stroke="#b8461a"><title>GPT-6.2 Astra, Colony gpt-astra-1: Not reached. No milestones. Ended at minute 30.</title></path><polyline class="leader" points="642,274.85714285714283 641,274.85714285714283 646,260" fill="none" stroke="#1f6f73"/><text x="648" y="264" style="fill:#1f6f73">Claude Opus 5.5</text><polyline class="leader" points="139.76447725871236,288 641,288 646,274" fill="none" stroke="#62615b"/><text x="648" y="278" style="fill:#62615b">Claude Fable 5.2</text><polyline class="leader" points="233.2,288 641,288 646,288" fill="none" stroke="#b8461a"/><text x="648" y="292" style="fill:#b8461a">GPT-6.2 Astra</text></svg></div>
+      <figcaption><span>Each line is one colony. It steps up when the game shows a milestone, and ends where the run ended. One cycle is 10 game minutes. <span class="ob-v" data-v="y">Verified</span> from the run records.</span><a class="full" href="leaderboard.html">Leaderboard and data table</a></figcaption>
     </figure>
   </section>
 </div>
@@ -57,92 +59,88 @@
 <section class="section band" id="now" aria-labelledby="now-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">Where it stands · November 20, 2026</span>
-      <h2 id="now-title">Built to be judged. Not yet played.</h2>
-      <p class="lead">The plan, the in-game program and the viewer exist. The first test on real hardware has not run, so there are no results to show.</p>
+      <span class="kicker">Where it stands · November 25, 2026</span>
+      <h2 id="now-title">One rung of 21, earned in the game.</h2>
     </div>
-    <dl class="sbp-now">
-      <div><dt>First test</dt><dd>Can the game run 20 turns with no one at the keyboard, save a checkpoint and load it again? The program inside the game, the turn driver and the test kit are written and pass against a stand-in game. The run on real hardware has not happened. Open</dd></div>
-      <div><dt>AI model results</dt><dd>None. No AI model plays until a scripted run has passed the first milestone, so that no AI plays on a test that might be broken. Not run</dd></div>
-      <div><dt>Game footage</dt><dd>None yet. Films will follow SaveBench's rules: silent, captioned, never autoplayed, any cut declared in the caption. Not run</dd></div>
-      <div><dt>Run viewer</dt><dd>Built, with made-up data. It reads the same run records the real runs will write. Shown below</dd></div>
-    </dl>
+    <dl class="ob-tiles"><div><dt>Furthest milestone</dt><dd><b>1 of 21</b><span>Sanitation and beds, Claude Opus 5.5</span></dd></div><div><dt>Counted runs</dt><dd><b>5</b><span>Claude Opus 5.5 3, Claude Fable 5.2 1, GPT-6.2 Astra 1</span></dd></div><div><dt>Longest colony</dt><dd><b>Cycle 11</b><span>Claude Opus 5.5, 75 turns, 1 colonist lost</span></dd></div><div><dt>No result</dt><dd><b>4</b><span>sittings stopped by the test itself, kept apart and never counted</span></dd></div><div><dt>Ranking</dt><dd><b>Pilot</b><span>no model is ranked above another yet</span></dd></div></dl>
+    <p class="ob-live"><span class="sbd-chip" data-v="live">Running</span> A long Claude Opus 5.5 colony was in play when this page was built. Its record is added when the run ends.</p>
+    <p class="fine ob-note"><span class="ob-v" data-v="y">Verified</span> Every figure on this page is computed from the run records listed under <a href="runs/index.html">Every run</a>. Each run page carries the fingerprint of the record it was built from.</p>
   </div>
 </section>
 
-<section class="section" id="judged" aria-labelledby="judged-title">
+<section class="section" id="ladder" aria-labelledby="ladder-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The ladder · 21 milestones in four tiers</span>
+      <h2 id="ladder-title">What counts as progress.</h2>
+      <p class="lead">There is no pass mark. A model is shown by how far up it gets. A milestone counts only when a program inside the game reads it from the game's own state.</p>
+    </div>
+    <div class="ob-two">
+      <div class="sbd ob-ladder"><ol class="sbd-ladder" aria-label="ONI G1 to G21"><li class="group">Tier 1: Survive</li><li class="frontier"><span>Sanitation and beds</span><span class="num" style="margin-left:auto">Claude Opus 5.5</span></li><li><span>First research</span><span class="num" style="margin-left:auto"></span></li><li><span>Past the ration cliff</span><span class="num" style="margin-left:auto"></span></li><li><span>Breathable base</span><span class="num" style="margin-left:auto"></span></li><li class="group">Tier 2: Sustain</li><li><span>Cooked food</span><span class="num" style="margin-left:auto"></span></li><li><span>Automation</span><span class="num" style="margin-left:auto"></span></li><li><span>Plumbing</span><span class="num" style="margin-left:auto"></span></li><li><span>Oxygen at scale</span><span class="num" style="margin-left:auto"></span></li><li><span>Power without hands</span><span class="num" style="margin-left:auto"></span></li><li><span>Growth without loss</span><span class="num" style="margin-left:auto"></span></li><li><span>Rooms</span><span class="num" style="margin-left:auto"></span></li><li class="group">Tier 3: Master</li><li><span>Century</span><span class="num" style="margin-left:auto"></span></li><li><span>Heat held under load</span><span class="num" style="margin-left:auto"></span></li><li><span>Water closed</span><span class="num" style="margin-left:auto"></span></li><li><span>Heavy industry</span><span class="num" style="margin-left:auto"></span></li><li><span>Ground research</span><span class="num" style="margin-left:auto"></span></li><li class="group">Tier 4: Feats</li><li><span>First rocket</span><span class="num" style="margin-left:auto"></span></li><li><span>All research</span><span class="num" style="margin-left:auto"></span></li><li><span>A home, by the game&#39;s own standard</span><span class="num" style="margin-left:auto"></span></li><li><span>Cycle 200 with no deaths</span><span class="num" style="margin-left:auto"></span></li><li><span>The Great Escape</span><span class="num" style="margin-left:auto"></span></li></ol></div>
+      <div>
+        <h3>One dot per run</h3>
+        <div class="sbd sbd-chart ob-chart"><svg class="sbd-dots" viewBox="0 0 760 133" role="img" aria-label="One dot per run on the ONI G1 to G21 ladder"><text x="0" y="31.5">Claude Fable 5.2</text><line class="grid" x1="150" x2="744" y1="27.5" y2="27.5"/><line class="noresult" x1="146" x2="154" y1="18.5" y2="18.5"><title>Rehearsal, Nov 21, 4:26 PM: No result, furthest rung 0 of 21</title></line><line class="noresult" x1="146" x2="154" y1="27.5" y2="27.5"><title>Rehearsal, Nov 21, 4:41 PM: No result, furthest rung 0 of 21</title></line><g><title>Rehearsal, Nov 21, 5:27 PM: Not reached, furthest rung 0 of 21</title><circle cx="150" cy="36.5" r="5" fill="var(--paper)" stroke="var(--st-fail)"/><path d="M147 33.5L153 39.5M153 33.5L147 39.5" stroke="var(--st-fail)"/></g><text x="0" y="70.5">Claude Opus 5.5</text><line class="grid" x1="150" x2="744" y1="66.5" y2="66.5"/><rect x="178.28571428571428" y="63.5" width="1" height="6" fill="var(--rule)"/><line class="noresult" x1="146" x2="154" y1="66.5" y2="66.5"><title>Rehearsal, Nov 21, 6:01 PM: No result, furthest rung 0 of 21</title></line><circle cx="178.28571428571428" cy="57.5" r="5" fill="var(--st-earned)"><title>Rehearsal, Nov 21, 7:46 PM: Earned, furthest rung 1 of 21</title></circle><circle cx="178.28571428571428" cy="66.5" r="5" fill="var(--st-earned)"><title>Colony attempt-1: Earned, furthest rung 1 of 21</title></circle><circle cx="178.28571428571428" cy="75.5" r="5" fill="var(--st-earned)"><title>Colony attempt-2: Earned, furthest rung 1 of 21</title></circle><text x="0" y="109.5">GPT-6.2 Astra</text><line class="grid" x1="150" x2="744" y1="105.5" y2="105.5"/><g><title>Colony gpt-astra-1: Not reached, furthest rung 0 of 21</title><circle cx="150" cy="105.5" r="5" fill="var(--paper)" stroke="var(--st-fail)"/><path d="M147 102.5L153 108.5M153 102.5L147 108.5" stroke="var(--st-fail)"/></g></svg></div>
+        <p class="fine">A filled dot is a run that earned its furthest milestone. A crossed dot ended with none. A short dash is a no result. <span class="ob-v" data-v="y">Verified</span></p>
+        <p class="ob-more"><a href="leaderboard.html">Open the leaderboard <span aria-hidden="true">&#8594;</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="runs" aria-labelledby="runs-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Replays · from the run records</span>
+      <h2 id="runs-title">Every move, as recorded.</h2>
+      <p class="lead">Each run has a page with what the AI said it was doing on each turn, how many of its orders the game took and how the colony stood at the end.</p>
+    </div>
+    <div class="sbr-grid">
+      <article class="sbr-card ob-card">
+        <h3><a href="runs/20261124t214714z.html">Colony gpt-astra-1</a> <span class="sbr-ms">GPT-6.2 Astra · November 24, 2026</span></h3>
+        <p class="sbr-result"><span class="sbd-chip" data-v="not_reached">Not reached</span> Reached cycle 4 in 20 turns with 3 colonists alive.</p>
+        <p class="sbr-links"><a href="runs/20261124t214714z.html">Open the replay</a></p>
+      </article>
+<article class="sbr-card ob-card">
+        <h3><a href="runs/20261124t041655z.html">Colony attempt-2</a> <span class="sbr-ms">Claude Opus 5.5 · November 23, 2026</span></h3>
+        <p class="sbr-result"><span class="sbd-chip" data-v="earned">Earned</span> Sanitation and beds at cycle 4. Reached cycle 11 in 75 turns with 4 colonists alive and 1 lost.</p>
+        <p class="sbr-links"><a href="runs/20261124t041655z.html">Sitting 1</a> · <a href="runs/20261124t143854z.html">Sitting 2</a> · <a href="runs/20261124t193720z.html">Sitting 3</a></p>
+      </article>
+<article class="sbr-card ob-card">
+        <h3><a href="runs/20261122t065855z.html">Colony attempt-1</a> <span class="sbr-ms">Claude Opus 5.5 · November 22, 2026</span></h3>
+        <p class="sbr-result"><span class="sbd-chip" data-v="earned">Earned</span> Sanitation and beds at cycle 7. Reached cycle 9 in 65 turns with 4 colonists alive.</p>
+        <p class="sbr-links"><a href="runs/20261122t065855z.html">Open the replay</a></p>
+      </article>
+    </div>
+    <p class="ob-more"><a href="runs/index.html">All 8 runs, including the ones with no result <span aria-hidden="true">&#8594;</span></a></p>
+  </div>
+</section>
+
+<section class="section" id="films" aria-labelledby="films-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Walkthrough films · daily report</span>
+      <h2 id="films-title">A report every morning. Films when there is footage.</h2>
+      <p class="lead">No film yet. ONI Bench recorded no game picture before November 28, 2026, so no run on this page has footage. Films will be cut from real game footage only.</p>
+    </div>
+    <p class="ob-more"><a href="reports/index.html">Read the daily report <span aria-hidden="true">&#8594;</span></a></p>
+  </div>
+</section>
+
+<section class="section band" id="judged" aria-labelledby="judged-title">
   <div class="wrap reading-copy-body">
     <div class="section-head">
       <h2 id="judged-title">How the game judges it.</h2>
     </div>
     <div class="tools">
-      <div><h3>The game is the judge</h3><p>A small program inside the game pauses it, applies the AI's move, runs a fixed slice of game time and reads the colony back. A milestone counts only when that reading shows it.</p></div>
-      <div><h3>One move per turn</h3><p>The game waits while the AI decides, so a slow model is not punished for thinking. It sees the colony as text and asks for one move.</p></div>
-      <div><h3>Misses stay on the record</h3><p>A run that falls short is kept and shown. A run stopped by the test's own machinery is marked Not run and repeated, never counted against the model.</p></div>
-      <div><h3>Played as a player would</h3><p>No sandbox, no debug mode, no instant building. A script that plays from a fixed list of moves is the reference run, never counted as an AI.</p></div>
+      <div><h3>The game is the judge</h3><p>A small program inside the game pauses it, applies the AI's move, runs a slice of game time and reads the colony back. A milestone counts only when that reading shows it.</p></div>
+      <div><h3>One move per turn</h3><p>The game waits while the AI decides, so a slow model is not punished for thinking. It sees the colony as text and sends its orders.</p></div>
+      <div><h3>Misses stay on the record</h3><p>A run that falls short is kept and shown. A run stopped by the test's own machinery is marked No result and owed a rerun, never counted against the model.</p></div>
+      <div><h3>Played as a player would</h3><p>No sandbox, no debug mode, no instant building. The AI is shown what the game shows a player and is given no strategy.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section band" id="ladder" aria-labelledby="ladder-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">The ladder · as planned</span>
-      <h2 id="ladder-title">What counts as progress.</h2>
-      <p class="lead">Each rung tests one thing a player has to learn. These are the planned first two tiers; the exact pass rules will be checked against the game's own data files before any scored run.</p>
-    </div>
-    <div class="table-scroll" role="region" aria-label="Planned milestones" tabindex="0">
-      <table class="status-table">
-        <thead><tr><th scope="col">Milestone</th><th scope="col">Passes when the game shows</th><th scope="col">Tests</th><th scope="col">Result</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">1-1 Toilet and wash</th><td>An outhouse and a wash basin built and used</td><td>Building basics</td><td>Not run</td></tr>
-          <tr><th scope="row">1-2 First research</th><td>A research station powered by a hand-cranked generator, one technology done</td><td>Power, research</td><td>Not run</td></tr>
-          <tr><th scope="row">1-3 Fed colony</th><td>Every colonist fed for 5 straight cycles from a farm the AI built</td><td>Food</td><td>Not run</td></tr>
-          <tr><th scope="row">1-4 Breathable base</th><td>Oxygen production keeps living space breathable for 5 cycles</td><td>Air</td><td>Not run</td></tr>
-          <tr><th scope="row">2-1 Oxygen loop</th><td>Oxygen made from water, with the leftover hydrogen burned for power</td><td>A closed loop</td><td>Not run</td></tr>
-          <tr><th scope="row">2-2 Water recycling</th><td>Dirty water cleaned and reused for 10 cycles</td><td>Liquids</td><td>Not run</td></tr>
-          <tr><th scope="row">2-3 Stable temperature</th><td>The base held inside a set temperature band for 10 cycles</td><td>Heat</td><td>Not run</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="fine" style="margin-top:16px;max-width:72ch">Beside the ladder, and never blended into it: cycles survived before the first colonist dies and colony health every few cycles (breathable space, stress, food stored, power).</p>
-  </div>
-</section>
-
-<section class="section" id="viewer" aria-labelledby="viewer-title">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Interface study · made-up data</span>
-      <h2 id="viewer-title">What the results will look like.</h2>
-      <p class="lead">The viewer was built first, on invented runs, so the real ones arrive in a form that is already readable. Every screen below shows made-up data and says so across its top.</p>
-    </div>
-    <div class="sbr-grid">
-      <article class="sbr-card">
-        <h3>The progress curve <span class="sbr-ms">how far up the ladder, by cycle or turn</span></h3>
-        <figure class="sbr-film">
-          <a href="../../assets/oni-bench/viewer-progress-curve.png"><img src="../../assets/oni-bench/viewer-progress-curve.png" alt="The viewer's progress curve: four made-up seats climb a ladder of milestones from 1-1 to 2-3 against game cycles, each drawn with its own line style and named at the line's end." width="1920" height="1632" loading="lazy"></a>
-          <figcaption class="fine" style="margin-top:12px">There is no pass mark. Each seat is shown by how far it gets and how fast, in game time and in turns. The scripted reference is labelled and never counted as an AI. Made-up data. <a href="../../assets/oni-bench/viewer-progress-curve.png">Open the full-size screen</a>.</figcaption>
-        </figure>
-      </article>
-      <article class="sbr-card">
-        <h3>Every turn, replayed <span class="sbr-ms">from the run's transcript</span></h3>
-        <figure class="sbr-film">
-          <a href="../../assets/oni-bench/viewer-replay.png"><img src="../../assets/oni-bench/viewer-replay.png" alt="The viewer's replay of one made-up run: what the AI saw, the one move it asked for as plain JSON, what the game did with it, and a scrolling list of every turn." width="1920" height="1268" loading="lazy"></a>
-          <figcaption class="fine" style="margin-top:12px">Step through a run one move at a time: what the AI saw, what it asked for and what the game did. Refused moves are quoted as recorded. Made-up data. <a href="../../assets/oni-bench/viewer-replay.png">Open the full-size screen</a>.</figcaption>
-        </figure>
-      </article>
-      <article class="sbr-card">
-        <h3>Head to head <span class="sbr-ms">two AIs, one milestone, every run</span></h3>
-        <figure class="sbr-film">
-          <a href="../../assets/oni-bench/viewer-head-to-head.png"><img src="../../assets/oni-bench/viewer-head-to-head.png" alt="The viewer's head to head chart: the share of a milestone's goal reached after each turn, one solid line per run for one made-up seat and one dashed line per run for the other." width="1728" height="813" loading="lazy"></a>
-          <figcaption class="fine" style="margin-top:12px">One AI ranks above another only when each has at least two runs and their ranges do not overlap. Otherwise the viewer says pilot or tied. Made-up data. <a href="../../assets/oni-bench/viewer-head-to-head.png">Open the full-size screen</a>.</figcaption>
-        </figure>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section band" id="contribution" aria-labelledby="contribution-title">
+<section class="section" id="contribution" aria-labelledby="contribution-title">
   <div class="wrap">
     <div class="section-head"><h2 id="contribution-title">What went into this work.</h2></div>
     <div class="contribution">
@@ -152,7 +150,7 @@
       </div>
       <div>
         <h3>What the AI did</h3>
-        <p>AI tools write the code: the program inside the game, the turn driver, the tests and this viewer. AI tools also did the background research, with sources cited in the project's records.</p>
+        <p>AI tools write the code: the program inside the game, the turn driver, the tests and these pages. AI tools also did the background research, with sources cited in the project's records.</p>
         <p><a href="../../about.html#how-i-work">How I work with AI tools</a></p>
       </div>
     </div>
@@ -166,20 +164,17 @@
         <h2 id="record-title" style="font-size:clamp(30px,3vw,44px)">What exists, and what it shows.</h2>
       </div>
       <dl>
-        <dt>Shown</dt><dd>The run viewer's own screens, drawn from made-up sample data written by a script. No game was played and no model was run to make them.</dd>
-        <dt>Built</dt><dd>As of November 20, 2026: the plan, the program that runs inside the game, the turn driver and its tests, which pass against a stand-in game.</dd>
-        <dt>Not shown yet</dt><dd>Any run in the real game, any milestone passed, any game footage, and any AI model result. The milestone pass rules are planned and still to be checked against the game's data files.</dd>
+        <dt>Verified</dt><dd>8 runs in 10 sittings by 3 AI models, played in the real game between November 21, 2026 and November 25, 2026. Results, turns, cycles and colonists are read from the job reports the run host wrote. 18 check and setup jobs with no AI player are left out.</dd>
+        <dt>Unverified</dt><dd>Whether these early runs are a fair comparison between models. They were played on different revisions of the test and with different run limits, so the leaderboard ranks no one.</dd>
+        <dt>Not shown yet</dt><dd>Game footage and films, and any milestone past the first. The proof saves stay off this site because they are game files.</dd>
       </dl>
     </div>
-    <p class="fine" style="margin-top:32px">An independent hobby project, not affiliated with or endorsed by Klei Entertainment. Oxygen Not Included and its artwork belong to their owners. This page shows no game artwork.</p>
-    <div class="links"><a href="project-record.json">Project record (JSON)</a><a href="../../evidence.html">All sources and records</a></div>
+    <div class="links"><a href="runs.json">Run record (JSON)</a><a href="project-record.json">Project record (JSON)</a><a href="../../evidence.html">All sources and records</a></div>
   </div>
 </section>
-
 <section class="section tight">
-  <div class="wrap next-case">
-    <div><span class="kicker">More work</span><a class="big" href="../../index.html#independent">Independent projects <span aria-hidden="true">&#8594;</span></a></div>
-    <a class="more" href="../../index.html#independent">All work</a>
+  <div class="wrap">
+    <p class="fine ob-disc">An independent hobby project, not affiliated with or endorsed by Klei Entertainment. Oxygen Not Included and its artwork belong to their owners.</p>
   </div>
 </section>
 </main>
