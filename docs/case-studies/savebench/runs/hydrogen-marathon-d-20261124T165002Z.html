@@ -1,0 +1,848 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gemini 4 Hydrogen plays a Marathon: 3 milestones bought · SaveBench · Zach Stern</title><meta name="description" content="Every reply and move an AI model made in one SaveBench Marathon, from the run record, with the milestones the game accepted: Gemini 4 Hydrogen plays a Marathon: 3 milestones bought, November 24, 2026."><link rel="canonical" href="https://sternone.net/case-studies/savebench/runs/hydrogen-marathon-d-20261124T165002Z.html"><link rel="icon" href="../../../assets/icons/favicon.svg" type="image/svg+xml"><meta property="og:type" content="article"><meta property="og:site_name" content="Zach Stern"><meta property="og:title" content="Gemini 4 Hydrogen plays a Marathon: 3 milestones bought · SaveBench · Zach Stern"><meta property="og:description" content="Every reply and move an AI model made in one SaveBench Marathon, from the run record, with the milestones the game accepted: Gemini 4 Hydrogen plays a Marathon: 3 milestones bought, November 24, 2026."><meta property="og:url" content="https://sternone.net/case-studies/savebench/runs/hydrogen-marathon-d-20261124T165002Z.html"><meta property="og:image" content="https://sternone.net/assets/og/og-savebench.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0e1b21"><style>/* Ladder story page (ladder-story.js). Self-contained: no web fonts, light and dark. */
+:root{--bg:#f6f4ef;--panel:#fffdf8;--ink:#1f2328;--soft:#5b6168;--line:#e2ddd2;--accent:#c96a12;
+  --good:#2f7d4a;--good-bg:#e5f3ea;--wait:#9a6a00;--wait-bg:#fbf1d6;--stop:#b23b2e;--stop-bg:#f9e3df;
+  --quiet:#5b6168;--quiet-bg:#eeece6}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--panel:#1f2226;--ink:#eceae4;--soft:#a5a9ae;--line:#33373c;
+  --accent:#f0a24a;--good:#7fd19b;--good-bg:#1d3326;--wait:#f0c860;--wait-bg:#352c14;--stop:#f28b7e;--stop-bg:#3a1f1b;
+  --quiet:#a5a9ae;--quiet-bg:#2a2d31}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.lst{max-width:980px;margin:0 auto;padding:24px 16px 48px}
+.lst h1{font-size:28px;line-height:1.2;margin:0 0 8px}
+.lst h2{font-size:18px;margin:0 0 10px}
+.lst h3{font-size:15px;margin:0 0 4px}
+.lst-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.lst-tag{border-radius:999px;padding:3px 12px;font-size:14px;font-weight:600;border:1px solid var(--line)}
+.lst-tag-script{background:var(--quiet-bg);color:var(--ink)}
+.lst-tag-ok{background:var(--good-bg);color:var(--good);border-color:transparent}
+.lst-tag-plain{background:var(--panel)}
+.lst-note,.lst-sub,.lst-moment,.lst-foot,.lst-gap{color:var(--soft);font-size:14px;margin:4px 0}
+.lst section{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0}
+.lst-chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:16px 0}
+.lst-chapter{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:10px 12px;
+  border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;cursor:pointer;min-height:44px}
+.lst-chapter.is-current{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.lst-chapter-n{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.04em}
+.lst-chapter-t{font-weight:600;font-size:15px}
+.lst-chapter-ok{font-size:13px;color:var(--good);font-weight:600}
+.lst-time{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}
+.lst-time .lst-moment{grid-column:1/-1;margin:0}
+.lst-play,.lst-skip,.lst-events button{font:inherit;border-radius:8px;border:1px solid var(--line);background:var(--bg);
+  color:var(--ink);padding:8px 14px;cursor:pointer;min-height:40px}
+.lst-play{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;min-width:84px}
+.lst-range{width:100%;accent-color:var(--accent)}
+.lst-goal{margin:8px 0}
+.lst-goal-t{display:block;font-size:15px}
+.lst-goal-track{display:block;height:8px;border-radius:4px;background:var(--quiet-bg);overflow:hidden;margin-top:4px}
+.lst-goal-fill{display:block;height:100%;background:var(--accent)}
+.lst-goal.is-reached .lst-goal-fill{background:var(--good)}
+.lst-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.lst-card{border-radius:10px;padding:10px 12px;border-left:5px solid var(--quiet);background:var(--quiet-bg)}
+.lst-card.tone-good{border-color:var(--good);background:var(--good-bg)}
+.lst-card.tone-wait{border-color:var(--wait);background:var(--wait-bg)}
+.lst-card.tone-stop{border-color:var(--stop);background:var(--stop-bg)}
+.lst-card.tone-refused{border-color:var(--stop);border-style:dashed;background:var(--stop-bg)}
+.lst-state{margin:0;font-size:14px}
+.lst-fuel{margin:2px 0 0;font-size:13px;color:var(--soft)}
+.lst-end{border-color:var(--good)!important}
+.lst-events ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.lst-events button{width:100%;text-align:left;background:var(--panel)}
+.lst-events .is-future button{color:var(--soft)}
+.lst-events .is-past button{border-color:var(--accent)}
+.lst-dev ul{margin:0;padding-left:20px}
+@media (max-width:560px){
+  .lst h1{font-size:23px}
+  .lst-time{grid-template-columns:1fr 1fr}
+  .lst-range{grid-column:1/-1;order:-1}
+  .lst-grid{grid-template-columns:1fr 1fr}
+}
+.lst-video{display:block;width:100%;max-height:60vh;border-radius:10px;background:#000}
+/* seat-story.js ("Played by an AI") */
+.lst-tag-ai{background:var(--accent);color:#fff;border-color:transparent}
+.sst-tile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.sst-tile{background:var(--quiet-bg);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
+.sst-big{font-size:26px;font-weight:700;line-height:1.1}
+.sst-small{font-size:13px;color:var(--soft)}
+.sst-strip{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:3px}
+.sst-dot{width:14px;height:14px;border-radius:4px;border:0;padding:0;cursor:pointer;background:var(--quiet)}
+.sst-dot.tone-good{background:var(--good)}
+.sst-dot.tone-wait{background:var(--wait)}
+.sst-dot.tone-stop{background:var(--stop)}
+.lst .sst-dot.tone-refused{background:var(--panel);box-shadow:inset 0 0 0 2px var(--stop);color:var(--stop)}
+.sst-dot.tone-quiet{background:var(--line)}
+.sst-note{margin:0 0 12px;padding:10px 12px;border-left:4px solid var(--accent);background:var(--quiet-bg);border-radius:0 10px 10px 0;display:flex;flex-direction:column;gap:2px}
+.sst-note-by{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--soft)}
+.sst-lost{margin:0;padding:10px 12px;border-radius:10px;background:var(--quiet-bg);color:var(--soft)}
+.sst-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.sst-steps .lst-state{overflow-wrap:anywhere}
+.lst-events summary{cursor:pointer;font-weight:600;font-size:18px;margin-bottom:10px}
+/* seat-story.js v2: goal bars, chapters, codes, keyboard strip */
+.lst :focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.lst summary{cursor:pointer;min-height:24px}
+.sst-hero h2{font-size:22px;line-height:1.25}
+.sst-legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0;font-size:14px}
+.sst-key{display:inline-flex;align-items:center;gap:6px}
+.sst-sw{display:inline-block;width:18px;height:12px;border-radius:3px;border:1px solid var(--ink)}
+.sst-sw-machine{background:var(--good)}
+.sst-sw-bench{background:transparent;border:2px dashed var(--wait)}
+.sst-sw-missing{background:var(--panel)}
+.sst-goals{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.sst-goal-top{display:flex;justify-content:space-between;gap:8px;margin:0 0 4px;font-size:16px}
+.sst-goal-n{font-variant-numeric:tabular-nums;font-weight:600}
+.sst-bar{display:flex;height:20px;border-radius:6px;border:1px solid var(--ink);background:var(--panel);overflow:hidden}
+.sst-seg{display:block;height:100%;transition:width .35s ease}
+.sst-seg-machine{background:var(--good)}
+/* bench-made: drawn apart from the bar, outlined, never filling it: it does not count toward the goal */
+.sst-bench{display:flex;height:12px;margin-top:6px}
+.sst-bench[hidden],.sst-bench-text[hidden]{display:none}
+.sst-seg-bench{border:2px dashed var(--wait);border-radius:4px;background:transparent;min-width:6px}
+.sst-hero-ctl{margin:4px 0 8px}
+.sst-whole{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-size:14px}
+.sst-whole h3{font-size:15px}
+.sst-whole ul{margin:4px 0 0;padding-left:18px;overflow-wrap:anywhere}
+.sst-whole li{margin:4px 0}
+.sst-goal-text{margin:4px 0 0;font-size:14px;color:var(--soft);overflow-wrap:anywhere}
+.sst-ore{font-size:14px;margin:10px 0 0;overflow-wrap:anywhere}
+.sst-more,.sst-raw,.sst-src{margin-top:8px;font-size:14px;color:var(--soft)}
+.sst-more p,.sst-src p{margin:6px 0 0;overflow-wrap:anywhere}
+.sst-axis{grid-column:1/-1;margin:0;font-size:13px;color:var(--soft)}
+.sst-strip{gap:6px;padding:6px 4px}
+.lst .sst-dot{width:24px;height:24px;min-width:24px;border-radius:5px;font:700 13px/24px system-ui,sans-serif;color:var(--panel);text-align:center}
+.lst .sst-dot.tone-quiet{color:var(--ink)}
+/* the reply shown: a solid orange ring (box-shadow); keyboard focus: a dashed ink outline further out */
+.lst .sst-dot{position:relative}
+.lst .sst-dot.is-current{outline:none;box-shadow:0 0 0 2px var(--panel),0 0 0 5px var(--accent);z-index:1}
+.lst .sst-dot:focus-visible{outline:3px dashed var(--ink);outline-offset:6px;z-index:2}
+.sst-symkey{grid-column:1/-1;margin:0;font-size:13px;color:var(--soft)}
+.sst-symkey b{color:var(--ink)}
+.sst-live{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.sst-by{font-weight:600}
+.sst-origin{display:block;font-size:12px;color:var(--soft)}
+.sst-wrong summary{font-weight:600;margin-top:4px}
+.sst-wrong-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.sst-wrong-b{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;text-align:left;font:inherit;padding:8px 12px;
+  border-radius:8px;border:1px solid var(--line);border-left:5px solid var(--stop);background:var(--panel);color:var(--ink);cursor:pointer;min-height:44px}
+.sst-wrong-b.is-current{box-shadow:0 0 0 2px var(--accent) inset}
+.sst-code-inline{font-size:13px;color:var(--soft);overflow-wrap:anywhere}
+.sst-step-tag{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
+.sst-said{margin:4px 0;padding-left:18px;font-size:15px;overflow-wrap:anywhere}
+.sst-codes{margin:6px 0 0;padding-left:18px;font-size:14px}
+.sst-codes code,.sst-codetable code{font-size:13px;overflow-wrap:anywhere;background:var(--quiet-bg);padding:1px 4px;border-radius:4px}
+.sst-raw ul{margin:4px 0 0;padding-left:18px;overflow-wrap:anywhere}
+.sst-codetable table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px}
+.sst-codetable caption{text-align:left;color:var(--soft);font-size:13px;margin-bottom:8px}
+.sst-codetable th,.sst-codetable td{text-align:left;vertical-align:top;padding:8px 6px;border-top:1px solid var(--line);overflow-wrap:anywhere}
+.sst-codetable th:nth-child(1){width:26%}.sst-codetable th:nth-child(2){width:22%}.sst-codetable th:nth-child(4){width:4.5em}
+.sst-filter{display:flex;align-items:center;gap:8px;min-height:44px;font-weight:600;cursor:pointer}
+.sst-filter input{width:22px;height:22px;accent-color:var(--accent)}
+.lst-events button{min-height:44px;overflow-wrap:anywhere}
+@media (max-width:560px){.sst-codetable th:nth-child(1){width:30%}.sst-codetable th:nth-child(2){width:26%}.sst-codetable th:nth-child(4){width:3.2em}}
+@media (prefers-reduced-motion:reduce){.lst *{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+/* seat-story.js v3: the factory drawing */
+.sst-fac{margin:28px 0;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.sst-fac h2{font-size:22px;line-height:1.25;margin:0 0 4px}
+.sst-fac-sum{margin:0 0 10px;font-weight:600;font-variant-numeric:tabular-nums}
+.sst-fac-box{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.sst-fac-svg{display:block;width:100%;min-width:600px;height:auto}
+.sst-fac-col{font:600 13px system-ui,sans-serif;fill:var(--soft)}
+.sst-fac-n rect{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.sst-fac-ore rect{fill:var(--quiet-bg);stroke-dasharray:4 3}
+.sst-fac-miner rect{stroke:var(--good)}
+.sst-fac-smelter rect,.sst-fac-machine rect{stroke:var(--ink)}
+.sst-fac-n.is-new rect{stroke:var(--accent);stroke-width:3}
+.sst-fac-l{font:600 13.5px system-ui,sans-serif;fill:var(--ink)}
+.sst-fac-r{font:12.5px system-ui,sans-serif;fill:var(--soft)}
+.sst-fac-belt{fill:none;stroke:var(--soft);stroke-width:2.2}
+.sst-fac-belt.is-new{stroke:var(--accent);stroke-width:3}
+.sst-fac-tie{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:3 3}
+.sst-fac-note{margin:10px 0 0;font-size:14px;color:var(--soft)}
+@media (prefers-reduced-motion:no-preference){.sst-fac-n.is-new rect,.sst-fac-belt.is-new{transition:stroke .3s}}
+.sst-fac-head{fill:var(--soft)}.sst-fac-head.is-new{fill:var(--accent)}
+.sst-fac-swipe{display:none;margin:0 0 6px;font-size:13px;color:var(--soft)}
+@media (max-width:640px){.sst-fac-swipe{display:block}.sst-fac{padding:14px}}
+.sst-fac-ore .sst-fac-l{font-weight:500;fill:var(--soft)}
+/* Visual first (2026-11-24): each tile keeps its number and a few words; the full breakdown is one click away. */
+.sst-tile-more{margin-top:6px}
+.sst-tile-more summary{font-size:12.5px;color:var(--soft);cursor:pointer}
+.sst-tile-more p{margin:6px 0 0;font-size:12.5px;line-height:1.4}
+.sst-keybox{margin-top:8px}
+/* A Marathon: the milestones the game accepted, on one line from the first reply to the last. */
+.sst-mara{margin:0 0 20px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.sst-mara h2{margin:0 0 30px;font-size:19px}
+.sst-mara-track{position:relative;height:4px;margin:0 14px 44px;background:var(--line);border-radius:2px}
+.sst-mara-run{position:absolute;inset:0;background:var(--soft);border-radius:2px}
+.sst-mara-pin{position:absolute;top:-7px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--panel);border:3px solid var(--good)}
+.sst-mara-pin.is-reached{background:var(--good)}
+.sst-mara-pin em{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font-style:normal;font-weight:700;font-size:13px;white-space:nowrap}
+.sst-mara-pin.is-low em{bottom:auto;top:22px}
+.sst-mara-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.sst-mara-card{display:grid;gap:2px;text-align:left;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);cursor:pointer;font:inherit}
+.sst-mara-card.is-reached{border-color:var(--good)}
+.sst-mara-card.is-current{box-shadow:0 0 0 2px var(--accent)}
+.sst-mara-ms{font-size:26px;font-weight:800;line-height:1.1}
+.sst-mara-at{font-size:12.5px;font-weight:600;color:var(--good);text-transform:uppercase;letter-spacing:.04em}
+.sst-mara-cost{font-size:13px;color:var(--soft)}
+</style><style>.lst-film{margin:0 0 24px}.lst-film a{border-radius:8px;overflow:hidden}.lst-film a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.lst-film figcaption{margin-top:10px;font-size:14.5px;color:var(--soft)}.lst-film video{border-radius:8px}</style></head><body><noscript><p>This page draws the run from its record with JavaScript. <a href="marathons.html">Every Marathon</a> is listed without it.</p></noscript><main id="story" class="lst"></main><section id="run-film" class="lst" aria-label="Film of this run"><figure class="lst-film"><a href="../../../assets/savebench/film/marathon/d-20261124T165002Z.mp4" data-sb-film data-label="Film of the world Gemini 4 Hydrogen left at the end of this Marathon" style="display:block;position:relative"><img src="../../../assets/savebench/film/marathon/d-20261124T165002Z-poster.jpg" srcset="../../../assets/savebench/film/marathon/d-20261124T165002Z-poster-640.jpg 640w, ../../../assets/savebench/film/marathon/d-20261124T165002Z-poster.jpg 1280w" sizes="(max-width:1000px) 100vw, 948px" alt="" width="1280" height="720" loading="lazy" decoding="async" style="width:100%;height:auto;display:block"><span style="position:absolute;left:16px;bottom:16px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;border-radius:6px;font-weight:600">Play the film (57 seconds, silent)</span></a><figcaption><span>Real game footage · silent</span><details class="sbr-about"><summary>About this film</summary><p>Game camera film of the world Gemini 4 Hydrogen left when this Marathon ended. There is no sound and no text on screen. The film shows the factory; the milestones come from the run record.</p></details></figcaption></figure></section><script type="application/json" id="story-data">{"schema":"savebench-seat-story/1","run_id":"hydrogen-marathon-d-20261124T165002Z","made_by":"model","model":"gemini-4-hydrogen","model_name":"Gemini 4 Hydrogen","milestone":"marathon","verdict":"pass","earned":false,"stop":"deadline","stop_words":"Stopped: the time limit ran out","sources":{"transcript_sha256":"3b036ce17ceba524d8a169eebc52e3e0f4e9ae04defb1363aedcba80e10937ca","experiment_sha256":"e5c92b2621bce87fe0117173e0a7e19b0fe70cbdb38e3110761afe227dd9087b","unreadable_rows":0},"summary":{"replies":44,"lost_replies":0,"actions":329,"done":320,"refused":1,"failed":8,"not_run":14,"collected":[{"name":"Copper Ore","count":30},{"name":"Iron Ore","count":50},{"name":"Wire","count":1043},{"name":"Iron Plate","count":910},{"name":"Iron Ingot","count":20},{"name":"Iron Rod","count":353},{"name":"Cable","count":274},{"name":"Limestone","count":54},{"name":"Concrete","count":477},{"name":"Screws","count":512},{"name":"Reinforced plate","count":6}],"machine_made":[{"name":"Wire","count":1043},{"name":"Iron Plate","count":910},{"name":"Iron Rod","count":333},{"name":"Concrete","count":459},{"name":"Cable","count":234},{"name":"Screws","count":464}],"hand_mined":[{"name":"Copper Ore","count":30},{"name":"Iron Ore","count":50},{"name":"Limestone","count":54}],"hand_fed":[],"hand_crafted":[{"name":"Iron Ingot","count":20},{"name":"Iron Rod","count":20},{"name":"Cable","count":40},{"name":"Concrete","count":18},{"name":"Screws","count":48},{"name":"Reinforced plate","count":6},{"name":"Biomass","count":150}],"miners":4,"belts":16,"elapsed_s":7435},"turns":[{"turn":1,"note":"Turn 1: check milestones and nearby iron, copper, stone, and coal nodes.","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Iron Ore nearby","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Copper Ore nearby","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Limestone nearby","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Coal nearby","outcome":"done","answer":"Done"}],"not_run":0},{"turn":2,"note":"Built burner-1 (fueled), poles 1-4 toward ore_copper-1, and copper miner. Next: build pole-5, copper smelter, wire constructor, storage, connect power and belts.","lost":null,"steps":[{"tool":"build","text":"Build a Biomass Burner","outcome":"done","answer":"Done"},{"tool":"supply","text":"Carry 100 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"100 went in."}],"raw":[{"by":"record","text":"moved: 100"}]},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from burner-1 to pole-1","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"build_miner","text":"Build a Miner on ore_copper-1","outcome":"done","answer":"Done","said":[{"by":"record","text":"30 Copper Ore was dug by hand to clear the spot."}],"raw":[{"by":"record","text":"hand_mined: {\"ore_copper\": 30}"}]}],"not_run":0},{"turn":3,"note":"Turn 3: Built pole-5, smelter-1, constructor-1, storage-1 near ore_copper-1 and wired pole-1..5. Turn 4: connect pole-5 to miner_mk1-1, smelter-1, constructor-1; set_recipe smelter-1=Recipe_IngotCopper_C, constructor-1=Recipe_Wire_C; belt\u2026","lost":null,"steps":[{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Smelter","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-1 to pole-2","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-2 to pole-3","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-3 to pole-4","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-4 to pole-5","outcome":"done","answer":"Done"}],"not_run":0},{"turn":4,"note":"Turn 4: Powered and configured copper->wire line (miner_mk1-1->smelter-1->constructor-1->storage-1). Next: check milestones, query nodes for ore_iron and stone, wait for wire, collect storage-1, and build iron & concrete lines.","lost":null,"steps":[{"tool":"connect_power","text":"Run a power line from pole-5 to miner_mk1-1","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-5 to smelter-1","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-5 to constructor-1","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set smelter-1 to make Copper Ingot","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-1 to make Wire","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from miner_mk1-1 to smelter-1","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from smelter-1 to constructor-1","outcome":"failed","answer":"Did not work","codes":[{"code":"placement_refused","kind":"error","by":"game"},{"code":"FGCDConveyorTooSteep","kind":"game_says","by":"game"}],"raw":[{"by":"game","text":"game_says: [\"FGCDConveyorTooSteep\"]"},{"by":"game","text":"error: \"placement_refused\""},{"by":"hint","text":"hint: \"the two machines stand at different heights and the belt would climb too steeply. Build the next machine on level ground at about the same height as the one feeding it (a build reports height_change_m when the ground moved it), then belt again\""}]}],"not_run":1},{"turn":5,"note":"Turn 5: Checking milestones, nearest iron and stone nodes, and inspecting the copper->wire line buildings to diagnose why smelter-1 -> constructor-1 failed with FGCDConveyorTooSteep.","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Iron Ore nearby","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Limestone nearby","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at miner_mk1-1","outcome":"done","answer":"Done","said":[{"by":"game","text":"It was making things; it had power; its busy score (productivity) was 0.9960784316062927."}],"raw":[{"by":"game","text":"producing: true"},{"by":"game","text":"has_power: true"},{"by":"game","text":"productivity: 0.9960784316062927"},{"by":"game","text":"production_paused: false"}]},{"tool":"inspect","text":"Look closely at smelter-1","outcome":"done","answer":"Done","said":[{"by":"game","text":"It was making things; it had power; its busy score (productivity) was 0.9960784316062927."}],"raw":[{"by":"game","text":"producing: true"},{"by":"game","text":"has_power: true"},{"by":"game","text":"productivity: 0.9960784316062927"},{"by":"game","text":"production_paused: false"}]},{"tool":"inspect","text":"Look closely at constructor-1","outcome":"done","answer":"Done","said":[{"by":"game","text":"It was not making anything; it had power; its busy score (productivity) was 0; nothing was waiting to go in."}],"raw":[{"by":"game","text":"producing: false"},{"by":"game","text":"has_power: true"},{"by":"game","text":"productivity: 0"},{"by":"game","text":"production_paused: false"}]},{"tool":"inspect","text":"Look closely at storage-1","outcome":"done","answer":"Done","said":[{"by":"game","text":"It is empty."}],"raw":[{"by":"game","text":"producing: true"},{"by":"game","text":"has_power: false"},{"by":"game","text":"productivity: 0"},{"by":"game","text":"production_paused: false"}]}],"not_run":0},{"turn":6,"note":"Relocate copper wire constructor south of smelter-1 (21800,-14800) to avoid the steep west slope that caused FGCDConveyorTooSteep, and start Miner Mk1 on ore_iron-1. Next turn: check constructor height/id, belt smelter-1 -> constructor, bu\u2026","lost":null,"steps":[{"tool":"dismantle","text":"Take down constructor-1","outcome":"done","answer":"Done"},{"tool":"dismantle","text":"Take down storage-1","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"build_miner","text":"Build a Miner on ore_iron-1","outcome":"done","answer":"Done","said":[{"by":"record","text":"30 Iron Ore was dug by hand to clear the spot."}],"raw":[{"by":"record","text":"hand_mined: {\"ore_iron\": 30}"}]}],"not_run":0},{"turn":7,"note":"Hooked up constructor-2 (wire) and miner_mk1-2 (iron), built storage-2, belted copper line, waited 60s and collected wire. Next: build pole-6 off pole-1, build smelter-2 + constructor-3 + storage-3 for ore_iron-1 (plates/rods), and plan se\u2026","lost":null,"steps":[{"tool":"connect_power","text":"Run a power line from constructor-2 to pole-5","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-2 to make Wire","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from miner_mk1-2 to pole-1","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from smelter-1 to constructor-2","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-2 to storage-2","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 60 seconds","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 2 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 2}"}]}],"not_run":0},{"turn":8,"note":"Check milestones, wait 40s for wire in storage-2, collect wire, then build pole-6 (off pole-1), smelter-2, constructor-3, storage-3 for ore_iron-1. Next turn: wire smelter-2 and constructor-3 to pole-6, set recipes (IngotIron, IronPlate),\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 40 seconds","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 41 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 41}"}]},{"tool":"build","text":"Build a Power Pole","outcome":"failed","answer":"Did not work","codes":[{"code":"no_surface_hit","kind":"error","by":"game"}],"raw":[{"by":"game","text":"error: \"no_surface_hit\""}]}],"not_run":4},{"turn":9,"note":"Built pole-6, smelter-2, constructor-3, storage-3 for ore_iron-1 and wired power (total load 26/30 MW). Next turn: set constructor-3 to Recipe_IronPlate_C, belt miner_mk1-2 -> smelter-2 -> constructor-3 -> storage-3, then start expanding p\u2026","lost":null,"steps":[{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Smelter","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-6 to pole-1","outcome":"refused","answer":"Refused by this test: a 'pole-6' is not one of your buildings ['burner-1', 'constructor-2', 'constructor-3', 'miner_mk1-1', 'miner_mk1-2', 'pole-1', 'pole-2', 'pole-3', 'pole-4', 'pole-5', 'pole-7', 'smelter-1', 'smelter-2', 'storage-2', 'storage-3']"}],"not_run":3},{"turn":10,"note":"Wired pole-7, smelter-2, constructor-3 (26/30 MW), set recipes for Iron Plate line, and belted miner_mk1-2 -> smelter-2 -> constructor-3 -> storage-3. Next turn: collect wire from storage-2 and plates from storage-3, query nearby ore_iron\u2026","lost":null,"steps":[{"tool":"connect_power","text":"Run a power line from pole-7 to pole-1","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from smelter-2 to pole-7","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from constructor-3 to pole-7","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set smelter-2 to make Iron Ingot","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-3 to make Iron Plate","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from miner_mk1-2 to smelter-2","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from smelter-2 to constructor-3","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-3 to storage-3","outcome":"done","answer":"Done"}],"not_run":0},{"turn":11,"note":"Queried milestones and nearby iron/stone nodes; waited 50s for plates and wire; collected storage-2 and storage-3; built burner-2 and pole-8. Next turn: connect pole-8 to pole-7 and burner-2 to pole-8, fuel burner-2 (100 biomass), and expa\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Iron Ore nearby","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Limestone nearby","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 50 seconds","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 142 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 142}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 19 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 19}"}]},{"tool":"build","text":"Build a Biomass Burner","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"}],"not_run":0},{"turn":12,"note":"Connected and fueled burner-2 (100 biomass) via pole-8 to pole-7; collected plates (storage-3) and wire (storage-2); built and powered miner_mk1-3 on ore_iron-2; crafted 20 iron ingots. Next turn: craft 20 iron rods, build smelter-3, const\u2026","lost":null,"steps":[{"tool":"connect_power","text":"Run a power line from burner-2 to pole-8","outcome":"done","answer":"Done"},{"tool":"supply","text":"Carry 100 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"100 went in."}],"raw":[{"by":"record","text":"moved: 100"}]},{"tool":"connect_power","text":"Run a power line from pole-8 to pole-7","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 45 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 45}"}]},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 67 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 67}"}]},{"tool":"build_miner","text":"Build a Miner on ore_iron-2","outcome":"done","answer":"Done","said":[{"by":"record","text":"20 Iron Ore was dug by hand to clear the spot."}],"raw":[{"by":"record","text":"hand_mined: {\"ore_iron\": 20}"}]},{"tool":"connect_power","text":"Run a power line from miner_mk1-3 to pole-8","outcome":"done","answer":"Done"},{"tool":"craft","text":"Craft Iron Ingot by hand at the bench, 20 times","outcome":"done","answer":"Made by hand: 20 Iron Ingot"}],"not_run":0},{"turn":13,"note":"Checked milestones, crafted 20 iron rods, built smelter-3, constructor-4, storage-4, and pole-9, and set iron ingot/rod recipes. Next turn: connect power (pole-8->pole-9->smelter-3 & constructor-4), belt miner_mk1-3->smelter-3->constructor\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"craft","text":"Craft Iron Rod by hand at the bench, 20 times","outcome":"done","answer":"Made by hand: 20 Iron Rod"},{"tool":"build","text":"Build a Smelter","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set smelter-3 to make Iron Ingot","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-4 to make Iron Rod","outcome":"done","answer":"Done"}],"not_run":0},{"turn":14,"note":"Collected storage-3 plates, topped up burner-1 biomass, powered pole-9/smelter-3/constructor-4, and belted miner_mk1-3->smelter-3->constructor-4->storage-4 for automated iron rods. Next: craft ~20 cable from wire (or automate cable), build\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 118 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 118}"}]},{"tool":"supply","text":"Carry 100 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"100 went in."}],"raw":[{"by":"record","text":"moved: 100"}]},{"tool":"connect_power","text":"Run a power line from pole-8 to pole-9","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-9 to smelter-3","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-9 to constructor-4","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from miner_mk1-3 to smelter-3","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from smelter-3 to constructor-4","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-4 to storage-4","outcome":"failed","answer":"Did not work","codes":[{"code":"placement_refused","kind":"error","by":"game"},{"code":"FGCDConveyorTooSteep","kind":"game_says","by":"game"}],"raw":[{"by":"game","text":"game_says: [\"FGCDConveyorTooSteep\"]"},{"by":"game","text":"error: \"placement_refused\""},{"by":"hint","text":"hint: \"the two machines stand at different heights and the belt would climb too steeply. Build the next machine on level ground at about the same height as the one feeding it (a build reports height_change_m when the ground moved it), then belt again\""}]}],"not_run":0},{"turn":15,"note":"Checking milestones and stone nodes; dismantling steep storage-4 and rebuilding at [4900, 3000] for constructor-4 rods; crafting 15 cable; placing pole-10 and pole-11 toward stone-1; collecting wire from storage-2. Next: belt constructor-4\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Limestone nearby","outcome":"done","answer":"Done"},{"tool":"dismantle","text":"Take down storage-4","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"craft","text":"Craft Cable by hand at the bench, 15 times","outcome":"done","answer":"Made by hand: 15 Cable"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 250 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 250}"}]}],"not_run":0},{"turn":16,"note":"Collect rods from constructor-4, build & belt stone-1 -> constructor-5 (Concrete) -> storage-6, and belt constructor-4 -> storage-5. Next: wire pole-9 -> pole-10 -> pole-11 -> miner_mk1-4 & constructor-5, collect plates/rods, and check buy\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what constructor-4 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 30 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 30}"}]},{"tool":"build_miner","text":"Build a Miner on stone-1","outcome":"done","answer":"Done","said":[{"by":"record","text":"54 Limestone was dug by hand to clear the spot."}],"raw":[{"by":"record","text":"hand_mined: {\"stone\": 54}"}]},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-5 to make Concrete","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from miner_mk1-4 to constructor-5","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-5 to storage-6","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-4 to storage-5","outcome":"failed","answer":"Did not work","codes":[{"code":"placement_refused","kind":"error","by":"game"},{"code":"FGCDConveyorTooSteep","kind":"game_says","by":"game"}],"raw":[{"by":"game","text":"game_says: [\"FGCDConveyorTooSteep\"]"},{"by":"game","text":"error: \"placement_refused\""},{"by":"hint","text":"hint: \"the two machines stand at different heights and the belt would climb too steeply. Build the next machine on level ground at about the same height as the one feeding it (a build reports height_change_m when the ground moved it), then belt again\""}]}],"not_run":0},{"turn":17,"note":"Check milestones, power stone-1 line (miner_mk1-4 & constructor-5), collect plates/rods/wire. Next: pay affordable milestone(s), fix storage-5 placement for constructor-4 (dismantle storage-5 and build storage east at [6300, 1600] or south\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-9 to pole-10","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-10 to pole-11","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-11 to miner_mk1-4","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-11 to constructor-5","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 96 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 96}"}]},{"tool":"collect","text":"Collect what constructor-4 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 26 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 26}"}]},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 74 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 74}"}]}],"not_run":0},{"turn":18,"note":"Placed storage-7 east of constructor-4, dismantled storage-5, crafted concrete & cable, queried iron/copper nodes, and waited 120s. Next: collect rods/plates/wire/concrete, check if 1-2 (150 plate, 150 rod, 300 wire) is ready or wait/colle\u2026","lost":null,"steps":[{"tool":"nodes","text":"Look for Iron Ore nearby","outcome":"done","answer":"Done"},{"tool":"nodes","text":"Look for Copper Ore nearby","outcome":"done","answer":"Done"},{"tool":"craft","text":"Craft Concrete by hand at the bench, 18 times","outcome":"done","answer":"Made by hand: 18 Concrete"},{"tool":"craft","text":"Craft Cable by hand at the bench, 15 times","outcome":"done","answer":"Made by hand: 15 Cable"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"dismantle","text":"Take down storage-5","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-4 to storage-7","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 120 seconds","outcome":"done","answer":"Done"}],"not_run":0},{"turn":19,"note":"Collected wire/plates/cement/rods from storages, refueled burner-2, queried milestones, and waited 120s for more rods/plates/wire/cement. Next: collect again, pay affordable milestone(s), and plan expansion (cable, screws, reinforced iron\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 190 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 190}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 128 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 128}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 76 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 76}"}]},{"tool":"collect","text":"Collect what storage-7 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 91 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 91}"}]},{"tool":"supply","text":"Carry 80 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"80 went in."}],"raw":[{"by":"record","text":"moved: 80"}]},{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 120 seconds","outcome":"done","answer":"Done"}],"not_run":0},{"turn":20,"note":"Collected from all 4 storages, bought milestone 1-2, and crafted 4 reinforced iron plates + 10 cable for 2 more constructors. Next: check milestones/splitters (if 1-2 unlocked Recipe_ConveyorAttachmentSplitter_C), check nearby iron/copper\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 101 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 101}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 68 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 68}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 50 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 50}"}]},{"tool":"collect","text":"Collect what storage-7 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 50 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 50}"}]},{"tool":"pay","text":"Pay for the milestone","outcome":"done","answer":"Done","said":[{"by":"game","text":"The game took the payment: the milestone is bought."}]},{"tool":"craft","text":"Craft Screws by hand at the bench, 12 times","outcome":"done","answer":"Made by hand: 48 Screws"},{"tool":"craft","text":"Craft Reinforced Iron Plate by hand at the bench, 4 times","outcome":"done","answer":"Made by hand: 4 Reinforced plate"},{"tool":"craft","text":"Craft Cable by hand at the bench, 10 times","outcome":"done","answer":"Made by hand: 10 Cable"}],"not_run":0},{"turn":21,"note":"Topped up burner-1, started constructor-6 (Cable) fed by storage-2 via pole-12 connected to pole-4, and queried nearby iron nodes. Next: add storage-8 after constructor-6, check milestones/forage, set up Screw line (and 3rd burner if neede\u2026","lost":null,"steps":[{"tool":"supply","text":"Carry 20 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"20 went in."}],"raw":[{"by":"record","text":"moved: 20"}]},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Power Pole","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-4 to pole-12","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-12 to constructor-6","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-6 to make Cable","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from storage-2 to constructor-6","outcome":"failed","answer":"Did not work","codes":[{"code":"placement_refused","kind":"error","by":"game"},{"code":"FGCDConveyorTooLong","kind":"game_says","by":"game"},{"code":"FGCDConveyorTooSteep","kind":"game_says","by":"game"}],"raw":[{"by":"game","text":"game_says: [\"FGCDConveyorTooLong\", \"FGCDConveyorTooSteep\"]"},{"by":"game","text":"error: \"placement_refused\""},{"by":"hint","text":"hint: \"the two machines stand at different heights and the belt would climb too steeply. Build the next machine on level ground at about the same height as the one feeding it (a build reports height_change_m when the ground moved it), then belt again\""}]}],"not_run":1},{"turn":22,"note":"Check milestones, inspect storage-2 and constructor-6 to diagnose belt failure, query nearby iron nodes, and collect automated outputs from storage-2/3/6/7.","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at storage-2","outcome":"done","answer":"Done","said":[{"by":"game","text":"It holds 171 Wire."}],"raw":[{"by":"game","text":"producing: true"},{"by":"game","text":"has_power: false"},{"by":"game","text":"productivity: 0"},{"by":"game","text":"production_paused: false"}]},{"tool":"inspect","text":"Look closely at constructor-6","outcome":"done","answer":"Done","said":[{"by":"game","text":"It was not making anything; it had power; its busy score (productivity) was 0; nothing was waiting to go in."}],"raw":[{"by":"game","text":"producing: false"},{"by":"game","text":"has_power: true"},{"by":"game","text":"productivity: 0"},{"by":"game","text":"production_paused: false"}]},{"tool":"nodes","text":"Look for Iron Ore nearby","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 173 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 173}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 115 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 115}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 87 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 87}"}]},{"tool":"collect","text":"Collect what storage-7 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 87 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 87}"}]}],"not_run":0},{"turn":23,"note":"Paid milestone 1-1, foraged biomass materials, collected rods/plates/cement, dismantled misplaced constructor-6, and rebuilt cable constructor east of storage-2. Next turn: craft biomass & refuel burner-1/2, build burner-3, belt/power/conf\u2026","lost":null,"steps":[{"tool":"pay","text":"Pay for the milestone","outcome":"done","answer":"Done","said":[{"by":"game","text":"The game took the payment: the milestone is bought."}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 3 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 3}"}]},{"tool":"collect","text":"Collect what storage-7 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 37 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 37}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 51 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 51}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 38 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 38}"}]},{"tool":"dismantle","text":"Take down constructor-6","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"}],"not_run":0},{"turn":24,"note":"Check milestones and pole-12, forage leaves/wood for biomass, configure constructor-7 for cable and belt from storage-2, build storage-8. Next turn: craft biomass, refuel burners, reset fuse if tripped, wire constructor-7, belt constructor\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 3 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 3}"}]},{"tool":"inspect","text":"Look closely at pole-12","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-7 to make Cable","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from storage-2 to constructor-7","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"}],"not_run":0},{"turn":25,"note":"Craft biomass, refuel burner-1 and reset fuse, belt constructor-7 to storage-8, wire constructor-7 to pole-12, forage more plants, and wait 60s. Next turn: check if constructor-7 has power (if not, wire pole-12 to pole-4/pole-5), craft and\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"supply","text":"Carry 5 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"5 went in."}],"raw":[{"by":"record","text":"moved: 5"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-7 to storage-8","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-12 to constructor-7","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"wait","text":"Wait 60 seconds","outcome":"done","answer":"Done"}],"not_run":0},{"turn":26,"note":"Check milestones, collect cable from storage-8, craft 5 biomass from leaves to refuel burner-1 and reset fuse, and forage 3 new areas for more leaves/wood. Next turn: craft all biomass, refuel burner-1 (and add burner-3 if needed), build c\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-8 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 20 Cable."}],"raw":[{"by":"record","text":"gained: {\"cable\": 20}"}]},{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"supply","text":"Carry 5 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"5 went in."}],"raw":[{"by":"record","text":"moved: 5"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 3 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 3}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 5 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 5, \"wood\": 1}"}]}],"not_run":0},{"turn":27,"note":"Built constructor-8 (Screws) off storage-7 -> storage-9 wired to pole-10, and foraged 2 new spots while fuse is tripped so no biomass is wasted. Next turn: craft all leaves and wood into biomass, supply burner-1 (and burner-2 if needed), r\u2026","lost":null,"steps":[{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-8 to make Screws","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from storage-7 to constructor-8","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from constructor-8 to storage-9","outcome":"done","answer":"Done"},{"tool":"connect_power","text":"Run a power line from pole-10 to constructor-8","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]}],"not_run":0},{"turn":28,"note":"Crafted 10 biomass from 20 leaves, fueled burner-1, reset fuse, waited 90s, checked milestones, and foraged 3 new spots. Next turn: craft biomass from newly foraged leaves/wood, refuel burners if needed, collect storage-9 (screws) and othe\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 2 times","outcome":"done","answer":"Made by hand, not counted as earned: 10 Biomass"},{"tool":"supply","text":"Carry 10 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"10 went in."}],"raw":[{"by":"record","text":"moved: 10"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 90 seconds","outcome":"done","answer":"Done"},{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 5 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 5, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 1}"}]}],"not_run":0},{"turn":29,"note":"Crafted 25 biomass (wood+leaves), fueled burner-1 (13) and burner-2 (1+12=13), reset fuse, foraged 2 new areas (~55s runtime so burners stay fueled), and collected storage-9 screws. Next turn: craft biomass from new forage, top up burners\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Wood by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 20 Biomass"},{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"supply","text":"Carry 13 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"13 went in."}],"raw":[{"by":"record","text":"moved: 13"}]},{"tool":"supply","text":"Carry 12 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"12 went in."}],"raw":[{"by":"record","text":"moved: 12"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 7 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 7}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 2}"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 108 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 108}"}]}],"not_run":0},{"turn":30,"note":"Collected storage-3/6/8/9 (now have enough automated cable=115 and cement=140 for 2-2; need 192 more screws for 1-3). Foraged 4 new spots. Next turn: craft all leaves/wood into biomass, supply both burner-1 and burner-2 evenly, reset_fuse\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 120 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 120}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 95 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 95}"}]},{"tool":"collect","text":"Collect what storage-8 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 101 Cable."}],"raw":[{"by":"record","text":"gained: {\"cable\": 101}"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 24 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 24}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 7 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 7}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]}],"not_run":0},{"turn":31,"note":"Checking milestones and inspecting burner-1/burner-2 to see remaining fuel and circuit IDs before restarting power; crafting 30 leaves into biomass and foraging 4 new spots.","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at burner-1","outcome":"done","answer":"Done","said":[{"by":"game","text":"It was not making anything; it had no power; its busy score (productivity) was 0.1568627506494522."}],"raw":[{"by":"game","text":"producing: false"},{"by":"game","text":"has_power: false"},{"by":"game","text":"productivity: 0.1568627506494522"},{"by":"game","text":"production_paused: false"}]},{"tool":"inspect","text":"Look closely at burner-2","outcome":"done","answer":"Done","said":[{"by":"game","text":"It was not making anything; it had power; its busy score (productivity) was 0.12941177189350128."}],"raw":[{"by":"game","text":"producing: false"},{"by":"game","text":"has_power: true"},{"by":"game","text":"productivity: 0.12941177189350128"},{"by":"game","text":"production_paused: false"}]},{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 3 times","outcome":"done","answer":"Made by hand, not counted as earned: 15 Biomass"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 2, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 2, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]}],"not_run":0},{"turn":32,"note":"Refuel burner-1 (25 biomass) and reset fuse on burner-2 (total 60MW >= 56MW load); forage 5 new spots to advance time and gather leaves/wood. Next: verify power is up, craft more biomass for burner-2/burner-3, collect storage-9 screws to b\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 2 times","outcome":"done","answer":"Made by hand, not counted as earned: 10 Biomass"},{"tool":"supply","text":"Carry 25 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"25 went in."}],"raw":[{"by":"record","text":"moved: 25"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 2, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Wood."}],"raw":[{"by":"record","text":"picked: {\"wood\": 2}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]}],"not_run":0},{"turn":33,"note":"Crafted 25 biomass from bank leaves/wood, fueled burner-2 (burner-1 had 24, burner-2 had 0 so fuse tripped at 56MW > 30MW), reset fuse, foraged 3 new spots to gather biomass mats and advance ~90-100s of production, and checked milestones.\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"craft","text":"Craft Biomass_Wood by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 20 Biomass"},{"tool":"supply","text":"Carry 25 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"25 went in."}],"raw":[{"by":"record","text":"moved: 25"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 3 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 3}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"}],"not_run":0},{"turn":34,"note":"Crafted 5 biomass from leaves, topped up burner-2 (+3 -> 9) and burner-1 (+2 -> 9) (~45s fuel at ~5s/biomass), collected screws/cable/cement/plates from storage-9/8/6/3, and foraged (0, 6000) (~22s). Next: craft biomass & refuel both burne\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"supply","text":"Carry 3 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"3 went in."}],"raw":[{"by":"record","text":"moved: 3"}]},{"tool":"supply","text":"Carry 2 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"2 went in."}],"raw":[{"by":"record","text":"moved: 2"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 134 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 134}"}]},{"tool":"collect","text":"Collect what storage-8 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 48 Cable."}],"raw":[{"by":"record","text":"gained: {\"cable\": 48}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 49 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 49}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 74 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 74}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]}],"not_run":0},{"turn":35,"note":"Crafted 5 biomass from leaves, loaded 3 into burner-1 and +2 into burner-2 (3 each), reset fuse, foraged (6000,0) while machines produce final screws for 1-3, collected storage-9, and attempted pay 1-3 + milestones refresh. Next: keep fora\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"supply","text":"Carry 3 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"3 went in."}],"raw":[{"by":"record","text":"moved: 3"}]},{"tool":"supply","text":"Carry 2 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"2 went in."}],"raw":[{"by":"record","text":"moved: 2"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 2}"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 39 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 39}"}]},{"tool":"pay","text":"Pay for the milestone","outcome":"done","answer":"Done","said":[{"by":"game","text":"The game took the payment: the milestone is bought."}]},{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"}],"not_run":0},{"turn":36,"note":"Fuse tripped because burner-1 ran out of fuel (56MW load vs 30MW remaining). Inspecting pole-1 and pole-8 for free connectors (for burner-3) and foraging 6 new areas for leaves/wood. Next turn: craft biomass, fuel burners, reset fuse, and\u2026","lost":null,"steps":[{"tool":"inspect","text":"Look closely at pole-1","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at pole-8","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 3 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 3}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Wood."}],"raw":[{"by":"record","text":"picked: {\"wood\": 2}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 5 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 5}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]}],"not_run":0},{"turn":37,"note":"Crafted biomass from leaves+wood, fueled both burners (14 each), reset fuse, waited 120s, collected screws, foraged (-10000,-5000). Next: check biomass/screws, build burner-3 (chain from an end pole like pole-11/pole-12 or rewire) so we ca\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 2 times","outcome":"done","answer":"Made by hand, not counted as earned: 10 Biomass"},{"tool":"craft","text":"Craft Biomass_Wood by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 20 Biomass"},{"tool":"supply","text":"Carry 14 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"14 went in."}],"raw":[{"by":"record","text":"moved: 14"}]},{"tool":"supply","text":"Carry 14 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"14 went in."}],"raw":[{"by":"record","text":"moved: 14"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 120 seconds","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 85 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 85}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 1}"}]}],"not_run":0},{"turn":38,"note":"Fuse tripped because burner-1 ran out of fuel (56 MW total load > 30 MW from burner-2). Checking milestones and foraging for wood/leaves to craft biomass, then next turn craft biomass, refuel burners, reset fuse, and plan toward milestone\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 3 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 3}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 2 Leaves, 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 2, \"wood\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 58 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 58}"}]}],"not_run":0},{"turn":39,"note":"Crafted 10 biomass from leaves (12 total), fueled burner-1 (7) and burner-2 (5), reset fuse so factory runs during 4 forages. Next: craft biomass from newly foraged leaves/wood, refuel burners, reset fuse if needed, and collect screws/cabl\u2026","lost":null,"steps":[{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 2 times","outcome":"done","answer":"Made by hand, not counted as earned: 10 Biomass"},{"tool":"supply","text":"Carry 7 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"7 went in."}],"raw":[{"by":"record","text":"moved: 7"}]},{"tool":"supply","text":"Carry 5 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"5 went in."}],"raw":[{"by":"record","text":"moved: 5"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"failed","answer":"Did not work","codes":[{"code":"no_pickupable_foliage","kind":"error","by":"game"}],"raw":[{"by":"game","text":"error: \"no_pickupable_foliage\""}]}],"not_run":3},{"turn":40,"note":"Cut 26 MW via pole-2 and pole-11 to save biomass. Switched constructor-3 to rods and started building 2nd screw constructor at [-1300, 4100]. Next: build storage at [-1300, 5500] and pole at [0, 3500], belt storage-3->new constructor->new\u2026","lost":null,"steps":[{"tool":"dismantle","text":"Take down pole-2","outcome":"done","answer":"Done"},{"tool":"dismantle","text":"Take down pole-11","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 18 Iron Plate."}],"raw":[{"by":"record","text":"gained: {\"plate\": 18}"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 42 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 42}"}]},{"tool":"set_recipe","text":"Set constructor-3 to make Iron Rod","outcome":"done","answer":"Done"},{"tool":"craft","text":"Craft Reinforced Iron Plate by hand at the bench, 2 times","outcome":"done","answer":"Made by hand: 2 Reinforced plate"},{"tool":"build","text":"Build a Constructor","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Wood."}],"raw":[{"by":"record","text":"picked: {\"wood\": 1}"}]}],"not_run":0},{"turn":41,"note":"Check milestones and pole-7/pole-8 free connectors; finish storage-10 and belt storage-3->constructor-9 (Screws)->storage-10; forage at [-5000, 5000]. Next: connect constructor-9 power, forage more leaves/wood, craft biomass, fuel both bur\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at pole-7","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at pole-8","outcome":"done","answer":"Done"},{"tool":"build","text":"Build a Storage Container","outcome":"done","answer":"Done"},{"tool":"set_recipe","text":"Set constructor-9 to make Screws","outcome":"done","answer":"Done"},{"tool":"belt","text":"Lay a belt from storage-3 to constructor-9","outcome":"failed","answer":"Did not work","codes":[{"code":"placement_refused","kind":"error","by":"game"},{"code":"FGCDConveyorTooSteep","kind":"game_says","by":"game"}],"raw":[{"by":"game","text":"game_says: [\"FGCDConveyorTooSteep\"]"},{"by":"game","text":"error: \"placement_refused\""},{"by":"hint","text":"hint: \"the two machines stand at different heights and the belt would climb too steeply. Build the next machine on level ground at about the same height as the one feeding it (a build reports height_change_m when the ground moved it), then belt again\""}]}],"not_run":2},{"turn":42,"note":"Collect storage-8/6/2; inspect storage-3 z-height to fix too-steep belt to constructor-9 (z=706); belt constructor-9->storage-10; forage leaves/wood and try connecting constructor-9 to pole-7. Next: craft biomass, fuel burner-1 & burner-2,\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what storage-8 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 65 Cable."}],"raw":[{"by":"record","text":"gained: {\"cable\": 65}"}]},{"tool":"collect","text":"Collect what storage-6 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 64 Concrete."}],"raw":[{"by":"record","text":"gained: {\"cement\": 64}"}]},{"tool":"collect","text":"Collect what storage-2 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 3 Wire."}],"raw":[{"by":"record","text":"gained: {\"wire\": 3}"}]},{"tool":"inspect","text":"Look closely at storage-3","outcome":"done","answer":"Done","said":[{"by":"game","text":"It is empty."}],"raw":[{"by":"game","text":"producing: true"},{"by":"game","text":"has_power: false"},{"by":"game","text":"productivity: 0"},{"by":"game","text":"production_paused: false"}]},{"tool":"belt","text":"Lay a belt from constructor-9 to storage-10","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 1 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 1}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 6 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 6}"}]},{"tool":"connect_power","text":"Run a power line from pole-7 to constructor-9","outcome":"failed","answer":"Did not work","codes":[{"code":"no_free_power_connector","kind":"error","by":"test"}],"raw":[{"by":"test","text":"error: \"no_free_power_connector\""},{"by":"hint","text":"hint: \"every power connector on pole-7 is taken. A Power Pole takes 4 lines; a machine, miner or burner takes one. Wire the new building to a pole that has a free connector, or build a pole and link pole to pole, keeping one connector free on each pole for the next pole\""}]}],"not_run":0},{"turn":43,"note":"Collect storage-3/7/9; craft 5 biomass from leaves; fuel burner-2 (4) and burner-1 (1); reset fuse and run 30s. Next: forage wood/leaves to refuel burners, check if milestone 2-2 (needs 500 screw, 100 cable, 100 cement) or 2-1 can be bough\u2026","lost":null,"steps":[{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"Nothing was there to collect."}],"raw":[{"by":"record","text":"gained: {}"}]},{"tool":"collect","text":"Collect what storage-7 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"Nothing was there to collect."}],"raw":[{"by":"record","text":"gained: {}"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"Nothing was there to collect."}],"raw":[{"by":"record","text":"gained: {}"}]},{"tool":"craft","text":"Craft Biomass_Leaves by hand at the bench, 1 times","outcome":"done","answer":"Made by hand, not counted as earned: 5 Biomass"},{"tool":"supply","text":"Carry 4 Biomass into burner-2 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"4 went in."}],"raw":[{"by":"record","text":"moved: 4"}]},{"tool":"supply","text":"Carry 1 Biomass into burner-1 as fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"1 went in."}],"raw":[{"by":"record","text":"moved: 1"}]},{"tool":"reset_fuse","text":"Use the tool \u201creset_fuse\u201d","outcome":"done","answer":"Done"},{"tool":"wait","text":"Wait 30 seconds","outcome":"done","answer":"Done"}],"not_run":0},{"turn":44,"note":"Checked milestones, collected storage-3/9, inspected pole-1/pole-8 to see circuit wiring/connectors, foraged for leaves/wood. Next: craft biomass, add burner-3 (or merge circuits) on circuit 1 (34MW > 30MW), refuel burners, reset_fuse, and\u2026","lost":null,"steps":[{"tool":"milestones","text":"Use the tool \u201cmilestones\u201d","outcome":"done","answer":"Done"},{"tool":"collect","text":"Collect what storage-3 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 12 Iron Rod."}],"raw":[{"by":"record","text":"gained: {\"rod\": 12}"}]},{"tool":"collect","text":"Collect what storage-9 made","outcome":"done","answer":"Done","said":[{"by":"record","text":"It got 32 Screws."}],"raw":[{"by":"record","text":"gained: {\"screw\": 32}"}]},{"tool":"inspect","text":"Look closely at pole-1","outcome":"done","answer":"Done"},{"tool":"inspect","text":"Look closely at pole-8","outcome":"done","answer":"Done"},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 4 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 4}"}]},{"tool":"forage","text":"Pick plants for fuel","outcome":"done","answer":"Done","said":[{"by":"record","text":"It picked 5 Leaves."}],"raw":[{"by":"record","text":"picked: {\"leaves\": 5}"}]}],"not_run":0}],"marathon":{"bought":[{"milestone":"1-2","tier":1,"turn":20,"index":19,"fully_earned":true,"cost":[{"name":"Iron Plate","count":150},{"name":"Iron Rod","count":150},{"name":"Wire","count":300}]},{"milestone":"1-1","tier":1,"turn":23,"index":22,"fully_earned":true,"cost":[{"name":"Concrete","count":200},{"name":"Iron Plate","count":100},{"name":"Iron Rod","count":100}]},{"milestone":"1-3","tier":1,"turn":35,"index":34,"fully_earned":true,"cost":[{"name":"Wire","count":300},{"name":"Screws","count":300},{"name":"Iron Plate","count":100}]}],"checks":["seat.purchases","seat.milestones_bought","accepted pay moves"]},"goal":null,"chapters":[{"kind":"first_power","index":1,"turn":2,"label":"First power line: Run a power line from burner-1 to pole-1"},{"kind":"first_miner","index":1,"turn":2,"label":"First miner: Build a Miner on ore_copper-1"},{"kind":"wrong","index":3,"turn":4,"label":"Lay a belt from smelter-1 to constructor-1","said":"game said: placement_refused, FGCDConveyorTooSteep"},{"kind":"first_part","index":6,"turn":7,"label":"First parts made by machines: 2 Wire"},{"kind":"wrong","index":7,"turn":8,"label":"Build a Power Pole","said":"game said: no_surface_hit"},{"kind":"wrong","index":8,"turn":9,"label":"Run a power line from pole-6 to pole-1","said":"Refused by this test: a 'pole-6' is not one of your buildings ['burner-1', 'constructor-2', 'constructor-3', 'miner_mk1-1', 'miner_mk1-2', 'pole-1', 'pole-2', 'pole-3', 'pole-4', 'pole-5', 'pole-7', 'smelter-1', 'smelter-2', 'storage-2', 'storage-3']"},{"kind":"wrong","index":13,"turn":14,"label":"Lay a belt from constructor-4 to storage-4","said":"game said: placement_refused, FGCDConveyorTooSteep"},{"kind":"wrong","index":15,"turn":16,"label":"Lay a belt from constructor-4 to storage-5","said":"game said: placement_refused, FGCDConveyorTooSteep"},{"kind":"payment","index":19,"turn":20,"label":"Pays for the milestone: the game took it"},{"kind":"wrong","index":20,"turn":21,"label":"Lay a belt from storage-2 to constructor-6","said":"game said: placement_refused, FGCDConveyorTooLong, FGCDConveyorTooSteep"},{"kind":"payment","index":22,"turn":23,"label":"Pays for the milestone: the game took it"},{"kind":"payment","index":34,"turn":35,"label":"Pays for the milestone: the game took it"},{"kind":"wrong","index":38,"turn":39,"label":"Pick plants for fuel","said":"game said: no_pickupable_foliage"},{"kind":"wrong","index":40,"turn":41,"label":"Lay a belt from storage-3 to constructor-9","said":"game said: placement_refused, FGCDConveyorTooSteep"},{"kind":"wrong","index":41,"turn":42,"label":"Run a power line from pole-7 to constructor-9","said":"this test\u2019s rule: no_free_power_connector"}],"codes":[{"code":"FGCDConveyorTooSteep","kind":"game_says","by":"game","count":5,"why":"The belt would be too steep.","source":"the game\u2019s own reason name (Conveyor Too Steep)","hint":null,"origin":"the game\u2019s own reason name"},{"code":"placement_refused","kind":"error","by":"game","count":5,"why":"The game would not put it there, and named its reason.","source":"the game add-on\u2019s source: a placement the game disqualifies is answered placement_refused, with the game\u2019s own disqualifiers","hint":"the two machines stand at different heights and the belt would climb too steeply. Build the next machine on level ground at about the same height as the one feeding it (a build reports height_change_m when the ground moved it), then belt a\u2026","origin":"the game add-on\u2019s own code (the game add-on\u2019s source)"},{"code":"FGCDConveyorTooLong","kind":"game_says","by":"game","count":1,"why":null,"source":null,"hint":null,"origin":"the game\u2019s own reason name"},{"code":"no_free_power_connector","kind":"error","by":"test","count":1,"why":null,"source":null,"hint":"every power connector on pole-7 is taken. A Power Pole takes 4 lines; a machine, miner or burner takes one. Wire the new building to a pole that has a free connector, or build a pole and link pole to pole, keeping one connector free on eac\u2026","origin":"this test\u2019s own code (the test\u2019s own code), not in the game add-on\u2019s source"},{"code":"no_pickupable_foliage","kind":"error","by":"game","count":1,"why":"There were no plants to pick close to that spot.","source":"the game add-on\u2019s source: the closest-foliage search found no pickable plant in the radius","hint":null,"origin":"the game add-on\u2019s own code (the game add-on\u2019s source)"},{"code":"no_surface_hit","kind":"error","by":"game","count":1,"why":"The game looked straight down at that spot and found no ground to build on (this also happens when that part of the map is not loaded yet).","source":"the game add-on\u2019s source: the downward trace for ground hit nothing; a ground probe notes unloaded ground answers the same","hint":null,"origin":"the game add-on\u2019s own code (the game add-on\u2019s source)"}],"factory":{"replies":44,"events":[{"at":1,"op":"add","id":"burner-1","col":"power","label":"Biomass Burner 1"},{"at":1,"op":"add","id":"pole-1","col":"power","label":"Power Pole 1"},{"at":1,"op":"add","id":"pole-2","col":"power","label":"Power Pole 2"},{"at":1,"op":"add","id":"pole-3","col":"power","label":"Power Pole 3"},{"at":1,"op":"add","id":"pole-4","col":"power","label":"Power Pole 4"},{"at":1,"op":"add","id":"miner_mk1-1","col":"miner","label":"Miner 1","node":"ore_copper-1","ore":"Copper Ore"},{"at":2,"op":"add","id":"pole-5","col":"power","label":"Power Pole 5"},{"at":2,"op":"add","id":"smelter-1","col":"smelter","label":"Smelter 1"},{"at":2,"op":"add","id":"constructor-1","col":"machine","label":"Constructor 1"},{"at":2,"op":"add","id":"storage-1","col":"storage","label":"Storage 1"},{"at":3,"op":"recipe","id":"smelter-1","recipe":"Copper Ingot"},{"at":3,"op":"recipe","id":"constructor-1","recipe":"Wire"},{"at":3,"op":"belt","from":"miner_mk1-1","to":"smelter-1"},{"at":5,"op":"remove","id":"constructor-1"},{"at":5,"op":"remove","id":"storage-1"},{"at":5,"op":"add","id":"constructor-2","col":"machine","label":"Constructor 2"},{"at":5,"op":"add","id":"miner_mk1-2","col":"miner","label":"Miner 2","node":"ore_iron-1","ore":"Iron Ore"},{"at":6,"op":"recipe","id":"constructor-2","recipe":"Wire"},{"at":6,"op":"add","id":"storage-2","col":"storage","label":"Storage 2"},{"at":6,"op":"belt","from":"smelter-1","to":"constructor-2"},{"at":6,"op":"belt","from":"constructor-2","to":"storage-2"},{"at":8,"op":"add","id":"pole-7","col":"power","label":"Power Pole 7"},{"at":8,"op":"add","id":"smelter-2","col":"smelter","label":"Smelter 2"},{"at":8,"op":"add","id":"constructor-3","col":"machine","label":"Constructor 3"},{"at":8,"op":"add","id":"storage-3","col":"storage","label":"Storage 3"},{"at":9,"op":"recipe","id":"smelter-2","recipe":"Iron Ingot"},{"at":9,"op":"recipe","id":"constructor-3","recipe":"Iron Plate"},{"at":9,"op":"belt","from":"miner_mk1-2","to":"smelter-2"},{"at":9,"op":"belt","from":"smelter-2","to":"constructor-3"},{"at":9,"op":"belt","from":"constructor-3","to":"storage-3"},{"at":10,"op":"add","id":"burner-2","col":"power","label":"Biomass Burner 2"},{"at":10,"op":"add","id":"pole-8","col":"power","label":"Power Pole 8"},{"at":11,"op":"add","id":"miner_mk1-3","col":"miner","label":"Miner 3","node":"ore_iron-2","ore":"Iron Ore"},{"at":12,"op":"add","id":"smelter-3","col":"smelter","label":"Smelter 3"},{"at":12,"op":"add","id":"constructor-4","col":"machine","label":"Constructor 4"},{"at":12,"op":"add","id":"storage-4","col":"storage","label":"Storage 4"},{"at":12,"op":"add","id":"pole-9","col":"power","label":"Power Pole 9"},{"at":12,"op":"recipe","id":"smelter-3","recipe":"Iron Ingot"},{"at":12,"op":"recipe","id":"constructor-4","recipe":"Iron Rod"},{"at":13,"op":"belt","from":"miner_mk1-3","to":"smelter-3"},{"at":13,"op":"belt","from":"smelter-3","to":"constructor-4"},{"at":14,"op":"remove","id":"storage-4"},{"at":14,"op":"add","id":"storage-5","col":"storage","label":"Storage 5"},{"at":14,"op":"add","id":"pole-10","col":"power","label":"Power Pole 10"},{"at":14,"op":"add","id":"pole-11","col":"power","label":"Power Pole 11"},{"at":15,"op":"add","id":"miner_mk1-4","col":"miner","label":"Miner 4","node":"stone-1","ore":"Limestone"},{"at":15,"op":"add","id":"constructor-5","col":"machine","label":"Constructor 5"},{"at":15,"op":"recipe","id":"constructor-5","recipe":"Concrete"},{"at":15,"op":"add","id":"storage-6","col":"storage","label":"Storage 6"},{"at":15,"op":"belt","from":"miner_mk1-4","to":"constructor-5"},{"at":15,"op":"belt","from":"constructor-5","to":"storage-6"},{"at":17,"op":"add","id":"storage-7","col":"storage","label":"Storage 7"},{"at":17,"op":"remove","id":"storage-5"},{"at":17,"op":"belt","from":"constructor-4","to":"storage-7"},{"at":20,"op":"add","id":"constructor-6","col":"machine","label":"Constructor 6"},{"at":20,"op":"add","id":"pole-12","col":"power","label":"Power Pole 12"},{"at":20,"op":"recipe","id":"constructor-6","recipe":"Cable"},{"at":22,"op":"remove","id":"constructor-6"},{"at":22,"op":"add","id":"constructor-7","col":"machine","label":"Constructor 7"},{"at":23,"op":"recipe","id":"constructor-7","recipe":"Cable"},{"at":23,"op":"belt","from":"storage-2","to":"constructor-7"},{"at":23,"op":"add","id":"storage-8","col":"storage","label":"Storage 8"},{"at":24,"op":"belt","from":"constructor-7","to":"storage-8"},{"at":26,"op":"add","id":"constructor-8","col":"machine","label":"Constructor 8"},{"at":26,"op":"add","id":"storage-9","col":"storage","label":"Storage 9"},{"at":26,"op":"recipe","id":"constructor-8","recipe":"Screws"},{"at":26,"op":"belt","from":"storage-7","to":"constructor-8"},{"at":26,"op":"belt","from":"constructor-8","to":"storage-9"},{"at":39,"op":"remove","id":"pole-2"},{"at":39,"op":"remove","id":"pole-11"},{"at":39,"op":"recipe","id":"constructor-3","recipe":"Iron Rod"},{"at":39,"op":"add","id":"constructor-9","col":"machine","label":"Constructor 9"},{"at":40,"op":"add","id":"storage-10","col":"storage","label":"Storage 10"},{"at":40,"op":"recipe","id":"constructor-9","recipe":"Screws"},{"at":41,"op":"belt","from":"constructor-9","to":"storage-10"}]},"title":"Gemini 4 Hydrogen plays a Marathon: 3 milestones bought","site":{"back":"marathons.html","backText":"Every Marathon","notice":"An independent hobby project, not affiliated with or endorsed by Coffee Stain Studios. Satisfactory and its artwork belong to their owners."}}</script><script>/* Seat story: one model-driven ladder run, reply by reply, from a savebench-seat-story/1 file
+ * (scripts/seat_story.py builds it from the seat's transcript.jsonl and experiment.json).
+ *
+ *   view(story, {turn, onlyWrong})   pure: everything the page shows at one reply.
+ *   mount(root, story)               draws the page once, then updates it in place (browser only).
+ *
+ * Honesty rules: every move shown was chosen by the model and is in the run's record; refusal
+ * and error text is the record's own, quoted; every code, plain sentence and raw field says who
+ * said it: "game said" (the game's reason names and the game add-on's own codes), "this test's
+ * rule" (the harness and its bank), "the run's hint", or "the run's record" (its own counts);
+ * the AI's note is labelled as the AI's words; a tick appears only when the game accepted the
+ * milestone payment; goal bars use only the builder's sums, which it has already checked against
+ * the record's totals; bench-made items are drawn apart and never count toward the goal; where
+ * the record leaves something open, the page says it is open; a film, if there is one, is
+ * labelled with when it was made. The record has no clock times, so nothing is drawn against
+ * the clock. */
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;else root.SaveBenchSeatStory=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const SCHEMA='savebench-seat-story/1';
+  // One meaning per symbol, used the same way in the strip, the reply list and single moves.
+  const MARK={good:'✓',wait:'!',stop:'✕',refused:'⊘',quiet:'○'};
+  const KEY=[['✓','worked (a reply: every move in it worked)'],['!','some moves in the reply worked, some did not'],['✕','did not work'],
+    ['⊘','refused by this test’s rules'],['○','the reply held no move']];
+  const MOVE_TONE={done:'good',refused:'refused',failed:'stop'};
+  const TONE_WORDS={good:'every move worked',wait:'some moves worked',stop:'no move worked',refused:'every move was refused by this test',quiet:'no move'};
+  const STEP_WORDS={good:'Worked',stop:'Did not work',refused:'Refused by this test',quiet:'No result'};
+  const BY={game:'Game said',test:'This test’s rule',hint:'The run’s hint',record:'The run’s record'};
+
+  function clampIndex(i,n){return n<=0?0:Math.max(0,Math.min(n-1,Math.trunc(Number(i)||0)));}
+  function plural(n,one,many){return n+' '+(n===1?one:many);}
+  function at(a,i){return Array.isArray(a)&&a.length?a[Math.min(i,a.length-1)]:0;}
+  function and(a){return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1];}
+  function byOf(b){return Object.prototype.hasOwnProperty.call(BY,b)?b:'record';}
+
+  function turnTone(t){
+    if(!t.steps.length)return 'quiet';
+    if(t.steps.every(s=>s.outcome==='done'))return 'good';
+    if(t.steps.every(s=>s.outcome==='refused'))return 'refused';
+    if(t.steps.some(s=>s.outcome==='done'))return 'wait';
+    return 'stop';
+  }
+  function wentWrong(t){return !t.steps.length||t.steps.some(s=>s.outcome!=='done');}
+
+  function codeIndex(story){
+    const m={};
+    for(const c of Array.isArray(story.codes)?story.codes:[])if(c&&typeof c.code==='string')m[c.code]=c;
+    return m;
+  }
+  // A labelled line: {by, label, text}. A plain string (older story files) is the run's record.
+  function labelled(x){
+    if(typeof x==='string')return {by:'record',label:BY.record,text:x};
+    const by=byOf(x&&x.by);return {by,label:BY[by],text:String(x&&x.text||'')};
+  }
+
+  // What came back for one move, each part labelled by who said it.
+  function stepView(x,codes){
+    const tone=MOVE_TONE[x.outcome]||'quiet';
+    const out={text:x.text,answer:x.answer,tone,mark:MARK[tone],tag:STEP_WORDS[tone]};
+    if(Array.isArray(x.said)&&x.said.length)out.said=x.said.map(labelled);
+    else if(typeof x.said==='string'&&x.said)out.said=[labelled(x.said)];
+    if(Array.isArray(x.codes)&&x.codes.length)
+      out.codes=x.codes.map(c=>{const by=byOf(c.by||(codes[c.code]&&codes[c.code].by));
+        return {code:c.code,kind:c.kind,by,label:BY[by],why:(codes[c.code]&&codes[c.code].why)||null};});
+    if(Array.isArray(x.raw)&&x.raw.length)out.raw=x.raw.map(labelled);
+    return out;
+  }
+
+  function heroView(story,ti){
+    const g=story.goal;
+    if(!g||!Array.isArray(g.items)||!g.items.length)return null;
+    const earned=story.earned===true&&story.verdict==='pass';
+    const n=Array.isArray(g.items[0].machine)?g.items[0].machine.length:0;
+    const end=ti>=n-1;
+    const items=g.items.map(it=>{
+      const need=it.need,machine=at(it.machine,ti),made=at(it.machine_made,ti),hand=at(it.hand,ti),loose=at(it.hand_uncounted,ti);
+      const missing=Math.max(0,need-machine),bench=hand+loose;
+      const machineText='Made by machines: '+machine+' of '+need+(made>machine?' ('+made+' made in all)':'')
+        +' · '+(missing>0?'still missing: '+missing:'nothing missing');
+      const benchText=bench?'Made by hand at the bench: '+bench+'. Does not count toward the goal'
+        +(hand&&loose?' (the record counts '+hand+' of them as earned bench items, and marks '+loose+', made from declared stock, as not earned)'
+          :loose?' (made from declared stock; the record marks them as not earned)':'')+'.':null;
+      return {name:it.name,need,machine,made,hand,handUncounted:loose,bench,missing,done:missing<=0,
+        width:{machine:need?machine/need*100:0,bench:need?Math.min(100,bench/need*100):0},
+        text:machineText,benchText,
+        label:it.name+': '+machineText.replace(' · ',', ')+(benchText?'. '+benchText:'')};
+    });
+    const short=items.filter(i=>!i.done);
+    const ms=g.milestone||story.milestone||'';
+    const p=g.payment&&typeof g.payment==='object'?g.payment:{};
+    const atLeast=Array.isArray(p.hand_paid_at_least)?p.hand_paid_at_least:[];
+    const open=Array.isArray(p.open)?p.open:[];
+    const fed=Array.isArray(g.hand_fed)?g.hand_fed:[];
+    const boot=Array.isArray(g.bootstrap_collected)?g.bootstrap_collected:[];
+    const shortWords=short.map(i=>i.missing+' '+i.name);
+    let headline;
+    if(!end)headline=short.length?'After reply '+(ti+1)+' of '+n+', machines still had to make '+and(shortWords)+'.'
+      :'After reply '+(ti+1)+' of '+n+', the record counts enough machine-made items for every cost.';
+    else if(earned){
+      if(short.length)headline='Milestone '+ms+' is bought, but the record counts too few machine-made '+and(short.map(i=>i.name))+'.';
+      else if(atLeast.length)headline='Milestone '+ms+' is bought, but at least '+and(atLeast.map(a=>a.count+' of the '+a.of+' '+a.name))
+        +' it paid in '+(atLeast.length===1&&atLeast[0].count===1?'was':'were')+' made by hand.';
+      else if(open.length||fed.length)headline='Milestone '+ms+' is bought, and the record counts enough machine-made items for every cost. Help by hand leaves open questions (below).';
+      else headline='Yes: milestone '+ms+' is bought, and the record counts enough machine-made items for every cost.';
+    }else headline=short.length?'Not this time. Its machines still had to make '+and(shortWords)+'.'
+      :'Its machines made enough of every item, but the milestone was not bought.';
+    // Whole-run notes: these do not move with the replies.
+    const notes=[];
+    const ores=(Array.isArray(g.ore)?g.ore:[]).map(o=>{
+      const bits=[];
+      if(o.machine)bits.push(o.machine+' dug by Miners');
+      if(o.portable)bits.push(o.portable+' dug by a Portable Miner (not counted as machine-made)');
+      if(o.uncounted)bits.push(o.uncounted+' collected but not counted as machine-made');
+      if(o.hand)bits.push(o.hand+' dug by hand');
+      return o.name+': '+(bits.join(', ')||'none');
+    });
+    if(ores.length)notes.push({kind:'ore',text:'Ore is counted apart from the goal’s items. '+ores.join('. ')+'.'});
+    if(fed.length)notes.push({kind:'fed',text:'Ore carried into machines by hand: '+and(fed.map(f=>f.count+' '+f.name))
+      +'.'+(boot.length?' Collects the record marks “bootstrap” are not counted as machine-made: '
+      +and(boot.map(b=>b.count+' '+b.name))+'.':'')+' Whether such output should ever count is open.'});
+    for(const r of Array.isArray(p.refused)?p.refused:[]){
+      const sh=Array.isArray(r.short)&&r.short.length?and(r.short.map(s=>s.count+' '+s.name)):null;
+      notes.push({kind:'refused',index:r.index,text:'Reply '+(r.index+1)+': a try to pay was refused by this test'
+        +(sh?', because the bank was short '+sh:'')+'.'});
+    }
+    const made=k=>{const it=items.find(i=>i.name===k);return it?it.made:null;};
+    for(const a of atLeast)notes.push({kind:'hand-paid',text:'After that refusal it made '+a.bench_after+' '+a.name+' by hand at the bench and collected '
+      +(a.collected_after?a.collected_after+' more':'none')+' from its machines, then paid. So at least '+a.count+' of the '+a.of+' '+a.name
+      +' it paid in were made by hand; the record does not give the exact number. The record still marks the run earned: this test’s rule counts machine-made '
+      +a.name+(made(a.name)!=null?' ('+made(a.name)+' made, '+a.of+' needed)':'')+' toward the goal.'});
+    if(open.length){
+      const bb=(Array.isArray(p.bench_before_pay)?p.bench_before_pay:[]).filter(b=>open.some(o=>o.key===b.key));
+      const words=bb.map(b=>(b.earned+b.not_earned)+' '+b.name+(b.earned&&b.not_earned?' ('+b.earned+' counted as earned bench items, '+b.not_earned+' not earned)':''));
+      notes.push({kind:'open',text:'Before paying it made at the bench: '+and(words)+'. The bank holds hand-made and machine-made items together, '
+        +'so the record does not show whether any of these went into the payment. That is open.'});
+    }
+    return {headline,end,
+      at:end?'At the end of the run (reply '+n+' of '+n+')':'After reply '+(ti+1)+' of '+n,
+      goalText:'The goal: '+items.map(i=>i.need+' '+i.name).join(', ')+'.',
+      counted:'This test’s rule: only items made by machines count toward the goal'
+        +(typeof g.scoring==='string'&&g.scoring?' (the record states it as “'+g.scoring+'”)':'')+'.',
+      items,notes,checks:Array.isArray(g.checks)?g.checks.slice():[]};
+  }
+
+  function view(story,{turn=0,onlyWrong=false}={}){
+    if(!story||story.schema!==SCHEMA)return {ok:false,message:'This is not an AI run story file.'};
+    const turns=Array.isArray(story.turns)?story.turns.filter(t=>t&&Array.isArray(t.steps)):[];
+    if(!turns.length)return {ok:false,message:'This run has no recorded replies to show.'};
+    const ti=clampIndex(turn,turns.length);
+    const t=turns[ti];
+    const s=story.summary||{};
+    const f=story.film;
+    const codes=codeIndex(story);
+    const film=f&&typeof f.src==='string'&&f.src&&typeof f.caption==='string'&&f.caption?{src:f.src,caption:f.caption,
+      poster:typeof f.poster==='string'&&f.poster.startsWith('data:image/')?f.poster:null}:null;
+    const model=typeof story.model_name==='string'&&story.model_name?story.model_name
+      :typeof story.model==='string'&&story.model?story.model:null;
+    const list=a=>a.map(c=>c.name+' '+c.count).join(', ');
+    const has=a=>Array.isArray(a)&&a.length>0;
+    const earned=story.earned===true&&story.verdict==='pass';
+    const g=story.goal&&typeof story.goal==='object'?story.goal:null;
+    const ores=g&&Array.isArray(g.ore)?g.ore:[];
+    const fedWords=Array.isArray(s.hand_fed)?(s.hand_fed.length?'. Ore carried into machines by hand: '+list(s.hand_fed):'. No machine was fed by hand'):'';
+    // A Marathon: the milestones the game accepted, in order, each at the reply that paid for it.
+    const marathon=story.marathon&&Array.isArray(story.marathon.bought)?{bought:story.marathon.bought
+      .filter(b=>b&&typeof b.index==='number'&&b.index>=0&&b.index<turns.length)
+      .map(b=>({milestone:b.milestone,index:b.index,where:'Reply '+(b.index+1),reached:b.index<=ti,current:b.index===ti,
+        cost:(Array.isArray(b.cost)?b.cost:[]).map(c=>c.count+' '+c.name).join(', '),fully:b.fully_earned===true})),
+      replies:turns.length}:null;
+    const tiles=[
+      typeof s.replies==='number'?{big:String(s.replies),small:'replies from the AI'+(s.lost_replies?', '+s.lost_replies+' with no move':'')}:null,
+      typeof s.actions==='number'?{big:String(s.actions),small:'moves: '+(s.done||0)+' worked, '+(s.refused||0)+' refused by this test, '+(s.failed||0)+' did not work'}:null,
+      s.not_run?{big:String(s.not_run),small:'moves skipped because an earlier move in the same reply failed'}:null,
+      typeof s.miners==='number'?{big:String(s.miners),small:plural(s.miners,'Miner','Miners').replace(/^\d+ /,'')+' standing, '+plural(s.belts||0,'belt','belts')}:null,
+      g&&has(g.parts_made)?{big:String(g.parts_made.reduce((a,c)=>a+(c.count||0),0)),
+        small:'items made by its machines (ore not included): '+list(g.parts_made)+fedWords
+          +(has(s.hand_crafted)?'. Made at the bench by hand (not counted toward the goal): '+list(s.hand_crafted):'')}
+      :!g&&has(s.machine_made)?{big:String(s.machine_made.reduce((a,c)=>a+(c.count||0),0)),
+        small:'items made by its machines: '+list(s.machine_made)+fedWords
+          +(has(s.hand_mined)?'. Mined by hand: '+list(s.hand_mined):'')
+          +(has(s.hand_crafted)?'. Made at the bench by hand: '+list(s.hand_crafted):'')}
+        :!g&&has(s.collected)?{big:String(s.collected.reduce((a,c)=>a+(c.count||0),0)),
+        small:'items collected: '+list(s.collected)}:null,
+      ores.length?{big:String(ores.reduce((a,o)=>a+(o.machine||0)+(o.portable||0)+(o.uncounted||0)+(o.hand||0),0)),
+        small:'ore dug, counted apart from the goal’s items: '+ores.map(o=>o.name+' '+((o.machine||0)+(o.portable||0)+(o.uncounted||0)+(o.hand||0))).join(', ')}:null,
+    ].filter(Boolean);
+    const chapters=(Array.isArray(story.chapters)?story.chapters:[])
+      .filter(c=>c&&typeof c.index==='number'&&c.index>=0&&c.index<turns.length)
+      .map(c=>({index:c.index,kind:c.kind,label:c.label,said:c.said||null,current:c.index===ti,
+        where:'Reply '+(c.index+1)}));
+    const moveWords=y=>y.text+(y.outcome==='done'?'':y.outcome==='refused'?' ('+MARK.refused+' refused by this test)':' ('+MARK.stop+' did not work)');
+    const log=turns.map((x,i)=>{const tone=turnTone(x);return {index:i,current:i===ti,tone,mark:MARK[tone],wrong:wentWrong(x),
+      text:'Reply '+(i+1)+': '+(x.steps.length?x.steps.map(moveWords).join('; '):(x.lost||'no move'))};});
+    const wrongCount=log.filter(r=>r.wrong).length;
+    const tone=turnTone(t);
+    return {ok:true,
+      title:typeof story.title==='string'&&story.title?story.title:'An AI plays'+(story.milestone?': milestone '+story.milestone:''),
+      madeBy:model?'Played by an AI: '+model:'Played by an AI',
+      verdict:marathon?(marathon.bought.length?{tick:true,text:'The game checked: '+marathon.bought.length+(marathon.bought.length===1?' milestone':' milestones')+' bought'}
+        :{tick:false,text:story.stop_words||'No milestone bought'})
+        :earned?{tick:true,text:'The game checked: milestone bought'}
+        :{tick:false,text:(story.verdict==='fail'?'Not earned. ':'')+(story.stop_words||'How the run ended is not recorded')},
+      note:'Every move below was chosen by the AI and comes from the run’s record. Refusals are quoted as recorded.'
+        +(film?' The film was made afterwards from the run’s save.':''),
+      film,tiles,hero:heroView(story,ti),marathon,key:KEY.map(([mark,words])=>({mark,words})),
+      chapters:{main:chapters.filter(c=>c.kind!=='wrong'),wrong:chapters.filter(c=>c.kind==='wrong')},
+      codes:(Array.isArray(story.codes)?story.codes:[]).map(c=>{const by=byOf(c.by);
+        return {code:c.code,kind:c.kind,by,label:BY[by],origin:c.origin||null,count:c.count,why:c.why||null,
+          source:c.source||null,hint:c.hint||null};}),
+      strip:turns.map((x,i)=>{const tn=turnTone(x);
+        return {index:i,turn:x.turn,tone:tn,current:i===ti,mark:MARK[tn],label:'Reply '+(i+1)+': '+TONE_WORDS[tn]};}),
+      moment:{index:ti,count:turns.length,text:'Reply '+(ti+1)+' of '+turns.length},
+      live:'Reply '+(ti+1)+' of '+turns.length+': '+TONE_WORDS[tone]+'.',
+      card:{turn:t.turn,note:t.note||null,lost:t.lost||null,
+        steps:t.steps.map(x=>stepView(x,codes)),
+        notRun:t.not_run?plural(t.not_run,'later move','later moves')+' in this reply '+(t.not_run===1?'was':'were')+' not run, because this one failed.':null},
+      log:onlyWrong?log.filter(r=>r.wrong):log,
+      logCount:onlyWrong?'Showing '+plural(wrongCount,'reply','replies')+' where something went wrong, of '+log.length+'.'
+        :'Showing all '+plural(log.length,'reply','replies')+'.',
+      source:story.sources&&story.sources.transcript_sha256?'Record '+String(story.sources.transcript_sha256).slice(0,12)
+        +(story.sources.unreadable_rows?' · '+plural(story.sources.unreadable_rows,'unreadable row','unreadable rows')+' left out':''):''};
+  }
+
+  // ---- browser ----
+
+  // The factory as it stood after reply ti (0-based): replay the record's own build, belt, recipe and
+  // take-down moves up to that reply. Pure, so it can be tested without a browser.
+  const FCOLS=[['ore','Ore spots'],['miner','Miners'],['smelter','Smelters'],['machine','Constructors'],['storage','Storage']];
+  function factoryAt(f,ti){
+    const items=new Map(),belts=[],power={burner:0,pole:0};
+    let added=0,removed=0;
+    if(!f||!Array.isArray(f.events))return null;
+    for(const e of f.events){
+      if(e.at>ti)continue;
+      const now=e.at===ti;
+      if(e.op==='add'){
+        if(e.col==='power'){const k=/^pole/.test(e.id)?'pole':'burner';power[k]+=1;items.set(e.id,{id:e.id,col:'power',kind:k});if(now)added+=1;continue;}
+        items.set(e.id,{id:e.id,col:e.col,label:e.label,recipe:null,node:e.node||null,fresh:now});
+        if(e.node&&!items.has(e.node))items.set(e.node,{id:e.node,col:'ore',label:(e.ore||'Ore')+' spot',fresh:now});
+        if(now)added+=1;
+      }else if(e.op==='recipe'&&items.has(e.id)){items.get(e.id).recipe=e.recipe;}
+      else if(e.op==='belt'){belts.push({from:e.from,to:e.to,fresh:now});}
+      else if(e.op==='remove'&&items.has(e.id)){
+        const it=items.get(e.id);if(it.col==='power')power[it.kind]-=1;
+        items.delete(e.id);if(now)removed+=1;
+      }
+    }
+    const live=belts.filter(b=>items.has(b.from)&&items.has(b.to));
+    const cols=FCOLS.map(([k,title])=>({key:k,title,items:[...items.values()].filter(it=>it.col===k)}));
+    // an ore spot stays only while a miner stands on it
+    const used=new Set([...items.values()].map(it=>it.node).filter(Boolean));
+    cols[0].items=cols[0].items.filter(it=>used.has(it.id));
+    const machines=cols.slice(1).reduce((n,c)=>n+c.items.length,0);
+    return {cols,belts:live,power,machines,added,removed};
+  }
+  function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;}
+  function btn(cls,text,fk){const b=el('button',cls,text);b.type='button';if(fk)b.dataset.fk=fk;return b;}
+  function sel(fk){return '[data-fk="'+(typeof CSS!=='undefined'&&CSS.escape?CSS.escape(fk):fk)+'"]';}
+
+  // Draws the page once and updates it in place, so open toggles, focus, the film and the one
+  // live region survive every change. Parts that do change (the reply card, the reply list) are
+  // rebuilt with a stable key on every focusable element and every toggle.
+  function mount(root,story){
+    const v0=view(story,{turn:0});
+    root.replaceChildren();
+    if(!v0.ok){root.append(el('p','lst-msg',v0.message));return {redraw(){},state:{}};}
+    const last=v0.moment.count-1;
+    const st={turn:last,timer:null,onlyWrong:false,open:{},focus:null};   // opens on the run's final state
+    let v=view(story,st);
+    if(typeof document!=='undefined'&&v.title)document.title=v.title;
+
+    function toggle(key,cls,summary){
+      const d=el('details',cls);d.dataset.key=key;d.open=!!st.open[key];
+      d.addEventListener('toggle',()=>{st.open[key]=d.open;});
+      const s=el('summary',null,summary);s.dataset.fk='sum:'+key;d.append(s);return d;
+    }
+    function stop(){if(st.timer){clearInterval(st.timer);st.timer=null;}}
+    function go(i,fk){stop();st.turn=i;if(fk)st.focus=fk;draw();}
+    function play(from){
+      stop();
+      if(from!=null)st.turn=from;else if(st.turn>=last)st.turn=0;
+      st.timer=setInterval(()=>{if(st.turn>=last)stop();else st.turn+=1;draw();},1400);
+      draw();
+    }
+
+    const head=el('header','lst-head');
+    head.append(el('h1',null,v.title));
+    const tags=el('p','lst-tags');
+    tags.append(el('span','lst-tag lst-tag-ai',v.madeBy));
+    tags.append(el('span','lst-tag '+(v.verdict.tick?'lst-tag-ok':'lst-tag-plain'),(v.verdict.tick?'✓ ':'')+v.verdict.text));
+    head.append(tags,el('p','lst-note',v.note));
+    root.append(head);
+
+    if(v.tiles.length){
+      const sum=el('section','sst-tiles');sum.setAttribute('aria-labelledby','sst-tiles-h');
+      const h=el('h2',null,'The run in numbers');h.id='sst-tiles-h';
+      const grid=el('div','sst-tile-grid');
+      v.tiles.forEach((t,i)=>{const d=el('div','sst-tile');
+        // Visual first: the big number and a few words; the full breakdown sits behind its own toggle.
+        const cut=t.small.indexOf(':'),short=cut>0?t.small.slice(0,cut):t.small;
+        d.append(el('span','sst-big',t.big),el('span','sst-small',short));
+        if(cut>0){const m=toggle('tile'+i,'sst-tile-more','In full');m.append(el('p',null,t.small.slice(cut+1).trim()));d.append(m);}
+        grid.append(d);});
+      sum.append(h,grid);root.append(sum);
+    }
+
+    let mara=null;
+    if(v.marathon){
+      const ms=el('section','sst-mara');ms.setAttribute('aria-labelledby','sst-mara-h');
+      const mh=el('h2',null,v.marathon.bought.length?'Milestones the game accepted':'No milestone bought');mh.id='sst-mara-h';
+      // One line from the first reply to the last, a dot where each milestone was paid for.
+      const track=el('div','sst-mara-track');track.setAttribute('role','img');
+      track.setAttribute('aria-label',v.marathon.bought.map(b=>b.milestone+' at reply '+(b.index+1)).join(', ')+(v.marathon.bought.length?'; ':'')+v.marathon.replies+' replies in all');
+      const run=el('span','sst-mara-run');track.append(run);
+      const den=Math.max(1,v.marathon.replies-1);
+      const pins=v.marathon.bought.map((b,i)=>{const pin=el('span','sst-mara-pin'+(i%2?' is-low':''));pin.style.left=(b.index/den*100)+'%';pin.append(el('em',null,b.milestone));track.append(pin);return pin;});
+      const cards=el('div','sst-mara-cards');
+      const btns=v.marathon.bought.map(b=>{const c=btn('sst-mara-card','', 'mara'+b.index);
+        c.append(el('span','sst-mara-ms',b.milestone),el('span','sst-mara-at',b.where),el('span','sst-mara-cost',b.cost));
+        c.addEventListener('click',()=>{go(b.index,'mara'+b.index);});cards.append(c);return c;});
+      ms.append(mh,track,cards);root.append(ms);
+      mara={pins,btns};
+    }
+
+    let hero=null;
+    if(v.hero){
+      const h=el('section','sst-hero');h.setAttribute('aria-labelledby','sst-hero-h');
+      const hh=el('h2');hh.id='sst-hero-h';
+      const ctl=el('p','sst-hero-ctl');
+      const watch=btn('lst-skip sst-watch','Watch it from the start','watch');
+      watch.addEventListener('click',()=>{play(0);});
+      ctl.append(watch);
+      const atP=el('p','lst-note');
+      const legend=el('p','sst-legend');
+      for(const [cls,words] of [['sst-sw-machine','made by machines: counts toward the goal'],['sst-sw-missing','still missing'],
+        ['sst-sw-bench','made by hand at the bench: does not count toward the goal']]){
+        const k=el('span','sst-key');k.append(el('span','sst-sw '+cls),el('span',null,words));legend.append(k);
+      }
+      const ul=el('ul','sst-goals');
+      const rows=v.hero.items.map(()=>{
+        const li=el('li','sst-goal');
+        const name=el('strong'),num=el('span','sst-goal-n');
+        const top=el('p','sst-goal-top');top.append(name,num);
+        const bar=el('div','sst-bar');bar.setAttribute('role','img');
+        const m=el('span','sst-seg sst-seg-machine');bar.append(m);
+        const text=el('p','sst-goal-text');
+        const bench=el('div','sst-bench');bench.setAttribute('role','img');
+        const bs=el('span','sst-seg sst-seg-bench');bench.append(bs);
+        const btext=el('p','sst-goal-text sst-bench-text');
+        li.append(top,bar,text,bench,btext);ul.append(li);
+        return {li,name,num,bar,m,text,bench,bs,btext};
+      });
+      h.append(hh,ctl,el('p','lst-note',v.hero.goalText),atP,legend,ul);
+      const d=toggle('checks','sst-more','How these numbers are checked');
+      d.append(el('p','lst-note',v.hero.counted));
+      if(v.hero.notes.length){
+        const w=el('div','sst-whole');
+        w.append(el('h3',null,'For the whole run (these do not change with the replies)'));
+        const nl=el('ul');for(const n of v.hero.notes){const li=el('li',null,n.text);li.dataset.kind=n.kind;nl.append(li);}
+        w.append(nl);d.append(w);
+      }
+      d.append(el('p',null,'The bars add up the run’s own collect and craft moves, reply by reply. Before this page was made, the totals were checked against the run’s record and matched exactly: '
+        +v.hero.checks.join(', ')+'. If they had not matched, no page would have been made. The record has no clock times, so the bars move by reply, not by minute.'));
+      h.append(d);
+      root.append(h);
+      hero={hh,atP,rows};
+    }
+
+    if(v.film){
+      const fs=el('section','lst-film');
+      fs.append(el('h2',null,'What it built, filmed afterwards'));
+      const vid=el('video','lst-video');vid.controls=true;vid.preload='none';vid.playsInline=true;
+      if(v.film.poster)vid.poster=v.film.poster;
+      vid.src=v.film.src;
+      const missing=el('p','lst-gap','The film file is not next to this page, so only its first still is shown.');missing.hidden=true;
+      vid.addEventListener('error',()=>{missing.hidden=false;});
+      fs.append(vid,el('p','lst-note',v.film.caption),missing);
+      root.append(fs);
+    }
+
+    const bar=el('section','lst-time');bar.setAttribute('aria-label','Play the run');
+    const playB=btn('lst-play','Play','play');
+    playB.addEventListener('click',()=>{if(st.timer){stop();draw();}else play();});
+    const range=el('input','lst-range');range.type='range';range.min='0';range.max=String(last);
+    range.setAttribute('aria-label','Reply');range.dataset.fk='range';
+    range.addEventListener('input',()=>{go(Number(range.value));});
+    const endB=btn('lst-skip','Skip to the end','end');
+    endB.addEventListener('click',()=>{go(last);});
+    const strip=el('div','sst-strip');strip.setAttribute('role','group');strip.setAttribute('aria-label','Replies in order');
+    const dots=v.strip.map(d=>{
+      const dot=btn('sst-dot',d.mark,'dot'+d.index);
+      dot.setAttribute('aria-label',d.label);dot.title=d.label;
+      dot.addEventListener('click',()=>{go(d.index,'dot'+d.index);});
+      dot.addEventListener('keydown',e=>{
+        let to=null;
+        if(e.key==='ArrowRight'||e.key==='ArrowDown')to=Math.min(last,d.index+1);
+        else if(e.key==='ArrowLeft'||e.key==='ArrowUp')to=Math.max(0,d.index-1);
+        else if(e.key==='Home')to=0;else if(e.key==='End')to=last;
+        if(to!=null){e.preventDefault();go(to,'dot'+to);}
+      });
+      strip.append(dot);return dot;
+    });
+    const moment=el('p','lst-moment');
+    const key=el('p','sst-symkey');
+    key.append(el('span','sst-symkey-h','Symbols: '));
+    v.key.forEach((k,i)=>{const s=el('span','sst-symkey-i');s.append(el('b',null,k.mark),document.createTextNode(' '+k.words+(i<v.key.length-1?' · ':'.')));key.append(s);});
+    key.append(el('span','sst-symkey-i',' The reply shown has an orange ring; keyboard focus is a dashed outline.'));
+    const live=el('p','sst-live');live.setAttribute('role','status');live.setAttribute('aria-live','polite');
+    const keyBox=toggle('symbols','sst-more sst-keybox','What the squares mean');
+    keyBox.append(key,el('p','sst-axis','Squares go by reply, not by clock: the record has no timestamps, so any time on this strip would be estimated. Use the arrow keys to step through.'));
+    bar.append(playB,range,endB,strip,moment,keyBox,live);
+    root.append(bar);
+
+    // The factory drawing: follows the replay controls above it.
+    let fac=null;
+    if(story.factory&&story.factory.events&&story.factory.events.length){
+      const fs=el('section','sst-fac');fs.setAttribute('aria-labelledby','sst-fac-h');
+      const fh=el('h2',null,'The factory it built');fh.id='sst-fac-h';
+      const fsum=el('p','sst-fac-sum');
+      const fbox=el('div','sst-fac-box');
+      const facMore=toggle('facnote','sst-more','How to read this drawing');
+      fs.append(fh,fsum,el('p','sst-fac-swipe','Swipe sideways to see the whole factory.'),fbox,facMore);
+      facMore.append(el('p','sst-fac-note','Every building the AI placed and every belt it laid (arrows point the way the belt carries), from the run’s record, as they stood after the reply shown. '
+        +'Columns group machines by job, not by where they stood in the world. New this reply: orange outline. Burners and power poles are counted, not drawn.'));
+      root.append(fs);
+      fac={fsum,fbox};
+    }
+    function drawFactory(ti){
+      if(!fac)return;
+      const s=factoryAt(story.factory,ti);if(!s)return;
+      const NS='http://www.w3.org/2000/svg';
+      const sv=(t,a,x)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);if(x!=null)n.textContent=x;return n;};
+      const rows=Math.max(1,...s.cols.map(c=>c.items.length));
+      const W=820,CW=W/5,BW=140,BH=44,GAP=14,TOP=30,H=TOP+rows*(BH+GAP);
+      const svg=sv('svg',{viewBox:'0 0 '+W+' '+H,role:'img','class':'sst-fac-svg'});
+      const defs=sv('defs',{});
+      [['sst-fac-ah',''],['sst-fac-ahn',' is-new']].forEach(([id,c])=>{
+        const m=sv('marker',{id,viewBox:'0 0 10 10',refX:'9',refY:'5',markerWidth:'7',markerHeight:'7',orient:'auto-start-reverse'});
+        m.append(sv('path',{d:'M0,0 L10,5 L0,10 z','class':'sst-fac-head'+c}));defs.append(m);});
+      svg.append(defs);
+      const pos={};
+      s.cols.forEach((c,i)=>{
+        svg.append(sv('text',{x:i*CW+CW/2,y:16,'text-anchor':'middle','class':'sst-fac-col'},c.title));
+        c.items.forEach((it,j)=>{pos[it.id]={x:i*CW+(CW-BW)/2,y:TOP+j*(BH+GAP)};});
+      });
+      const lines=sv('g',{});
+      const link=(a,b,cls)=>{const p=pos[a],q=pos[b];if(!p||!q)return;
+        let x1=p.x+BW,y1=p.y+BH/2,x2=q.x,y2=q.y+BH/2;
+        // Same column (say Wire into Cable): loop out of the right edge and back in, so the belt and its arrow
+        // stay outside both boxes whichever is higher. A belt to a column on the left leaves by the left edge.
+        if(q.x===p.x){x2=q.x+BW;const bx=x1+22;
+          lines.append(sv('path',{d:'M'+x1+','+y1+' C'+bx+','+y1+' '+bx+','+y2+' '+x2+','+y2,'class':cls}));return;}
+        if(q.x<p.x){x1=p.x;x2=q.x+BW;}
+        const mx=(x1+x2)/2;
+        lines.append(sv('path',{d:'M'+x1+','+y1+' C'+mx+','+y1+' '+mx+','+y2+' '+x2+','+y2,'class':cls}));};
+      s.cols.forEach(c=>c.items.forEach(it=>{if(it.node)link(it.node,it.id,'sst-fac-tie');}));
+      s.belts.forEach(b=>{link(b.from,b.to,'sst-fac-belt'+(b.fresh?' is-new':''));
+        const last=lines.lastChild;if(last&&last.getAttribute('class').indexOf('belt')>=0)last.setAttribute('marker-end','url(#'+(b.fresh?'sst-fac-ahn':'sst-fac-ah')+')');});
+      svg.append(lines);
+      s.cols.forEach(c=>c.items.forEach(it=>{
+        const p=pos[it.id];const g=sv('g',{'class':'sst-fac-n sst-fac-'+c.key+(it.fresh?' is-new':'')});
+        g.append(sv('rect',{x:p.x,y:p.y,width:BW,height:BH,rx:7}));
+        g.append(sv('text',{x:p.x+10,y:p.y+(it.recipe?18:27),'class':'sst-fac-l'},it.label));
+        if(it.recipe)g.append(sv('text',{x:p.x+10,y:p.y+35,'class':'sst-fac-r'},'makes '+it.recipe));
+        svg.append(g);
+      }));
+      const words='After reply '+(ti+1)+': '+s.machines+(s.machines===1?' building':' buildings')+', '+s.belts.length+(s.belts.length===1?' belt':' belts')
+        +', '+s.power.burner+(s.power.burner===1?' burner':' burners')+' and '+s.power.pole+(s.power.pole===1?' power pole':' power poles')+'.'
+        +(s.added||s.removed?' This reply: '+[s.added?s.added+' built':'',s.removed?s.removed+' taken down':''].filter(Boolean).join(', ')+'.':'');
+      svg.setAttribute('aria-label',words);
+      fac.fsum.textContent=words;
+      fac.fbox.replaceChildren(svg);
+    }
+
+    const chapterBs=[];
+    if(v.chapters.main.length||v.chapters.wrong.length){
+      const ch=el('section','sst-chapters');
+      ch.append(el('h2',null,'Jump to a moment'));
+      const grid=el('div','lst-chapters');
+      v.chapters.main.forEach((c,i)=>{
+        const b=btn('lst-chapter',null,'ch'+i);
+        b.append(el('span','lst-chapter-n',c.where),el('span','lst-chapter-t',c.label));
+        b.addEventListener('click',()=>{go(c.index,'ch'+i);});
+        grid.append(b);chapterBs.push([b,c.index,'lst-chapter']);
+      });
+      ch.append(grid);
+      if(v.chapters.wrong.length){
+        const d=toggle('wrong','sst-wrong','Every move that went wrong ('+v.chapters.wrong.length+')');
+        const ol=el('ol','sst-wrong-list');
+        v.chapters.wrong.forEach((c,i)=>{
+          const li=el('li');
+          const b=btn('sst-wrong-b',null,'wr'+i);
+          b.append(el('span','lst-chapter-n',c.where),el('span',null,c.label));
+          if(c.said)b.append(el('span','sst-code-inline',c.said));
+          b.addEventListener('click',()=>{go(c.index,'wr'+i);});
+          li.append(b);ol.append(li);chapterBs.push([b,c.index,'sst-wrong-b']);
+        });
+        d.append(ol);ch.append(d);
+      }
+      root.append(ch);
+    }
+
+    const card=el('section','sst-card');card.setAttribute('aria-labelledby','sst-card-h');
+    const cardH=el('h2');cardH.id='sst-card-h';cardH.tabIndex=-1;cardH.dataset.fk='card-h';   // where focus goes if its toggle is gone
+    const cardBody=el('div','sst-card-body');
+    card.append(cardH,cardBody);root.append(card);
+
+    if(v.codes.length){
+      const cs=el('section','sst-codetable');
+      cs.append(el('h2',null,'What the codes mean, and who said them'));
+      const tb=el('table');
+      const capText=('Each code in this run’s record, exactly as recorded, with who said it: “game said” for the game’s own reason names and the game add-on’s codes, “this test’s rule” for codes from this test’s own rules (such as its bank), and “the run’s record” where neither is found in this repo. A plain meaning is given only where the game add-on’s code, the game’s reason name or the run’s hint backs it.');
+      const cap=el('caption',null,'Codes in this run’s record, exactly as recorded');
+      const capMore=toggle('codeslabel','sst-more','How each code is labelled');capMore.append(el('p',null,capText));cs.append(capMore);
+      const thead=el('thead');const hr=el('tr');
+      for(const h of ['Code','Who said it','What it means','Times'])hr.append(el('th',null,h));
+      thead.append(hr);
+      const tbody=el('tbody');
+      for(const c of v.codes){
+        const tr=el('tr');tr.dataset.by=c.by;
+        const td0=el('td');td0.append(el('code',null,c.code));
+        const td1=el('td');td1.append(el('strong',null,c.label));
+        if(c.origin)td1.append(el('span','sst-origin',c.origin));
+        const td2=el('td',null,c.why||'(no plain meaning: only the code is shown)');
+        if(c.why&&(c.source||c.hint)){
+          const d=toggle('src:'+c.code,'sst-src','Where this meaning comes from');
+          if(c.source)d.append(el('p',null,c.source));
+          if(c.hint&&!(c.source||'').includes(c.hint))d.append(el('p',null,BY.hint+': “'+c.hint+'”'));
+          td2.append(d);
+        }
+        tr.append(td0,td1,td2,el('td',null,String(c.count)));
+        tbody.append(tr);
+      }
+      tb.append(cap,thead,tbody);cs.append(tb);root.append(cs);
+    }
+
+    const logS=el('section','lst-events');
+    const det=toggle('log',null,'Every reply, in order');
+    const lab=el('label','sst-filter');
+    const cb=el('input');cb.type='checkbox';cb.checked=st.onlyWrong;cb.dataset.fk='filter';
+    cb.addEventListener('change',()=>{st.onlyWrong=cb.checked;draw();});
+    lab.append(cb,el('span',null,'Show only what went wrong'));
+    const logCount=el('p','lst-note');
+    const logOl=el('ol');
+    det.append(lab,logCount,logOl);logS.append(det);root.append(logS);
+    if(v.source||story.site){
+      const f=el('footer','lst-foot');
+      if(story.site&&typeof story.site.back==='string'&&/^[\w./#-]+$/.test(story.site.back)){
+        const a=el('a',null,story.site.backText||'Back');a.href=story.site.back;const pa=el('p');pa.append(a);f.append(pa);
+      }
+      if(v.source)f.append(el('p',null,v.source));
+      if(story.site&&story.site.notice)f.append(el('p',null,story.site.notice));
+      root.append(f);
+    }
+
+    function drawCard(){
+      cardH.textContent='Reply '+(v.moment.index+1);
+      const parts=[];
+      if(v.card.note){
+        const q=el('blockquote','sst-note');
+        q.append(el('span','sst-note-by','The AI’s note'),el('span',null,v.card.note));
+        parts.push(q);
+      }
+      if(v.card.lost&&!v.card.steps.length)parts.push(el('p','sst-lost',v.card.lost));
+      if(v.card.steps.length){
+        const list=el('ol','sst-steps');
+        v.card.steps.forEach((s,si)=>{
+          const li=el('li','lst-card tone-'+s.tone);
+          const h3=el('h3');h3.append(el('span','sst-step-tag',s.mark+' '+s.tag),document.createTextNode(' '+s.text));
+          li.append(h3,el('p','lst-state',s.answer));
+          if(s.said&&s.said.length){
+            const ul=el('ul','sst-said');
+            for(const x of s.said){const i=el('li');i.dataset.by=x.by;i.append(el('span','sst-by',x.label+': '),document.createTextNode(x.text));ul.append(i);}
+            li.append(ul);
+          }
+          if(s.codes&&s.codes.length){
+            const cl=el('ul','sst-codes');
+            for(const c of s.codes){
+              const ci=el('li');ci.dataset.by=c.by;ci.append(el('code',null,c.label.toLowerCase()+': '+c.code));
+              if(c.why)ci.append(document.createTextNode(': '+c.why));
+              cl.append(ci);
+            }
+            li.append(cl);
+          }
+          if(s.raw&&s.raw.length){
+            const d=toggle('raw:'+si,'sst-raw','Exact fields in the run’s record');
+            const ul=el('ul');
+            for(const r of s.raw){const i=el('li');i.dataset.by=r.by;i.append(el('span','sst-by',r.label+': '),el('code',null,r.text));ul.append(i);}
+            d.append(ul);li.append(d);
+          }
+          list.append(li);
+        });
+        parts.push(list);
+      }
+      if(v.card.notRun)parts.push(el('p','lst-gap',v.card.notRun));
+      cardBody.replaceChildren(...parts);
+    }
+    function drawLog(){
+      logCount.textContent=v.logCount;
+      logOl.replaceChildren(...v.log.map(r=>{
+        const li=el('li',r.current?'is-past':'is-future');
+        const b=btn(null,r.mark+' '+r.text,'log'+r.index);
+        if(r.current)b.setAttribute('aria-current','step');
+        b.addEventListener('click',()=>{go(r.index,'log'+r.index);});
+        li.append(b);return li;
+      }));
+    }
+
+    function draw(){
+      const ae=document.activeElement;
+      const had=ae&&root.contains(ae)&&ae.dataset?ae.dataset.fk:null;
+      const want=st.focus||had;st.focus=null;
+      const inCard=!!(ae&&cardBody.contains(ae));
+      v=view(story,st);
+      if(mara)v.marathon.bought.forEach((b,i)=>{
+        mara.pins[i].classList.toggle('is-reached',b.reached);
+        mara.btns[i].classList.toggle('is-reached',b.reached);mara.btns[i].classList.toggle('is-current',b.current);
+        mara.btns[i].setAttribute('aria-pressed',String(b.current));});
+      if(hero){
+        hero.hh.textContent=v.hero.headline;
+        hero.atP.textContent=v.hero.at+':';
+        v.hero.items.forEach((it,i)=>{
+          const r=hero.rows[i];
+          r.li.className='sst-goal'+(it.done?' is-done':'');
+          r.name.textContent=it.name;r.num.textContent=it.machine+' / '+it.need;
+          r.bar.setAttribute('aria-label',it.label);r.m.style.width=it.width.machine+'%';
+          r.text.textContent=it.text;r.text.hidden=it.done; // a full bar says it; the words stay in the bar's label
+          r.bench.hidden=!it.bench;r.btext.hidden=!it.bench;
+          r.bench.setAttribute('aria-label',it.benchText||'');r.bs.style.width=it.width.bench+'%';
+          r.btext.textContent=it.benchText||'';
+        });
+      }
+      playB.textContent=st.timer?'Pause':'Play';
+      drawFactory(v.moment.index);
+      range.value=String(v.moment.index);range.setAttribute('aria-valuetext',v.moment.text);
+      v.strip.forEach((d,i)=>{
+        const dot=dots[i];
+        dot.className='sst-dot tone-'+d.tone+(d.current?' is-current':'');
+        dot.tabIndex=d.current?0:-1;
+        if(d.current)dot.setAttribute('aria-current','step');else dot.removeAttribute('aria-current');
+      });
+      moment.textContent=v.moment.text;
+      live.textContent=v.live;
+      for(const [b,idx,cls] of chapterBs){
+        const cur=idx===v.moment.index;
+        b.className=cls+(cur?' is-current':'');
+        if(cur)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');
+      }
+      drawCard();drawLog();
+      const now=document.activeElement;
+      if(want&&(!now||now===document.body||!root.contains(now)||now.dataset.fk!==want)){
+        const n=root.querySelector(sel(want))||(inCard?cardH:null);
+        if(n&&n!==now)n.focus({preventScroll:true});
+      }
+    }
+    draw();
+    return {redraw:draw,state:st};
+  }
+
+  return {SCHEMA,view,mount,turnTone,factoryAt,MARK,KEY,BY};
+});
+</script><script>SaveBenchSeatStory.mount(document.getElementById("story"),JSON.parse(document.getElementById("story-data").textContent));</script><script>(function(){var f=document.getElementById("run-film"),h=document.querySelector("#story .lst-head");if(f&&h){h.after(f.querySelector("figure"));f.remove();}})();</script><script src="../../../assets/savebench/film/film.js" defer></script></body></html>

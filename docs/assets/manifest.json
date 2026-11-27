@@ -543,13 +543,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "sha256": "f0d47e8da14196c6325dd6ac8b4e3ee764976b53dcef80ec4ccd1c2f42b6490d",
-      "bytes": 111653,
+      "sha256": "7192a6a6bd9fb6f1ec1127b92a77c4ccb78774aaa5f36d9566b75cbcf3f8e440",
+      "bytes": 120417,
       "dimensions": [
         1920,
         1080
       ],
-      "kind": "One frame of the SaveBench walkthrough animation (its map of every AI factory, drawn from run records), rendered from the version of 2026-11-24. It includes imagery from the game Satisfactory, which belongs to its owners.",
+      "kind": "One frame of the SaveBench walkthrough animation (its map of the script's factory, drawn from run records), rendered from the version of 2026-11-26. It includes imagery from the game Satisfactory, which belongs to its owners.",
       "claim_boundary": "A drawn summary of dated results; the results themselves are in the run records, not in this picture."
     },
     {
@@ -1517,6 +1517,192 @@
       "bytes": 1265371,
       "kind": "Film clip from the game Satisfactory (film clip): camera film of the two Coal Generators of the script's coal plant, filmed from the saved world of its November 19 coal run (three cuts, 15.5 s); reused here, the third generator of November 24 has not been filmed. Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-24. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/ConstructorMk1.png",
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8",
+      "bytes": 29778,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/ConveyorAttachmentSplitter.png",
+      "sha256": "c744194a9337f02037eabde3c84d5b3655f67234e4463e37c27047d0e40268ad",
+      "bytes": 33135,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/MinerMk1.png",
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42",
+      "bytes": 23957,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/SmelterMk1.png",
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84",
+      "bytes": 30206,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/StorageContainerMk1.png",
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be",
+      "bytes": 29086,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-belted-pipe.jpg",
+      "sha256": "88b9016f4b98ddcbf925041000ac8ea3c96550ec96575d2b70064b908eebc5c9",
+      "bytes": 164851,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-marathons.jpg",
+      "sha256": "ff1ec8db7de4af309ea604a0bfb411b9ddff6df73ca90ad646448f051c11cfdf",
+      "bytes": 203975,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/world.jpg",
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
+      "bytes": 575534,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/film/marathon-ends.mp4",
+      "sha256": "5467ed2f478665bce90bc8d12cb5b569532451758511c0dfbb63c9c287f1db83",
+      "bytes": 7544542,
+      "kind": "Film clip from the game Satisfactory (film clip): camera films of the end state of five Marathon runs (Gemini 4 Neon and Gemini 4 Argon, Nov 24 evening; Claude Opus 5.5, GPT-6.2 Astra and GPT-6.2 Sol, Nov 24 afternoon), filmed from each run's final save; five cuts, 24 s. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/film/script-belted-pipe.mp4",
+      "sha256": "0cce00c05d4342d49377343f3e0d627d944fb7bff8bfd3a8b573caf73bd1cdd9",
+      "bytes": 4228072,
+      "kind": "Film clip from the game Satisfactory (film clip): camera film of the script's world saved right after phase two's Automated Wiring was earned from belted pipe (run of Nov 25, 12:07 AM CST), filmed Nov 25; three cuts, 18 s. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-25. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/ConstructorMk1.png",
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8",
+      "bytes": 29778,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/ConveyorAttachmentSplitter.png",
+      "sha256": "c744194a9337f02037eabde3c84d5b3655f67234e4463e37c27047d0e40268ad",
+      "bytes": 33135,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/MinerMk1.png",
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42",
+      "bytes": 23957,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/SmelterMk1.png",
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84",
+      "bytes": 30206,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/StorageContainerMk1.png",
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be",
+      "bytes": 29086,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/film-vf.jpg",
+      "sha256": "8c60e861c105a73694fdfa76a59b3c0f950e8cd3c71fd5285623cdac82523c71",
+      "bytes": 201041,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/world.jpg",
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
+      "bytes": 575534,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/film/script-vf.mp4",
+      "sha256": "2faa74a2cef48adfc3727aac90e4505c6763522e47102a375cfbb97f23165648",
+      "bytes": 6741738,
+      "kind": "Film clip from the game Satisfactory (film clip): camera film of the script's world saved at the end of its first Versatile Framework run (run of Nov 25, 6:51 PM CST), filmed Nov 25, 11:05 PM CST; four cuts, 21.5 s. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-26. It illustrates the project; it is not a measurement record."
     }
   ]
 }

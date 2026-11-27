@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 80548,
-      "sha256": "4e95e7881ff290357e606f972c8a2892639f7c8ed77ee7103908b627580e6d78"
+      "bytes": 91298,
+      "sha256": "1923916f22352ee47aa68b2b4900faf148a05fd5f8d520e913ac208f8d8b783a"
     },
     {
       "path": "assets/og/og-default.png",
@@ -172,6 +172,261 @@
       "path": "assets/savebench/film/film.js",
       "bytes": 1339,
       "sha256": "57ff45b4cef7e3892742b8fc62990b54f69900187f552cfb2f0b94aacc4c580e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T164501Z-poster-640.jpg",
+      "bytes": 52090,
+      "sha256": "b469d195def6c9316e3efeb115b6b04c62b45572f1741d31ddf14df7ba91be59"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T164501Z-poster.jpg",
+      "bytes": 182936,
+      "sha256": "8cffd82f6c6e5e2bb6a46d644a1fdeec5888bad2d5329772f03f1673e96f5dba"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T164501Z.mp4",
+      "bytes": 9181827,
+      "sha256": "4170c4c90bf5703775be4058771584086513ce0a5641ba388b4073f0132d66bd"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T201001Z-poster-640.jpg",
+      "bytes": 46159,
+      "sha256": "e963ea6b96879cdd8ac6c778d9c13edbb63af7df0b56ba42b1b147d09da47fcf"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T201001Z-poster.jpg",
+      "bytes": 152684,
+      "sha256": "bb12bf33860effa1ee83f1d7b04274b5288ffed0f19a9809283e1cc310df19be"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T201001Z.mp4",
+      "bytes": 6745422,
+      "sha256": "804f2a045b038f1c2e9a171ea76b3c61148ba3be05ad97a55ffd2f01e2d8cac9"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T224501Z-poster-640.jpg",
+      "bytes": 46869,
+      "sha256": "6f0b9416f9476b198c37041c624c19b0931eaf07b778a4fdb43195e9a6c4dd38"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T224501Z-poster.jpg",
+      "bytes": 157426,
+      "sha256": "68631e5deeeca4ba3e75647995d5ff9f5bac8300d508e4a74bc1c5b1b9a9f5b7"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261124T224501Z.mp4",
+      "bytes": 7549814,
+      "sha256": "dc850f56e9f31d69d3479065b7e096f27a89e3341cf9c38c77281211a9f97d3f"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T003501Z-poster-640.jpg",
+      "bytes": 56843,
+      "sha256": "339773850fb71f4458ba49c7d852bc5ad2cc7b6d8e46700b4e6b9e0266a693a6"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T003501Z-poster.jpg",
+      "bytes": 192500,
+      "sha256": "3bc4353672170bd6f798e0494064e54c79b2626f55856b6630f6d1076e1d046e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T003501Z.mp4",
+      "bytes": 11809840,
+      "sha256": "007ca3e2b60ca60418194953f0cca81609fbcfeacc81befe727385dd09983d96"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T033502Z-poster-640.jpg",
+      "bytes": 52207,
+      "sha256": "5664976e77e2a27ac1758e0ff49b1311d73d68463a6e461f28e238f495fda3bf"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T033502Z-poster.jpg",
+      "bytes": 170983,
+      "sha256": "6f876bbb808fe8c7360f7275f95d0df9b751b60682533e34f42bb8029602be53"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T033502Z.mp4",
+      "bytes": 8077739,
+      "sha256": "563baa81eb5895673f52b0f806bd1cd341398e65831087d8809f205d6fe391dc"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T054501Z-poster-640.jpg",
+      "bytes": 49188,
+      "sha256": "d055cca3cf5b7f8ec351b1abeb1b6836f13b7aedb72fd8a6491d56994399f172"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T054501Z-poster.jpg",
+      "bytes": 172448,
+      "sha256": "1a6faa8a2cbd6167746f4be6bf93b9907bda9b3c2d0a979f6f7671d82de41d33"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T054501Z.mp4",
+      "bytes": 11864306,
+      "sha256": "d948b58f7abd7f9b4d26c59075aa104871edb0bf90a59d68cee93f9d69f3fa01"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T065501Z-poster-640.jpg",
+      "bytes": 50010,
+      "sha256": "c0d636ffdf784a0b379b1b180f8c2ae99f4ea65427075b6aca3af22a3b2a82c1"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T065501Z-poster.jpg",
+      "bytes": 165574,
+      "sha256": "528753a7a027b4a5363a58706929e0ae1e9084a7680c8ba21e00aa4566f1649e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/c-20261125T065501Z.mp4",
+      "bytes": 8216744,
+      "sha256": "e7c6751f50da29a438334019370e3d4e15a3391ecb9f87a309a118646ca6d861"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T165002Z-poster-640.jpg",
+      "bytes": 47972,
+      "sha256": "9242ecda1e949428bccf36c6c2a89404e1c36b3661d689afa7aecd4c84e3a35e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T165002Z-poster.jpg",
+      "bytes": 158734,
+      "sha256": "07ee015d7729d1fa5975a97e7c2a6d983c63e6feb7cff1a8cdf6db45b43f01ab"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T165002Z.mp4",
+      "bytes": 10371051,
+      "sha256": "b41a7e886a353a216d78d7aac45a219250db5b8da31fc5d09c1be413e25e612e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T190001Z-poster-640.jpg",
+      "bytes": 60217,
+      "sha256": "895dde82735220d1609fde0d32f0b4df12bbbe5c73e701b0602ede3088be2c6e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T190001Z-poster.jpg",
+      "bytes": 210356,
+      "sha256": "54b2fbcec3c11d6de5dc05808fe7eeb745f83e4ba73c30dd3a11beb6e3055cc9"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T190001Z.mp4",
+      "bytes": 9328390,
+      "sha256": "7e14771e4999c0df7293044effccb59342bd2b3a1a3412fb3ac262c5edc902e5"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T225001Z-poster-640.jpg",
+      "bytes": 54765,
+      "sha256": "acafc8d65ac702e04050b49f67d979865a6108ef3de320e934c5c703b41bbb75"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T225001Z-poster.jpg",
+      "bytes": 178038,
+      "sha256": "83089e7138e18c480079ffb56a1ff14cd48e8921922d2d220e8155994aea55eb"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261124T225001Z.mp4",
+      "bytes": 10403748,
+      "sha256": "b2c3e358bd8285d97f735cb35a51b9cdcbd37b89929a84a7e95b074c8edbd56c"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261125T030502Z-poster-640.jpg",
+      "bytes": 54557,
+      "sha256": "cfe187448489351bf2c14c92206d819c928fe2052c3f2817bd82a189297977d6"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261125T030502Z-poster.jpg",
+      "bytes": 190214,
+      "sha256": "f2d953924ed722487c618ecbc63524188cb14ce5fb69e04e4d17c97a639634ec"
+    },
+    {
+      "path": "assets/savebench/film/marathon/d-20261125T030502Z.mp4",
+      "bytes": 12196330,
+      "sha256": "1f6f5ba761397ca3cad01e0db9c7ad69827d7f29cd0a949857574378ba613160"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T165501Z-poster-640.jpg",
+      "bytes": 50680,
+      "sha256": "a8cf302a8f66355cae0989520c1a228a3b08c2145778aff366676646c9fc9c83"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T165501Z-poster.jpg",
+      "bytes": 178042,
+      "sha256": "32e8d1076cacadc64fe38b42b70fd41907a7ce74d1ea7b1d7dd122fdc5388c9e"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T165501Z.mp4",
+      "bytes": 12064394,
+      "sha256": "256a79be07fe1a51f03808a9e863ac63b7d6475f009c1e38b98d6884469bac72"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T184001Z-poster-640.jpg",
+      "bytes": 52245,
+      "sha256": "1d83c6992237cfb81f8698d135740d907f63baa514ad7cb61a156a06bb68ef82"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T184001Z-poster.jpg",
+      "bytes": 175886,
+      "sha256": "fcc5f19ebccb168a37696891c07107ec6a4fa6fc765f16e81b43a7a146427f70"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T184001Z.mp4",
+      "bytes": 11949921,
+      "sha256": "3cd03d367981087c47afdadcdb20efbb756dfc45457565f6791f8c58a4a50eae"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T225501Z-poster-640.jpg",
+      "bytes": 60699,
+      "sha256": "6bf0cea2a635ac0159408f9e5ab3525f689d3703a953c64a45ab980acc7792fc"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T225501Z-poster.jpg",
+      "bytes": 203475,
+      "sha256": "5e26b59bb8a79b2c1b205109a1f0ecae2d164300f37eda88260a77a61ee8dc34"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261124T225501Z.mp4",
+      "bytes": 8976478,
+      "sha256": "4425bb0f921568013dde98c5546b8a80f7dbb7dd21abededa44f77d6f9cd3bc4"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T031001Z-poster-640.jpg",
+      "bytes": 48430,
+      "sha256": "347f6712fc70e9e8c91a2a770390d0eca394991913899d5d6049dbbe7ae1aece"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T031001Z-poster.jpg",
+      "bytes": 171372,
+      "sha256": "3d9a5cee4467338c1bab2d29fc5c05d161fa3f7b7b18b87da721245e4f8f9511"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T031001Z.mp4",
+      "bytes": 2482094,
+      "sha256": "7d628d3f6b72b0c072cd04ac2c31da299b8d0a159a28dc57f62583a3e545de99"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T061001Z-poster-640.jpg",
+      "bytes": 55193,
+      "sha256": "6f140b8f82e2aba0d0beb2015c47f0e6340f38873ba0909b3464069a9169b8ad"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T061001Z-poster.jpg",
+      "bytes": 195480,
+      "sha256": "d6de20f5e935e7800717801ff1e76dda7bc49009c47ad49eaf3e491d79b96e84"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T061001Z.mp4",
+      "bytes": 13295476,
+      "sha256": "15dd85d57fd6f8f0341cb6fd3884c18e2738bfcdb6402450561cc1f5559b0da2"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T075001Z-poster-640.jpg",
+      "bytes": 61489,
+      "sha256": "a790d9f9b6ef1fd52ef1cf7695e2d157305f9ffce836bc731186d40843a45f5f"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T075001Z-poster.jpg",
+      "bytes": 214358,
+      "sha256": "94f37990617c797026ca8ea411aad6212b29312c9ad62ab08a90bdfa15fd2cf9"
+    },
+    {
+      "path": "assets/savebench/film/marathon/e-20261125T075001Z.mp4",
+      "bytes": 11779635,
+      "sha256": "6310739d2f53e5767ee59356bda44bf90097888aa8b1d4032f58001319026d9e"
     },
     {
       "path": "assets/savebench/film/opus-milestone-1-1-poster-640.jpg",
@@ -330,13 +585,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 111653,
-      "sha256": "f0d47e8da14196c6325dd6ac8b4e3ee764976b53dcef80ec4ccd1c2f42b6490d"
+      "bytes": 120417,
+      "sha256": "7192a6a6bd9fb6f1ec1127b92a77c4ccb78774aaa5f36d9566b75cbcf3f8e440"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 171772,
-      "sha256": "7326138d9f7c5aca8b2e8cdc4a4aa40e4243b15b7ac84ac24a614ad69831fb85"
+      "bytes": 272084,
+      "sha256": "e0f213fd37df1a5bab740acb1664928005c61faa1b5b9c16a9b41089e396598e"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -345,8 +600,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/progress.css",
-      "bytes": 5606,
-      "sha256": "086767ef33aef80a78b80c9513219f5495f1f6142651ed6868aa870eab7dc926"
+      "bytes": 6230,
+      "sha256": "ff181282a9e2e8426a8d2b70ed32681d3f88d62cb4c3c9fa618da1d096be451f"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
@@ -844,9 +1099,109 @@
       "sha256": "2008e66a7b407ce0374b7272daab87758f5ccd8d10f5ec4d3b9c9ab1578dcc9f"
     },
     {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/film/marathon-ends.mp4",
+      "bytes": 7544542,
+      "sha256": "5467ed2f478665bce90bc8d12cb5b569532451758511c0dfbb63c9c287f1db83"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/film/script-belted-pipe.mp4",
+      "bytes": 4228072,
+      "sha256": "0cce00c05d4342d49377343f3e0d627d944fb7bff8bfd3a8b573caf73bd1cdd9"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/ConstructorMk1.png",
+      "bytes": 29778,
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/ConveyorAttachmentSplitter.png",
+      "bytes": 33135,
+      "sha256": "c744194a9337f02037eabde3c84d5b3655f67234e4463e37c27047d0e40268ad"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/MinerMk1.png",
+      "bytes": 23957,
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-belted-pipe.jpg",
+      "bytes": 164851,
+      "sha256": "88b9016f4b98ddcbf925041000ac8ea3c96550ec96575d2b70064b908eebc5c9"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/film-marathons.jpg",
+      "bytes": 203975,
+      "sha256": "ff1ec8db7de4af309ea604a0bfb411b9ddff6df73ca90ad646448f051c11cfdf"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/img/world.jpg",
+      "bytes": 575534,
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-25/transcript.txt",
+      "bytes": 2193,
+      "sha256": "62c6a3871f0e91219aa09026991f96796e6200d4c7b55ad194bae7830a06e7d7"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/film/script-vf.mp4",
+      "bytes": 6741738,
+      "sha256": "2faa74a2cef48adfc3727aac90e4505c6763522e47102a375cfbb97f23165648"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/ConstructorMk1.png",
+      "bytes": 29778,
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/ConveyorAttachmentSplitter.png",
+      "bytes": 33135,
+      "sha256": "c744194a9337f02037eabde3c84d5b3655f67234e4463e37c27047d0e40268ad"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/MinerMk1.png",
+      "bytes": 23957,
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/SmelterMk1.png",
+      "bytes": 30206,
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/StorageContainerMk1.png",
+      "bytes": 29086,
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/film-vf.jpg",
+      "bytes": 201041,
+      "sha256": "8c60e861c105a73694fdfa76a59b3c0f950e8cd3c71fd5285623cdac82523c71"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/img/world.jpg",
+      "bytes": 575534,
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea"
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-26/transcript.txt",
+      "bytes": 1589,
+      "sha256": "958519c452948029ab75b0e98046079105b1ece8155cedb3ee189afb852825f9"
+    },
+    {
       "path": "assets/savebench/walkthrough/walkthrough.js",
-      "bytes": 97307,
-      "sha256": "71eca18cb95919967b6432c0bc68da7020604d3f7c06ce311629bfbb669e0417"
+      "bytes": 104544,
+      "sha256": "d7de82d718695073ce0cccfd892eac7bb24862ff67e6ad00d1b6a7695b1d205b"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
@@ -1000,8 +1355,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 286983,
-      "sha256": "9075ebad6989f5c1539ae1ec1100b98abbb31d1913812425d3637fc390bff82b"
+      "bytes": 301280,
+      "sha256": "2b991e4d4344b0b25aa09a2c6c5cf19361d0cf2124b88bb5d0882a4ffc5bf459"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -1010,8 +1365,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 40004,
-      "sha256": "270982c11f21d969aaf91b3056662db4edc9a9534387bde193bfbb309a961147"
+      "bytes": 52671,
+      "sha256": "608c3af4013fbd26d776dd90b7b2d500fc7345317819a74bc3ceebbb7cf1142c"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -1022,6 +1377,61 @@
       "path": "case-studies/savebench/measurement-case.json",
       "bytes": 32308,
       "sha256": "34707909bc153abf3a7659844ca3e7aaf7a92ae9536ff4d68183e10cf505d9e5"
+    },
+    {
+      "path": "case-studies/savebench/runs/argon-marathon-e-20261124T225501Z.html",
+      "bytes": 145945,
+      "sha256": "a90b1ca33f7c0f6e2479cf18e51841a54e42ae83f7a9696f0841bdf002f3e0d9"
+    },
+    {
+      "path": "case-studies/savebench/runs/argon-marathon-e-20261125T031001Z.html",
+      "bytes": 137225,
+      "sha256": "654d95c54396cee4dbd24777117dc9bf41c15401ad85379c12a21f2c985cfc4a"
+    },
+    {
+      "path": "case-studies/savebench/runs/astra-marathon-e-20261124T053501Z.html",
+      "bytes": 111296,
+      "sha256": "41b570ed22b6b30d78bf2f48153b03256ed83f1203cb1cdeb9c224f7f78cf6a3"
+    },
+    {
+      "path": "case-studies/savebench/runs/astra-marathon-e-20261124T165501Z.html",
+      "bytes": 117532,
+      "sha256": "e1e367fb2384f3bcf3a7b87d2f26305c7959bb7aba12966ce46735a562dd273a"
+    },
+    {
+      "path": "case-studies/savebench/runs/astra-marathon-e-20261125T061001Z.html",
+      "bytes": 113605,
+      "sha256": "6f93654cf8278971b2ae22848806ab239a64ac428d01b3f7601a63064d3f54bc"
+    },
+    {
+      "path": "case-studies/savebench/runs/fable-marathon-c-20261125T054501Z.html",
+      "bytes": 107510,
+      "sha256": "4fb62cc7d5230b76a98d9e3ce1ea321e96344e21af83cc2f41635a3dc736b65e"
+    },
+    {
+      "path": "case-studies/savebench/runs/fable-marathon-e-20261124T080501Z.html",
+      "bytes": 106497,
+      "sha256": "47a21bd824604c1a41d2be021a4c3c746cb67a411fdb55186f0d248ca658c353"
+    },
+    {
+      "path": "case-studies/savebench/runs/hydrogen-marathon-c-20261125T033502Z.html",
+      "bytes": 135184,
+      "sha256": "288d15dd629628408adec2f98d97ad5fd364fb8f3c0992e22afaf00999a804ee"
+    },
+    {
+      "path": "case-studies/savebench/runs/hydrogen-marathon-d-20261124T165002Z.html",
+      "bytes": 135750,
+      "sha256": "b55ec1398c12dccc6f35770557e8cc9b5cdaf9a4e90a0a538841a0a245feed7d"
+    },
+    {
+      "path": "case-studies/savebench/runs/marathons.html",
+      "bytes": 12330,
+      "sha256": "aa4ed0702c2cff9db61c48e68e39afe0b1ad21ec279b2be2dbf4fc5dbedc58c7"
+    },
+    {
+      "path": "case-studies/savebench/runs/neon-marathon-c-20261125T003501Z.html",
+      "bytes": 137226,
+      "sha256": "2e9beefe9a5a4092d020589e15bcc9faed8813dcd4f90f2808e49f19dc7350b3"
     },
     {
       "path": "case-studies/savebench/runs/opus-1-1.html",
@@ -1044,6 +1454,16 @@
       "sha256": "ccd15d8510a7a9f05735ca91578b1aba8b8660cb9de8bcb223f47c2524337aa9"
     },
     {
+      "path": "case-studies/savebench/runs/opus-marathon-c-20261124T164501Z.html",
+      "bytes": 123147,
+      "sha256": "4d5a4a75b75d767b6fe8410654b3a22f18a37bd0dc32a230e885fe459d805676"
+    },
+    {
+      "path": "case-studies/savebench/runs/opus-marathon-d-20261125T030502Z.html",
+      "bytes": 131264,
+      "sha256": "9d4ff2f56546d1751da122b993ec016d86a8e78fbb95c4fb487eb9a8698b3a48"
+    },
+    {
       "path": "case-studies/savebench/runs/sol-1-1.html",
       "bytes": 74599,
       "sha256": "10c8c2eb944209c58f578ccaa64bbaa0c7baff8abd65dbf670eb9403895acdd7"
@@ -1057,6 +1477,36 @@
       "path": "case-studies/savebench/runs/sol-1-3.html",
       "bytes": 101943,
       "sha256": "c1028fe7bd882f9f9c96b51201ef1f503ec716e96da79cf79873b5adf808453b"
+    },
+    {
+      "path": "case-studies/savebench/runs/sol-marathon-c-20261124T201001Z.html",
+      "bytes": 128930,
+      "sha256": "c673c5290e82b431c51e3419efcc413f44e598f5b5df7753c9ddb82c6e1a91d2"
+    },
+    {
+      "path": "case-studies/savebench/runs/sol-marathon-c-20261125T065501Z.html",
+      "bytes": 133556,
+      "sha256": "587365d3dc4943f5adb4f68f9554df309337fc3d344d965ed6b28cd0a9ab241c"
+    },
+    {
+      "path": "case-studies/savebench/runs/sol-marathon-e-20261124T184001Z.html",
+      "bytes": 137256,
+      "sha256": "4b2c7981c210dcfbf229e6d934d8722585c38d7949221183d9616c3836d04909"
+    },
+    {
+      "path": "case-studies/savebench/runs/terra-marathon-c-20261124T224501Z.html",
+      "bytes": 130090,
+      "sha256": "c69d82ea0a74ba564c6920ececf4c9754ca1b74c457bd40a83446167a0cdfdd7"
+    },
+    {
+      "path": "case-studies/savebench/runs/terra-marathon-d-20261124T190001Z.html",
+      "bytes": 125611,
+      "sha256": "9bb5a124152b18f8e64aa8ac90f02e5981bf7464c8acfa3cffd1f1b6e0b4a82b"
+    },
+    {
+      "path": "case-studies/savebench/runs/terra-marathon-e-20261125T075001Z.html",
+      "bytes": 122225,
+      "sha256": "5c0b7c7a6646ffd84e539d536b80f65f600dbb7e6fab0618552a8c56762cdd46"
     },
     {
       "path": "ear.html",
@@ -1075,8 +1525,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20195,
-      "sha256": "5eda8e320e9572951abcdf442315badfcfe37ccc3056b9b601604bdf5712f2f9"
+      "bytes": 20211,
+      "sha256": "fed7a844ac4eaa79f3811c8f10ea07e129a30be2b8556d9789367a5d73ebaf9a"
     },
     {
       "path": "more-work.html",
