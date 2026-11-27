@@ -121,7 +121,7 @@
     {
       "path": "assets/manifest.json",
       "bytes": 96034,
-      "sha256": "f3027f092e7dfd00e5309da7dca3f36cd15ffdd7961e987ac1b688deb4c5e0fb"
+      "sha256": "f1fbda1c54a887ea61bb26e26e8d4875e74ca795ad29b8809b8f8b06e21c32d0"
     },
     {
       "path": "assets/og/og-default.png",
@@ -620,8 +620,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "bytes": 124561,
-      "sha256": "b795dae772f40d2bd1f1e7d15002083915fdcb58fbce42c1648fa2e0281570af"
+      "bytes": 128342,
+      "sha256": "c84dbd33e03321979bfa292592b55f74b18b8ab6f6a2e710e9350a247b7efeb3"
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
@@ -635,8 +635,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/progress.css",
-      "bytes": 6793,
-      "sha256": "251e08f489b0574c17db52bb83839fae88418ac267df4868cf7c78fadada7061"
+      "bytes": 6931,
+      "sha256": "f3b42c00050c0b517c84bed89135a0d05f68f66f094d9a93d541de3970880974"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
@@ -1450,18 +1450,18 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 306393,
-      "sha256": "2597bfcace0e8814eb9bdf37f9bd37a7fe0b1534a4853a34f5faa6785da9a987"
+      "bytes": 306357,
+      "sha256": "c76b0ca9c8c3bfca98f7a2502b96700b29de16974f2dfa2cbbe39d6c6a5994c2"
     },
     {
       "path": "case-studies/savebench/compare.html",
-      "bytes": 97771,
-      "sha256": "52e05230e3e9f2a2f7d2d5ce591bdd4cc58fa16dcf9e4e28e1ff92990d16270c"
+      "bytes": 98395,
+      "sha256": "b1761096354de0e1aee1cd8198947e951d7cb990a8c0dc6ae3108496def0e875"
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 55902,
-      "sha256": "1c897aef4fcd57fda38368508a83c1f1f521caf0537a85abe4a52dca60d0a06e"
+      "bytes": 57957,
+      "sha256": "f1451d185d76020c037439311e863ef25c30e2d5d08bcba9840dd2650a7c2f36"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
@@ -1475,58 +1475,58 @@
     },
     {
       "path": "case-studies/savebench/runs/argon-marathon-e-20261124T225501Z.html",
-      "bytes": 147832,
-      "sha256": "d2abc7e1bb64e4c22b8f2494629bc35222b333bac3046008396190203c1e9780"
+      "bytes": 147897,
+      "sha256": "5feb124439d2dfb81b78165f336fc6a6228acb19807227b4c71482ae873dec58"
     },
     {
       "path": "case-studies/savebench/runs/argon-marathon-e-20261125T031001Z.html",
-      "bytes": 139109,
-      "sha256": "df6282c871fd96b0d2413e2eb4a91666745f019d652cd529c42d84c304c11d6e"
+      "bytes": 139177,
+      "sha256": "09b2508fe58fa492754f837b65c61391fcee219af84a55ac15f2353b4ecb11de"
     },
     {
       "path": "case-studies/savebench/runs/astra-marathon-e-20261124T053501Z.html",
-      "bytes": 113186,
-      "sha256": "33dca0bc7b67b39e922e91ef73ddf7528e85734f44a930e530d3817fa02b09fd"
+      "bytes": 113248,
+      "sha256": "058de45ef0888639729c3aa654ce93b7cdde91f05d24bb011d2be995d8bbb6bd"
     },
     {
       "path": "case-studies/savebench/runs/astra-marathon-e-20261124T165501Z.html",
-      "bytes": 119416,
-      "sha256": "6de711a47800cb9275b5a1fd4ba2f694ddfefeccae70cd704a9d23d349338801"
+      "bytes": 119481,
+      "sha256": "7adee66b063f671204646acac9bbab4c5ca393bc13123d61ef27eeb1abd0e8bb"
     },
     {
       "path": "case-studies/savebench/runs/astra-marathon-e-20261125T061001Z.html",
-      "bytes": 115492,
-      "sha256": "680f68cceaf8b24767c2ca88d16155d9d7b1fee3b22fe6fd08070c1019a0380d"
+      "bytes": 115557,
+      "sha256": "854c35b5ef49409b4cb820ef4485c6cfd10236b02fe831be1dec84acef5d44aa"
     },
     {
       "path": "case-studies/savebench/runs/fable-marathon-c-20261125T054501Z.html",
-      "bytes": 109397,
-      "sha256": "427ba6d8559ba9bbde85ea3d21a574c8abd1f2f4c501f307e448d2cf9bcc16b3"
+      "bytes": 109467,
+      "sha256": "cdb358c310f81f11c748d37386dd798ca6e96fab1d7a85d5001f65aba2432076"
     },
     {
       "path": "case-studies/savebench/runs/fable-marathon-e-20261124T080501Z.html",
-      "bytes": 108381,
-      "sha256": "93ab37a1d3447a230d078369954b1804f85b09993a890ddc351a3e9aa4f78d29"
+      "bytes": 108451,
+      "sha256": "fc3b689dc5be12950d03fddeedc2e99a208acf0a1834e78280ed0fbc2af221f5"
     },
     {
       "path": "case-studies/savebench/runs/hydrogen-marathon-c-20261125T033502Z.html",
-      "bytes": 137074,
-      "sha256": "8309ae76190d322c9511514fa1f85007e163ba775058b50fbddfd043e35df9fd"
+      "bytes": 137136,
+      "sha256": "6adf84e5557d0c7898c04ceff1200b2059b60d8be0a3fa3a18c85b16d255c58c"
     },
     {
       "path": "case-studies/savebench/runs/hydrogen-marathon-d-20261124T165002Z.html",
-      "bytes": 137640,
-      "sha256": "31309b69bcc79d39c35ebd376fe84d161f493030e2a0f3197160d20fb6893dee"
+      "bytes": 137705,
+      "sha256": "6ebaeb2682381aed7bdf560404fa69614dc49bb6a1e96dc580a67fa5695785a5"
     },
     {
       "path": "case-studies/savebench/runs/marathons.html",
-      "bytes": 19787,
-      "sha256": "1c95fecd6a7ff70369bc9dbc5cd23e8bda8b4e819f2044453eea0691acdbbe01"
+      "bytes": 19860,
+      "sha256": "f12fab4753de16425b961d03bcee087fa906cfebc55048057cafcdec8c269eee"
     },
     {
       "path": "case-studies/savebench/runs/neon-marathon-c-20261125T003501Z.html",
-      "bytes": 139116,
-      "sha256": "5a2dd47a5ad00e46ff103ef7d9a389e4c167ce7aa0fbf3a92414e2b9b638c7b6"
+      "bytes": 139181,
+      "sha256": "cbf2fcf6b4fcb7db3f84ff728fa272bc306afba35696b17422ae654ea4a5b839"
     },
     {
       "path": "case-studies/savebench/runs/opus-1-1.html",
@@ -1550,13 +1550,13 @@
     },
     {
       "path": "case-studies/savebench/runs/opus-marathon-c-20261124T164501Z.html",
-      "bytes": 125037,
-      "sha256": "3b08c754b486a7a392246d5203dc36a86d447ee0d4c0d004370a01a49bb3bf18"
+      "bytes": 125102,
+      "sha256": "e7bd413391ac856f9599336e7c46534d794108752fc7e2d85b80d70b1529e441"
     },
     {
       "path": "case-studies/savebench/runs/opus-marathon-d-20261125T030502Z.html",
-      "bytes": 133151,
-      "sha256": "3c1bc59420afb2c96ab7c24223cdb337b8ba204a60cc38ce41ba4740bde98fff"
+      "bytes": 133216,
+      "sha256": "928c40f30676b63193b199537b5862fe1cdcc916a9bd74306e6ed41cdcec7dd6"
     },
     {
       "path": "case-studies/savebench/runs/sol-1-1.html",
@@ -1575,33 +1575,33 @@
     },
     {
       "path": "case-studies/savebench/runs/sol-marathon-c-20261124T201001Z.html",
-      "bytes": 130817,
-      "sha256": "aecedae7fa9c4634818f1f24036871d39eed3aa2f5017572ba07fd253569d04e"
+      "bytes": 130882,
+      "sha256": "6dda9f1def846d743c9335ee3781085cbc8432aae0154117b764961103d1cb48"
     },
     {
       "path": "case-studies/savebench/runs/sol-marathon-c-20261125T065501Z.html",
-      "bytes": 135446,
-      "sha256": "250fddc15f169373f0d592a4c901f0db4277ac69ec8168d04bc20ff1eb6248e0"
+      "bytes": 135511,
+      "sha256": "58370939ea5329f95b7d1b88fdd008d77bab17349a05bfd4a032632d9444f8bc"
     },
     {
       "path": "case-studies/savebench/runs/sol-marathon-e-20261124T184001Z.html",
-      "bytes": 139146,
-      "sha256": "55d925811df562872d932b81132b5596c71def7027327e7738af63ce93f4f227"
+      "bytes": 139211,
+      "sha256": "28e3300a45004ec1e6d1c95c776132056c1f2f10d1d18af1793045b825916bdb"
     },
     {
       "path": "case-studies/savebench/runs/terra-marathon-c-20261124T224501Z.html",
-      "bytes": 131977,
-      "sha256": "dce89462fdb2d7a8e957fdee3363589fe69d203c55fb2ea1514235e65478ed59"
+      "bytes": 132042,
+      "sha256": "3cba717e399f93e1d64981f0a5f47b2bfca5a450cce8ac3ccac01667b3f629b4"
     },
     {
       "path": "case-studies/savebench/runs/terra-marathon-d-20261124T190001Z.html",
-      "bytes": 127501,
-      "sha256": "ae57531403222666af29fa8839e77ecf93efaca54db4f08075bfc1f730561ab5"
+      "bytes": 127566,
+      "sha256": "726e7db50fb8fc9a8498acac0ba7e5a0fb1376c35df1beda5e614fa681c2dc51"
     },
     {
       "path": "case-studies/savebench/runs/terra-marathon-e-20261125T075001Z.html",
-      "bytes": 124115,
-      "sha256": "c8f9e17a043eb05b8876791cdd0d56d92d14d317a6659dbe696ff9a7b5a898e4"
+      "bytes": 124180,
+      "sha256": "5851a4b040a5b5d767ffc9a691c0a48f7db1cc9d76a971778afa2c358ab58689"
     },
     {
       "path": "ear.html",
@@ -1620,8 +1620,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20161,
-      "sha256": "aa79e7b92bf63db5911f13964b0f34a1b70ce698d57e589afa3b18d08d80deac"
+      "bytes": 20570,
+      "sha256": "b57812571b1bce609853774e2429482d43dee1bb735d0847a11bacc447294061"
     },
     {
       "path": "more-work.html",
