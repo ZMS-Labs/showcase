@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 82157,
-      "sha256": "8731959eae120d2fd0af42aaa8560997e83fd82c48c03a86c511edfcf3698c96"
+      "bytes": 80548,
+      "sha256": "4e95e7881ff290357e606f972c8a2892639f7c8ed77ee7103908b627580e6d78"
     },
     {
       "path": "assets/og/og-default.png",
@@ -140,8 +140,8 @@
     },
     {
       "path": "assets/og/og-oni-bench.png",
-      "bytes": 78002,
-      "sha256": "c2dca99dc3ba4c459ca52f75746fc92f8db12c61afe490916f25153458c54b31"
+      "bytes": 58632,
+      "sha256": "1d8b3f19c4fcd4089730558f35c080212e7712c08804fdaa9b99ba999d8d2d4f"
     },
     {
       "path": "assets/og/og-savebench.png",
@@ -149,24 +149,19 @@
       "sha256": "e229fc612758f416b6174e84f0d225f330635ce85cb6962a7e1b6041d37b563f"
     },
     {
-      "path": "assets/oni-bench/viewer-head-to-head.png",
-      "bytes": 111353,
-      "sha256": "618989815b3ebfb123a7359b0aae2e080d7888f239717dde95c363ef30a07c40"
+      "path": "assets/oni-bench/oni.css",
+      "bytes": 6663,
+      "sha256": "bc2014540cc3f0e6c74a65cbfd008a26e3c1d502c7cccc96373e4d7d1204e3ab"
     },
     {
-      "path": "assets/oni-bench/viewer-progress-curve.png",
-      "bytes": 189937,
-      "sha256": "d65a00c1b162187bf916e05dcf11775485c942b3b43dbd183f647a81bba05397"
+      "path": "assets/oni-bench/progress-curve.png",
+      "bytes": 122235,
+      "sha256": "30e37b3e20d4f041889c7fb201793f02dd1dce8f1cb23f5ea2c53a5c747bdee0"
     },
     {
-      "path": "assets/oni-bench/viewer-replay.png",
-      "bytes": 217867,
-      "sha256": "61054cbd565b390afc637b8a0e99a5b3c7370d2af6940cedef37dfb6ec7cc495"
-    },
-    {
-      "path": "assets/oni-bench/viewer-scoreboard.png",
-      "bytes": 210087,
-      "sha256": "1b1eea0c082986de00a87aaf89930cc047f00696281597e3b99109d49b314c8d"
+      "path": "assets/oni-bench/savebench-design/tokens.css",
+      "bytes": 4229,
+      "sha256": "ce26b96bca55d79089ea9a9dd2376d5a1c98be67a748302290ffa3aab1d7fc34"
     },
     {
       "path": "assets/savebench/case.css",
@@ -905,13 +900,103 @@
     },
     {
       "path": "case-studies/oni-bench/index.html",
-      "bytes": 15293,
-      "sha256": "622b36280cd4fec3556da105b25185dff81ee9c83026cd18bff5cdc81d845dd8"
+      "bytes": 21180,
+      "sha256": "65acb7eb89c8b02d7cd7028f3485998052528ff871a3710e3fc8c8a44416fb12"
+    },
+    {
+      "path": "case-studies/oni-bench/leaderboard.html",
+      "bytes": 16747,
+      "sha256": "97d385ef3790e213491ea51523a4a1817c931b020f3fdb49f3b9da7c0ab04772"
     },
     {
       "path": "case-studies/oni-bench/project-record.json",
-      "bytes": 2015,
-      "sha256": "11192fb4769865c16d5012e85bd23cef291c49d9c577d944a53dbea6b212ebae"
+      "bytes": 1418,
+      "sha256": "9d600430e3846b6d9af23abc05d6925a0927d1ecf595a9672a32adc95407f9d4"
+    },
+    {
+      "path": "case-studies/oni-bench/reports/2026-11-25.html",
+      "bytes": 13206,
+      "sha256": "a596ffb09e72d808e51baa60f393d1d9f80dad85673fbe1943d7430716dc69a5"
+    },
+    {
+      "path": "case-studies/oni-bench/reports/2026-11-26.html",
+      "bytes": 14536,
+      "sha256": "a008b893e4e3cd52ac256b242b3b983675c7dbb014c0f41ec2306dd9adfd1777"
+    },
+    {
+      "path": "case-studies/oni-bench/reports/index.html",
+      "bytes": 14546,
+      "sha256": "59fb22734c29743757354cea34d7a18935b479a6f9eb78d280926d43c25eab80"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261121t222755z.html",
+      "bytes": 9980,
+      "sha256": "4d7d9fd8f471086b29a1c132debc1440161751a8d35e7617dba23eab4cc4c695"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261121t225155z.html",
+      "bytes": 10058,
+      "sha256": "3034c7c8534acae2bf5fbbf97d36875562127c566a13bb0f50ef8dcd1790ab64"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261121t232854z.html",
+      "bytes": 15837,
+      "sha256": "3bdc0a4cdc14d35f195f78cb4e94dd4b5eb8654935c69006694a557d377f5ecc"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261122t000523z.html",
+      "bytes": 17918,
+      "sha256": "b55562654e72a4221bc978580f6d14d8476028e0392a096e21b3de0007c302f5"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261122t014755z.html",
+      "bytes": 25508,
+      "sha256": "c77be9cacd2ae33124f6284f7f2ea8dbe7cbb8c7be67503867631730e387cad7"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261122t065855z.html",
+      "bytes": 43018,
+      "sha256": "c3ef00bf583b10d15c2fdba4df5b0bfb56c078f692a848b7b201d9bcb3b7598e"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261124t041655z.html",
+      "bytes": 43338,
+      "sha256": "46177c28927c1170402ef570146d00904d85c1906c4befe0a692ba64eafd449b"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261124t143854z.html",
+      "bytes": 21179,
+      "sha256": "6bd36693dd9a3884ed58ee9f6bf7fad00ff9ae8453faab9196602e6c26e816d1"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261124t193720z.html",
+      "bytes": 19838,
+      "sha256": "1701ad08198f2416021590ad2a4679690a0082eda08a35c86c9a972d29d47b34"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261124t214714z.html",
+      "bytes": 21366,
+      "sha256": "f95b04eb2d5ab33ea24efac86ac232e84ebdd7d08121a3cfff5f50f8dc0bf991"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261126t021619z.html",
+      "bytes": 42203,
+      "sha256": "1d2689af19ce08158fa69b9e5f03feca7449d029628ad84c467e41a7d9ff919e"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/20261126t041304z.html",
+      "bytes": 16179,
+      "sha256": "f19662a38aafc442182744a67a1fdf83f0805851c22569b7b93b892b8e9eeaa2"
+    },
+    {
+      "path": "case-studies/oni-bench/runs/index.html",
+      "bytes": 9319,
+      "sha256": "0cf966c0d9f93723ee3d6e5caaa2bc94ba278957433eee1c4773d8df9969ff7a"
+    },
+    {
+      "path": "case-studies/oni-bench/runs.json",
+      "bytes": 151368,
+      "sha256": "befa5a0d7e1a117fe86d1c918a0bcd10a11e977e08e64a41c5cfc34842fc34ee"
     },
     {
       "path": "case-studies/savebench/archive.html",
@@ -980,8 +1065,8 @@
     },
     {
       "path": "evidence.html",
-      "bytes": 9334,
-      "sha256": "83c59e278c48b222bb9198c1ad43316258ccf353efd605e955fd94e8125a7969"
+      "bytes": 9346,
+      "sha256": "8d3ce7d21b13fb2e788e533e4ec6c4ad729eb712974c09bb6cd35ad2294abf9b"
     },
     {
       "path": "how-my-use-of-ai-grew.html",
@@ -990,8 +1075,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20179,
-      "sha256": "5b7bfee640a06e1bbe92dbf41e75e9c721f60631ba63f11e95539b7474d2661b"
+      "bytes": 20195,
+      "sha256": "5eda8e320e9572951abcdf442315badfcfe37ccc3056b9b601604bdf5712f2f9"
     },
     {
       "path": "more-work.html",
@@ -1015,8 +1100,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 2084,
-      "sha256": "3967eca8880b4b84882e59da9f9e383cfe2ff050b2d0ce5eab9f544097e4ac4b"
+      "bytes": 4157,
+      "sha256": "7682d66dabc0483736f03c7001ecc942502831c92fea2069cd1ef961741ed46d"
     },
     {
       "path": "walkthroughs.js",

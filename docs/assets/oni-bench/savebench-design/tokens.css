@@ -1,0 +1,89 @@
+/* SaveBench shared design tokens, contract design-core-v1.
+   One product, several game editions. The neutral core below is fixed for every edition.
+   An edition may set only the --edition-* variables, through [data-edition] on <html>.
+   Standard: "SaveBench design system and standards" (Claude Doc, 2026-11-22). */
+
+:root {
+  --paper: #f6f5f1;
+  --paper-2: #ecebe5;
+  --paper-3: #e2e0d8;
+  --ink: #121212;
+  --muted: #62615b;
+  --rule: #d6d4cb;
+  --signal: #b8461a;
+
+  --font-text: Archivo, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --size-display: clamp(34px, 4vw, 56px);
+  --size-1: 20px; --size-2: 17px; --size-3: 16px; --size-4: 15px; --size-5: 14px; --size-6: 13px;
+  --gutter: clamp(16px, 5vw, 72px);
+  --measure: 64ch;
+  --max: 1280px;
+  --radius: 2px;
+  --section: clamp(88px, 11vw, 168px);
+  --ease-in: cubic-bezier(.2, .7, .1, 1);
+
+  /* Status marks: always drawn with shape and words too, never colour alone. */
+  --st-earned: var(--ink);
+  --st-staged: var(--muted);
+  --st-fail: var(--muted);
+  --st-noresult: #85837a;
+  --st-live: var(--signal);
+
+  /* Edition slot default: Satisfactory. Its accent is the signal colour darkened a step
+     (#b8461a is 4.47:1 on --paper-2, under 4.5; #b4441a is 4.65:1). */
+  --edition-accent: #b4441a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1b21; --paper-2: #14262e; --paper-3: #1c333c;
+    --ink: #f1efe8; --muted: #b4c2c5; --rule: #2c4149; --signal: #ffac70;
+    --st-noresult: #6f858a;
+    --edition-accent: var(--signal);
+  }
+  :root[data-edition="oni"]:not([data-theme="light"]) { --edition-accent: #63c7c9; }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1b21; --paper-2: #14262e; --paper-3: #1c333c;
+  --ink: #f1efe8; --muted: #b4c2c5; --rule: #2c4149; --signal: #ffac70;
+  --st-noresult: #6f858a;
+  --edition-accent: var(--signal);
+}
+
+/* Edition accents, contrast-checked against paper and night (tests/savebench-design.test.mjs). */
+:root[data-edition="oni"] { --edition-accent: #1f6f73; }
+:root[data-edition="oni"][data-theme="dark"] { --edition-accent: #63c7c9; }
+
+.sbd { font-family: var(--font-text); color: var(--ink); background: var(--paper); }
+.sbd .num, .sbd td.num { font-variant-numeric: tabular-nums; }
+.sbd-band { border-top: 4px solid var(--edition-accent); padding: 10px var(--gutter); font-size: var(--size-5); }
+
+/* Verdict chips: fixed wording, see components.mjs CHIPS. */
+.sbd-chip { display: inline-block; padding: 1px 8px; border: 1px solid currentColor; border-radius: var(--radius);
+  font-size: var(--size-6); font-weight: 600; letter-spacing: .02em; line-height: 1.6; white-space: nowrap; }
+.sbd-chip[data-v="earned"] { color: var(--ink); }
+.sbd-chip[data-v="staged"] { color: var(--muted); border-style: dashed; }
+.sbd-chip[data-v="not_reached"], .sbd-chip[data-v="no_result"] { color: var(--muted); }
+.sbd-chip[data-v="pilot"], .sbd-chip[data-v="tied"] { color: var(--muted); }
+.sbd-chip[data-v="ahead"] { color: var(--ink); }
+.sbd-chip[data-v="live"] { color: var(--st-live); }
+
+/* Charts keep a readable minimum width and scroll sideways on narrow screens. */
+.sbd-chart { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.sbd-chart > svg { min-width: 560px; }
+.sbd svg text { font-family: var(--font-text); fill: var(--muted); font-size: 12px; }
+.sbd svg .grid { stroke: var(--rule); stroke-width: 1; }
+.sbd svg .run { fill: none; stroke-width: 1.5; }
+.sbd svg .leader { stroke-width: 1; }
+.sbd svg .noresult { stroke: var(--st-noresult); stroke-width: 2; }
+.sbd svg .frontier { fill: var(--edition-accent); }
+.sbd-ladder { list-style: none; margin: 0; padding: 0; }
+.sbd-ladder li { display: flex; gap: 10px; align-items: baseline; padding: 6px 0; border-top: 1px solid var(--rule); }
+.sbd-ladder li.frontier { box-shadow: inset 3px 0 0 var(--edition-accent); padding-left: 8px; }
+.sbd-ladder li.branch { margin-left: 24px; color: var(--muted); }
+.sbd-ladder .group { font-size: var(--size-6); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sbd *, .sbd *::before, .sbd *::after { animation: none !important; transition: none !important; }
+}

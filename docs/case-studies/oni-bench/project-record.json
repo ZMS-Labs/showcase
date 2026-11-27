@@ -1,33 +1,43 @@
 {
   "project": "ONI Bench",
-  "as_of": "2026-11-20",
-  "status_label": "Interface study",
+  "as_of": "2026-11-26T13:47:00Z",
+  "status_label": "Recorded experiment",
   "summary": "A live-play benchmark: an AI plays Oxygen Not Included one move per turn through a program inside the game, and a milestone counts only when that program reads it from game state.",
   "shown": [
-    {"asset": "assets/oni-bench/viewer-scoreboard.png", "kind": "Interface study", "data": "made-up sample data written by a script; no game played, no model run"},
-    {"asset": "assets/oni-bench/viewer-progress-curve.png", "kind": "Interface study", "data": "made-up sample data"},
-    {"asset": "assets/oni-bench/viewer-replay.png", "kind": "Interface study", "data": "made-up sample data"},
-    {"asset": "assets/oni-bench/viewer-head-to-head.png", "kind": "Interface study", "data": "made-up sample data"}
+    {
+      "asset": "case-studies/oni-bench/runs.json",
+      "kind": "Recorded experiment",
+      "data": "9 runs in 12 sittings, from the run host's job reports (ZMS-Labs/oni-bench@oni-relay at 4348770cf90cb1fddc813f8945d0cd45c142b626)"
+    }
   ],
-  "built": [
-    "Approved plan with a milestone ladder and scoring rules",
-    "Program that runs inside the game (bridge mod), written; compile against the installed game pending",
-    "Turn driver and its tests, passing against a stand-in game",
-    "Run viewer, reading the same run-pack format real runs will write"
-  ],
-  "phases": [
-    {"phase": "P0 Set up", "status": "in progress"},
-    {"phase": "P1 Bridge test: 20 unattended turns, checkpoint saved and reloaded", "status": "not run on real hardware"},
-    {"phase": "P2 Harness and first level, scripted reference run", "status": "not started"},
-    {"phase": "P3 First model runs", "status": "not started"},
-    {"phase": "P4 Viewer and acceptance", "status": "interface study with made-up data"},
-    {"phase": "P5 Harder tiers and release", "status": "not started"}
+  "best_result": {
+    "milestone": "G1",
+    "name": "Sanitation and beds",
+    "of": 21,
+    "model": "Claude Opus 5.5",
+    "counted_runs": 4
+  },
+  "ranking": [
+    {
+      "a": "Claude Opus 5.5",
+      "b": "Claude Fable 5.2",
+      "verdict": "pilot"
+    },
+    {
+      "a": "Claude Opus 5.5",
+      "b": "GPT-6.2 Astra",
+      "verdict": "pilot"
+    },
+    {
+      "a": "Claude Fable 5.2",
+      "b": "GPT-6.2 Astra",
+      "verdict": "pilot"
+    }
   ],
   "limits": [
-    "No run in the real game has been recorded.",
-    "No milestone has passed and no AI model has played.",
-    "No game footage exists yet.",
-    "Milestone pass rules are planned and still to be checked against the game's data files."
+    "Runs were played on different revisions of the test and with different run limits; no model is ranked.",
+    "No game footage or film exists yet.",
+    "Proof saves are game files and are not published."
   ],
-  "disclaimer": "An independent hobby project, not affiliated with or endorsed by Klei Entertainment."
+  "disclaimer": "An independent hobby project, not affiliated with or endorsed by Klei Entertainment. Oxygen Not Included and its artwork belong to their owners."
 }
