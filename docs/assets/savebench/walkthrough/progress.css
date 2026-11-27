@@ -54,12 +54,12 @@
 @media (max-width:560px){.sbg-race li{grid-template-columns:minmax(0,1fr)}.sbg-race small{grid-column:1;display:block}.sbg-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.sbg-stats b{font-size:36px}.sbg-stats span{font-size:13px}}
 .sbg-new{position:absolute;top:50%;transform:translate(8px,-50%);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--signal);white-space:nowrap}
 .sbg-tracks{display:grid;gap:2px}
-@media (max-width:560px){.sbg-pairs .sbg-tracks{gap:18px}.sbg-pairs .sbg-track{margin-top:14px}.sbg-ladder{-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}}
+@media (max-width:560px){.sbg-pairs .sbg-tracks{gap:18px}.sbg-pairs .sbg-track{margin-top:14px}}
 .sbg-replays{margin:14px 0 0;font-weight:600}
 .sbg-tag{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.04em;vertical-align:2px;border:1px solid var(--rule);color:var(--muted)}
 .sbg-tag-tied{border-color:var(--ink);color:var(--ink)}
 .sbg-race .sbg-why{display:block;grid-column:auto;font-weight:400;font-size:12.5px;color:var(--muted)}
-.sbg-key{margin:0 0 6px;color:var(--muted)}.sbp-versions .sbp-headline{color:var(--ink);font-weight:600;font-size:17px;line-height:1.35;margin:4px 0 10px}.sbg-race.sbg-pairs li>small,.sbg-race.sbg-pairs li>small{display:none}
+.sbg-key{margin:0 0 6px;color:var(--muted)}.sbg-asof{font-weight:400;color:var(--muted);font-size:.8em}details.sbp-what{margin-top:12px;border-top:1px solid var(--rule);padding-top:10px}details.sbp-what summary{cursor:pointer;font-weight:600;font-size:15.5px}details.sbp-what p{margin:10px 0 0;font-size:15.5px}.sbp-versions .sbp-headline{color:var(--ink);font-weight:600;font-size:17px;line-height:1.35;margin:4px 0 10px}.sbg-race.sbg-pairs li>small,.sbg-race.sbg-pairs li>small{display:none}
 .sbg-track.is-nr .sbg-run{background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 10px)}
 .sbp-more{margin-top:32px;border-top:1px solid var(--rule);padding-top:12px}
 .sbp-more>summary{cursor:pointer;font-weight:600;min-height:32px}
