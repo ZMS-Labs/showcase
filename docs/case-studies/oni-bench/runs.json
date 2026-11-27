@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-26T13:47:00Z",
+ "as_of": "2026-11-27T13:50:02Z",
  "colonies": [
   {
    "cycle_at_end": 1,
@@ -198,14 +198,49 @@
    ],
    "started": "2026-11-26T02:11:01+00:00",
    "turns": 78
+  },
+  {
+   "cycle_at_end": 14,
+   "deaths": 0,
+   "duplicants_at_end": 3,
+   "ended": "2026-11-27T08:13:07+00:00",
+   "game_time_s": 8227.93,
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    },
+    "G2": {
+     "basis": "the game reports a technology complete",
+     "cycle": 2
+    },
+    "G4": {
+     "basis": "10 full cycles: no suffocating duplicant sampled, an oxygen-making building active",
+     "cycle": 11
+    }
+   },
+   "harness_revs": [
+    9
+   ],
+   "id": "gpt-long-1",
+   "kind": "campaign",
+   "model": "gpt-6.2-astra",
+   "model_name": "GPT-6.2 Astra",
+   "outcome": "earned",
+   "sittings": [
+    "20261127T052454Z",
+    "20261127T075213Z"
+   ],
+   "started": "2026-11-27T05:23:01+00:00",
+   "turns": 63
   }
  ],
  "edition": "oni",
  "ladder": "oni-g21",
  "left_out": {
-  "check_jobs": 9,
-  "no_evidence": 2,
-  "setup_jobs": 9
+  "check_jobs": 10,
+  "no_evidence": 3,
+  "setup_jobs": 12
  },
  "live": null,
  "schema": "savebench-run-record/0",
@@ -236,6 +271,7 @@
     }
    ],
    "ended": "2026-11-21T22:29:08+00:00",
+   "filmed": false,
    "food_kcal": 16000,
    "game_time_s": 79.75,
    "goals": {
@@ -314,6 +350,7 @@
     }
    ],
    "ended": "2026-11-21T22:59:08+00:00",
+   "filmed": false,
    "food_kcal": 16000,
    "game_time_s": 79.75,
    "goals": {
@@ -392,6 +429,7 @@
     }
    ],
    "ended": "2026-11-21T23:59:11+00:00",
+   "filmed": false,
    "food_kcal": 14898.5,
    "game_time_s": 840.06,
    "goals": {
@@ -577,6 +615,7 @@
     }
    ],
    "ended": "2026-11-22T00:41:04+00:00",
+   "filmed": false,
    "food_kcal": 18045.7,
    "game_time_s": 1500.03,
    "goals": {
@@ -796,6 +835,7 @@
     }
    ],
    "ended": "2026-11-22T03:08:04+00:00",
+   "filmed": false,
    "food_kcal": 16251.4,
    "game_time_s": 3150.01,
    "goals": {
@@ -1158,6 +1198,7 @@
     }
    ],
    "ended": "2026-11-22T09:24:07+00:00",
+   "filmed": false,
    "food_kcal": 24276.9,
    "game_time_s": 5150.37,
    "goals": {
@@ -1205,7 +1246,7 @@
    "source": {
     "out_log_sha256": "a129e46255e83b82142a43ebd0e4c69f4177914e69048caf78636eda64371eae",
     "report": "results/jobs/20261122T065648Z-campaign-opus-4a8b71.json",
-    "report_sha256": "0a2ef0be34dc0417996dbc34d2a97c234074449f416d1820791d5bdfe03ca801"
+    "report_sha256": "464157001625b81ccd69b4cf3ed733e0c08327c4a93640aaa9a5c614f2173cc1"
    },
    "started": "2026-11-22T06:57:01+00:00",
    "stop": "run_limit",
@@ -1849,6 +1890,7 @@
     }
    ],
    "ended": "2026-11-24T05:59:07+00:00",
+   "filmed": false,
    "food_kcal": 22746.1,
    "game_time_s": 4623.18,
    "goals": {
@@ -1896,7 +1938,7 @@
    "source": {
     "out_log_sha256": "388821bd1ab6d14360554cdfe7e65becec8be6fdcdc9c9313c9a2bebdb63ee24",
     "report": "results/jobs/20261124T041402Z-campaign-opus-670707.json",
-    "report_sha256": "b0a3a5bd8af343e44e02234cbf95ac081c8a95bea85b41c577a8b6bc3fadf440"
+    "report_sha256": "dd30da3a42dce1d00d9a09c36c1caed5e62b469bd826082f98682edf1386f36d"
    },
    "started": "2026-11-24T04:15:01+00:00",
    "stop": "run_limit",
@@ -2540,6 +2582,7 @@
     }
    ],
    "ended": "2026-11-24T15:15:05+00:00",
+   "filmed": false,
    "food_kcal": 15779.8,
    "game_time_s": 6150.1,
    "goals": {
@@ -2587,7 +2630,7 @@
    "source": {
     "out_log_sha256": "d5b59d437289dd6fd3bb793dbba0bc39b654b48a6925c44fe5942e2161c82c71",
     "report": "results/jobs/20261124T143603Z-campaign-opus-811d91.json",
-    "report_sha256": "8f98ac0208820067353797a9644713ee866236088c8ac17d9096b60b44d36044"
+    "report_sha256": "b46c575213d66c9441654449a624d8dd03b5a8485be9f669471332ad075b5975"
    },
    "started": "2026-11-24T14:37:01+00:00",
    "stop": "provider",
@@ -2826,6 +2869,7 @@
     }
    ],
    "ended": "2026-11-24T20:11:07+00:00",
+   "filmed": false,
    "food_kcal": 14200,
    "game_time_s": 6000.1,
    "goals": {
@@ -2873,7 +2917,7 @@
    "source": {
     "out_log_sha256": "851f28a8c160f3d99b5c80133351084fb1a16d5ddb22878bb1833ea1488deb1b",
     "report": "results/jobs/20261124T193203Z-campaign-opus-reopen-717ec5.json",
-    "report_sha256": "49dfd49b9434c6f5d4d5af0e84fe1f809dfe31dee66aaa59022313b23f011ca7"
+    "report_sha256": "126fcbfefef3af6f3d5f1d24ef0a7cfcbc181259864f58a471a6c26a54db176e"
    },
    "started": "2026-11-24T19:33:01+00:00",
    "stop": "run_limit",
@@ -3082,6 +3126,7 @@
     }
    ],
    "ended": "2026-11-24T22:22:03+00:00",
+   "filmed": false,
    "food_kcal": 19325.8,
    "game_time_s": 1800.03,
    "goals": {
@@ -3124,7 +3169,7 @@
    "source": {
     "out_log_sha256": "844847385d4208ebaaf2b265faf0e7cdbea08fd3a3c0d2948ff14bddd220068d",
     "report": "results/jobs/20261124T214404Z-campaign-gpt-74dc1d.json",
-    "report_sha256": "f132d845bb7799c2759f452abc4090d9192e00bb30d5675268b42f70296e5853"
+    "report_sha256": "c09f12039b91e6992db91612cdaa35243d6c28f8d9acddd4eb071d67e984e265"
    },
    "started": "2026-11-24T21:45:01+00:00",
    "stop": "run_limit",
@@ -3361,6 +3406,7 @@
     }
    ],
    "ended": "2026-11-26T04:13:04+00:00",
+   "filmed": false,
    "food_kcal": 14707.4,
    "game_time_s": 5206.59,
    "goals": {
@@ -3408,7 +3454,7 @@
    "source": {
     "out_log_sha256": "976fb43c21d02cf577e46364b5364c772441acf1899001c068f594aa22482473",
     "report": "results/jobs/20261126T021003Z-campaign-opus-long-8e05ea.json",
-    "report_sha256": "4f5e4fefa14e64b33263d77f3fa4d532a90091e0d17a4331aac7313bc692a5db"
+    "report_sha256": "2e1a59c7a8faac884fb8081d6e5b9e5762fca312e6696667ef17e79d9a368984"
    },
    "started": "2026-11-26T02:11:01+00:00",
    "stop": "run_limit",
@@ -4037,6 +4083,7 @@
    "deaths": 3,
    "duplicants": [],
    "ended": "2026-11-26T04:27:09+00:00",
+   "filmed": false,
    "food_kcal": 14301.6,
    "game_time_s": 5529.32,
    "goals": {
@@ -4084,7 +4131,7 @@
    "source": {
     "out_log_sha256": "976fb43c21d02cf577e46364b5364c772441acf1899001c068f594aa22482473",
     "report": "results/jobs/20261126T021003Z-campaign-opus-long-8e05ea.json",
-    "report_sha256": "4f5e4fefa14e64b33263d77f3fa4d532a90091e0d17a4331aac7313bc692a5db"
+    "report_sha256": "2e1a59c7a8faac884fb8081d6e5b9e5762fca312e6696667ef17e79d9a368984"
    },
    "started": "2026-11-26T04:13:04+00:00",
    "stop": "colony_lost",
@@ -4244,9 +4291,882 @@
    ],
    "turns_done": 15,
    "turns_recorded": 15
+  },
+  {
+   "beds": 3,
+   "colony": "gpt-long-1",
+   "cycle_at_end": 14,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 2350.65,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 2509.73,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 3107.41,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0
+    }
+   ],
+   "ended": "2026-11-27T07:52:13+00:00",
+   "filmed": true,
+   "food_kcal": 31400,
+   "game_time_s": 8227.93,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "PASS",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "PASS",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    },
+    "G2": {
+     "basis": "the game reports a technology complete",
+     "cycle": 2
+    },
+    "G4": {
+     "basis": "10 full cycles: no suffocating duplicant sampled, an oxygen-making building active",
+     "cycle": 11
+    }
+   },
+   "harness_rev": 9,
+   "id": "20261127T052454Z",
+   "job": "20261127T052203Z-campaign-gpt-long-32d0cb",
+   "ledger_head": "ca48488320b072bb5b0d6292f0c47acecaf75e074e5cb1f79677b5343cbd6148",
+   "model": "gpt-6.2-astra",
+   "model_name": "GPT-6.2 Astra",
+   "no_result": false,
+   "orders_applied": 162,
+   "orders_refused": 15,
+   "proof_copy": "PASS",
+   "proof_files": 25,
+   "research_done": 15,
+   "sitting": 2,
+   "source": {
+    "out_log_sha256": "d2839ddd787f3b4a40f45f064f8728c64521e23789ae86fdf00d2977e9c0aa25",
+    "report": "results/jobs/20261127T052203Z-campaign-gpt-long-32d0cb.json",
+    "report_sha256": "bcca4926498d46988a7fed52305ee316f2bbb0839952e6dba8c78bc86fda5c98"
+   },
+   "started": "2026-11-27T05:23:01+00:00",
+   "stop": "ended",
+   "stop_words": "Ended without reaching its target",
+   "toilets": 2,
+   "turns": [
+    {
+     "advance_s": 70,
+     "applied": 4,
+     "note": "Extend the shaft into the lower cavern and mine the cuprite seam at the ladder foot for power equipment. Clear a route above the left pool for a pitcher pump, without digging into its side. Mark the wild plants for harvest.",
+     "note_cut": false,
+     "orders": 5,
+     "refusals": [
+      "no harvestable plant"
+     ],
+     "refused": 1,
+     "turn": 4
+    },
+    {
+     "advance_s": 60,
+     "applied": 6,
+     "note": "There is no loose copper yet. Mine the exposed seams at foot level on both sides, keeping the natural floor at y185 for power and research. Extend the ladder to the pool lip and place a pitcher pump beside it, then a sandstone wash basin on",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 65,
+     "applied": 7,
+     "note": "The ore stock now covers a wheel, research station, diffuser and a short wire run. Connect the lower east shelf to the ladder so workers can reach it directly. Start Basic Farming for planter boxes; mine the exposed western copper for a bat",
+     "note_cut": true,
+     "orders": 7,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 100,
+     "applied": 1,
+     "note": "The research-station alert arrived just after its blueprint went down. The wheel, station and diffuser are in reach, so let the crew finish them. Extend the shallow algae cut west at lower priority to stock the diffuser without disturbing t",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    },
+    {
+     "advance_s": 130,
+     "applied": 1,
+     "note": "The wire already extends one cell past the diffuser to x132. Put a battery directly on that endpoint so the wheel can store surplus power for research and oxygen production. Keep the battery below the wheel and diffuser in construction prio",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 8
+    },
+    {
+     "advance_s": 130,
+     "applied": 0,
+     "note": "The crew is asleep, and all three remaining power-room builds are reachable. Let them wake and finish construction rather than adding competing chores. Check the circuit and farming progress once they have had time to work.",
+     "note_cut": false,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 9
+    },
+    {
+     "advance_s": 180,
+     "applied": 1,
+     "note": "Seven mealwood seeds are available, and the seven floor cells immediately east of the cots can hold planter boxes once FarmingTech finishes. Enable harvest on the wild food near the base, including the nearly ripe mealwood at x139. Cancel t",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [
+      "no harvestable plant",
+      "no harvestable plant"
+     ],
+     "refused": 2,
+     "turn": 10
+    },
+    {
+     "advance_s": 240,
+     "applied": 3,
+     "note": "Extend the ladder above the west shaft to reach the upper cavern without disturbing the mealwood's floor. This gives access to more algae, foraging and seeds while Steve researches planter boxes.",
+     "note_cut": false,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 11
+    },
+    {
+     "advance_s": 120,
+     "applied": 8,
+     "note": "Basic Farming is complete. Build seven planter boxes on the prepared floor east of the cots so the mealwood seeds can start growing soon. Research Power Regulation for a larger battery while the builders work.",
+     "note_cut": false,
+     "orders": 8,
+     "refusals": [],
+     "refused": 0,
+     "turn": 12
+    },
+    {
+     "advance_s": 135,
+     "applied": 8,
+     "note": "Request one mealwood seed in each of the seven finished planter boxes and prioritize planting over the upper dig. Seven plants will supplement the food stock, but three duplicants need about fifteen domestic mealwood plants for a steady die",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [],
+     "refused": 0,
+     "turn": 13
+    },
+    {
+     "advance_s": 150,
+     "applied": 1,
+     "note": "All seven seeds are committed, but no planted mealwood is listed yet. Give the crew time to plant after waking. Uproot the mature wild mealwood and muckroot on the lower shelf for food and a transplant seed. Extend the farm five cells east ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [
+      "no plant to uproot",
+      "no plant to uproot",
+      "no plant to uproot"
+     ],
+     "refused": 3,
+     "turn": 14
+    },
+    {
+     "advance_s": 200,
+     "applied": 5,
+     "note": "All seven mealwood are growing. The diffuser is stocked and emitting 333 g/s, enough for three ordinary breathers while it runs; no second diffuser yet. Extend the upper ladder toward the wild mealwood at y208 and mine the dirt and algae ab",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 15
+    },
+    {
+     "advance_s": 120,
+     "applied": 2,
+     "note": "Research Meal Preparation for farm tiles and mess tables. Harvest the ripe upper mealwood before transplanting it; uproot the three still-growing wild mealwood for seeds. Cancel the unreachable ceiling digs and leave the cavern floors intac",
+     "note_cut": true,
+     "orders": 8,
+     "refusals": [
+      "no harvestable plant",
+      "no plant to uproot",
+      "no plant to uproot"
+     ],
+     "refused": 6,
+     "turn": 16
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Take the oxyfern seed without adding another mouth to feed. The uproot tool missed the wild plants even at their confirmed coordinates, so mine the supporting tiles beneath three growing mealwood and the two ripe muckroots to release seeds ",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [
+      "not solid"
+     ],
+     "refused": 1,
+     "turn": 17
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Five mealwood seeds are available, and the five cells immediately east of the farm have clear headroom and a solid floor. Build planter boxes there now so the seeds can be assigned once construction finishes. This will bring the farm to twe",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 18
+    },
+    {
+     "advance_s": 140,
+     "applied": 2,
+     "note": "The lower shelf at x146–147 has a solid floor and clear headroom. Add a jumbo battery there and connect it to the existing battery so the diffuser can run longer while the crew sleeps. Keep this work below the planter boxes in priority; the",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 19
+    },
+    {
+     "advance_s": 180,
+     "applied": 6,
+     "note": "All five new planter boxes are built. Assign the five available mealwood seeds now so they start growing; twelve domestic plants should supply about 2,400 kcal per cycle once mature, leaving a 600 kcal gap for three duplicants. Let the reac",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 20
+    },
+    {
+     "advance_s": 180,
+     "applied": 1,
+     "note": "Research Plumbing to open both Sanitation and Air Systems. The outhouses and diffuser are working, so there is no need to excavate the water pool yet. Leave the crew free to finish planting and connect the jumbo battery; check the farm and ",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 21
+    },
+    {
+     "advance_s": 150,
+     "applied": 4,
+     "note": "All twelve domestic mealwood are growing with auto-harvest on. Dig the supports under three wild mealwood for the last three seeds; leave the bristle blossoms and water pools intact. Oxygen production trailed consumption by 95.8 kg last cyc",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 22
+    },
+    {
+     "advance_s": 150,
+     "applied": 5,
+     "note": "Three mealwood seeds are available. Excavate three plot spaces east of the farm, leaving their floor at y189 intact. Once the boxes are built and planted, fifteen mealwood should cover the crew’s average calorie needs. Start Advanced Resear",
+     "note_cut": true,
+     "orders": 5,
+     "refusals": [],
+     "refused": 0,
+     "turn": 23
+    },
+    {
+     "advance_s": 90,
+     "applied": 1,
+     "note": "Assign the first of the three remaining mealwood seeds to the finished box. The next dig and box are in reach, so let the crew resume the eastward expansion after sleep. Check oxygen production and battery charge at the cycle boundary.",
+     "note_cut": false,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 24
+    },
+    {
+     "advance_s": 120,
+     "applied": 0,
+     "note": "Both diffusers are powered, with 20.4 kJ stored. Cycle 4 had a 68.5 kg oxygen deficit, but the second diffuser was built partway through that cycle. Check its operating status and local pressure before adding equipment. Let the crew wake an",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 25
+    },
+    {
+     "advance_s": 180,
+     "applied": 4,
+     "note": "Plant the last two mealwood seeds to reach fifteen plants. Steve is idle, so start a work floor above the farm for future research and power equipment. Enter from the main ladder at y194; leave the rock at y193 in place and stop well short ",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 26
+    },
+    {
+     "advance_s": 310,
+     "applied": 0,
+     "note": "Employment is complete, but Advanced Research is still active and Catalina has no skill point for the supercomputer yet. Let her finish the current project while Steve opens the upper floor from the ladder. Three marked digs are reachable, ",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 27
+    },
+    {
+     "advance_s": 110,
+     "applied": 1,
+     "note": "Solid sand occupies x136–138 at cot level. Dig those three cells at high priority, leaving the beds and their floor intact. Cycle 5 oxygen production was 86.5 kg short, but the gas around the beds is still breathable. Check diffuser status ",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 28
+    },
+    {
+     "advance_s": 240,
+     "applied": 0,
+     "note": "Both diffusers have power but draw 0 W. The batteries hold 46.3 kJ and the wheel is generating 400 W, so there is no sign of a circuit shortage. Let the crew continue the reachable digs and research. Check diffuser status and outlet pressur",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 29
+    },
+    {
+     "advance_s": 215,
+     "applied": 3,
+     "note": "Research Ventilation at the basic station to open Pressure Management and airflow tiles. Both diffusers are on the lower floor, so improving gas circulation may help more than adding a third. Give Steve Advanced Research so he can operate a",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 30
+    },
+    {
+     "advance_s": 120,
+     "applied": 1,
+     "note": "The Printing Pod occupies x127–130 at y193, and the reachable floor ends at x126. Build a four-tile bridge one cell higher, at y194. The crew can step up from the west, dig the marked headroom as they go, then step down onto the eastern flo",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 31
+    },
+    {
+     "advance_s": 150,
+     "applied": 2,
+     "note": "Take the hatchling rather than a fourth duplicant. The ladder-side diffuser has 247.5 kg of algae and is emitting oxygen now; leave it running. Start Pressure Management for airflow tiles and let the crew extend the bridge. Check whether th",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 32
+    },
+    {
+     "advance_s": 120,
+     "applied": 0,
+     "note": "All fifteen mealwood are growing with auto-harvest on. Both diffusers are operational, but that alone doesn't tell us whether local pressure is limiting output. Leave the reachable digs queued through downtime and sleep. At the cycle bounda",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 33
+    },
+    {
+     "advance_s": 100,
+     "applied": 2,
+     "note": "Cycle 6 produced 112.5 kg of oxygen against 180 kg consumed. Check pressure at the beds and diffusers before adding another diffuser. Catalina can now learn Advanced Research. Place the supercomputer on the excavated west end of the upper f",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 34
+    },
+    {
+     "advance_s": 120,
+     "applied": 3,
+     "note": "Join the supercomputer to the known live wire at (129,186). Oxygen near the lower diffuser is about 1.75 kg per cell, versus about 1 kg at bed height with pockets of CO₂. Open a two-cell gap beside the pod so oxygen can rise and CO₂ can dra",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 35
+    },
+    {
+     "advance_s": 240,
+     "applied": 2,
+     "note": "Internal Combustion unlocks coal power and needs only the basic station, so research can continue while the supercomputer is being wired. Build a ladder segment at (131,189) to keep the pod-floor crossing usable without blocking airflow bet",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 36
+    },
+    {
+     "advance_s": 200,
+     "applied": 2,
+     "note": "Let Steve finish Combustion. Both researchers have Researching1; test the supercomputer with a project that actually needs advanced research before treating its status as a skill shortage. Open a ladder shaft from the new work floor into th",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 37
+    },
+    {
+     "advance_s": 150,
+     "applied": 1,
+     "note": "Start Sound Amplifiers for the smart battery and check whether advanced research progresses. The colony has 1,195.6 kg of coal but no refined copper. Keep the wheel running and leave the generator unbuilt until the battery and automation wi",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 38
+    },
+    {
+     "advance_s": 240,
+     "applied": 1,
+     "note": "Cycle 7’s oxygen deficit fell from 67.5 to 36.3 kg, and all three sleepers have full breath. Keep both diffusers running and check the trend again after a full cycle with the floor gap open. The supercomputer is empty and requests 750 kg of",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 39
+    },
+    {
+     "advance_s": 360,
+     "applied": 0,
+     "note": "Both research stations are staffed and Rowan is powering them. Food and breath are good, and the ladder has reachable work queued. Let Acoustics progress; reassess oxygen at the cycle boundary rather than interrupting the researchers for mo",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 40
+    },
+    {
+     "advance_s": 180,
+     "applied": 1,
+     "note": "Acoustics is complete. Start Basic Refinement to unlock the rock crusher for the smart battery and automation wire. Food reserves and breath are good; let the crew take its downtime and check the full cycle’s oxygen balance at the boundary.",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 41
+    },
+    {
+     "advance_s": 360,
+     "applied": 0,
+     "note": "Cycle 8’s oxygen deficit narrowed to 12.3 kg, and every cot cell contains oxygen at 1.28–1.38 kg. Leave the diffusers in place and recheck the balance next cycle. The crew can resume Basic Refinement after sleep; wait for completion or the ",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 42
+    },
+    {
+     "advance_s": 300,
+     "applied": 2,
+     "note": "Basic Refinement is complete. Place the rock crusher on the work floor west of the ladder, where it has four cells of headroom. Start Interior Decor on the path to automation wire. At the pod stop, check the crusher’s power port before wiri",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 43
+    },
+    {
+     "advance_s": 180,
+     "applied": 2,
+     "note": "Take the 3,000 kg of sand and keep the crew at three. The crusher adds 240 W, bringing peak demand to 660 W on a 1,000 W wire. Extend the live wire across the crusher footprint. The batteries hold about 42 kJ, enough to start refining coppe",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 44
+    },
+    {
+     "advance_s": 240,
+     "applied": 3,
+     "note": "Queue five copper batches: 500 kg of ore yields 250 kg of copper, enough for the 200 kg smart battery and a short automation wire. Extend a platform from the ladder at y198 so the crew can reach the stalled digs and prepare an upper power f",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 45
+    },
+    {
+     "advance_s": 300,
+     "applied": 0,
+     "note": "Cycle 9 made 171 kg of oxygen against 180 kg consumed. The deficit is narrowing, breath is full, and 3,459 kg of algae gives the two diffusers ample feedstock. Keep them running. The ladder-adjacent tiles are reachable; building them should",
+     "note_cut": true,
+     "orders": 0,
+     "refusals": [],
+     "refused": 0,
+     "turn": 46
+    },
+    {
+     "advance_s": 240,
+     "applied": 1,
+     "note": "Interior Decor is complete. Research Logic Control for automation wire so the smart battery can shut off the coal generator when charged. Leave the copper batches and platform jobs queued; the two reachable tile sites give the crew a way to",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 47
+    },
+    {
+     "advance_s": 230,
+     "applied": 4,
+     "note": "The oxygen deficit is already 22.7 kg this cycle. Both diffusers are on the lower floor; put a third on the upper work floor to supply it directly when pressure drops. The crusher has finished three of five batches. Mark reachable copper or",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 48
+    },
+    {
+     "advance_s": 180,
+     "applied": 4,
+     "note": "Reserve the west platform for the coal generator and the east for its smart battery. Run power up the ladder from the live circuit. Only 150 kg of the 200 kg needed for the battery is ready, so prioritize the remaining crusher batches and l",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 49
+    },
+    {
+     "advance_s": 180,
+     "applied": 2,
+     "note": "Cycle 10 used 9.2 kJ more energy and 38 kg more oxygen than it produced. The third diffuser is wired; keep research idle so the wheel can support it and the crusher. The three generator floor tiles at x136–138 are built, so place the coal g",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 50
+    },
+    {
+     "advance_s": 180,
+     "applied": 3,
+     "note": "The smart battery has 5.2 kJ stored but no automation connection. Run logic wire along the bottom of both buildings and set the battery to call for coal at 25% and stop at 90%. The port offsets weren't listed, so verify the connection after",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 51
+    },
+    {
+     "advance_s": 240,
+     "applied": 4,
+     "note": "The circuit has 66.7 kJ stored, and the smart battery is above its 90% cutoff, so the red automation signal is expected. Set the coal request threshold to 100% so it won't delay refueling when automation calls for power. Mine the exposed co",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 52
+    },
+    {
+     "advance_s": 150,
+     "applied": 3,
+     "note": "The oxygen warning cleared and food reserves cover nearly eight cycles. The coal generator is idle on a charged grid, but has no fuel for its first call. Mine the reachable coal seam from the east dig face, including the next two cells behi",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 53
+    },
+    {
+     "advance_s": 200.5,
+     "applied": 3,
+     "note": "The east tunnel has exposed two reachable coal cells. Mine both to give the automated generator fuel, and clear the cuprite between them for access to the next seam. The oxygen warning is back, but all three dupes have full breath; check pr",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 54
+    },
+    {
+     "advance_s": 180,
+     "applied": 3,
+     "note": "Take the fertilizer and keep the crew at three. Cycle 11 had a 27.8 kJ power surplus but a 36.1 kg oxygen deficit. The oxygen shortfall is smaller so far this cycle, and everyone has full breath. Mine the reachable coal at (158,183) and cle",
+     "note_cut": true,
+     "orders": 3,
+     "refusals": [],
+     "refused": 0,
+     "turn": 55
+    },
+    {
+     "advance_s": 300,
+     "applied": 1,
+     "note": "Mine the two exposed coal cells while the batteries are charged. With food stocked and the oxygen warning clear, resume research toward liquid plumbing for a washroom; a closed lavatory loop will reduce outhouse labor and conserve clean wat",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [
+      "unknown_tech"
+     ],
+     "refused": 1,
+     "turn": 56
+    },
+    {
+     "advance_s": 180,
+     "applied": 1,
+     "note": "Plumbing is already complete. Start Sanitation for lavatories and sinks; it needs only basic research. Leave the outhouses in service until the water sieve and an overflow route are ready. The two coal digs are reachable, so let the crew fi",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 57
+    },
+    {
+     "advance_s": 300,
+     "applied": 2,
+     "note": "Cycle 12’s oxygen deficit fell to 5.8 kg, and everyone has full breath. Keep the three diffusers. Use spare labor to excavate a room west of the coal generator for the future washroom. Leave its floor at y198 and connect the entrance to the",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 58
+    },
+    {
+     "advance_s": 240,
+     "applied": 2,
+     "note": "Sanitation is complete. Start Advanced Filtration on the path to a water sieve. The crew can dig into the future washroom from the west, but an algae column at x133 blocks the east approach. Clear its lower two cells from the generator plat",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 59
+    },
+    {
+     "advance_s": 180,
+     "applied": 4,
+     "note": "The west end of the washroom floor is built. Place one sink near the ladder exit and one lavatory farther in. Their clean-water ports share y199 and their waste ports share y200, so lay two separate pipe runs now. Leave both outhouses and t",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 60
+    },
+    {
+     "advance_s": 180,
+     "applied": 4,
+     "note": "Catalina and Steve both have Researching1, so leave Advanced Filtration active. Cycle 13 consumed 50.6 kg more oxygen than it produced despite a power surplus. Give diffuser resupply priority over washroom construction and mine the two reac",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 61
+    },
+    {
+     "advance_s": 240,
+     "applied": 2,
+     "note": "Advanced Filtration is complete. Start Distillation for the water sieve while the crew finishes the washroom. The new oxygen warning warrants attention, but everyone has full breath and the diffusers report no fault. Mine the exposed algae ",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 62
+    },
+    {
+     "advance_s": 280,
+     "applied": 1,
+     "note": "Most occupied cells hold 1.5–2 kg of gas, everyone has full breath, and there are 4.86 t of algae and 5.56 t of coal in the world. No need to expand the mine or add a fourth diffuser now. Prioritize the unfinished washroom floor so builders",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 63
+    }
+   ],
+   "turns_done": 63,
+   "turns_recorded": 60
+  },
+  {
+   "beds": null,
+   "colony": "gpt-long-1",
+   "cycle_at_end": 16,
+   "deaths": 0,
+   "duplicants": [
+    {
+     "calories_kcal": 2963.89,
+     "health_hp": 100,
+     "name": "Rowan",
+     "stress_pct": 0
+    },
+    {
+     "calories_kcal": 2722.94,
+     "health_hp": 100,
+     "name": "Catalina",
+     "stress_pct": 0.77
+    },
+    {
+     "calories_kcal": 2720.59,
+     "health_hp": 100,
+     "name": "Steve",
+     "stress_pct": 0
+    }
+   ],
+   "ended": "2026-11-27T08:13:07+00:00",
+   "filmed": true,
+   "food_kcal": 27200,
+   "game_time_s": 9300.16,
+   "goals": {
+    "G1": "PASS",
+    "G10": "NOT_REACHED",
+    "G11": "NOT_REACHED",
+    "G12": "NOT_REACHED",
+    "G13": "NOT_REACHED",
+    "G14": "NOT_REACHED",
+    "G15": "NOT_REACHED",
+    "G16": "NOT_RUN",
+    "G17": "NOT_RUN",
+    "G18": "NOT_REACHED",
+    "G19": "NOT_REACHED",
+    "G2": "PASS",
+    "G20": "NOT_REACHED",
+    "G21": "NOT_REACHED",
+    "G3": "NOT_REACHED",
+    "G4": "PASS",
+    "G5": "NOT_REACHED",
+    "G6": "NOT_REACHED",
+    "G7": "NOT_REACHED",
+    "G8": "NOT_REACHED",
+    "G9": "NOT_REACHED"
+   },
+   "goals_passed": {
+    "G1": {
+     "basis": "BasicComforts requirements true and a toilet plus a bed per duplicant at 4 consecutive cycle ends",
+     "cycle": 4
+    },
+    "G2": {
+     "basis": "the game reports a technology complete",
+     "cycle": 2
+    },
+    "G4": {
+     "basis": "10 full cycles: no suffocating duplicant sampled, an oxygen-making building active",
+     "cycle": 11
+    }
+   },
+   "harness_rev": 9,
+   "id": "20261127T075213Z",
+   "job": "20261127T052203Z-campaign-gpt-long-32d0cb",
+   "ledger_head": "6784910b777f7b4f15e86461516ff9bf54467bd87268edd123b5ed2115b160de",
+   "model": "gpt-6.2-astra",
+   "model_name": "GPT-6.2 Astra",
+   "no_result": true,
+   "orders_applied": 25,
+   "orders_refused": 0,
+   "proof_copy": "PASS",
+   "proof_files": 21,
+   "research_done": 16,
+   "sitting": 3,
+   "source": {
+    "out_log_sha256": "d2839ddd787f3b4a40f45f064f8728c64521e23789ae86fdf00d2977e9c0aa25",
+    "report": "results/jobs/20261127T052203Z-campaign-gpt-long-32d0cb.json",
+    "report_sha256": "bcca4926498d46988a7fed52305ee316f2bbb0839952e6dba8c78bc86fda5c98"
+   },
+   "started": "2026-11-27T07:52:13+00:00",
+   "stop": "harness_fault",
+   "stop_words": "The test's own machinery stopped the run",
+   "toilets": 0,
+   "turns": [
+    {
+     "advance_s": 45,
+     "applied": 2,
+     "note": "The batteries hold 68.7 kJ, but the power panel lists all three diffusers off circuit. Drag wire through the lower diffusers and batteries, then recheck the circuit before changing the upper wiring. Give Rowan Improved Carrying I for algae,",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 1
+    },
+    {
+     "advance_s": 180,
+     "applied": 1,
+     "note": "All three diffusers are on the battery circuit. The upper one is running, and the inspected lower one has algae and is idle at maximum pressure. No further wiring or diffuser is needed. Clear the remaining sand at floor level east of the pl",
+     "note_cut": true,
+     "orders": 1,
+     "refusals": [],
+     "refused": 0,
+     "turn": 2
+    },
+    {
+     "advance_s": 240,
+     "applied": 4,
+     "note": "Use the open pool beneath the pitcher pump to prime the washroom; there is no need to cut into the larger reservoir. Add a ladder beside the pitcher pump and place the electric pump below the waterline. Bring power to the shaft, then verify",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 3
+    },
+    {
+     "advance_s": 240,
+     "applied": 6,
+     "note": "The pump takes power at (124,178) and sends water out at (125,178). Route both across the pool at y179, then run the clean-water pipe up the x120 ladder to the sink inlet. Stop at y199 so the waste header at y200 stays separate. Keep the ou",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 4
+    },
+    {
+     "advance_s": 250,
+     "applied": 2,
+     "note": "Take the Mirth Leaf seeds and keep the crew at three. The ladder at x123 gives access to the pump’s power port, but its outlet is one column farther east. Add a ladder at (124,179), above the pump, so a builder can reach both outlet pipe se",
+     "note_cut": true,
+     "orders": 2,
+     "refusals": [],
+     "refused": 0,
+     "turn": 5
+    },
+    {
+     "advance_s": 240,
+     "applied": 6,
+     "note": "Place the sieve at (130,199). Its waste inlet is at (129,201), clean outlet at (132,201), and power port at (132,199). Route the two pipes separately and connect power from the coal generator. Pause research so Steve can help finish constru",
+     "note_cut": true,
+     "orders": 6,
+     "refusals": [],
+     "refused": 0,
+     "turn": 6
+    },
+    {
+     "advance_s": 300,
+     "applied": 4,
+     "note": "Food is sufficient for about nine cycles at current consumption. Keep research paused and prioritize the reachable pump wiring so the washroom can be primed. Keep the outhouses in service until the new plumbing has handled waste successfull",
+     "note_cut": true,
+     "orders": 4,
+     "refusals": [],
+     "refused": 0,
+     "turn": 7
+    }
+   ],
+   "turns_done": 7,
+   "turns_recorded": 7
   }
  ],
- "source_commit": "4348770cf90cb1fddc813f8945d0cd45c142b626",
+ "source_commit": "a173a1f1ea4d566565d0886676ba7470459ae1b4",
  "source_ref": "ZMS-Labs/oni-bench@oni-relay",
- "status_sha256": "30dff613e4493e61094da26ec07ee1c18493f6841dc480209cd38b77b4bf67a1"
+ "status_sha256": "bc7bdcfcc79bfc1f24e7d13f709cf0e3f9716a43afb1527b382ad5d0ac02c021"
 }
