@@ -1460,8 +1460,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 57957,
-      "sha256": "f1451d185d76020c037439311e863ef25c30e2d5d08bcba9840dd2650a7c2f36"
+      "bytes": 58014,
+      "sha256": "646c17f292c1649f2909c67262d2849728c79e4fe1b927aac66567dc63ce8d2d"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
