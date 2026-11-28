@@ -82,3 +82,31 @@ a.ob-sq:hover,a.ob-sq:focus-visible{outline:3px solid var(--ink);outline-offset:
 .ob-method>div{padding:22px 0;border-bottom:1px solid var(--rule)}
 .ob-method dt{font-size:22px;font-weight:700;font-stretch:80%;margin-bottom:8px}
 .ob-method dd{font-size:16.5px;line-height:1.55;color:var(--ink-2)}
+/* The colony, turn by turn: small multiples on the replay pages. Colour is the shared tokens and the edition accent. */
+.ob-sms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;background:transparent}
+@media (max-width:1000px){.ob-sms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.ob-sms{grid-template-columns:minmax(0,1fr)}}
+.ob-sm{margin:0;min-width:0;background:var(--paper);border:1px solid var(--rule);border-radius:var(--radius);padding:12px 12px 6px}
+.ob-sm figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px;margin:0 0 6px;font-size:15px;line-height:1.3;color:var(--ink);max-width:none}
+.ob-sm figcaption b{font-weight:700}
+.ob-sm figcaption span{font-size:13px;color:var(--muted)}
+.ob-sm figcaption i{margin-left:auto;font-style:normal;font-weight:700;font-variant-numeric:tabular-nums;color:var(--edition-accent)}
+.ob-sm-svg{display:block;width:100%;height:auto;overflow:visible}
+.sbd .ob-sm-svg text{font-variant-numeric:tabular-nums}
+/* The chart scales with its panel, so its 12-unit axis text would shrink on narrow panels (phones, and the
+   two- and three-column layouts just above each breakpoint). Step the text up as the panel narrows so it
+   stays near 11 to 13 CSS px. Sizes are in viewBox units: rendered px = size x panel width / 360. */
+.ob-sm{container-type:inline-size}
+@container (max-width:340px){.sbd .ob-sm-svg text{font-size:13.5px}}
+@container (max-width:300px){.sbd .ob-sm-svg text{font-size:15px}}
+@container (max-width:270px){.sbd .ob-sm-svg text{font-size:16.5px}}
+@container (max-width:240px){.sbd .ob-sm-svg text{font-size:18px}}
+.ob-sm-line{fill:none;stroke:var(--edition-accent);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.ob-sm-pt{fill:var(--paper);stroke:var(--edition-accent);stroke-width:1.5}
+.ob-sm-end{fill:var(--edition-accent);stroke:var(--paper);stroke-width:1.5}
+.ob-sm-svg .ms-band{fill:var(--paper-3);opacity:.7}
+.ob-sm-svg .ms-bar{fill:var(--ink)}
+.ob-ms-key{display:inline-block;width:14px;height:12px;background:var(--paper-3);border-bottom:4px solid var(--ink);vertical-align:-1px;margin-left:4px}
+.ob-sm-data{margin-top:18px;font-size:15px}
+.ob-sm-data summary{cursor:pointer;font-weight:600;color:var(--ink-2);min-height:28px}
+.ob-sm-data .table-scroll{margin-top:10px}

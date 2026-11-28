@@ -1,35 +1,39 @@
 {
   "project": "ONI Bench",
-  "as_of": "2026-11-27T13:50:02Z",
+  "as_of": "2026-11-28T13:48:00Z",
   "status_label": "Recorded experiment",
   "summary": "A live-play benchmark: an AI plays Oxygen Not Included one move per turn through a program inside the game, and a milestone counts only when that program reads it from game state.",
   "shown": [
     {
       "asset": "case-studies/oni-bench/runs.json",
       "kind": "Recorded experiment",
-      "data": "10 runs in 14 sittings, from the run host's job reports (ZMS-Labs/oni-bench@oni-relay at a173a1f1ea4d566565d0886676ba7470459ae1b4)"
+      "data": "11 runs in 17 sittings, from the run host's job reports (ZMS-Labs/oni-bench@oni-relay at 78acb758e1ddf42f163f48043d24622ce5a0a841)"
     }
   ],
   "best_result": {
     "milestone": "G4",
     "name": "Breathable base",
     "of": 21,
-    "model": "GPT-6.2 Astra",
-    "counted_runs": 2
+    "model": "Claude Opus 5.5 and GPT-6.2 Astra",
+    "models": [
+      "Claude Opus 5.5",
+      "GPT-6.2 Astra"
+    ],
+    "counted_runs": 5
   },
   "ranking": [
     {
-      "a": "GPT-6.2 Astra",
-      "b": "Claude Opus 5.5",
+      "a": "Claude Opus 5.5",
+      "b": "GPT-6.2 Astra",
       "verdict": "tied"
     },
     {
-      "a": "GPT-6.2 Astra",
+      "a": "Claude Opus 5.5",
       "b": "Claude Fable 5.2",
       "verdict": "pilot"
     },
     {
-      "a": "Claude Opus 5.5",
+      "a": "GPT-6.2 Astra",
       "b": "Claude Fable 5.2",
       "verdict": "pilot"
     }
