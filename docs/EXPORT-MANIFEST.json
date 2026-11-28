@@ -625,8 +625,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/data.js",
-      "bytes": 363814,
-      "sha256": "ea024ae4d380e045cc21c31b82c7156c0317a4fdb5c7c32c56c5ba07cc65eedb"
+      "bytes": 364300,
+      "sha256": "fb843cbed619e8f5d1d7ae8d35b0bd4c20644977522471ca0ad405272b47b846"
     },
     {
       "path": "assets/savebench/walkthrough/init.js",
@@ -635,8 +635,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/progress.css",
-      "bytes": 7141,
-      "sha256": "8d81bc83ea8aa09a44535b799b9a293d661271e662bbe9c20b70a55b3a5031bb"
+      "bytes": 7229,
+      "sha256": "4e32384ab1ecd675855541413fb8817839151eb860f7209da19cd9a7867b2910"
     },
     {
       "path": "assets/savebench/walkthrough/versions/2026-10-27/img/ConstructorMk1.png",
@@ -1325,8 +1325,8 @@
     },
     {
       "path": "assets/savebench/walkthrough/walkthrough.js",
-      "bytes": 105304,
-      "sha256": "1689613adf88a0b8ee46582dc94589273d8799a6366858bf3b4ad8785d920e36"
+      "bytes": 105328,
+      "sha256": "d0decdeae337e41716934127e7ab605def7dc2f042756345b9b3599cef613041"
     },
     {
       "path": "case-studies/epistemic-skills/index.html",
@@ -1515,8 +1515,8 @@
     },
     {
       "path": "case-studies/savebench/archive.html",
-      "bytes": 311292,
-      "sha256": "00693d34b40093c272447c075404477b3ba06a3240a10b5044ca974209ca58ab"
+      "bytes": 312222,
+      "sha256": "467ad4241be1695af6d414e39c6326a346dd22dc7f5ff05f1dd18e9b605ed914"
     },
     {
       "path": "case-studies/savebench/compare.html",
@@ -1525,8 +1525,8 @@
     },
     {
       "path": "case-studies/savebench/index.html",
-      "bytes": 51488,
-      "sha256": "3dabb0aeeef69c02d05d161a686f72ae0c1e14df1ec47c4d2c3adf8cb247a2e9"
+      "bytes": 53590,
+      "sha256": "080956b8a52a87d8c3ad619e21bff214f41ca316c06f72e0a88319a2cfc19f0f"
     },
     {
       "path": "case-studies/savebench/interface-study.json",
