@@ -543,13 +543,13 @@
     },
     {
       "path": "assets/savebench/walkthrough/current-frame.jpg",
-      "sha256": "c84dbd33e03321979bfa292592b55f74b18b8ab6f6a2e710e9350a247b7efeb3",
-      "bytes": 128342,
+      "sha256": "68b9d4534b2c5b011ebd7a30d576dcb12ccad9f96b78205495dd0557e099878e",
+      "bytes": 286674,
       "dimensions": [
         1920,
         1080
       ],
-      "kind": "One frame of the SaveBench walkthrough animation (its map of the script's factory, drawn from run records), rendered from the version of 2026-11-27. It includes imagery from the game Satisfactory, which belongs to its owners.",
+      "kind": "One frame of the SaveBench walkthrough animation (a real game film of gemini 4 argon: six milestones in one world), rendered from the version of 2026-11-28. It includes imagery from the game Satisfactory, which belongs to its owners.",
       "claim_boundary": "A drawn summary of dated results; the results themselves are in the run records, not in this picture."
     },
     {
@@ -1787,6 +1787,90 @@
       "bytes": 4216262,
       "kind": "Film clip from the game Satisfactory (film clip): camera film of the script's world saved at the end of the run that paid the last Versatile Framework (run of Nov 26, 9:31 PM CST), filmed Nov 26, 10:35 PM CST; three cuts, 17.5 s. Satisfactory and its artwork belong to their owners.",
       "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-27. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/ConstructorMk1.png",
+      "sha256": "3cd16b4dc0aa41a7a63b0803feeb77d4d013462d5458eb32f15a8e81710cb3f8",
+      "bytes": 29778,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/ConveyorAttachmentSplitter.png",
+      "sha256": "c744194a9337f02037eabde3c84d5b3655f67234e4463e37c27047d0e40268ad",
+      "bytes": 33135,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/MinerMk1.png",
+      "sha256": "744b47850024adaca19435c8a82d3280687be992dc0558be95976099f204cd42",
+      "bytes": 23957,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/SmelterMk1.png",
+      "sha256": "7c562b3f19e2622d37cc2201bee63cd1fa9a21e7b39251f4a8b88c4afdea1f84",
+      "bytes": 30206,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/StorageContainerMk1.png",
+      "sha256": "c8e3db545004d3a311250d1bd1bfb929d741e1a750a76c5acddc0bafd2f288be",
+      "bytes": 29086,
+      "dimensions": [
+        128,
+        128
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/film-longclock.jpg",
+      "sha256": "2b2e87870a415d4f5a7a7e8709aa97293396243d4d708f9cb9ef9798bdf8eb03",
+      "bytes": 204899,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "kind": "Image from the game Satisfactory (game icon): a building or item icon from Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/img/world.jpg",
+      "sha256": "5e78402f98f4d62182b2a88b6f66ba8b7e40b951e0910d766489425768337cea",
+      "bytes": 575534,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "kind": "Image from the game Satisfactory (game map image): the in-game world map of Satisfactory. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
+    },
+    {
+      "path": "assets/savebench/walkthrough/versions/2026-11-28/film/longclock-ends.mp4",
+      "sha256": "e7f418c5b37b9af44d65662c2baa290f7ba360efc1febbbf98703e86e7635c8c",
+      "bytes": 9808201,
+      "kind": "Film clip from the game Satisfactory (film clip): camera films of the end state of four longer-clock Marathons (Gemini 4 Argon and Gemini 4 Neon on server d, Gemini 4 Hydrogen and Claude Opus 5.5 on server e, Nov 27 to 28), filmed from each run's final save; six cuts, 32 s. Satisfactory and its artwork belong to their owners.",
+      "claim_boundary": "Used inside the SaveBench walkthrough animation, version of 2026-11-28. It illustrates the project; it is not a measurement record."
     }
   ]
 }
